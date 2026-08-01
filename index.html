@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Fall 2026 Grand Tour · Trip Builder</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--ink:#e6edf3;--dim:#8b949e;--gold:#d4a94e;--teal:#3fb6a8;--red:#e5534b;--green:#57ab5a;--line:#2d333b;--blue:#539bf5;--fam:#c678dd;--jar:#d4a94e;--team:#539bf5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:150px}
+a{color:var(--teal);text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 16px}
+header{padding:34px 0 12px}
+h1{font-size:28px;margin:0 0 4px;letter-spacing:-.5px}h1 .g{color:var(--gold)}
+.sub{color:var(--dim);font-size:13.5px;max-width:820px}
+.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.badge{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:3px 11px;font-size:12px;color:var(--dim)}
+.badge b{color:var(--ink)}
+h2{font-size:19px;margin:38px 0 4px}h2 .n{color:var(--gold);margin-right:8px}
+.lead{color:var(--dim);font-size:13.5px;margin:0 0 14px;max-width:860px}
+.presets{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.preset{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:7px 14px;font-size:13px;cursor:pointer;color:var(--ink)}
+.preset:hover{border-color:var(--gold)}
+.mx{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:10px 0}
+.mx table{border-collapse:collapse;width:100%;min-width:920px;font-size:12px}
+.mx th{background:var(--panel2);padding:7px 8px;text-align:left;color:var(--dim);font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--line);white-space:nowrap}
+.mx td{padding:7px 8px;border-bottom:1px solid #21262d;border-right:1px solid #1a2029;vertical-align:top;min-width:96px}
+.mx td.pn{font-weight:700;white-space:nowrap;border-left:3px solid}
+.mx tr.rf td.pn{border-left-color:var(--fam)}.mx tr.rj td.pn{border-left-color:var(--jar)}.mx tr.rt td.pn{border-left-color:var(--team)}
+.mx .cell b{display:block;font-size:11.5px}.mx .cell span{color:var(--dim)}
+.mx td.tot{font-weight:700;color:var(--gold);white-space:nowrap;font-size:13px}
+.mx .na{color:#39414d}
+.seg{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:14px 0;overflow:hidden}
+.seg>.hd{padding:12px 16px;background:var(--panel2);display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.seg>.hd h3{margin:0;font-size:15.5px}.seg>.hd .who{font-size:11.5px}
+.who i{font-style:normal;border-radius:5px;padding:1px 7px;margin-left:4px;font-size:11px}
+.who .f{background:#2d1f33;color:var(--fam)}.who .j{background:#2b2617;color:var(--jar)}.who .t{background:#1a2636;color:var(--team)}
+.opts{padding:6px 10px 12px}
+.opt{display:grid;grid-template-columns:26px 1fr auto;gap:10px;padding:10px 8px;border-radius:9px;cursor:pointer;border:1px solid transparent;align-items:start}
+.opt:hover{background:#1a212c}.opt.sel{border-color:var(--gold);background:#20211b}
+.opt input{margin-top:3px;accent-color:var(--gold)}
+.opt .t1{font-weight:600;font-size:14px}.opt .t1 .bdg{font-size:10px;background:var(--gold);color:#111;border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:middle}
+.opt .t2{color:var(--dim);font-size:12px;margin-top:1px}
+.opt .t3{font-size:12px;margin-top:4px;color:var(--dim)}
+.opt .fare{text-align:right;white-space:nowrap;font-size:12.5px;line-height:1.65}
+.fare .who-tag{color:var(--dim);font-size:10.5px}.fare .amt{font-weight:700}
+.fare .pts{color:var(--teal)}
+.chip{display:inline-block;border-radius:5px;padding:0 6px;font-size:10.5px;margin-left:5px}
+.chip.d{background:#15302c;color:var(--teal)}.chip.nd{background:#262b33;color:var(--dim)}
+.paysel{margin-top:5px;font-size:11.5px;color:var(--dim)}
+.paysel label{margin-right:12px;cursor:pointer}
+.paysel input{accent-color:var(--teal);vertical-align:-1px}
+.cities{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px;padding:10px}
+.city{border:1px solid var(--line);border-radius:10px;padding:12px;cursor:pointer;background:var(--panel)}
+.city:hover{border-color:var(--teal)}.city.sel{border-color:var(--gold);background:#20211b}
+.city h4{margin:0 0 2px;font-size:15px}.city .tag{font-size:11px;color:var(--gold)}
+.city .meta{font-size:11.5px;color:var(--dim);margin-top:5px;line-height:1.6}
+.city .fun{font-size:11.5px;margin-top:5px}
+.cabins{padding:4px 14px 14px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:720px){.cabins{grid-template-columns:1fr}}
+.cabin-col h4{margin:8px 0 4px;font-size:13px}
+.cab{display:flex;justify-content:space-between;gap:8px;padding:8px 9px;border-radius:8px;border:1px solid transparent;cursor:pointer;font-size:12.5px;align-items:center}
+.cab:hover{background:#1a212c}.cab.sel{border-color:var(--gold);background:#20211b}
+.cab .r{text-align:right;white-space:nowrap}
+.totbar{position:fixed;left:0;right:0;bottom:0;background:rgba(16,20,26,.97);border-top:1px solid var(--gold);backdrop-filter:blur(8px);z-index:90;padding:9px 14px}
+.totbar .in{max-width:1140px;margin:0 auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-size:12.5px}
+.totbar .grand{font-size:19px;font-weight:800;color:var(--gold);white-space:nowrap}
+.totbar .pp{white-space:nowrap}.totbar .pp b{font-size:13.5px}
+.totbar .ptbox{margin-left:auto;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.totbar .meter{font-size:11.5px;white-space:nowrap}
+.totbar .meter.over{color:var(--red);font-weight:700}
+.totbar input{width:64px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:3px 6px;font-size:12px}
+.extras{padding:2px 16px 12px;font-size:12.5px;color:var(--dim)}
+.extras label{margin-right:16px;cursor:pointer}.extras input{accent-color:var(--gold);vertical-align:-2px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0;font-size:13.5px}
+.card.warn{border-color:var(--red)}
+.flag{display:flex;gap:9px;margin:7px 0}.flag .i{flex:none}
+.foot{color:var(--dim);font-size:12px;margin-top:46px;border-top:1px solid var(--line);padding-top:14px}
+.linknote{font-size:11.5px;color:var(--dim);padding:0 16px 8px}
+</style></head><body><div class="wrap">
+<header>
+<h1>Fall 2026 <span class="g">Grand Tour</span> · Trip Builder</h1>
+<div class="sub">Pick an option in every segment — totals update live per party. Sept 27 → Oct 25–28 · KBW Seoul · Token2049 Singapore · Odyssey of the Seas · Croatia · a fun stopover home.</div>
+<div class="badges">
+<span class="badge">Researched <b>Aug 1</b> · 17 agents, 2 swarms + stopover scout</span>
+<span class="badge">Cruise holds <b>LIVE</b></span>
+<span class="badge"><b>⚠ Estimates</b> — verify live before booking</span>
+<span class="badge"><a href="research.html">Full research report ↗</a></span>
+<span class="badge"><a href="https://winnsolutionsadmin.github.io/voyage-plan-f23430/">Mediterranean plan ↗</a></span>
+</div>
+</header>
+
+<h2><span class="n">01</span>Presets</h2>
+<div class="presets" id="presets"></div>
+
+<h2><span class="n">02</span>Timeline overview — who pays what, when</h2>
+<p class="lead">Rows = travel parties. Cells show your current pick. Click any segment below to change it.</p>
+<div class="mx"><table id="matrix"></table></div>
+
+<h2><span class="n">03</span>Build the trip — top options per segment</h2>
+<p class="lead">Shared segments (multiple party chips) are one flight for everyone on them — cabins differ, prices per person per party. Where points are available, radio cash vs points.</p>
+<div id="segs"></div>
+
+<h2><span class="n">04</span>The way home — pick your stopover</h2>
+<p class="lead">Full Saturday Oct 24 in Croatia in every variant. Sunday Oct 25 = reposition day (winter-timetable day 1 — these routings survive it). Then 1–2 stopover nights and a nonstop to SFO Mon Oct 26 – Wed Oct 28. Scout's podium: 🥇 London · 🥈 Paris · 🥉 Dublin.</p>
+<div class="seg">
+<div class="hd"><h3>🌍 Stopover city</h3><div class="who"><i class="f">Family ×4</i><i class="j">Jarred</i></div></div>
+<div class="cities" id="cities"></div>
+<div class="cabins" id="cabins"></div>
+<div class="extras">
+<label><input type="checkbox" id="incHotel" checked> include stopover hotel est. (2 rooms)</label>
+<label><input type="checkbox" id="incCruise"> include cruise ($31,935 · Royal Loft, on hold)</label>
+</div>
+<div class="linknote" id="cityverify"></div>
+</div>
+
+<h2><span class="n">05</span>Before you book — the five live checks</h2>
+<div class="card warn">
+<div class="flag"><span class="i">1️⃣</span><div><b>Flying Blue space for the family's lie-flat seats home</b> (60–62.5k saver on KLM AMS–SFO; expect a 2+3 split across days) — and the <b>August PE promo at 30k includes SFO with an Oct 25–27 travel window; it sells out in days.</b></div></div>
+<div class="flag"><span class="i">2️⃣</span><div><b>Qsuite award space SIN→Rome for Oct 9</b> on qatarairways.com / seats.aero — before any Amex transfer (transfers are irreversible).</div></div>
+<div class="flag"><span class="i">3️⃣</span><div><b>Winter-schedule confirmations</b> for the chosen stopover: Dubrovnik's W26/27 timetable publishes ~Sept; Turkish/Vueling/BA winter DBV service is historic-pattern until then. Ryanair DBV–Dublin year-round is already confirmed.</div></div>
+<div class="flag"><span class="i">4️⃣</span><div><b>Live fares on the exact dates</b> — every number here is an aggregator/typical level; run delta.com, koreanair.com, klm.com on the real dates and party sizes.</div></div>
+<div class="flag"><span class="i">5️⃣</span><div><b>Pick the sailing</b> — both Royal Loft holds stay alive via the keeper until you choose (Oct 11 res 205404 / Oct 18 res 234019).</div></div>
+</div>
+
+<div class="foot">Trip Builder v2 · researched Aug 1, 2026 (17 agents: 12-lane swarm + critic, 4-lane supplement, fun-stopover scout · ~2M tokens) · all fares one-way per person USD, estimates pending live verification · selections persist in this browser · <a href="research.html">full leg-by-leg research</a> · <a href="https://winnsolutionsadmin.github.io/voyage-plan-f23430/">Mediterranean voyage plan</a></div>
+</div>
+
+<div class="totbar"><div class="in" id="totin"></div></div>
+
+<script>
+// ---------------- DATA ----------------
+const PARTIES = {
+  family:{label:'Ashley · Ezra 16 · Silas 13 · Atticus 8', short:'Family', n:4, cls:'rf'},
+  jarred:{label:'Jarred', short:'Jarred', n:1, cls:'rj'},
+  team:{label:'Sam · Christopher · Jonathan', short:'Team', n:3, cls:'rt'},
+};
+const SEGS = [
+ {id:'out', name:'US → Seoul', date:'Sun Sep 27', parties:['jarred','team'], opts:[
+  {id:'dl', label:'Delta via Seattle — departs Sacramento', sub:'SMF 07:53 → SEA (DL4075) → ICN on DL197 A350 · Delta One Suites · 17h · full MQD', hrs:17, delta:true, badge:'REC',
+   note:'Your home airport, zero drive — same door-to-door as driving to SFO for the nonstop. Mixed-cabin party: phone booking or linked PNRs. GUC alt: book Premium Select ~$2,000 + certificate (moderate odds).',
+   fares:{jarred:{cabin:'Delta One',cash:4000,pts:{sky:110500,fees:30,label:'110.5k SkyMiles + $30 (w/ card 15% off)'}}, team:{cabin:'Main',cash:585}}},
+  {id:'ke', label:'Korean Air nonstop — from SFO', sub:'KE024 ~12:40 dep · 12.1h flight · Delta JV earning · Prestige + economy same plane', hrs:12.1, delta:true,
+   note:'~2h drive + parking; door-to-door ≈ same 17h. KE024 30-day on-time rate: 33%. KE Premium Class PE (~$875) exists on retrofitted 777s — tail-dependent.',
+   fares:{jarred:{cabin:'Prestige',cash:3900,pts:{mr:85000,fees:120,label:'85k Virgin pts + $120 — KE space rare, verify first'}}, team:{cabin:'Economy',cash:795}}},
+  {id:'ua', label:'United nonstop — from SFO', sub:'13.4h · Polaris + economy · cheapest combined (~$4,700)', hrs:13.4, delta:false,
+   note:'Zero Delta/SkyTeam earning for anyone — the price is the whole argument.',
+   fares:{jarred:{cabin:'Polaris',cash:3200}, team:{cabin:'Economy',cash:500}}},
+ ]},
+ {id:'icnsin', name:'Seoul → Singapore', date:'Sun Oct 4', parties:['jarred','team'], opts:[
+  {id:'ke643', label:'Korean Air KE643 nonstop', sub:'13:50 → 19:15 · 6.4h · SkyTeam, bookable as Delta codeshare DL7819', hrs:6.4, delta:true, badge:'REC',
+   note:'Fly Oct 4 — Token2049 inbound crush peaks Oct 5–6. Whole party one plane, bags + meals included.',
+   fares:{jarred:{cabin:'Prestige',cash:1200,pts:{sky:50000,fees:50,label:'~50k SkyMiles + $50 partner award'}}, team:{cabin:'Economy',cash:350}}},
+  {id:'sq', label:'Singapore Airlines nonstop', sub:'6.5h · best hard product on the route · 4–5× daily', hrs:6.5, delta:false,
+   note:'No Delta earning (Star Alliance). Pick only if KE is sold out or much pricier.',
+   fares:{jarred:{cabin:'Business',cash:1050}, team:{cabin:'Economy',cash:350}}},
+  {id:'scoot', label:'Scoot overnight — max Korea time', sub:'TR897 dep 23:12 Oct 5 → SIN early Oct 6 · LCC', hrs:6.8, delta:false, badge:'FUN',
+   note:'One extra full Korea day + skips a surge-priced SIN hotel night. No business cabin — Jarred rides economy too. Bags ~$40 included in price shown.',
+   fares:{jarred:{cabin:'Economy',cash:189}, team:{cabin:'Economy',cash:189}}},
+ ]},
+ {id:'sinfco', name:'Singapore → Rome', date:'Fri Oct 9', parties:['jarred'], opts:[
+  {id:'qsuite', label:'Qatar Qsuites via Doha — on points', sub:'17h · Qsuite w/ closing door · no fuel surcharges', hrs:17, delta:false, badge:'REC',
+   note:'75k Avios (Amex 1:1, instant) + ~$90 — ~4–6¢/pt value. VERIFY Oct 9 space before transferring (irreversible).',
+   fares:{jarred:{cabin:'Qsuites',cash:3200,pts:{mr:75000,fees:90,label:'75k Avios + $90'},defPts:true}}},
+  {id:'sq366', label:'Singapore Airlines SQ366 nonstop', sub:'dep 01:30 → FCO 08:05 same morning · 12.6h · full cruise buffer day', hrs:12.6, delta:false,
+   note:'Only nonstop on the route (~4×/week — Fri operates; re-verify winter pattern). Zero connection risk before the cruise.',
+   fares:{jarred:{cabin:'Business',cash:2488}}},
+  {id:'ek', label:'Emirates via Dubai', sub:'16.5h · A380/777 lie-flat · huge schedule depth', hrs:16.5, delta:false,
+   note:'The cash-value 1-stop. No Delta earning.',
+   fares:{jarred:{cabin:'Business',cash:2208}}},
+ ]},
+ {id:'famout', name:'SFO → Rome', date:'Thu Oct 8', parties:['family'], opts:[
+  {id:'ita', label:'ITA Airways nonstop', sub:'11.75h · lands Oct 9 midday — full buffer before the Oct 11 cruise', hrs:11.75, delta:false, badge:'REC',
+   note:'Dropped from $775 (July) to ~$598 — the nonstop premium over Condor is now only ~$220/head for 2.5h less and no connection risk with kids.',
+   fares:{family:{cabin:'Economy',cash:598}}},
+  {id:'condor', label:'Condor via Frankfurt — cheapest', sub:'14.3h · dep Oct 8', hrs:14.3, delta:false,
+   note:'Light fare: ~$379 + ~$70 bags (shown all-in). Family of 4 ≈ $1,850 with bags.',
+   fares:{family:{cabin:'Economy',cash:449}}},
+  {id:'klm', label:'KLM/Delta via Amsterdam — SkyTeam', sub:'15h · earns Delta for the whole family', hrs:15, delta:true,
+   note:'~$270/head premium purely for earning + Sky Priority via household SkyMiles numbers.',
+   fares:{family:{cabin:'Economy',cash:675}}},
+ ]},
+ {id:'teamhome', name:'Singapore → home', date:'Sat–Sun Oct 10/11', parties:['team'], opts:[
+  {id:'ua28', label:'United UA28 nonstop to SFO + drive', sub:'dep 20:35 → SFO 21:20 same day · 15.75h + ~2h drive', hrs:17.75, delta:false, badge:'REC',
+   note:'Token2049 exodus premium priced in. The land-SFO-and-drive baseline no SMF routing managed to beat.',
+   fares:{team:{cabin:'Economy',cash:650}}},
+  {id:'sqsea', label:'SQ to Seattle + hop — lands SMF', sub:'SQ28 SIN 09:00 → SEA 08:45 same day + Alaska to SMF · 20.1h, no overnight', hrs:20.1, delta:false, badge:'SMF',
+   note:'The only clean single-ticket SMF arrival. +$300/head, +2.3h vs baseline — pays for zero drive and a home-airport landing.',
+   fares:{team:{cabin:'Economy',cash:950}}},
+  {id:'ci', label:'China Airlines via Taipei + LAX — lands SMF', sub:'~24h · SkyTeam partial earning · Sat Oct 10 only', hrs:24, delta:true,
+   note:'Cheapest SMF-terminating path. Long day; Saturday departure only.',
+   fares:{team:{cabin:'Economy',cash:600}}},
+ ]},
+ {id:'hop', name:'Rome → Croatia', date:'Sun Oct 18 (post-cruise)', parties:['family','jarred'], opts:[
+  {id:'ou', label:'Croatia Airlines to Dubrovnik', sub:'1.3h nonstop · full-service, bags included', hrs:1.3, delta:false, badge:'REC',
+   note:'Post-cruise party of 5 with max luggage — the ~$70 premium over Ryanair evaporates once bag fees stack. Dubrovnik FIRST (its season closes fastest), transfer to Split mid-week via the Pelješac bridge.',
+   fares:{family:{cabin:'Economy',cash:125}, jarred:{cabin:'Economy',cash:125}}},
+  {id:'fr', label:'Ryanair evening to Dubrovnik', sub:'dep FCO ~21:45 → DBV 23:05 · leisurely Rome day after disembark', hrs:1.3, delta:false,
+   note:'~$35 base + ~$45 bags each (shown all-in). Late arrival with kids after a disembark day.',
+   fares:{family:{cabin:'Economy',cash:80}, jarred:{cabin:'Economy',cash:80}}},
+  {id:'spu', label:'Croatia Airlines to Split', sub:'OU381 dep 18:00 · near-daily · Split-based week', hrs:1.2, delta:false,
+   note:'Basing in Split enables KLM\'s NEW Sunday SPU–AMS nonstop for the Amsterdam exit. Day-trip Dubrovnik early in the week.',
+   fares:{family:{cabin:'Economy',cash:115}, jarred:{cabin:'Economy',cash:115}}},
+ ]},
+];
+const CITIES = [
+ {id:'ams', city:'Amsterdam', emoji:'🇳🇱', tag:'★ Best points path',
+  get:{pp:220, label:'DBV–ZAG–AMS (safe, year-round) · or KLM SPU–AMS Sunday nonstop if Split-based'},
+  hotel:850, nights:'1–2n', delta:true,
+  fun:'Canals & bikes · NEMO science museum · Van Gogh · Anne Frank House',
+  verify:'KLM DBV–AMS nonstop on Oct 25 = changeover-day gamble; the ZAG routing is immune. Tue Oct 27 typically $0–80/pp cheaper than Mon.',
+  fam:[
+   {id:'biz',label:'KLM World Business (lie-flat) — Flying Blue',cash:3200,pts:{mr:62500,fees:390,label:'60–62.5k FB + ~$390'},defPts:true,note:'THE play — 5–6.5¢/pt. Expect a 2+3 seat split across Mon/Tue.'},
+   {id:'pe',label:'KLM Premium Comfort — Aug 30k promo',cash:1100,pts:{mr:30000,fees:250,label:'30k FB promo + ~$250 — SFO on the Aug list, book NOW'}},
+   {id:'econ',label:'KLM Economy',cash:450}],
+  jar:[
+   {id:'biz',label:'KLM World Business — Flying Blue',cash:3200,pts:{mr:62500,fees:390,label:'60–62.5k FB + ~$390'},defPts:true},
+   {id:'bizcash',label:'KLM World Business — cash',cash:3200},
+   {id:'econ',label:'KLM Economy',cash:450}]},
+ {id:'dub', city:'Dublin', emoji:'🇮🇪', tag:'🥉 Halloween’s birthplace',
+  get:{pp:90, label:'Ryanair DBV–DUB nonstop — CONFIRMED year-round in W26/27 · 3.5h'},
+  hotel:750, nights:'2n', delta:false,
+  fun:'Bram Stoker Festival that exact weekend · EPIC museum · Howth cliffs · US PRECLEARANCE — land SFO as a domestic arrival',
+  verify:'Aer Lingus EI61 ~5×/wk in winter — confirm which of Oct 26–28 it flies. Cheapest total of the top tier.',
+  fam:[
+   {id:'biz',label:'Aer Lingus Business (lie-flat) — Avios',cash:2800,pts:{mr:70000,fees:120,label:'60–75k Avios + low taxes (no UK APD)'},defPts:true,note:'Arguably the best value-per-point of any city.'},
+   {id:'econ',label:'Aer Lingus Economy',cash:400}],
+  jar:[
+   {id:'biz',label:'Aer Lingus Business — Avios',cash:2800,pts:{mr:70000,fees:120,label:'~70k Avios + ~$120'},defPts:true},
+   {id:'bizcash',label:'Aer Lingus Business — cash',cash:2800},
+   {id:'econ',label:'Aer Lingus Economy',cash:400}]},
+ {id:'lon', city:'London', emoji:'🇬🇧', tag:'🥇 Scout’s #1 overall',
+  get:{pp:160, label:'BA Gatwick (historic winter link) or Ryanair Stansted · ~3h'},
+  hotel:1050, nights:'2n', delta:true,
+  fun:'Harry Potter Studio Tour “Dark Arts” Halloween · West End · Tower of London · UK half-term energy (and crowds)',
+  verify:'BA winter DBV = historic pattern; confirm when W26/27 posts. Virgin award surcharges ~$900–1,200/pp ex-LHR.',
+  fam:[
+   {id:'biz',label:'Virgin Upper Class — points',cash:3800,pts:{mr:60000,fees:1100,label:'~57.5–60k Virgin + ~$1,100 surcharges 😬'}},
+   {id:'econ',label:'BA/Virgin/United Economy',cash:500}],
+  jar:[
+   {id:'biz',label:'Virgin Upper — points',cash:3800,pts:{mr:60000,fees:1100,label:'~60k + ~$1,100 fees'}},
+   {id:'bizcash',label:'Virgin/BA Business — cash',cash:3800},
+   {id:'econ',label:'Economy',cash:500}]},
+ {id:'par', city:'Paris', emoji:'🇫🇷', tag:'🥈 Disneyland Halloween',
+  get:{pp:200, label:'via ZAG or FRA (no winter nonstop) · ~6h'},
+  hotel:900, nights:'2n', delta:true,
+  fun:'Disneyland Paris Halloween Festival thru Nov 1 — Atticus jackpot · Eiffel · Catacombs for the teens',
+  verify:'AF CDG–SFO daily year-round; Flying Blue J awards 70–100k appear regularly (4 seats harder than 2).',
+  fam:[
+   {id:'biz',label:'Air France Business — Flying Blue',cash:3200,pts:{mr:85000,fees:350,label:'70–100k FB + moderate surcharges'},defPts:true},
+   {id:'econ',label:'Air France Economy',cash:450}],
+  jar:[
+   {id:'biz',label:'AF Business — Flying Blue',cash:3200,pts:{mr:85000,fees:350,label:'~85k FB + ~$350'},defPts:true},
+   {id:'bizcash',label:'AF Business — cash',cash:3200},
+   {id:'econ',label:'AF Economy',cash:450}]},
+ {id:'ist', city:'Istanbul', emoji:'🇹🇷', tag:'Most exotic · one carrier',
+  get:{pp:200, label:'Turkish DBV–IST (historic winter stalwart) · 2h · single PNR through to SFO'},
+  hotel:450, nights:'2n', delta:false,
+  fun:'Grand Bazaar haggling · Bosphorus between two continents · Hagia Sophia · cheapest hotels of the list',
+  verify:'TK winter DBV = historic pattern. 13h flight home. Amex points don’t reach Turkish — cash only.',
+  fam:[
+   {id:'biz',label:'Turkish Business — cash only',cash:3000},
+   {id:'econ',label:'Turkish Economy',cash:550}],
+  jar:[
+   {id:'bizcash',label:'Turkish Business — cash',cash:3000},
+   {id:'econ',label:'Turkish Economy',cash:550}]},
+ {id:'bcn', city:'Barcelona', emoji:'🇪🇸', tag:'Warmest · ⚠ schedule gamble',
+  get:{pp:130, label:'Vueling DBV–BCN (historic winter link) · 2.5h'},
+  hotel:650, nights:'2n', delta:false,
+  fun:'Sagrada Família · Camp Nou tour · Tibidabo · 15–21°C — the weather hedge',
+  verify:'⚠ Level SFO CANCELLED for 2026; United SFO–BCN season may end Oct 25 — verify the last-flight date or Barcelona has NO nonstop.',
+  fam:[
+   {id:'biz',label:'United Polaris — cash (scarce)',cash:3500},
+   {id:'econ',label:'United Economy (end-of-season)',cash:550}],
+  jar:[
+   {id:'bizcash',label:'United Polaris — cash',cash:3500},
+   {id:'econ',label:'United Economy',cash:550}]},
+ {id:'cph', city:'Copenhagen', emoji:'🇩🇰', tag:'Hidden gem: Tivoli Halloween',
+  get:{pp:250, label:'via ZAG · ~5.5h'},
+  hotel:750, nights:'2n', delta:true,
+  fun:'TIVOLI GARDENS Halloween — one of Europe’s best transformations · Nyhavn harbor · dark by 5pm',
+  verify:'SAS (now SkyTeam) A350 ~4×/wk, adding 20% SFO seats in W26/27 — confirm operating days Oct 26–28.',
+  fam:[
+   {id:'biz',label:'SAS Business — Flying Blue (thin space)',cash:3200,pts:{mr:80000,fees:300,label:'~80k FB — space thinner than KLM'}},
+   {id:'econ',label:'SAS Economy',cash:450}],
+  jar:[
+   {id:'biz',label:'SAS Business — FB pts',cash:3200,pts:{mr:80000,fees:300,label:'~80k FB + ~$300'}},
+   {id:'bizcash',label:'SAS Business — cash',cash:3200},
+   {id:'econ',label:'SAS Economy',cash:450}]},
+ {id:'none', city:'No stopover — max Croatia', emoji:'🇭🇷', tag:'Leave Monday · most Croatia',
+  get:{pp:0, label:'Stay through Sunday night; depart Dubrovnik Mon Oct 26'},
+  hotel:0, nights:'0n', delta:true,
+  fun:'Two extra Croatia nights (Sat + Sun) — the “maximize Croatia” answer',
+  verify:'Mon Oct 26 winter connections are thin: 2-stop economy typical; KLM via AMS keeps Delta earning.',
+  fam:[
+   {id:'econ',label:'2-stop Economy (via FRA/AMS/IST)',cash:715},
+   {id:'biz',label:'KLM/AF Business via AMS/CDG',cash:2900,pts:{mr:65000,fees:400,label:'~62.5–70k FB via AMS + fees'}}],
+  jar:[
+   {id:'biz',label:'KLM/AF Business via hub — FB pts',cash:2900,pts:{mr:65000,fees:400,label:'~65k FB + ~$400'},defPts:true},
+   {id:'bizcash',label:'Business — cash',cash:2900},
+   {id:'econ',label:'2-stop Economy',cash:715}]},
+];
+// ---------------- STATE ----------------
+const LS='ft26v2.';
+let S = {
+  seg:{}, pay:{},
+  city:'ams', famCab:'biz', jarCab:'biz', famPay:{}, jarPay:{},
+  incHotel:true, incCruise:false,
+  budMR:512, budSKY:200,
+};
+try{ const saved=JSON.parse(localStorage.getItem(LS+'state')||'null'); if(saved) S={...S,...saved}; }catch(e){}
+SEGS.forEach(sg=>{ if(!S.seg[sg.id]||!sg.opts.find(o=>o.id===S.seg[sg.id])) S.seg[sg.id]=sg.opts[0].id; });
+function save(){ localStorage.setItem(LS+'state', JSON.stringify(S)); }
+// ---------------- HELPERS ----------------
+const $=id=>document.getElementById(id);
+const fmt=n=>'$'+Math.round(n).toLocaleString();
+const fmtK=n=>Math.round(n/1000)+'k';
+function usePts(segId,party,f){ if(!f||!f.pts) return false; const k=segId+'.'+party; return S.pay[k]!==undefined? S.pay[k] : !!f.defPts; }
+function cityObj(){ return CITIES.find(c=>c.id===S.city)||CITIES[0]; }
+function cabObj(list,id){ return list.find(c=>c.id===id)||list[0]; }
+// ---------------- COST ENGINE ----------------
+function compute(){
+  const per={family:0,jarred:0,team:0}; let mr=0,sky=0;
+  const cells={family:{},jarred:{},team:{}};
+  SEGS.forEach(sg=>{
+    const opt=sg.opts.find(o=>o.id===S.seg[sg.id]);
+    sg.parties.forEach(p=>{
+      const f=opt.fares[p]; if(!f) return;
+      const pts=usePts(sg.id,p,f);
+      let pp, txt;
+      if(pts){ pp=f.pts.fees||0; if(f.pts.mr)mr+=f.pts.mr*PARTIES[p].n; if(f.pts.sky)sky+=f.pts.sky*PARTIES[p].n;
+        txt=(f.pts.mr?fmtK(f.pts.mr)+' pts':fmtK(f.pts.sky)+' SkyMi')+' +'+fmt(pp); }
+      else { pp=f.cash; txt=fmt(pp); }
+      per[p]+=pp*PARTIES[p].n;
+      cells[p][sg.id]={opt:opt.label.split('—')[0].trim(),cab:f.cabin,txt};
+    });
+  });
+  const c=cityObj();
+  const famF=cabObj(c.fam,S.famCab), jarF=cabObj(c.jar,S.jarCab);
+  const famPts = famF.pts && (S.famPay[c.id+'.'+famF.id]!==undefined? S.famPay[c.id+'.'+famF.id] : !!famF.defPts);
+  const jarPts = jarF.pts && (S.jarPay[c.id+'.'+jarF.id]!==undefined? S.jarPay[c.id+'.'+jarF.id] : !!jarF.defPts);
+  const famPP = famPts? (famF.pts.fees||0) : famF.cash;
+  const jarPP = jarPts? (jarF.pts.fees||0) : jarF.cash;
+  if(famPts){ if(famF.pts.mr)mr+=famF.pts.mr*4; if(famF.pts.sky)sky+=famF.pts.sky*4; }
+  if(jarPts){ if(jarF.pts.mr)mr+=jarF.pts.mr; if(jarF.pts.sky)sky+=jarF.pts.sky; }
+  per.family += (c.get.pp+famPP)*4; per.jarred += (c.get.pp+jarPP);
+  if(S.incHotel && c.hotel){ per.family += c.hotel*0.8; per.jarred += c.hotel*0.2; }
+  cells.family.home={opt:c.city,cab:famF.label.split('—')[0].trim(),txt:(famPts? fmtK(famF.pts.mr||famF.pts.sky)+' pts +'+fmt(famPP):fmt(famPP))+' & '+fmt(c.get.pp)+' pos.'};
+  cells.jarred.home={opt:c.city,cab:jarF.label.split('—')[0].trim(),txt:(jarPts? fmtK(jarF.pts.mr||jarF.pts.sky)+' pts +'+fmt(jarPP):fmt(jarPP))+' & '+fmt(c.get.pp)+' pos.'};
+  let grand=per.family+per.jarred+per.team;
+  if(S.incCruise) grand+=31935;
+  return {per,mr,sky,grand,cells};
+}
+// ---------------- RENDER ----------------
+function renderSegs(){
+  $('segs').innerHTML='';
+  SEGS.forEach(sg=>{
+    const div=document.createElement('div'); div.className='seg';
+    const chips=sg.parties.map(p=>`<i class="${p[0]==='f'?'f':p[0]==='j'?'j':'t'}">${PARTIES[p].short}${PARTIES[p].n>1?' ×'+PARTIES[p].n:''}</i>`).join('');
+    let inner=`<div class="hd"><h3>${sg.name} <span style="color:var(--dim);font-weight:400;font-size:12.5px">· ${sg.date}</span></h3><div class="who">${chips}</div></div><div class="opts">`;
+    sg.opts.forEach(o=>{
+      const sel=S.seg[sg.id]===o.id;
+      const fares=sg.parties.map(p=>{
+        const f=o.fares[p]; if(!f) return '';
+        const pts=usePts(sg.id,p,f);
+        let line=`<div><span class="who-tag">${PARTIES[p].short}${PARTIES[p].n>1?'×'+PARTIES[p].n:''} · ${f.cabin}:</span> `;
+        line+= pts? `<span class="amt pts">${f.pts.mr?fmtK(f.pts.mr)+' pts':fmtK(f.pts.sky)+' SkyMi'} + ${fmt(f.pts.fees||0)}</span>` : `<span class="amt">${fmt(f.cash)}</span><span class="who-tag">/pp</span>`;
+        return line+'</div>';
+      }).join('');
+      const paysels=sel? sg.parties.map(p=>{
+        const f=o.fares[p]; if(!f||!f.pts) return '';
+        const pts=usePts(sg.id,p,f);
+        return `<div class="paysel">${PARTIES[p].short} pays: <label><input type="radio" name="pay-${sg.id}-${p}" ${!pts?'checked':''} onclick="setPay('${sg.id}','${p}',false,event)"> cash ${fmt(f.cash)}</label><label><input type="radio" name="pay-${sg.id}-${p}" ${pts?'checked':''} onclick="setPay('${sg.id}','${p}',true,event)"> points — ${f.pts.label}</label></div>`;
+      }).join('') : '';
+      inner+=`<div class="opt${sel?' sel':''}" onclick="pick('${sg.id}','${o.id}')">
+        <input type="radio" ${sel?'checked':''} name="sg-${sg.id}">
+        <div><div class="t1">${o.label}${o.badge?`<span class="bdg">${o.badge}</span>`:''}<span class="chip ${o.delta?'d':'nd'}">${o.delta?'Δ earns':'no Δ'}</span></div>
+        <div class="t2">${o.sub}</div>${sel&&o.note?`<div class="t3">${o.note}</div>`:''}${paysels}</div>
+        <div class="fare">${fares}</div></div>`;
+    });
+    div.innerHTML=inner+'</div>';
+    $('segs').appendChild(div);
+  });
+}
+function renderCities(){
+  $('cities').innerHTML='';
+  CITIES.forEach(c=>{
+    const sel=S.city===c.id;
+    const d=document.createElement('div'); d.className='city'+(sel?' sel':'');
+    d.onclick=()=>{S.city=c.id; if(!c.fam.find(x=>x.id===S.famCab))S.famCab=c.fam[0].id; if(!c.jar.find(x=>x.id===S.jarCab))S.jarCab=c.jar[0].id; save(); renderAll();};
+    d.innerHTML=`<h4>${c.emoji} ${c.city}</h4><div class="tag">${c.tag}</div>
+    <div class="meta">getting there ${c.get.pp?fmt(c.get.pp)+'/pp':'—'} · hotel ${c.hotel?fmt(c.hotel)+' ('+c.nights+')':'—'}<span class="chip ${c.delta?'d':'nd'}">${c.delta?'Δ path':'no Δ'}</span></div>
+    <div class="fun">${c.fun}</div>`;
+    $('cities').appendChild(d);
+  });
+  const c=cityObj();
+  const col=(title,list,selId,who)=>{
+    let h=`<div class="cabin-col"><h4>${title}</h4>`;
+    list.forEach(cb=>{
+      const sel=cb.id===selId;
+      const payK=c.id+'.'+cb.id;
+      const store=who==='fam'?S.famPay:S.jarPay;
+      const pts=cb.pts&&(store[payK]!==undefined?store[payK]:!!cb.defPts);
+      h+=`<div class="cab${sel?' sel':''}" onclick="setCab('${who}','${cb.id}')"><div>${cb.label}${cb.note&&sel?`<div style="color:var(--dim);font-size:11px">${cb.note}</div>`:''}
+      ${cb.pts&&sel?`<div class="paysel"><label><input type="radio" name="whp-${who}" ${!pts?'checked':''} onclick="setWayPay('${who}','${payK}',false,event)"> cash ${fmt(cb.cash)}</label><label><input type="radio" name="whp-${who}" ${pts?'checked':''} onclick="setWayPay('${who}','${payK}',true,event)"> points — ${cb.pts.label}</label></div>`:''}</div>
+      <div class="r">${cb.pts&&pts?`<span style="color:var(--teal);font-weight:700">${fmtK(cb.pts.mr||cb.pts.sky)} pts</span><br><span style="color:var(--dim);font-size:11px">+ ${fmt(cb.pts.fees||0)}/pp</span>`:`<b>${fmt(cb.cash)}</b><span style="color:var(--dim);font-size:11px">/pp</span>`}</div></div>`;
+    });
+    return h+'</div>';
+  };
+  $('cabins').innerHTML=col('Family ×4 — cabin home',c.fam,S.famCab,'fam')+col('Jarred — cabin home',c.jar,S.jarCab,'jar');
+  $('cityverify').innerHTML='⚠ '+c.verify+' · Route in: '+c.get.label;
+}
+function renderMatrix(){
+  const r=compute();
+  const segCols=[...SEGS.map(s=>({id:s.id,name:s.name,date:s.date})),{id:'home',name:'Way home',date:'Oct 25–28'}];
+  let h='<tr><th>Party</th>'+segCols.map(sc=>`<th>${sc.name}<br><span style="font-weight:400">${sc.date}</span></th>`).join('')+'<th>Total</th></tr>';
+  ['family','jarred','team'].forEach(p=>{
+    h+=`<tr class="${PARTIES[p].cls}"><td class="pn">${PARTIES[p].short}${PARTIES[p].n>1?' ×'+PARTIES[p].n:''}</td>`;
+    segCols.forEach(sc=>{
+      const c=r.cells[p][sc.id];
+      h+= c? `<td><div class="cell"><b>${c.opt}</b><span>${c.cab} · ${c.txt}${PARTIES[p].n>1?'/pp':''}</span></div></td>` : '<td class="na">—</td>';
+    });
+    h+=`<td class="tot">${fmt(r.per[p])}</td></tr>`;
+  });
+  $('matrix').innerHTML=h;
+}
+function renderTotals(){
+  const r=compute();
+  const mrOver=r.mr>S.budMR*1000, skyOver=r.sky>S.budSKY*1000;
+  $('totin').innerHTML=`
+   <span class="grand">${fmt(r.grand)}</span><span style="color:var(--dim)">cash${S.incCruise?' incl. cruise':''}</span>
+   <span class="pp" style="color:var(--fam)">Family <b>${fmt(r.per.family)}</b></span>
+   <span class="pp" style="color:var(--jar)">Jarred <b>${fmt(r.per.jarred)}</b></span>
+   <span class="pp" style="color:var(--team)">Team <b>${fmt(r.per.team)}</b></span>
+   <div class="ptbox">
+     <span class="meter${mrOver?' over':''}">Amex-MR pts ${fmtK(r.mr)} / <input type="number" value="${S.budMR}" onchange="setBud('budMR',this.value)">k ${mrOver?'⚠ OVER':''}</span>
+     <span class="meter${skyOver?' over':''}">SkyMiles ${fmtK(r.sky)} / <input type="number" value="${S.budSKY}" onchange="setBud('budSKY',this.value)">k ${skyOver?'⚠ OVER':''}</span>
+   </div>`;
+}
+const PRESETS=[
+ {name:'⭐ Recommended', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'qsuite',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':true,'icnsin.jarred':true,'out.jarred':false}; S.city='ams'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+ {name:'💵 All cash — keep the points', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'ek',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':false,'icnsin.jarred':false,'out.jarred':false}; S.city='ams'; S.famCab='econ'; S.jarCab='bizcash'; S.famPay={}; S.jarPay={}; }},
+ {name:'🪙 Min cash — max points', apply(){ S.seg={out:'ke',icnsin:'ke643',sinfco:'qsuite',famout:'condor',teamhome:'ua28',hop:'fr'}; S.pay={'out.jarred':true,'icnsin.jarred':true,'sinfco.jarred':true}; S.city='dub'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+ {name:'🎃 Max fun (kids vote)', apply(){ S.seg={out:'dl',icnsin:'scoot',sinfco:'qsuite',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':true}; S.city='par'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+ {name:'🇭🇷 Max Croatia', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'qsuite',famout:'ita',teamhome:'ua28',hop:'spu'}; S.pay={'sinfco.jarred':true}; S.city='none'; S.famCab='econ'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+];
+function renderPresets(){
+  $('presets').innerHTML='';
+  PRESETS.forEach(p=>{ const b=document.createElement('button'); b.className='preset'; b.textContent=p.name;
+    b.onclick=()=>{ p.apply(); save(); renderAll(); }; $('presets').appendChild(b); });
+}
+// ---------------- EVENTS ----------------
+window.pick=(sg,o)=>{ S.seg[sg]=o; save(); renderAll(); };
+window.setPay=(sg,p,v,ev)=>{ S.pay[sg+'.'+p]=v; save(); renderAll(); ev.stopPropagation(); };
+window.setCab=(who,id)=>{ if(who==='fam')S.famCab=id; else S.jarCab=id; save(); renderAll(); };
+window.setWayPay=(who,k,v,ev)=>{ (who==='fam'?S.famPay:S.jarPay)[k]=v; save(); renderAll(); ev.stopPropagation(); };
+window.setBud=(k,v)=>{ S[k]=Math.max(0,parseInt(v)||0); save(); renderTotals(); };
+document.getElementById('incHotel').onchange=e=>{S.incHotel=e.target.checked; save(); renderAll();};
+document.getElementById('incCruise').onchange=e=>{S.incCruise=e.target.checked; save(); renderAll();};
+function renderAll(){ document.getElementById('incHotel').checked=S.incHotel; document.getElementById('incCruise').checked=S.incCruise; renderSegs(); renderCities(); renderMatrix(); renderTotals(); }
+renderPresets(); renderAll();
+</script>
+</body></html>

@@ -1,0 +1,559 @@
+{
+ "as_of": "2026-08-01",
+ "assumptions": "Party of 5 (2 adults; kids 8/13/16). Depart Croatia (DBV primary, SPU fallback) Sun Oct 25 or Mon Oct 26 2026 \u2014 first days of IATA winter timetable W26. Home to SFO Mon Oct 26 \u2013 Wed Oct 28. Fares are estimates unless marked live-verified; no live GDS quotes were pulled.",
+ "croatia_winter_context": {
+  "verified": [
+   "Winter W26/27 begins Oct 25 2026; most seasonal DBV/SPU routes end Oct 24-25.",
+   "Ryanair W26/27: DBV-Dublin and DBV-Krakow become YEAR-ROUND; DBV keeps winter links to Ireland, UK, Poland; DBV-Vienna and DBV-Charleroi winter routes DROPPED (croatianaviation.com / tportal.hr / bengeri.com, Jul 2026).",
+   "Croatia Airlines winter from DBV: DBV-ZAG domestic year-round; DBV-Frankfurt ~3x/wk (Tue/Fri/Sun pattern last winter); NEW: Zagreb-Madrid extended into winter from Oct 26 2026 (3x/wk) with advertised connections from Dubrovnik/Split (croatianaviation.com).",
+   "Air Serbia DBV-Belgrade goes year-round from Oct 26 2026, 3x/wk (croatianaviation.com).",
+   "Historic winter internationals at DBV: Turkish (Istanbul), Vueling (Barcelona), BA (Gatwick) \u2014 pattern per Total Croatia News; W26/27 continuation likely but NOT yet confirmed in a published W26/27 PDF (dbv.hr still shows summer schedule).",
+   "Austrian VIE-DBV described as seasonal July-November \u2014 likely still flying Oct 25/26 (airportinformation.com); verify exact end date."
+  ]
+ },
+ "candidates": [
+  {
+   "city": "Paris",
+   "get_there": {
+    "routing": "No winter DBV-CDG nonstop (AF/Transavia/easyJet summer-seasonal end ~Oct 24). Best: DBV-FRA on Croatia Airlines Sun Oct 25 (winter Tue/Fri/Sun pattern) + FRA-CDG/short hop or train; or DBV-ZAG-CDG (Croatia Airlines, ZAG-Paris year-round). Alt: DBV-IST-CDG Turkish.",
+    "fare_usd_pp": 200,
+    "hrs": 6,
+    "notes": "Fare estimate, not live. One-stop is unavoidable on Oct 25/26; ~5-7h door to door."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "Air France (daily+, year-round, 777/A350); United also flies SFO-CDG",
+    "seasonal_status": "Year-round, high confidence",
+    "econ_usd": 450,
+    "biz_usd": 3200,
+    "day_price_notes": "Daily service so Mon/Tue/Wed 26-28 all bookable; midweek Tue/Wed typically $50-100 cheaper. Estimates, not live quotes."
+   },
+   "points": {
+    "programs": [
+     "Flying Blue (Amex MR 1:1) on Air France",
+     "Delta SkyMiles on AF metal",
+     "United MileagePlus via Chase/direct"
+    ],
+    "lieflat_realistic": true,
+    "notes": "Best points play in Europe for SFO: Flying Blue J awards CDG-SFO appear regularly ~70-100k + moderate surcharges; 4 seats harder than 2 but daily frequency helps. MR transfer bonuses to Flying Blue are common."
+   },
+   "fun": {
+    "draws": [
+     "Disneyland Paris Halloween Festival (runs through Nov 1 \u2014 direct Halloween-week hit for the 8-year-old)",
+     "Eiffel Tower + Seine cruise",
+     "Louvre / Catacombs (teen-friendly)"
+    ],
+    "weather": "8-15C, crisp, some rain",
+    "kid_fit": "Excellent for 8/13/16 \u2014 Disney for Atticus, Catacombs+shopping for teens"
+   },
+   "hotel_2r_2n_usd": 900,
+   "sources": [
+    "croatiaairlines.com winter timetable",
+    "croatianaviation.com",
+    "flightconnections.com CDG-SFO",
+    "Disneyland Paris seasonal calendar (typical, verify 2026 dates)"
+   ]
+  },
+  {
+   "city": "London",
+   "get_there": {
+    "routing": "DBV-LGW: BA has historically kept a winter Gatwick service (Total Croatia News winter-flights report); easyJet LGW seasonal likely just ended. Ryanair DBV-STN winter UK links confirmed in Ryanair W26/27 announcement. Nonstop ~3h.",
+    "fare_usd_pp": 160,
+    "hrs": 3,
+    "notes": "Fare estimate. BA winter DBV continuation is the historic pattern \u2014 verify W26/27 before booking."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "BA (2-3x daily), Virgin Atlantic (daily), United (2x daily) \u2014 all LHR, all year-round",
+    "seasonal_status": "Year-round, highest confidence of any candidate",
+    "econ_usd": 500,
+    "biz_usd": 3800,
+    "day_price_notes": "Massive frequency = best day-of-week flexibility; UK APD makes cash econ slightly pricier than CDG. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Virgin Atlantic points (Amex MR 1:1) \u2014 Upper Class LHR-SFO",
+     "BA Avios (Amex MR 1:1)",
+     "United miles"
+    ],
+    "lieflat_realistic": true,
+    "notes": "Virgin Upper on points is realistic but carries ~$900-1200/pp surcharges ex-LHR; BA Avios similar. Availability for 4-5 seats is the constraint \u2014 book the second schedules open or split cabins."
+   },
+   "fun": {
+    "draws": [
+     "Warner Bros. Harry Potter Studio Tour \u2014 'Hogwarts After Dark / Dark Arts' Halloween programming typically runs late Oct (verify 2026 dates, books out early)",
+     "West End theatre (Lion King / Stranger Things play for teens)",
+     "Tower of London + Natural History Museum"
+    ],
+    "weather": "9-14C, showers",
+    "kid_fit": "Excellent all three ages; note Oct 26-30 is UK school half-term \u2014 extra family events but peak crowds/prices"
+   },
+   "hotel_2r_2n_usd": 1050,
+   "sources": [
+    "total-croatia-news.com dubrovnik-winter-flights",
+    "tportal.hr Ryanair W26/27",
+    "flightconnections.com LHR-SFO"
+   ]
+  },
+  {
+   "city": "Dublin",
+   "get_there": {
+    "routing": "Ryanair DBV-DUB is CONFIRMED going YEAR-ROUND in W26/27 \u2014 nonstop ~3h20 on Oct 25/26. This is the single cleanest post-timetable-change routing of any candidate.",
+    "fare_usd_pp": 90,
+    "hrs": 3.5,
+    "notes": "Verified route (Ryanair W26/27 announcement, Jul 2026); fare is an estimate. Ryanair = pay for bags/seats."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "Aer Lingus EI61, A330 \u2014 year-round with reduced winter frequency (~5x/wk); only nonstop carrier",
+    "seasonal_status": "Year-round confirmed in DUB winter-schedule announcements; SFO retained despite Aer Lingus winter TATL trims. Check which of Mon 26/Tue 27/Wed 28 EI61 operates (not daily in winter).",
+    "econ_usd": 400,
+    "biz_usd": 2800,
+    "day_price_notes": "Sub-daily winter schedule = pick your day around EI61's operating days. US PRECLEARANCE at Dublin \u2014 land at SFO as a domestic arrival, big win with 3 kids. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Avios (Amex MR \u2192 BA/Iberia \u2192 Aer Lingus AerClub) for Aer Lingus J",
+     "Alaska/AAdvantage partner options"
+    ],
+    "lieflat_realistic": true,
+    "notes": "Aer Lingus business via Avios ~60-75k one-way with LOW taxes ex-Ireland (no UK APD). Availability moderate; 4 lie-flat seats possible if booked early. Arguably best value-per-point of the list."
+   },
+   "fun": {
+    "draws": [
+     "Ireland literally invented Halloween (Samhain) \u2014 Bram Stoker Festival runs the Oct bank-holiday weekend (~Oct 23-26 2026, verify), citywide family spook events",
+     "EPIC Emigration Museum + Trinity/Book of Kells",
+     "Howth cliff walk or Malahide Castle day trip"
+    ],
+    "weather": "8-12C, rainy, atmospheric",
+    "kid_fit": "Great story for Halloween week; slightly less blockbuster for a 16-year-old than Paris/London"
+   },
+   "hotel_2r_2n_usd": 750,
+   "sources": [
+    "tportal.hr / bengeri.com Ryanair W26/27 (DBV-DUB year-round)",
+    "mediacentre.aerlingus.com 2026 TATL schedule",
+    "travelmole.com Aer Lingus winter reductions (SFO retained)",
+    "flightsfrom.com DUB-SFO"
+   ]
+  },
+  {
+   "city": "Barcelona",
+   "get_there": {
+    "routing": "Vueling DBV-BCN has historically been one of DBV's few WINTER internationals (Total Croatia News); nonstop ~2h30. Fallback: via ZAG or FRA.",
+    "fare_usd_pp": 130,
+    "hrs": 2.5,
+    "notes": "Vueling winter continuation for W26/27 not yet published \u2014 historic pattern only. Fare estimate."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "United SFO-BCN 787 \u2014 but SEASONAL: bookable through Oct 2026, no results Nov 2026+; last winter it was extended only to Dec 1 2025. Level BCN-SFO is CANCELLED entirely for 2026 (engine shortage; suspended Apr 30-Oct 26 2026).",
+    "seasonal_status": "Boundary risk: Oct 26-28 is the very tail of United's season \u2014 flight likely still operating but verify the exact last flight date before committing. Level is gone; if United's season ends Oct 25, Barcelona has NO nonstop.",
+    "econ_usd": 550,
+    "biz_usd": 3500,
+    "day_price_notes": "End-of-season one-ways can be pricey; Iberia via MAD is the safety net. Estimates except Level cancellation (verified)."
+   },
+   "points": {
+    "programs": [
+     "United MileagePlus / Chase UR",
+     "Avios via MAD connection on Iberia"
+    ],
+    "lieflat_realistic": false,
+    "notes": "United Polaris saver space SFO-BCN is scarce; no premium-cabin points sweet spot here."
+   },
+   "fun": {
+    "draws": [
+     "Sagrada Familia + Park G\u00fcell",
+     "Beach still usable (~20C water-adjacent fun) \u2014 warmest option",
+     "Spotify Camp Nou tour + Tibidabo hilltop amusement park"
+    ],
+    "weather": "15-21C, sunniest/warmest of the list",
+    "kid_fit": "Excellent; best weather hedge for late Oct"
+   },
+   "hotel_2r_2n_usd": 650,
+   "sources": [
+    "en.ara.cat + reportur.com Level SFO cancellation (verified)",
+    "aviationa2z.com United NW25-26 schedule",
+    "united.com booking calendar signal (no Nov 2026 fares)",
+    "total-croatia-news.com DBV winter flights"
+   ]
+  },
+  {
+   "city": "Istanbul",
+   "get_there": {
+    "routing": "Turkish Airlines IST-DBV \u2014 Turkish has historically been a winter stalwart at DBV (one of ~3 winter internationals). Nonstop ~2h. Whole trip on ONE carrier: DBV-IST + IST-SFO.",
+    "fare_usd_pp": 200,
+    "hrs": 2,
+    "notes": "W26/27 continuation is historic-pattern, not yet published. Fare estimate."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "Turkish Airlines IST-SFO, daily 777-300ER, year-round",
+    "seasonal_status": "Year-round, high confidence",
+    "econ_usd": 550,
+    "biz_usd": 3000,
+    "day_price_notes": "Daily = full Mon/Tue/Wed flexibility; ~13h flight, longest of the list. Estimates. Single-PNR DBV-IST-SFO protects the connection."
+   },
+   "points": {
+    "programs": [
+     "Turkish Miles&Smiles (Citi TYP / Capital One \u2014 NOT Amex MR)",
+     "United miles on TK metal (rare J space)"
+    ],
+    "lieflat_realistic": false,
+    "notes": "TK long-haul J award space is notoriously poor and Amex MR doesn't transfer to Turkish \u2014 cash or econ points only, realistically."
+   },
+   "fun": {
+    "draws": [
+     "Grand Bazaar + Spice Bazaar haggling (teens love it)",
+     "Bosphorus ferry cruise between two continents",
+     "Hagia Sophia / Basilica Cistern + Turkish breakfast"
+    ],
+    "weather": "12-18C, pleasant",
+    "kid_fit": "Most exotic/memorable; no Halloween angle; 13h flight home is the tax"
+   },
+   "hotel_2r_2n_usd": 450,
+   "sources": [
+    "total-croatia-news.com DBV winter flights (Turkish winter pattern)",
+    "flightsfrom.com IST-SFO"
+   ]
+  },
+  {
+   "city": "Lisbon",
+   "get_there": {
+    "routing": "No winter DBV-LIS nonstop. Best: DBV-ZAG-MAD (Croatia Airlines' NEW winter Madrid line from Oct 26) + MAD-LIS hop; or DBV-FRA (OU) + FRA-LIS (TAP/LH). 2 stops or long one-stop; 7-9h.",
+    "fare_usd_pp": 280,
+    "hrs": 8,
+    "notes": "Clunkiest routing of the top group post-timetable-change. Estimate."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "TAP Air Portugal LIS-SFO, A330neo \u2014 YEAR-ROUND (TAP site showing fares for late Oct/Nov 2026; the seasonal SFO route was SFO-Terceira, not Lisbon)",
+    "seasonal_status": "Year-round, verified via booking-calendar evidence",
+    "econ_usd": 400,
+    "biz_usd": 2600,
+    "day_price_notes": "TAP often cheapest TATL J cash fare of the list. Not daily \u2014 confirm operating days Oct 26-28. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Air Canada Aeroplan (Amex MR 1:1) for TAP J",
+     "TAP Miles&Go",
+     "United miles"
+    ],
+    "lieflat_realistic": true,
+    "notes": "TAP J via Aeroplan ~70-87.5k is genuinely bookable; TAP releases partner space. A330neo lie-flat."
+   },
+   "fun": {
+    "draws": [
+     "Tram 28 + Alfama miradouros",
+     "Sintra/Pena Palace day trip (fairy-tale castle, all ages)",
+     "Past\u00e9is de Bel\u00e9m + Ocean\u00e1rio (top-tier aquarium for the 8-year-old)"
+    ],
+    "weather": "15-21C, mild and often sunny",
+    "kid_fit": "Very good; weather + food + castle; routing there is the weakness"
+   },
+   "hotel_2r_2n_usd": 550,
+   "sources": [
+    "flytap.com booking calendar (Oct 6-28 2026 fares shown)",
+    "upgradedpoints.com TAP route news (Terceira seasonal ended)",
+    "croatianaviation.com ZAG-MAD winter"
+   ]
+  },
+  {
+   "city": "Madrid",
+   "get_there": {
+    "routing": "Croatia Airlines DBV-ZAG-MAD \u2014 the new winter Madrid line starts Oct 26 2026 (3x/wk) with connections from Dubrovnik explicitly advertised. ~6h.",
+    "fare_usd_pp": 220,
+    "hrs": 6,
+    "notes": "Verified new winter route; confirm Oct 26 falls on an operating day. Estimate fare."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "Iberia IB355/356, A330, 3x/wk (Tue/Thu/Sat pattern per aggregators) \u2014 only nonstop carrier",
+    "seasonal_status": "Operating in 2026 per schedule aggregators; 3x/wk means Tue Oct 27 is likely your day. Verify winter frequency holds.",
+    "econ_usd": 450,
+    "biz_usd": 3000,
+    "day_price_notes": "Tue 27 fits the window perfectly if the Tue rotation holds; Mon 26/Wed 28 likely no flight. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Iberia Avios (Amex MR 1:1) \u2014 off-peak J sweet spots",
+     "AAdvantage on IB metal"
+    ],
+    "lieflat_realistic": true,
+    "notes": "Iberia Avios J with low surcharges is a real lie-flat path; 3x/wk limits seats."
+   },
+   "fun": {
+    "draws": [
+     "Bernab\u00e9u stadium tour (Real Madrid) for the teens",
+     "Prado + Retiro rowboats",
+     "San Gin\u00e9s churros + Mercado San Miguel"
+    ],
+    "weather": "10-18C, dry",
+    "kid_fit": "Good, slightly grown-up; less Halloween energy"
+   },
+   "hotel_2r_2n_usd": 550,
+   "sources": [
+    "croatianaviation.com ZAG-MAD winter extension",
+    "flightsfrom.com MAD-SFO",
+    "grupo.iberia.com SFO route history"
+   ]
+  },
+  {
+   "city": "Munich",
+   "get_there": {
+    "routing": "LH MUC-DBV is summer-seasonal (likely ends Oct 24-25). Reliable: DBV-ZAG-MUC on Croatia Airlines (ZAG-MUC year-round) or DBV-FRA + FRA-MUC. ~4-5h.",
+    "fare_usd_pp": 220,
+    "hrs": 4.5,
+    "notes": "Estimate; check if LH's last MUC-DBV rotation touches Oct 25."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "Lufthansa MUC-SFO, daily, year-round (A350/747-8)",
+    "seasonal_status": "Year-round, high confidence",
+    "econ_usd": 500,
+    "biz_usd": 3800,
+    "day_price_notes": "Daily; midweek cheaper. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Aeroplan/LifeMiles (Amex MR 1:1) for LH J",
+     "United miles"
+    ],
+    "lieflat_realistic": true,
+    "notes": "LH releases partner J space mostly <15 days out \u2014 fine for a fixed date only if you accept close-in booking risk; new Allegris cabin a bonus if equipped."
+   },
+   "fun": {
+    "draws": [
+     "Deutsches Museum (world-class for an 8-year-old)",
+     "BMW Welt + Allianz Arena tour",
+     "Neuschwanstein castle day trip"
+    ],
+    "weather": "3-10C, cold; possible first snow dustings",
+    "kid_fit": "Solid but coldest vibe; Oktoberfest long over"
+   },
+   "hotel_2r_2n_usd": 650,
+   "sources": [
+    "croatiaairlines.com timetable",
+    "flightsfrom.com MUC-SFO"
+   ]
+  },
+  {
+   "city": "Copenhagen",
+   "get_there": {
+    "routing": "No winter DBV-CPH nonstop (Norwegian seasonal ends). Via ZAG (Croatia Airlines ZAG-CPH) or via FRA/VIE. ~5-6h.",
+    "fare_usd_pp": 250,
+    "hrs": 5.5,
+    "notes": "Estimate; ZAG-CPH winter frequency should be confirmed against OU's W26 cuts."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "SAS CPH-SFO A350-900 \u2014 year-round, ~4x/wk, and SAS is ADDING 20% more SFO seats in W26/27",
+    "seasonal_status": "Year-round, verified (SAS Group press release on W26/27 expansion)",
+    "econ_usd": 450,
+    "biz_usd": 3200,
+    "day_price_notes": "~4x/wk \u2014 confirm which of Oct 26-28 operate. Estimates."
+   },
+   "points": {
+    "programs": [
+     "SAS is SkyTeam now \u2014 book via Flying Blue or Delta (Amex MR paths)",
+     "SAS EuroBonus"
+    ],
+    "lieflat_realistic": true,
+    "notes": "SkyTeam partner J space on SAS A350 exists but is thinner than AF/KL; Flying Blue is the play."
+   },
+   "fun": {
+    "draws": [
+     "TIVOLI GARDENS HALLOWEEN \u2014 one of Europe's best Halloween transformations, runs through ~Nov 1 (huge for all three kids)",
+     "Nyhavn + harbor boats",
+     "National Museum / Str\u00f8get"
+    ],
+    "weather": "5-10C, dark by 5pm, windy",
+    "kid_fit": "Tivoli Halloween is a genuine hidden-gem answer to the Halloween-week brief; routing + cold are the costs"
+   },
+   "hotel_2r_2n_usd": 750,
+   "sources": [
+    "sasgroup.net W26/27 press release (SFO +20% seats)",
+    "flightsfrom.com SFO-CPH",
+    "Tivoli seasonal calendar (typical, verify 2026)"
+   ]
+  },
+  {
+   "city": "Zurich",
+   "get_there": {
+    "routing": "SWISS/Edelweiss DBV seasonal ends ~Oct 24. Via ZAG (OU ZAG-ZRH year-round) ~4-5h.",
+    "fare_usd_pp": 240,
+    "hrs": 4.5,
+    "notes": "Estimate."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "SWISS ZRH-SFO daily year-round; United also serves SFO-ZRH",
+    "seasonal_status": "Year-round, high confidence",
+    "econ_usd": 500,
+    "biz_usd": 4000,
+    "day_price_notes": "Daily. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Aeroplan/LifeMiles for LX J (space is famously stingy)"
+    ],
+    "lieflat_realistic": false,
+    "notes": "SWISS J partner awards are among the hardest in Star Alliance."
+   },
+   "fun": {
+    "draws": [
+     "Lindt Home of Chocolate",
+     "Uetliberg / lake steamers",
+     "Day trip to Lucerne/Mt. Pilatus"
+    ],
+    "weather": "4-11C",
+    "kid_fit": "Pleasant but sleepy for teens; most expensive hotels+food of the list"
+   },
+   "hotel_2r_2n_usd": 1100,
+   "sources": [
+    "flightsfrom.com ZRH-SFO"
+   ]
+  },
+  {
+   "city": "Vienna",
+   "get_there": {
+    "routing": "Austrian VIE-DBV seasonal runs July-November \u2014 likely STILL NONSTOP on Oct 25/26 (verify exact end date). Ryanair's DBV-Vienna winter route was dropped for W26/27.",
+    "fare_usd_pp": 180,
+    "hrs": 1.5,
+    "notes": "Best getting-there of the list IF Austrian's season covers the date."
+   },
+   "home": {
+    "nonstop": false,
+    "carrier": "None \u2014 no VIE-SFO nonstop exists; Austrian serves other US gateways only. One-stop home via LH/UA hubs or via IST.",
+    "seasonal_status": "n/a",
+    "econ_usd": 500,
+    "biz_usd": 3500,
+    "day_price_notes": "One-stop only; ~15-17h total. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Aeroplan for OS/LH connections"
+    ],
+    "lieflat_realistic": false,
+    "notes": "Connection required kills the lie-flat-nonstop brief."
+   },
+   "fun": {
+    "draws": [
+     "Sch\u00f6nbrunn Palace + zoo (oldest in world)",
+     "Prater amusement park + Riesenrad ferris wheel",
+     "House of Music / Time Travel Vienna"
+    ],
+    "weather": "5-12C",
+    "kid_fit": "Good, but the missing SFO nonstop disqualifies it from top 5"
+   },
+   "hotel_2r_2n_usd": 650,
+   "sources": [
+    "airportinformation.com DBV destinations (Austrian Jul-Nov)",
+    "tportal.hr Ryanair W26/27 (VIE winter dropped)"
+   ]
+  },
+  {
+   "city": "Nice",
+   "get_there": {
+    "routing": "No winter DBV-NCE link; 1-2 stops via ZAG/FRA.",
+    "fare_usd_pp": 280,
+    "hrs": 7,
+    "notes": "Estimate."
+   },
+   "home": {
+    "nonstop": false,
+    "carrier": "None to SFO (United's NCE service is from EWR only)",
+    "seasonal_status": "n/a",
+    "econ_usd": 550,
+    "biz_usd": 3800,
+    "day_price_notes": "One-stop only. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Flying Blue via CDG connection"
+    ],
+    "lieflat_realistic": false,
+    "notes": "Connect via CDG \u2014 at which point just stay in Paris."
+   },
+   "fun": {
+    "draws": [
+     "Promenade des Anglais",
+     "Monaco day trip",
+     "Old Town socca"
+    ],
+    "weather": "13-19C",
+    "kid_fit": "Nice but quiet in late Oct; dominated by Paris/Barcelona"
+   },
+   "hotel_2r_2n_usd": 600,
+   "sources": [
+    "flightconnections.com NCE"
+   ]
+  },
+  {
+   "city": "Amsterdam (BASELINE \u2014 covered by other agent)",
+   "get_there": {
+    "routing": "No winter DBV-AMS nonstop (Transavia/easyJet seasonal); via ZAG on Croatia Airlines (ZAG-AMS) ~5h.",
+    "fare_usd_pp": 230,
+    "hrs": 5,
+    "notes": "Baseline row only; estimate."
+   },
+   "home": {
+    "nonstop": true,
+    "carrier": "KLM AMS-SFO daily 787 year-round; United also SFO-AMS",
+    "seasonal_status": "Year-round, high confidence",
+    "econ_usd": 450,
+    "biz_usd": 3200,
+    "day_price_notes": "Daily. Estimates."
+   },
+   "points": {
+    "programs": [
+     "Flying Blue (Amex MR 1:1)"
+    ],
+    "lieflat_realistic": true,
+    "notes": "KLM 787 J via Flying Blue is realistic."
+   },
+   "fun": {
+    "draws": [
+     "Canals/bikes",
+     "NEMO science museum + Anne Frank House",
+     "Van Gogh Museum"
+    ],
+    "weather": "7-13C, wet",
+    "kid_fit": "Strong all-ages baseline"
+   },
+   "hotel_2r_2n_usd": 850,
+   "sources": [
+    "flightconnections.com AMS-SFO"
+   ]
+  }
+ ],
+ "ranking": [
+  {
+   "city": "London",
+   "why": "Bulletproof: 3 year-round SFO nonstop carriers, likely BA/Ryanair winter link from DBV, Virgin lie-flat on Amex points, and Harry Potter Halloween + half-term theatre energy for all three kids."
+  },
+  {
+   "city": "Paris",
+   "why": "Disneyland Paris Halloween Festival is the single best Halloween-week kid draw in Europe, AF daily nonstop + Flying Blue is the strongest points path \u2014 only knock is the forced one-stop from DBV."
+  },
+  {
+   "city": "Dublin",
+   "why": "The timetable-change cheat code: Ryanair DBV-DUB just went YEAR-ROUND, Halloween was invented in Ireland (Bram Stoker Festival that exact weekend), Aer Lingus nonstop with US preclearance and cheap Avios lie-flats \u2014 lowest total cost of the top tier."
+  },
+  {
+   "city": "Istanbul",
+   "why": "One airline door-to-door (TK DBV-IST + daily IST-SFO 777), most memorable stopover and cheapest hotels \u2014 loses points on the 13h flight home and near-zero Amex points usability."
+  },
+  {
+   "city": "Barcelona",
+   "why": "Warmest and most beach/Camp Nou fun, likely Vueling winter nonstop from DBV \u2014 but Level's SFO cancellation leaves only United's end-of-season flight, a genuine schedule-boundary gamble that must be verified before booking."
+  }
+ ],
+ "caveats": [
+  "All cash fares and hotel figures are late-Oct estimates, NOT live quotes \u2014 the only live-verified facts are route existence/seasonality items cited per candidate.",
+  "Dubrovnik Airport has not yet published its official W26/27 timetable PDF; Turkish (IST), Vueling (BCN), and BA (LGW) winter continuations at DBV are historic-pattern inferences and must be confirmed when the winter schedule posts (~Sep 2026).",
+  "United SFO-BCN and Iberia MAD-SFO operate at seasonal/low-frequency boundaries in the exact Oct 26-28 window \u2014 verify exact operating dates before choosing Barcelona or Madrid.",
+  "Oct 25 2026 is winter-timetable day 1: any itinerary relying on a 'summer' DBV nonstop (CDG, MUC, ZRH, AMS, CPH direct) should be treated as dead unless a specific extension is confirmed.",
+  "Lie-flat award space for a party of 5 (or 4 + 1) is the real constraint everywhere; Flying Blue (Paris/Amsterdam/Copenhagen) and Avios-on-Aer-Lingus (Dublin) are the two most realistic multi-seat plays from Amex MR.",
+  "Sources consulted: aerlingus.com media centre + travelmole.com (DUB winter), flytap.com + upgradedpoints.com (LIS year-round), en.ara.cat/reportur.com (Level SFO cancellation), aviationa2z.com + united.com calendar (UA BCN seasonality), sasgroup.net (CPH W26/27 +20% SFO), grupo.iberia.com/flightsfrom.com (MAD-SFO 3x/wk), croatianaviation.com/tportal.hr/bengeri.com (Ryanair + Croatia Airlines + Air Serbia W26/27), total-croatia-news.com (DBV historic winter internationals), airportinformation.com (Austrian Jul-Nov DBV)."
+ ]
+}
