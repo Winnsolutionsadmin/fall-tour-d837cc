@@ -1,0 +1,319 @@
+[
+ {
+  "findings": [
+   {
+    "claim": "Builder 'US \u2192 Seoul' KE option still offers Jarred '85k Virgin pts + $120' and the Min-cash preset defaults to paying that leg with Virgin points",
+    "verdict": "STALE",
+    "severity": "high",
+    "detail": "verify-hotels.json award lane (c) CORROBORATES near-zero KE Prestige partner space via Virgin/Delta (FlyerTalk: 0-2 J seats, often only T-14 to T-3), and the builder's own section-06 box says 'KE Prestige partner award space: near-zero corroborated \u2014 book that leg cash.' Yet the segment card keeps the pts option with defPts-eligible radio, and PRESETS['Min cash \u2014 max points'] sets S.pay['out.jarred']=true, so the flagship min-cash preset is built on a play the verification lane killed. Bonus contradiction: fees shown $120 vs verify lane's ~$25 Virgin taxes (supplement says $100-150). The Amex\u2192Virgin 30% bonus that softened this play also expired Jul 31.",
+    "fix": "Remove the pts object from SEGS[0].opts.ke.fares.jarred (or mark it 'speculative \u2014 near-zero space, do not transfer'), change the Min-cash preset to out:'dl' or out:'ke' with cash for Jarred (new preset MR total ~425k), and reconcile the fee figure to ~$25-150 with a 'verify at transfer' note."
+   },
+   {
+    "claim": "Stopover city cards' hotel constants (Dublin $750, Paris $900, London $1,050) feed live totals via incHotel",
+    "verdict": "STALE",
+    "severity": "high",
+    "detail": "verify-hotels.json stopover lane (verified Aug 1) prices 2n/2rm: Dublin ~$1,360 (range 1,150-1,600; triple event stack \u2014 Bram Stoker Fest + Marathon + bank holiday), Paris ~$1,440, London ~$1,240, Amsterdam ~$880. The builder's section-05 table shows these verified numbers but is headed 'not yet in totals' \u2014 while compute() DOES add the stale CITIES.hotel constants (per.family += c.hotel*0.8 etc). Dublin totals are understated ~$600, Paris ~$540, London ~$190. The Dublin card's 'Cheapest total of the top tier' claim is a direct artifact of the stale $750.",
+    "fix": "Set CITIES hotel values to the verified midpoints (dub:1360, par:1440, lon:1240, ams:880), delete or reword the Dublin 'cheapest total' verify line, and fix the section-05 header ('these values ARE in totals when incHotel is checked')."
+   },
+   {
+    "claim": "Seoul\u2192Singapore card: 'KE643 nonstop, 13:50 \u2192 19:15 \u00b7 6.4h'",
+    "verdict": "REFUTED",
+    "severity": "medium",
+    "detail": "The builder's own section-06 verified box says 'KE643 daily 14:45 \u2713' and verify-hotels VERIFY-2 (d) confirms dep ICN 14:45 \u2192 SIN 19:55, 6h10m, daily through Oct 24. The 13:50\u219219:15 figures come from the earlier supplement.json shared-flight lane and were superseded. Same card also shows hrs:6.4 vs actual 6h10m (6.2h).",
+    "fix": "Update SEGS icnsin.opts.ke643 sub to '14:45 \u2192 19:55 \u00b7 6.2h' and hrs to 6.2."
+   },
+   {
+    "claim": "US\u2192Seoul Delta card: 'SMF 07:53 \u2192 SEA (DL4075)'",
+    "verdict": "INCONSISTENT",
+    "severity": "low",
+    "detail": "Section-06 verified box and VERIFY-2 (c) say DL4075 07:35\u219209:44 with DL197 at 13:00 (3h16m connection); the card and supplement.json say 07:53\u219210:05 / DL197 13:05 (3h00). VERIFY-2 itself notes DL4075 has shifted between 06:30 and 07:53 across 2026, so this is re-time churn, but the builder currently shows both times in the same page.",
+    "fix": "Pick the latest verified times (07:35/13:00) on the card, add 'DL re-times regional feeds \u2014 reconfirm SMF departure at ticketing' to the note."
+   },
+   {
+    "claim": "Singapore\u2192Rome Emirates option: 'via Dubai \u00b7 16.5h \u00b7 huge schedule depth'",
+    "verdict": "REFUTED",
+    "severity": "medium",
+    "detail": "latedep-refund.json explicitly corrects the lane brief: Emirates has NO morning SIN departure (only 01:40 / 21:00 / 21:35); the sole cruise-compatible routing is EK349 dep 01:40 \u2192 FCO 13:25 same day (~17.75h elapsed, and the 01:40 dep kills the evening before), overnight banks arrive 13:25 NEXT day (cruise-miss on Oct 11), and one tracker shows EK355 possibly not loaded after Apr 2026. '16.5h' matches no real EK routing and 'huge schedule depth' is the opposite of the lane's finding ('bank structure hostile to this itinerary in both directions').",
+    "fix": "Either drop EK from sinfco or re-label: 'EK349 dep 01:40 \u2192 FCO 13:25 (~17.8h) \u2014 only workable EK bank; $2,208 baseline; no evening-before flexibility'."
+   },
+   {
+    "claim": "Qatar Qsuites SIN-FCO award fees: $90 (builder + supplement) vs $150 (verify lane) vs $350-450 (latedep lane)",
+    "verdict": "INCONSISTENT",
+    "severity": "medium",
+    "detail": "Three lanes quote three different cash components for the same 75k-Avios award: index.html '75k Avios + $90', supplement.json '~$60-100 taxes (no fuel surcharge)', verify-hotels.json 'price_usd 150 approximate taxes/fees ex-SIN', latedep-refund.json '70-85k Avios + ~$350-450 fees'. QR waives carrier surcharges on Avios and ex-SIN taxes are genuinely low, so the $350-450 latedep figure is the outlier (likely conflating cash-fare taxes or an error), but nobody reconciled it. Totals impact is small ($90 flows into compute()).",
+    "fix": "Annotate latedep's $350-450 as unreconciled/likely wrong; standardize on ~$90-150 pending a live quote; note the new QR paid-seat-selection fee on J awards (Nov 2025 change) as a possible extra."
+   },
+   {
+    "claim": "Builder's SIN\u2192Rome segment offers only Fri Oct 9 departures; latedep lane's recommended QR943 Sat Oct 10 option is absent",
+    "verdict": "INCONSISTENT",
+    "severity": "medium",
+    "detail": "latedep-refund.json establishes ground truth (AFTER 2049 closing party is Fri Oct 9; F1 Sprint Sat Oct 10) and names QR943 Sat Oct 10 \u2192 FCO 20:05 'the recommendation' \u2014 the safe latest departure honoring the party. The builder's sinfco segment is hard-dated Fri Oct 9 with Qsuites-on-points as REC; every option it offers forfeits the closing party, and none of the researched Oct 10/11 routings (QR943, QR947, TK55, SQ366 Sun 01:30) appear as choices, despite the section-06 box citing their verification.",
+    "fix": "Add at least QR943 Sat Oct 10 (Qsuites, same 75k Avios play, cruise_risk safe) as an option, or add a note on the Oct 9 options: 'departing Oct 9 misses the AFTER 2049 party \u2014 see Oct 10/11 alternatives'. State the design choice (extra cruise buffer) explicitly if Oct 9 is intentional."
+   },
+   {
+    "claim": "Split exit: hop 'spu' option and Amsterdam card promote 'KLM's NEW Sunday SPU\u2013AMS nonstop' without the not-in-GDS caveat",
+    "verdict": "INCONSISTENT",
+    "severity": "medium",
+    "detail": "VERIFY-2 (e) \u2014 echoed by the builder's own section-06 flag 2 \u2014 found the announced Sunday SPU-AMS rotation is NOT visible in GDS even though other carriers' Oct-25+ winter periods are loaded ('the single weakest link in this verification set'). Yet the hop.spu note says basing in Split 'enables' the flight and the AMS card's get label offers it as a routing, both without the warning or the SPU-ZAG-AMS fallback. A user picking Split+Amsterdam from the builder alone would lock the weakest link unknowingly.",
+    "fix": "Add '\u26a0 announced, not yet bookable in GDS \u2014 confirm on klm.com; fallback OU SPU-ZAG + KL ZAG-AMS' inline on the spu option and the ams get label."
+   },
+   {
+    "claim": "Dublin card: 'Ryanair DBV\u2013DUB nonstop \u2014 CONFIRMED year-round in W26/27' and 'EI61 ~5\u00d7/wk in winter'",
+    "verdict": "CONFIRMED",
+    "severity": "low",
+    "detail": "The Ryanair route IS confirmed on Ryanair's own API \u2014 but the card omits the operating pattern that matters: NO Monday flight (Oct 26 does not exist), the Sunday Oct 25 departure is FR3881 20:40\u219223:05 only (late-night arrival with three kids on marathon/bank-holiday weekend), winter is ~2-3x weekly (Sun/Tue/Wed/Fri). The plan's Sun-25 departure works, but any date shift breaks silently. Also internal inconsistency: the card's verify note says EI61 '~5\u00d7/wk in winter \u2014 confirm which of Oct 26\u201328 it flies' while section-06 says 'EI61 DUB\u2013SFO loaded daily' (VERIFY-2: loaded daily from Oct 25, historic risk of later trims).",
+    "fix": "Card get label \u2192 'Ryanair Sun Oct 25 FR3881 20:40\u219223:05 confirmed \u00b7 NO Monday flight \u00b7 winter 2-3x/wk'; reconcile EI61 to 'loaded daily (Aer Lingus has trimmed winter frequency in past years)'."
+   },
+   {
+    "claim": "Points meters: Min-cash preset = 510k of 512k MR; Max-fun preset = 500k at point estimates whose own labels quote ranges up to 100k/seat",
+    "verdict": "CONFIRMED",
+    "severity": "medium",
+    "detail": "Recomputed from the data: Min-cash = 85k(KE)+75k(QR)+70k\u00d74(EI fam)+70k(EI jar) = 510k \u2014 2k headroom, resting on the dead KE play (finding 1). Max-fun = 75k+85k\u00d75(AF) = 500k, but the AF label says '70\u2013100k FB': at the label's own upper bound the burn is 575k, 63k OVER the 512k budget, and the meter would only show it after the fact. The meters track point estimates, not the quoted ranges, so two of five presets ship with near-zero or negative real headroom.",
+    "fix": "After removing the KE pts play, re-derive presets; render the MR meter with a range or worst-case band (e.g. '500\u2013575k / 512k \u26a0') wherever a pts label carries a range; consider capping fam AF at the 85k estimate only with an explicit 'if 85k space exists' note."
+   },
+   {
+    "claim": "Condor note: '$449 all-in ... Family of 4 \u2248 $1,850 with bags'",
+    "verdict": "INCONSISTENT",
+    "severity": "low",
+    "detail": "4 \u00d7 $449 = $1,796, not $1,850. Trivial but it's the only place a per-party multiplication is written out and it doesn't match the per-head figure the engine uses.",
+    "fix": "Change to '\u2248 $1,796' or '~$1.8k'."
+   },
+   {
+    "claim": "Rome\u2192Croatia OU note: '~$70 premium over Ryanair evaporates once bag fees stack'",
+    "verdict": "INCONSISTENT",
+    "severity": "low",
+    "detail": "Shown fares are OU $125 vs Ryanair $80 all-in (already including ~$45 bags) \u2014 the all-in premium is $45/head, or $90 vs the $35 base fare. '$70' matches neither, and 'once bag fees stack' is double-counting since the $80 is stated as all-in.",
+    "fix": "Reword: '$45/head all-in premium buys full-service + included bags'."
+   },
+   {
+    "claim": "KE024 SFO-ICN duration and departure quoted three ways: 12.1h/~12:40 (builder), 11.9h (SMF lane), 13.1h (shared-flight lane)",
+    "verdict": "INCONSISTENT",
+    "severity": "low",
+    "detail": "supplement.json's two lanes disagree with each other (11.9 vs 13.1 hrs) and the builder splits the difference at 12.1; schedule sources put the block ~11.7-12.7h with dep 12:40-13:10. Also Jarred's KE Prestige cash: builder $3,900 vs shared-flight lane's $3,600 point estimate ($2,900-4,300 band) \u2014 within band but unexplained drift.",
+    "fix": "Standardize KE024 at ~12.7h block, dep '12:40\u201313:10 (varies)', and either use the lane's $3,600 estimate or label $3,900 as upper-band."
+   },
+   {
+    "claim": "SQ366 'Only nonstop on the route (~4\u00d7/week \u2014 Fri operates)'",
+    "verdict": "INCONSISTENT",
+    "severity": "low",
+    "detail": "VERIFY-2 (b) settled the pattern at 5x/week (Tue/Wed/Thu/Fri/Sun) through Oct 23, resolving the daily-vs-4x conflict latedep flagged. The card still says ~4x. Also note the winter pattern from Oct 25 is Wed/Fri/Sun 01:55 \u2014 irrelevant for Oct 9 but the 're-verify winter pattern' hint could cite it.",
+    "fix": "Change to '5\u00d7/wk (Tue\u2013Fri, Sun) through Oct 23'."
+   },
+   {
+    "claim": "Section-06 insurance line: 'CFAR window = 21 days from FIRST trip payment (cruise unpaid \u2192 clock hasn't started)'",
+    "verdict": "UNVERIFIABLE",
+    "severity": "low",
+    "detail": "The verified rule (verify-hotels insurance lane) is that the clock runs from the FIRST payment on the trip \u2014 any component, not just the cruise. If any flight/hotel for this trip has already been purchased, the window may already be running or closed; latedep's caveat explicitly warns 'may already have passed.' The builder asserts the clock hasn't started based only on the cruise being unpaid (holds are fee-free, which supports it, but no lane verified that zero other trip payments exist).",
+    "fix": "Reword: 'clock starts at the FIRST payment on any trip component \u2014 confirm nothing (flights/hotels) has been paid yet before assuming the CFAR window is open'."
+   },
+   {
+    "claim": "Scoot option listed under the 'Sun Oct 4' segment departs Oct 5 23:12 and arrives Oct 6",
+    "verdict": "CONFIRMED",
+    "severity": "low",
+    "detail": "Deliberate (the note sells the extra Korea day), but the matrix renders it in the 'Sun Oct 4' column with no date override, so the timeline overview shows the wrong travel date for that pick. Same class of issue: badge/footer disagree on agent count ('17 agents' vs enumerated 12-lane swarm + critic + 4-lane supplement + scout = 18).",
+    "fix": "Add a per-option date field the matrix respects (show 'Oct 5\u20136' for scoot), and fix the agent count in badge/footer to whichever enumeration is true."
+   }
+  ],
+  "summary": "Adversarial audit of the Trip Builder data vs its three verification lanes. The core math machinery holds up \u2014 per-party multiplication (fares x n), the /pp cell rendering, and the recommended preset's points burn (387.5k MR + 50k Sky vs 512k/200k) all check out, and most fares match their lane sources (UA28 $650, SQ $2,488, EK $2,208, DL Main $585, KE643 econ $350, lodging table rows). But the builder was not fully reconciled after the verification lanes ran, and two defects materially distort its outputs: (1) the KE 85k-Virgin points play \u2014 corroborated near-zero by the award-verification lane and disowned in the builder's own section 06 \u2014 is still a live option AND the default of the 'Min cash \u2014 max points' preset, which sits at 510k/512k MR with 2k headroom on top of a dead play; (2) the stopover totals ingest STALE hotel constants (Dublin $750 vs verified $1,360; Paris $900 vs $1,440; London $1,050 vs $1,240) while the verified figures sit in a table falsely labeled 'not yet in totals' \u2014 this alone manufactures Dublin's 'cheapest total of the top tier' claim. Medium defects: KE643 card still shows the superseded 13:50 departure vs its own verified 14:45; the EK SIN-FCO option ('16.5h, huge schedule depth') was refuted by the latedep lane (no morning SIN departure, only viable bank is a 01:40 dep, ~17.8h); Qsuite award fees are quoted three ways across files ($90 / $150 / $350-450 \u2014 latedep is the outlier); the latedep lane's recommended QR943 Oct 10 departure is absent from the builder, whose Oct 9-only options all forfeit the closing party the lane documented; the SPU-AMS Sunday flight is promoted on two cards without the not-in-GDS warning the builder itself carries in section 06; and the Max-fun preset's 500k MR estimate hides a label-acknowledged 575k worst case that busts the budget. Low-severity: DL4075 07:53-vs-07:35 drift, Condor $1,850-vs-$1,796 arithmetic, the '$70 premium' that is really $45, KE024 duration quoted three ways, SQ366 4x-vs-5x weekly, the Dublin card omitting no-Monday/20:40-only, EI61 'daily' vs '~5x/wk' in the same page, the CFAR clock assertion resting on an unverified no-prior-payment assumption, and the Scoot pick rendering under the wrong date. Concrete fixes provided per finding; the two high-severity items (kill the KE pts play + preset, swap in verified hotel constants) change user-facing totals and should land before anyone books from this page."
+ },
+ {
+  "findings": [
+   {
+    "claim": "CFAR insurance window is presented as safely open ('cruise unpaid \u2192 clock hasn't started') while the same page orders Singapore hotels and the FB promo booked NOW",
+    "verdict": "CONFIRMED",
+    "severity": "high",
+    "detail": "index.html section 06 flag 3 says 'CFAR window = 21 days from FIRST trip payment (cruise unpaid \u2192 clock hasn't started)'. But /tmp/fall-tour/verify-hotels.json insurance leg says CFAR is 'ONLY purchasable within 20-21 days of the FIRST trip payment \u2014 as of Aug 1, that means first payment on/after ~July 11, 2026, or the window is closed everywhere', and its caveat warns 'the clock started at the cruise deposit, not at booking of later components'. The page simultaneously urges 'Singapore hotels... book NOW' (section 05) and 'FB promo... book by Aug 31'. The first prepaid hotel night or award-tax payment starts the 21-day clock; nothing in the plan sequences the insurance purchase against it. Also unverified whether the two Royal Loft holds ever carried a deposit \u2014 if they did, CFAR may already be dead.",
+    "fix": "Add a hard sequencing rule to section 06: 'Whatever gets paid first (hotel, award taxes, cruise) starts the CFAR clock \u2014 buy the Travel Insured WTP policy within 21 days of that first payment, insuring full trip cost.' Confirm with the cruise keeper whether any deposit was ever taken on res 205404/234019 before relying on CFAR."
+   },
+   {
+    "claim": "Cruise final-payment deadline is unmodeled: both held sailings are already inside the standard 90-day full-payment window",
+    "verdict": "CONFIRMED",
+    "severity": "high",
+    "detail": "Oct 11 sailing minus 90 days = Jul 13, 2026; Oct 18 sailing = Jul 20 \u2014 both past as of Aug 1. Royal Caribbean requires full payment at booking inside final payment, so converting either Royal Loft hold means the entire $31,935 is due immediately, not a deposit. index.html flag 5 ('Pick the sailing \u2014 both holds stay alive via the keeper') carries no payment deadline, and research.json's critic explicitly flags 'Cruise itself is unverified: no lane confirms the cruise line, embarkation time/port Oct 11' \u2014 all the SIN\u2192FCO buffer math in latedep-refund.json hangs on an ASSUMED ~15:00 Oct 11 check-in close that was never confirmed.",
+    "fix": "Get from the keeper: (a) how long the holds legally survive past final-payment date, (b) exact embarkation port/time for Oct 11, (c) full-payment-at-conversion requirement. Put the pick-the-sailing decision date and the $31,935-due-at-booking fact on the section 06 card. This payment also interacts with the CFAR 21-day clock above."
+   },
+   {
+    "claim": "Croatia exit-point mismatch: the recommended week ends in SPLIT on Oct 25, but every stopover 'getting there' routing departs DUBROVNIK",
+    "verdict": "CONFIRMED",
+    "severity": "high",
+    "detail": "The REC hop option (index.html hop.ou note) and verify-hotels HOTELS C both specify Dubrovnik 3n (Oct 18-21) then Split 4n (Oct 21-25) \u2014 the party wakes up in Split on departure day. Yet Dublin's route is 'Ryanair DBV\u2013DUB' (FR3881 departs DBV 20:40 Sun Oct 25), London is 'BA Gatwick/Ryanair Stansted' ex-DBV, Amsterdam's primary is 'DBV\u2013ZAG\u2013AMS', and fun-stopovers.json prices all candidates ex-DBV ('DBV primary, SPU fallback'). A Split-based party needs a ~3.5-4.5h drive BACK to Dubrovnik on Oct 25 (unpriced, unmentioned) or the base order reversed (Split first, Dubrovnik Oct 21-25) \u2014 which then breaks the hop.ou 'Dubrovnik FIRST (its season closes fastest)' rationale. Only Amsterdam has a Split-native exit (KLM SPU-AMS), and that is the plan's flagged weakest link (announced, NOT in GDS).",
+    "fix": "Either flip the Croatia base order to Split-first/Dubrovnik-last for any DBV-departing stopover (accepting the season-closure tradeoff), or price the Split\u2192DBV Oct 25 transfer (~EUR300-400 private van, 4h with a 20:40 flight = tight after a checkout day) into every DBV-routed city card, or gate the Dublin/London picks on an all-Dubrovnik week."
+   },
+   {
+    "claim": "Conference passes (Token2049 x4-5, KBW x4, After2049 party) are absent from the builder, the budget, and the section 06 checklist",
+    "verdict": "CONFIRMED",
+    "severity": "high",
+    "detail": "research.json critic: 'Conference passes not researched: KBW and Token2049 ticket cost/availability (Token2049 tickets historically sell out and tier up) \u2014 a real budget line for 4-5 attendees.' Never fixed: index.html has hotel rows and entry-form notes but no pass line anywhere; latedep-refund.json even notes After2049 ticketing (Megatix) hasn't opened and must be watched. verify-hotels confirms 2026 Singapore ticket prices +15% avg with sellouts \u2014 the passes are both a multi-thousand-dollar budget hole and an availability-critical dependency on the same clock as the hotels.",
+    "fix": "Add a section 06 flag: buy KBW passes (koreablockchainweek.com, also unlocks the preferential hotel-rate links) and Token2049 passes for all attendees NOW; set a watch for After2049/Megatix ticket opening. Add an estimated passes line (~$3-8k for 4-5 heads) to the cost model."
+   },
+   {
+    "claim": "QR943 arrival-day contradiction between lanes: Rome arrival Sat Oct 10 20:05 (latedep) vs a DOH-FCO connection on Sun Oct 11 (verify) \u2014 Jarred's Oct 10 Rome hotel night hangs on it",
+    "verdict": "INCONSISTENT",
+    "severity": "medium",
+    "detail": "latedep-refund.json: 'SAFEST LATE OPTION: QR943 dep 10:30 Sat Oct 10 \u2192 FCO 20:05 Oct 10 (via DOH) + hotel night'. verify-hotels VERIFY 2 option (a) is titled 'QR943 SIN-DOH Sat Oct 10 + DOH-FCO Sun Oct 11' and says the connections are 'QR115 (overnight, connects off QR943's 13:05 arrival)' and 'QR113 (afternoon Oct 11)' \u2014 i.e., FCO arrival on Oct 11, and QR113's afternoon arrival falls in latedep's own DO-NOT-BOOK band (FCO after ~12:30 Oct 11). If no same-evening DOH-FCO exists, the 'safe' Saturday plan actually lands hours before boarding, and the Rome room booked per HOTELS C ('+1 joining Oct 10 night') is orphaned. index.html's verified card blurs this: 'QR943 Sat Oct 10 + Doha\u2013Rome RESTORED (QR115/QR113 daily)' with no arrival day shown.",
+    "fix": "Live-check on qatarairways.com which DOH-FCO departure actually connects from QR943's 13:05 Sat arrival and print the FULL SIN\u2192FCO arrival timestamp on the card. If the real arrival is Sun Oct 11, drop the Oct 10 Rome-night plan for Jarred and re-rank TK55/QR947/Etihad (all verified Sat-overnight \u2192 Sun ~06:30-09:15 arrivals)."
+   },
+   {
+    "claim": "OU385 FCO-DBV Sunday Oct 18 operation was never verified despite a known Fri/Sat-vs-Sat/Sun operating-day conflict, yet it is the REC post-cruise hop for all 5 pax",
+    "verdict": "UNVERIFIABLE",
+    "severity": "medium",
+    "detail": "research.json (Rome\u2192Croatia lane) caveat: 'Verify OU385's exact Sunday operation and timing for Oct 18 \u2014 sources conflict between Fri/Sat and Sat/Sun patterns', and the critic lists it among open 'single-point-of-failure' conflicts. The VERIFY 2 pass (verify-hotels.json) covered items (a)-(g) \u2014 QR, SQ366, DL4075, KE643, KLM SPU, Ryanair DBV-DUB, EI61 \u2014 and did NOT include OU385. index.html still badges the OU Dubrovnik option 'REC' with no schedule caveat in the card; Croatia Airlines runs FCO-DBV only ~2x weekly, so a wrong day-of-week strands the family on disembark day (Ryanair FR5975 21:45 is the only same-day fallback, landing kids at 23:05).",
+    "fix": "Verify OU385 on croatiaairlines.com for Sun Oct 18 before booking anything downstream; add the operating-day caveat plus the FR5975 fallback to the hop.ou card. Alternative: the verified near-daily OU381 FCO-SPU 18:00 (Split-first base) sidesteps the risk entirely \u2014 and would also fix the exit-point mismatch above."
+   },
+   {
+    "claim": "Korea e-Arrival Card and Singapore SGAC filing windows are missing from the builder's checklist, and the research's own action item is dated OUTSIDE the valid window",
+    "verdict": "CONFIRMED",
+    "severity": "medium",
+    "detail": "research.json entry lane: e-Arrival Card mandatory for all 4, submittable no earlier than 72h before arrival (card auto-cancels); SGAC mandatory within 3 days including arrival day. index.html section 06 lists medication permits but neither form. Worse, research.json planner_flags says 'Korea e-Arrival Card (72h window, file ~Sept 24-25)' \u2014 arrival is Mon Sep 28 ~16:50 KST, so the window opens Sep 25 16:50 KST; filing Sep 24 (or early Sep 25 US time... which is Sep 25/26 KST \u2014 borderline) risks an auto-cancelled card at immigration. SGAC window (Oct 2-4 for an Oct 4 arrival) also silently shifts to Oct 4-6 if the Scoot Oct 5/6 option is picked \u2014 the forms are itinerary-dependent and the builder doesn't model that.",
+    "fix": "Add both forms to section 06 with computed dates: e-Arrival Card for 4 travelers Sep 25 (after ~17:00 KST)\u2013Sep 28 at e-arrivalcard.go.kr; SGAC for 4 at ICA/MyICA Oct 2-4 (Oct 4-6 if Scoot). Note K-ETA is waived through Dec 31, 2026 so these two forms are the only Asia entry actions. Calendar/automate them now."
+   },
+   {
+    "claim": "The cost engine uses stale stopover-hotel figures that contradict the page's own verified section 05 (Dublin $750 vs $1,360, Paris $900 vs $1,440, London $1,050 vs $1,240)",
+    "verdict": "INCONSISTENT",
+    "severity": "medium",
+    "detail": "index.html CITIES data (used by compute() when 'include stopover hotel' is checked): ams 850, dub 750, lon 1050, par 900 \u2014 the pre-verification fun-stopovers.json estimates. The verify-hotels swarm (rendered in section 05 of the SAME page) found Amsterdam ~$880, London ~$1,240, Dublin ~$1,360 (with the Stoker Fest + Marathon Sun Oct 25 + bank-holiday surge red flag), Paris ~$1,440. A user picking Dublin sees a total understated by ~$610 and a city card ('hotel $750') that omits the surge warning living three screens up.",
+    "fix": "Update CITIES[].hotel to the verified figures and surface the Dublin surge flag in its city card; Dublin's 'lowest total cost of the top tier' tag from the scout no longer holds after hotel verification."
+   },
+   {
+    "claim": "Family composition error propagated through the research swarm: Atticus (8) is absent from every flight-lane party definition ('2 adults + kids 13/16'), and no minor-documentation dependency is modeled anywhere",
+    "verdict": "CONFIRMED",
+    "severity": "medium",
+    "detail": "research.json famout leg: 'ECONOMY x4 (2 adults + kids 13/16)'; croatia-home: 'x5 (2 adults + kids 13/16 + Jarred)'; supplement.json Amsterdam-exit: 'family party of 5 (Jarred + Ashley + kids 13/16)' \u2014 four names for a party of five. The real party (per index.html PARTIES and the insurance leg, ages 39/39/16/13/8) is Ashley + Ezra 16 + Silas 13 + Atticus 8: ONE adult + THREE minors on the Oct 8 SFO-FCO flight. Only fun-stopovers and insurance modeled the 8-year-old. Consequences never surfaced: (a) cruise check-in docs and passport validity for 3 minors \u2014 kids' passports are 5-year issue and Royal Caribbean recommends 6+ months validity beyond the voyage; nothing checks them; (b) Ashley flying internationally alone with 3 minors \u2014 Italy/Croatia commonly expect a notarized second-parent consent letter; (c) Ryanair requires an adult with a purchased reserved seat accompanying each under-12; (d) award math phrased around '2 adults' room/seat splits.",
+    "fix": "Re-anchor all party definitions to 1 adult + kids 16/13/8 (+Jarred where applicable). Add to section 06: verify all 3 kids' passports \u22656 months validity past Oct 28 with 2 blank pages; prepare a notarized minor-travel consent letter for Ashley's Oct 8 flight; confirm cruise minor policy/docs for Atticus on the held reservations."
+   },
+   {
+    "claim": "SQ366 option card still promises a 'full cruise buffer day' while the page's own verification restricts late departures to Sun Oct 11 01:30 arriving 08:05 on boarding day; the verified Oct 10/11 late-departure menu is not selectable in the builder",
+    "verdict": "STALE",
+    "severity": "medium",
+    "detail": "index.html sinfco segment is hard-dated 'Fri Oct 9'; the SQ366 card says 'dep 01:30 \u2192 FCO 08:05 same morning \u00b7 full cruise buffer day'. Section 06's verified line says 'SQ366 operates Sun Oct 11 01:30 (NOT Sat)' \u2014 per verify-hotels the pattern is Tue-Fri+Sun. A Fri Oct 9 01:30 departure (the only one matching the card's buffer claim) requires leaving MBS ~22:30 Thu Oct 8 \u2014 sacrificing Token2049 evening, After2049 (Fri Oct 9 per latedep ground truth) and the F1 Sprint. Anyone staying for those gets only the Sun 01:30 flight with ZERO buffer, arriving ~7h before an ASSUMED 15:00 check-in close. The whole latedep-refund.json menu (QR943 Sat, TK55 23:05 Sat, QR947 20:15 Sat, Etihad ~20:30 Sat) plus its $25-Avios hedge recommendation exists in the JSON but is not selectable or shown in the builder.",
+    "fix": "Split sinfco into dated variants (Fri Oct 9 'miss the party, full buffer' vs Sat Oct 10 overnight bank 'party + thin buffer' vs Sun 01:30 'everything + zero buffer'), correct the SQ366 card's buffer language, and add latedep's standout hedge: hold a QR Avios Qsuite ($25 walk-away) alongside whatever cash fare is chosen."
+   },
+   {
+    "claim": "DL4075 SMF-SEA \u2192 DL197 3h16m connection is legal and sound (no defect), but the page shows two conflicting schedules for the same flight",
+    "verdict": "REFUTED",
+    "severity": "low",
+    "detail": "The mission asked whether the 3h16m SEA connection is OK: yes \u2014 single Delta ticket, domestic-to-international at SEA, verified both flights loaded Sun Sep 27 (VERIFY 2c: DL4075 07:35-09:44, DL197 13:00). No misconnect defect. However index.html shows 'SMF 07:53' in the segment card and '07:35\u219213:00 (3h16m)' in the verified card on the same page (supplement.json had 07:53\u219210:05/13:05, 3h00). Verify's own caveat: DL4075 'has shifted between 06:30 and 07:53 departures across 2026' \u2014 recheck at ticketing. Same staleness class: KE643 card says '13:50 \u2192 19:15' vs verified '14:45-19:55'; KE024 '~12:40 dep' (index) vs '~11:40' (research). Dateline arithmetic elsewhere checks out: UA28 20:35 Oct 10 \u2192 SFO 21:20 'same day' correct; SQ28 09:00 \u2192 SEA 08:45 same day correct; ITA Oct 8 \u2192 Oct 9 midday (+1) correct; all Oct 11 boarding arrivals feasible.",
+    "fix": "Reconcile each card's times to the VERIFY 2 figures and add 'times drift \u2014 recheck at ticketing' where verify flagged instability (DL4075, KE643)."
+   },
+   {
+    "claim": "Ryanair FR3881 DBV-DUB Sun Oct 25 20:40\u219223:05 is schedule-valid (DST handled) but operationally grim and under-costed for this party, and the Dublin 'fun' pitch oversells a festival that ends the next day",
+    "verdict": "CONFIRMED",
+    "severity": "low",
+    "detail": "Times check out: Oct 25 is the EU/UK clock change (falls back 01:00 UTC, hours before departure), so 20:40 CET \u2192 23:05 GMT = a 3h25m block, consistent with Ryanair's own winter-loaded API (the one primary-source-confirmed item). Feasibility: land 23:05 with 5 pax including an 8-year-old plus a cruise-trip's checked luggage \u2014 bags ~23:35+, taxi ~00:15, hotel ~00:30-01:00 Mon, on Dublin Marathon/bank-holiday surge night. The city card's pp $90 excludes Ryanair checked bags (~$35-60/bag x5+, per the JSON caveat 'Ryanair = pay for bags/seats') and any seat fees (an under-12 requires an adjacent paid adult seat). The card sells 'Bram Stoker Festival that exact weekend' \u2014 it runs Oct 23-26; they land 23:05 on the 25th and catch at most the final day. No Monday FR flight exists (verified), so a missed Sunday flight means Tue Oct 27 at the earliest.",
+    "fix": "Add ~$250-350 bags/seats to the Dublin routing estimate, note the ~00:45 hotel arrival with kids and the single-day festival overlap on the card, and pre-book a 6-seat transfer for the 23:05 arrival if Dublin is picked."
+   },
+   {
+    "claim": "The builder hard-codes the Oct 11 sailing's structure while presenting 'pick the sailing' (Oct 11 vs Oct 18 holds) as an open decision",
+    "verdict": "CONFIRMED",
+    "severity": "low",
+    "detail": "Section 06 flag 5 keeps both Royal Loft holds alive (Oct 11 res 205404 / Oct 18 res 234019), but every segment date, the family's Oct 8 departure, the hop on Oct 18, the Croatia week, and the Oct 25 exit all assume the Oct 11 sailing. research.json contains a fully-researched Croatia-FIRST Oct 18 variant, and its critic flags this exact structural fork as 'UNRESOLVED... it changes every leg after Oct 8' \u2014 none of that variant is reachable from the builder, so a user comparing the two holds has no tooling for one of them.",
+    "fix": "Either add a banner ('Builder models the Oct 11 sailing only \u2014 picking Oct 18 invalidates all dates below; see research.html for the variant') or a top-level sailing toggle. At minimum, put a decide-by date on the sailing choice since it gates every time-critical booking (Singapore hotels, FB promo, insurance)."
+   },
+   {
+    "claim": "Option-dependent lodging effects are unmodeled: the Scoot pick silently shifts hotel nights and compliance windows; Jarred's Singapore suite is over-counted after his Oct 9 departure",
+    "verdict": "CONFIRMED",
+    "severity": "low",
+    "detail": "Choosing Scoot TR897 (dep 23:12 Oct 5, arr Oct 6) requires an extra Seoul night Oct 4-5 and vacates SIN nights Oct 4+5 (two, not the 'one' the card claims), while the static hotel table stays 'Seoul Sep 28-Oct 4' / 'Singapore Oct 4-10'; it also moves the SGAC filing window to Oct 4-6. Separately, 'Singapore Oct 4-10 \u00b7 6n \u00b7 4 pax' bills Jarred's suite-grade room through Oct 9 even though on the REC Fri Oct 9 Qsuite pick he leaves that morning (conservative over-budget, ~1 suite night).",
+    "fix": "Make section 05 note that hotel rows assume the REC flight picks, and add per-option lodging deltas to the Scoot card ('+1 Seoul night, \u22122 SIN nights, SGAC shifts to Oct 4-6')."
+   }
+  ],
+  "summary": "Adversarial audit of /tmp/fall-tour/site/index.html against the five JSON research files found 4 high-severity defects, 6 medium, 4 low. Timeline arithmetic is largely sound (dateline math on UA28/SQ28/ITA correct; DL4075 3h16m SEA connection legal; FR3881 DBV-DUB times valid across the Oct 25 DST change) \u2014 the real damage is in unmodeled dependencies and cross-lane contradictions. HIGH: (1) the CFAR 21-day clock starts at the FIRST trip payment, yet the page urges booking Singapore hotels and the FB promo NOW while claiming the clock 'hasn't started'; (2) both held sailings are already past the standard 90-day final-payment date (~Jul 13/Jul 20), meaning full $31,935 due at conversion \u2014 never surfaced, and embarkation time is still unverified though all buffer math assumes 15:00 Oct 11; (3) the recommended Croatia week ends in Split Oct 25 but every stopover routing (Dublin/London especially) departs Dubrovnik \u2014 a 4-hour unmodeled backtrack; (4) Token2049/KBW/After2049 passes for 4-5 attendees are absent from budget and checklist despite documented sellouts. MEDIUM: QR943's Rome arrival day contradicts between lanes (Sat 20:05 vs Sun via QR115/QR113 \u2014 Jarred's Oct 10 Rome night hangs on it); OU385's Sunday Oct 18 operation was never verified yet is the REC post-cruise hop; Korea e-Arrival/SGAC windows are missing from the checklist and the research's own filing date (Sep 24-25) falls outside the 72h validity window for the Sep 28 arrival; the cost engine uses stale stopover-hotel figures contradicting the page's own verified section 05 (Dublin understated ~$610); Atticus (8) is missing from every flight-lane party definition with no minor-docs (passports/consent letter) modeled; the SQ366 card's 'full cruise buffer day' claim is stale against the verified Sun-Oct-11-only late pattern. LOW: stale departure times (DL4075/KE643/KE024), Ryanair Dublin under-costing + midnight-arrival feasibility with the Stoker Fest mostly over, the builder hard-coding the Oct 11 sailing while calling the sailing choice open, and unmodeled lodging side-effects of the Scoot option."
+ },
+ {
+  "leg": "Program research + verdict matrix for fall 2026 multi-leg trip: SMF/SFO-ICN (Delta-marketed transpacific), SIN-SFO (UA28 team return), SIN-FCO (cruise-critical positioning), SFO-FCO (ITA family), AMS-SFO (return)",
+  "options": [
+   {
+    "label": "Expedia Price Drop Protection \u2014 current state (Aug 2026)",
+    "detail": "Still exists and is actively sold as a paid per-ticket add-on toggle at flight checkout (expedia.com/why/price-drop-protection). Fee varies by itinerary; documented real-world example $55/ticket, cheaper on short domestic. Mechanism: Expedia tracks ITS OWN price for the IDENTICAL itinerary and fare class until departure; if it drops, the difference is supposed to be auto-refunded AFTER trip completion. A free version exists for One Key Gold/Platinum on 'select flights' booked in the app, paying the drop in OneKeyCash (not cash). Post-July-28-2026 One Key overhaul: the HOTEL Price Guarantee was killed, flight OneKeyCash earning (0.2%) was killed, and tier earn rates changed (Blue 1%, Platinum 3%) \u2014 the paid flight PDP survives, but the free Gold/Platinum PDP perk should be re-verified at booking time since Expedia is actively pruning One Key benefits. NBC LA investigation (2025) found refunds are NOT reliably automatic: a customer whose same-cabin fare fell ~$1,500 got nothing because the comparison is Expedia's tracked price for the exact fare brand, not any lower price you can see.",
+    "price_usd": 55,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "https://www.expedia.com/why/price-drop-protection ; https://www.nbclosangeles.com/investigations/expedias-price-drop-protection-may-not-be-what-it-seems/3424878/ ; https://upgradedpoints.com/news/one-key-rewards-changes-2026/ ; https://awardwallet.com/news/hotels/one-key-expedia-changes-2026/",
+    "notes": "Your prior ~$1,500 win is real but survivorship-biased: payout requires the exact fare brand to drop on Expedia itself, and the refund lands only after the trip. Treat as a lottery ticket, not insurance."
+   },
+   {
+    "label": "Irregular ops on Expedia-issued tickets \u2014 who reissues",
+    "detail": "The ticket belongs to the issuing agency (Expedia's IATA plate). Delta's published travel-agency policy is explicit: for schedule changes, the AGENCY is responsible for revalidating/reissuing and confirming customer acceptance \u2014 airline phone agents will bounce voluntary changes and most schedule-change reissues back to Expedia. Day-of-travel IRROPS is the partial exception: Delta/United airport and IRROPS desks will generally rebook you onto their OWN metal on an OTA ticket, but anything requiring a reissue across carriers (exactly what a SIN-FCO misconnect needs) means Expedia's call center is in the loop while the clock runs. Singapore Airlines and Qatar Airways both formally route changes/refunds on agency-issued tickets back to the agent. 2025-2026 real-world reports consistently describe the 'airline says call Expedia, Expedia says airline controls it' loop during disruptions.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "https://pro.delta.com/content/agency/us/en/policy-library/schedule-change-and-irregular-operations/irregular-operations-rebooking-policy-for-travel-agency-partners.html ; https://www.migrationvisportal.com/2025/11/booking-expedia-vs-direct-hidden-dangers.html",
+    "notes": "This is the core trade: the price-protection upside is capped at a few hundred dollars EV; the servicing downside on a misconnected intercontinental itinerary is uncapped."
+   },
+   {
+    "label": "Miles / MQD / Diamond earning on Expedia-booked Delta tickets",
+    "detail": "Published fares booked via Expedia earn full SkyMiles and MQDs \u2014 Delta credits on price paid for Delta-marketed tickets regardless of channel, and Delta's current rules even count bulk/consolidator/undisclosed fares toward MQD (opaque Priceline/Hotwire excluded). Diamond benefits apply normally (marketed/operated rules unchanged by channel). The traps: (1) any Basic fare \u2014 now 'Delta Main Basic' after the Oct 1, 2025 rebrand \u2014 earns ZERO miles and ZERO MQD wherever bought, and OTA fare-brand mapping can present it less clearly than delta.com does; verify the fare brand and fare basis before paying; (2) 'Expedia Bargain Fare' style opaque products earn nothing; (3) complimentary Medallion upgrades and same-day changes work on OTA tickets but any ticket-touching service goes through Expedia.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "https://www.delta.com/us/en/skymiles/medallion-program/how-to-qualify ; https://thriftytraveler.com/news/airlines/delta-basic-economy-skymiles/ ; https://www.flyertalk.com/forum/delta-air-lines-skymiles/1984627-delta-mqm-mqd-otas-like-expedia.html ; https://www.travelmarketreport.com/air/articles/delta-air-lines-is-dropping-its-basic-economy-label",
+    "notes": "Earning is NOT the reason to avoid Expedia; servicing is. Screenshot the fare brand at purchase either way."
+   },
+   {
+    "label": "Google Flights Price Guarantee \u2014 current state and applicability to these legs",
+    "detail": "Active as a US pilot as of latest coverage (Jan 2026 guides). Book on Google itself is dead (US wind-down completed 2023); the guarantee now attaches to badge-marked fares you book on the airline's own site after clicking through Google Flights. Terms: US country/USD setting, flights DEPARTING the US only, one-way/round-trip only (no multi-city), drop must exceed $5, cap $500 per Google account per calendar year, max 3 active guaranteed bookings, payout via Google Pay after first departure. Practical reach: the badge appears almost exclusively on Spirit, Alaska, and Hawaiian, on cheap near-term fares. Leg screen: SMF/SFO-ICN and SFO-FCO depart the US so are theoretically in-scope but will almost certainly never show the badge on Delta/Korean/ITA metal; SIN-SFO (UA28) and AMS-SFO depart foreign points \u2014 categorically ineligible.",
+    "price_usd": 0,
+    "price_confidence": "quoted-live",
+    "status": "likely",
+    "source": "https://support.google.com/travel/answer/9430556 ; https://thriftytraveler.com/guides/google-flights/price-guarantee/ ; https://www.going.com/guides/google-flights-price-guarantee ; https://www.phocuswire.com/google-phases-out-book-on-google-for-flights",
+    "notes": "Effectively zero expected value for this trip: right carriers never badge, half the legs are foreign departures, and the $500/yr cap is small against these fares. Free when it appears, so take it opportunistically on domestic positioning hops only."
+   },
+   {
+    "label": "VERDICT \u2014 Delta-marketed transpacific SMF/SFO-ICN",
+    "detail": "Book DIRECT with Delta. As a Diamond, the $1,500-style win is replicable WITHOUT the OTA: Delta allows free voluntary changes on non-Basic fares, so you rebook the same flight when the fare drops and bank the difference as eCredit \u2014 same economics as Price Drop Protection, no fee, no fare-brand-matching fine print, and you keep Delta's own servicing (Diamond line, waiver authority, cross-metal reissue) for a long transpacific itinerary where IRROPS is likely. Expedia PDP here buys a maybe-refund-after-trip for $30-55/ticket while degrading recovery on the leg where recovery matters most.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "Delta change policy (delta.com, non-Basic fares: no change fee, residual to eCredit) + Delta agency reissue policy (pro.delta.com)",
+    "notes": "OTA protection NOT worth it. Direct + self-repricing dominates on every axis except that the refund arrives as eCredit rather than cash."
+   },
+   {
+    "label": "VERDICT \u2014 Partner international cash fare (Korean/SQ/QR-marketed)",
+    "detail": "Book DIRECT with the marketing carrier. Expedia PDP nominally covers these, but partner tickets are where OTA servicing is weakest (SQ and QR formally push agency tickets back to the agent for any change/refund), fare-class-based partner earning to SkyMiles makes fare-brand mapping errors costlier, and Delta MQD earn on partner-marketed tickets is distance-times-fare-class (not dollars), so a mislabeled deep-discount bucket quietly guts status earn. Price-drop upside doesn't compensate.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "Singapore Airlines / Qatar Airways agency-ticket servicing policies; Delta partner-earning charts (delta.com)",
+    "notes": "OTA protection NOT worth it."
+   },
+   {
+    "label": "VERDICT \u2014 Cruise-critical SIN-FCO positioning leg",
+    "detail": "NEVER OTA. Hard no. This is the leg where a missed connection cascades into a missed ship: you need the operating carrier to own the ticket outright so airport/IRROPS desks can reissue across partners on the spot without an Expedia call-center intermediary. Google guarantee is categorically unavailable (foreign departure). Expedia PDP's capped, after-trip, maybe-refund is worth strictly less than same-day reissue authority. Book direct with SQ or QR, pad the arrival by 24-48h, and consider the cruise line's air program only if it carries a guaranteed-arrival clause.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "Airline agency-ticket reissue policies (pro.delta.com pattern applies industry-wide); OTA-risk coverage Nov 2025 (migrationvisportal.com)",
+    "notes": "Highest-stakes leg = lowest OTA tolerance. No price protection product changes this verdict."
+   },
+   {
+    "label": "VERDICT \u2014 Simple team return UA28 SIN-SFO",
+    "detail": "Marginal-tolerance leg, but still book direct with United. A single nonstop on the operating carrier's own metal is the LEAST risky place to hold an OTA ticket (day-of IRROPS on UA metal, UA airport agents will generally rebook), so if a large Expedia fare gap ever appeared here it's the one leg where taking it is defensible. But Google's guarantee is ineligible (departs Singapore), United fares are usually channel-identical, and United's own free-change repricing to Future Flight Credit replicates the price-drop win directly. Note United still credits redeemable miles on Basic Economy (unlike Delta/AA post-Dec-2025), but transpacific Basic carries seat/bag restrictions a team shouldn't accept anyway.",
+    "price_usd": 30,
+    "price_confidence": "historical-typical",
+    "status": "likely",
+    "source": "https://thriftytraveler.com/guides/google-flights/price-guarantee/ (US-departure rule) ; https://www.aol.com/articles/american-airlines-strips-loyalty-benefits-153000311.html (UA basic-economy earning contrast)",
+    "notes": "OTA tolerable in principle, still not preferred. $30-55/ticket PDP fee across a whole team likely exceeds expected payout."
+   },
+   {
+    "label": "VERDICT \u2014 Family SFO-FCO on ITA Airways",
+    "detail": "Book DIRECT with ITA (or via a Delta codeshare if fares are close, to consolidate servicing under Delta). This US-departure leg is the only one theoretically inside Google's guarantee geography, but the badge realistically never appears on ITA. ITA's customer service is already the weak link; stacking Expedia in front of it for a family of travelers during a schedule change is the worst-case servicing sandwich \u2014 2025-2026 reports of the airline/OTA responsibility loop are most acute on exactly this kind of foreign-carrier OTA ticket. For a family, seat assignments together and clean schedule-change handling outweigh any capped price-drop refund.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "https://support.google.com/travel/answer/9430556 (US-departure eligibility) ; https://www.migrationvisportal.com/2025/11/booking-expedia-vs-direct-hidden-dangers.html",
+    "notes": "OTA protection NOT worth it."
+   },
+   {
+    "label": "VERDICT \u2014 Where the $1,500-style win IS repeatable safely",
+    "detail": "(1) Delta-marketed fares: book direct, monitor the fare, rebook on drops for eCredit \u2014 unlimited, free, no fine print; this is the structural replacement for the Expedia win. (2) United/most US carriers: same free-change repricing mechanic on non-Basic fares. (3) Google Price Guarantee: free money when the badge appears, but only on US-departure Spirit/Alaska/Hawaiian-class fares \u2014 use for domestic positioning (e.g., SMF-SFO/LAX hops), irrelevant to the international spine. (4) Expedia PDP: only rationally purchasable on a cheap, simple, DOMESTIC, non-critical, single-carrier round-trip where you would genuinely accept Expedia servicing \u2014 i.e., none of this trip's five legs. The prior $1,500 outcome came from a volatile fare that happened to re-drop in the exact tracked fare brand; the honest read is that direct-booking repricing would have captured most of the same value with none of the exposure.",
+    "price_usd": 1500,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "Synthesis of all sources above",
+    "notes": "$1,500 figure is the prior realized win being evaluated, not a projected payout."
+   }
+  ],
+  "summary": "Both programs still exist in Aug 2026 but neither justifies routing this trip through an OTA. Expedia Price Drop Protection survives as a paid add-on (roughly $3-$55/ticket; free-in-OneKeyCash for Gold/Platinum on select app bookings, though the July 28, 2026 One Key overhaul killed the Hotel Price Guarantee and flight earning, so re-verify that perk at booking). Its refund only triggers if Expedia's OWN tracked price for the identical fare brand drops, pays after trip completion, and an NBC LA investigation documented a ~$1,500 drop that paid nothing. Google's Price Guarantee is active but nearly useless here: US departures only (SIN-SFO and AMS-SFO categorically out), badge appears almost solely on Spirit/Alaska/Hawaiian (so SFO-ICN and SFO-FCO won't badge), $500/yr cap. Meanwhile the servicing trade is real and documented: Expedia-issued tickets must be reissued by Expedia per Delta's own agency policy, with airlines only reliably self-rebooking on their own metal day-of. Miles/MQD/Diamond earning is NOT a reason to avoid Expedia \u2014 published fares earn fully, and even bulk fares now count for MQD \u2014 but Delta Main Basic (ex-Basic Economy) earns zero everywhere and OTA fare-brand mapping can obscure it. Verdict: book all five legs direct (Delta transpac, marketing carrier for partner fares, SQ/QR direct for the cruise-critical SIN-FCO with padding, UA direct for UA28, ITA or DL codeshare for the family SFO-FCO). The $1,500-style win is repeatable safely via the airlines' own free-change repricing (rebook on drop, bank eCredit/FFC) \u2014 same economics as PDP with zero fee and zero servicing downgrade \u2014 plus opportunistic Google badges on cheap domestic positioning hops only.",
+  "caveats": "Expedia's PDP fee is dynamic per itinerary and only visible at checkout ($55/ticket is one documented case; short domestic can be a few dollars); the official terms page returned HTTP 429 during research, so the fee schedule and the post-July-2026 survival of the free Gold/Platinum PDP perk were confirmed via secondary coverage and should be re-checked live at booking. Google's guarantee is a pilot Google can end without notice; its airline coverage claim (Spirit/Alaska/Hawaiian) reflects Jan 2025-Jan 2026 coverage. Delta MQD treatment of bulk/undisclosed fares reflects current published rules and FlyerTalk-confirmed practice, but individual consolidator fare codes can still earn at reduced partner rates \u2014 verify the fare basis before buying any OTA fare. Several search results were SEO-spam pages pushing fake 'Expedia support' phone numbers; only expedia.com and airline-official contacts were treated as authoritative. Airline-specific OTA-assist behavior for SQ/QR was confirmed at policy level (agency tickets go back to the agent) but not via 2026 first-person incident reports. Price figures in this matrix are program fees/historical values, not live quotes for the legs."
+ }
+]
