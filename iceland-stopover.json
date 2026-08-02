@@ -1,0 +1,183 @@
+[
+ {
+  "leg": "Lane 3 \u2014 Sacramento (SMF) award endings vs SFO + 90-min drive, arrival window Oct 26 \u2013 Nov 2, 2026, party of 5",
+  "options": [
+   {
+    "label": "Flying Blue PROMO PE \u2014 SMF variant: DOES NOT EXIST at 30k",
+    "detail": "CONFIRMED: Promo Rewards are city-specific \u2014 the promo names exact cities each month. The August 2026 booking-window list (travel through Jan 31, 2027, so it covers this trip) is: KLM Premium Economy 30,000 mi one-way to Las Vegas, Mexico City, San Diego, and San Francisco; AF economy 18,750 to DFW/JFK/PHX/SEA; KLM economy 18,750 to IAH. SMF is NOT on the list, and additionally Promo Rewards are valid only on AF/KLM-OPERATED flights \u2014 a Delta SLC/SEA/LAX\u2192SMF feeder segment cannot be attached to a promo award at all. So the 30k PE promo is structurally SFO-terminating only. Booking must happen by Aug 31, 2026 while SFO PE promo space lasts; the promo city list rotates monthly and SFO is not guaranteed to reappear in the Sept/Oct lists.",
+    "price_usd": 0,
+    "points_cost": "n/a \u2014 promo cannot end at SMF",
+    "duration": "n/a",
+    "status": "unavailable",
+    "price_confidence": "aggregator-estimate",
+    "notes": "Ending at SMF forfeits the promo: PE goes 30k\u219240k per seat (+50,000 miles for 5). This alone kills the FB-promo SMF variant.",
+    "source": "awardwallet.com/airlines/flying-blue/promo-rewards; theflightclub.it Aug 2026 promo post; thepointspage.com/flying-blue-august-2026-promo-rewards; frequentmiler.com (promo mechanics: named-city + AF/KLM-operated only)"
+   },
+   {
+    "label": "Flying Blue STANDARD saver \u2014 AMS\u2192(AMS-SLC or via MSP/DTW/LAX on KLM+Delta)\u2192SMF",
+    "detail": "CONFIRMED in principle: Flying Blue standardized lowest saver pricing for ALL US\u2013Europe one-ways regardless of origin/destination city, so a Delta domestic feeder to SMF is included at no extra miles: economy from 25,000 mi, PE from 40,000 mi, business from 60,000 mi per seat (dynamic \u2014 saver space for 5 seats is the binding constraint, and Delta-segment phantom availability is a known failure mode; confirm the itinerary prices end-to-end on klm.com before transferring MR). Cash copay ~$160/pp economy after the 2026 surcharge increase (PE ~$200+/pp), plus roughly $5-10/pp more in US segment taxes for the extra domestic leg (~$25-50 total party delta vs SFO). For 5 pax: econ 125,000 mi + ~$800-850; PE 200,000 mi + ~$1,050-1,150. Duration ~17-20h AMS\u2192SMF (e.g., AMS-SLC Delta nonstop ~10h35 + connect + SLC-SMF ~1h45) vs ~11h nonstop AMS-SFO.",
+    "price_usd": 825,
+    "points_cost": "125,000 mi (econ, 5 pax) or 200,000 mi (PE) \u2014 vs 150,000 mi PE PROMO to SFO",
+    "duration": "~17-20h from AMS (vs ~11h AMS-SFO nonstop + 90-min drive)",
+    "status": "likely",
+    "price_confidence": "historical-typical",
+    "notes": "Same-miles-as-SFO holds only at STANDARD rates. The SFO comparison isn't standard-vs-standard, it's standard-SMF vs PROMO-SFO: SMF in PE costs 50k MORE miles than SFO PE, takes ~4-6h longer, and lands 90 min from their parked car.",
+    "source": "skystatus.pro/guide/flying-blue-award-availability (standardized US-Europe saver, free connections); frequentmiler.com FB promo posts (copay ~$160); awardwallet.com/airlines/flying-blue/best-award-flights"
+   },
+   {
+    "label": "Aeroplan \u2014 DBV\u2192FRA\u2192(DEN or LAX on LH/United)\u2192SMF, one award",
+    "detail": "LIKELY same points as the SFO routing: Aeroplan prices NA\u2013Atlantic partner awards by total flown distance band. DBV-FRA-SFO \u2248 6,065 mi sits in the 6,001\u20138,000 band (60,000 pts economy fixed-partner rate post-June-2026 chart). DBV-FRA-DEN-SMF \u2248 6,320 mi and DBV-FRA-LAX-SMF \u2248 6,545 mi both stay INSIDE the same 6,001\u20138,000 band \u2192 still 60,000 pts/seat, feeder effectively free. United has no SFO-SMF, so the feeder is UA DEN-SMF (best, ~2h50 connect + 1h50 flight after LH FRA-DEN) or UA/LH via LAX. Cash \u2248 $103/pp incl. the $39 partner booking fee (same as SFO variant; +$6-12/pp US domestic segment tax). Total party: 300,000 pts + ~$540. Duration ~19-21h vs ~16h to SFO. UNVERIFIED live: 5 award seats on all three segments same-day \u2014 LH FRA-DEN economy partner space for 5 is plausible in late Oct, UA DEN-SMF usually fine; must price as a single award on aircanada.com before transferring.",
+    "price_usd": 540,
+    "points_cost": "300,000 Aeroplan (60k x 5) \u2014 identical to SFO variant",
+    "duration": "~19-21h door-to-airport (vs ~16h DBV-FRA-SFO + 90-min drive)",
+    "status": "unknown",
+    "price_confidence": "aggregator-estimate",
+    "notes": "Points-neutral vs SFO but strictly worse in time (+3-5h), adds a third-segment misconnect risk for 5 pax, and Aeroplan is NOT an Amex MR transfer partner in the US (their MR pool lists Aeroplan \u2014 fine if that mapping is Canada Amex or Chase/points already positioned; flagging because transfer path must exist before this lane is real). And the car is still at SFO.",
+    "source": "aircanada.com Flight Reward Chart 2026-04 PDF (distance bands); maxmilespoints.com + milesbeyondborders.com (June 2026: 6,001-8,000 Atlantic econ partner 55k\u219260k); frugalflyer.ca/blog/aeroplan-award-chart-guide ($39 partner fee)"
+   },
+   {
+    "label": "AerClub \u2014 SMF: impossible; nearest trick is DUB\u2192SEA + separate cash hop (not worth it)",
+    "detail": "CONFIRMED: AerClub books ZERO partner awards \u2014 Aer Lingus-operated flights only, despite Aer Lingus's commercial partnerships with Alaska/United. There is no mechanism to attach an Alaska or United SFO/SEA\u2192SMF segment to an AerClub award, online or by phone; the workaround the community uses (move Avios 1:1 to BA Executive Club to book Alaska) doesn't help here because BA can't ticket Aer Lingus transatlantic + Alaska domestic as one award either, and a separately-ticketed Alaska hop = no misconnect protection and re-checked bags (interline baggage on two separate tickets is at airport discretion \u2014 do not rely on it with 5 pax). Aer Lingus does fly DUB-SEA, so a theoretical SMF-ish variant is AerClub DUB-SEA 16,250 Avios + cash Alaska SEA-SMF (~$120-180/pp), but that's ~$600-900 extra cash, +5h, and still strands the car at SFO. Dead end.",
+    "price_usd": 750,
+    "points_cost": "81,250 Avios (DUB-SEA, 5 pax) + cash hop \u2014 vs 81,250 Avios DUB-SFO done",
+    "duration": "~18-20h incl. SEA connection on separate tickets",
+    "status": "unavailable",
+    "price_confidence": "historical-typical",
+    "notes": "AerClub's SFO variant (16,250 econ / 62,500 biz off-peak, EI61 daily) remains the clean play; there is no AerClub road to SMF.",
+    "source": "onemileatatime.com/guides/redeem-aer-lingus-avios (no partner awards); upgradedpoints.com AerClub program review; 10xtravel.com AerClub booking instructions"
+   },
+   {
+    "label": "VERDICT \u2014 SFO + 90-min drive beats every SMF variant, and the parked car makes it unanimous",
+    "detail": "Per-structure scorecard (5 pax, one-way): [1] FB: SFO-promo-PE 150k mi + ~$1,000-1,100 & ~11h nonstop VS SMF-standard-PE 200k mi + ~$1,050-1,150 & ~17-20h \u2192 SFO wins by 50,000 miles AND 6+ hours. Even econ-vs-econ (125k both) SMF only saves the 90-min drive at the cost of ~6h of connecting. [2] Aeroplan: 300k + ~$515 & ~16h to SFO VS 300k + ~$540 & ~19-21h to SMF \u2192 points-identical, SMF loses on time and misconnect risk. [3] AerClub: SFO only. Overriding fact: the family car has been parked at SFO since the Oct 8 departure. ANY SMF arrival still requires someone to retrieve the car from SFO (~2h+ each way SMF\u2194SFO, or a ~$300+ one-way car service / shuttle logistics), which erases the only benefit SMF offers (skipping the 90-min drive) and then some. SMF-ending awards are a solved question: don't.",
+    "price_usd": 0,
+    "points_cost": "Recommendation: keep all three home structures SFO-terminating",
+    "duration": "SFO + 90-min drive is fastest all-in for every structure",
+    "status": "confirmed",
+    "price_confidence": "aggregator-estimate",
+    "notes": "Only scenario that flips this: the car gets moved/retrieved by other means before Oct 26 AND FB-promo SFO space for 5 has evaporated AND FB standard saver x5 exists to SMF but not SFO \u2014 a triple contingency not worth planning for.",
+    "source": "Synthesis of the three structure analyses above + trip context (car at SFO since Oct 8)"
+   }
+  ],
+  "summary": "The earlier 'SMF costs the same as SFO' finding is TRUE only at Flying Blue STANDARD saver rates (US-Europe pricing is origin/destination-standardized with free Delta feeders: 25k econ / 40k PE / 60k biz). It is FALSE for the promo: FB Promo Rewards name exact cities, the August 2026 list is LAS/MEX/SAN/SFO for KLM PE at 30k (travel through Jan 31, 2027 \u2014 covers this trip; book by Aug 31), SMF is not on it, and promo awards are AF/KLM-operated-only so a Delta SMF feeder can't attach \u2014 ending at SMF costs +50,000 miles for the family in PE. Aeroplan IS points-neutral to SMF (DBV-FRA-DEN/LAX-SMF stays in the same 6,001-8,000-mile Atlantic band \u2192 60k/seat, ~$103-108/pp), but adds 3-5 hours, a third segment's 5-seat availability risk, and United reaches SMF only via DEN/LAX since there's no SFO-SMF flight. AerClub is confirmed Aer-Lingus-metal-only with no partner-award mechanism, so SMF is unreachable (the BA-Avios/Alaska workaround can't be combined into one ticket). Verdict: no SMF variant beats its SFO twin \u2014 and the dispositive fact is the car parked at SFO since Oct 8, which any SMF arrival strands 90+ minutes away. All three home structures should terminate at SFO.",
+  "caveats": "1) FB promo city lists rotate monthly \u2014 SFO PE at 30k is guaranteed only for bookings made by Aug 31, 2026; the Sept/Oct lists are unpublished and SFO may not recur. 2) All FB figures are saver-level; dynamic pricing plus known Delta-segment phantom availability means the itinerary must price end-to-end on klm.com/airfrance.com for 5 seats BEFORE transferring MR (transfers are irreversible). 3) Aeroplan 60k assumes fixed-rate partner (LH/UA) space for 5 on every segment \u2014 unverified live; also verify the MR\u2192Aeroplan transfer path actually exists on Jarred's Amex before counting this structure. 4) FB copay estimate (~$160/pp econ, more in PE) is post-May-2026 surcharge community reporting, not a live quote. 5) Aer Lingus/Alaska interline on separate tickets was not deep-verified beyond community consensus (no award-ticket interline mechanism exists), but the conclusion doesn't depend on it. 6) Distance-band math for DBV-FRA-DEN/LAX-SMF (~6,320-6,545 mi, same band as DBV-FRA-SFO) is computed great-circle, not confirmed against Aeroplan's engine \u2014 a band-edge surprise would raise SMF to the next band, further favoring SFO."
+ },
+ {
+  "leg": "Lane 1 \u2014 Iceland integration: DBV \u2192 [escape city] \u2192 KEF stopover (3-4 nights) \u2192 SEA \u2192 SFO/SMF, Oct 25 \u2013 Nov 2 2026",
+  "options": [
+   {
+    "label": "RECOMMENDED: DBV\u2192STN (Ryanair) + LGW\u2192KEF stopover 3n\u2192SEA (Icelandair econ) + SEA\u2192SFO on SkyMiles",
+    "detail": "Oct 25 Ryanair DBV-STN ($503/5, only carrier with 5 seats). Oct 26 National Express STN\u2192LGW coach (~90 min, ~$75/5). Oct 26 Icelandair LGW\u2192KEF one-way WITH free stopover (LGW is Icelandair's safest gateway: ~9x weekly, effectively daily year-round; AMS is 2x daily if routing changes). Iceland Oct 26-29/30 (3-4 nights). Oct 29/30 KEF\u2192SEA nonstop (~7h55m, SEA is a year-round Icelandair core destination \u2014 likely, verify exact date ops). Same evening SEA\u2192SFO or SMF on Delta/Alaska using ~45-60k of his 132,931 SkyMiles (8.5-12.5k/pp typical) + ~$28 fees. Cash outlay \u2248 $503 + $75 + ~$2,500 (5 x ~$500 one-way LGW-KEF-SEA econ, aggregator floor $654/pp undated, Nov is Icelandair's cheapest month so $400-550/pp is realistic) + $28 = ~$3,100.",
+    "price_usd": 3100,
+    "price_confidence": "aggregator-estimate",
+    "points_cost": "~45,000-60,000 Delta SkyMiles (SEA\u2192SFO/SMF x5) \u2014 leaves 70k+ SkyMiles",
+    "duration": "5-6 days total (arrive SFO Oct 29-31, inside the Nov 2 window)",
+    "status": "likely",
+    "notes": "Stopover length caveat: Economy Light caps the stopover at 3 days; Economy Classic (+~$40-60/pp) unlocks up to 7 days AND includes a checked bag each \u2014 for a family of 5 with luggage, Classic is almost certainly the right buy anyway. Stopover books in one flow at icelandair.com ('Stopover in Iceland' toggle, pick nights). One-way stopovers ARE bookable per Thrifty Traveler (a Medium post claims roundtrip-only \u2014 Thrifty Traveler is the more current/credible source).",
+    "source": "icelandair.com/flights/stopover; thriftytraveler.com/guides/airlines/icelandair-stopover; travelocity.com LON-SEA Icelandair fares; flightconnections.com LGW-KEF"
+   },
+   {
+    "label": "Same routing, all-cash SEA\u2192SFO hop (no SkyMiles)",
+    "detail": "Identical to Option 1 but pay cash for SEA\u2192SFO/SMF: Alaska/Delta one-ways historically $59-129/pp on this shuttle route, ~$500 for 5. Total ~$3,600 cash, zero points burned.",
+    "price_usd": 3600,
+    "price_confidence": "historical-typical",
+    "duration": "5-6 days",
+    "status": "likely",
+    "notes": "SMF often prices the same as SFO from SEA on both Alaska and Delta.",
+    "source": "Historical Alaska/Delta SEA-SFO fare norms; no live quote pulled"
+   },
+   {
+    "label": "DUB variant: Ryanair DBV\u2192DUB + Icelandair DUB\u2192KEF stopover\u2192SEA",
+    "detail": "Ryanair DBV-DUB $815/5, then Icelandair DUB-KEF (2h40m) with stopover, KEF-SEA. Icelandair DUB fares to Seattle-side US run ~EUR 583-767 RT from Dublin; one-way ~$400-500/pp plausible. Total ~$3,300-3,800. THE PROBLEM: DUB-KEF is NOT daily in winter \u2014 sources show frequency swinging from 7x weekly peak down to ~2x weekly off-peak. If the operating days don't line up with an Oct 26-27 departure, the family is stranded in Dublin burning hotel nights. Must verify exact DUB-KEF operating days for Oct 26-28 before choosing this over LGW.",
+    "price_usd": 3550,
+    "price_confidence": "aggregator-estimate",
+    "duration": "5-7 days depending on DUB-KEF operating days",
+    "status": "unknown",
+    "notes": "Also note: the AerClub DUB-SFO 16,250-point award (the family's other Dublin play) and this Iceland routing both start from the same $815 Ryanair escape \u2014 Dublin only makes sense if one of those two is chosen.",
+    "source": "icelandair.com/en-ie DUB pages; flightsfrom.com/DUB-KEF; flightconnections.com"
+   },
+   {
+    "label": "Saga Premium variant (recliner, NOT lie-flat)",
+    "detail": "Same LGW\u2192KEF\u2192SEA routing in Saga Premium: one-ways typically $1,100-1,500/pp on this city pair \u2192 ~$5,500-7,500 for 5, plus the $503 Ryanair + $75 coach + hop. Stopover works identically on Saga fares (Flex tiers allow up to 21 nights). Given both legs are only 3h and 8h and the seat is a domestic-first-style recliner, the ~$3,500-4,500 premium over economy is poor value for this family; the Class Up upgrade auction ($300-500/leg) is the smarter splurge if desired.",
+    "price_usd": 7100,
+    "price_confidence": "historical-typical",
+    "duration": "5-6 days",
+    "status": "likely",
+    "notes": "Saga = 2-2 recliner even on the A321LR. Do not mentally price it as business class.",
+    "source": "going.com/guides/icelandair-saga-business-class; deeparrival.com/airlines/icelandair"
+   },
+   {
+    "label": "POINTS path to Icelandair: Amex MR \u2192 JetBlue TrueBlue (verdict: exists but defeats the purpose)",
+    "detail": "Verified: Amex MR does NOT transfer to Icelandair Saga Club or to Alaska Atmos \u2014 but MR DOES transfer to JetBlue at 250:200 (0.8x), and JetBlue TrueBlue books Icelandair awards site-wide including Saga, no carrier surcharges (~$102 one-way taxes on TATL). HOWEVER: (a) JetBlue awards do NOT permit the Iceland stopover \u2014 the single feature this lane exists for; (b) West Coast pricing is dynamic and expensive (East Coast economy starts 17k, West Coast +10k+, so realistically 30-45k TrueBlue/pp = 37-56k MR/pp after the 0.8x haircut); (c) Alaska Atmos is the other Icelandair partner (distance-based, economy only, some surcharges) but his Alaska balance is unknown/blocked and MR can't feed it. Composite: no sane points route buys the stopover itinerary \u2014 Iceland integration is a CASH play, with SkyMiles only for the domestic SEA\u2192SFO tail.",
+    "price_usd": 0,
+    "price_confidence": "aggregator-estimate",
+    "points_cost": "If forced: ~185-280k MR via JetBlue for 5 econ one-ways WITHOUT stopover \u2014 not recommended",
+    "status": "confirmed",
+    "notes": "Icelandair's own stopover page + AwardWallet both confirm: stopovers are cash-booking-only.",
+    "source": "awardwallet.com/airlines/jetblue-trueblue/icelandair-partnership; onemileatatime.com/guides/redeem-alaska-atmos-rewards-points; thepointsguy.com 4-ways-to-book-Icelandair"
+   },
+   {
+    "label": "Iceland on the ground, 3 nights, kids 16/13/8, no rental car (tours + food, hotels excluded per instruction)",
+    "detail": "Late Oct/early Nov is genuinely good: Solar Cycle 25's elevated activity persists into 2026 and late Oct gives ~13h of usable darkness \u2014 aurora odds over 3-4 nights are solid IF clouds cooperate (Atlantic storm season is the real enemy; a bus-based northern-lights tour with a free-retry-if-no-lights policy hedges this). Daylight ~8h late Oct (sunrise ~8:45, sunset ~5:15 by Oct 29) \u2014 enough for one big day-tour daily. Age gates matter: Sky Lagoon is 12+ (the 8-year-old is EXCLUDED \u2014 skip it), Blue Lagoon is 2+ (under-12s ~free/2000 ISK, floaties mandatory age \u22648) \u2014 Blue Lagoon is the family's lagoon. Ice caves: Katla ice cave (from Vik, typically age 6-8+ min) runs year-round; the famous Vatnaj\u00f6kull crystal caves open ~Nov and are too far without a car \u2014 Katla via a South Coast day tour is the realistic option. Reykjavik-based, all-bus budget for 5: Flybus airport RT ~$200; Golden Circle day tour ~$400; northern lights tour ~$280; Blue Lagoon + transfer ~$350; South Coast+Katla day ~$800 (optional); food ~$800-1,000/3 days. Core ~$2,050; with ice-cave day ~$2,850.",
+    "price_usd": 2400,
+    "price_confidence": "historical-typical",
+    "duration": "3 nights (4 nights adds ~$350-500 food/1 tour)",
+    "status": "likely",
+    "notes": "Everything runs from Reykjavik by tour bus \u2014 no-rental-car constraint is fully workable in this season; drivability is the thing they're right to avoid (ice, storms, darkness).",
+    "source": "skylagooniceland.is/en/faqs; support.bluelagoon.com min-age articles; aurora-iceland.com Oct 2026 forecast; guidetoiceland.is; timeanddate.com Reykjavik Oct/Nov"
+   }
+  ],
+  "summary": "Iceland integration is FEASIBLE and reasonably sane, but it is a cash play, and SFO nonstop is dead: Icelandair terminated KEF-SFO in Jan 2020 (route ran only 2018-2019) and it is not in the W26/27 network, so the West Coast landing is KEF\u2192SEA (year-round core route) + a SEA\u2192SFO/SMF hop that his 132,931 SkyMiles covers almost for free (~45-60k for all 5). Best routing: Oct 25 Ryanair DBV\u2192STN ($503, the confirmed 5-seat escape), coach to Gatwick, then a single Icelandair one-way LGW\u2192KEF\u2192SEA with the free stopover toggled to 3 nights (buy Economy Classic, +~$50/pp, to unlock up to 7 nights + bags; Light caps at 3 days) \u2014 total flights ~$3,100 with the SkyMiles hop, ~$3,600 all-cash. Against the baselines: flights are roughly a WASH vs the $3,445 no-Iceland cash baseline (+/- $300), so the true marginal cost of Iceland is the ground spend, ~$2,100-2,900 for tours+food (hotels excluded). Vs the Aeroplan baseline ($515 + 300k pts DBV-FRA-SFO): Iceland costs ~$2,600-3,100 more cash but preserves all 525k MR \u2014 and no points currency he holds can buy the stopover (Amex MR does not touch Icelandair or Alaska; the MR\u2192JetBlue\u2192Icelandair path exists but forbids stopovers, defeating the purpose). Trip fits easily: DBV Oct 25 \u2192 Iceland Oct 26-29 \u2192 SFO Oct 29-30, well inside Nov 2. Kid-fit is strong: solar-max aurora odds over 3 dark nights, Blue Lagoon works for all three kids (Sky Lagoon bans the 8-year-old \u2014 skip), Katla ice cave already open, all doable by tour bus with no rental car. Verdict: if the family wants Iceland, this is the way and the price is ~$5,200-6,000 all-in ex-hotels; if they want cheap, Aeroplan still wins by a mile.",
+  "caveats": "1) No LIVE party-of-5 Icelandair quote was pulled \u2014 the ~$500/pp one-way LGW-KEF-SEA figure is an aggregator floor ($654 undated, Nov cited as cheapest month); real 5-seat availability on one departure must be verified in the icelandair.com stopover flow before trusting the total. 2) KEF\u2192SEA year-round status is well-sourced but the exact late-Oct operating days (daily vs 5-6x weekly) were not confirmed date-by-date. 3) DUB\u2192KEF winter frequency conflict in sources (2x-7x weekly) \u2014 do NOT route via Dublin for Iceland without checking Oct 26-28 operating days. 4) One-way stopover bookability: Thrifty Traveler (current) says yes, one older Medium post says roundtrip-only \u2014 sanity-check in the booking engine. 5) Stopover fare-tier rules (Light=3 days, Classic+=7) come from secondary guides; Icelandair's own page says 'most fares up to 7 nights' \u2014 the engine will show the truth. 6) SEA\u2192SFO SkyMiles pricing is historical-typical, not quoted. 7) Iceland ground costs are estimates at 2025-era tour pricing +5-10%; food inflation in Iceland is real. 8) Vienna ($295 Ryanair escape) was checked and discarded: Icelandair has no Vienna winter service (its Alpine winter routes are Salzburg/Munich/Zurich/Verona, ski-season timed)."
+ },
+ {
+  "leg": "Extended-stay stopover structures, Dubrovnik \u2192 SFO/SMF with a 2-4 night European city stay, departing DBV Oct 25-26 and landing US by Nov 2, party of 5",
+  "options": [
+   {
+    "label": "1. AEROPLAN +5K STOPOVER (cheapest cash): DBV \u2192 stopover city 2-4 nights \u2192 SFO, 65,000 pts/person",
+    "detail": "CONFIRMED 2026 RULE: Aeroplan sells a stopover (>24h, up to 45 days) on a one-way partner award for +5,000 points/person, bookable on aircanada.com multi-city or by phone; stopovers permitted anywhere EXCEPT the US/Canada, one per one-way, no re-transiting the same city. Award prices by TOTAL distance flown: Atlantic-zone economy 6,001-8,000mi band = 60,000 pts (confirmed current on the Aug 2026 chart \u2014 the Jun 1 2026 devaluation did not move this cell). DBV-FRA-SFO is ~6,350mi, so ANY of these stopover routings stays inside the same 60k band and prices 60k+5k = 65,000/person: FRA (~6,350mi), MUNICH (DBV-MUC-SFO ~6,400mi), ZURICH via LX (~6,400mi), VIENNA (DBV-VIE stopover, then VIE-MUC/FRA-SFO ~6,470mi), LISBON (DBV-FRA-LIS stopover, TAP LIS-SFO nonstop, ~7,480mi), ISTANBUL (TK, ~7,290mi), COPENHAGEN (via LH hubs ~7,140mi). All work in-band. Two feasibility caveats: (a) after Oct 25 the winter schedule thins DBV \u2014 Croatia Airlines DBV-ZAG (year-round, Star) is the reliable feeder, so expect DBV-ZAG-hub routings; Austrian/Lufthansa direct DBV service is summer-seasonal; (b) SAS left Star Alliance (SkyTeam since Sep 2024), so NO CPH-SFO nonstop on points \u2014 Copenhagen means backtracking on Lufthansa, 4 segments. Transatlantic legs are solid year-round nonstops: LH FRA-SFO + MUC-SFO daily, LX ZRH-SFO daily, TK IST-SFO daily, TAP LIS-SFO ~daily. Total: 325,000 MR (\u2192Aeroplan 1:1) + ~$110-130/pp taxes+CA$39 partner fee.",
+    "price_usd": 600,
+    "points_cost": "325,000 Amex MR \u2192 Aeroplan (65,000/person incl. stopover)",
+    "duration": "2-4 night stopover + ~11.5h transatlantic nonstop",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "source": "onemileatatime.com/guides/aeroplan-stopover/ ; princeoftravel.com/guides/aeroplan-stopovers/ ; aircanada.com Aeroplan redeem page (5,000-pt stopover, 45-day max, not in US/CA) ; awardtravelfinder.com/award-charts/aeroplan (Atlantic econ 6,001-8,000mi = 60k, current Aug 2026)",
+    "notes": "Kid-appeal ranking of workable stopover cities for Oct 27-31 (Halloween week): VIENNA best all-round (Prater amusement park Halloween season, Schoenbrunn, Time Travel Vienna; walkable/safe for 8-16yo); MUNICH strong (Deutsches Museum is world-class for the 8 and 13yo, Neuschwanstein day trip); COPENHAGEN has THE best Halloween product in Europe \u2014 Tivoli Gardens Halloween runs Oct 2-Nov 1 2026 with 20,000+ pumpkins, all-ages \u2014 but costs 2 extra flight segments since SAS left Star; ZURICH pretty but expensive and Halloween-dead; ISTANBUL exotic and cheap on the ground but zero Halloween and DBV-IST winter service unverified; LISBON mild weather + nonstop home but minimal Halloween; FRANKFURT weakest for kids \u2014 treat as mechanical only. BINDING CONSTRAINT: 5 saver economy seats on every segment \u2014 search as 5 pax on aircanada.com BEFORE transferring MR."
+   },
+   {
+    "label": "2. VIENNA WILDCARD: Ryanair DBV-VIE Oct 25 $295, 2-4 nights Vienna, Aeroplan VIE-SFO 60k/person",
+    "detail": "Ryanair DBV-VIE morning flight Oct 25 at $295 total for 5 (prior-lane live quote) is the cheapest 5-seat escape from Dubrovnik. Then 2-4 nights in Vienna, then Aeroplan award VIE-MUC/FRA/ZRH-SFO on Lufthansa group. Distance math: VIE-MUC-SFO ~6,086mi \u2014 just over the 6,000mi line, so it prices in the same 60,000-pt band as option 1 (no routing gets VIE-SFO under 6,000mi; there is no VIE-SFO nonstop and Austrian doesn't fly to SFO). So: 300,000 MR + $295 Ryanair + ~$60-80/pp taxes. Saves 25,000 points vs option 1 for roughly the same total cash, at the cost of a Ryanair leg with 5 bags. CRITICAL SCHEDULE RISK: EX-YU Aviation (May 2026) reports Ryanair is DROPPING Vienna from Dubrovnik for winter 2026/27 (replaced by year-round Dublin/Krakow) after Vienna underperformed in winter 25/26 \u2014 the IATA winter season starts exactly Oct 25, 2026, making the Oct 25 morning flight the route's final rotation. It is confirmed selling, but if it cancels there is NO later DBV-VIE Ryanair to rebook onto. Book early and have option 1's DBV-ZAG-VIE Aeroplan feeder as the named fallback.",
+    "price_usd": 645,
+    "points_cost": "300,000 Amex MR \u2192 Aeroplan (60,000/person)",
+    "duration": "50min Ryanair hop + 2-4 nights Vienna + ~12h to SFO via MUC/FRA",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "source": "exyuaviation.com/2026/05/ryanair-boosts-zagreb-winter-operations.html (Vienna cut for winter 26/27, winter starts Oct 25) ; awardtravelfinder.com/award-charts/aeroplan ; prior-lane live Ryanair quote $295",
+    "notes": "Vienna kid-appeal in Halloween week: very good \u2014 Prater park rides + Halloween decor through Oct 31, Schoenbrunn Palace + zoo (world's oldest), House of Music, Time Travel Vienna; compact, safe, transit-easy with kids 8/13/16. Halloween is modest by Irish/Danish standards but present. Honest comparison vs option 1 with a Vienna stopover: identical city stay, ~$50 less cash here but 25k fewer points AND single-ticket protection lost (Ryanair leg is self-connected \u2014 a cancellation strands you); option 1 puts the whole journey on one Aeroplan PNR."
+   },
+   {
+    "label": "3. AERCLUB DUBLIN DATE-SHIFT: free 3-7 night Dublin stay, same 16,250 Avios off-peak \u2014 best points value + best Halloween city",
+    "detail": "CONFIRMED MECHANICS: AerClub prices each award segment independently by the flight DATE's peak/off-peak status \u2014 there is no return-window or same-day-connection pricing linkage. EI61 DUB-SFO operates daily, and late Oct + Nov dates are off-peak on the 2026 Avios calendar. Therefore flying Ryanair DBV-DUB on Sun Oct 25 (confirmed 20:40 departure, $815 for 5) and taking EI61 on Oct 28, Oct 29, Nov 1 or Nov 2 prices IDENTICALLY to an Oct 26 departure: 16,250 Avios + taxes per person, zero award-cost penalty for the Dublin stay. Ryanair DBV-DUB constraints confirmed: NO Monday flight; the route goes YEAR-ROUND for the first time in winter 2026/27 at 2x weekly (winter schedule from Oct 25) \u2014 Sunday is one operating day; the second weekly day is not yet published in news sources (verify the exact next departures after Oct 25 in Ryanair's engine; likely mid-week). Irrelevant to this plan anyway: the family takes the confirmed Oct 25 flight and shifts only the DAILY Aer Lingus leg. Total: $815 Ryanair + 81,250 Avios (via Amex MR 1:1) + ~$90-110/pp Aer Lingus award taxes ex-DUB.",
+    "price_usd": 1315,
+    "points_cost": "81,250 Avios (16,250/person) \u2014 one quarter the points of the Aeroplan structures",
+    "duration": "Oct 25 evening arrival DUB + 3-7 nights Dublin + EI61 nonstop ~11h to SFO",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "source": "headforpoints.com 2026/2027 peak and off-peak Avios dates ; aerlingus.com AerClub reward flight page (per-segment date-based pricing, Zone 6 DUB-SFO off-peak example) ; exyuaviation.com (DBV-DUB year-round 2x weekly winter 26/27) ; dublintourism.org/dublin-halloween/ (Bram Stoker Festival)",
+    "notes": "KID-APPEAL: DUBLIN IS THE HALLOWEEN JACKPOT. Ireland is Halloween's birthplace (Samhain) and the Bram Stoker Festival 2026 runs Oct 30 - Nov 2 across Dublin Castle, St Stephen's Green and Smithfield: the Macnas giant-puppet night parade (Sun Nov 1, free), Stokerland Victorian funfair in St Patrick's Park (perfect for the 8yo), gothic events for the teens \u2014 then EI61 on Nov 1 or 2 lands SFO the same day, exactly at the edge of the travel window. English-speaking, easiest of all cities with kids. Tradeoff vs options 1-2: ~$700 more cash (the $815 Ryanair leg) but saves ~220-245k points \u2014 at ~1.2c/pt valuation, that's ~$2,600-2,900 of points value preserved, making this the strongest TOTAL-value structure despite ranking 3rd on pure cash. Ticketed festival events sell out when the program drops in September \u2014 book those with the flights."
+   },
+   {
+    "label": "4. FLYING BLUE AMSTERDAM: promo + stopover \u2014 mechanically broken for this trip, do not build",
+    "detail": "VERIFIED: Flying Blue DOES now offer free stopovers (24h-12 months) at AMS or CDG on award tickets, phone-only booking (800-375-8723) \u2014 that part of FB folklore is current. But THREE things kill it here: (1) Promo Rewards explicitly EXCLUDE multi-city/stopover/open-jaw itineraries per Frequent Miler's rules writeup \u2014 the 30k PE promo cannot carry an AMS stopover; agents' documented workaround (promo one direction, regular award the other) doesn't help a one-way trip. (2) The free stopover requires ALL segments on the SAME airline, and KLM's AMS-DBV service is summer-seasonal \u2014 it is not in KLM's announced winter program, and the winter schedule starts Oct 25, so a same-airline KLM DBV-AMS(stop)-SFO award almost certainly cannot be constructed for Oct 26+ departures. (3) Two-award fallback: with no AF/KLM metal at DBV in winter, there is no FB award DBV-AMS to buy (it would be ~15,000 miles + ~$50/pp if it existed \u2014 historical-typical); positioning becomes a cash connection at ~$130-180/pp (~$650-900 for 5). On top of that, 5 promo-PE seats on one AMS-SFO departure is rare, and FB PE awards ex-AMS carry ~$180-220/pp in surcharges (~$1,000 party). Estimated all-in if forced: ~$1,700-1,900 cash + 150,000 MR \u2014 worse cash than every alternative with the most failure modes.",
+    "price_usd": 1800,
+    "points_cost": "150,000 MR \u2192 Flying Blue (30,000 PE promo x5) \u2014 IF 5 promo seats exist, which is unlikely",
+    "duration": "self-positioned DBV-AMS + 2-4 nights + ~11h AMS-SFO",
+    "status": "unavailable",
+    "price_confidence": "historical-typical",
+    "source": "frequentmiler.com/flying-blue-free-stopover-awards-the-rules/ (promo excludes stopover; same-airline rule; phone-only) ; upgradedpoints.com/news/flying-blue-award-free-stopover/ ; news.klm.com winter destinations (no Dubrovnik) ; awardwallet.com FB promo rewards Aug 2026",
+    "notes": "Verdict: the FB stopover rule is real and generous in the abstract, but Dubrovnik's winter-schedule cutoff (Oct 25 \u2014 the exact day this family departs) severs the KLM feeder it depends on. Amsterdam's kid appeal (NEMO science museum, canals) doesn't rescue broken mechanics. Keep FB in reserve only as a plain cash-positioned AMS-SFO promo if every Aeroplan/AerClub structure fails availability."
+   }
+  ],
+  "caveats": "1) All award pricing verified against rules/charts current Aug 2026, but LIVE SEAT AVAILABILITY FOR 5 was not re-queried in this lane \u2014 5 saver seats per segment is the binding constraint on every structure; search before transferring MR (transfers are one-way). 2) Aeroplan stopover: minimum 24h, max 45 days, NOT in US/Canada, +5,000 pts/person, one per one-way; total flown distance (including stopover legs) sets the band \u2014 all listed routings stay in the 6,001-8,000mi/60k band, so 65k/person holds, but a routing the engine builds via an unexpected hub could theoretically tip past 8,000mi (75k band) \u2014 check the priced total before ticketing. Jun 1 2026 devaluation confirmed NOT to have changed this cell. 3) Winter schedule starts Oct 25, 2026: DBV loses most direct Western-Europe service that day. Croatia Airlines DBV-ZAG is the year-round Star feeder; Ryanair DBV-VIE is being cut for winter (Oct 25 flight = final rotation, no rebooking path); Ryanair DBV-DUB goes year-round 2x/wk (Sunday confirmed; second weekly day unpublished \u2014 verify in Ryanair engine). 4) AerClub off-peak status for all specific Oct 28-Nov 2 dates should be re-checked against the Aer Lingus 2026 calendar PDF at booking; per-segment date-based pricing mechanics are confirmed, and prior-lane work established Oct+Nov as off-peak. 5) SAS is SkyTeam since Sep 2024 \u2014 no CPH-SFO nonstop bookable with these pools; Copenhagen/Tivoli requires Lufthansa backtracking. 6) Cash figures are party-of-5 totals; taxes on Aeroplan (~$110-130/pp incl. CA$39 partner fee) and Aer Lingus ex-DUB (~$90-110/pp) are estimates from historical norms, not live quotes this lane. 7) Bram Stoker Festival ticketed events sell out after the September program release. 8) Iceland was not integrable into any of these stopover structures (Icelandair is outside all three points pools and KEF is not on any award routing here) \u2014 an Iceland stay would be a separate cash add-on, not a stopover play.",
+  "summary": "Ranked by total party cash: (1) Aeroplan +5k stopover \u2014 325k MR + ~$600, the confirmed 5,000-pt/person stopover rule (24h-45 days, non-US/CA) turns the already-chosen DBV-FRA-SFO 60k award into a real 2-4 night stay in Vienna, Munich, Zurich, Copenhagen (via LH only \u2014 SAS left Star), Istanbul or Lisbon for 65k/person, all inside the same 60k distance band, whole trip on one protected ticket. (2) Vienna wildcard \u2014 $295 Ryanair Oct 25 + 300k VIE-SFO award \u2248 $645; saves 25k points but the Oct 25 flight is the route's FINAL rotation before Ryanair cuts Vienna for winter, so it has no rebooking safety net. (3) AerClub Dublin date-shift \u2014 $815 Ryanair + only 81,250 Avios + ~$500 taxes \u2248 $1,315; per-date off-peak pricing on daily EI61 makes a 3-7 night Dublin stay genuinely free in points, and Dublin during Bram Stoker Festival (Oct 30-Nov 2, Macnas parade, Stokerland funfair) is the single best Halloween-week city in Europe for kids 8-16 \u2014 highest total value despite third-place cash, preserving ~245k points (~$2,800 of value). (4) Flying Blue AMS \u2014 mechanically broken: promo rewards exclude stopovers and KLM's DBV route dies with the summer schedule on the family's exact departure day; do not build. Recommended: hold both finalists \u2014 price Aeroplan multi-city with a Vienna or Copenhagen stopover as 5 pax, and if 5 saver seats clear, it wins on cash; if Dublin Halloween is the experience they want, the AerClub shift is the best value in the entire file."
+ }
+]
