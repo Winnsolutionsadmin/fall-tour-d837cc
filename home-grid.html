@@ -40,6 +40,12 @@ td.tot{font-weight:800;color:var(--gold);font-size:13px;text-align:right}
 <div class="sub">Family of 5, Dubrovnik → San Francisco. Every cell = <b>party-of-5 transatlantic fare, economy</b>, live-quoted Aug 2 2026 at true 5-passenger pricing (not 1-pax × 5). <a href="index.html">← back to Trip Builder</a></div>
 </header>
 
+<h2><span class="n">00</span>Pick your strategy + cabin</h2>
+<p class="lead">Toggles re-compute the verdict below. Cabin scope: who rides lie-flat (rest of the family in economy on the same plane).</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin:10px 0" id="stratBtns"></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px" id="cabinBtns"></div>
+<div id="verdict"></div>
+
 <h2><span class="n">01</span>Cash grid — transatlantic fare by departure date</h2>
 <div class="legend">
 <span><span class="sw" style="background:#16301f"></span>cheapest band</span>
@@ -125,4 +131,98 @@ At true party-of-5 pricing, Nov 1–2 is a wash or worse: London identical both 
 </table></div>
 
 <div class="foot">Live-quoted Aug 2 2026 via Google Flights at true party-of-5 pricing + Ryanair farfnd API + official Aer Lingus AerClub 2026 peak/off-peak PDF. Positioning costs include the mandatory 4+1 split where applicable. · <a href="index.html">Trip Builder</a> · <a href="research.html">Full research</a></div>
-</div></body></html>
+</div>
+<script>
+// ---------- per-seat data (live/chart-verified Aug 2 2026) ----------
+const MR_BAL = 525382;
+const fmt = n => '$' + Math.round(n).toLocaleString();
+const fk = n => Math.round(n/1000) + 'k';
+// AerClub: fixed = Ryanair DBV-DUB 5-pax $815 + Dublin airport night ~$287
+const AER = {eP:16250, bP:62500, eF:110, bF:365, fixed:1102,
+  route:'Ryanair DBV→DUB Oct 25 20:40 → Dublin night → <b>EI61 nonstop</b> DUB→SFO 12:30→15:35 · US preclearance · A330 1-2-1 lie-flat',
+  dur:'~26h door-to-door (incl. overnight)'};
+// Aeroplan: single award DBV→FRA/ZAG→SFO, zero surcharges. Business not chart-safe (LH surcharges + space) — econ only.
+const AEROPLAN = {eP:60000, eF:103, fixed:0,
+  route:'ONE award ticket DBV→FRA→SFO (Croatia Air + Star partner) · no positioning, no hotel, no 4+1 wall',
+  dur:'~18h same-day — fastest option'};
+// Flying Blue Aug promo: KLM Premium Comfort (recliner, NOT lie-flat)
+const FB = {pP:30000, pF:280, fixed:0,
+  route:'ONE award ticket DBV→AMS→SFO on KLM (free intra-Europe connection) · Premium Comfort recliner — NOT lie-flat · book by AUG 31',
+  dur:'~17.5h same-day'};
+// Cash references (party-of-5 live quotes)
+const CASH = {
+  bcn:{cash:3445, route:'Air Serbia DBV→BCN (4+1 split) · Barcelona night · 1-stop BCN→SFO $2,352', dur:'~27h (incl. overnight)'},
+  lhr:{cash:3913, route:'Ryanair DBV→STN $503 (5 seats ✅) · cross-London + night · <b>LHR→SFO NONSTOP</b> $2,360 ($472/pp — best fare found)', dur:'~24h (incl. overnight)'},
+  bizCashSeat:3200}; // typical lie-flat cash seat Europe->SFO
+
+function mix(nBiz){ // AerClub mix for 5 pax, nBiz in business
+  const pts = nBiz*AER.bP + (5-nBiz)*AER.eP;
+  const cash = nBiz*AER.bF + (5-nBiz)*AER.eF + AER.fixed;
+  return {pts, cash};
+}
+const SCOPES = [
+  {id:0, label:'All economy ×5'},
+  {id:1, label:'Jarred lie-flat +4 econ'},
+  {id:2, label:'Jarred +1 lie-flat +3 econ'},
+  {id:5, label:'All 5 lie-flat'},
+];
+const STRATS = [
+ {id:'rec',  name:'⭐ Recommended overall', defScope:2},
+ {id:'pts',  name:'🪙 Min cash (max points leverage)', defScope:0},
+ {id:'fast', name:'⏱ Min travel duration', defScope:0},
+ {id:'deal', name:'💵 Max deals (best $ cost)', defScope:0},
+];
+let S = {strat:'rec', scope:2};
+
+function verdictFor(strat, scope){
+  const m = mix(scope);
+  const aerRow = (title,extra)=>({title, pts:m.pts, cash:m.cash, route:AER.route, dur:AER.dur, extra});
+  if(strat==='rec'){
+    if(scope===0) return {title:'AerClub economy ×5 — the balanced pick', pts:m.pts, cash:m.cash, route:AER.route, dur:AER.dur,
+      extra:'Uses only 15% of your MR. If you want ANY lie-flat, flip the cabin toggle — each flat seat is +46,250 pts / +$265.'};
+    if(scope===5) return aerRow('AerClub all-business ×5 — flagged: bad trade', 'Costs MORE cash than 5 economy tickets AND 312.5k points. Recommended only if comfort is absolute.');
+    return aerRow(scope===1?'AerClub: Jarred lie-flat, family economy — same nonstop':'AerClub: 2 lie-flat + 3 economy — the value sweet spot (3.47¢/pt)',
+      '“Jarred+Ashley” and “Jarred+1 kid” price identically — pick on family politics. Everyone on the same EI61.');
+  }
+  if(strat==='pts'){
+    if(scope===0) return {title:'Aeroplan single ticket DBV→SFO — the cash floor', pts:300000, cash:515, route:AEROPLAN.route, dur:AEROPLAN.dur,
+      extra:'~$103/person all-in. Zero carrier surcharges. Sidesteps the Dubrovnik 4-pax wall entirely. 300k MR — leaves 225k.'};
+    return aerRow('Min-cash with lie-flat = AerClub mix (Aeroplan business not chart-safe)',
+      'Aeroplan passes Lufthansa-group surcharges in business and partner J space is thin — for flat beds the AerClub fixed chart is the safe minimum-cash path.');
+  }
+  if(strat==='fast'){
+    if(scope===0) return {title:'Aeroplan DBV→FRA→SFO — fastest AND cheapest cash', pts:300000, cash:515, route:AEROPLAN.route, dur:'~18h same-day, no overnight — fastest of every option',
+      extra:'The speed pick and the min-cash pick are the same ticket. FB promo (~17.5h via AMS) ties but is recliner PE and 150k pts.'};
+    return aerRow('Fastest WITH lie-flat: AerClub via Dublin', 'All same-day single-ticket lie-flat routings are blocked (KLM biz = dynamic-floor risk; Aeroplan biz = surcharges/space). The Dublin overnight buys chart-certain flat beds.');
+  }
+  // deal
+  if(scope===0) return {title:'Best cash deal: Barcelona all-in $3,445 · best single fare: LHR→SFO nonstop $472/pp', pts:0, cash:CASH.bcn.cash,
+    route:CASH.bcn.route+'<br>— or —<br>'+CASH.lhr.route, dur:CASH.bcn.dur,
+    extra:'Pure-cash reference. But note: AerClub economy beats this by ~$1,800 cash for just 81k points — the “deal” view mostly proves the award options are the deal.'};
+  const cashBiz = scope*CASH.bizCashSeat + (5-scope)*472 + 1100;
+  return {title:'Cash lie-flat is the worst deal on the board', pts:0, cash:cashBiz,
+    route:`${scope} cash business seat(s) ~$3,200 each + economy ~$472 + positioning`, dur:'varies',
+    extra:'Every cash-business configuration loses to AerClub on both dollars and comfort-certainty. Shown for honesty, not recommended.'};
+}
+function render(){
+  const sb=document.getElementById('stratBtns'), cb=document.getElementById('cabinBtns');
+  sb.innerHTML=STRATS.map(s=>`<button onclick="setStrat('${s.id}')" style="cursor:pointer;font-size:13px;padding:8px 14px;border-radius:8px;border:1px solid ${S.strat===s.id?'var(--gold)':'var(--line)'};background:${S.strat===s.id?'#2b2617':'var(--panel2)'};color:var(--ink)">${s.name}</button>`).join('');
+  cb.innerHTML=SCOPES.map(c=>`<button onclick="setScope(${c.id})" style="cursor:pointer;font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid ${S.scope===c.id?'var(--teal)':'var(--line)'};background:${S.scope===c.id?'#15302c':'var(--panel2)'};color:var(--ink)">${c.label}</button>`).join('');
+  const v=verdictFor(S.strat,S.scope);
+  const left=MR_BAL-v.pts;
+  document.getElementById('verdict').innerHTML=`
+  <div class="card win"><h3>${v.title}</h3>
+  <div style="display:flex;gap:26px;flex-wrap:wrap;margin:8px 0">
+    <div><div class="note">CASH · ALL 5</div><div style="font-size:23px;font-weight:800;color:var(--gold)">${fmt(v.cash)}</div></div>
+    <div><div class="note">POINTS (Amex MR)</div><div style="font-size:23px;font-weight:800;color:var(--teal)">${v.pts?fk(v.pts):'—'}</div></div>
+    <div><div class="note">MR LEFT OF 525,382</div><div style="font-size:23px;font-weight:800">${v.pts?fk(left):'525k'}</div></div>
+    <div><div class="note">DURATION</div><div style="font-size:15px;font-weight:600;margin-top:6px">${v.dur}</div></div>
+  </div>
+  <div style="font-size:13px;margin:6px 0">${v.route}</div>
+  <div class="note" style="margin-top:6px">${v.extra||''}</div></div>`;
+}
+window.setStrat=id=>{S.strat=id; const d=STRATS.find(x=>x.id===id); if(d && S.scope===undefined) S.scope=d.defScope; render();};
+window.setScope=n=>{S.scope=n; render();};
+render();
+</script>
+</body></html>
