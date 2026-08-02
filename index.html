@@ -112,7 +112,7 @@ h2{font-size:19px;margin:38px 0 4px}h2 .n{color:var(--gold);margin-right:8px}
 <div class="linknote" id="cityverify"></div>
 </div>
 
-<h2><span class="n">05</span>Lodging budget (verified Aug 1 — not yet in totals)</h2>
+<h2><span class="n">05</span>Lodging budget (verified Aug 1 — stopover hotels DO flow into totals via the checkbox; other stays are planning lines)</h2>
 <p class="lead">Hotel swarm results. ⚠ Singapore is the trip's biggest lodging exposure: Token2049 + first-ever F1 Sprint weekend = 3–4× surge at Marina Bay; inventory flips non-refundable 60–90 days out — that window is open NOW.</p>
 <div class="mx"><table>
 <tr><th>Stay</th><th>Nights · party</th><th>Value play</th><th>Mid</th><th>Venue / FHR</th><th>Watch</th></tr>
@@ -128,8 +128,11 @@ h2{font-size:19px;margin:38px 0 4px}h2 .n{color:var(--gold);margin-right:8px}
 <div class="flag"><span class="i">✅</span><div><b>Verified Aug 1:</b> FB August promo — SFO IS listed but <b>Premium Economy only, 30k</b> (no biz promo to the US); travel window covers Oct 25–28, book by Aug 31 (earlier = better). KLM biz saver floor 60k confirmed. QR943 Sat Oct 10 + Doha–Rome RESTORED (QR115/QR113 daily). SQ366 operates Sun Oct 11 01:30 (NOT Sat). DL4075 07:35→DL197 13:00 Sep 27 ✓ (3h16m). KE643 daily 14:45 ✓. Ryanair DBV–DUB: <b>Sun Oct 25 FR3881 20:40 confirmed on Ryanair's own API; NO Monday flight</b>. EI61 DUB–SFO loaded daily. KE Prestige partner award space: near-zero corroborated — book that leg cash. No Amex transfer bonus live (Virgin +30% expired Jul 31; Citi→FB 20% runs thru 8/22).</div></div>
 <div class="flag"><span class="i">1️⃣</span><div><b>Login-gated checks remaining:</b> live saver-seat counts AMS–SFO Oct 25–27 (seats.aero/FB calendar), Qsuite space the exact night chosen, live cash quotes on the booked dates.</div></div>
 <div class="flag"><span class="i">2️⃣</span><div><b>KLM SPU–AMS Sunday rotation = weakest link</b> — announced for W26/27 but not yet visible in GDS; confirm bookable on klm.com before locking a Split-based exit.</div></div>
-<div class="flag"><span class="i">3️⃣</span><div><b>Insurance (quoted):</b> Travel Insured Worldwide Trip Protector ≈ $1,300–2,200 family — $100k PRIMARY medical, $1M evac, kids ≤17 free, missed-connection pays to join the departed cruise, CFAR window = 21 days from FIRST trip payment (cruise unpaid → clock hasn't started). CFAR adds ~48–52%. Annual policies ruled out ($10k caps). Jarred solo ≈ $550–700.</div></div>
+<div class="flag"><span class="i">3️⃣</span><div><b>Insurance (quoted):</b> Travel Insured Worldwide Trip Protector ≈ $1,300–2,200 family — $100k PRIMARY medical, $1M evac, kids ≤17 free, missed-connection pays to join the departed cruise, CFAR window = 21 days from the FIRST payment on ANY trip component (flight, hotel, award fees — not just the cruise); confirm nothing has been paid before assuming the window is open. CFAR adds ~48–52%. Annual policies ruled out ($10k caps). Jarred solo ≈ $550–700.</div></div>
 <div class="flag"><span class="i">4️⃣</span><div><b>Medication permits (Korea MFDS + Singapore HSA ≥2wks pre-arrival)</b> — both mandatory for controlled ADHD meds; prescription alone = seizure risk.</div></div>
+<div class="flag"><span class="i">🎟</span><div><b>Conference passes are unbudgeted and tier UP:</b> buy KBW ×4 (koreablockchainweek.com — also unlocks preferential Walkerhill rate links) + Token2049 ×4 now; watch Megatix for After2049 tickets. Estimate ~$3–8k total.</div></div>
+<div class="flag"><span class="i">🛂</span><div><b>Calendar the entry forms:</b> Korea e-Arrival Card for 4 travelers = Sep 25–28 window (e-arrivalcard.go.kr; K-ETA waived thru Dec 31 2026) · Singapore SGAC for 4 = Oct 2–4 (Oct 4–6 if Scoot variant). <b>Passports ×8</b> need 6-mo validity past Oct 28 + 2 blank pages; Ashley traveling with Teeney-surname kids while Jarred's in Asia → carry birth certs + notarized consent letter (cruise check-in asks).</div></div>
+<div class="flag"><span class="i">🚢</span><div><b>Cruise reality check (audit):</b> both sailings are inside RC's final-payment window — converting a hold = the full ~$31,935 due at booking, and THAT payment starts the 21-day CFAR clock. The builder models the Oct 11 sailing's dates; picking Oct 18 shifts every downstream date (see research.html variant). Ask the keeper for exact embark time + hold-survival terms.</div></div>
 <div class="flag"><span class="i">5️⃣</span><div><b>Pick the sailing</b> — both Royal Loft holds stay alive via the keeper (Oct 11 res 205404 / Oct 18 res 234019). Singapore hotels are the most time-critical booking of the whole trip.</div></div>
 </div>
 
@@ -147,36 +150,39 @@ const PARTIES = {
 };
 const SEGS = [
  {id:'out', name:'US → Seoul', date:'Sun Sep 27', parties:['jarred','team'], opts:[
-  {id:'dl', label:'Delta via Seattle — departs Sacramento', sub:'SMF 07:53 → SEA (DL4075) → ICN on DL197 A350 · Delta One Suites · 17h · full MQD', hrs:17, delta:true, badge:'REC',
-   note:'Your home airport, zero drive — same door-to-door as driving to SFO for the nonstop. Mixed-cabin party: phone booking or linked PNRs. GUC alt: book Premium Select ~$2,000 + certificate (moderate odds).',
+  {id:'dl', label:'Delta via Seattle — departs Sacramento', sub:'SMF 07:35 → SEA 09:44 (DL4075) · DL197 dep 13:00 → ICN 16:50+1 · A350 Delta One Suites · 3h16m connect · full MQD', hrs:17, delta:true, badge:'REC',
+   note:'Your home airport, zero drive — same door-to-door as driving to SFO for the nonstop. Delta re-times regional feeds (DL4075 has floated 06:30–07:53 this year) — reconfirm SMF departure at ticketing. Mixed-cabin party: phone booking or linked PNRs. GUC alt: Premium Select ~$2,000 + certificate (moderate odds).',
    fares:{jarred:{cabin:'Delta One',cash:4000,pts:{sky:110500,fees:30,label:'110.5k SkyMiles + $30 (w/ card 15% off)'}}, team:{cabin:'Main',cash:585}}},
-  {id:'ke', label:'Korean Air nonstop — from SFO', sub:'KE024 ~12:40 dep · 12.1h flight · Delta JV earning · Prestige + economy same plane', hrs:12.1, delta:true,
-   note:'~2h drive + parking; door-to-door ≈ same 17h. KE024 30-day on-time rate: 33%. KE Premium Class PE (~$875) exists on retrofitted 777s — tail-dependent.',
-   fares:{jarred:{cabin:'Prestige',cash:3900,pts:{mr:85000,fees:120,label:'85k Virgin pts + $120 — KE space rare, verify first'}}, team:{cabin:'Economy',cash:795}}},
+  {id:'ke', label:'Korean Air nonstop — from SFO', sub:'KE024 dep 12:40–13:10 (varies) · ~12.7h block · Delta JV earning · Prestige + economy same plane', hrs:12.7, delta:true,
+   note:'~2h drive + parking; door-to-door ≈ same 17h. KE024 30-day on-time rate: 33%. KE Premium Class PE (~$875) exists on retrofitted 777s — tail-dependent. AUDIT: the 85k-Virgin award play was REMOVED — KE releases 0–2 partner J seats (near-zero, corroborated); this leg is cash.',
+   fares:{jarred:{cabin:'Prestige',cash:3900}, team:{cabin:'Economy',cash:795}}},
   {id:'ua', label:'United nonstop — from SFO', sub:'13.4h · Polaris + economy · cheapest combined (~$4,700)', hrs:13.4, delta:false,
    note:'Zero Delta/SkyTeam earning for anyone — the price is the whole argument.',
    fares:{jarred:{cabin:'Polaris',cash:3200}, team:{cabin:'Economy',cash:500}}},
  ]},
  {id:'icnsin', name:'Seoul → Singapore', date:'Sun Oct 4', parties:['jarred','team'], opts:[
-  {id:'ke643', label:'Korean Air KE643 nonstop', sub:'13:50 → 19:15 · 6.4h · SkyTeam, bookable as Delta codeshare DL7819', hrs:6.4, delta:true, badge:'REC',
+  {id:'ke643', label:'Korean Air KE643 nonstop', sub:'14:45 → 19:55 · 6.2h · daily · SkyTeam, bookable as Delta codeshare DL7819', hrs:6.2, delta:true, badge:'REC',
    note:'Fly Oct 4 — Token2049 inbound crush peaks Oct 5–6. Whole party one plane, bags + meals included.',
    fares:{jarred:{cabin:'Prestige',cash:1200,pts:{sky:50000,fees:50,label:'~50k SkyMiles + $50 partner award'}}, team:{cabin:'Economy',cash:350}}},
   {id:'sq', label:'Singapore Airlines nonstop', sub:'6.5h · best hard product on the route · 4–5× daily', hrs:6.5, delta:false,
    note:'No Delta earning (Star Alliance). Pick only if KE is sold out or much pricier.',
    fares:{jarred:{cabin:'Business',cash:1050}, team:{cabin:'Economy',cash:350}}},
-  {id:'scoot', label:'Scoot overnight — max Korea time', sub:'TR897 dep 23:12 Oct 5 → SIN early Oct 6 · LCC', hrs:6.8, delta:false, badge:'FUN',
+  {id:'scoot', label:'Scoot overnight Oct 5→6 — max Korea time', sub:'TR897 dep 23:12 OCT 5 → SIN early Oct 6 (not Oct 4) · +1 Seoul hotel night, −2 SIN nights · SGAC window shifts to Oct 4–6 · LCC', hrs:6.8, delta:false, badge:'FUN',
    note:'One extra full Korea day + skips a surge-priced SIN hotel night. No business cabin — Jarred rides economy too. Bags ~$40 included in price shown.',
    fares:{jarred:{cabin:'Economy',cash:189}, team:{cabin:'Economy',cash:189}}},
  ]},
- {id:'sinfco', name:'Singapore → Rome', date:'Fri Oct 9', parties:['jarred'], opts:[
-  {id:'qsuite', label:'Qatar Qsuites via Doha — on points', sub:'17h · Qsuite w/ closing door · no fuel surcharges', hrs:17, delta:false, badge:'REC',
-   note:'75k Avios (Amex 1:1, instant) + ~$90 — ~4–6¢/pt value. VERIFY Oct 9 space before transferring (irreversible).',
-   fares:{jarred:{cabin:'Qsuites',cash:3200,pts:{mr:75000,fees:90,label:'75k Avios + $90'},defPts:true}}},
-  {id:'sq366', label:'Singapore Airlines SQ366 nonstop', sub:'dep 01:30 → FCO 08:05 same morning · 12.6h · full cruise buffer day', hrs:12.6, delta:false,
-   note:'Only nonstop on the route (~4×/week — Fri operates; re-verify winter pattern). Zero connection risk before the cruise.',
-   fares:{jarred:{cabin:'Business',cash:2488}}},
-  {id:'ek', label:'Emirates via Dubai', sub:'16.5h · A380/777 lie-flat · huge schedule depth', hrs:16.5, delta:false,
-   note:'The cash-value 1-stop. No Delta earning.',
+ {id:'sinfco', name:'Singapore → Rome', date:'Oct 9–11 (pick your exit)', parties:['jarred'], opts:[
+  {id:'qr943', label:'Qatar QR943 Sat Oct 10 daytime — Qsuites, full party Friday', sub:'SIN 10:30 → Doha → FCO ~20:05 Sat · Qsuite both legs · SAFE: night in Rome before cruise', hrs:16, delta:false, badge:'REC',
+   note:'The After2049 closing party is FRI OCT 9 — this departure honors it fully, sleep included. Same 75k-Avios play. AUDIT FLAG: which DOH–FCO departure QR943 actually connects to (Sat 16:05 → 20:05 vs the 02:25 overnight arriving Sun 07:25) must be confirmed live on qatarairways.com before booking. Fees ~$90–150 (latedep\'s $350–450 figure unreconciled/likely wrong; QR waives fuel surcharges on Avios; new paid-seat-selection fee on J awards may apply).',
+   fares:{jarred:{cabin:'Qsuites',cash:2600,pts:{mr:75000,fees:120,label:'75k Avios + ~$90–150'},defPts:true}}},
+  {id:'sq366', label:'SQ366 nonstop Sun 01:30 — max Singapore (party + F1 Sprint + The Killers)', sub:'dep 01:30 Oct 11 → FCO 08:05 Oct 11 · 12.6h · ~7h port buffer, ZERO fallback', hrs:12.6, delta:false,
+   note:'Operates 5×/wk (Tue–Fri, Sun) through Oct 23 — Sun Oct 11 confirmed, NO Saturday flight. Race-day morning arrival; any tech delay = missed $32k cruise. If picked: pair with a $25-walk-away QR Avios hold as hedge + missed-connection insurance.',
+   fares:{jarred:{cabin:'Business',cash:2500}}},
+  {id:'qsuite9', label:'Qatar Qsuites Fri Oct 9 — max cruise buffer (misses the party)', sub:'17h · arrive Oct 10 · extra safety day in Rome', hrs:17, delta:false,
+   note:'The conservative original. Departing Oct 9 MISSES the After2049 closing party (Fri Oct 9) — pick this only if the buffer day outranks the party.',
+   fares:{jarred:{cabin:'Qsuites',cash:3200,pts:{mr:75000,fees:120,label:'75k Avios + ~$90–150'},defPts:true}}},
+  {id:'ek', label:'Emirates EK349 — the only workable EK bank', sub:'dep 01:40 Oct 10 → FCO 13:25 Oct 10 (~17.8h) · leaves DURING the party night', hrs:17.8, delta:false,
+   note:'AUDIT-corrected: EK has NO morning SIN departure; evening banks arrive Oct 11 13:25 = cruise-miss. EK349\'s 01:40 dep cuts the party at ~midnight. Weakest fit — kept for price reference only.',
    fares:{jarred:{cabin:'Business',cash:2208}}},
  ]},
  {id:'famout', name:'SFO → Rome', date:'Thu Oct 8', parties:['family'], opts:[
@@ -184,7 +190,7 @@ const SEGS = [
    note:'Dropped from $775 (July) to ~$598 — the nonstop premium over Condor is now only ~$220/head for 2.5h less and no connection risk with kids.',
    fares:{family:{cabin:'Economy',cash:598}}},
   {id:'condor', label:'Condor via Frankfurt — cheapest', sub:'14.3h · dep Oct 8', hrs:14.3, delta:false,
-   note:'Light fare: ~$379 + ~$70 bags (shown all-in). Family of 4 ≈ $1,850 with bags.',
+   note:'Light fare: ~$379 + ~$70 bags (shown all-in). Family of 4 ≈ $1,796 with bags.',
    fares:{family:{cabin:'Economy',cash:449}}},
   {id:'klm', label:'KLM/Delta via Amsterdam — SkyTeam', sub:'15h · earns Delta for the whole family', hrs:15, delta:true,
    note:'~$270/head premium purely for earning + Sky Priority via household SkyMiles numbers.',
@@ -203,20 +209,20 @@ const SEGS = [
  ]},
  {id:'hop', name:'Rome → Croatia', date:'Sun Oct 18 (post-cruise)', parties:['family','jarred'], opts:[
   {id:'ou', label:'Croatia Airlines to Dubrovnik', sub:'1.3h nonstop · full-service, bags included', hrs:1.3, delta:false, badge:'REC',
-   note:'Post-cruise party of 5 with max luggage — the ~$70 premium over Ryanair evaporates once bag fees stack. Dubrovnik FIRST (its season closes fastest), transfer to Split mid-week via the Pelješac bridge.',
+   note:'Post-cruise party of 5 with max luggage — $45/head all-in premium buys full-service + included bags. ⚠ AUDIT: OU385 Sunday operation unverified — confirm Sun Oct 18 on croatiaairlines.com (Ryanair evening = fallback). EXIT-POINT RULE: end the week at whichever airport your stopover departs from (Dublin/most stopovers = Dubrovnik; Amsterdam-via-SPU = Split) — a same-day Split→DBV transfer on Oct 25 is ~€300–400 and tight against a 20:40 flight.',
    fares:{family:{cabin:'Economy',cash:125}, jarred:{cabin:'Economy',cash:125}}},
   {id:'fr', label:'Ryanair evening to Dubrovnik', sub:'dep FCO ~21:45 → DBV 23:05 · leisurely Rome day after disembark', hrs:1.3, delta:false,
    note:'~$35 base + ~$45 bags each (shown all-in). Late arrival with kids after a disembark day.',
    fares:{family:{cabin:'Economy',cash:80}, jarred:{cabin:'Economy',cash:80}}},
   {id:'spu', label:'Croatia Airlines to Split', sub:'OU381 dep 18:00 · near-daily · Split-based week', hrs:1.2, delta:false,
-   note:'Basing in Split enables KLM\'s NEW Sunday SPU–AMS nonstop for the Amsterdam exit. Day-trip Dubrovnik early in the week.',
+   note:'Basing in Split targets KLM\'s announced Sunday SPU–AMS nonstop — ⚠ NOT yet visible/bookable in GDS (weakest verified link): confirm on klm.com first; fallback = OU SPU–ZAG + KL ZAG–AMS. Day-trip Dubrovnik early in the week.',
    fares:{family:{cabin:'Economy',cash:115}, jarred:{cabin:'Economy',cash:115}}},
  ]},
 ];
 const CITIES = [
  {id:'ams', city:'Amsterdam', emoji:'🇳🇱', tag:'★ Best points path',
-  get:{pp:220, label:'DBV–ZAG–AMS (safe, year-round) · or KLM SPU–AMS Sunday nonstop if Split-based'},
-  hotel:850, nights:'1–2n', delta:true,
+  get:{pp:220, label:'DBV–ZAG–AMS (safe, year-round) · SPU–AMS Sunday nonstop announced but ⚠ not yet in GDS — confirm on klm.com'},
+  hotel:880, nights:'2n', delta:true,
   fun:'Canals & bikes · NEMO science museum · Van Gogh · Anne Frank House',
   verify:'KLM DBV–AMS nonstop on Oct 25 = changeover-day gamble; the ZAG routing is immune. Tue Oct 27 typically $0–80/pp cheaper than Mon.',
   fam:[
@@ -228,10 +234,10 @@ const CITIES = [
    {id:'bizcash',label:'KLM World Business — cash',cash:3200},
    {id:'econ',label:'KLM Economy',cash:450}]},
  {id:'dub', city:'Dublin', emoji:'🇮🇪', tag:'🥉 Halloween’s birthplace',
-  get:{pp:90, label:'Ryanair DBV–DUB nonstop — CONFIRMED year-round in W26/27 · 3.5h'},
-  hotel:750, nights:'2n', delta:false,
+  get:{pp:180, label:'Ryanair Sun Oct 25 FR3881 20:40→23:05 CONFIRMED (Ryanair API) · NO Monday flight · winter 2–3×/wk · ~$90 fare + ~$60–90 bags/seats each'},
+  hotel:1360, nights:'2n', delta:false,
   fun:'Bram Stoker Festival that exact weekend · EPIC museum · Howth cliffs · US PRECLEARANCE — land SFO as a domestic arrival',
-  verify:'Aer Lingus EI61 ~5×/wk in winter — confirm which of Oct 26–28 it flies. Cheapest total of the top tier.',
+  verify:'⚠ Hotel surge: Stoker Fest + Dublin Marathon (your check-in day) + bank-holiday Monday stack on these exact nights (~$1,360/2n verified). 23:05 arrival with 3 kids → ~00:45 hotel; pre-book a 6-seat transfer. EI61 loaded daily (Aer Lingus has trimmed winter frequency in past years — recheck).',
   fam:[
    {id:'biz',label:'Aer Lingus Business (lie-flat) — Avios',cash:2800,pts:{mr:70000,fees:120,label:'60–75k Avios + low taxes (no UK APD)'},defPts:true,note:'Arguably the best value-per-point of any city.'},
    {id:'econ',label:'Aer Lingus Economy',cash:400}],
@@ -241,7 +247,7 @@ const CITIES = [
    {id:'econ',label:'Aer Lingus Economy',cash:400}]},
  {id:'lon', city:'London', emoji:'🇬🇧', tag:'🥇 Scout’s #1 overall',
   get:{pp:160, label:'BA Gatwick (historic winter link) or Ryanair Stansted · ~3h'},
-  hotel:1050, nights:'2n', delta:true,
+  hotel:1240, nights:'2n', delta:true,
   fun:'Harry Potter Studio Tour “Dark Arts” Halloween · West End · Tower of London · UK half-term energy (and crowds)',
   verify:'BA winter DBV = historic pattern; confirm when W26/27 posts. Virgin award surcharges ~$900–1,200/pp ex-LHR.',
   fam:[
@@ -253,7 +259,7 @@ const CITIES = [
    {id:'econ',label:'Economy',cash:500}]},
  {id:'par', city:'Paris', emoji:'🇫🇷', tag:'🥈 Disneyland Halloween',
   get:{pp:200, label:'via ZAG or FRA (no winter nonstop) · ~6h'},
-  hotel:900, nights:'2n', delta:true,
+  hotel:1440, nights:'2n', delta:true,
   fun:'Disneyland Paris Halloween Festival thru Nov 1 — Atticus jackpot · Eiffel · Catacombs for the teens',
   verify:'AF CDG–SFO daily year-round; Flying Blue J awards 70–100k appear regularly (4 seats harder than 2).',
   fam:[
@@ -448,11 +454,11 @@ function renderTotals(){
    </div>`;
 }
 const PRESETS=[
- {name:'⭐ Recommended', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'qsuite',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':true,'icnsin.jarred':true,'out.jarred':false}; S.city='ams'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
- {name:'💵 All cash — keep the points', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'ek',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':false,'icnsin.jarred':false,'out.jarred':false}; S.city='ams'; S.famCab='econ'; S.jarCab='bizcash'; S.famPay={}; S.jarPay={}; }},
- {name:'🪙 Min cash — max points', apply(){ S.seg={out:'ke',icnsin:'ke643',sinfco:'qsuite',famout:'condor',teamhome:'ua28',hop:'fr'}; S.pay={'out.jarred':true,'icnsin.jarred':true,'sinfco.jarred':true}; S.city='dub'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
- {name:'🎃 Max fun (kids vote)', apply(){ S.seg={out:'dl',icnsin:'scoot',sinfco:'qsuite',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':true}; S.city='par'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
- {name:'🇭🇷 Max Croatia', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'qsuite',famout:'ita',teamhome:'ua28',hop:'spu'}; S.pay={'sinfco.jarred':true}; S.city='none'; S.famCab='econ'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+ {name:'⭐ Recommended', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'qr943',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':true,'icnsin.jarred':true,'out.jarred':false}; S.city='ams'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+ {name:'💵 All cash — keep the points', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'sq366',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':false,'icnsin.jarred':false,'out.jarred':false}; S.city='ams'; S.famCab='econ'; S.jarCab='bizcash'; S.famPay={}; S.jarPay={}; }},
+ {name:'🪙 Min cash — max points', apply(){ S.seg={out:'ua',icnsin:'ke643',sinfco:'qr943',famout:'condor',teamhome:'ua28',hop:'fr'}; S.pay={'icnsin.jarred':true,'sinfco.jarred':true}; S.city='dub'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+ {name:'🎃 Max fun (kids vote)', apply(){ S.seg={out:'dl',icnsin:'scoot',sinfco:'qr943',famout:'ita',teamhome:'ua28',hop:'ou'}; S.pay={'sinfco.jarred':true}; S.city='par'; S.famCab='biz'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
+ {name:'🇭🇷 Max Croatia', apply(){ S.seg={out:'dl',icnsin:'ke643',sinfco:'qr943',famout:'ita',teamhome:'ua28',hop:'spu'}; S.pay={'sinfco.jarred':true}; S.city='none'; S.famCab='econ'; S.jarCab='biz'; S.famPay={}; S.jarPay={}; }},
 ];
 function renderPresets(){
   $('presets').innerHTML='';
