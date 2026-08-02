@@ -1,0 +1,337 @@
+[
+ {
+  "leg": "LANE 3 \u2014 Booking channel + credit card verification (Amex Biz Platinum vs Delta Reserve, platforms, insurance) for SIN\u2192FCO Oct 2026 + $31.9k cruise",
+  "options": [
+   {
+    "label": "Amex BUSINESS Platinum \u2014 verified Aug 2026 rules",
+    "detail": "CRITICAL distinction vs personal Plat: Biz Plat earns 5x MR ONLY on flights (and prepaid hotels) booked through AmexTravel.com \u2014 NOT on direct airline purchases. Direct airline spend falls in the 1.5x business-category bucket (airlines is a listed 1.5x category, combined ~$2M/yr cap, then 1x). Personal Platinum is the card with 5x direct-with-airline (capped $500k/yr). Trip Cancellation/Interruption: $10,000/trip, $20,000/card per 12 months, AIG (New Hampshire Ins. Co.), SECONDARY coverage, and REQUIRES a ROUND TRIP paid entirely on the card \u2014 but policy language explicitly allows the round trip to 'consist of round-trip, one-way, or combinations of one-way tickets' as long as you depart from and return to your city of residence within 365 days (so his SIN\u2192FCO one-way is covered IF the outbound US\u2192Asia leg was also on the same card; a standalone one-way with the outbound on another card is NOT covered). Trip Delay: 6-hour threshold, $500/trip, 2 claims/12mo. Baggage insurance and car-rental loss/damage (secondary) included. Award tickets: terms cover trips paid 'in combination with the Eligible Card and points from a frequent flyer program' \u2014 paying award taxes/fees on the card plausibly triggers protections, but this is NOT definitively confirmed (FlyerTalk consensus: likely yes, call AIG to confirm). Annual fee now $895. 35% Pay-with-Points rebate: still active, 1M pts/yr cap, but DEVALUED Sept 18 2025 \u2014 now applies ONLY to the cardmember's ONE selected qualifying airline (any cabin), no longer to biz/first on any airline. Rebate makes MR worth ~1.54cpp on that airline; bookings are PAID tickets that earn airline miles + elite credit.",
+    "price_usd": 895,
+    "price_confidence": "quoted-live",
+    "cruise_risk": "n/a",
+    "refundable_delta_usd": -1,
+    "source": "americanexpress.com Biz Plat page + trip-cancellation terms (americanexpress.com/us/credit-cards/features-benefits/policies/trip-cancellation-terms.html); upgradedpoints.com/credit-cards/reviews/amex-business-platinum/; frequentmiler.com (Sept 2025 rebate deval); flyertalk.com thread 1988632 (round-trip/one-way + award-taxes policy language)",
+    "notes": "One-way exclusion is the #1 trap: if the trip legs weren't all bought on this card as part of a home-to-home loop, trip cancel/interrupt/delay does not apply."
+   },
+   {
+    "label": "Amex Delta SkyMiles Reserve \u2014 verified Aug 2026 rules",
+    "detail": "Earn: 3x SkyMiles on Delta purchases, 1x everything else. 2026 Medallion-year status tools ALL still active: MQD Headstart = $2,500 MQDs per Medallion Qualification Year (per Reserve card; Reserve Business gives its own $2,500), MQD Boost = $1 MQD per $10 of ALL card spend (Reserve tier; Delta Platinum cards are $1/$20), TakeOff 15 = ongoing 15% award-mileage discount on Delta-operated award flights booked on delta.com/app (not partner-operated, not taxes/fees; excluded only on Blue card). Trip protections are essentially IDENTICAL to Biz Plat on the core three: Trip Cancel/Interrupt $10k/trip / $20k/12mo (AIG, same round-trip requirement, 7 covered reasons, 60-day pre-existing lookback), Trip Delay 6hr/$500/2 claims. What Reserve LACKS vs Biz Plat: baggage insurance, travel accident, and the broader premium car-rental coverage. So Platinum is never worse on protections and slightly better on baggage.",
+    "price_usd": 650,
+    "price_confidence": "quoted-live",
+    "cruise_risk": "n/a",
+    "refundable_delta_usd": -1,
+    "source": "delta.com/us/en/skymiles/airline-credit-cards/takeoff-15; delta.com medallion how-to-qualify; americanexpress.com Delta Reserve card page + MQD Headstart/Boost explainer (americanexpress.com/en-us/credit-cards/credit-intel/mqd-headstart-and-boost/); hellosafe.com Delta Reserve insurance review 2026",
+    "notes": "Reserve annual fee $650. TakeOff 15 attaches to the SkyMiles account (must be logged in with eligible card linked) \u2014 it applies regardless of which card pays the award taxes."
+   },
+   {
+    "label": "Card decision math: which card for each purchase (Diamond who holds both)",
+    "detail": "(a) $4,000 Delta One cash: Best pure earn = Biz Plat via AmexTravel.com: 20,000 MR (5x) = $320-400 at 1.6-2cpp, AND the ticket is Delta-marketed paid stock so it still earns SkyMiles + MQDs on the fare. Reserve booked direct = 12,000 SkyMiles (~$144 at 1.2cpp) + 400 MQDs from Boost ($4k/10). The MQD Boost delta only outweighs ~$200 of MR value if he is actively short of the $28k Diamond MQD threshold \u2014 otherwise Biz Plat/portal wins by ~$175-250. BUT for a cruise-critical leg, direct-with-Delta servicing beats the portal 5x (see channel verdict). Direct on Biz Plat earns only 1.5x (6,000 MR \u2248 $96-120) \u2014 worse than Reserve's 12,000 miles + 400 MQDs for a Diamond. So: booked DIRECT, Reserve wins; booked via AmexTravel, Biz Plat wins. (b) $585 Delta Main: same structure, stakes ~$30-45 \u2014 book direct on Reserve (1,755 miles + 58 MQDs) and don't overthink it. (c) Non-Delta cash (KE/SQ/QR/KLM): Reserve earns 1x (worthless here). Biz Plat direct = 1.5x; Biz Plat via AmexTravel = 5x (a $4k SQ J fare = 20k MR \u2248 $320-400 vs 6k direct). Paid published fares still credit miles to his chosen FF program either way. Biz Plat is the only sane card for non-Delta; portal-vs-direct is a servicing-risk call, not a card call. (d) Award taxes/fees: tiny dollar amounts \u2014 earn is irrelevant; pay with the card whose protections you want to (probably) attach. Either card's identical AIG coverage plausibly triggers via the 'in combination with frequent flyer points' language; Biz Plat adds baggage insurance, so default to Biz Plat for award fees. TakeOff 15 applies to Delta awards regardless of which Amex pays the taxes.",
+    "price_usd": 4000,
+    "price_confidence": "historical-typical",
+    "cruise_risk": "n/a",
+    "refundable_delta_usd": -1,
+    "source": "Derived from verified earn rates: onemileatatime.com 5x airfare guide; awardwallet.com Biz Plat 5x categories; americanexpress.com Delta Reserve (3x Delta, MQD Boost $1/$10); MR valuation 1.6-2cpp per prompt assumption",
+    "notes": "Rule of thumb that falls out: Delta flights direct \u2192 Reserve; anything through AmexTravel \u2192 Biz Plat; all non-Delta airlines \u2192 Biz Plat; award taxes \u2192 Biz Plat. If his 35% Pay-with-Points selected airline is Delta, paying a $4k Delta One fare with points costs ~260k MR net (1.54cpp) \u2014 decent but usually worse than holding MR for transfer bookings."
+   },
+   {
+    "label": "Booking-channel verdict: price-drop protection without sacrificing status/irrops",
+    "detail": "Honest answer: only ONE channel gives real price-drop protection with zero sacrifice \u2014 DELTA DIRECT. Delta's no-change-fee policy (Main Cabin+; ex-US/Canada tickets on Main/Comfort+/D1) lets you self-service reprice in My Trips or via agent 'repricing': same flight, same seats, difference issued as an eCredit (typically 1-yr validity). That IS price-drop protection, in eCredit form. Google Flights Price Guarantee: still active 2026 but USELESS for this trip \u2014 badge-only fares, Book on Google, and ONLY itineraries DEPARTING THE U.S. ($500/yr aggregate cap, $5 min, paid after travel). A SIN\u2192FCO departure is categorically ineligible. AmexTravel (Biz Plat): 5x earn + 35% rebate on selected airline; bookings are airline ticket stock, earn miles/status/MQDs \u2014 the least-bad portal \u2014 but changes/schedule-change handling routes through Amex Travel agents, an unacceptable extra layer for a hard cruise deadline; no price-drop mechanism. Chase Travel / Capital One Travel: irrelevant here (he'd forfeit Amex earn); C1 has price-drop protection only on its own 'price prediction' bookings; both are Expedia-powered under the hood with the same irrops handoff problem. Expedia/OTAs: break irrops because the OTA owns the PNR \u2014 airlines will often refuse to touch the ticket for rebooking/refunds mid-disruption, and OTA agent queues during a mass-delay event can eat the hours that decide whether he makes Civitavecchia. AutoSlash-style monitoring: no flight equivalent worth using; the play is a manual/alert-driven recheck of the Delta fare weekly + reprice to eCredit. RECOMMENDATIONS: Delta cash \u2192 book delta.com direct (Reserve card), monitor + reprice for eCredit. Partner cash (SQ/KE/QR/KLM) \u2192 book AIRLINE-DIRECT on Biz Plat (accept 1.5x; the 5x portal upside of ~$200-500 is not worth portal servicing on a must-make sailing); no price-drop protection exists \u2014 just buy when the fare is right. Awards \u2192 book on the operating/marketing airline's own site, taxes on Biz Plat; awards are inherently price-drop-protected (cancel/redeposit is free on Delta and most programs at his tier).",
+    "price_usd": 0,
+    "price_confidence": "quoted-live",
+    "cruise_risk": "safe",
+    "refundable_delta_usd": 0,
+    "source": "thriftytraveler.com/news/airlines/delta-voucher-refund/; slipfare.com Delta price-drop eCredit guide; travel.google.com/flights/guarantee/terms (US-departure + Book-on-Google requirement); thriftytraveler.com Google price guarantee guide; upgradedpoints.com AmexTravel rebate rules",
+    "notes": "For the Oct 11 cruise-boarding leg specifically: airline-direct is non-negotiable. During irrops the airline can rebook you across its own metal + partners in minutes; an OTA/portal booking can strand you in a phone queue."
+   },
+   {
+    "label": "Insurance gap: standalone policy vs card coverage for $31.9k cruise + $15-25k flights",
+    "detail": "Card coverage alone is grossly insufficient and the math is not close. Total nonrefundable exposure: ~$47-57k. Amex trip cancel/interrupt caps at $10,000 per trip ($20k/card/12mo) \u2014 under 20% of exposure \u2014 is SECONDARY, requires the round-trip-on-one-card structure, covers only 7 enumerated reasons, and Amex has NO missed-cruise-departure benefit at all (trip delay pays max $500 of hotel/meals, nothing toward a forfeited cruise). A single-trip comprehensive policy with cruise/missed-connection coverage is clearly worth it: 2026 pricing runs ~2.9-6% of insured trip cost for non-senior travelers (MoneyGeek: a $50k trip \u2248 $1,450 \u2248 2.9%; Squaremouth cruise-plan average 4-10% but high-value trips price at the low end). Expect roughly $1,500-3,500 for a family policy insuring ~$50k, ages ~30s-40s (kids often free on plans like Travel Insured FlexiPAX, which also pays 150% on interruption). CRITICAL shopping criteria for THIS trip: (1) high missed-connection benefit \u2014 standard benefits are a thin $250-2,500/person with a 3-hr delay trigger; buy a cruise-oriented plan and confirm the missed-connection limit covers catch-up-to-next-port airfare + hotel, (2) trip interruption 150% of trip cost, (3) coverage must be bought to include the FULL cruise value ($31.9k) not just flights, (4) buy within 14-21 days of the first trip deposit if pre-existing-condition waiver or CFAR is wanted (CFAR adds ~40-50% premium, reimburses 75%). Annual multi-trip policies are the WRONG tool \u2014 their per-trip cancellation caps are typically $2.5k-10k. VERDICT: yes \u2014 buy a single-trip policy at ~$1.5-3.5k; it is the only instrument that actually covers a missed $31.9k sailing, and 3-6% of trip value to protect a Singapore-to-Rome same-week cruise connection is cheap relative to the tail risk.",
+    "price_usd": 2500,
+    "price_confidence": "aggregator-estimate",
+    "cruise_risk": "safe",
+    "refundable_delta_usd": -1,
+    "source": "moneygeek.com/insurance/travel/how-much-does-travel-insurance-cost/ ($50k trip \u2248 $1,450); squaremouth.com cruise insurance cost report + best cruise plans 2026; forbes.com/advisor/travel-insurance/missed-connection-coverage/; experian.com average travel insurance cost 2026",
+    "notes": "Caveat on missed connection: some cruise lines bar late embarkation at the first port \u2014 verify the policy pays to join at the NEXT port and confirm the cruise line permits it. Get live quotes on Squaremouth/InsureMyTrip with the exact $31.9k + flight values; the 2.9-6% band is aggregator data, not a bound quote."
+   },
+   {
+    "label": "Award taxes/fees + protections trigger \u2014 the specific ruling",
+    "detail": "Do taxes/fees on the card trigger travel protections? The governing Amex/AIG policy defines the covered trip as one where the traveler 'charges the full amount of the cost of transportation... to the Eligible Card, or in combination with the Eligible Card and points... awarded from a frequent flyer program.' That language supports coverage for award tickets whose taxes/fees hit the card \u2014 BUT (1) reimbursement is limited to nonrefundable amounts actually CHARGED to the card, so on an award ticket the recoverable cancel/interrupt amount is essentially just the taxes/fees (miles are redeposited by the airline anyway, free at Delta and for most elite tiers); (2) trip DELAY coverage is the real prize on awards \u2014 a covered 6-hr delay pays up to $500 in expenses even though the underlying ticket was miles; (3) the round-trip requirement still applies to the overall journey; (4) community reporting (FlyerTalk) shows AIG claim outcomes on award-only trips are not uniformly confirmed \u2014 treat as probable, not guaranteed. Practical instruction: put award taxes on Biz Plat, keep every receipt, and don't count card coverage toward the cruise-value exposure at all (that's the standalone policy's job).",
+    "price_usd": 0,
+    "price_confidence": "quoted-live",
+    "cruise_risk": "n/a",
+    "refundable_delta_usd": -1,
+    "source": "americanexpress.com/us/credit-cards/features-benefits/policies/trip-cancellation-terms.html; flyertalk.com/forum/american-express-membership-rewards/1988632 (policy-language analysis, p.47)",
+    "notes": "This matters most if he books the SIN\u2192FCO leg as a partner award (e.g., KE/Flying Blue): the $100-500 in carrier fees on the card buys $500 trip-delay coverage on a leg where a 6+ hr delay threatens the cruise."
+   }
+  ],
+  "summary": "Verified Aug 2026: (1) Amex BUSINESS Platinum earns 5x ONLY via AmexTravel.com (direct airline spend = 1.5x business-category; the 5x-direct-with-airline rate belongs to the PERSONAL Platinum, $500k cap). Trip cancel/interrupt is $10k/trip / $20k/12mo AIG secondary, requires a round trip paid entirely on the card \u2014 but one-way tickets qualify when they combine into a home-to-home loop; award tickets with taxes on the card are plausibly covered via explicit 'in combination with frequent flyer points' language (unconfirmed in claims practice). Trip delay 6hr/$500. (2) Delta Reserve: 3x on Delta, MQD Headstart $2,500 + MQD Boost $1/$10 + TakeOff 15 all confirmed active for the 2026 Medallion year; core trip protections identical to Platinum, minus baggage insurance. (3) Card routing for a Diamond holding both: Delta booked direct \u2192 Reserve (miles + MQD Boost beat 1.5x MR); anything via AmexTravel \u2192 Biz Plat 5x (portal tickets still earn Delta miles/MQDs/status); ALL non-Delta cash (SQ/KE/QR/KLM) \u2192 Biz Plat; award taxes \u2192 Biz Plat. On the $4k Delta One fare, AmexTravel/Biz Plat yields ~$320-400 in MR vs ~$144+400 MQDs on Reserve direct \u2014 but for the cruise-critical leg, direct-with-airline servicing outweighs the ~$200 earn delta. (4) Channel verdict: the ONLY real price-drop protection with zero sacrifice is Delta direct (fee-free reprice to eCredit \u2014 current confirmed policy). Google Flights Price Guarantee is alive but requires US departures + Book on Google, so SIN-departing legs are categorically ineligible. AmexTravel is the least-bad portal (airline stock, earns miles/status/MQDs, 35% rebate now limited to ONE selected airline) but adds an agent layer in irrops \u2014 wrong for a hard Oct 11 boarding deadline. OTAs (and the Expedia-powered Chase/C1 portals) break irrops and are rejected. (5) Insurance: card coverage caps at $10k against ~$47-57k nonrefundable exposure and has zero missed-cruise benefit \u2014 buy a single-trip cruise-oriented policy (~$1,500-3,500, i.e. ~3-6% of insured value; MoneyGeek pegs a $50k trip at ~$1,450 for younger travelers), with high missed-connection limits and 150% interruption; annual multi-trip policies cap too low. Net play: Delta legs direct on Reserve with weekly reprice checks, partner cash direct on Biz Plat, awards on airline sites with taxes on Biz Plat, plus a standalone policy carrying the cruise value.",
+  "caveats": "All card terms verified via Aug 2026 secondary sources plus Amex/Delta official pages, but binding language lives in the Amex benefit guides (americanexpress.com/benefitsguide) \u2014 confirm the round-trip definition and award-ticket coverage with AIG before relying on it for a claim. The 'one-way tickets combine into a round trip' provision requires ALL common-carrier legs of the home-to-home journey on the SAME eligible card \u2014 if the US\u2192Singapore outbound went on a different card, the SIN\u2192FCO leg has NO Amex trip protections regardless of which card pays. MR valuations (1.6-2cpp) and SkyMiles (~1.2cpp) are assumptions given in the prompt, not market quotes. Insurance premium is an aggregator estimate band, not a bound quote \u2014 pull live quotes with exact traveler ages and the $31.9k cruise value; note CFAR and pre-existing waivers have purchase deadlines tied to the FIRST trip deposit date, which may already have passed for the cruise. The 35% Pay-with-Points rebate now applies only to the January-selected airline \u2014 if his 2026 selection isn't Delta (or isn't the carrier he'll fly), that benefit is dead for this trip. Reserve Business card was assumed to mirror personal Reserve on earn/MQD/TakeOff 15 (sources confirm TakeOff 15 and Headstart apply to Reserve Business; per-card details not independently re-verified)."
+ },
+ {
+  "leg": "LANE 2 \u2014 Refundability + flexibility audit for all cash and award options (Token2049 SIN Oct 2026 \u2192 Civitavecchia cruise Oct 11)",
+  "options": [
+   {
+    "label": "1. Delta SMF-SEA-ICN (Delta One + Main, cash)",
+    "detail": "US-originating, so Delta's no-change-fee policy applies to Main cabin and above (Basic excluded): cancel anytime pre-departure for an eCredit of full value (expires ~1 yr from purchase), change free paying only fare difference. Cash-back refund requires buying the 'Refundable' fare brand at booking.",
+    "price_usd": 4800,
+    "refundable_delta_usd": 1400,
+    "cancel_terms": "Default (nonrefundable Main/Delta One): $0 change fee, cancel = eCredit not cash. Refundable fare: full cash refund to original payment, auto-processed. Basic fares: cancel fee deducted, eCredit only. DOT 24-hr free cancel applies (US itinerary, booked direct 7+ days out).",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "delta.com/us/en/change-cancel/overview and /cancel-flight (verified via search 2026-08-01)",
+    "notes": "Refundable-fare surcharge on Delta One transpacific historically runs ~20-40% over the lowest nonrefundable Delta One fare; $1,400 delta is a mid-estimate on a ~$4,800 one-way \u2014 pull live at booking. Practical view: eCredit-not-cash is the only real downside of the default fare; for a Diamond who flies Delta anyway, paying the refundable surcharge is usually poor value."
+   },
+   {
+    "label": "2. Korean Air SFO-ICN + ICN-SIN (cash)",
+    "detail": "KE fare brands: Economy Saver (N,T) non-refundable ex-US; Economy Standard (S,H,E,K,L,U,Q) refundable minus fee; Economy Flex refundable with nominal service fee only; Prestige Standard (D,I,R) refundable minus fee; Prestige Flex (J,C) refundable with nominal service fee.",
+    "price_usd": 1300,
+    "refundable_delta_usd": 400,
+    "cancel_terms": "Standard fares: cancel fee typically ~$100-200 economy / ~$200-300 Prestige on US-originating long-haul (exact amount set in fare rules at ticketing \u2014 KE publishes no single 2026 table). Flex: effectively free cancel (nominal service fee ~$30). Free cancel windows: within 24 hrs of purchase (booked 7+ days out, direct), or 91+ days before departure ex-Korea. SFO-ICN(-SIN) on one ticket touches the US \u2192 DOT 24-hr rule applies; a standalone ICN-SIN ticket does NOT get DOT protection.",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "koreanair.com fare rules summarized via airlinespolicyhub.com, KE branded-fares revision notice (Aug 2024), travelouts.com",
+    "notes": "price_usd = typical SFO-ICN Economy Standard one-way; Prestige one-way typically $2,800-4,000 with Flex ~$600-1,200 above Standard. Book SFO-ICN-SIN as ONE ticket to keep DOT 24-hr coverage over the whole routing."
+   },
+   {
+    "label": "3. Singapore Airlines SIN-FCO Business (cash)",
+    "detail": "Current SQ brand ladder is Business Lite / Standard / Flexi ('Advantage' is retired naming). Standard: refundable minus cancel fee \u2014 raised 2026-04-28 from S$340 to S$450 (~$335) for long-haul tickets issued on/after that date; no-show fee ~$300. Flexi: fully refundable, free or trivial admin fee, free changes.",
+    "price_usd": 3800,
+    "refundable_delta_usd": 600,
+    "cancel_terms": "Standard: cancel = refund minus ~S$450 (~$335 USD) + any no-show exposure if not cancelled pre-departure. Flexi: cancel free, refund to original payment. Lite: non-refundable (taxes only). NO DOT 24-hr protection (itinerary never touches the US); SQ has no universal voluntary 24-hr window on SIN point-of-sale bookings \u2014 a US point-of-sale booking of this route is still not legally covered.",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "singaporeair.com Charges and Changes; fee-increase reported by indianeagle.com/travelbeats (Apr 2026); flyertalk SQ forum",
+    "notes": "Standard\u2192Flexi gap on SIN-Europe business typically $400-900. Given the cruise deadline, Standard's ~$335 cancel fee is cheap insurance relative to buying Flexi \u2014 but Flexi also buys free date CHANGES, which matters if Token2049 side events run long. Mixed-class bookings inherit the most restrictive segment's rules."
+   },
+   {
+    "label": "4. Qatar Airways SIN-DOH-FCO Business Classic / Comfort / Elite (cash)",
+    "detail": "Classic: 1 free change (fare diff applies), refundable minus fee ~$100-200 (varies by market/currency). Comfort: 2 free changes, refundable with smaller or no fee in most markets. Elite: unlimited free changes and fully free refund to original card.",
+    "price_usd": 3500,
+    "refundable_delta_usd": 500,
+    "cancel_terms": "Classic refund fee typically $100-200 region-dependent; Comfort typically refundable with low/no fee; Elite $0. NO DOT 24-hr protection on SIN-FCO (no US touchpoint); Qatar's own 24-hr free-cancel courtesy exists in some points of sale (incl. US site) but is policy, not law, for this routing.",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "qatarairways.com fare families; onemileatatime.com/news/qatar-airways-business-class-fares; happyfares.in Qatar fare-types 2026 guide; executivetraveller.com",
+    "notes": "Typical gaps SIN-FCO: Classic\u2192Comfort +$300-600, Classic\u2192Elite +$800-1,500. refundable_delta_usd of $500 = Classic\u2192Comfort mid-point; Comfort is usually the sweet spot (near-full refundability + 2 free changes) without Elite's premium. Watch for the new unbundled Business Lite creeping into results \u2014 it is the restrictive outlier."
+   },
+   {
+    "label": "5. Emirates SIN-DXB-FCO Business Saver / Flex / Flex Plus (cash)",
+    "detail": "Saver: change fee $400, refund fee $400. Flex: changes FREE, but refund still costs $400. Flex Plus: fully flexible \u2014 free changes AND free full refund (Emirates' own site confirms no refund or date-change fee).",
+    "price_usd": 3600,
+    "refundable_delta_usd": 1800,
+    "cancel_terms": "Saver: -$400 to cancel, -$400 to change. Flex: $0 change / -$400 refund. Flex Plus: $0 / $0. No-show forfeits substantial value on all but Flex Plus \u2014 cancel before departure. NO DOT 24-hr protection (no US point); Emirates' own US-market 24-hr policy does not legally extend to SIN-FCO.",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "emirates.com Flex Plus fare popup + Business Rewards FAQ; theflightexpert.com Emirates fare-classes guide",
+    "notes": "Key asymmetry: Flex only buys free CHANGES, not free refunds \u2014 full refundability requires Flex Plus, which typically runs $1,500-2,500 over Saver on this market (delta shown is mid-estimate). If the realistic failure mode is 'shift a day', Flex is enough; if it's 'scrap the whole leg', Saver + eating $400 is often cheaper than Flex Plus."
+   },
+   {
+    "label": "6. United UA28 SIN-SFO Economy (cash)",
+    "detail": "Basic Economy: non-changeable; cancellable pre-departure only for partial credit minus $99.50 international one-way fee. Regular Economy: cancel = full-value eCredit (1-yr expiry). CAUTION: United's blanket no-change-fee policy covers international tickets ORIGINATING IN THE US \u2014 a standalone SIN-originating ticket follows its fare rules and may carry change fees.",
+    "price_usd": 900,
+    "refundable_delta_usd": 700,
+    "cancel_terms": "Basic: -$99.50 \u2192 credit only. Regular Economy: eCredit; change-fee-free only if ticket originates in US. Fully Refundable Economy (Y/B): cash refund, typically +$600-900 over lowest economy on SIN-SFO. DOT 24-hr rule APPLIES (flight arrives in the US; carrier >30 seats) if booked direct with United 7+ days out \u2014 even though it originates in SIN.",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "united.com policies via afar.com, thepointsguy.com (united-airlines-basic-economy-cancel, united-eliminates-intl-change-fees)",
+    "notes": "Avoid Basic on this leg. If this is the post-cruise repositioning, verify at booking whether the specific SIN-origin fare carries a change fee \u2014 the US-origination nuance is the trap here."
+   },
+   {
+    "label": "7. ITA Airways SFO-FCO Economy Light / Classic / Flex (cash)",
+    "detail": "Long-haul specifics: Light \u2014 changeable anytime for $199/route + fare diff, NON-refundable (taxes only). Classic \u2014 destination/date changes FREE (fare diff applies), still non-refundable. Flex \u2014 free changes AND refundable.",
+    "price_usd": 700,
+    "refundable_delta_usd": 350,
+    "cancel_terms": "Light/Classic: cancel yields only recoverable airport taxes. Flex: refundable per fare rules. DOT 24-hr rule APPLIES (US-touching route); ITA also runs its own official 24-hr no-penalty cancellation for US flights booked 7+ days out via its US site/call center (877-793-1717).",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "ita-airways.com/en_us after-sale-policy and changes-refunds pages",
+    "notes": "Classic is the odd duck: free CHANGES but zero refund \u2014 fine if plans shift, worthless if the trip dies. Light\u2192Classic typically +$80-150; Light\u2192Flex +$250-450 on SFO-FCO. Flex delta shown vs Light."
+   },
+   {
+    "label": "8. KLM AMS-SFO Economy Light / Standard / Flex + World Business Flex (cash)",
+    "detail": "Light: NON-refundable; intercontinental change EUR 200 + fare diff (route-dependent carve-outs on Europe\u2192US). Standard: change EUR 200 + fare diff, non-refundable for cash. Flex: free changes, free cancellation with full refund. World Business Flex: refundable \u2014 and note AF/KLM's Apr 2026 experiment charging EUR 500 to refund Business Flex was REVERSED effective 28 May 2026 for Y/B/M-class Flex fares; it never applied to US-touching routes anyway.",
+    "price_usd": 650,
+    "refundable_delta_usd": 500,
+    "cancel_terms": "Light: forfeit (taxes only). Standard: EUR 200 change, no cash refund. Flex (econ or business): $0 cancel, full refund. DOT 24-hr rule APPLIES (arrives US). Flex fares can only be changed into Flex/Premium/Business fares, not down-graded to Light/Standard.",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "source": "klm.com ticket-options pages (US/DE/IN); loyaltylobby.com and youhavebeenupgraded.boardingarea.com on the Apr-May 2026 Flex refund-fee reversal; flyertalk AF/KLM forum",
+    "notes": "Econ Standard\u2192Flex typically +$400-600 on AMS-SFO; World Business Flex over Business Standard typically +$700-1,200. The May 2026 reversal matters: Business Flex on this route is again genuinely fully refundable."
+   },
+   {
+    "label": "9. AWARD \u2014 Delta SkyMiles redeposit (US-issued, Diamond)",
+    "detail": "US/Canada-originating SkyMiles awards: change and cancel FREE for all members (Basic award fares excluded). Diamond Medallion additionally waives the $150 redeposit fee that would otherwise hit awards originating OUTSIDE North America \u2014 so for Jarred, effectively $0 redeposit on any routing.",
+    "price_usd": 0,
+    "refundable_delta_usd": 0,
+    "cancel_terms": "Cancel pre-departure: miles redeposit in 24-72 hrs, cash taxes/fees refunded to card within ~7 business days. No-show = miles forfeited. Basic award fares: mileage cancellation charge applies. Delta-cancelled flights: full redeposit regardless.",
+    "cruise_risk": "n/a",
+    "price_confidence": "quoted-live",
+    "source": "delta.com SkyMiles program rules (verified via awardtravelfinder.com and 2026 guides)",
+    "notes": "This is the most flexible instrument in the entire portfolio \u2014 a Diamond-held SkyMiles award is a free option. Book speculatively without hesitation; just never no-show."
+   },
+   {
+    "label": "10. AWARD \u2014 Flying Blue (AF/KLM) cancel fee",
+    "detail": "EUR 70 flat to change OR cancel/redeposit an award, including Promo Rewards. Free within 24 hrs of booking. Flying Blue Platinum members pay nothing.",
+    "price_usd": 75,
+    "refundable_delta_usd": 0,
+    "cancel_terms": "Must cancel before check-in deadline or ticket is forfeited. Miles usually redeposit fast; cash taxes/fees refund to card is the slow part \u2014 real-world 2026 reports of 2-4+ week waits, worse on partner-metal bookings.",
+    "cruise_risk": "n/a",
+    "price_confidence": "quoted-live",
+    "source": "flyingblue.com rules via onemileatatime.com award-fees guide, frequentmiler.com, flyertalk AF/KLM forum (2026 threads)",
+    "notes": "price_usd here = the cancel fee itself (~EUR 70). Cheap enough to book speculatively; the risk is the transferred-points trap (see item 13), not the fee."
+   },
+   {
+    "label": "11. AWARD \u2014 Qatar Privilege Club Avios cancel/refund",
+    "detail": "Cancel >24 hrs before departure: USD 25/passenger (free for Gold/Platinum members). 3-24 hrs before: USD 100 (still free for Gold/Platinum). Under 3 hrs / no-show: Avios FORFEITED, only government taxes refunded.",
+    "price_usd": 25,
+    "refundable_delta_usd": 0,
+    "cancel_terms": "Avios + eligible taxes refunded if cancelled in time. The separate per-segment redemption booking fee (reintroduced Mar 2026-era) is NON-refundable. Fees are per ticketed passenger.",
+    "cruise_risk": "n/a",
+    "price_confidence": "quoted-live",
+    "source": "qatarairways.com/en-us/Privilege-Club/redeem-avios/award-ticket-fees.html and purchase-conditions page; flyertalk QR Privilege Club forum",
+    "notes": "$25 to walk away makes a QR Avios Qsuite hold on SIN-FCO one of the cheapest hedges available. Hard rule for the cruise-day context: cancel NO LATER than 25 hrs out to stay in the $25 band, and never inside 3 hrs."
+   },
+   {
+    "label": "12. AWARD \u2014 Virgin Atlantic Flying Club cancel fee",
+    "detail": "USD 100 per person to change or cancel US-originating awards (doubled from $50 when dynamic pricing launched Oct 30, 2024; official T&Cs page still shows the stale $50/\u00a330 figures). Cancel >24 hrs before departure: points + taxes/surcharges refunded minus the fee. Inside 24 hrs of departure: only government taxes back \u2014 points and surcharges forfeited.",
+    "price_usd": 100,
+    "refundable_delta_usd": 0,
+    "cancel_terms": "$100/person cancel or change, US-originating. UK-originating \u00a330 per stale T&Cs \u2014 verify at booking. The big exposure on VS metal is the carrier surcharge (up to ~$586 one-way US-UK business) which is refundable only if you cancel outside 24 hrs.",
+    "cruise_risk": "n/a",
+    "price_confidence": "quoted-live",
+    "source": "virginatlantic.com Flying Club T&Cs; thepointsguy.com virgin-atlantic-flying-club-fee-changes; upgradedpoints.com",
+    "notes": "Only relevant if using VS points to book partner metal (e.g., Delta transpacific). Worst cancel economics of the four programs here \u2014 book only at 80%+ certainty."
+   },
+   {
+    "label": "13. AWARD PLUMBING \u2014 Amex Membership Rewards transfers",
+    "detail": "CONFIRMED IRREVERSIBLE. Every source and Amex's own terms agree: transfers to airline partners (Delta, Flying Blue, Qatar Avios, Virgin Atlantic \u2014 all four above are MR partners) are one-way and final; points can never come back to MR.",
+    "price_usd": 0,
+    "refundable_delta_usd": -1,
+    "cancel_terms": "No reversal mechanism exists. If an award is cancelled, miles redeposit into the AIRLINE program (per that program's fee above), not back to Amex. US-airline transfers (Delta) also incur the $0.0006/pt federal excise offset fee, capped at $99.",
+    "cruise_risk": "n/a",
+    "price_confidence": "quoted-live",
+    "source": "thepointsguy.com/news/credit-card-points-transfers-cannot-be-reversed; awardwallet.com; upgradedpoints.com MR transfer guides",
+    "notes": "Operational rule for this trip: confirm award space is bookable, transfer only the exact amount needed, book within minutes. A cancelled Flying Blue or Qatar award strands the points in that program \u2014 a real cost if Jarred wouldn't otherwise use them, even though the airline's cancel fee is small."
+   },
+   {
+    "label": "14. US DOT 24-HOUR RULE \u2014 coverage map for this portfolio",
+    "detail": "Legal basis 14 CFR 259.5: applies to flights TO, FROM, or WITHIN the US on any carrier with 30+ seat aircraft, booked DIRECTLY with the airline 7+ days before departure; airline must offer free cancel for full CASH refund (or free 24-hr hold). COVERED: Delta SMF-SEA-ICN; Korean SFO-ICN-SIN if ticketed as one itinerary; United UA28 SIN-SFO (arrives US \u2014 origin abroad doesn't matter); ITA SFO-FCO; KLM AMS-SFO; and award tickets on those same US-touching itineraries. NOT COVERED: SIN-FCO on Singapore Airlines, Qatar, or Emirates \u2014 no US touchpoint, so no legal protection regardless of where the ticket was sold or which website sold it.",
+    "price_usd": 0,
+    "refundable_delta_usd": 0,
+    "cancel_terms": "For non-covered SIN-FCO legs, any 24-hr grace is voluntary airline policy (Qatar's US point-of-sale courtesy, ITA's US-site policy) and can be denied \u2014 do not rely on it. A standalone ICN-SIN ticket is likewise uncovered; keep it on the SFO-ICN ticket.",
+    "cruise_risk": "n/a",
+    "price_confidence": "quoted-live",
+    "source": "DOT rule 14 CFR 259.5 via onemileatatime.com/guides/cancel-flight-24-hours, thriftytraveler.com, legalclarity.org",
+    "notes": "Practical consequence: the SIN-FCO leg \u2014 the single most schedule-critical flight of the trip (cruise boarding) \u2014 is exactly the one with NO legal free-look window. Buy flexibility there in the fare itself (SQ Flexi, QR Comfort/Elite, EK Flex Plus) or via a cheap award hold (QR Avios at $25 cancel is the standout hedge)."
+   }
+  ],
+  "summary": "Flexibility audit of the ~$15-25k flight portfolio. US-touching cash legs (Delta SMF-ICN, Korean SFO-ICN-SIN, UA28 SIN-SFO, ITA SFO-FCO, KLM AMS-SFO) all carry DOT 24-hr free-cancel plus no-change-fee or cheap-eCredit regimes \u2014 their default nonrefundable fares are already quite safe, and paying the refundable surcharge ($350-1,400 depending on cabin) mainly buys cash-back instead of credit. The schedule-critical SIN-FCO leg has ZERO legal 24-hr protection on SQ/QR/EK; refundability must be bought in the fare: SQ Standard cancels for ~S$450 (Flexi = free), Qatar Elite refunds free (Classic ~$100-200 fee, Comfort near-free, gaps +$300-1,500), Emirates needs Flex Plus (~+$1,500-2,500) for a free refund since even Flex charges $400 to refund. Awards are the cheapest flexibility of all: Delta Diamond redeposits free everywhere, Qatar Avios $25, Flying Blue EUR 70, Virgin $100 \u2014 but Amex MR transfers feeding them are confirmed irreversible, so transfer only against confirmed space. Best cruise-day hedge: hold a QR Avios Qsuite SIN-FCO ($25 walk-away) or a Delta award (free) alongside whatever cash fare is booked.",
+  "caveats": "Cancel-fee amounts for Korean Air, Qatar Classic/Comfort, and all fare-brand price GAPS are historical-typical estimates \u2014 exact figures live in the fare rules displayed at booking and vary by market, currency, and booking class. SQ's S$450 Business Standard cancel fee applies to tickets ISSUED on/after 2026-04-28 (earlier issues keep S$340). Virgin's official T&Cs page lags the real $100 US fee. KLM Flex refund rules changed twice in 2026 (fee added Apr 21, reversed May 28 for Y/B/M) \u2014 re-verify at booking if ticketing a non-Y/B/M Flex class. Several search results were SEO-spam pages with fake call-center numbers; all figures here were taken only from official airline pages or reputable frequent-flyer press (OMAAT, TPG, Executive Traveller, LoyaltyLobby, FlyerTalk). DOT analysis assumes direct-with-airline purchase 7+ days pre-departure; OTA bookings lose the legal guarantee. Award-program fees assume Jarred's status: Delta Diamond confirmed; he holds NO Qatar Gold/Platinum or Flying Blue Platinum unless stated, so non-elite fees quoted."
+ },
+ {
+  "leg": "SIN\u2192FCO (latest departures that still make the Civitavecchia cruise, Sun Oct 11 2026 ~15:00 check-in close)",
+  "options": [
+   {
+    "label": "GROUND TRUTH \u2014 AFTER 2049 closing party is Fri Oct 9, not Oct 8",
+    "detail": "Conference is Wed-Thu Oct 7-8 at MBS (token2049.com/singapore). The official AFTER 2049 closing party is at MBS SkyPark Observation Deck on Fri Oct 9 2026 (KuCoin's Token2049-2026 guide states 'closing party on October 9'; official site confirms venue but posts no time yet; 2025 pattern: ~20:00-late, no re-entry after midnight, Megatix ticketing, tiered from ~S$149). It deliberately rides the F1 Singapore GP weekend, which in 2026 is Oct 9-11 with Singapore's first-ever Sprint format: Sprint Quali Fri Oct 9, Sprint race + GP Qualifying Sat Oct 10 (The Killers concert), Grand Prix Sun night Oct 11 (Lana Del Rey). Token2049 Week side events run Oct 5-11; the only marquee daytime items after the conference are Finality Forum and RWA Summit Singapore, both Fri Oct 9 10:00-18:00 (week.token2049.com); nothing major is listed Oct 10-11 except F1 itself. NET: party ends late night Oct 9/early Oct 10, so every option below departs Oct 10 or later.",
+    "price_usd": 0,
+    "source": "token2049.com/singapore; week.token2049.com; kucoin.com/blog/token2049-Singapore-2026; racingnews365.com/f1/races/singapore-gp; citynomads.com (2025 edition pattern); megatix.com.sg/events/after-2049",
+    "cruise_risk": "n/a",
+    "price_confidence": "historical-typical",
+    "notes": "If he also wants Saturday's Sprint race + The Killers, only the SQ366 Sun 01:30 option delivers that."
+   },
+   {
+    "label": "LATEST POSSIBLE: SQ366 nonstop, dep 01:30 Sun Oct 11 \u2192 FCO 08:05 Oct 11",
+    "detail": "SQ366 SIN 01:30 \u2192 FCO 08:05, A350-900, nonstop 12h35. Operating days through Oct 23 2026 per published timetable: Tue/Wed/Thu/Fri/SUN \u2014 it does NOT operate Saturday, so there is no night-of-Oct-9/10 departure (dep Sat Oct 10 01:30 doesn't exist); the night-of-Oct-10/11 departure (Sun Oct 11 01:30) DOES operate. This is the maximal-Singapore play: full closing party Fri, full F1 Sprint Saturday + The Killers, leave for Changi ~23:00 Sat, land 08:05 Sun, private car to Civitavecchia by ~10:00-10:30 vs 15:00-15:30 check-in close \u2014 about a 7-hour buffer, but zero rebooking fallback if the aircraft goes tech (next arrivals that day are all post-13:00 connects). One caveat: a live tracker recently showed SQ366 running 4x/week (Sun/Mon/Wed/Fri) \u2014 Sunday operates under BOTH readings, so Oct 11 is solid either way.",
+    "depart": "2026-10-11T01:30+08:00",
+    "arrive": "2026-10-11T08:05+02:00",
+    "carrier": "Singapore Airlines (SQ366)",
+    "price_usd": 2500,
+    "refundable_delta_usd": -1,
+    "source": "info.flightmapper.net/flight/Singapore_Airlines_SQ_366; planemapper.com/flights/SQ366; caller baseline $2,488 Oct 9",
+    "cruise_risk": "tight",
+    "price_confidence": "historical-typical",
+    "notes": "Expect ~parity with the $2,488 Oct 9 baseline, possibly +10-20% because Oct 11 is F1 race day departure demand. Book Book-the-Cook 30+ days out is irrelevant; what matters: buy a flexible fare class given zero misconnect fallback."
+   },
+   {
+    "label": "SAFEST LATE OPTION: QR943 dep 10:30 Sat Oct 10 \u2192 FCO 20:05 Oct 10 (via DOH)",
+    "detail": "QR943 SIN 10:30 \u2192 DOH 13:35 (A350), connect ~2h30, QR113 DOH 16:05 \u2192 FCO 20:05 Sat Oct 10. Sleep off the closing party, leave hotel ~07:45 Sat, arrive Rome Saturday night, overnight near FCO/Civitavecchia, stroll onto the ship Sunday. Arrives Oct 10 = the only true 'safe' bucket option that fully respects the party. This is the recommendation. Caveat: QR temporarily dropped DOH-Rome during the March-April 2026 Qatari-airspace disruption (loyaltylobby.com); service is shown restored in June-July 2026 schedule data, but verify DOH-FCO is loaded for Oct 10 before relying on it.",
+    "depart": "2026-10-10T10:30+08:00",
+    "arrive": "2026-10-10T20:05+02:00",
+    "carrier": "Qatar Airways (QR943 + QR113)",
+    "price_usd": 2600,
+    "refundable_delta_usd": -1,
+    "source": "flyteam.jp/en/flightnumber/QR945 (bank structure); airportia.com/flights/qr943; trip.com QR113 example (DOH 16:05\u2192FCO 20:05); loyaltylobby.com/2026/03/23 (Rome suspension caveat); caller baseline 75k Avios",
+    "cruise_risk": "safe",
+    "price_confidence": "historical-typical",
+    "notes": "Qsuite on A350 both legs likely. Award path: 70-85k Avios + ~$350-450 fees if J space opens (baseline was 75k for Oct 9). Cash biz one-way historically $2,300-3,200 on this route/date range."
+   },
+   {
+    "label": "QR overnight bank: QR947 dep 20:15 Sat Oct 10 \u2192 FCO 07:25 Sun Oct 11",
+    "detail": "QR947 SIN 20:15 \u2192 DOH 23:15 (777-300ER), connect ~3h10, QR115 DOH 02:25 \u2192 FCO 07:25 Sun Oct 11 (A350-900, daily through Oct 24 per flightmapper seasonal table). Earliest Oct 11 arrival of any routing \u2014 at Civitavecchia by ~09:30-10:00 with ~5-6h buffer. Lets him have Saturday daytime at F1 Sprint before a ~17:30 airport departure. QR115 punctuality is good (92% on time). Misconnect fallback exists: QR131 DOH 08:35 \u2192 FCO 14:05 \u2014 but that fallback itself is a cruise-miss, so treat the DOH connection as must-make.",
+    "depart": "2026-10-10T20:15+08:00",
+    "arrive": "2026-10-11T07:25+02:00",
+    "carrier": "Qatar Airways (QR947 + QR115)",
+    "price_usd": 2600,
+    "refundable_delta_usd": -1,
+    "source": "trip.com/flights/status-qr947 (20:15\u219223:15); planemapper.com/flights/QR115 + info.flightmapper.net/flight/Qatar_Airways_QR_115 (02:25\u219207:25 daily thru 2026-10-24)",
+    "cruise_risk": "tight",
+    "price_confidence": "historical-typical",
+    "notes": "Same fare basis as the daytime QR routing; 75k-Avios award path applies if space. Misses The Killers/Sprint evening sessions but keeps Saturday daytime."
+   },
+   {
+    "label": "Etihad overnight: dep ~20:30-21:10 Sat Oct 10 \u2192 FCO ~06:25-07:30 Sun Oct 11",
+    "detail": "Etihad's single daily SIN-AUH departs between 19:25 and 21:10 (per flightconnections/etihad.com; historic EY473 numbering has been reshuffled \u2014 verify current flight number, likely EY497-series), arriving AUH 23:20-00:30; connect to EY85 AUH ~02:10-02:25 \u2192 FCO 06:25-07:30 Sun Oct 11 (787-9). Earliest-or-equal Oct 11 arrival, decent buffer. Two caveats: EY85 does NOT operate daily in all seasons (flightera notes non-daily April pattern) \u2014 confirm it flies the night of Oct 10/11; and EY business is usually the cheapest of the ME3 on this city pair.",
+    "depart": "2026-10-10T20:30+08:00",
+    "arrive": "2026-10-11T06:55+02:00",
+    "carrier": "Etihad (SIN-AUH + EY85)",
+    "price_usd": 2100,
+    "refundable_delta_usd": -1,
+    "source": "flightconnections.com/flights-from-sin-to-auh; etihad.com route page; flyteam.jp/en/flightnumber/EY85; flightera.net EY85 (non-daily caveat)",
+    "cruise_risk": "tight",
+    "price_confidence": "historical-typical",
+    "notes": "Typically $1,900-2,700 one-way J. Worth a live quote \u2014 could undercut the EK baseline."
+   },
+   {
+    "label": "Turkish overnight: TK55 dep 23:05 Sat Oct 10 \u2192 FCO 09:15 Sun Oct 11",
+    "detail": "TK55 SIN 23:05 \u2192 IST 05:15 Sun (777-300ER, operates Mon-Sat \u2014 Saturday confirmed), connect 2h20, TK1861-series IST 07:35/07:40 \u2192 FCO 09:15/09:20 Sun Oct 11. Latest Saturday-night departure available \u2014 he can watch the full Sprint race and most of Saturday's F1 program before a ~20:30 airport run. Arrives 09:15, at port ~11:15-11:45: inside the window but the thinnest 'tight' margin on the board, and the IST misconnect fallback (next of TK's 2-3 later IST-FCO frequencies, midday arrival) is a probable cruise-miss. Winter-schedule shift (TK55 \u2192 23:25 dep) starts Oct 26, after this date.",
+    "depart": "2026-10-10T23:05+08:00",
+    "arrive": "2026-10-11T09:15+02:00",
+    "carrier": "Turkish Airlines (TK55 + TK1861)",
+    "price_usd": 2000,
+    "refundable_delta_usd": -1,
+    "source": "flyteam.jp/en/flightnumber/TK55; flightstats.com TK55; flightsfrom.com/IST-FCO (07:35\u219209:15 first wave, 18 weekly IST-FCO)",
+    "cruise_risk": "tight",
+    "price_confidence": "historical-typical",
+    "notes": "TK is usually the cheapest J on SIN-Rome ($1,800-2,600 one-way). New 777 legroom fine; IST transfer is long walks \u2014 build the 2h20 connection into risk math."
+   },
+   {
+    "label": "DO NOT BOOK \u2014 QR945 dep 03:15 Sun Oct 11 \u2192 FCO 14:05 Oct 11",
+    "detail": "QR945 SIN 03:15 \u2192 DOH 06:15 Sun, connect QR131 DOH 08:35 \u2192 FCO 14:05 Sun Oct 11. Lands 14:05; car reaches Civitavecchia ~15:45-16:00, i.e., AFTER typical 15:00-15:30 check-in close. Listed only because it's the tempting 'leave after a full Saturday night' departure \u2014 it does not make the ship.",
+    "depart": "2026-10-11T03:15+08:00",
+    "arrive": "2026-10-11T14:05+02:00",
+    "carrier": "Qatar Airways (QR945 + QR131)",
+    "price_usd": 2600,
+    "refundable_delta_usd": -1,
+    "source": "flyteam.jp/en/flightnumber/QR945 (03:15\u219206:15); planemapper.com/flights/QR131 (08:35\u219214:05)",
+    "cruise_risk": "danger",
+    "price_confidence": "historical-typical",
+    "notes": "Same for any routing arriving FCO after ~12:30 Oct 11."
+   },
+   {
+    "label": "DO NOT BOOK \u2014 Emirates overnight banks (EK355 21:00 / EK405 21:35 Sat) \u2192 FCO 13:25 Oct 11",
+    "detail": "EK355 SIN 21:00 \u2192 DXB 00:10-00:40 (A380) or EK405 SIN 21:35 \u2192 DXB ~00:50; the ONLY morning DXB-FCO is EK97 08:50 \u2192 FCO 13:25 Sun Oct 11 \u2014 port arrival ~15:15+, effectively a missed ship. Emirates' bank structure is hostile to this itinerary in both directions. IMPORTANT correction to the lane brief: Emirates has NO ~09:30-10:00 morning departure from SIN in the current schedule \u2014 its three daily SIN-DXB departures are 01:40 (EK349), 21:00 (EK355), 21:35 (EK405). The only EK routing that lands Oct 10 is EK349 dep 01:40 Sat Oct 10 \u2192 DXB 04:50 \u2192 EK97 08:50 \u2192 FCO 13:25 Sat (cruise-safe, ~$2,208 baseline fare) \u2014 but a 01:40 departure means abandoning the closing party by ~23:00 Fri, which violates the lane constraint. Also note one tracker claims EK355 wasn't loaded after Apr 30 2026 \u2014 if true, EK is even thinner here.",
+    "depart": "2026-10-10T21:00+08:00",
+    "arrive": "2026-10-11T13:25+02:00",
+    "carrier": "Emirates (EK355/EK405 + EK97)",
+    "price_usd": 2208,
+    "refundable_delta_usd": -1,
+    "source": "flyteam.jp/en/flightnumber/EK355 (21:00 dep, A380, schedule-status caveat); flightstats.com EK97 (08:50\u219213:25 daily); planemapper EK95 (15:45\u219220:05); airpaz EK349 (01:40 dep); caller baseline $2,208",
+    "cruise_risk": "danger",
+    "price_confidence": "historical-typical",
+    "notes": "EK95 (15:45\u219220:05) makes EK fine for Oct-10-arrival routings only if you accept the party-killing 01:40 Sat departure."
+   }
+  ],
+  "summary": "Party ground truth: AFTER 2049 is Fri Oct 9 2026 at MBS SkyPark (conference Oct 7-8; F1 GP weekend Oct 9-11, Sprint Sat / race Sun; only listed Oct 9 daytime side events are Finality Forum and RWA Summit \u2014 nothing marquee Oct 10-11 besides F1). So the menu, latest-departure-first: (1) SQ366 nonstop dep 01:30 Sun Oct 11 \u2192 FCO 08:05 (TIGHT, ~7h buffer, and the only option that also captures F1 Sprint Saturday + The Killers; SQ366 does NOT fly Saturday, so no Oct 9/10-night nonstop exists \u2014 Sunday Oct 11 confirmed operating). (2) TK55 dep 23:05 Sat \u2192 FCO 09:15 Sun (TIGHT, thinnest margin, cheapest J ~$1.8-2.6k). (3) QR947 dep 20:15 Sat \u2192 FCO 07:25 Sun and Etihad dep ~20:30 Sat \u2192 FCO ~06:30-07:30 Sun (both TIGHT with real buffer). (4) The SAFE pick honoring the party: QR943 dep 10:30 Sat \u2192 FCO 20:05 Sat Oct 10 + hotel night. DANGER/do-not-book: QR945 (03:15 Sun \u2192 14:05), all EK overnights (\u219213:25 Sun). Brief correction: Emirates has no morning SIN departure \u2014 its only cruise-safe routing leaves 01:40 Sat, which breaks the party constraint, so EK effectively drops out of this lane. Prices are historical-typical (no live quotes retrievable): expect rough parity with the Oct 9 baseline ($2,208 EK / $2,488 SQ / 75k Avios QR) for Oct 10 daytime, and a possible +10-20% F1-exodus premium on Oct 11-departing metal; QR award at ~75k Avios remains the value play if J space exists on the Oct 10 banks.",
+  "caveats": "1) AFTER 2049's Oct 9 date is from KuCoin's 2026 guide + the 2025 pattern (party the Friday after the conference, on F1 weekend); the official site confirms venue but hasn't posted date/time/tickets yet \u2014 reconfirm on token2049.com or Megatix when ticketing opens. 2) All fares are historical-typical estimates anchored to the caller's Oct 9 baseline; no live Oct 10-11 business quotes were retrievable via search (airline/aggregator pages are JS-gated) \u2014 run live pricing on Google Flights/airline sites before deciding, and price the refundable delta there (marked -1 throughout). 3) Schedule data is from flight-tracker timetables (flightmapper/flightstats/flyteam/trip), not GDS: SQ366's Sunday operation is consistent across sources but its exact weekly pattern conflicts (daily vs 4x/wk); EK355 may not be loaded beyond Apr 2026 per one tracker; EY85 is non-daily in some seasons; QR's DOH-Rome was suspended briefly in spring 2026 (restored by June) \u2014 verify each specific Oct 10/11 departure is bookable. 4) 'Tight' options assume ~1h15 FCO\u2192Civitavecchia by pre-booked private car and 15:00-15:30 check-in close; any inbound delay >4-5h on the Oct 11 arrivals means a missed ship with no same-day recovery \u2014 buy flexible fares and consider travel insurance covering cruise misconnection. 5) Oct 11 is F1 race day: road closures around Marina Bay on Sat/Sun evenings can slow the hotel\u2192Changi run; allow extra time for the 23:00 Sat and 01:30 Sun airport departures."
+ }
+]

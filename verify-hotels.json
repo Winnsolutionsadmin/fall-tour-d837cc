@@ -1,0 +1,488 @@
+[
+ {
+  "leg": "HOTELS C \u2014 Rome Oct 9-11 2026 (family of 4, +1 joining Oct 10 night) and Croatia Oct 18-25 2026 (party of 5: Dubrovnik 3n + Split 4n)",
+  "options": [
+   {
+    "label": "Rome \u2014 Best Western Hotel President (4*, Termini/Manzoni) family room",
+    "detail": "30 m\u00b2 family rooms with 2 separate rooms; hotel has 8 quadruple + 26 triple rooms. Next to Manzoni metro, ~10 min walk to Termini \u2014 direct regional trains Termini\u2192Civitavecchia (~45-80 min), so this covers 'Civitavecchia-convenient'. Sleeps 4; when Jarred joins Oct 10 you'd add a single/triple room that night (~EUR 120-160). Ballpark family room ~EUR 300-380/night in October (Tripadvisor partner average shows ~$407/night general rate; October is high season in Rome). 2 nights family room ~EUR 600-760 (~$650-820) + 1 night extra room.",
+    "price_usd": 750,
+    "source": "hotelpresident.com room listing via search snippet + Tripadvisor (tripadvisor.com/Hotel_Review-g187791-d203094); official site unreachable (SSL cert mismatch), rates are partner-reported",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "notes": "Room configuration (2-separate-room family rooms, quad inventory) verified from hotel's own marketing text in search results; October rate NOT seen live. Hotel confirmed a past guest complaint about an unclear family-room supplement \u2014 confirm total at booking."
+   },
+   {
+    "label": "Rome \u2014 two rooms at a Termini-area 4* (UNAHOTELS Deco Roma, Mecenate Palace, Bettoja Mediterraneo, Starhotels Metropole, Marcella Royal)",
+    "detail": "The two-room play: October good-4* doubles near Termini run ~EUR 180-250/room/night (comparable center 4* doubles quoted $183-185/night on aggregators for other dates; October skews higher). Two rooms x 2 nights ~EUR 720-1,000 (~$780-1,080). More flexible for the 4+1 configuration than a fixed quad, and all are 5-15 min walk to Termini for the Civitavecchia train.",
+    "price_usd": 930,
+    "source": "Tripadvisor Termini 4-star list (tripadvisor.com/Hotels-g187791-zfc4-zfn15621904) + KAYAK family-hotel pricing (kayak.com/Rome-Hotels_Family.Hff.25465.hotel.ksp) + rometoolkit.com/accommodation/rome_family_luxury_hotels.htm",
+    "status": "likely",
+    "price_confidence": "historical-typical",
+    "notes": "October 2026 quad-room availability at Termini 4-stars is a near-certainty this far out; the risk is price, not inventory. Book by ~mid-July per KAYAK's 86-days-out guidance \u2014 that window has already passed, so book promptly."
+   },
+   {
+    "label": "Dubrovnik (3n, party of 5) \u2014 2-3BR apartment in Lapad [BEST VALUE PICK]",
+    "detail": "Lapad is the consensus family base: beach, cheaper than Old Town, 10-15 min bus to the walls. Late Oct is Dubrovnik's cheapest window (aggregators flag Oct 17-31 as the year's most affordable). Good 2-3BR apartment sleeping 5: ~EUR 100-180/night \u2192 3 nights ~EUR 300-540 (~$330-590). ~42% of Dubrovnik apartments have 2+ bedrooms and ~70% list under ~GBP 100/night, so family-of-5 inventory is plentiful. Tourist tax ~EUR 2-3/adult/night on top; many properties drop to 2-3 night minimums in October.",
+    "price_usd": 450,
+    "source": "HomeToGo/Holidu seasonal pricing data (hometogo.com/dubrovnik, holidu.co.uk/f/apartments-dubrovnik-croatia) + KAYAK (kayak.com/Dubrovnik-Vacation-Rentals.24952.rental.ksp) + Rick Steves forum area guidance",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "notes": "Old Town alternative: 2BR units inside the walls exist that sleep 5-6 (e.g. croatianvillas.com DU227, 2BR + sofa bed, 2-night Oct minimum) at ~EUR 150-250/night (~$490-820/3n) \u2014 pay the premium only if sleeping inside the walls matters; expect stairs, no parking, luggage haul over cobbles."
+   },
+   {
+    "label": "Dubrovnik (3n, party of 5) \u2014 two rooms at a 4* Lapad hotel (Hotel Lapad, Grand Hotel Park, Valamar Tirena, Hotel Kompas)",
+    "detail": "KAYAK from-rates: Grand Hotel Park from $102, Hotel Lapad from $120, Berkeley from $134, Kompas from $141, Valamar Tirena from $143/night. Two rooms ~EUR 200-290/night combined \u2192 3 nights ~EUR 600-870 (~$650-950). Buys breakfast, pools (Kompas has indoor pool + spa \u2014 relevant in late Oct when sea swimming is marginal), and zero host coordination, at roughly 1.5-2x the apartment cost.",
+    "price_usd": 800,
+    "source": "KAYAK 4-star Dubrovnik list (kayak.com/Dubrovnik-Hotels_4-stars.Hfos.24952.hotel.ksp) + Booking.com Hotel Kompas page + Tripadvisor 4-star list",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "notes": "From-rates are lead-in prices; sea-view/balcony categories run higher. Some Lapad resort hotels historically close late Oct/Nov \u2014 Kompas and Valamar Lacroma typically stay open year-round, but verify closing dates for Tirena before booking."
+   },
+   {
+    "label": "Split (4n, party of 5) \u2014 2BR apartment in Bacvice or Old Town [BEST VALUE PICK]",
+    "detail": "Verified from-rates near Bacvice: Apartments Bacvice Holiday from ~EUR 121 (70 m\u00b2, fits family + sofa bed for 5th, free parking, 15 min walk to center), Apartment Bacvice from ~EUR 138 (1BR, too small). Old Town 2BR units sleeping 5-6 widely listed. October ballpark for a proper 2BR sleeping 5: ~EUR 120-180/night \u2192 4 nights ~EUR 480-720 (~$520-780). Bacvice = beach, parking, quieter, slightly cheaper; Old Town = zero-commute charm, no parking. Split old town is far less price-inflated than Dubrovnik's.",
+    "price_usd": 650,
+    "source": "hotels-split-dalmatia.com listed from-rates (via search; direct fetch rate-limited 429) + KAYAK Split rentals from $81/night (kayak.com/Split-Vacation-Rentals.24035.rental.ksp) + Tripadvisor Apartments Bacvice Holiday review noting family fit",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "notes": "Aparthotel middle path: Boutique Hotel Bacvice 4* from ~EUR 179/night, Posh Aparthotel near Znjan \u2014 an aparthotel family unit at ~EUR 180-250/night splits the difference (service + kitchen). Two separate 4* hotel rooms would run ~EUR 220-300/night (~$950-1,300/4n) \u2014 the weakest option for this party; skip unless breakfast/daily housekeeping is a priority."
+   },
+   {
+    "label": "Croatia week total (7 nights, party of 5) \u2014 apartment strategy vs two-hotel-rooms strategy",
+    "detail": "Apartment/aparthotel route: Dubrovnik ~EUR 300-540 + Split ~EUR 480-720 = ~EUR 780-1,260 (~$850-1,370) for the week, plus ~EUR 70-100 tourist tax + cleaning fees (~EUR 40-80/property). Two-hotel-rooms route: ~EUR 600-870 + ~EUR 880-1,200 = ~EUR 1,480-2,070 (~$1,600-2,250), breakfast usually included. Apartments win on price AND fit for a family of 5 (real bedrooms, kitchen, laundry mid-trip); hotels win on service. Recommended: Lapad 2-3BR apartment (Dubrovnik) + Bacvice/Old Town 2BR apartment (Split).",
+    "price_usd": 1100,
+    "source": "Synthesis of KAYAK/HomeToGo/Holidu/hotels-split-dalmatia sources cited above",
+    "status": "likely",
+    "price_confidence": "aggregator-estimate",
+    "notes": "Late-Oct availability is genuinely easy in both cities (confirmed shoulder-season across all sources; multiple sites flag it as the cheapest window of the year), so optimize for the specific property, not scarcity."
+   }
+  ],
+  "summary": "Rome Oct 9-11: budget ~EUR 350-500/night total for the family \u2014 either Hotel President's genuine 2-room family rooms near Termini (~EUR 300-380/night + a small room the night Jarred joins) or two doubles at a Termini 4* (~EUR 360-500/night); anything walkable to Termini is automatically Civitavecchia-convenient via direct regional train. Croatia Oct 18-25 for 5: apartments beat two hotel rooms decisively \u2014 ~EUR 780-1,260 for the week (Lapad 2-3BR + Bacvice/Old Town Split 2BR) vs ~EUR 1,480-2,070 for paired 4* hotel rooms. Late October is verified as the cheapest, easiest-availability window of the year in both Croatian cities, so choose on property quality, not scarcity.",
+  "caveats": "No option is 'confirmed': live October 2026 rates could not be pulled from official booking engines in this pass \u2014 hotelpresident.com serves a mismatched SSL certificate (cert is for avvocatobianco.com; treat direct booking there with caution and book via bestwestern.com instead), hotels-split-dalmatia.com returned HTTP 429, and Booking/KAYAK result pages are JS-rendered and unfetchable here. All prices are aggregator from-rates or seasonal averages in EUR converted at ~1.08 USD/EUR. Rome October is HIGH season (unlike Croatia) \u2014 the 86-days-out optimal booking window for Oct 9 has already passed, so Rome should be booked first and promptly. Verify: (1) Hotel President family-room supplement (past guest dispute on this), (2) seasonal closing dates for Lapad resort hotels if going the hotel route, (3) whether chosen apartments count the 5th sleeper on a sofa bed vs a real bed, (4) Croatia tourist tax (~EUR 2-3/adult/night) and apartment cleaning fees excluded from the totals above."
+ },
+ {
+  "leg": "HOTELS A \u2014 Seoul, Sept 28\u2013Oct 4/5 2026, party of 4 (1 suite-grade + 3 standard), KBW 2026 at Grand Walkerhill Sept 29\u2013Oct 1",
+  "options": [
+   {
+    "label": "(a1) All-Walkerhill: Grand Walkerhill Seoul, full stay Sept 28\u2013Oct 4 (6 nights)",
+    "detail": "Conference venue itself \u2014 zero commute during KBW. Jarred in a suite (~$450\u2013650/night KBW-week est), 3 employees in Deluxe/Standard rooms (~$230\u2013320/night KBW-week est; Kayak samples show standard $218\u2013229, deluxe $275\u2013297 in normal periods, avg recent ~$193 \u2014 expect a conference premium on Sept 29\u2013Oct 1 nights). Party total est: suite ~$500 x 6 = $3,000 + 3 standard ~$260 x 6 x 3 = $4,680 \u2192 ~$7,700 all-in (range $6,500\u20139,500). Add ~10% VAT+service if rates quoted net.",
+    "price_usd": 7700,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "source": "https://www.hotelscombined.com/Hotel/Grand_Walkerhill_Seoul.htm ; https://www.nz.kayak.com/Seoul-Hotels-Grand-Walkerhill-Seoul.167239.ksp ; venue confirmed: https://www.prnewswire.com/news-releases/kbw-2026-returns-to-seoul-september-29october-1-upbit-joins-as-main-sponsor-302660025.html",
+    "notes": "Could not pull live Sept 2026 rates (booking engines require dated queries; JS-gated). BIG RISK: the on-venue hotel historically sells out for KBW \u2014 book the Sept 29\u2013Oct 1 nights immediately if this strategy is chosen. Vista Walkerhill (adjacent, same complex) is the cheaper sister: standard $162\u2013185, suites $261\u2013641 per Travel Weekly GDS ranges; avg recent ~$232/night \u2014 a viable ~15% cheaper all-Walkerhill variant (~$6,800 party total)."
+   },
+   {
+    "label": "(a2) Walkerhill conference nights only (Sept 29\u2013Oct 1, 3 nights) as half of the split strategy",
+    "detail": "3 nights on-venue during KBW: Jarred suite ~$550 x 3 = $1,650; 3 standard ~$280 x 3 x 3 = $2,520. Subtotal ~$4,170 for the conference block (KBW-premium pricing assumed).",
+    "price_usd": 4170,
+    "price_confidence": "historical-typical",
+    "status": "likely",
+    "source": "https://www.hotelscombined.com/Hotel/Grand_Walkerhill_Seoul.htm ; https://www.travelweekly.com/Hotels/Seoul/Vista-WalkerHill-Seoul-p51275018",
+    "notes": "Same sell-out risk as (a1) \u2014 these 3 nights are the scarce inventory regardless of strategy."
+   },
+   {
+    "label": "(b) Gangnam business hotels for non-conf nights (Sept 28, Oct 2, 3) or whole stay + taxi to Walkerhill",
+    "detail": "Verified typical nightly rates: Aloft Seoul Gangnam ~$151 (Marriott, Cheongdam stn, closest Gangnam option to Walkerhill), L7 Gangnam by Lotte ~$187 (Seolleung stn), Novotel Ambassador Gangnam ~$207 (Sinnonhyeon, 5-star). Non-conf-nights-only (3 nights): Jarred executive room Novotel ~$350 x 3 = $1,050 + 3 standard ~$180 x 3 x 3 = $1,620 \u2192 ~$2,670. SPLIT TOTAL (a2 + b) \u2248 $6,850. Whole-stay-Gangnam alternative (6 nights, commuting all 3 conf days): ~$5,900\u20136,400 party total + taxis.",
+    "price_usd": 2670,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "source": "https://www.momondo.com/hotels/seoul/Aloft-Seoul-Gangnam.mhd2184565.ksp ; https://www.hotelscombined.com/Hotel/L7_Gangnam.htm ; https://www.hotelscombined.com/Hotel/Novotel_Ambassador_Seoul_Gangnam.htm",
+    "notes": "Taxi Gangnam\u2192Walkerhill: ~6.6 mi, $10\u201313, 10\u201312 min in light traffic but realistically 20\u201340 min in Seoul traffic (rome2rio + Walkerhill official directions). Free hotel shuttle runs from Gangbyeon Station (Line 2). Jamsil is closer than core Gangnam (~15\u201320 min taxi); Seongsu is north of the river and similar (~15 min). Split saves only ~$800\u2013900 vs all-Walkerhill and costs a mid-trip hotel move for 4 people \u2014 weak value unless Walkerhill is sold out."
+   },
+   {
+    "label": "(c) Amex FHR option: Park Hyatt Seoul (Gangnam) or Signiel Seoul (Jamsil) for Jarred",
+    "detail": "Confirmed current Amex FHR Seoul roster (seen on americanexpress.com property pages): Park Hyatt Seoul, Signiel Seoul, Four Seasons Seoul, Grand InterContinental Seoul Parnas. Park Hyatt Seoul has an active FHR promo \u2014 15% off nightly rate booked by 9/29/2026 for travel through 9/30/2026 (covers the first ~3 nights of this trip); FHR perks: noon check-in, upgrade when available, breakfast for 2, $100 property credit, 4pm checkout. Est Jarred cost: Park Hyatt ~$400\u2013500/night x 6 \u2248 $2,700 net of credit/promo; Signiel Seoul (76th\u2013101st fl Lotte World Tower, Jamsil, closest FHR to Walkerhill) typical ~$467/night, cheapest ~$303, suites much higher \u2014 ~$2,900\u20133,300 for 6 nights. Pairing Jarred-at-FHR with 3 employees at Aloft/L7 (~$170 x 6 x 3 = $3,060) gives a whole-stay-split party total \u2248 $5,800\u20136,400.",
+    "price_usd": 2900,
+    "price_confidence": "aggregator-estimate",
+    "status": "confirmed",
+    "source": "https://www.americanexpress.com/en-us/travel/discover/property/South-Korea/Seoul/Park-Hyatt-Seoul ; https://www.americanexpress.com/en-us/travel/fine-hotels-resorts/property/signiel-seoul ; https://www.hotelscombined.com/Hotel/Signiel_Seoul.htm",
+    "notes": "Status 'confirmed' applies to FHR participation + Park Hyatt promo terms (seen on Amex's own pages); the dollar figures are aggregator estimates. NOTE: Josun Palace Gangnam is Marriott Luxury Collection but did NOT appear on Amex FHR listings \u2014 do not count on FHR perks there. Grand InterContinental Parnas (COEX, Gangnam) has an FHR complimentary-3rd-night offer bookable through 12/28/2026 \u2014 worth pricing live, it could beat everything for a 6-night stay."
+   }
+  ],
+  "summary": "KBW 2026 is confirmed for Sept 29\u2013Oct 1 at Grand Walkerhill Seoul (official PR, Jan 2026). Chuseok 2026 is confirmed as Sept 24\u201326 \u2014 it ENDS two days before check-in, so the holiday itself doesn't overlap the stay. Demand effect for Sept 28\u2013Oct 4: (1) Chuseok empties Seoul of locals through ~Sept 27 and city hotel rates typically rebound to normal-or-above the following week as travel returns; (2) the real rate driver at Walkerhill is KBW itself \u2014 the venue hotel historically fills, so expect a 20\u201350% conference premium on Sept 29\u2013Oct 1 and possible sell-out; (3) Oct 3 (National Foundation Day, a Saturday in 2026) adds domestic leisure demand to the trip's back half. Cost comparison, 4-person party, 6 nights: all-Walkerhill \u2248 $7,700 (Grand) or \u2248 $6,800 (Vista); split (Walkerhill conf nights + Gangnam) \u2248 $6,850; whole-stay Gangnam/Jamsil with Jarred at an FHR property \u2248 $5,800\u20136,400 + ~$25\u201350/day in taxis and 20\u201340 min commutes each conference day. Recommendation shape: the split saves under $1,000 and forces a 4-person mid-trip move \u2014 either book all-Walkerhill NOW for convenience, or do Jarred-at-Signiel/Park-Hyatt (FHR perks, Park Hyatt 15% promo covers Sept 28\u201330) + employees at Aloft Gangnam for the whole stay and eat the commute. The one urgent action regardless: secure the Sept 29\u2013Oct 1 Walkerhill nights before KBW attendee demand consumes them.",
+  "caveats": "No rates here are live quotes \u2014 booking engines (walkerhill.com, Amex Travel, Kayak) require dated interactive queries their public pages don't expose to fetch; all USD figures are aggregator averages/typical ranges (labeled aggregator-estimate or historical-typical) and September-conference-week pricing will likely run above them at Walkerhill. Trip.com/Kayak sample rates exclude ~10% Korean VAT + 10% service charge at some 5-star properties. Sept 28 arrival vs Oct 4 vs Oct 5 checkout changes totals by one night per room (~$1,000\u20131,300 party-wide at Walkerhill grades). KBW 2026 room-block/discount codes for attendees were not yet published at verification time (ticket/agenda details 'to be announced') \u2014 a block rate could beat all public pricing and should be checked when registration opens. Chuseok date caution: one source (eskimo.travel) wrongly lists Oct 5\u20137 for 2026; multiple primary-adjacent sources (Wikipedia, publicholidays.co.kr, timeanddate) agree on Sept 24\u201326. FHR participation was verified on Amex's own property pages today, but FHR rosters change; re-verify at booking. Signiel deluxe suites carry a 3-night minimum-stay condition on some rates."
+ },
+ {
+  "leg": "Award-space and pricing verification (VERIFY 3): QR Qsuites SIN-DOH-FCO Oct; KLM AMS-SFO Flying Blue late Oct; Korean Air SFO-ICN partner space Sept; Delta SkyMiles SMF/SFO-ICN Delta One late Sept; live Amex MR transfer bonuses",
+  "options": [
+   {
+    "label": "(a) Qatar Qsuites SIN-DOH-FCO business award, Oct 10/11 (1 seat)",
+    "detail": "QR opens Privilege Club/Avios award space on a rolling ~361-day window (longest in the industry; BA sees it ~355 days, AA ~331). Oct 10/11 2026 is only ~70 days out, so initial release happened long ago \u2014 the relevant pattern is QR's well-documented habit of releasing ADDITIONAL J seats closer to departure, and availability being 'often good at initial release, especially for flights from Doha.' SIN-DOH is a Qsuite-guaranteed route (all 3 daily flights Qsuite-fitted since April 2023, per Mainly Miles' 22-city all-Qsuite list). Pricing: SIN-Europe runs ~70,000-75,000 Avios off-peak, 84,000-90,000 Avios peak one-way in J (QR added Peak/Off-Peak tiers covering ~1/3 of the year); Saver-tier seats on popular routes can vanish within hours of appearing, Flexi costs ~2x with better availability. For exactly 1 seat, odds are meaningfully better than for 2+ \u2014 the standard play is monitoring seats.aero's dedicated Qsuites Finder (searches Privilege Club plus AA/Alaska/JetBlue partners; QR gives its own Privilege Club members the most inventory) and Roame's Qsuite finder for close-in releases. Note two 2026 rule changes: Avios accounts must be 30 days old before transfers, and since June 2026 booking for others requires a pre-set Family & Friends/My List. Also, since Nov 2025 QR charges for seat selection on J award tickets. Could not verify live seat-map for Oct 10/11 specifically (seats.aero results require interactive search; no FlyerTalk date-specific report found in last 60 days).",
+    "price_usd": 150,
+    "price_confidence": "historical-typical",
+    "status": "likely",
+    "notes": "price_usd = approximate taxes/fees on a QR Avios J award ex-SIN; the fare itself is ~70k-90k Avios one-way SIN-FCO depending on peak/off-peak calendar. Odds assessment: patterns strongly favor 1 seat appearing (close-in releases + Qsuite-guaranteed SIN route), but date-specific space is UNVERIFIED \u2014 treat as 'good odds, not booked until seen.'",
+    "source": "awardtravelfinder.com/award-release-windows/qatar-airways; thriftytraveler.com/guides/points/tip-for-booking-qatar-qsuites/; awardfares.com/blog/qatar-airways-privilege-club-guide/; mainlymiles.com/2025/09/14/which-22-cities-see-all-qsuite-operation-in-business-class-on-qatar-airways/; seats.aero/qsuites; roame.travel/guides/qatar-qsuite-finder; mainlymiles.com/2025/11/06 (award seat-selection fees); upgradedpoints.com/travel/airlines/best-ways-to-book-qatar-qsuites-with-points-and-miles/"
+   },
+   {
+    "label": "(b) KLM AMS-SFO World Business, Flying Blue saver, late Oct",
+    "detail": "Saver floor CONFIRMED at 60,000 miles one-way for AMS-SFO J (Flying Blue is dynamic with a fixed per-route floor; non-saver dates spike to 146,500+ miles \u2014 the '60-62.5k' band from earlier research is consistent with the 60k floor plus minor date variation). Taxes/fees Europe->US direction run ~$400 (US->Europe ~$250-274). Recent wave evidence: Frequent Miler (June 2025) documented a dramatic saver-availability improvement US<->Europe at 60k including AMS-IAD with 'good availability in November' (i.e., fall return-direction space does get released); a 10xTravel-tracked Summer 2026 saver wave priced J at 60k from 8 US cities with 'at least two business class seats on each route, up to eight seats on some routes' \u2014 that is the best recent per-flight seat-count signal: typically 2, occasionally up to 8. Caveats for this specific ask: SFO was NOT in the most recent tracked wave (JFK/EWR/IAD/IAH/ORD/DEN/LAX/PDX), and a mid-2025 snapshot found zero SFO saver J for a period before space reopened \u2014 SFO saver space is real but comes in waves. Skystatus/TPG note the big hubs incl. SFO see the most consistent saver space overall. No late-Oct-2026 date-specific report found in the last 60 days; also note Citi (not Amex) currently has a 20% Flying Blue transfer bonus through 8/22/26. Monthly Promo Rewards (25-50% off) post on the 1st of the month and sell out fast \u2014 worth checking today.",
+    "price_usd": 400,
+    "price_confidence": "historical-typical",
+    "status": "likely",
+    "notes": "price_usd = typical Europe->US taxes/fees on the 60k-mile saver award. Expect 2 saver J seats per flight as the working assumption; verify live on seats.aero or the KLM calendar (calendar trick works for 1 pax only).",
+    "source": "onemileatatime.com/insights/flying-blue-business-class-award-availability/; frequentmiler.com/great-flying-blue-business-class-award-availability-to-from-europe/ (pub. 2025-06-18); 10xtravel.com/awardalerts/flying-blue-saver-awards-summer-2026/; upgradedpoints.com/news/award-alert-us-to-amsterdam-business-class/; skystatus.pro/guide/flying-blue-award-availability; onemileatatime.com/deals/flying-blue-promo-rewards/; frequentmiler.com/current-point-transfer-bonuses/ (Citi 20% FB bonus)"
+   },
+   {
+    "label": "(c) Korean Air SFO-ICN Prestige via Virgin/Delta, Sept 2026 \u2014 CORROBORATED near-zero",
+    "detail": "Earlier research's 'near-zero' finding is CORROBORATED, not refuted. FlyerTalk thread 'No More Partner Award J Flights (Virgin Atlantic)?' (Korean Air SkyPass forum): a member searching daily at the 330-day Virgin window saw economy released every day but zero Prestige seats released to Virgin; replies established (1) KE is 'very stingy' with J awards even for its own SKYPASS members (ICN-JFK check showed only 2 days in a whole month with any J space), and (2) KE appears to release only 1, maybe 2, J seats per flight initially, with any additional space only close to departure. Program guides agree: SKYPASS releases more space to itself than to partners; Virgin's KE chart is economy/business only; KE imposes partner blackout dates; Delta prices KE/its own metal dynamically. Booking windows: KE calendar opens 351 days out; Virgin 331 days. Bottom line for Sept 2026 SFO-ICN in Prestige via Virgin (85k-100k pts + ~$25) or Delta: plan around it NOT appearing; the realistic partner-mile path is a close-in (T-14 to T-3) release, which cannot be relied on for a booked-soon itinerary.",
+    "price_usd": 25,
+    "price_confidence": "historical-typical",
+    "status": "likely",
+    "notes": "Status 'likely' applies to the SCARCITY claim (strong, consistent secondary evidence from multiple recent sources + FlyerTalk first-hand reports); no login-gated live search was possible. price_usd = Virgin's typical taxes/fees on a KE J award (~$25) \u2014 the constraint is space, not price.",
+    "source": "flyertalk.com/forum/korean-air-skypass/2162996-no-more-partner-award-j-flights-virgin-atlantic.html; upgradedpoints.com/travel/airlines/best-ways-to-book-korean-air-business-class/; awardtravelfinder.com/how-many-virgin-points-to-fly-korean-air; 10xtravel.com/korean-air-skypass-program-guide/; blog.awardfares.com/ultimate-guide-to-award-release-dates/"
+   },
+   {
+    "label": "(d) Delta SkyMiles SMF/SFO-ICN Delta One late Sept \u2014 no live flash sale right now",
+    "detail": "NO currently advertised SkyMiles sale to Asia as of 2026-08-01: Delta's flash-sales URL returns a 404 ('possibly a promotion ending') and the live SkyMiles Award Deals page lists no offers in its static content (deals load dynamically from real-time availability; page carries only T&Cs incl. TakeOff 15). Recent history shows the pattern to watch: March 2026 brought a trio of unadvertised Delta One flash sales \u2014 Seoul ICN at 89,000 SkyMiles each way (cheapest to Korea in 2+ years, near-nationwide origins, best from MSP), later dips to 83,000 to ICN/TPE, 94k HKG, 127k HND \u2014 plus an advertised 72-hour Asia-Pacific ECONOMY sale (ICN included) from 25,400 roundtrip, booked by Mar 26. Outside sales, dynamic Delta One pricing to ICN typically runs 200k-400k+ each way. Stacking: Delta Amex cardholders get 15% off via TakeOff 15 (89k -> ~75.7k). These sales are usually unannounced and short \u2014 monitor Thrifty Traveler / the SkyMiles Award Deals page rather than waiting for an email.",
+    "price_usd": 60,
+    "price_confidence": "historical-typical",
+    "status": "unavailable",
+    "notes": "Status 'unavailable' = no sale live now (verified on Delta's own pages today); the 83k-89k/each-way flash-sale level is the realistic target if one recurs before booking. price_usd = approximate taxes/fees on a US-originating one-way award.",
+    "source": "delta.com/us/en/flight-deals/skymiles-award-deals (fetched 2026-08-01, no offers listed); delta.com flash-sales URL (404, 2026-08-01); thriftytraveler.com/deals/flights/delta-skymiles-flash-sale-asia/; thriftytraveler.com/news/points/delta-skymiles-sales-comeback/; loyaltylobby.com/2026/03/25 (72-hr APAC economy sale); travel-on-points.com/delta-skymiles-award-sale-to-asia/"
+   },
+   {
+    "label": "(e) Amex Membership Rewards transfer bonuses live right now \u2014 ZERO active",
+    "detail": "No Amex MR transfer bonus is live as of 2026-08-01. Two independent trackers agree: Frequent Miler's current-bonuses page lists no active Amex offers, and Award Travel Finder's Amex page (last updated Aug 1, 2026) shows 'Active Now: 0.' The July slate just expired: Virgin Atlantic +30% (ended 7/31/26 \u2014 painful for the KE-via-Virgin plan), Avianca LifeMiles +15% (7/15), Hilton +20% (7/14). One search summary referenced a possible Amex 30% Avios bonus 'launching' per a Frequent Miler note, but the fetched FM page itself lists no active Amex offer \u2014 treat as rumor until it appears in-account. Relevant NON-Amex bonuses live now: Citi ThankYou 20% to Air France-KLM Flying Blue (ends 8/22/26 \u2014 directly useful for leg (b)), Chase UR 70% to IHG (8/31), Capital One 15% to LifeMiles (8/31), Rove 50% to Qantas (8/14). Amex historically re-runs partner bonuses frequently (10-40%), so a new offer in August is plausible but unconfirmed.",
+    "price_usd": 0,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "notes": "'Likely' rather than 'confirmed' because verification is via same-day aggregator trackers, not an Amex-account login (none available per task constraints). Action item: the Citi 20% Flying Blue bonus is the only live bonus relevant to this trip.",
+    "source": "frequentmiler.com/current-point-transfer-bonuses/ (fetched 2026-08-01); awardtravelfinder.com/transfer-bonuses/amex-membership-rewards (page-stamped updated 2026-08-01, Active Now 0); awardwallet.com/news/amex-membership-rewards/virgin-atlantic-transfer-bonus/ (30% Virgin, expired 7/31/26)"
+   }
+  ],
+  "summary": "All five signals verified to the extent possible without logins. (a) QR Qsuites SIN-DOH-FCO: 361-day release window plus documented close-in J releases and a Qsuite-guaranteed SIN route make 1 seat on Oct 10/11 a good-odds LIKELY, at ~70k-90k Avios one-way, but no date-specific space could be confirmed. (b) Flying Blue AMS-SFO: 60k-mile saver floor confirmed, typical release is 2 (up to 8) J seats per flight in waves; SFO wasn't in the latest tracked wave, so late-Oct space is likely-but-wave-dependent; Citi currently has a 20% Flying Blue bonus through 8/22. (c) Korean Air Prestige partner space: earlier 'near-zero' finding is corroborated by a recent FlyerTalk thread and program guides \u2014 KE releases 0-2 J seats per flight to partners, often only close-in; do not plan around it. (d) Delta: no SkyMiles sale to Asia is live as of Aug 1 (verified on Delta's own pages); March 2026 flash sales hit 83k-89k each way SFO/ICN in Delta One, which is the level to watch for. (e) Amex MR: zero transfer bonuses active right now \u2014 the 30% Virgin Atlantic bonus expired July 31; only non-Amex bonuses (notably Citi 20% to Flying Blue) are live.",
+  "caveats": "Hard limits of this pass: no seats.aero/airline logins, so NO date-specific live award inventory was confirmed for any leg \u2014 all availability judgments are pattern-based (labeled 'likely'). seats.aero public pages are interactive and could not be scraped headlessly. The price_usd field carries approximate USD taxes/fees (the awards are priced in miles; miles amounts are in each option's detail). 'Confirmed' vs 'likely' labels: only same-day checks of Delta's own pages and two same-day-updated bonus trackers approach primary verification; everything else is strong secondary evidence from the last 2-13 months. FCO-specific Qsuite equipment on DOH-FCO was not individually verified (SIN-DOH was). The rumored Amex 30% Avios bonus is unconfirmed \u2014 if it materializes in August it would directly cheapen the Qatar leg. Delta flash sales are unannounced and 48-72h short; a booked-soon decision should not be gated on one appearing. Recommend a live seats.aero pull (free account) for SIN-DOH-FCO Oct 10/11 and AMS-SFO late Oct before committing miles transfers, since transferred points (Amex->Avios/Flying Blue) are one-way doors."
+ },
+ {
+  "leg": "Stopover city hotels, Oct 25-27 2026 (nights of Oct 25 + 26), party of 5, 2 rooms or family suite \u2014 Amsterdam vs Dublin vs London vs Paris, solid 4-star central tier plus one FHR-tier option each",
+  "options": [
+   {
+    "label": "AMSTERDAM \u2014 4-star central (e.g. Park Plaza Victoria / NH Collection Barbizon Palace tier)",
+    "detail": "Baseline Oct 4-star central runs EUR 130-210/night per room; ADE week pushes central rates to EUR 220-260. Your first night (Sun Oct 25) is ADE's closing night, so expect ~EUR 200-250 that night, easing to ~EUR 160-200 on Oct 26. Estimate ~USD 220/room/night blended; 2 rooms x 2 nights ~USD 880 (range USD 780-1,000).",
+    "price_usd": 880,
+    "price_confidence": "aggregator-estimate",
+    "source": "amsterdamtourism.org price guide + Kayak/Budget Your Trip 4-star averages; ADE dates confirmed at amsterdam-dance-event.nl (ADE30: Oct 21-25, 2026)",
+    "status": "likely",
+    "notes": "EVENT FLAG (mild): ADE 2026 (30th anniversary, ~600k visitors in 2025) ends Sun Oct 25 \u2014 your check-in day. Residual surge on night 1 only, especially near Rembrandtplein/Leidseplein (20-40% markups there); city normalizes Mon Oct 26. Book away from nightlife hubs to dodge most of it."
+   },
+   {
+    "label": "AMSTERDAM \u2014 FHR option: Pulitzer Amsterdam",
+    "detail": "Canal-house complex on Prinsengracht, genuinely family-workable (connecting rooms across 25 canal houses). Typical late-Oct rate ~EUR 550-700/night per room; 2 rooms x 2 nights ~USD 2,600 (range USD 2,300-3,000). FHR perks: noon check-in, 4pm late checkout, breakfast for two per room, USD 100 property credit per room.",
+    "price_usd": 2600,
+    "price_confidence": "historical-typical",
+    "source": "FHR membership confirmed on americanexpress.com/en-gb/travel/discover/property/Netherlands/Amsterdam/Pulitzer-Amsterdam; rate is historical-typical, not a live quote",
+    "status": "confirmed",
+    "notes": "FHR status confirmed on Amex's own property page today; price is an estimate \u2014 pull live rate via Amex Travel portal before booking."
+   },
+   {
+    "label": "DUBLIN \u2014 4-star central (e.g. The Alex / Davenport / Clayton tier)",
+    "detail": "Baseline Dublin 4-star averages USD 188-209 (Oct trivago avg USD 209, range 146-319; Expedia city-centre Oct avg USD 281). But this exact weekend stacks three demand drivers, so realistic rate is EUR 280-380/room/night. Estimate ~USD 340/room/night; 2 rooms x 2 nights ~USD 1,360 (range USD 1,150-1,600). Family rooms sleeping 4-5 exist (Clayton, Academy Plaza tier) but will be scarce this weekend.",
+    "price_usd": 1360,
+    "price_confidence": "aggregator-estimate",
+    "source": "Booking.com/trivago/Expedia Dublin averages; bramstokerfestival.com (official: Oct 23-26, 2026); irishlifedublinmarathon.ie via official listings (Sun Oct 25, 2026)",
+    "status": "likely",
+    "notes": "EVENT FLAG (STRONG \u2014 worst of the four): Bram Stoker Festival runs Fri Oct 23-Mon Oct 26 (official site), Dublin Marathon (Europe's 5th largest) is Sun Oct 25 \u2014 your check-in day \u2014 and Mon Oct 26 is the Irish October Bank Holiday. Both your nights are the peak nights of Dublin's biggest hotel weekend of the autumn. Expect the highest surge premium and the thinnest 2-room availability of any city here; also marathon road closures Sunday morning Oct 25 if arriving early."
+   },
+   {
+    "label": "DUBLIN \u2014 FHR option: The Shelbourne (Autograph Collection)",
+    "detail": "On St. Stephen's Green, the classic Dublin grande dame. Normal autumn rates ~EUR 450-600; this stacked weekend likely EUR 700-950/night. 2 rooms x 2 nights ~USD 3,600 (range USD 3,000-4,200). FHR perks incl. USD 100 F&B credit per room + breakfast + 4pm checkout.",
+    "price_usd": 3600,
+    "price_confidence": "historical-typical",
+    "source": "FHR membership confirmed on americanexpress.com/en-gb/travel/discover/property/Ireland/Dublin/the-shelbourne-dublin (also en-fi page); rate is historical-typical adjusted for the event stack",
+    "status": "confirmed",
+    "notes": "FHR status confirmed on Amex's own pages today. Amex also lists Conrad Dublin and The Westbury as Dublin FHR alternatives (Westbury showing 15% off promo for Oct-Dec 2026 travel, book by Dec 21) \u2014 the Westbury promo could partially offset the surge."
+   },
+   {
+    "label": "LONDON \u2014 4-star central (e.g. Strand Palace / Radisson Blu / Marriott County Hall tier)",
+    "detail": "London 4-star central averages GBP 200-300/night (Booking.com avg USD 315; Kayak USD 249). Sunday Oct 25 is statistically London's cheapest night; half-term uplift is real but modest for central 4-stars (it hits family attractions and resort/domestic stock harder than city hotels). Estimate ~USD 310/room/night; 2 rooms x 2 nights ~USD 1,240 (range USD 1,000-1,500). Deals to USD 160-200/night exist at Strand Palace tier.",
+    "price_usd": 1240,
+    "price_confidence": "aggregator-estimate",
+    "source": "Booking.com/Kayak/HotelsHotSpot UK 2026 averages; half-term dates verified across London borough term calendars (Bexley, Hounslow council sites): Mon Oct 26-Fri Oct 30, 2026",
+    "status": "likely",
+    "notes": "EVENT FLAG (moderate): English/Welsh autumn half-term is exactly Oct 26-30, so your stay opens the half-term week \u2014 family-room and 2-adjacent-room inventory tightens and family-oriented hotels add a premium, but no single citywide surge event. Book family rooms early rather than expecting price shock."
+   },
+   {
+    "label": "LONDON \u2014 FHR option: The Langham, London (or Corinthia London)",
+    "detail": "Regent Street grande dame, strong family rooms. Typical late-Oct rate GBP 600-800/night; 2 rooms x 2 nights ~USD 3,200 (range USD 2,800-3,800).",
+    "price_usd": 3200,
+    "price_confidence": "historical-typical",
+    "source": "Langham brand appears across current FHR roundups (luxurycheckin.com, thepointsguy.com FHR guides) but the London property page was not directly verified on amex.com today \u2014 verify in the Amex Travel portal; rate is historical-typical",
+    "status": "likely",
+    "notes": "Langham London's FHR listing is likely but unverified this pass (Boston/Melbourne/HK Langhams confirmed in FHR roundups). If it's absent for your card country, Corinthia London and The Berkeley are reliable FHR fallbacks at similar or higher rates."
+   },
+   {
+    "label": "PARIS \u2014 4-star central (e.g. Saint-Germain / Marais 4-star tier)",
+    "detail": "October is Paris's most expensive hotel month (Kayak: 4-star avg ~USD 295 citywide, Saint-Germain-des-Pres avg ~USD 345; Booking.com 4-star avg USD 370). Your nights land just AFTER Art Basel closes, which helps: Sun Oct 25 night has residual departure demand, Mon Oct 26 decompresses. Estimate ~USD 360/room/night central; 2 rooms x 2 nights ~USD 1,440 (range USD 1,250-1,700). Note many Paris 4-stars cap rooms at 2-3 people \u2014 two rooms is the realistic shape for 5.",
+    "price_usd": 1440,
+    "price_confidence": "aggregator-estimate",
+    "source": "Kayak/Booking.com/HotelsCombined Paris October averages; Art Basel Paris dates confirmed at artbasel.com/paris (public days Oct 23-25, 2026, Grand Palais)",
+    "status": "likely",
+    "notes": "EVENT FLAG (mild, front-loaded): Art Basel Paris 2026 runs Oct 21-25 at the Grand Palais \u2014 it ends the day you arrive. Right Bank hotels near the 8th arr. hold elevated rates through Sun night Oct 25, then drop. Staying Left Bank/Marais and knowing Monday is soft mostly neutralizes it. October's structural peak pricing (+42% vs cheapest month) is the bigger factor than the fair itself."
+   },
+   {
+    "label": "PARIS \u2014 FHR option: Mandarin Oriental Lutetia (Left Bank)",
+    "detail": "The former Hotel Lutetia, now Mandarin Oriental \u2014 Art Deco landmark in Saint-Germain, one of the few palace-tier hotels on the Left Bank with real family suites. Typical rate EUR 1,100-1,500/night per room; 2 rooms x 2 nights ~USD 5,200 (range USD 4,400-6,400). A single 2-bedroom family suite may price similarly to two rooms \u2014 worth quoting both shapes via Amex.",
+    "price_usd": 5200,
+    "price_confidence": "historical-typical",
+    "source": "Listed in current FHR guides (luxurycheckin.com 2026 FHR guide names Mandarin Oriental Lutetia); not verified on an amex.com property page this pass; rate historical-typical",
+    "status": "likely",
+    "notes": "Materially pricier than the other three cities' FHR picks \u2014 Paris FHR inventory skews palace-tier. If USD ~5k for the stopover is too rich, ask Amex for Hotel de Berri or Sofitel-tier THC (Hotel Collection) alternatives around USD 700-900/night."
+   }
+  ],
+  "summary": "Two-night, two-room totals at the solid-4-star-central tier: Amsterdam ~USD 880, London ~USD 1,240, Dublin ~USD 1,360, Paris ~USD 1,440. Event picture (all dates verified on official/primary sources today): DUBLIN is the red flag \u2014 Bram Stoker Festival (Oct 23-26, official site), Dublin Marathon (Sun Oct 25, race-day = your check-in) and the Irish Bank Holiday Monday all stack directly on your two nights, making it the most surge-exposed and lowest-availability choice despite mid-pack baseline pricing. Amsterdam and Paris both have major events (ADE Oct 21-25; Art Basel Paris Oct 21-25) that END the day you arrive \u2014 only night 1 carries residual premium, then both cities soften, making Amsterdam the best value of the four. London's half-term (Oct 26-30, verified via borough calendars) starts mid-stay: moderate family-room scarcity, no citywide surge, and Sunday arrival is London's cheapest night. FHR-tier: Pulitzer Amsterdam and The Shelbourne Dublin are confirmed FHR on Amex's own property pages; Langham London and MO Lutetia Paris are likely but should be confirmed in the Amex portal. Recommendation ordering for this specific weekend: Amsterdam (value) > London (ease) > Paris (pricier but calm) >> Dublin (only if the Bram Stoker Festival itself is the draw \u2014 in which case book immediately, and expect Shelbourne-tier rates of USD 850+/night).",
+  "caveats": "All hotel prices are aggregator-estimates or historical-typical figures, NOT live quotes \u2014 hotel booking engines could not be queried live from this pass, so treat totals as planning midpoints with the stated ranges (roughly +/-15-20%). Event dates and FHR membership for Pulitzer Amsterdam and The Shelbourne were verified on official/primary sources on 2026-08-01; Langham London and MO Lutetia FHR status came from secondary FHR guides only. Dublin figures carry the widest error band because no aggregator publishes bank-holiday-weekend-specific rates; the triple event stack could push actual 4-star rates above the quoted range, and 2-room availability there may be the binding constraint rather than price. Totals exclude city tourist taxes (material in Amsterdam: 12.5% of room rate; Paris: per-person-per-night taxe de sejour; minor in Dublin/London) and assume 2 rooms \u2014 family-suite pricing can differ meaningfully and should be quoted live. Currency conversions use approximate EUR/GBP-to-USD rates as of Aug 2026."
+ },
+ {
+  "leg": "AMS \u2192 SFO award positioning, Oct 25-28 2026 (Flying Blue August 2026 promo verification)",
+  "options": [
+   {
+    "label": "(a) SFO on August 2026 Promo Rewards list \u2014 YES, KLM Premium Economy at 30,000 miles one-way",
+    "detail": "San Francisco IS on the August list, but in KLM Premium Economy only (not economy, not business): 30,000 miles one-way, a 25% discount off the standard 40,000-mile PE level. SFO sits alongside Las Vegas, San Diego, and Mexico City in the KLM PE group. There is NO 30k level and NO economy promo for SFO this month (economy 18,750-mile promos are DFW/JFK/PHX/SEA on Air France and IAH on KLM; LAX/MCO/MIA are Flying Blue Extra subscriber-only). Valid both directions (Europe\u2192US and US\u2192Europe). Award is capacity-controlled dynamic pricing \u2014 30,000 is the starting/floor price, not guaranteed on every date.",
+    "price_usd": 200,
+    "price_confidence": "historical-typical",
+    "status": "likely",
+    "source": "thePointsPage (thepointspage.com/flying-blue-august-2026-promo-rewards/, fetched 2026-08-01) + One Mile at a Time (onemileatatime.com/deals/flying-blue-promo-rewards/, fetched 2026-08-01) \u2014 both agree exactly. Official flyingblue.com/en/discover-promo-rewards timed out twice, so not 'confirmed'.",
+    "notes": "price_usd is the typical taxes/carrier-surcharge cash component on an AMS\u2192US KLM PE award (~$150-250 westbound ex-AMS), not verified live for this route. Miles cost: 30,000 FB miles one-way."
+   },
+   {
+    "label": "(b) Travel window \u2014 covers Oct 25-28 2026: YES",
+    "detail": "August promos are valid for travel through January 31, 2027 (LoyaltyLobby headline: 'travel through January 31, 2027'; OMAAT: 'long travel windows... through January 31, 2027'). No embargo/blackout excluding late October was reported by any source, so Oct 25-28 2026 falls inside the window. Caveat: window validity does not guarantee promo-level seats exist on those exact dates \u2014 promo space is capacity-controlled and the best dates sell out before the deadline.",
+    "price_usd": 0,
+    "status": "likely",
+    "source": "LoyaltyLobby 2026-08-01 post title (loyaltylobby.com/2026/08/01/...travel-through-january-31-2027/) + thePointsPage + OMAAT, all Aug 2026.",
+    "notes": "Exact per-route travel start/end dates are listed on the official Flying Blue promo page, which was unreachable (2x timeout). Verify the SFO row's dates at booking time before transferring points."
+   },
+   {
+    "label": "(c) Booking deadline \u2014 August 31, 2026",
+    "detail": "Bookable August 1 through August 31, 2026. Practical deadline is earlier: promo award space is capacity-controlled and popular dates (late-Oct West Coast) can disappear well before Aug 31.",
+    "price_usd": 0,
+    "status": "likely",
+    "source": "thePointsPage + WebSearch summary of LoyaltyLobby/OMAAT Aug 2026 coverage.",
+    "notes": "Book as early in August as possible for Oct 25-28 dates."
+   },
+   {
+    "label": "(d) Business-cabin promo to US West Coast \u2014 NONE this month",
+    "detail": "The only business-class Promo Rewards for August 2026 are Europe to Cayenne (French Guiana), Bogota, and Libreville, from 45,000 miles. thePointsPage states explicitly the list 'doesn't include a standard Promo Reward for business class between North America and Europe.' No business promo touches SFO, the West Coast, or any US city.",
+    "price_usd": 0,
+    "status": "unavailable",
+    "source": "thePointsPage (fetched 2026-08-01), corroborated by OMAAT and the LoyaltyLobby search summary.",
+    "notes": "If business cabin is required for this leg, it must be booked at standard saver level, not promo."
+   },
+   {
+    "label": "Amex MR \u2192 Flying Blue transfer bonus \u2014 NONE live in August 2026 (but Citi 20% is live)",
+    "detail": "No active Amex Membership Rewards \u2192 Flying Blue bonus as of 2026-08-01; the last one (25%) ended June 30, 2026. Frequent Miler's live tracker confirms Amex is in the expired section. HOWEVER: Citi ThankYou \u2192 Flying Blue 20% transfer bonus is currently live, running 07/19/26 through 08/22/26 \u2014 the only active Flying Blue bonus from any bank. No Chase/Capital One/Bilt FB bonuses active. If Jarred has Citi TYP, 25,000 TYP \u2192 30,000 FB miles covers the SFO PE promo one-way exactly.",
+    "price_usd": 0,
+    "status": "confirmed",
+    "source": "Frequent Miler live transfer-bonus tracker (frequentmiler.com/current-point-transfer-bonuses/, fetched 2026-08-01) \u2014 primary tracker for this data, current as of today.",
+    "notes": "Amex bonuses are announced with 0-7 days notice and typically run 18-30 days; one could still appear mid-August, but do not plan around it."
+   },
+   {
+    "label": "KLM AMS-SFO World Business one-way standard saver level \u2014 60,000 miles floor; late-Oct availability UNVERIFIED",
+    "detail": "The current transatlantic saver floor for AF/KLM business is 60,000 miles one-way (post-Jan 13, 2025 pricing), and multiple sources confirm the same 60k floor applies to West Coast routes including SFO (Flying Blue does not distance-tier within transatlantic minimums). Dynamic pricing means non-saver dates can spike to 146k-480k+ miles. Whether 60k saver space actually exists on AMS\u2192SFO Oct 25-28 could not be verified: seats.aero live availability pages are not fetchable without an account, and no dated late-Oct availability report was found. Sources note Nov and Jan-Mar are the best-availability months; late Oct is unproven either way.",
+    "price_usd": 350,
+    "price_confidence": "historical-typical",
+    "status": "unknown",
+    "source": "Upgraded Points / Thrifty Traveler / skystatus.pro via WebSearch (2026 pricing guides); live availability check not possible (seats.aero requires auth).",
+    "notes": "price_usd is typical taxes+surcharges on an ex-AMS business award (~$300-400). Miles cost: 60,000 FB at saver. Check flyingblue.com award calendar or seats.aero directly for Oct 25-28 before transferring."
+   }
+  ],
+  "summary": "August 2026 Flying Blue Promo Rewards: SFO IS on the list, but only in KLM Premium Economy at 30,000 miles one-way (25% off 40k) \u2014 NOT business, NOT 30k-business as hoped. Travel window runs through Jan 31, 2027, so Oct 25-28 2026 is covered; booking deadline Aug 31, 2026 (book early \u2014 capacity-controlled). No business-class promo exists to any US destination this month (business promos are only Cayenne/Bogota/Libreville from 45k). No Amex MR\u2192Flying Blue bonus is live (last ended 6/30/26), but a Citi ThankYou 20% bonus runs through 8/22/26 \u2014 25k TYP = 30k FB, exactly one PE promo one-way. Standard KLM AMS-SFO World Business saver is 60,000 miles one-way (floor), but live late-Oct saver availability could not be verified. Action: if PE is acceptable, book the 30k SFO promo early in August using Citi TYP if available; if business is required, budget 60k and check the award calendar directly.",
+  "caveats": "Official flyingblue.com promo page timed out twice, so promo details rest on three concordant Aug-2026-dated secondary sources (thePointsPage full fetch, OMAAT full fetch, LoyaltyLobby 2026-08-01 headline) \u2014 labeled 'likely', not 'confirmed'. Exact per-route travel start/end dates for the SFO row were not seen; verify on flyingblue.com before transferring points. Promo prices are dynamic starting points; 30k PE space on Oct 25-28 specifically is not guaranteed and was not checked live. Taxes/surcharges (USD figures above) are historical-typical estimates, not live quotes. Seats.aero could not be fetched (auth wall), so AMS-SFO business saver availability for late Oct is unknown. Never transfer points speculatively \u2014 confirm the award prices at 30k/60k in the Flying Blue engine first."
+ },
+ {
+  "leg": "HOTELS B \u2014 Singapore, Oct 4/5\u201310/11 2026 (Token2049 at MBS Oct 7\u20138 + first-ever F1 Sprint weekend Oct 9\u201311), party of 4 rooms: 1 suite-grade + 3 standard, 6 nights",
+  "options": [
+   {
+    "label": "(a) Marina Bay Sands \u2014 venue hotel, conference + race nights",
+    "detail": "Standard rooms: aggregator sampling (26 Jul 2026, Trip.com/Agoda/Booking) shows F1-weekend nights at S$2,200\u20133,400 (~US$1,630\u20132,520/night, 3.1\u20133.6x normal); Token2049 early-week nights est. S$900\u20131,500 (~US$670\u20131,110). Blended 6-night standard room ~US$7,700 (avg ~US$1,280/night). Suite-grade (Club/suite) est. ~US$2,400\u20133,500/night blended, F1 nights US$4,000\u20136,000; ~US$17,000 for 6 nights. Tower-3 city-facing rooms have circuit views and carry +30\u2013100% premium \u2014 that view inventory typically sells 12\u201318 months out and is effectively gone. MBS's 2,560 rooms routinely sell out entirely for F1 week; MBS is also the Token2049 venue so both surges stack on the same property.",
+    "price_usd": 40000,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "notes": "Party total est. US$33,000\u201350,000 for 3 standard + 1 suite x 6 nights. Could not pull a live MBS booking-engine quote (JS-gated); book direct for best-rate guarantee. Senate GP sells MBS race-night packages on inquiry.",
+    "source": "[ShopBack F1 2026 hotel pricing (sampled 26 Jul 2026)](https://www.shopback.sg/blog/travel/f1-singapore-2026-hotels-marina-bay-vs-orchard-vs-sentosa); [singaporehotelfinder MBS rate guide](https://singaporehotelfinder.com/guides/marina-bay-sands-hotel-book-rates/); [Senate GP MBS package](https://www.senategrandprix-singapore.com/marina-bay-sands-hotel)"
+   },
+   {
+    "label": "(b1) Ritz-Carlton Millenia \u2014 CBD walkable, closest to Paddock Club",
+    "detail": "F1-weekend standard: S$2,050\u20132,950/night (~US$1,520\u20132,180, 3.4\u20133.8x normal S$600\u2013780). Blended 6-night standard ~US$6,500 (avg ~US$1,085/night); suite-grade est. ~US$15,000/6 nights. Motorsport Tickets lists race-weekend (Thu\u2013Mon, 2 sharing) from \u00a36,457. Marina-view rooms (floors 15+, Grand/Deluxe/Club Marina) overlook the circuit and are the first to go \u2014 Mercedes F1 (Ritz brand partner) blocks rooms here. Listed as a Token2049 TravelSwap partner hotel. Also an Amex FHR 'Card Member Favorite'.",
+    "price_usd": 34500,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "notes": "Party total est. US$29,000\u201342,000. Does NOT participate in Marriott Bonvoy \u2014 FHR is the best booking channel (US$100 credit, breakfast x2, 4pm checkout).",
+    "source": "[ShopBack pricing table](https://www.shopback.sg/blog/travel/f1-singapore-2026-hotels-marina-bay-vs-orchard-vs-sentosa); [Motorsport Tickets Singapore F1 stay guide](https://motorsporttickets.com/blog/where-to-stay-for-the-singapore-f1/); [Token2049 travel page](https://www.token2049.com/singapore/travel); [Amex FHR Ritz-Carlton Millenia](https://www.americanexpress.com/en-gb/travel/discover/property/Singapore/Singapore/the-ritz-carlton-millenia-singapore)"
+   },
+   {
+    "label": "(b2) Conrad Singapore Marina Bay \u2014 steps from Turn 6, best mid-luxury value inside precinct",
+    "detail": "Baseline ~S$320\u2013450/night off-peak; no published Oct 2026 rate found, but at the Marina-precinct 3\u20133.5x multiplier expect F1 nights ~S$1,300\u20131,900 (~US$960\u20131,400) and Token2049 nights ~S$600\u2013800. Blended 6-night standard est. ~US$4,300 (avg ~US$715/night); suite est. ~US$9,000. Hilton runs trackside F1 suite packages here (2025: 3-night suite stays bundled with race hospitality passes). 15-min walk to circuit gates, ~15\u201320 min walk / 2 MRT stops to MBS for Token2049.",
+    "price_usd": 22000,
+    "price_confidence": "historical-typical",
+    "status": "unknown",
+    "notes": "Party total est. US$18,000\u201327,000. Check Hilton.com directly for live Oct 4\u201311 availability \u2014 no live quote or sold-out confirmation obtainable.",
+    "source": "[Hilton Stories \u2014 Conrad trackside race season](https://stories.hilton.com/apac/releases/conrad-singapore-marina-bay-creates-a-bold-trackside-destination-this-race-season); [Kayak Conrad baseline](https://www.kayak.com/Singapore-Hotels-Conrad-Centennial-Singapore.60118.ksp); [GPDestinations accommodation guide](https://gpdestinations.com/accommodation-singapore-f1-grand-prix/)"
+   },
+   {
+    "label": "(b3) The Westin Singapore \u2014 Asia Square, ~10-min walk to MBS, Token2049 partner",
+    "detail": "Baseline ~S$299\u2013500/night; est. F1 nights S$1,000\u20131,600 (~US$740\u20131,180), conference nights ~S$550\u2013750. Blended 6-night standard est. ~US$3,700 (avg ~US$620/night); suite est. ~US$8,000. On the Token2049 TravelSwap bookable list (discounted conference rates, crypto or fiat). 350m from Downtown MRT / 550m from Marina Bay MRT; south of the circuit so less affected by closures while still walkable to MBS and gates.",
+    "price_usd": 19000,
+    "price_confidence": "historical-typical",
+    "status": "unknown",
+    "notes": "Party total est. US$16,000\u201324,000. Try TravelSwap via Token2049 first \u2014 a conference block rate here could beat open-market F1 pricing. Marriott Bonvoy property (elite perks apply if booked direct).",
+    "source": "[Token2049 travel/TravelSwap page](https://www.token2049.com/singapore/travel); [Booking.com Westin Singapore](https://www.booking.com/hotel/sg/the-westin-singapore.html); [webintravel F1 hotel-rate surge](https://www.webintravel.com/as-f1-roars-into-town-hotel-occupancies-and-rates-in-singapore-soar/)"
+   },
+   {
+    "label": "(c) Orchard value play \u2014 Hilton Singapore Orchard / Marriott Tang Plaza (Grand Hyatt as upscale)",
+    "detail": "Sampled F1-weekend rates: Hilton Orchard S$640\u2013850/night (vs S$320\u2013400 normal), Marriott Tang Plaza S$720\u2013950, Grand Hyatt S$1,150\u20131,500, St Regis S$1,400\u20131,850 \u2014 Orchard runs 1.8\u20132.5x vs Marina Bay's 3\u20134x. Blended 6-night standard at Hilton Orchard est. ~US$2,350 (avg ~US$390/night); suite/premium est. ~US$4,800. Commute reality: road closures run ~Wed Oct 7\u2013Sun Oct 11 around Marina Centre/Padang and cars/Grab are a bad idea near the circuit (designated drop-offs pushed out, heavy surge); but MRT is unaffected and extended-hours \u2014 Orchard/Somerset to City Hall is 4\u20136 min + 5\u201310 min walk to Padang gates. Same MRT run serves MBS for Token2049.",
+    "price_usd": 12000,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "notes": "Party total est. US$10,000\u201315,000 \u2014 roughly a quarter of the MBS bill. Orchard is 'the last zone to sell out' and holds free cancellation until 21\u201330 days out (vs 60\u201390 days at Marina Bay).",
+    "source": "[ShopBack Orchard pricing + commute](https://www.shopback.sg/blog/travel/f1-singapore-2026-hotels-marina-bay-vs-orchard-vs-sentosa); [LTA 2025 closure precedent](https://www.lta.gov.sg/content/ltagov/en/newsroom/2025/8/news-releases/f1_Singapore_2025_road_closure_PT_arrangement.html); [F1 Spectator getting-there guide](https://www.thef1spectator.com/singapore-grand-prix-travel-guide/getting-there/)"
+   },
+   {
+    "label": "(d) Amex FHR channel \u2014 MBS + Ritz-Carlton Millenia (+ Fullerton Bay 3rd-night-free angle)",
+    "detail": "CONFIRMED today on Amex's own property page: Marina Bay Sands is a current FHR property (12pm check-in when available, upgrade when available, daily breakfast for 2, US$100 on-property credit, guaranteed 4pm checkout, Wi-Fi; Platinum earns 5x MR on prepaid). Ritz-Carlton Millenia also on FHR. IMPORTANT: the Mandarin Oriental 4th-night-free requires travel by 09/30/2026 \u2014 it does NOT cover this trip. The live arbitrage: Fullerton Bay (trackside, Turn 13 hairpin views) shows a complimentary 3rd night \u2014 book by 08/31/2026, travel by 03/31/2027, 3-night min, blackout dates apply (F1 nights may be blacked out \u2014 must verify at booking). FHR rates are flexible/rack, so expect at-or-above OTA pricing during the surge; the ~US$150\u2013250/night perk value partially offsets.",
+    "price_usd": 42000,
+    "price_confidence": "aggregator-estimate",
+    "status": "confirmed",
+    "notes": "Status 'confirmed' refers to FHR participation and benefit terms (seen on americanexpress.com 2026-08-01), not to a live rate. Price shown = MBS-via-FHR party total est. (slight premium over prepaid OTA). If Fullerton Bay's blackout dates spare Oct 4\u201311, its 3rd-night-free is the single best deal on this list \u2014 but the book-by date is Aug 31, 2026, i.e. 30 days away.",
+    "source": "[Amex FHR \u2014 Marina Bay Sands property page (fetched 2026-08-01)](https://www.americanexpress.com/en-us/travel/discover/property/Singapore/Singapore/Marina-Bay-Sands); [Amex FHR program page](https://www.americanexpress.com/en-us/travel/fine-hotels-and-resorts)"
+   }
+  ],
+  "summary": "Double-surge week is real and already pricing in: Token2049 (Oct 7\u20138, at MBS itself) rolls directly into Singapore's first-ever F1 Sprint weekend (Oct 9\u201311, final Sprint round of the season). Aggregator sampling from 26 Jul 2026 shows Marina Bay precinct at 3\u20134x normal (MBS standard S$2,200\u20133,400/night on race nights; Ritz-Carlton S$2,050\u20132,950), Orchard at 1.8\u20132.5x (Hilton Orchard S$640\u2013850). Estimated 6-night party totals (3 standard + 1 suite): MBS ~US$40k, Ritz-Carlton ~US$34.5k, Conrad ~US$22k, Westin ~US$19k, Hilton Orchard ~US$12k. Sellout velocity is unusually aggressive: circuit-view rooms sold 12\u201318 months out and are gone; 3-day grandstands, all Sunday tickets and at least one hotel+ticket package (Oasia Downtown) already sold out by mid-2026; 2026 ticket prices +15% avg (+41% cheapest tier) with no demand drop-off. Rate trajectory from the same sampling: Marina Bay inventory flips to non-refundable 60\u201390 days out \u2014 that window opens NOW (Aug 1 = 69 days to race Friday); booking under 21 days out historically costs +20\u201340% over quoted ranges. Practical call: book Marina Bay rooms this week while any refundable inventory remains; the Orchard fallback stays refundable until ~21\u201330 days out. Amex FHR at MBS/Ritz is confirmed live but its current free-night promos expire before this trip; the Fullerton Bay 3rd-night-free (book by Aug 31) is worth an immediate blackout-date check.",
+  "caveats": "1) NO live booking-engine quotes were obtainable \u2014 MBS/Hilton/Marriott/Amex engines are JS-gated to WebFetch, so every price here is an aggregator sample (ShopBack, sampled 26 Jul 2026 across Trip.com/Agoda/Booking) or a historical-multiplier estimate; treat totals as \u00b125% planning numbers and pull live quotes at booking. 2) Date ambiguity: totals assume 6 nights. Oct 4\u201310 checkout misses Sat/Sun race nights (only Fri Oct 9 is a peak night); Oct 5\u201311 captures Fri+Sat race nights and is what the blended math assumes \u2014 the two windows can differ by ~US$2\u20134k at MBS. 3) Suite-grade pricing is the weakest number (suites are rarely published on aggregators; estimated at ~2.2x standard). 4) Conference-night (Oct 4\u20138) rates are estimates anchored on a prior Token2049 week running +70% \u2014 no 2026-specific early-week sample found. 5) FX assumed at S$1 = US$0.74 (Aug 2026 approx). 6) 2026 LTA road-closure notice not yet published; closure pattern (Wed\u2013Sun, Marina Centre/Padang) is inferred from the official 2025 LTA release. 7) One outlier ignored: a guide claiming Ritz-Carlton 'from $6,300 a night' \u2014 inconsistent with three other sources, likely a weekend-package or suite figure. 8) Conrad/Westin sold-out status could not be verified either way \u2014 check Hilton.com/Marriott.com and the Token2049 TravelSwap portal directly."
+ },
+ {
+  "leg": "Travel insurance for two trips: (1) family of 5 (39/39/16/13/8, CA residents), Oct 8-28 2026, ~$45,000 trip cost incl. $31,900 cruise; (2) separate 1 adult, Sept 27-Oct 28 2026, ~$12,000 (flights)",
+  "options": [
+   {
+    "label": "(a) Comprehensive, family of 5, $45k trip \u2014 typical premium range",
+    "detail": "Expect roughly $1,800-$3,600 total (4-8% of trip cost), with a young family (no traveler over 39) likely landing at the LOW end, ~$1,500-$2,500. Squaremouth's 2026 cruise data report (25,000+ purchases, Aug 2025-Aug 2026): comprehensive cruise plans average 6.9% of trip cost, but that skews older; ages 35-49 average $267/policy vs $637 at 65-69, and the $20,000+ trip-cost bracket averages $2,402/policy. Best value lever: Travel Insured Worldwide Trip Protector covers children 17 and under FREE with a related insured adult \u2014 2 of your 3 kids ride free \u2014 which can pull the family total toward ~$1,200-$2,000.",
+    "price_usd": 2400,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "source": "https://www.squaremouth.com/plans/cruise/cruise-insurance-cost (fetched 2026-08-01; updated Oct 2025 with rolling 2026 data); https://www.squaremouth.com/travel-insurance-providers/travel-insured-international/worldwide-trip-protector; https://www.forbes.com/advisor/travel-insurance/average-travel-insurance-cost/",
+    "notes": "No aggregator publishes a live quote without running the form; these are current published averages applied to your trip shape. Run Squaremouth + TravelInsurance.com quotes with exact ages/trip cost to lock numbers \u2014 premiums are age-banded and CA-filed."
+   },
+   {
+    "label": "(a) Best-in-class cruise pick #1: Travel Insured Worldwide Trip Protector",
+    "detail": "Meets ALL stated requirements: $100,000 PRIMARY emergency medical (no deductible), $1,000,000 medical evacuation (double your $500k floor) + $150,000 non-medical evac, Missed Connection $500/person cruise-and-tour-only after 3-hr delay with explicit 'join your departed cruise or tour' transportation language \u2014 doubleable to $1,000 via the ~$35/person Travel Benefits Upgrade. Kids 17-and-under free. Pre-existing waiver and CFAR both at 21 days from initial deposit. Estimated family premium ~$1,300-$2,200 (2 paying adults + 1 paying 16-yr-old... note: 16-yr-old also qualifies as under 17, so potentially all 3 kids free).",
+    "price_usd": 1700,
+    "price_confidence": "aggregator-estimate",
+    "status": "confirmed",
+    "source": "https://www.squaremouth.com/travel-insurance-providers/travel-insured-international/worldwide-trip-protector (benefit levels confirmed); https://www.travelinsured.com/docs/comp-charts/wtp.pdf (official comp chart: $1M evac, $150k security evac); https://www.travelinsured.com/benefits/missed-connection",
+    "notes": "Status 'confirmed' applies to the benefit structure (seen on official/primary pages today); the premium figure is an estimate until quoted. Underwriter: Crum & Forster. Verify CA availability of CFAR rider in the quote flow."
+   },
+   {
+    "label": "(a) Best-in-class cruise pick #2: Nationwide Choice Cruise \u2014 cheap, but two catches",
+    "detail": "Certificate (NWC2, NW Cruise Choice Ed. 04/2021, pulled today from travel.nationwide.com) confirms: Trip Cancellation 100% / Interruption 150% of trip cost, $100,000 medical, $500,000 emergency evacuation, Itinerary Change $500, Trip Interruption for Any Reason $500, plus cruise-specific Inconvenience benefit. Nationwide is consistently among the cheapest comprehensive cruise insurers \u2014 family estimate ~$1,200-$2,000. CATCH 1: medical is EXCESS/SECONDARY, not primary ('insurance provided by this Policy shall be in excess of all Other Insurance') \u2014 fails your primary-medical requirement. CATCH 2: the Missed Connection trigger is narrow (see option d).",
+    "price_usd": 1600,
+    "price_confidence": "aggregator-estimate",
+    "status": "confirmed",
+    "source": "https://travel.nationwide.com/certificate/NWC2/all.html (official certificate PDF, fetched and text-extracted 2026-08-01); https://www.forbes.com/advisor/travel-insurance/nationwide-travel-insurance-review/; https://www.insuremytrip.com/travel-insurance-reviews/providers/nationwide/choice-cruise-nwc2/",
+    "notes": "Benefit facts confirmed from the certificate itself; premium is estimate. Note the certificate's Schedule lists Missed Connection max that PDF column-extraction maps to $1,500 (older reviews cite $500) \u2014 read the schedule on YOUR quote's certificate. CFAR is NOT offered on Choice Cruise \u2014 only on Nationwide Prime and Luxury Cruise plans (21-day window)."
+   },
+   {
+    "label": "(b) Same trip + CFAR 75% \u2014 premium delta and eligibility windows",
+    "detail": "CFAR adds ~48-52% to the premium. Squaremouth 2026 cruise data: comprehensive average $543 vs comprehensive+CFAR $806 (+48%); their separate 2026 stat puts the CFAR upcharge at ~52% average. Applied to your family: comprehensive ~$1,800-$3,000 becomes ~$2,700-$4,600 with CFAR; a $45k x 75% = $33,750 max CFAR payout. Eligibility windows (days from FIRST trip payment/deposit, all confirmed on current provider/aggregator pages): Travel Insured WTP 21 days; Travelex Ultimate 21 days; Nationwide (Prime/Luxury Cruise only) 21 days; Seven Corners Trip Protection Choice/Basic 20 days; IMG iTravelInsured SE/LX 20 days (Choice 21 days, but Choice caps trip cost at $10k/person \u2014 use LX, cap $150k/person). Universal conditions: insure 100% of nonrefundable costs, cancel 48+ hrs before departure, reimbursement 75% (not 100%). CRITICAL: the clock runs from your FIRST payment on the trip (likely the cruise deposit) \u2014 as of Aug 1, 2026, CFAR is only available if that first payment was made on/after ~July 11-12, 2026. If the cruise was deposited earlier, the CFAR window is already closed with every major insurer.",
+    "price_usd": 3600,
+    "price_confidence": "aggregator-estimate",
+    "status": "confirmed",
+    "source": "https://www.squaremouth.com/plans/cruise/cruise-insurance-cost ($543 vs $806); https://www.squaremouth.com/resources/best-travel-insurance/cancel-for-any-reason (21-day windows); https://www.insuremytrip.com/travel-insurance-plans-coverages/cancel-for-any-reason/ (IMG 20/21-day windows + per-person caps); https://www.forbes.com/advisor/travel-insurance/best-cancel-for-any-reason-travel-insurance/ (Travelex 21 days); https://www.sevencorners.com/plans/trip-protection (20 days)",
+    "notes": "Status 'confirmed' = the delta percentage and windows are from current primary/aggregator pages; the dollar figure is derived. CFAR not available to NY/WA residents on some plans \u2014 CA is fine. Some sources say 14 days for Travel Insured's Deluxe tier vs 21 for Platinum/WTP; the flagship WTP and FlexiPAX are 21."
+   },
+   {
+    "label": "(c) Annual multi-trip alternative \u2014 RULED OUT for the $45k trip",
+    "detail": "No mainstream annual policy comes close to $45,000 of trip-cancellation cover. Allianz AllTrips Executive (the highest-cancellation annual plan Allianz sells): trip cancellation/interruption tiers of $5,000, $7,500, or $10,000 PER PERSON PER YEAR (all trips combined), 45-day max trip length; AllTrips Premier tops out at $15,000/year. Allianz's own guidance for exceeding the cap is to buy a separate single-trip plan. Annual plans (~$249-$500/person/yr for Executive tiers) remain sensible only as a medical/evac-only layer for the frequent-traveling adult \u2014 they cannot replace a single-trip policy for cancellation on this trip.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "https://www.allianztravelinsurance.com/travel/annual (official); https://www.allianztravelinsurance.com/travel/annual/annual-travel-insurance-reaching-coverage-limit.htm (official: caps are annual, buy separate plan if exceeded); https://www.usnews.com/insurance/travel/allianz-travel (tier amounts, 45-day trip limit)",
+    "notes": "price_usd 0 = not a viable option for this need, no premium quoted. Verdict: caps ($5k-$15k) categorically rule out annual policies for a $45k trip cost."
+   },
+   {
+    "label": "(d) 'Missed connection \u2014 join ship at next port' fine print, by insurer",
+    "detail": "Insurers that explicitly pay transportation to catch up to the ship: (1) SEVEN CORNERS Trip Protection Choice and Cruise plans \u2014 highest benefit found, $1,500 ($250/day), Squaremouth describes it as 'designed to cover new travel arrangements and catching up with your cruise at the next port,' 3-hr delay trigger. (2) TRAVEL INSURED WTP \u2014 $500 ($1,000 with upgrade), cruise/tour-only, 3-hr common-carrier delay trigger, pays 'additional transportation expenses to join your departed cruise.' (3) TRAVELEX Ultimate \u2014 $750, and their assistance line 'can help arrange transportation to the next port'; 21-day CFAR window. (4) NATIONWIDE Choice Cruise \u2014 certificate language confirmed today: pays 'additional transportation expenses needed for You to join Your departed Cruise' BUT the Missed Connection trigger is ONLY weather-caused cancellation/delay (3-6 hrs) of ALL regularly scheduled flights, and is secondary to airline compensation. A mechanical delay or ATC meltdown does NOT trigger it \u2014 though Nationwide's separate Trip Delay benefit (6+ hr, broader hazard list) pays an economy fare 'to a destination where You can catch up to the Trip.' (5) BERKSHIRE HATHAWAY WaveCare \u2014 cruise-specific plan with missed-connection + $750,000 evac (their highest), plus disabled-ship and diversion benefits.",
+    "price_usd": 0,
+    "price_confidence": "historical-typical",
+    "status": "confirmed",
+    "source": "https://travel.nationwide.com/certificate/NWC2/all.html (certificate text, primary source); https://www.squaremouth.com/travel-insurance-benefits/missed-connection (Seven Corners $1,500 ranking); https://www.sevencorners.com/plans/cruise; https://www.travelexinsurance.com/travel-insurance/benefits/missed-connections (official); https://www.travelinsured.com/benefits/missed-connection (official); https://www.bhtp.com/travel-insurance/wavecare/",
+    "notes": "Practical read: all missed-connection caps ($500-$1,500) are small vs the real cost of flying a family of 5 to a foreign port mid-cruise. The bigger levers are Trip Delay + Trip Interruption (Nationwide pays 150% of trip cost on interruption; WTP similar). Board a day early regardless \u2014 every insurer's trigger assumes a covered common-carrier/weather delay, never a tight self-booked connection."
+   },
+   {
+    "label": "(e) Separate single adult, Sept 27-Oct 28 (~32 days, ~$12k flights)",
+    "detail": "Comprehensive single-trip for a 39-year-old, $12,000 trip cost, ~32 days: expect ~$480-$850 (4-7%); Squaremouth's $10,001-$20,000 trip-cost bracket averages $967 across all ages/cruise trips, and the 35-49 age band averages well below overall means, so ~$550-$700 is the realistic center. With CFAR 75% (~+50%): ~$720-$1,275, subject to the same 20-21-day-from-first-payment window \u2014 if those flights were ticketed more than 21 days ago, CFAR is unavailable. If the $12k is airfare that's largely credit-eligible on cancellation, consider insuring only the truly nonrefundable portion (premium scales with declared trip cost) plus a strong medical/evac plan.",
+    "price_usd": 625,
+    "price_confidence": "aggregator-estimate",
+    "status": "likely",
+    "source": "https://www.squaremouth.com/plans/cruise/cruise-insurance-cost (trip-cost and age brackets); https://www.squaremouth.com/travel-advice/cost-for-travel-insurance (4-10% rule, ~6% average); https://www.experian.com/blogs/ask-experian/average-travel-insurance-cost/",
+    "notes": "Trip length pushes cost up (15-30 day trips average $929 in Squaremouth cruise data), but low trip cost per day and age 39 pull it back down. Airlines' own refund/credit rules matter more than insurance for pure-airfare trips."
+   }
+  ],
+  "summary": "Family of 5, $45k, Oct 8-28: budget ~$1,500-$2,500 for a best-in-class comprehensive policy (Squaremouth 2026 cruise data: 6.9% avg of trip cost, but your young ages and kids-free provisions pull you under 4-5%). Best fit for the stated spec (primary medical + $500k evac + cruise missed-connection): Travel Insured Worldwide Trip Protector ($100k primary medical, $1M evac, kids 17-and-under free, 21-day CFAR window, missed connection pays to join the departed cruise) at an estimated ~$1,300-$2,200. Nationwide Choice Cruise is the cheapest strong cruise plan (~$1,200-$2,000, $500k evac confirmed from its certificate) but its medical is EXCESS not primary and its missed-connection trigger is weather-only \u2014 and CFAR isn't offered on Choice (only Prime/Luxury Cruise). CFAR 75% adds ~48-52% (family total ~$2,700-$4,600) and is ONLY purchasable within 20-21 days of the FIRST trip payment \u2014 as of Aug 1, that means first payment on/after ~July 11, 2026, or the window is closed everywhere. Annual plans are definitively ruled out for cancellation: Allianz AllTrips Executive caps at $10k/person/year (Premier $15k), per Allianz's own pages. Highest explicit catch-up-to-next-port benefit found: Seven Corners at $1,500 ($250/day). Single adult Sept 27-Oct 28 ($12k): ~$550-$700 comprehensive, ~$800-$1,100 with CFAR.",
+  "caveats": "No insurer publishes bindable premiums without running their quote engine (age/state/trip-cost rated), so every dollar premium here is an aggregator-derived estimate, not a live quote \u2014 30 minutes on Squaremouth/TravelInsurance.com with exact DOBs and the $45,000 figure will produce real numbers, and I'd expect them inside the ranges given. Policy-structure facts (benefit limits, CFAR windows, missed-connection language) ARE confirmed from official pages, including the actual Nationwide NWC2 certificate PDF fetched and text-extracted today. Two flags on that certificate: (1) its Schedule of Benefits column extraction suggests Missed Connection may now be $1,500 (older third-party reviews say $500) \u2014 read the schedule on the actual quote; (2) benefits vary by state endorsement, and CA endorsements were not individually parsed. CFAR eligibility is the time-critical item: the clock started at the cruise deposit, not at booking of later components \u2014 if that deposit predates ~July 11, 2026, drop CFAR from the plan and lean on Trip Interruption (150% on Nationwide) plus 'Interruption for Any Reason' riders instead. Forbes' best-cruise-insurance page returned HTTP 403 and could not be checked directly; its findings arrived via search snippets."
+ },
+ {
+  "leg": "VERIFY 2 \u2014 flight schedule loads for critical dates (SIN-DOH-FCO Oct 10/11; SIN-FCO Oct 11; SMF-SEA-ICN Sep 27; ICN-SIN Oct 4; SPU/DBV-AMS late Oct; DBV-DUB W26/27; DUB-SFO late Oct)",
+  "options": [
+   {
+    "label": "(a) QR943 SIN-DOH Sat Oct 10 + DOH-FCO Sun Oct 11 \u2014 LOADED, route restored",
+    "detail": "QR943 SIN-DOH: schedule period 2026-10-01 to 10-19 operates Mon, Wed-Sun (Sat Oct 10 included), dep 10:20 arr DOH 13:05, A350-900. DOH-FCO is loaded and selling: QR115 operates DAILY 02:25-07:25 through 2026-10-24 (so it covers the night of Oct 10/11), and QR113 operates daily 2026-10-03 to 10-18 at 15:55-20:55 (covers Sun Oct 11). The spring 2026 suspension was the March Qatari-airspace closure during the regional conflict; FCO was among the first destinations restored (repatriation corridors Mar 7-8) and full scheduled service resumed \u2014 winter periods 'from 2026-10-25' are also filed, i.e. the schedule is loaded well past your dates.",
+    "price_usd": 0,
+    "source": "info.flightmapper.net/flight/Qatar_Airways_QR_943, info.flightmapper.net/flight/Qatar_Airways_QR_113, flightmapper QR115 data via search; qatarairways.com press releases (263048 et seq.) and aljazeera.com for the March 2026 suspension/restoration",
+    "status": "likely",
+    "notes": "GDS-derived schedule data (flightmapper), not the Qatar Airways booking engine itself, so labeled likely rather than confirmed. Both QR115 (overnight, connects off QR943's 13:05 arrival) and QR113 (afternoon Oct 11) work."
+   },
+   {
+    "label": "(b) SQ366 SIN-FCO \u2014 operates the night of Sat Oct 10 / Sun Oct 11 (dep 01:30 Oct 11)",
+    "detail": "Schedule period 2026-06-25 through 2026-10-23: SQ366 operates Tue, Wed, Thu, Fri AND Sun, dep SIN 01:30, arr FCO 08:05, A350-900. Oct 11 2026 is a Sunday, so the 01:30 departure that night operates. Week of Oct 5-11: flights depart 01:30 on Tue 6, Wed 7, Thu 8, Fri 9, Sun 11 (no Mon Oct 5 or Sat Oct 10 departure). Flightera independently corroborates a 4-5x-weekly pattern including Sunday. Winter period from 2026-10-25 reverts to Wed/Fri/Sun 01:55.",
+    "price_usd": 0,
+    "source": "info.flightmapper.net/flight/Singapore_Airlines_SQ_366; corroborated by flightera.net/en/flight/Singapore+Airlines-Singapore-Rome/SQ366",
+    "status": "likely",
+    "notes": "Two independent schedule aggregators agree; could not reach SIA's own timetable page (flightsfrom.com returned 403). High confidence but final check in singaporeair.com booking engine recommended."
+   },
+   {
+    "label": "(c) DL4075 SMF-SEA + DL197 SEA-ICN Sun Sep 27 \u2014 both loaded, 3h16m connection",
+    "detail": "DL4075 (SkyWest E175) still holds the SMF-SEA morning rotation: daily, dep SMF 07:35 arr SEA 09:44, schedule period 2026-04-13 through 2026-10-05 (covers Sun Sep 27). DL197 SEA-ICN: daily A350-900, September period (2026-09-01 to 09-30) dep 13:00, arr ICN 16:50 next day (Mon Sep 28), T2. Connection at SEA: 09:44 to 13:00 = 3h16m, comfortable and above Delta's domestic-to-international minimum.",
+    "price_usd": 0,
+    "source": "info.flightmapper.net/flight/Delta_Air_Lines_DL_4075; info.flightmapper.net/flight/Delta_Air_Lines_DL_197",
+    "status": "likely",
+    "notes": "Delta re-times regional flights frequently (DL4075 has shifted between 06:30 and 07:53 departures across 2026); the flight number and morning bank are stable but recheck exact SMF departure time at ticketing."
+   },
+   {
+    "label": "(d) KE643 ICN-SIN Sun Oct 4 \u2014 operates (daily)",
+    "detail": "KE643 operates DAILY in the period 2026-03-29 through 2026-10-24: dep ICN 14:45, arr SIN 19:55 (6h10m), 777-300ER, ICN T2 to Changi T4. Sun Oct 4 2026 falls squarely in this period. Codeshares DL7819/WS6033.",
+    "price_usd": 0,
+    "source": "info.flightmapper.net/flight/Korean_Air_KE_643; corroborated by planemapper.com/flights/KE643 and flyteam.jp",
+    "status": "likely",
+    "notes": "Daily service, no day-of-week risk. GDS-derived data, not Korean Air's own page, hence likely not confirmed."
+   },
+   {
+    "label": "(e) KLM SPU-AMS Sun Oct 25 winter rotation \u2014 announced yes, NOT yet visible in GDS; DBV-AMS last summer rotation Sat Oct 24",
+    "detail": "SPU-AMS W26/27: Croatian Aviation (via portal.hr, May 2026) reports KLM doubles Split winter service to TWO weekly rotations, Saturdays AND Sundays, 'from the very beginning of the winter flight schedule' (winter starts Sun Oct 25 2026), departing Split just before 13:00, largely on E195-E2. That supports a Sun Oct 25 flight. HOWEVER: flightmapper's GDS data shows NO SPU-AMS periods after Oct 24 for any of KL1970/KL1972/KL1974/KL1986 \u2014 even though the same source DOES show 'from 2026-10-25' winter periods for other routes (QR115, DL197, EI61, KL1982 BEG-AMS) \u2014 so the Split winter schedule was not loaded in the data I could see. DBV-AMS: last summer rotations are Sat Oct 24 2026 \u2014 KL1976 dep 06:30 and KL1978 dep 12:40 both run daily through 2026-10-24 with nothing after (inbound KL1981 AMS-DBV also ends Oct 24); route is summer-seasonal for KLM (summer season ends Oct 24).",
+    "price_usd": 0,
+    "source": "portal.hr/en/novosti/aktualnosti/108686 (Croatian Aviation report); info.flightmapper.net/flight/KLM_KL_1970, KL_1972, KL_1974, KL_1986, KL_1976, KL_1978, KL_1981; exyuaviation.com for prior-winter context",
+    "status": "likely",
+    "notes": "Sun Oct 25 SPU-AMS is the single weakest link in this verification set: announced by a reliable trade source but not observable as loaded/bookable in the schedule data reachable here. Check the KLM booking engine for SPU-AMS on Oct 25 before committing; fallback is the Sat Oct 24 summer flights (KL1970 06:30 / KL1972 12:50). DBV-AMS Oct 24 end date is solid across all three DBV flight numbers."
+   },
+   {
+    "label": "(f) Ryanair DBV-DUB \u2014 Sun Oct 25 YES (FR3881 dep 20:40), Mon Oct 26 NO",
+    "detail": "Pulled Ryanair's own timetable API for DBV-DUB October 2026 (primary source): flights operate Oct 1-25, 27, 28 and 30; NO flight Oct 26, 29 or 31. Sun Oct 25 2026: FR3881 dep 20:40, arr DUB 23:05. Mon Oct 26: no flight. First winter week pattern after the Oct 25 switch: Sun 25 (20:40), Tue 27 (10:35), Wed 28 (20:25), Fri 30 (11:50). This is the route's first-ever Ryanair winter season (continues ~2x weekly per Dubrovnik Times/EX-YU), which is why flightmapper's snapshot still showed nothing past Oct 24.",
+    "price_usd": 0,
+    "source": "ryanair.com/api/timtbl/3/schedules/DBV/DUB/years/2026/months/10 (official Ryanair timetable API, fetched 2026-08-01); thedubrovniktimes.com item 19802 and exyuaviation.com for the winter-continuation announcement",
+    "status": "confirmed",
+    "notes": "Only item verified against an official primary source loaded with the actual dates. If you need Oct 26 specifically, this route does not serve it \u2014 Sun Oct 25 evening or Tue Oct 27 are the real options."
+   },
+   {
+    "label": "(g) EI61 DUB-SFO late Oct 2026 \u2014 currently loaded DAILY from Oct 25 (dep 12:50)",
+    "detail": "Flightmapper shows EI61 daily 2026-03-29 through 10-24 (dep 12:50, arr 15:45, A330-300) AND a winter period 'effective from 2026-10-25' also DAILY, dep DUB 12:50 arr SFO 15:45 (9h55m block after clock changes). So all of Oct 25-31 is loaded daily as of now.",
+    "price_usd": 0,
+    "source": "info.flightmapper.net/flight/Aer_Lingus_EI_61; context from flightsfrom/airportia via search",
+    "status": "likely",
+    "notes": "Caution: last winter (25/26) Aer Lingus trimmed this route to ~3-5x weekly (Mon/Tue/Fri/Sat patterns) after initially filing more \u2014 the current 'daily' winter filing may be reduced when W26/27 is finalized. Late-Oct dates usually survive such cuts (reductions bite Nov-Feb), but recheck the specific day at booking."
+   }
+  ],
+  "summary": "6 of 7 items check out for the critical dates; 1 needs a booking-engine confirm. (a) Qatar: QR943 operates Sat Oct 10 (10:20-13:05) and DOH-FCO is fully restored post-March-2026 airspace closure \u2014 QR115 daily overnight and QR113 daily Oct 3-18 both cover Oct 10/11. (b) SQ366 operates Sun Oct 11 dep 01:30 (Tue-Fri+Sun pattern through Oct 23). (c) DL4075 SMF-SEA daily 07:35-09:44 and DL197 SEA-ICN daily 13:00 dep on Sun Sep 27; 3h16m connection. (d) KE643 daily, operates Sun Oct 4 14:45-19:55. (e) WEAK LINK: KLM's announced W26/27 Sat+Sun Split rotation supports a Sun Oct 25 SPU-AMS flight (~12:50 dep) but it is NOT yet visible in GDS schedule data even though other carriers' winter periods are \u2014 verify bookability on klm.com before locking the plan; DBV-AMS last summer rotation is Sat Oct 24 (KL1976/KL1978), nothing Oct 25+. (f) CONFIRMED on Ryanair's own timetable API: DBV-DUB flies Sun Oct 25 (FR3881 20:40-23:05), does NOT fly Mon Oct 26; winter continues Sun/Tue/Wed/Fri-ish 2x-3x weekly. (g) EI61 DUB-SFO loaded daily through late Oct including the winter period from Oct 25 (dep 12:50), though Aer Lingus has historically trimmed winter frequencies later.",
+  "caveats": "Pricing was not in scope for this verification pass; price_usd fields are set to 0 as placeholders and carry no meaning. 'Confirmed' status was reserved for the one item seen on an official primary source right now (Ryanair's own timetable API); everything else rests on GDS-derived aggregator data (flightmapper.net, cross-checked against flightera/planemapper where possible) because airline booking engines (Qatar, SIA, Delta, Korean, KLM, Aer Lingus) and flightsfrom.com/Google Flights blocked automated fetches (403/JS-rendered). Flightmapper data appeared current (it carries post-Oct-25 winter periods for most carriers), but schedules 2+ months out remain changeable \u2014 especially: (e) the KLM Split Sunday winter rotation announced but not yet observable as loaded, and (g) possible later winter frequency cuts to EI61. Day-of-week math assumes: Oct 10 2026 = Sat, Oct 11 = Sun, Sep 27 = Sun, Oct 4 = Sun, Oct 24 = Sat, Oct 25 = Sun (IATA winter W26/27 start), Oct 26 = Mon."
+ }
+]
