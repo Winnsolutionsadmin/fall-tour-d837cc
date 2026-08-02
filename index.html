@@ -88,7 +88,7 @@ h2{font-size:16.5px;margin:26px 0 4px}h2 .n{color:var(--gold);margin-right:7px}
 <div id="segs"></div>
 
 <div class="card warn" style="margin-top:18px">
-<b>Before booking:</b> ① verify live award space before ANY Amex transfer (irreversible) — Qsuite for the SIN→Rome date, EI61 or Star space for the way home ② FB 30k promo (recliner PE, not flat) dies <b>Aug 31</b> ③ SkyMiles: the 110.5k Delta One award and the 50k ICN–SIN award do NOT both fit in 132,931 — builder warns if you pick both ④ pick the cruise sailing — everything dates off it.
+<b>Before booking:</b> ① ✅ DONE — space verified in live accounts: EI61 economy is wide open (16,250/pp, 6+ seats, Nov 1 &amp; 2); Qsuites priced at 150k (pay cash instead); AerClub business does not exist ② FB 30k promo (recliner PE, not flat) dies <b>Aug 31</b> ③ SkyMiles: the 110.5k Delta One award and the 50k ICN–SIN award do NOT both fit in 132,931 — builder warns if you pick both ④ pick the cruise sailing — everything dates off it.
 </div>
 
 <div class="foot">Flight Cost Builder v3 · live/chart-verified data Aug 2, 2026 · per-leg party totals; per-person shown inside each option · selections persist on this device · <a href="home-grid.html">date × gateway grid</a> · <a href="research.html">full research</a> · lodging intentionally excluded</div>
@@ -132,8 +132,8 @@ const SEGS=[
  ]},
  {id:'sinfco',name:'Jarred SIN → Rome',date:'Oct 9–11 · pick exit',who:['jarred'],opts:[
   {id:'qr943',t:'Qatar Qsuites — Sat Oct 10 daytime',s:'10:30 → FCO ~20:05 · full party Friday · SAFE for cruise',d:false,b:'REC',
-   note:'75k Avios via Amex. Verify the DOH connection + space LIVE before transfer. Fees ~$90–150.',
-   f:{jarred:{cab:'Qsuites',cash:2600,pts:{mr:75000,fees:120,lbl:'75k Avios + ~$120'},dp:true}}},
+   note:'⚠ VERIFIED Aug 2 in a live Privilege Club account: the award is 150,000 Avios, NOT 75k — 2x every source, on all dates, labelled off-peak. At ~1.65¢/pt that is a BAD burn: PAY CASH. Best flight is QR945 dep 03:15 Sat Oct 10 → Rome 20:55 SAME DAY (full Friday party, arrive night before boarding, 2 award seats seen).',
+   f:{jarred:{cab:'Qsuites',cash:2600,pts:{mr:150000,fees:120,lbl:'150k Avios + ~$120 (VERIFIED — poor value)'}}}},
   {id:'sq366',t:'SQ366 nonstop — Sun 01:30 max-Singapore',s:'01:30 Oct 11 → 08:05 · party + F1 Sprint + Killers · ~7h buffer, zero fallback',d:false,
    f:{jarred:{cab:'Business',cash:2500}}},
   {id:'qs9',t:'Qsuites Fri Oct 9 — max buffer',s:'misses the After2049 party',d:false,
@@ -164,18 +164,18 @@ const WH={id:'home',name:'Family + Jarred → San Francisco',date:'Oct 25–26',
   jc:103,fc:412,jp:{mr:60000},fp:{mr:240000},cab:'All economy',
   note:'~$515 all five, door to door. 300k MR. The speed pick and cash floor are the same ticket.'},
  {id:'aerE',t:'AerClub economy — with FREE Dublin stay (3–7 nights)',s:'Ryanair Oct 25 20:40 (the ONLY 5-seat escape; NO Monday flight — next is Tue Oct 27) → Dublin 7–8 nights incl. Halloween Sat Oct 31 → EI61 nonstop Nov 1 or Nov 2',b:'REC',
-  jc:330,fc:1322,jp:{mr:16250},fp:{mr:65000},cab:'All economy',
-  note:'81k pts + $1,652 flights — the 3–8 night Dublin stay costs $0 extra in airfare (AerClub prices per-date; every Oct+Nov date off-peak; EI61 daily thru Nov 2). Real Halloween night Sat Oct 31 in its birthplace; ⚠ Bram Stoker Fest dates conflict between sources (Oct 23–26 bank-holiday wknd vs Oct 30–Nov 2) — verifying; street Halloween is Oct 31 regardless. Day flight home — economy is the honest cabin.'},
+  jc:358,fc:1431,jp:{mr:16250},fp:{mr:65000},cab:'All economy (CONFIRMED bookable)',
+  note:'✅ VERIFIED LIVE Aug 2: 16,250 Avios/person, 6+ seats open on EVERY date incl. Nov 1 & Nov 2, fees $194.63/pp (81,250 Avios + $973.15 for five) + Ryanair $815. ⚠ NO EI61 flight Thu Oct 29. 81k pts + ~$1,788 flights — the 3–8 night Dublin stay costs $0 extra in airfare (AerClub prices per-date; every Oct+Nov date off-peak; EI61 daily thru Nov 2). Real Halloween night Sat Oct 31 in its birthplace; ⚠ Bram Stoker Fest dates conflict between sources (Oct 23–26 bank-holiday wknd vs Oct 30–Nov 2) — verifying; street Halloween is Oct 31 regardless. Day flight home — economy is the honest cabin.'},
  {id:'aeroStop',t:'Aeroplan +5k stopover — Vienna/Munich/Zurich/Istanbul stay',s:'ONE ticket DBV→[city 2–4 nights]→SFO · confirmed +5,000 pts/person stopover rule',
   jc:120,fc:480,jp:{mr:65000},fp:{mr:260000},cab:'All economy',
   note:'325k pts + ~$600 all five, WITH a real 2–4 night city stay on one protected ticket. Vienna = best kid pick (Prater Halloween). Zero surcharges.'},
  {id:'iceland',t:'🇮🇸 Iceland stopover (parked — wishful-thinking tier)',s:'Ryanair→STN $503 → LGW→KEF (3–4 nights, aurora season) →SEA + SkyMiles hop to SFO/SMF',
   jc:620,fc:2480,jp:{sky:10000},fp:{sky:40000},cab:'Economy (Classic tier: 7-day stopover + bags)',
   note:'~$3,100 + ~50k SkyMiles. CASH play — no points currency buys the stopover (verified). KEF–SFO is dead (2020); SEA is the year-round door, hop covered by SkyMiles. Northern lights + Blue Lagoon (8yo OK; Sky Lagoon is 12+). Ground tours ~$2.1–2.9k extra, all bus-based.'},
- {id:'aerJ1',t:'AerClub: 2 lie-flat + 3 economy',s:'⚠ EI61 is a DAY flight (12:30→15:35) — beds go unused; downgraded from REC',
+ {id:'aerJ1',t:'❌ AerClub 2 lie-flat + 3 econ — NO INVENTORY EXISTS',s:'VERIFIED UNAVAILABLE: zero business award seats DUB→SFO on Nov 1, 2, 3, Dec 5 or Feb 10. Not a search artifact (DUB→JFK shows business at 50k). The 62,500 chart price is real; the inventory is not.',
   jc:585,fc:1575,jp:{mr:62500},fp:{mr:111250},cab:'2 biz + 3 econ',
   note:'173.75k + $2,160 · 3.47¢/pt, best value on the board. A330 1-2-1 true lie-flat.'},
- {id:'aerJ',t:'AerClub: Jarred-only lie-flat',s:'1 flat + 4 economy, same EI61',
+ {id:'aerJ',t:'❌ AerClub Jarred-only lie-flat — NO INVENTORY',s:'1 flat + 4 economy, same EI61',
   jc:585,fc:1322,jp:{mr:62500},fp:{mr:65000},cab:'1 biz + 4 econ',
   note:'127.5k + $1,907.'},
  {id:'fbpe',t:'Flying Blue promo — Premium Comfort (recliner, NOT flat)',s:'ONE ticket DBV→AMS→SFO · ⏰ book by Aug 31',
