@@ -1,0 +1,45 @@
+{
+ "gf-econ-oct4": [
+  "11:00 AM |  –  | 4:25 PM | Scoot | 6 hr 25 min | ICN–SIN | Nonstop | 276 kg CO2e | -24% emissions | $119",
+  "6:10 PM |  –  | 11:40 PM | Jeju Air | 6 hr 30 min | ICN–SIN | Nonstop | 299 kg CO2e | -18% emissions | $172",
+  "3:50 PM |  –  | 9:30 PM | T'Way Air | 6 hr 40 min | ICN–SIN | Nonstop | 319 kg CO2e | -12% emissions | $209",
+  "5:55 PM |  –  | 12:10 PM+1 | Vietnam Airlines | 19 hr 15 min | ICN–SIN | 1 stop | 11 hr 50 min SGN | 480 kg CO2e | +32% emissions | $155",
+  "1:50 PM |  –  | 7:15 PM | Korean Air | 6 hr 25 min | ICN–SIN | Nonstop | 412 kg CO2e | +13% emissions | $273",
+  "11:35 PM |  –  | 5:00 AM+1 | Korean Air | 6 hr 25 min | ICN–SIN | Nonstop | 349 kg CO2e | Avg emissions | $273",
+  "4:10 PM |  –  | 9:30 PM | Asiana Airlines | 6 hr 20 min | ICN–SIN | Nonstop | 339 kg CO2e | -7% emissions | $291",
+  "6:40 PM |  –  | 11:55 PM | Korean Air | 6 hr 15 min | ICN–SIN | Nonstop | 424 kg CO2e | +17% emissions | $356"
+ ],
+ "gf-econ-oct6": [
+  "6:10 PM |  –  | 11:40 PM | Jeju Air | 6 hr 30 min | ICN–SIN | Nonstop | 299 kg CO2e | -18% emissions | $118 | Avoids as much CO2e as 3,896 trees absorb in a day",
+  "3:50 PM |  –  | 9:30 PM | T'Way Air | 6 hr 40 min | ICN–SIN | Nonstop | 319 kg CO2e | -12% emissions | $139",
+  "1:50 PM |  –  | 7:15 PM | Korean Air | 6 hr 25 min | ICN–SIN | Nonstop | 376 kg CO2e | Avg emissions | $176",
+  "10:35 AM |  –  | 8:00 PM | Vietnam Airlines | 10 hr 25 min | ICN–SIN | 1 stop | 3 hr 15 min SGN | 316 kg CO2e | -13% emissions | $137",
+  "11:00 PM |  –  | 6:00 AM+1 | Scoot | 8 hr | ICN–SIN | 1 stop | 1 hr TPE | 318 kg CO2e | -12% emissions | $142",
+  "6:40 PM |  –  | 11:55 PM | Korean Air | 6 hr 15 min | ICN–SIN | Nonstop | 424 kg CO2e | +17% emissions | $176",
+  "11:35 PM |  –  | 5:00 AM+1 | Korean Air | 6 hr 25 min | ICN–SIN | Nonstop | 349 kg CO2e | Avg emissions | $176",
+  "4:10 PM |  –  | 9:30 PM | Asiana Airlines | 6 hr 20 min | ICN–SIN | Nonstop | 339 kg CO2e | -7% emissions | $270"
+ ],
+ "gf-biz-oct4": [
+  "6:10 PM |  –  | 11:40 PM | Jeju Air | 6 hr 30 min | ICN–SIN | Nonstop | 448 kg CO2e | -63% emissions | $326 | Avoids as much CO2e as 45,778 trees absorb in a day",
+  "3:50 PM |  –  | 9:30 PM | T'Way Air | 6 hr 40 min | ICN–SIN | Nonstop | 1,276 kg CO2e | +6% emissions | $704",
+  "4:10 PM |  –  | 9:30 PM | Asiana Airlines | 6 hr 20 min | ICN–SIN | Nonstop | 1,357 kg CO2e | +13% emissions | $953",
+  "6:40 PM |  –  | 11:55 PM | Korean Air | 6 hr 15 min | ICN–SIN | Nonstop | 1,697 kg CO2e | +41% emissions | $1,006",
+  "11:05 AM |  –  | 4:35 PM | Singapore AirlinesAsiana Airlines | 6 hr 30 min | ICN–SIN | Nonstop | 1,237 kg CO2e | Avg emissions | $1,031",
+  "12:55 PM |  –  | 5:25 AM+1 | China Eastern | 17 hr 30 min | ICN–SIN | 1 stop | 9 hr 40 min PVG | 1,682 kg CO2e | +40% emissions | $452",
+  "5:55 PM |  –  | 12:10 PM+1 | Vietnam Airlines | 19 hr 15 min | ICN–SIN | 1 stop | 11 hr 50 min SGN | 720 kg CO2e | -40% emissions | $536",
+  "12:55 PM |  –  | 9:55 PM | China Eastern | 10 hr | ICN–SIN | 1 stop | 2 hr 25 min PVG | 1,374 kg CO2e | +15% emissions | $576"
+ ],
+ "gf-biz-oct6": [
+  "6:10 PM |  –  | 11:40 PM | Jeju Air | 6 hr 30 min | ICN–SIN | Nonstop | 448 kg CO2e | -63% emissions | $326 | Avoids as much CO2e as 45,778 trees absorb in a day",
+  "3:50 PM |  –  | 9:30 PM | T'Way Air | 6 hr 40 min | ICN–SIN | Nonstop | 1,276 kg CO2e | +6% emissions | $631",
+  "4:10 PM |  –  | 9:30 PM | Asiana Airlines | 6 hr 20 min | ICN–SIN | Nonstop | 1,357 kg CO2e | +13% emissions | $953",
+  "1:50 PM |  –  | 7:15 PM | Korean Air | 6 hr 25 min | ICN–SIN | Nonstop | 1,504 kg CO2e | +25% emissions | $987",
+  "11:05 AM |  –  | 4:35 PM | Singapore Airlines | 6 hr 30 min | ICN–SIN | Nonstop | 1,237 kg CO2e | Avg emissions | $1,188",
+  "8:35 AM |  –  | 12:10 AM+1 | Shandong | 16 hr 35 min | ICN–SIN | 1 stop | 8 hr 25 min TNA | 565 kg CO2e | -53% emissions | $422",
+  "6:05 PM |  –  | 11:55 AM+1 | Vietnam Airlines | 18 hr 50 min | ICN–SIN | 1 stop | 10 hr 55 min HAN | 1,186 kg CO2e | Avg emissions | $542",
+  "10:35 AM |  –  | 8:00 PM | Vietnam Airlines | 10 hr 25 min | ICN–SIN | 1 stop | 3 hr 15 min SGN | 977 kg CO2e | -19% emissions | $680"
+ ],
+ "bnb-sin-triple-4n": [],
+ "bnb-seoul-guui-8n": [],
+ "bnb-sin-triple-6n": []
+}
