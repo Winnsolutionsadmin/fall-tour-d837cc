@@ -1,0 +1,602 @@
+[
+ {
+  "leg": "LANE 3 \u2014 Family x5, Europe (AMS/DUB/CDG/LHR) \u2192 SFO, Oct 26 or Nov 1-2 2026, lie-flat business (~$16,000 cash equivalent)",
+  "options": [
+   {
+    "label": "PLAY 1 (WINNER) \u2014 Aer Lingus EI61 DUB\u2192SFO, booked with Aer Lingus AerClub Avios, all 5 on one PNR",
+    "detail": "AerClub publishes a FIXED distance chart. DUB\u2013SFO is 4,678 mi = Zone 6 (4,001\u20135,500 mi). Business off-peak = 62,500 Avios one-way; peak = 75,000. Aer Lingus peak periods are ONLY Christmas/New Year, Easter and Summer \u2014 so both Oct 26 and Nov 1-2 2026 are off-peak. 62,500 x 5 = 312,500 Avios. Ireland abolished its Air Travel Tax in 2014 and there is no UK APD, so DUB-origin taxes/carrier charges land roughly $100\u2013165/seat (vs $390/seat on the KLM plan). A330 with true lie-flat business, 5x-7x weekly, and US preclearance at Dublin means the family lands at SFO as a domestic arrival \u2014 a real operational win with 3 kids. Amex MR transfers to AerClub 1:1 (near-instant), as does Chase UR; Cap One and Bilt feed it via BA + Combine My Avios.",
+    "price_usd": 650,
+    "points_cost": "312,500 Avios (Amex MR 1:1 \u2192 AerClub). ~$650 total taxes/fees for 5.",
+    "cpp": "4.91 cpp ((16,000 \u2212 650) / 312,500)",
+    "beats_current": "yes",
+    "status": "likely",
+    "source": "https://10xtravel.com/aer-lingus-aerclub-award-charts/ (chart: Zone 6 62,500 off-peak / 75,000 peak business); https://www.headforpoints.com/2026/04/13/2026-and-2027-peak-and-off-peak-avios-flight-dates/ (Aer Lingus peak = Xmas/NY/Easter/Summer only); https://onemileatatime.com/guides/redeem-aer-lingus-avios/ (AerClub cheapest Avios path, low fees); https://www.flightsfrom.com/DUB-SFO (EI61 A330, 5-7x weekly)",
+    "notes": "CONFIDENCE: HIGH on the 62,500 chart rate and off-peak status; MEDIUM on the exact tax figure ($100-165/seat is inferred from the $163 SFO\u2192DUB datapoint minus US-side taxes \u2014 Irish departures should be at or below that). Structural argument that decides this lane: a FIXED chart cannot reprice on you. Flying Blue can, and for a party of 5 it will (see PLAY 6). Verify inventory on aerclub.aerlingus.com BEFORE transferring \u2014 Amex transfers are irreversible and the ~512k MR figure is a STALE July snapshot."
+   },
+   {
+    "label": "PLAY 2 (CHEAPEST IF FUNDABLE) \u2014 same Aer Lingus DUB\u2192SFO metal, booked with Alaska/Atmos Rewards",
+    "detail": "Atmos (ex-Mileage Plan) partner chart: business 3,501\u20135,000 mi = 55,000 points. DUB\u2013SFO at 4,678 mi sits in that band. Fees are ~$26/seat including the $20 partner award fee. 55,000 x 5 = 275,000 points + ~$130 total. That is 37,500 FEWER points and ~$520 less cash than PLAY 1 for the identical seat. Atmos also grants a free stopover, so a few days in Dublin on the way home costs nothing extra. Atmos has an abundance of Aer Lingus transatlantic business space and award alerts routinely show 4 seats open.",
+    "price_usd": 130,
+    "points_cost": "275,000 Atmos Rewards points",
+    "cpp": "5.77 cpp ((16,000 \u2212 130) / 275,000)",
+    "beats_current": "yes",
+    "status": "unknown",
+    "source": "https://awardwallet.com/news/alaska-atmos-rewards/business-class-europe-award-alert/ (45k/55k bands, ~$19-26 fees, 4 seats seen); https://flightpoints.com/award-charts/alaska-airlines-award-chart-2026; https://10xtravel.com/best-ways-book-aer-lingus-business-class-points-miles/",
+    "notes": "CONFIDENCE: MEDIUM. The blocker is SOURCING, not pricing. Atmos takes NO transfers from Amex MR, Chase UR, or Citi TY. The only realistic feeders are Bilt (1:1, direct partner) and Marriott (3:1 \u2014 you'd need ~660k Marriott points, not realistic). ACTION: verify the Bilt balance first \u2014 it is the single highest-leverage unknown in this whole lane. If Bilt holds 275k, this is the best redemption on the entire trip. Also confirm the 4,678 mi routing prices in the 3,501\u20135,000 band on Alaska's own engine; Alaska's chart is semi-dynamic by partner."
+   },
+   {
+    "label": "PLAY 3 (THE REALISTIC EXECUTION) \u2014 split 4 + 1 across programs on the SAME Aer Lingus flight",
+    "detail": "Partner feeds (Atmos, BA, United, JetBlue) typically expose a 4-seat cap on Aer Lingus business; AerClub's own site frequently shows MORE inventory than the partner feed. So the practical play is: take 4 seats on whichever partner is cheapest and fundable (Atmos at 55k, or AerClub at 62.5k), then book the 5th directly on AerClub. Mixed example: 4 x 55,000 Atmos (220,000 + ~$104) + 1 x 62,500 AerClub Avios (+ ~$130) = 220,000 Atmos + 62,500 Avios + ~$234. All five on the same aircraft, same day, seated together \u2014 just two PNRs.",
+    "price_usd": 234,
+    "points_cost": "220,000 Atmos + 62,500 Avios (or 250,000 + 62,500 Avios if all-Avios: 4 seats AerClub + 1 seat AerClub, same thing)",
+    "cpp": "~5.6 cpp blended",
+    "beats_current": "yes",
+    "status": "likely",
+    "source": "https://awardwallet.com/news/alaska-atmos-rewards/business-class-europe-award-alert/ (4 seats observed); https://10xtravel.com/best-ways-book-aer-lingus-business-class-points-miles/ (partner inventory is often a subset of AerClub's)",
+    "notes": "CONFIDENCE: MEDIUM-HIGH. Answers your question (4) directly: splitting across programs on the SAME METAL is materially easier than splitting across airlines/days, and costs almost nothing extra. Two PNRs on the same flight is a non-issue for seating (call to link) and is far better than the KLM alternative of splitting the family across two different days. Do NOT split across different metal/days unless forced \u2014 that is where the real cost lands (extra hotel night, extra positioning, kids on a separate flight)."
+   },
+   {
+    "label": "PLAY 4 (POSITIONING) \u2014 add AMS/CDG\u2192DUB as an award segment, not a separate cash ticket",
+    "detail": "If the family ends in Amsterdam or Paris rather than Dublin, do NOT buy a separate Ryanair/Aer Lingus cash hop \u2014 that breaks the protected connection and puts a same-day misconnect on you with 3 kids and transatlantic bags. Instead price AMS\u2013DUB or CDG\u2013DUB as a second segment on the SAME AerClub award: Aer Lingus intra-Europe economy is Zone 2 (651\u20131,151 mi) = 6,500 Avios off-peak. 5 x 6,500 = 32,500 Avios + ~$25/seat. All-in for PLAY 1 + positioning: ~345,000 Avios + ~$775.",
+    "price_usd": 775,
+    "points_cost": "312,500 + 32,500 = 345,000 Avios total",
+    "cpp": "4.41 cpp ((16,000 \u2212 775) / 345,000)",
+    "beats_current": "yes",
+    "status": "likely",
+    "source": "https://10xtravel.com/aer-lingus-aerclub-award-charts/ (Zone 2 = 6,500 off-peak economy; Avios prices per segment)",
+    "notes": "CONFIDENCE: MEDIUM-HIGH. Note AerClub prices PER SEGMENT, so the two legs price additively \u2014 this is not a penalty, it's just how the chart works, and 6,500 Avios for a protected intra-Europe positioning leg is cheap. Even with positioning added, this still beats the KLM plan by ~$1,175 in cash for +45,000 points (2.6 cpp on the marginal points \u2014 roughly a wash on pure math, but a decisive win on execution risk). If the family can simply END the Europe leg in Dublin, skip this entirely and PLAY 1 is a clean 10.4 cpp improvement on the margin."
+   },
+   {
+    "label": "PLAY 5 (CASH-VS-POINTS BREAKEVEN) \u2014 burn the points, do not pay cash",
+    "detail": "Current plan yields ($16,000 \u2212 $1,950) / 300,000 = 4.68 cpp. PLAY 1 yields 4.91 cpp; PLAY 2 yields 5.77 cpp. Breakeven math: value MR at a realistic 1.8 cpp hurdle and 300,000 MR = $5,400 opportunity + $1,950 taxes = $7,350, i.e. cash only wins below ~$1,470/seat one-way. At an aggressive 2.2 cpp MR valuation the breakeven is ~$1,710/seat. Market for Europe\u2192SFO business in Oct/Nov shoulder season is ~$2,800\u20133,200/seat. Cash does not come close.",
+    "price_usd": 16000,
+    "points_cost": "n/a \u2014 this is the do-nothing baseline",
+    "cpp": "BREAKEVEN = $1,470\u2013$1,710 per seat one-way. Below that, pay cash. Above it, burn points.",
+    "beats_current": "no",
+    "status": "confirmed",
+    "source": "https://simpleflying.com/worlds-most-affordable-transatlantic-business-class-routes-book-today/ (shoulder-season transatlantic business $3,000\u20133,800 avg; SFO\u2013LIS $2,824 one-way); https://www.businessclasssignal.com/airlines/aer-lingus",
+    "notes": "CONFIDENCE: HIGH on the arithmetic, MEDIUM on the $3,200 cash comp (aggregator data, not live inventory). Verdict: this is a clear POINTS redemption at ~2x-3x the breakeven. One hedge worth pricing: Aer Lingus and KLM both sell economy\u2192business upgrades cheaply (KLM has offloaded seats at $400-700/leg near departure). AerClub's published DUB\u2192SFO upgrade rate is 46,250 Avios off-peak \u2014 5 x 46,250 = 231,250 Avios, but upgrades require an eligible (not cheapest-bucket) paid economy fare and draw on a separate, scarcer upgrade inventory. Treat as a fallback only, not a plan."
+   },
+   {
+    "label": "PLAY 6 \u2014 CURRENT PLAN (KLM AMS\u2192SFO, 60k Flying Blue x5 = 300k MR + ~$390/seat): KEEP AS FALLBACK, DO NOT LEAD WITH IT",
+    "detail": "The 60,000 figure is a FLOOR on a fully dynamic chart, not a price. Flying Blue's documented behavior for multi-passenger searches: if fewer than 5 saver seats exist on a flight, the engine reprices the ENTIRE party to the flex tier \u2014 reported at 142,000+ miles each. That is 710,000 MR for 5 seats, which exceeds the entire ~512k MR pool. Saver business inventory on Flying Blue has been described as 'basically non-existent' on many routes, and the recent bulk saver releases advertised a floor of just TWO business seats per flight. Jarred is Delta Diamond, NOT Flying Blue Platinum/Ultimate \u2014 the 2026 enhanced saver-availability benefit is elite-gated and he does not qualify for it.",
+    "price_usd": 1950,
+    "points_cost": "300,000 MR IF five saver seats exist; up to 710,000 MR if they do not",
+    "cpp": "4.68 cpp at saver; ~2.0 cpp at flex",
+    "beats_current": "tie",
+    "status": "unknown",
+    "source": "https://onemileatatime.com/insights/flying-blue-business-class-award-availability/ (saver business availability collapse); https://onemileatatime.com/news/flying-blue-elite-members-better-award-availability-pricing/ (elite-gated saver access; 60k vs 142k example); https://flightpoints.com/blogs/flying-blue-award-chart-2026-business-class-us-to-europe/",
+    "notes": "CONFIDENCE: MEDIUM-HIGH on the repricing mechanic, HIGH on the elite gate. This is the core adversarial finding: the current plan's 300k number is a BEST CASE that requires an unlikely event (5 saver seats, one flight, one date). It is not wrong to hold it as a fallback \u2014 if AwardFares/seats.aero alerts fire showing 5 saver seats on Oct 26 or Nov 1-2, book it. But do not build the trip around it. Search 1 passenger first to find the green calendar date, THEN re-search for 5."
+   },
+   {
+    "label": "PLAY 7 \u2014 KILLED: fly into LAX or SEA and connect domestically",
+    "detail": "Directly tested per question (1). Flying Blue ELIMINATED the West Coast premium and standardized transatlantic saver pricing for all one-way itineraries regardless of origin or destination \u2014 so AMS\u2192SEA, AMS\u2192LAX and AMS\u2192SFO all price identically. There is zero award saving from repositioning, and you would be adding a domestic connection for nothing. On the Aer Lingus side the equivalent trick also fails: DUB\u2013SEA is SUSPENDED from October 25 2026 to April 26 2027, which kills it for both the Oct 26 and Nov 1-2 dates.",
+    "price_usd": 0,
+    "points_cost": "n/a",
+    "cpp": "n/a",
+    "beats_current": "no",
+    "status": "unavailable",
+    "source": "https://thepointsguy.com/news/flying-blue-standardizes-europe-awards (West Coast premium eliminated, standardized pricing); https://travelmole.com/news/aer-lingus-sharp-reductions-for-flights-to-the-united-states-in-winter (DUB\u2013SEA suspended Oct 25 2026 \u2013 Apr 26 2027)",
+    "notes": "CONFIDENCE: HIGH. Definitively answers question (1): NO. A related sub-play also fails \u2014 DUB\u2192ORD is Zone 5 (50,000 Avios off-peak, saving 62,500 across 5 seats), but the required ORD\u2192SFO domestic leg for 5 costs ~$900 cash or ~75,000 BA Avios, which erases the saving entirely AND adds a connection after an 8-hour flight with three kids. Not worth it."
+   },
+   {
+    "label": "PLAY 8 \u2014 KILLED: Virgin Atlantic Flying Club for Delta One Europe\u2192SFO",
+    "detail": "The old sweet spot (~47,500\u201367,500 Virgin points) is destroyed by carrier-imposed surcharges. Virgin now applies the same steep fuel surcharges on Europe\u2192US Delta One as on US\u2192Europe: a documented one-way Delta One award carried 57,500 points PLUS $1,054 in 'taxes and fees,' most of it carrier-imposed. For 5 seats that is over $5,000 in cash on top of the points \u2014 worse than paying cash outright on some fares.",
+    "price_usd": 5270,
+    "points_cost": "~287,500 Virgin points AND ~$5,270 in surcharges",
+    "cpp": "~3.7 cpp \u2014 and you still pay $5,270",
+    "beats_current": "no",
+    "status": "unavailable",
+    "source": "https://upgradedpoints.com/news/virgin-points-delta-one-alternatives/ (JFK\u2013PRG 57,500 pts + $1,054; Europe\u2192US surcharges now match US\u2192Europe)",
+    "notes": "CONFIDENCE: HIGH. Also disposes of the Delta SkyMiles angle \u2014 132,931 SkyMiles is nowhere near 5 transatlantic business seats regardless. Diamond status buys nothing here."
+   },
+   {
+    "label": "PLAY 9 \u2014 KILLED: Avianca LifeMiles, and DOWNGRADED: Aeroplan / Star Alliance",
+    "detail": "LifeMiles: the 63,000 transatlantic business rate is GONE. The 2026 devaluation pushed US\u2013Europe partner business to 80,000\u201392,400 one-way (JFK\u2013FRA on Lufthansa now 92,400), with no advance notice and mixed-cabin pricing eliminated. 5 seats = 400,000\u2013462,000 LifeMiles. Dead. Aeroplan: Europe\u2192North America business at 3,501\u20136,000 mi = 70,000 points; AMS/LHR/FRA/CDG\u2192SFO all sit in that band, so 350,000 Aeroplan for 5 \u2014 more points than PLAY 1, plus Lufthansa/Swiss carrier surcharges, plus ~$250/seat UK APD if routed via LHR. Not competitive.",
+    "price_usd": 1250,
+    "points_cost": "LifeMiles: 400,000\u2013462,000. Aeroplan: 350,000 + surcharges.",
+    "cpp": "below 3.5 cpp on both",
+    "beats_current": "no",
+    "status": "unavailable",
+    "source": "https://www.airtraveler.club/news/lifemiles-devalues-us-europe-awards/ (63k \u2192 92,400, over 45% increase); https://upgradedpoints.com/news/lifemiles-awards-europe-lower/; https://10xtravel.com/avianca-lifemiles-award-chart/",
+    "notes": "CONFIDENCE: HIGH on LifeMiles (multiple independent 2026 sources on the devaluation), MEDIUM-HIGH on Aeroplan. Neither is worth a transfer. Aeroplan on UNITED metal avoids fuel surcharges and is the only semi-viable Star play, but at 70k x 5 it loses to Avios on both points and taxes."
+   },
+   {
+    "label": "CORRECTION TO PRIOR RESEARCH \u2014 Iberia Avios CANNOT book Aer Lingus",
+    "detail": "Your question (3) assumed the cheaper Iberia chart might book DUB\u2013SFO. It cannot. AerClub Avios books exactly four carriers: Aer Lingus, British Airways, Iberia and Vueling. Iberia Plus books Iberia, BA, Vueling and oneworld partners \u2014 and Aer Lingus is NOT a oneworld member (it is an IAG sister airline only). So the Iberia chart is irrelevant here. Separately: British Airways Executive Club CAN book Aer Lingus but prices DUB\u2013SFO business at ~90,000 Avios vs AerClub's 62,500 \u2014 so do NOT transfer Amex MR to BA for this. Transfer straight to AerClub.",
+    "price_usd": 0,
+    "points_cost": "BA path would cost 450,000 Avios for 5 vs 312,500 via AerClub \u2014 a 137,500-point mistake",
+    "cpp": "n/a",
+    "beats_current": "no",
+    "status": "confirmed",
+    "source": "https://10xtravel.com/aer-lingus-aerclub-award-charts/ (AerClub books EI/BA/IB/VY only); https://onemileatatime.com/guides/redeem-aer-lingus-avios/ (AerClub 62,500 + $163 vs BA 90,000 + $158 on the same seat); https://www.headforpoints.com/2026/07/13/how-do-you-move-combine-avios-from-british-airways-2/ (Combine My Avios 1:1, no longer needs BA as conduit except for Qatar)",
+    "notes": "CONFIDENCE: HIGH. Silver lining on pooling: Avios is fed by FOUR of Jarred's potential currencies \u2014 Amex MR (1:1 direct to AerClub), Chase UR (1:1 direct, both Sapphire Reserves), Capital One (via BA + Combine), and Bilt (direct). Citi TY reaches Avios only via Qatar Privilege Club, and Qatar\u2192AerClub still requires a two-stage hop through British Airways. That breadth is the second structural reason Avios beats Flying Blue for a 5-seat redemption."
+   }
+  ],
+  "summary": "VERDICT: the current plan (KLM AMS\u2192SFO, 60k Flying Blue x5 = 300k MR + ~$1,950) is NOT the best play, and its headline number is a best-case that probably will not materialize. Switch to Aer Lingus EI61 DUB\u2192SFO on AerClub Avios: 62,500 x 5 = 312,500 Avios + ~$650 (both Oct 26 and Nov 1-2 2026 are off-peak; Aer Lingus is peak ONLY at Christmas/New Year/Easter/Summer). Nearly the same points, ~$1,300 less cash, and \u2014 decisively \u2014 a FIXED published chart instead of a dynamic one. THE ADVERSARIAL CORE: Flying Blue reprices the ENTIRE party to flex (reported 142,000+ miles each, i.e. 710k MR for 5) whenever fewer than 5 saver seats exist on a flight, and its recent bulk saver releases guaranteed only TWO business seats. Jarred is Delta Diamond, not Flying Blue Platinum, so he does not get the 2026 elite-gated saver-availability boost. The 300k number requires an unlikely event. Aer Lingus, by contrast, is documented releasing 4+ business seats per flight with the deepest availability in exactly the Sep\u2013Nov shoulder window, and 62,500 is 62,500 no matter how many people search. Add DUB's US preclearance (family lands at SFO as a domestic arrival with three kids) and the case is not close. HIGHEST-LEVERAGE UNKNOWN: the Bilt balance. Alaska/Atmos prices the identical Aer Lingus seat at 55,000 + ~$26 \u2014 275,000 points and $130 total, saving 37,500 points AND ~$520 vs Avios \u2014 but Atmos takes no Amex/Chase/Citi transfers, only Bilt (1:1) or Marriott (3:1, unusable at this scale). Verify Bilt FIRST; if it holds ~275k this becomes the single best redemption of the entire trip. EXECUTION: expect a 4-seat partner cap, so plan a 4+1 split on the SAME flight (4 on the cheapest fundable program, 5th direct on AerClub, which routinely shows more inventory than partner feeds). If the family ends in AMS/CDG rather than DUB, add the positioning hop as a second AerClub segment (6,500 Avios economy each) rather than a separate cash ticket \u2014 protected connection matters here. CASH BREAKEVEN: paying cash only wins below ~$1,470\u2013$1,710/seat one-way; market is ~$2,800\u20133,200. Burn the points. KILLED THIS PASS: LAX/SEA repositioning (Flying Blue eliminated the West Coast premium \u2014 zero saving; and DUB\u2013SEA is suspended Oct 25 2026\u2013Apr 26 2027), Virgin Points for Delta One (57,500 pts PLUS $1,054/seat in surcharges), Avianca LifeMiles (devalued to 80,000\u201392,400), Aeroplan/Star (350k + surcharges + LHR APD), and Iberia Avios for Aer Lingus (impossible \u2014 Aer Lingus is not oneworld; and do NOT route MR through BA, which charges 90,000 for the same seat).",
+  "caveats": "CONFIDENCE AND VERIFICATION GAPS \u2014 read before transferring anything. (1) IRREVERSIBILITY: every transfer here is one-way and final. Confirm live 5-seat inventory on aerclub.aerlingus.com (or Alaska's engine) to the payment page BEFORE moving a single point. AerClub does not offer award holds. (2) STALE POOL: the ~512k Amex MR figure is a July snapshot \u2014 re-verify before committing 312,500 of it. Chase UR (Jarred + Ashley Sapphire Reserve + Freedom), Citi TY, Capital One, Bilt, and all hotel balances remain UNVERIFIED; Bilt in particular is the difference between PLAY 1 and the materially better PLAY 2. (3) CHART CURRENCY: the AerClub Zone 6 rate (62,500 off-peak / 75,000 peak) comes from a chart page last dated December 2024 and corroborated by a September 2026 Miami\u2013Dublin datapoint at 62,500 \u2014 HIGH confidence but re-price on aerlingus.com before acting. The official 2026 peak/off-peak PDF (aerlingus.com/media/pdfs/AC_calendar_2026.pdf pattern) should be pulled to confirm the exact December boundary; Oct 26 and Nov 1-2 are comfortably clear of it. (4) TAXES ARE ESTIMATED: the ~$100-165/seat DUB-origin figure is inferred from a published $163.30 SFO\u2192DUB datapoint minus US-side taxes, adjusted for Ireland having no departure tax. MEDIUM confidence \u2014 could land anywhere in $80\u2013200. (5) SCHEDULE RISK: Aer Lingus is cutting US winter flying and has confirmed DUB\u2013SEA suspension from Oct 25 2026. DUB\u2013SFO is historically year-round and was NOT named in the cuts, but Nov 1-2 falls in the winter schedule \u2014 confirm EI61 operates on the specific date before building around it. The Oct 26 date sits one day into winter schedule as well. (6) ALASKA BAND: the 55,000 rate assumes DUB\u2013SFO (4,678 mi) prices in the 3,501\u20135,000 mi band; Alaska's chart is semi-dynamic by partner, so verify on their engine rather than assuming. (7) CASH COMPS: the ~$3,200/seat figure is from aggregator/deal-site guides, not live inventory \u2014 the breakeven conclusion is robust (points win by 2x) but the precise cpp figures shift with the real fare. (8) FLYING BLUE FLEX REPRICING: the 'entire party reprices to flex' mechanic is documented behavior but MEDIUM-HIGH rather than certain confidence; it may be possible to book 2 saver + 3 flex in separate PNRs. Even so, that outcome is strictly worse than a single fixed-price Aer Lingus award. (9) NOT COVERED HERE: this lane addresses only the family of 5. The 3 employees and legs (a)/(b)/(c) are separate optimizations \u2014 but note that the Avios pooling breadth identified here (four feeder currencies) may also be the right answer for leg (c) SIN\u2192FCO via Qatar Qsuites, which is bookable with the SAME Avios currency through Qatar Privilege Club."
+ },
+ {
+  "leg": "LANE 4 \u2014 Hotel points vs surge cash + optimization of the two already-booked stays (Seoul Sep 27\u2013Oct 6, Singapore Oct 6\u201310, Rome Oct 9\u201311, Dubrovnik Oct 18\u201325, Europe stopover Oct 25\u201327)",
+  "summary": "The task's core premise \u2014 \"award rates CAP the surge (they usually do)\" \u2014 is FALSE as of 2026 for three of the four chains named. Marriott (charts killed 2022, bounds removed 2023), Hilton (no chart), and IHG (dynamic, old 120k InterContinental cap gone) all price awards dynamically off cash, so they RIDE the F1 surge rather than cap it. World of Hyatt is the ONLY program left with fixed published thresholds, and its Singapore properties (Andaz Singapore, Grand Hyatt Singapore) are Category 6 with a hard ceiling of 40,000 pts/night even on race weekend. That is the entire hotel-points arbitrage on this trip. Second premise-breaker: The Ritz-Carlton Millenia Singapore does not participate in Marriott Bonvoy at all \u2014 it cannot be booked on points and earns none, so it is a dead option, not a redemption target. Third: Grand Walkerhill Seoul is an independent SK Networks property on its own in-house Walkerhill Rewards program \u2014 not Marriott, not Preferred/I Prefer, not Amex FHR, not The Edit, not Capital One Premier Collection. Points could NOT have beaten $2,160 because no transferable-currency path exists. Do not rebook it for points; there is nothing to rebook into. The adversarial verdict on the two live bookings is mostly DON'T CHURN: the Singapore stay at ~$667/night across Token2049 + F1 Friday is materially BELOW the documented 3-4x Marina Bay race-week surge ($1,000-1,700/night), so the cash booking is already good and the Hyatt swap saves maybe $200-700 of value, not thousands \u2014 and only if an unverified Chase UR balance exists to transfer. The two genuinely high-value, un-taken plays are in Europe, not Asia: Hyatt Regency Rome Central (opened Feb 2026, redemptions started at 12,000 pts/night \u2014 a Cat 1-4 free-night-cert property in a city where cash runs $300-500) and Hyatt Regency Amsterdam (dropped to Category 4 in the May 2026 reshuffle, now Chase Hyatt free-night-cert eligible). The single highest-priority verification item is not a hotel at all: the claimed 1,378 MQD on the Delta Cars & Stays Seoul booking is internally inconsistent with the claimed 3,449 miles and is at real risk of not posting, because Delta's MQD-on-stays offer is a recurring LIMITED-WINDOW promo (most recent documented booking window June 15 - July 20, 2026) \u2014 a stay booked outside a live window earns zero MQDs regardless of travel date.",
+  "options": [
+   {
+    "label": "HEADLINE ARBITRAGE \u2014 Andaz Singapore / Grand Hyatt Singapore on World of Hyatt points (Cat 6, HARD CAP 40,000 pts/night)",
+    "detail": "World of Hyatt is the last major program with fixed published award thresholds \u2014 Hyatt explicitly stated in its Feb 2026 announcement that it will keep 'fixed point thresholds rather than moving to dynamic pricing for award nights.' Both Andaz Singapore (Duxton) and Grand Hyatt Singapore (Orchard) remained Category 6 through the May 20, 2026 category reshuffle, pricing 20,000 (Lowest) to 40,000 (Top) pts/night. That 40k ceiling holds even on F1 race weekend, which is exactly the surge-capping behavior Marriott/Hilton/IHG no longer provide. For the Oct 6-10 window (4 nights: Oct 6,7,8,9) that is 80,000 pts best case / 160,000 pts worst case vs the $2,669 already booked. At the 40k Top band: 2,669/160,000 = 1.67 cpp. If it prices at the Moderate band (~30-34k, derived from Hyatt's stated 20-37.5% increase over the old 25k standard): 120,000-136,000 pts = 1.96-2.22 cpp. Hyatt points are consensus-valued 1.7-2.2 cpp, so this is at-or-modestly-above par, NOT a blowout.",
+    "price_usd": 2669,
+    "points_cost": "80,000-160,000 World of Hyatt (4 nights, Cat 6, Lowest-to-Top band)",
+    "cpp": "1.67-2.22 cpp vs the $2,669 booked rate",
+    "source": "https://newsroom.hyatt.com/awardchartupdates ; https://upgradedpoints.com/news/hyatt-award-chart-cheaper-hotels-2026/ ; https://www.nerdwallet.com/travel/news/hyatt-award-chart-changes-2026",
+    "status": "likely",
+    "beats_current": "unknown",
+    "notes": "BLOCKING DEPENDENCY: Jarred's Hyatt balance is not in the known pools. The only realistic path is Chase Ultimate Rewards -> Hyatt 1:1 (the single best UR transfer partner), and Chase UR is listed as UNVERIFIED for both Jarred and Ashley's Sapphire Reserve + Freedom. Verify UR balance BEFORE spending any more time here. Also: neither Hyatt property is Marina Bay-adjacent (Andaz is Duxton ~2km from circuit, Grand Hyatt is Orchard), so this is a location DOWNGRADE from the near-MBS booking, which matters if Token2049 at Marina Bay Sands is the actual reason for the trip. Confidence: HIGH on the 40k cap and Cat 6 status; MEDIUM on exact band pricing for the specific dates (Hyatt is rolling Upper/Top bands out gradually in 2026 \u2014 'limited hotels moving a limited number of nights' \u2014 so Oct 2026 may still price at or near the old 29k peak)."
+   },
+   {
+    "label": "PREMISE CORRECTION \u2014 Marriott, Hilton, and IHG awards do NOT cap the F1 surge in 2026",
+    "detail": "Marriott discontinued its redemption chart in March 2022 and removed the off-peak/peak minimum-maximum bounds starting 2023; award nights now float with cash rate, season, and demand, and flagship standard rooms that priced 85-100k in 2022-23 routinely clear 120-140k on peak dates with select properties breaching 150k. Hilton Honors has no award chart at all \u2014 the published Conrad Singapore Marina Bay 'from 80,000 pts' and Conrad Singapore Orchard 'from 70,000 pts' are FLOOR rates that rise on peak dates, not ceilings. IHG One Rewards is fully dynamic and the former unofficial 120,000-pt cap for non-resort InterContinentals no longer holds, with luxury-tier ranges running 40,000 to 130,000+. Net: on all three programs, the 3-4x race-week cash surge propagates into the points price, so there is no arbitrage to quantify \u2014 the redemption gets more expensive in lockstep.",
+    "price_usd": 0,
+    "points_cost": "n/a \u2014 dynamic, tracks cash",
+    "cpp": "roughly constant across peak/off-peak; no surge protection",
+    "source": "https://upgradedpoints.com/news/marriott-bonvoy-dynamic-pricing-award-chart-removal/ ; https://www.shopback.com/blog/travel/marriott-bonvoy-devaluation-2026-what-changed ; https://upgradedpoints.com/travel/hotels/best-singapore-hotels-book-points/ ; https://onemileatatime.com/news/ihg-one-rewards-increases-points-costs/",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "This directly refutes the lane brief's stated assumption. The only partial blunting mechanisms that survive are structural discounts, not caps: Marriott 5th-night-free on 5+ night award stays (effective 20% off), IHG 4th-night-free for co-brand cardholders (25% off a 4-night stay \u2014 and notably the free 4th night can be the most expensive one, so anchoring race Sunday as night four is the right sequencing), and Marriott free-night certs now top-offable with up to 25,000 points as of March 12, 2026 (85k cert + 25k = 110k effective ceiling). None of these is a surge cap. Confidence: HIGH."
+   },
+   {
+    "label": "DEAD OPTION \u2014 The Ritz-Carlton, Millenia Singapore is not a Marriott Bonvoy participating hotel",
+    "detail": "The property's own site states it does not participate in Marriott Bonvoy. It earns no points, confers no elite benefits, and cannot be booked with points \u2014 it appears in the Bonvoy app on CASH rates only, and reportedly offers a complimentary next-category upgrade as a goodwill gesture in lieu of program participation. Cash reference: roughly $654-880/night in normal periods, with race-weekend listings quoted from ~$6,300/night (one source lists from GBP 6,457).",
+    "price_usd": 6300,
+    "points_cost": "not redeemable \u2014 property does not participate in Bonvoy",
+    "cpp": "n/a",
+    "source": "https://www.ritzcarlton.com/en/hotels/sinrz-the-ritz-carlton-millenia-singapore/overview/ ; https://www.flyertalk.com/forum/marriott-marriott-bonvoy/1538317-ritz-carlton-singapore-master-thread.html",
+    "status": "unavailable",
+    "beats_current": "no",
+    "notes": "This is the property most commonly named in F1-points articles as the marquee Bonvoy redemption. It is not one. Remove it from the option set entirely. Marina Bay Sands itself is also independent (Las Vegas Sands) and on no transferable program. Confidence: HIGH. Real Bonvoy alternatives near the circuit are The Westin Singapore, JW Marriott Singapore South Beach, and The St. Regis Singapore \u2014 all dynamically priced per the row above."
+   },
+   {
+    "label": "GRAND WALKERHILL SEOUL \u2014 no chain-points path exists; points could not have beaten $2,160; do NOT rebook",
+    "detail": "Grand Walkerhill is owned by SK Networks Co. and runs its own in-house Walkerhill Rewards / Walkerhill Prestige Club program (5% dining reward rate, points redeemable only for Walkerhill rooms, F&B, or gift certificates; non-refundable, non-cash-convertible, and partial payment with points often disallowed). It is NOT a Marriott, Hilton, Hyatt, IHG, or Accor property, and it does not appear in Preferred Hotels / I Prefer. Searches of Amex Travel's Seoul roster return Grand Hyatt Seoul, Grand InterContinental Seoul Parnas, and Park Hyatt Seoul under Fine Hotels + Resorts, and JW Marriott Hotel Seoul, Lotte Hotel Seoul, and Mondrian Seoul Itaewon under The Hotel Collection \u2014 Walkerhill is on neither list, nor on The Edit by Chase or Capital One Premier Collection.",
+    "price_usd": 2160,
+    "points_cost": "none available \u2014 no transferable currency redeems here",
+    "cpp": "n/a",
+    "source": "https://www.walkerhill.com/grandwalkerhillseoul/en/membership/Rewards ; https://www.americanexpress.com/en-us/travel/discover/property-results/dt/4/d/Seoul,South%20Korea ; https://www.awardtravel.co/blog/the-edit-by-chase-list",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "Answers question (1) definitively: NO, points could not have beaten $2,160, and it is not worth rebooking for points because there is no points product. The only remaining question on this booking is whether the Delta Stays channel itself was the right one (see the MQD and portal rows). If the Sep 27 - Oct 6 window is ~9 nights, $2,160 is ~$240/night for a 5-star Han River property, which is a genuinely strong cash rate and argues for leaving it alone. Confidence: HIGH on non-participation; MEDIUM on the FHR/Edit/Premier rosters, which rotate \u2014 worth one direct check on amextravel.com with the live dates before final sign-off."
+   },
+   {
+    "label": "SEOUL COUNTERFACTUAL \u2014 Grand Hyatt Seoul or Park Hyatt Seoul (points + Amex FHR perks) instead of Walkerhill",
+    "detail": "If the goal is points redemption plus luxury-portal perks in Seoul, the confirmed-participating options are Grand Hyatt Seoul (World of Hyatt property AND on Amex Fine Hotels + Resorts \u2014 stacks a points-or-cash redemption with FHR's room upgrade, daily breakfast for two, $100 property credit, guaranteed 4pm late checkout), Park Hyatt Seoul (FHR, currently showing 15% off the nightly rate on qualifying windows), and Grand InterContinental Seoul Parnas (FHR, showing a complimentary-third-night offer bookable by 12/28/2026 for travel by 12/31/2026). Grand Hyatt Seoul is the only one that is both a fixed-chart points property and an FHR property.",
+    "price_usd": 2160,
+    "points_cost": "Grand Hyatt Seoul: Hyatt category not individually confirmed; neither Seoul property appeared on the May 2026 category-change list, so both held prior categories",
+    "cpp": "not computed \u2014 nightly rate for the specific Sep 27-Oct 6 window not pulled",
+    "source": "https://www.americanexpress.com/en-us/travel/discover/property-results/dt/4/d/Seoul,South%20Korea ; https://onemileatatime.com/news/world-of-hyatt-hotel-category-changes/",
+    "status": "likely",
+    "beats_current": "unknown",
+    "notes": "Presented as the honest counterfactual, NOT a recommendation to switch. Against it: (a) the Walkerhill booking is already made and at a good per-night rate, (b) switching forfeits whatever Delta miles/MQDs do post, (c) a 9-night Seoul stay is a large points outlay that competes directly with the Singapore and Rome redemptions for the same scarce Hyatt balance. Only pursue if the Walkerhill rate turns out to be refundable AND the Chase UR balance is large enough to fund Seoul, Singapore, and Rome simultaneously. Confidence: MEDIUM \u2014 property categories for the two Seoul Hyatts were not individually confirmed."
+   },
+   {
+    "label": "SINGAPORE ADVERSARIAL READ \u2014 the $2,669 booking is probably already GOOD; the surge mostly misses these dates",
+    "detail": "Timing is the buried lede. Token2049 Singapore is Oct 7-8, 2026 at Marina Bay Sands; the Singapore GP is Oct 9-11, 2026 (first-ever Singapore Sprint, so Saturday Oct 10 becomes a second full race day and Sat/Sun are the true peak). The SIN->FCO departure is Oct 10, so the stay is Oct 6, 7, 8, 9 = 4 nights, and it EXITS before the two highest-demand nights of the year. $2,669 / 4 = ~$667/night. Documented Marina Bay race-week pricing is 3-4x normal for standard rooms with a further 30-100% for circuit-view rooms, and normal Marina Bay standard runs ~$280-425 \u2014 implying $1,000-1,700/night for the peak nights. $667/night is well under that band.",
+    "price_usd": 2669,
+    "points_cost": "n/a (cash booking)",
+    "cpp": "n/a",
+    "source": "https://f1.fandom.com/wiki/2026_Singapore_Grand_Prix ; https://www.token2049.com/singapore ; https://www.revigorate.com/best-marina-bay-hotels-for-the-singapore-grand-prix.html ; https://upgradedpoints.com/travel/hotels/best-singapore-hotels-book-points/",
+    "status": "confirmed",
+    "beats_current": "tie",
+    "notes": "The adversarial conclusion is DON'T CHURN THIS. The Hyatt swap in the headline row nets maybe $200-700 of surplus value in the best case, costs 80-160k scarce Hyatt points, and downgrades the location away from Marina Bay Sands \u2014 where Token2049 (Oct 7-8) and the AFTER 2049 party at the MBS SkyPark actually happen. If Token2049 is a working reason for the trip, walking distance to MBS is worth more than the spread. FLAG FOR MAIN: the Oct 6-10 Singapore window and the stated 'Rome Oct 9-11' overlap \u2014 arrival in Rome cannot precede the Oct 10 SIN departure, so the Rome hotel window needs reconciling (likely Oct 10/11 arrival). Confidence: HIGH on dates and surge multiples; MEDIUM on the exact night count, which assumes a 4-night Oct 6-10 stay."
+   },
+   {
+    "label": "BEST UNTAKEN PLAY #1 \u2014 Hyatt Regency Rome Central on points",
+    "detail": "Opened Feb 3, 2026, a few blocks from Roma Termini in the Esquiline Hill district, walkable to the Colosseum and Monti. 238 rooms including 20 suites. Redemptions started at 12,000 points/night \u2014 a low-category price in a city where comparable cash runs $300-500/night, implying roughly 2.5-4.0 cpp. At a Cat 1-4 placement it is ALSO free-night-certificate eligible (Chase World of Hyatt card cert, Hyatt Cat 1-4 certs from milestone rewards).",
+    "price_usd": 400,
+    "points_cost": "from 12,000 World of Hyatt pts/night (opening rate; verify current category and band for Oct 2026)",
+    "cpp": "~2.5-4.0 cpp estimated against $300-500 cash comparables",
+    "source": "https://thepointsguy.com/hotel/new-hyatt-rome-points-hotel ; https://awardtravelfinder.com/award-charts/hyatt",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "This is the highest cpp hotel redemption identified anywhere on the trip and it is currently un-taken. Caveat for a family of 5: Italy is one of the countries that STRICTLY enforces room head-count (fire code), so a standard room will not hold five \u2014 budget for a suite or two rooms, or use the documented workaround of booking standard on points and negotiating a paid upgrade direct with the property. Confidence: MEDIUM-HIGH \u2014 the 12,000 figure is an opening/launch rate and the property may have repriced under the May 2026 five-band chart; verify live."
+   },
+   {
+    "label": "BEST UNTAKEN PLAY #2 \u2014 Hyatt Regency Amsterdam, dropped to Category 4 (free-night-cert eligible) for the Oct 25-27 stopover",
+    "detail": "Hyatt Regency Amsterdam moved from Category 5 DOWN to Category 4 in the May 2026 reshuffle (one of only 24 properties that moved down vs 112 that moved up). Category 4 makes it eligible for Chase World of Hyatt card free night awards and Cat 1-4 certificates, and it is suite-upgrade-award eligible. Modern property just east of the city center. The alternative Amsterdam option, Andaz Amsterdam Prinsengracht (Jordaan, canal-side, Marcel Wanders design), runs from ~25,000-30,000 pts vs ~$400 cash, but is explicitly EXCLUDED from Hyatt suite upgrade awards and has notoriously thin award availability.",
+    "price_usd": 400,
+    "points_cost": "Hyatt Regency Amsterdam: Cat 4 (12,000-25,000 pts/night under the new five-band chart) or one free-night cert. Andaz Amsterdam: ~25,000-30,000 pts/night.",
+    "cpp": "Regency at cert value: effectively free. Andaz at 30,000 pts vs ~$400: ~1.3 cpp (mediocre).",
+    "source": "https://thepointsguy.com/hotel/best-hotels-amsterdam/ ; https://upgradedpoints.com/news/world-of-hyatt-category-changes-2026/ ; https://onemileatatime.com/guides/hyatt-suite-upgrade-awards/",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "Makes AMS the strongest of the four candidate stopover cities on points. Dublin is the weakest \u2014 Hyatt has no Dublin property, so DUB forces a pivot to dynamically-priced Marriott/Hilton/IHG with no surge protection. Paris is a credible middle: Hyatt Regency Paris Etoile has standard suites reported bookable from ~24,000 pts, which solves the family-of-5 room problem in one booking. London: Hyatt Regency London - The Churchill is the documented family-workaround property (book standard on points, buy the Family Room Garden View upgrade direct for ~GBP 250/night). Confidence: HIGH on the Cat 4 move; MEDIUM on exact band pricing."
+   },
+   {
+    "label": "DUBROVNIK Oct 18-25 \u2014 no good points play; keep this leg on cash or a villa",
+    "detail": "Hyatt has no Dubrovnik property, so the only chain options are dynamically-priced: Sheraton Dubrovnik Riviera (Marriott) and Hilton Imperial Dubrovnik. Oct 18-25 is documented shoulder season in Dubrovnik (May, June, and Sep-Oct cited as the best months, with July-August the crush), which means cash rates are already soft \u2014 and soft cash under a dynamic award program means WEAK points value, the inverse of the F1 situation. Seven nights for a family of five in a European market with strict occupancy limits is also the single worst fit for chain hotel room inventory on the whole itinerary.",
+    "price_usd": 0,
+    "points_cost": "not recommended \u2014 dynamic pricing against already-soft shoulder-season cash",
+    "cpp": "expected below program baseline (Bonvoy ~0.7-0.8 cpp mid-2026, Hilton ~0.4-0.5 cpp at Singapore Conrads)",
+    "source": "https://hotelierschoice.com/guides/dubrovnik/families/ ; https://pointstrategist.com/programs/marriott-bonvoy",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "Recommendation: villa or apartment rental on cash for the 7-night Dubrovnik block \u2014 it solves the 5-person occupancy problem, beats two hotel rooms on cost, and preserves the scarce Hyatt/UR balance for Rome, Amsterdam, and Singapore where the fixed chart actually creates value. Worth coordinating with the airbnb-sin agent already active in this session. Confidence: MEDIUM-HIGH."
+   },
+   {
+    "label": "HIGHEST-PRIORITY VERIFICATION \u2014 the 1,378 MQD claim on the Walkerhill booking is at real risk and is internally inconsistent",
+    "detail": "Two problems. (1) STRUCTURAL: MQD earning on Delta Cars & Stays is NOT a standing benefit \u2014 it is a recurring limited-time promotion requiring the booking to be RESERVED inside a specific window. The most recent documented window was 12:01am PDT June 15, 2026 through 11:59pm PDT July 20, 2026 (travel June 15 - Dec 15, 2026); prior 2026 windows ran Apr 6 - May 18 and a January window through Feb 16. A booking made outside a live window earns ZERO MQDs no matter when travel occurs. (2) ARITHMETIC: 3,449 miles and 1,378 MQD are not consistent with a single earn rate on the same base. 3,449 / 5 = ~$690, and 1,378 / 2 = ~$689 \u2014 i.e. both figures imply a BASE RATE of only ~$690 against a $2,160 total, which would mean ~$1,470 of the booking is taxes/fees/non-qualifying charges. That is implausible for a Seoul hotel stay and suggests either the base rate is being understated in the quote or one of the two earn figures is wrong.",
+    "price_usd": 1378,
+    "points_cost": "1,378 MQD + 3,449 SkyMiles claimed",
+    "cpp": "n/a \u2014 this is a status-currency risk, not a redemption",
+    "source": "https://carsandstays.delta.com/lp/b/mqd-loyalty ; https://onemileatatime.com/news/delta-skymiles-elite-status-hotels-rental-cars/ ; https://thepointsguy.com/news/delta-mqd-on-hotels-and-rental-cars",
+    "status": "unknown",
+    "beats_current": "unknown",
+    "notes": "ACTION: pull the actual booking confirmation and confirm (a) the reservation DATE falls inside a live MQD promo window, (b) the stated BASE RATE excluding taxes and fees, (c) that the SkyMiles number was attached at booking and the booking name matches the SkyMiles account exactly (Delta will not credit a booking in a family member's name), and (d) that no miles/vouchers/discount codes were applied \u2014 if miles are used as ANY form of payment, NO portion of the booking is eligible. Allow up to 8 weeks post-stay for posting. Also confirmed available separately: 5X SkyMiles on Delta Stays for bookings made by Aug 31, 2026 completed by Dec 31, 2026 (no registration), and double miles for bookings by Aug 6 with travel by Mar 31, 2027 \u2014 these are stackable-ish and may explain the 5x figure. Confidence: HIGH that the promo is window-gated; HIGH that the two earn figures are mutually inconsistent."
+   },
+   {
+    "label": "DELTA STAYS REFUNDABILITY \u2014 rate-tier dependent, not brand-level; and disputes route through Expedia, not Delta",
+    "detail": "Delta Stays is 'powered by Expedia' (confirmed in a Delta Vacations BBB complaint response). There is no blanket cancellation policy \u2014 refundability is set per rate tier at checkout, and users report seeing explicit tiered choices such as 'Fully refundable before Jul 1 + $0' vs 'Fully refundable before Jun 27 + $60,' i.e. you can pay a premium for a longer free-cancel window. Free-cancellation rates typically allow cancel at no cost until 24-72 hours before check-in; prepaid/discounted rates are marked non-refundable and forfeit entirely. Critically, MQDs and miles are NOT awarded for cancelled, no-show, or unpaid reservations \u2014 so cancelling to rebook forfeits 100% of the status earn.",
+    "price_usd": 2160,
+    "points_cost": "n/a",
+    "cpp": "n/a",
+    "source": "https://www.bbb.org/us/ga/atlanta/profile/travel-agency/delta-vacations-0443-27523612/complaints ; https://carsandstays.delta.com/lp/b/mqd-loyalty ; https://eyeoftheflyer.com/2026/03/23/how-to-use-delta-stays-amex-credits/",
+    "status": "confirmed",
+    "beats_current": "unknown",
+    "notes": "So the answer to 'are those bookings refundable/rebookable if a better rate appears' is: MAYBE \u2014 check the specific rate tier selected on the confirmation, screenshot the exact terms, and understand that any rebooking forfeits the MQD/miles earn and that the reservation is effectively owned by Expedia, which makes direct Delta escalation hard. Documented failure modes on this channel: confusing non-refundable labeling, repeated booking-engine failures, hotel elite credit/benefits generally NOT earned on these Expedia-powered bookings, and no hotel loyalty points. Confidence: HIGH."
+   },
+   {
+    "label": "LUXURY PORTAL REBOOK (FHR / The Edit / Premier Collection) \u2014 not available for EITHER booked stay, but the credits are worth capturing elsewhere",
+    "detail": "Grand Walkerhill is on none of the three portals (see the Walkerhill row), so there is no FHR/Edit/Premier rebook available for the Seoul stay. For Singapore, the near-MBS property was not identified by name in this lane, so portal eligibility could not be checked \u2014 but note that Conrad Singapore Orchard offers an 'Impressario' rate (direct with Hilton, not via portal) bundling free breakfast, US$100 hotel credit, double Honors points, early/late check-in-out, upgrade if available, and it remains an eligible rate for night credit, with Diamond members getting executive lounge access. Program differences that matter: Amex FHR guarantees 4pm late checkout while The Edit's is availability-only; Amex Platinum carries a $200/yr credit toward PREPAID FHR stays (a refundable reservation still qualifies as long as it is prepaid); The Edit uniquely lets you redeem Chase UR points against the stay.",
+    "price_usd": 100,
+    "points_cost": "n/a \u2014 portal perks are cash-side",
+    "cpp": "n/a",
+    "source": "https://awardwallet.com/credit-cards/amex-membership-rewards/amex-fine-hotels-and-resorts/ ; https://www.awardtravel.co/blog/the-edit-by-chase-list ; https://www.hilton.com/en/hotels/sinodci-conrad-singapore-orchard/offers/",
+    "status": "unavailable",
+    "beats_current": "no",
+    "notes": "Separate credit worth checking on the EXISTING Delta Stays booking: Delta SkyMiles Reserve cardholders get a $250 annual statement credit on prepaid hotels/vacation rentals booked through Delta Stays ($150 Platinum, $100 Gold), once per calendar year. If the Walkerhill booking was prepaid on a Reserve card, that $250 may already be captured \u2014 verify it posted. Confidence: HIGH on portal non-participation for Walkerhill; LOW on the Singapore property since it was not named."
+   },
+   {
+    "label": "FAMILY-OF-5 OCCUPANCY \u2014 the binding constraint in Europe, and it is fire-code, not policy",
+    "detail": "European hotels list occupancy per room type because regulations vary by city and country; rooms for four are already atypical and searching for five 'gives almost no results in Europe or Asia.' Italy, the UK, Austria, and Spain are specifically flagged as strict head-count enforcers \u2014 which hits Rome directly. Most max-occupancy limits stem from fire code, which is why front-desk staff genuinely cannot flex. Workarounds that are documented to work: (1) call the property or the LOCAL country reservation line, since the central Marriott site's occupancy data is often wrong, and request a rollaway; (2) book a standard room on points and negotiate a PAID upgrade direct with the hotel (documented at Hyatt Regency London - The Churchill at ~GBP 250/night for a Family Room Garden View); (3) redeem directly into a suite with Hyatt \u2014 Hyatt Regency Paris Etoile standard suites reported from ~24,000 pts; (4) Hyatt Globalist suite upgrade awards, which have NO capacity controls as long as a standard suite is available for sale and cover up to 7 consecutive nights, one room per award; (5) Ritz-Carlton family packages that include two guaranteed connecting rooms at the single nightly rate.",
+    "price_usd": 340,
+    "points_cost": "Hyatt Regency Paris Etoile standard suite from ~24,000 pts/night; suite upgrade awards are a Globalist milestone currency",
+    "cpp": "n/a \u2014 this is an inventory constraint, not a pricing one",
+    "source": "https://thepointsguy.com/guide/how-save-money-book-family-hotel-rooms-europe ; https://silkharbortravel.com/booking-for-a-family-of-five-at-luxury-hotels-occupancy-rules-and-work/ ; https://onemileatatime.com/guides/hyatt-suite-upgrade-awards/ ; https://www.flyertalk.com/forum/marriott-rewards/1672628-family-five-max-occupancy-abroad.html",
+    "status": "confirmed",
+    "beats_current": "unknown",
+    "notes": "Practical rule for this trip: assume TWO rooms or a suite for every European night with all five. Hyatt suite redemptions are the cheapest single-booking solution; Hyatt Place/House style properties (two queens + sofa sleeper, sleeps six, free breakfast, 3,000-9,000 pts under the new Cat 1-2 bands) are the cheapest overall but do not exist in central Rome/Dubrovnik. Note Hyatt is rolling out DIGITAL POINTS SHARING later in 2026, which will let Jarred and Ashley pool Hyatt balances \u2014 relevant if two rooms must be booked on separate accounts. Confidence: HIGH."
+   },
+   {
+    "label": "ENABLING MOVE \u2014 verify Chase Ultimate Rewards before anything else in this lane",
+    "detail": "Every high-value recommendation in this lane (Andaz/Grand Hyatt Singapore at the 40k Cat 6 cap, Hyatt Regency Rome Central at ~12k, Hyatt Regency Amsterdam Cat 4, Hyatt Regency Paris Etoile suites at ~24k) routes through World of Hyatt points, and the only realistic funding path is Chase UR -> Hyatt at 1:1. Chase UR is listed as UNVERIFIED for both Jarred and Ashley (Sapphire Reserve + Freedom). Amex MR (~512k, stale July snapshot) does NOT transfer to Hyatt. Delta SkyMiles (132,931, verified) does not transfer to any hotel program at usable value.",
+    "price_usd": 0,
+    "points_cost": "needs roughly 150,000-250,000 UR to fund Singapore + Rome + Amsterdam + Paris hotel legs on Hyatt",
+    "cpp": "1.7-2.2 cpp typical Hyatt valuation vs ~1.0-1.25 cpp typical UR portal value \u2014 the transfer is where the value is created",
+    "source": "https://www.headforpoints.com/2026/04/05/review-world-of-hyatt-loyalty-scheme/ ; https://awardtravelfinder.com/award-charts/hyatt",
+    "status": "unknown",
+    "beats_current": "unknown",
+    "notes": "If UR comes back thin, this entire lane collapses to: leave both bookings alone, fix the MQD verification, and book Rome/Dubrovnik/stopover on cash or via the airbnb-sin agent's apartment approach. Also worth checking in the same sweep: Hyatt free night certificates (Chase World of Hyatt card annual Cat 1-4 cert + milestone certs) \u2014 Rome Central and Hyatt Regency Amsterdam are BOTH Cat 1-4 and would each absorb one cert for free. Confidence: n/a \u2014 this is an unverified-balance flag, not a claim."
+   }
+  ],
+  "caveats": "CONFIDENCE AND DATA-QUALITY CAVEATS. (1) NO LIVE AWARD PRICING WAS PULLED. Hotel award rates for specific dates are not publicly indexed \u2014 none of Hyatt, Hilton, Marriott, or IHG expose them to search or to WebFetch, and seats.aero covers flights only. Every points figure here is a published chart value, a documented floor rate, or an opening rate, NOT a quote for Jarred's dates. All of it needs a live check on the respective booking engines with the dates and 5 guests entered before any booking decision. (2) THE HYATT FIVE-BAND CHART NUMBERS ARE PARTIALLY RECONSTRUCTED. Hyatt publishes the new Lowest/Low/Moderate/Upper/Top grid only as images; four separate sources (Hyatt newsroom, FrequentMiler, AwardWallet, NerdWallet) were fetched and none contained machine-readable per-band values. The Category 6 range of 20,000-40,000 and the Top-band ceilings table (Cat 5: 23k->35k, Cat 6: 29k->40k, Cat 7: 35k->55k, Cat 8: 45k->75k) are confirmed from NerdWallet and UpgradedPoints. The intermediate Low/Moderate/Upper values for Cat 6 are INFERRED from Hyatt's stated '20% to 37.5% increase at the Moderate level' and are labeled as estimates throughout. (3) HYATT'S UPPER/TOP ROLLOUT IS GRADUAL. Hyatt explicitly said only 'limited hotels moving a limited number of nights into the Upper and Top categories in 2026,' so Oct 2026 Singapore dates may well still price at or near the old 29k peak rather than the new 40k ceiling \u2014 which would make the Singapore arbitrage BETTER than the conservative 1.67 cpp figure quoted. Check before assuming worst case. (4) NIGHT COUNTS ARE ASSUMED. The Singapore calculation assumes 4 nights (Oct 6,7,8,9) based on the stated Oct 10 SIN->FCO departure; the Seoul per-night figure assumes the full Sep 27 - Oct 6 window. Neither confirmation was read. If the actual night counts differ, every cpp figure moves. (5) THE SINGAPORE PROPERTY WAS NEVER NAMED. It is described only as 'a near-Marina-Bay-Sands hotel,' so its chain affiliation, portal eligibility, cancellation tier, and whether it is itself already a points property could not be checked. This is the largest single gap in the lane \u2014 get the property name and the booking confirmation. (6) ITINERARY CONFLICT FLAGGED FOR MAIN. 'Rome Oct 9-11' cannot coexist with a SIN->FCO departure on Oct 10 and a Singapore stay running through Oct 9. One of those dates is wrong and it changes both the Singapore night count and the Rome hotel window. (7) LOYALTYLOBBY RETURNED HTTP 403 and could not be read; its chart values are absent from this analysis. (8) FHR / THE EDIT / PREMIER COLLECTION ROSTERS ROTATE. The Seoul rosters cited are from an Amex Travel search result page, not an authoritative dated roster. Confirm on amextravel.com with live dates. (9) POINT VALUATIONS USED: Hyatt 1.7-2.2 cpp, Marriott Bonvoy 0.7-0.8 cpp (down from ~0.84 in 2024), IHG ~0.5 cpp, Hilton ~0.4-0.5 cpp at the Singapore Conrads. These are third-party consensus figures as of mid-2026 and are directional, not precise. (10) NOTHING WAS BOOKED, CANCELLED, OR MODIFIED in producing this analysis \u2014 it is research only."
+ },
+ {
+  "leg": "LANE 1 \u2014 Chase Ultimate Rewards across all four legs (a) SFO\u2192ICN Sep 27, (b) ICN\u2192SIN Oct 6, (c) SIN\u2192FCO Oct 10, (d) Europe\u2192SFO \u00d75 Oct 26/Nov 1-2",
+  "summary": "Chase UR is the single most under-used pool in this plan and it beats the current plan on TWO of four legs. Headline: (1) Aeroplan prices SFO\u2192ICN business at a FIXED 75,000 for Star partners \u2014 vs the current plan's 110,500 Delta SkyMiles. That is a 35,500-mile saving, it preserves Jarred's entire 132,931 SkyMiles balance (which only covers ONE seat anyway), and it runs at ~5.2 cpp. Time-critical caveat: Asiana exits Star Alliance Dec 16, 2026 with a Dec 1 partner-booking cutoff, so Sep 27 travel is safe but this window closes. (2) Virgin Atlantic Flying Club still prices Delta One Europe\u2192US at a flat 50,000 points \u2014 Virgin kept the OLD chart for Europe even after devaluing everything else \u2014 beating the current plan's 60,000 KLM Flying Blue by 10k/seat, or 50,000 points across five seats, at ~6.2 cpp. (3) Chase is a 1:1 feeder into the exact same Avios pool the Qsuites play already uses (BA Club, Iberia Plus, Aer Lingus AerClub are all Chase partners, and Avios pool free into Qatar Privilege Club) \u2014 so UR is a drop-in substitute for MR on leg (c) with no rate loss, which preserves ~512k MR for legs UR cannot reach. (4) ADVERSARIAL: the ICN\u2192SIN leg should NOT be a redemption at all. The live $987 KE Prestige quote makes every points option worse than cash \u2014 KrisFlyer's 54,500 saver works out to 1.72 cpp, well under the ~2 cpp floor, and paying cash also earns Delta MQDs toward Diamond requalification. Also material and non-obvious: Chase does NOT partner with Emirates, Qatar Privilege Club, or Korean Air SKYPASS, but it DOES partner with Flying Blue (so the KLM leg can be funded from UR too), and the Sapphire Reserve's fixed 1.5 cpp portal rate is DEAD (June 2025 Points Boost replaced it) \u2014 the portal is now 1 cpp base, up to ~2 cpp on select premium airfare and trending down, so transfers beat it 3-6x on every leg. GATING RISK: the entire lane is unverified. Executing all of a/c/d through Chase needs roughly 400,000 UR. Step one is logging into both Jarred's and Ashley's accounts, then calling Chase to link them as household members (one other person, shared address) so the balances can be pooled \u2014 linking is a phone call, combining is then instant online. INSURANCE (matters for the $32k cruise): CSR trip cancellation covers cardholder plus IMMEDIATE FAMILY ONLY \u2014 the three employees are NOT covered. Amex Platinum explicitly covers other companions on the same trip. That argues for keeping the trip on Amex, but Amex requires the ENTIRE trip on the card while CSR accepts partial payment. Both are underinsured for $32k across 8 people; buy a standalone cruise policy.",
+  "caveats": "CONFIDENCE LABELS: HIGH \u2014 Chase partner list (14 partners, all airlines 1:1), no live Chase airline transfer bonus in Aug 2026 (only IHG +70% through 8/31, which is a bad deal), Aeroplan post-June-2026 chart values, Asiana Star Alliance exit Dec 16 2026, Virgin Atlantic Europe\u2192US Delta One at 50k, KrisFlyer ICN-SIN saver 54,500, CSR Points Boost replacing the 1.5cpp fixed rate, Chase household pooling rules, CSR immediate-family-only trip cancellation scope. MEDIUM \u2014 the exact Avios total for a through-priced SIN-DOH-FCO Qsuites award (BA/Qatar publish SIN-DOH at 50,000 off-peak Qsuites but neither publishes a combined SIN-Europe figure; the plan's 75k is consistent with through-pricing and with reported SIN-LHR at 75,000 + S$349); Aer Lingus DUB-SFO off-peak at 62,500 via AerClub (the sourced data point is the SFO-DUB direction); whether late Oct / early Nov 2026 falls in Aer Lingus off-peak. LOW / UNCONFIRMED \u2014 Aeroplan's exact post-June-2026 within-Pacific business number for the 2,501-5,000 mi band covering ICN-SIN (pre-devaluation was 40,000; middle bands rose, so ~45,000 is an estimate, NOT a quote). UNVERIFIED THROUGHOUT \u2014 every Chase UR balance. Nothing in this lane is actionable until Jarred's and Ashley's Sapphire Reserve and Freedom balances are read off the actual accounts; Freedom points must be moved to a Sapphire account before they can transfer to any partner. OPERATIONAL RISKS: all Chase transfers are FINAL and one-way, so never transfer before confirming award space is live and holdable. Chase\u2192KrisFlyer takes 1-2 days (all other airline partners are near-instant), which is a real hazard on capacity-controlled saver space. Qatar suspended Doha operations from Feb 28 2026 due to airspace closure with gradual restoration since \u2014 verify SIN-DOH-FCO schedules before committing Avios. Qatar has charged a seat-selection fee on business award bookings since Nov 3 2025 (~US$100/sector, non-refundable), so budget ~$200 extra on the Qsuites leg. Five Delta One saver seats on a single Europe\u2192SFO date is the hardest constraint in the whole plan; assume it will need splitting across gateways or dates, with Aer Lingus DUB-SFO as the deeper-inventory fallback. Aeroplan passes Lufthansa-group carrier surcharges, which is why the Aeroplan option for leg (d) is the worst of the four despite being chart-priced. Non-monetary cost of the Aeroplan/Asiana play on leg (a): a Star Alliance award earns ZERO Delta MQDs, so it works against Diamond requalification \u2014 if requalification is live this year, price that in. Hyatt ratio note (not trip-relevant but worth knowing): Sapphire Preferred and Ink Business Preferred drop to 4:3 on Hyatt Oct 1 2026; Sapphire Reserve keeps 1:1. Legacy portal note: if Jarred was a CSR cardholder before June 23 2025, points earned before Oct 26 2025 keep 1.5 cpp through Oct 26 2027 \u2014 still not competitive with any transfer here.",
+  "options": [
+   {
+    "label": "LEG A \u2014 Aeroplan 75,000 on Asiana SFO\u2192ICN business (THE WIN)",
+    "detail": "Chase UR \u2192 Air Canada Aeroplan 1:1, near-instant. Post-June-1-2026 Aeroplan chart prices North America\u2194Pacific business at a FIXED 75,000 for the 5,001-7,500 mi band; SFO-ICN is ~5,660 mi and sits squarely inside it. Asiana (OZ 211/212 SFO-ICN nonstop) is a chart-priced Star partner. SMF positioning adds ~86 mi and does not change the band. Do NOT route via United \u2014 Aeroplan prices United dynamically, off-chart, typically 88k-110k+.",
+    "points_cost": "75,000 Chase UR \u2192 Aeroplan",
+    "price_usd": 80,
+    "cpp": "~5.2 cpp against the ~$4,000 Delta One / $3,900 KE cash fare",
+    "source": "maxmilespoints.com/blog/aeroplan-award-chart-changes-2026 (post-6/1/26 chart); upgradedpoints.com/credit-cards/chase-ultimate-rewards-transfer-partners/ (Aeroplan 1:1, near-instant)",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "Beats the current Delta 110,500 SkyMiles plan by 35,500 miles AND preserves the entire verified 132,931 SkyMiles balance \u2014 which only covers one seat at 110.5k anyway. HARD DEADLINE: Asiana leaves Star Alliance Dec 16 2026, and Star closes partner booking Dec 1 2026. Sep 27 travel is safely inside the window, but this sweet spot disappears permanently in four months. REAL COST: a Star award earns zero Delta MQDs \u2014 weigh against Diamond requalification."
+   },
+   {
+    "label": "LEG A \u2014 United MileagePlus SFO\u2192ICN business (fallback)",
+    "detail": "Chase UR \u2192 United 1:1, instant. United flies SFO-ICN nonstop (UA 893). Dynamic pricing, no chart. Typically lands 88,000-110,000+ one-way in business with $5.60 in taxes. Only worth it if Asiana award space fails.",
+    "points_cost": "~88,000-110,000+ Chase UR \u2192 United (dynamic)",
+    "price_usd": 6,
+    "cpp": "~3.6-4.5 cpp",
+    "source": "upgradedpoints.com/credit-cards/chase-ultimate-rewards-transfer-partners/ (United 1:1 instant); United dynamic pricing widely documented",
+    "status": "unknown",
+    "beats_current": "tie",
+    "notes": "Roughly a wash with the Delta 110,500 plan. Use only as insurance if Asiana space does not materialize. Advantage over Aeroplan: near-zero taxes and instant transfer. Disadvantage: 13k-35k more points and no price certainty."
+   },
+   {
+    "label": "LEG B \u2014 PAY THE $987 CASH. Do not redeem. (ADVERSARIAL CALL)",
+    "detail": "The live $987 KE Prestige quote is cheap enough that every points option destroys value. Singapore Airlines KrisFlyer saver business ICN-SIN is 54,500 miles one-way (SQ flies the route), which nets ~1.72 cpp after ~$50 taxes \u2014 meaningfully below the ~2 cpp floor at which transferring UR makes sense. The estimated Aeroplan intra-Pacific option is better but unconfirmed. Cash also earns Delta MQDs on a SkyTeam partner.",
+    "points_cost": "0 \u2014 recommend cash",
+    "price_usd": 987,
+    "cpp": "n/a (points alternatives yield only 1.7-2.1 cpp)",
+    "source": "awardtravelfinder.com / mainlymiles.com KrisFlyer route pricing (54,500 saver business ICN-SIN); live $987 KE Prestige quote supplied in brief",
+    "status": "confirmed",
+    "beats_current": "yes",
+    "notes": "This is the leg where I most disagree with reflexively redeeming. 54,500 UR is worth ~$1,090 at a 2 cpp benchmark and ~$2,725 at the 5+ cpp Aeroplan rate available on leg (a) \u2014 spending it to avoid a $987 fare is a direct value transfer away from the legs that actually need points. Bonus: a paid KE ticket credits to Delta for MQDs."
+   },
+   {
+    "label": "LEG B \u2014 KrisFlyer 54,500 SQ business ICN\u2192SIN (if cash must be avoided)",
+    "detail": "Chase UR \u2192 Singapore KrisFlyer 1:1. Fixed zone chart, saver business ICN-SIN 54,500 one-way, bookable 355 days out. Watch for Spontaneous Escapes promo awards (typically 30% off saver, published ~1 month before travel) which would drop this to ~38,150 \u2014 that WOULD clear the value bar.",
+    "points_cost": "54,500 Chase UR \u2192 KrisFlyer (or ~38,150 if a Spontaneous Escapes promo lands)",
+    "price_usd": 50,
+    "cpp": "~1.72 cpp at saver; ~2.46 cpp if a 30% promo hits",
+    "source": "awardtravelfinder.com/how-many-singapore-krisflyer-miles-to-fly-to-seoul-incheon; mainlymiles.com KrisFlyer award prices by route",
+    "status": "likely",
+    "beats_current": "no",
+    "notes": "CRITICAL TIMING TRAP: Chase\u2192KrisFlyer takes 1-2 DAYS, the slowest of all Chase airline partners. Saver space is capacity-controlled and can vanish mid-transfer, and transfers are final. Only transfer against confirmed, held space. Spontaneous Escapes for an Oct 6 departure would publish around early September \u2014 worth watching before committing."
+   },
+   {
+    "label": "LEG C \u2014 UR \u2192 Avios (BA/Iberia/Aer Lingus) for the SIN\u2192FCO Qsuites award: SOURCE SWAP, not a rate win",
+    "detail": "Chase transfers 1:1 to The British Airways Club, Club Iberia Plus, AND Aer Lingus AerClub \u2014 all three feed the same Avios currency, and Avios move free 1:1 between BA, Iberia, Aer Lingus, Finnair and Qatar Privilege Club via Combine My Avios at avios.com (BA acts as the hub). So the existing 75k Qsuites play can be funded entirely from UR instead of MR at identical cost.",
+    "points_cost": "75,000 Chase UR \u2192 BA Club (\u2192 optionally Qatar Privilege Club)",
+    "price_usd": 300,
+    "cpp": "~3.1-3.2 cpp against the ~$2,600 cash fare",
+    "source": "upgradedpoints.com/credit-cards/chase-ultimate-rewards-transfer-partners/ (BA, Iberia, Aer Lingus all 1:1 Chase partners); awardfares.com/blog/qatar-airways-privilege-club-guide/ (free 1:1 Avios pooling, BA as hub, instant-to-24h)",
+    "status": "likely",
+    "beats_current": "tie",
+    "notes": "Rate-neutral but strategically valuable: it preserves ~512k MR for the legs Chase cannot reach (Chase does NOT partner with Emirates, Qatar Privilege Club directly, or Korean Air SKYPASS). ROUTE THE AVIOS THROUGH QATAR PRIVILEGE CLUB rather than booking on BA \u2014 Qatar levies NO fuel surcharges (~$30-100 typical cash) while BA carries surcharges on the same award. Add ~$200 for the post-Nov-2025 award seat-selection fee across two sectors. Verify SIN-DOH-FCO schedules given the Feb 2026 Doha airspace disruption."
+   },
+   {
+    "label": "LEG D \u2014 Virgin Atlantic 50,000/seat, Delta One Europe\u2192SFO (THE OTHER WIN)",
+    "detail": "Chase UR \u2192 Virgin Atlantic Flying Club 1:1, near-instant. Virgin devalued nearly everything in its Delta chart but KEPT the old flat pricing for Europe: anywhere in the US to/from anywhere in Europe (ex-UK) is 50,000 points one-way in Delta One. Delta flies AMS-SFO and CDG-SFO nonstop. Delta partner awards carry minimal-to-no carrier surcharges (the ~$1,000 surcharge figure that circulates applies to Virgin's OWN metal, and mostly westbound-origin).",
+    "points_cost": "250,000 Chase UR \u2192 Virgin Atlantic (5 seats \u00d7 50,000)",
+    "price_usd": 100,
+    "cpp": "~6.2 cpp per seat against the ~$3,200/seat cash fare \u2014 the highest cpp in the entire plan",
+    "source": "awardtravelfinder.com/how-many-virgin-points-to-fly-delta; onemileatatime.com/guides/redeem-virgin-atlantic-points-delta/ (Europe chart preserved at 50,000 business); upgradedpoints.com (Virgin 1:1 Chase partner)",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "Beats the current KLM 60k Flying Blue plan by 10,000/seat = 50,000 UR saved across five seats, with lower surcharges too. THE CONSTRAINT IS AVAILABILITY, NOT PRICE: five Delta One saver seats on one date is very hard. Plan to split across gateways (AMS + CDG) or across the Oct 26 / Nov 1-2 dates. Delta space is searchable and bookable directly on virginatlantic.com, so you can verify BEFORE transferring \u2014 do exactly that, since transfers are final. Chase\u2192Virgin ran a 30% bonus as recently as July 2026; none is live now, but if one returns, 250k Virgin costs only ~192k UR."
+   },
+   {
+    "label": "LEG D \u2014 Aer Lingus AerClub 62,500/seat off-peak, DUB\u2192SFO business (best availability fallback)",
+    "detail": "Chase UR \u2192 Aer Lingus AerClub 1:1, near-instant. Aer Lingus flies DUB-SFO nonstop with a published peak/off-peak chart (not dynamic): the 4,001-5,500 mi band incl. SFO is 75,000 peak, 62,500 off-peak. Late Oct / early Nov should be off-peak. Zero carrier-imposed surcharges \u2014 roughly \u00a375 / ~$85-165 one-way. Ireland levies no APD, and Dublin has US preclearance so the family lands domestic in SFO.",
+    "points_cost": "312,500 Chase UR \u2192 Aer Lingus AerClub (5 seats \u00d7 62,500 off-peak)",
+    "price_usd": 120,
+    "cpp": "~4.9 cpp per seat",
+    "source": "10xtravel.com/aer-lingus-aerclub-award-charts/ and onemileatatime.com/guides/redeem-aer-lingus-avios/ (62,500 off-peak / 75,000 peak, ~$163 taxes, no carrier surcharges); headforpoints.com (no APD ex-Dublin)",
+    "status": "likely",
+    "beats_current": "tie",
+    "notes": "Ties the current KLM 60k plan on cpp but is the pragmatic choice IF five Delta One seats cannot be found \u2014 Aer Lingus transatlantic business award inventory is notably deeper than Delta saver. BOOK VIA AERCLUB, NOT BA: the identical award prices 62,500 through Aer Lingus versus 90,000 through British Airways Club \u2014 a 27,500-point penalty per seat for using the wrong front door. Do NOT connect through the UK on the same ticket or you eat \u00a3172/person in premium-cabin APD."
+   },
+   {
+    "label": "LEG D \u2014 Flying Blue via Chase (funds the CURRENT plan, no rate change)",
+    "detail": "Chase UR \u2192 Air France-KLM Flying Blue 1:1, ~1 hour. Flying Blue IS a Chase transfer partner \u2014 worth stating plainly because the brief assumed it might not be. So the existing 60,000 KLM plan can be funded from UR rather than MR at identical cost.",
+    "points_cost": "300,000 Chase UR \u2192 Flying Blue (5 seats \u00d7 60,000)",
+    "price_usd": 250,
+    "cpp": "~4.9 cpp per seat",
+    "source": "upgradedpoints.com/credit-cards/chase-ultimate-rewards-transfer-partners/ (Flying Blue confirmed Chase partner, 1:1, 1 hour); frequentflyerbonuses.com / loyaltylobby.com Aug 2026 Promo Rewards",
+    "status": "likely",
+    "beats_current": "tie",
+    "notes": "Rate-neutral source swap. NO HELP FROM PROMO REWARDS: the August 2026 Flying Blue Promo list has only Cayenne, Bogota and Libreville in business \u2014 zero transatlantic business routes \u2014 and many business promos now require the \u20ac379+ Flying Blue Extra subscription. Flying Blue is also dynamically priced, so the 60k quote is date-specific and can move. Virgin at 50k dominates this when Delta space exists."
+   },
+   {
+    "label": "LEG D \u2014 Aeroplan 75,000/seat Europe\u2192SFO (REJECT)",
+    "detail": "Chase UR \u2192 Aeroplan 1:1. Post-June-2026 North America\u2194Atlantic business for the 4,001-6,000 mi band rose from 70,000 to 75,000; AMS/CDG/LHR/DUB-SFO all fall in that band. Star routing means Lufthansa/SWISS/Austrian/Brussels via a European hub.",
+    "points_cost": "375,000 Chase UR \u2192 Aeroplan (5 \u00d7 75,000)",
+    "price_usd": 500,
+    "cpp": "~3.6-3.9 cpp per seat after surcharges",
+    "source": "maxmilespoints.com/blog/aeroplan-award-chart-changes-2026 (NA\u2194Atlantic business 4,001-6,000 mi rose 70k\u219275k eff. 6/1/26)",
+    "status": "likely",
+    "beats_current": "no",
+    "notes": "Listed for completeness and to close it out. Worst of the four leg-D options: most expensive in points, Aeroplan passes Lufthansa-group carrier surcharges (~$400-600/person), it forces a connection rather than a nonstop, and LH group notoriously withholds long-haul business award space from partners until ~15 days out \u2014 unworkable for five confirmed seats. Do not use."
+   },
+   {
+    "label": "ALL LEGS \u2014 Chase Travel portal (Points Boost). The 1.5cpp era is over. (REJECT)",
+    "detail": "The fixed 1.5 cpp Sapphire Reserve portal rate was killed by Points Boost in June 2025 and fully sunset late Oct 2025. Baseline is now 1 cpp on every card, with select bookings boosted to 1.5-2 cpp; CSR tops out at ~2 cpp on eligible premium airfare and select hotels. 2026 reporting shows Points Boost degrading, with some redemptions down to 1.15 cpp, and Feb 2026 saw boosts pull back from premium United fares. Legacy carve-out: cardholders from before June 23 2025 keep 1.5 cpp on points earned before Oct 26 2025, through Oct 26 2027.",
+    "points_cost": "~200,000-266,000 UR for the $4,000 SFO-ICN fare alone (at 1.5-2.0 cpp)",
+    "price_usd": 4000,
+    "cpp": "1.0-2.0 cpp, trending down",
+    "source": "doctorofcredit.com (Points Boost removes 1.5 travel redemption); thepointsguy.com/news/chase-points-boost-value-hotels/; 10xtravel.com/chase-points-boost-devaluation/; chase.com/travel/guide/trips/chase-sapphire-points-boost-benefits-guide",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "Transfers beat the portal by 3-6x on every leg here \u2014 75,000 points via Aeroplan buys the same seat the portal charges 200,000+ for. ONE legitimate use case: a portal booking is a REVENUE ticket, so it earns Delta MQDs/SkyMiles and elite credit and follows normal fare rules for changes. If Diamond requalification is genuinely at stake, or if award space fails entirely on leg (a), the portal is the graceful fallback \u2014 but never the first choice."
+   },
+   {
+    "label": "INSURANCE \u2014 CSR does NOT cover the 3 employees. Amex Platinum does. (MATERIAL FINDING)",
+    "detail": "Chase Sapphire Reserve trip cancellation/interruption: $10,000 per person / $20,000 per trip, covering the cardholder and IMMEDIATE FAMILY MEMBERS ONLY. Amex Platinum: $10,000 per trip / $20,000 per card per rolling 12 months, covering the cardholder, immediate family, AND other companions traveling on the same trip. For a party of Jarred + family of 5 + 3 employees, CSR's family-only scope leaves the three employees uncovered.",
+    "points_cost": "n/a",
+    "price_usd": 32000,
+    "cpp": "n/a",
+    "source": "upgradedpoints.com/credit-cards/reviews/chase-sapphire-reserve/travel-insurance-benefits/ (verified against Chase Guide to Benefits PDF, May 2026); americanexpress.com/us/credit-cards/features-benefits/policies/trip-cancellation-terms.html; squaremouth.com/travel-advice/",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "The offsetting trap runs the other way: Amex requires the ENTIRE trip purchased on the Platinum card, while CSR accepts ALL OR PART \u2014 which matters enormously on a cruise where deposit and final payment hit months apart and may land on different cards. Split payment across cards can void the Amex claim outright. Other deltas: CSR emergency medical caps at only $2,500 and has primary rental car to $75,000; Amex has Premium Global Assist evacuation coverage. BOTTOM LINE: neither card is adequate for a $32,000 cruise across 8 people \u2014 both cap at $20,000 and CSR excludes the employees. Buy a standalone cruise policy with at least $100,000 emergency medical plus evacuation, and keep the card coverage as a secondary layer."
+   },
+   {
+    "label": "PREREQUISITE \u2014 Verify balances, then link Jarred + Ashley for household pooling",
+    "detail": "Chase lets you combine UR with ONE other person who shares your address; the link must be set up by PHONE (call the number on the back of either card, give the second account number), after which combining is instant online under Rewards details \u2192 Combine points. Freedom cards earn UR but cannot transfer to partners \u2014 those points must be moved into a Sapphire account first. Business cards widen this slightly (can also combine with a business co-owner).",
+    "points_cost": "Executing legs a + c + d entirely through Chase needs ~400,000 UR (75k Aeroplan + 75k Avios + 250k Virgin)",
+    "price_usd": 0,
+    "cpp": "n/a",
+    "source": "chase.com/personal/credit-cards/education/rewards-benefits/how-to-combine-chase-credit-card-points-in-household; thriftytraveler.com; forbes.com/advisor (one household member, shared address, phone linking required)",
+    "status": "unknown",
+    "beats_current": "unknown",
+    "notes": "THIS IS THE GATING ITEM FOR THE ENTIRE LANE \u2014 every option above is conditional on UR that has never been counted. Do this first: (1) read Jarred's and Ashley's actual Sapphire Reserve + Freedom balances; (2) call Chase to link the two accounts as household; (3) sweep all Freedom points into a Sapphire account. Only then transfer, and only against confirmed, held award space, because all Chase transfers are FINAL. No Chase airline transfer bonus is live in Aug 2026 \u2014 the only active offer is IHG +70% through 8/31, which is not worth taking."
+   }
+  ]
+ },
+ {
+  "leg": "LANE 2 \u2014 ALL non-Amex/non-Delta currencies (Citi TY, Capital One, Bilt, Marriott, hotel programs, direct airline balances) applied to legs (a) SMF/SFO\u2192ICN Sep 27, (b) ICN\u2192SIN Oct 6, (c) SIN\u2192FCO Oct 10, (d) Europe\u2192SFO \u00d75 Oct 26/Nov 1-2, plus Seoul/Singapore/Rome/Dubrovnik hotel nights",
+  "summary": "HEADLINE: the current plan is probably spending points on the WRONG legs. The single largest cash exposure is leg (d) \u2014 family of 5 Europe\u2192SFO at ~$3,200/seat = ~$16,000 \u2014 and it has the cleanest, most reliable award solution of the whole trip: Aer Lingus AerClub Avios, DUB\u2192SFO business, 62,500 Avios + ~$163 one-way OFF-PEAK on a PUBLISHED (non-dynamic) chart. 5 seats = 312,500 Avios + ~$815 cash, ~4.9 cpp, and Dublin has US preclearance (huge with 5 people). Avios is a POOLED currency across British Airways Club / Iberia Club / Qatar Privilege Club / Aer Lingus AerClub, and it is fed 1:1 by Chase UR, Amex MR, Capital One, Citi TY, AND Bilt \u2014 meaning the existing (unverified) Chase UR + the 512k Amex MR can BOTH fund it. Critically: book through AerClub, not BA \u2014 BA charges 90,000 Avios for the identical SFO\u2013DUB seat vs AerClub's 62,500. Second: the same Avios pool solves leg (c) \u2014 Qatar Privilege Club Avios, SIN\u2192DOH\u2192FCO Qsuites, est. 65\u201375k Avios with NO carrier surcharges (Qatar waives them), vs ~$2,600 cash. Third: leg (a) has a genuine sweet spot in Alaska/Atmos Rewards \u2014 75,000 points + $20 for Korean Air Prestige SFO\u2192ICN vs ~$3,900 cash = 5.2 cpp \u2014 but Atmos is fed ONLY by Bilt (1:1) and Marriott (3:1 + 5k/60k bonus), and Korean saver space via Atmos is documented as brutally scarce. THREE CORRECTIONS TO LIKELY ASSUMPTIONS: (1) Korean SKYPASS has NO major US transfer partner \u2014 Chase and Marriott both ended; you cannot buy KE Prestige with transferable points directly, only via Flying Blue / Delta / Atmos partner awards. (2) Aeroplan's Asia\u2192Europe business went from 87.5k to 102,500 on June 1, 2026 \u2014 that sweet spot is dead for leg (c). (3) The Citi\u2192Flying Blue 20% bonus (expires Aug 22) is REAL but is a trap unless you confirm the award first: Flying Blue is fully dynamic (Korean Air business one-ways have been observed 89,000\u2013586,500 miles) and passes through heavy AF/KLM surcharges. HOTEL BOMBSHELL: Singapore Oct 6\u201310 sits directly on the 2026 Singapore Grand Prix (Oct 9\u201311, Marina Bay; festival window Oct 2\u201311). The $2,669 SIN cash booking is F1-surge pricing \u2014 historically 2\u20133x normal, with documented cases of S$1,888/night vs S$500\u2013700 normal. Marriott/Hilton/IHG are dynamic and will surge WITH cash; World of Hyatt is the only major program on a fixed category chart, so Chase UR\u2192Hyatt is the highest-leverage hotel move on this whole trip. Verify Chase UR balances FIRST \u2014 Chase is the only currency feeding BOTH Hyatt (1.55\u20131.6 cpp) and Avios (Aer Lingus/BA/Iberia), making it the most valuable unverified pool in the stack.",
+  "options": [
+   {
+    "label": "#1 PLAY \u2014 Aer Lingus AerClub Avios: DUB\u2192SFO business \u00d75 (leg d)",
+    "detail": "62,500 Avios + ~$163 taxes per person one-way, OFF-PEAK, published peak/off-peak chart (NOT dynamic). SFO is Aer Lingus Zone 6. Family of 5 = 312,500 Avios + ~$815 total vs ~$16,000 cash. A330-200 lie-flat business. Dublin has US preclearance \u2014 clear immigration in DUB, land domestic at SFO. CRITICAL: book via Aer Lingus AerClub, NOT British Airways \u2014 BA prices the identical SFO\u2013DUB seat at 90,000 Avios + ~$159 (27,500 Avios/person worse, \u00d75 = 137,500 Avios wasted). Aer Lingus imposes no fuel surcharges on Ireland awards. Avios is a shared currency: pool from BA Club / Iberia Club / Qatar Privilege Club / Aer Lingus AerClub via Avios.com. Fed 1:1 by Chase UR, Amex MR, Capital One, Citi TY, Bilt. Awards price PER SEGMENT, so a European feeder into DUB is priced separately (cheap intra-Europe Avios band).",
+    "price_usd": 815,
+    "points_cost": "312,500 Avios (62,500 \u00d7 5)",
+    "cpp": "~4.9 cpp",
+    "source": "onemileatatime.com/guides/redeem-aer-lingus-avios/ ; 10xtravel.com/aer-lingus-aerclub-award-charts/ ; awardtravelfinder.com/credit-card-transfers/bilt-rewards",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "CONFIDENCE: HIGH on pricing/chart structure, MEDIUM on 5-seat availability for Oct 26 / Nov 1-2 (must verify live). This reroutes the family through Dublin rather than AMS/CDG/LHR \u2014 that is the trade. Off-peak calendar generally covers Oct\u2013Nov, so late Oct / early Nov should price off-peak; CONFIRM the specific date on the AerClub calendar before transferring. Biggest single dollar-saver identified in Lane 2."
+   },
+   {
+    "label": "#2 PLAY \u2014 Qatar Privilege Club Avios: SIN\u2192DOH\u2192FCO Qsuites (leg c)",
+    "detail": "Est. 65,000\u201375,000 Avios one-way, taxes ONLY \u2014 Qatar waives carrier-imposed surcharges on Avios bookings. Component pricing: DOH\u2013SIN Qsuite business from 50,000 Avios off-peak; DOH\u2013Europe Qsuite business from 42,500 Avios off-peak (Rome is closer than London, so at or below that); connecting through-fares add roughly 15,000 Avios beyond the Doha fare. Free Doha stopover available on select itineraries. Same Avios pool as Play #1 \u2014 so the SAME transferred balance can be split across leg (c) and leg (d). Award seats release 355\u2013361 days out; Qatar has been throttling business inventory to non-Avios partners, which makes Privilege Club (and BA) the BEST access channel right now, better than AAdvantage.",
+    "price_usd": 80,
+    "points_cost": "~65,000\u201375,000 Avios",
+    "cpp": "~3.4\u20133.9 cpp",
+    "source": "awardfares.com/blog/qatar-airways-privilege-club-guide/ ; awardtravelfinder.com/award-charts/qatar-airways ; upgradedpoints.com/travel/airlines/best-ways-to-book-qatar-qsuites-with-points-and-miles/",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "CONFIDENCE: MEDIUM on the exact Avios number (sources conflict on whether Qatar's chart is distance-based-fixed or dynamic with peak/off-peak \u00b130\u201335%); HIGH on the no-surcharge and Avios-pooling facts. MUST price SIN\u2013DOH and DOH\u2013FCO separately on qatarairways.com and compare against the through-itinerary. Use seats.aero Qsuites Finder or Roame (now searches Privilege Club) for space."
+   },
+   {
+    "label": "#2b ALT \u2014 American AAdvantage 70k for Qsuites (leg c) \u2014 Citi TY is the ONLY way in",
+    "detail": "AAdvantage prices Qatar business at a FIXED 70,000 miles one-way to Europe, no fuel surcharges, taxes typically under $50. Citi ThankYou is the only transferable currency that transfers to AAdvantage (1:1, requires Strata Elite / Strata Premier / legacy Prestige \u2014 no-annual-fee Citi cards cannot reach airlines). NOTE: Bilt\u2192AAdvantage is DEAD (ended June 2024; AAdvantage is absent from Bilt's official partner list \u2014 aggregator sites claiming otherwise are stale).",
+    "price_usd": 50,
+    "points_cost": "70,000 AAdvantage (70,000 Citi TYP)",
+    "cpp": "~3.6 cpp",
+    "source": "awardtravelfinder.com/transfer-partners/american-airlines-aadvantage ; blog.awardfares.com/book-qsuites-with-aadvantage/ ; thepointsguy.com/news/american-aadvantage-bilt-transfers-end",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "CONFIDENCE: HIGH on the 70k rate and Citi-exclusivity; the WEAKNESS is availability \u2014 Qatar has specifically been cutting business inventory released to AAdvantage, and AA's chart doesn't always permit third-region (Asia\u2192Europe) routings without a US connection. Treat Qatar Avios (#2) as primary and this as the fallback. Also verify whether Citi has added Qatar Privilege Club directly \u2014 not confirmed in Citi's published partner list."
+   },
+   {
+    "label": "#3 PLAY \u2014 Alaska/Atmos Rewards 75k: Korean Air Prestige SFO\u2192ICN (leg a)",
+    "detail": "~75,000 Atmos points + $20 partner booking fee, one-way business, US\u2192South Korea (Asia Pacific partner chart, distance-banded). Vs ~$3,900 KE Prestige cash = 5.2 cpp \u2014 the highest cpp of any single-seat redemption found. Korean Air remains a valid Atmos non-alliance partner. One FREE stopover permitted on a one-way partner award (could absorb a Seoul or Asia stopover), but Atmos is single-partner-only \u2014 no mixing carriers on one ticket. ACCESS: Atmos is fed by Bilt (1:1, instant) and Marriott Bonvoy (3:1 with the 5,000-mile bonus per 60,000 \u2014 so 180,000 Bonvoy \u2192 75,000 Atmos).",
+    "price_usd": 20,
+    "points_cost": "75,000 Atmos (= 75,000 Bilt, or 180,000 Marriott Bonvoy)",
+    "cpp": "5.2 cpp (Atmos) / 2.16 cpp (if sourced from Bonvoy)",
+    "source": "alaskaair.com/atmosrewards/content/partners/airlines/korean-air ; frequentmiler.com/alaska-atmos-rewards-complete-guide/ ; onemileatatime.com/news/atmos-rewards-partner-award-booking-fee-increase/",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "CONFIDENCE: HIGH on price, LOW-MEDIUM on availability \u2014 multiple sources describe Korean saver space via Atmos as 'incredibly difficult, multiple weeks with not a single award seat.' Sep 27 is ~8 weeks out, which is late for KE saver space. This is the ONE case where Marriott's 3:1 airline transfer is genuinely good (2.16 cpp on Bonvoy vs its 0.8 cpp baseline) BECAUSE Bonvoy is one of only two doors into Atmos. Partner fee rose to $20 (from $12.50) July 1, 2026, charged per direction per person."
+   },
+   {
+    "label": "#4 PLAY \u2014 Chase UR \u2192 World of Hyatt for Singapore F1 week (hotels)",
+    "detail": "MAJOR FINDING: Singapore Oct 6\u201310 collides with the 2026 Singapore Grand Prix, Oct 9\u201311 at Marina Bay (festival window Oct 2\u201311; 2026 is a SPRINT weekend, sprint quali Fri Oct 9). The $2,669 SIN cash booking is race-week surge, not a normal rate. Historical surge: rates run 2\u20133\u00d7 normal; Fairmont Singapore hit S$1,888/night vs S$500\u2013700 usual; Swiss\u00f4tel 5D4N ~S$6,460 race week vs ~S$2,075 a week later. Marriott, Hilton and IHG all use DYNAMIC award pricing \u2014 their points cost surges in lockstep with cash, so they give you no protection. World of Hyatt is the only major program still on a fixed category chart (8 categories; as of May 20, 2026 the peak/off-peak model was replaced with 5 tiers: Lowest/Low/Moderate/Upper/Top). Andaz Singapore was Cat 6 (~29,000\u201337,000 pts) pre-change and does not appear on the 2026 category-change lists. Chase UR \u2192 Hyatt at 1:1 is the single highest-value transfer available in the entire points stack (Hyatt ~1.55\u20131.6 cpp vs Marriott 0.8, IHG 0.5\u20130.6, Hilton 0.35\u20130.4).",
+    "price_usd": 0,
+    "points_cost": "~29,000\u201340,000+ Hyatt pts/night (verify post-May-2026 tier)",
+    "cpp": "potentially 5\u201310+ cpp against surge cash",
+    "source": "f1.fandom.com/wiki/2026_Singapore_Grand_Prix ; visitsingapore.com/whats-happening/all-happenings/events/singapore-grand-prix-season/ ; mothership.sg/2024/09/hotel-price-up-to-3-times-higher/ ; milelion.com/2026/04/25/world-of-hyatt-announces-2026-hotel-category-changes-with-new-award-chart-coming-20-may/ ; destination.com/research/hotel-points-value-index-2026",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "CONFIDENCE: HIGH on the F1 date collision and on Hyatt being the only fixed-chart program; MEDIUM on exact Andaz Singapore tier post-May-2026 (must check hyatt.com live). CAVEAT: the new Cat 8 'Top' tier rose 67% (45k\u219275k) and intra-category spread is now up to 40,000 pts \u2014 so 'fixed chart' is weaker than it was. Also: prime SIN properties book 4\u20136 months ahead for race week and many are pre-blocked by teams/press \u2014 award inventory may simply be gone. ADVERSARIAL NOTE: also price the counterfactual of NOT staying in Marina Bay \u2014 a non-trackside Hyatt could be a fraction of the cost."
+   },
+   {
+    "label": "#5 PLAY \u2014 VERIFY CHASE UR FIRST: it is the highest-leverage unknown in the stack",
+    "detail": "Chase Ultimate Rewards (Jarred + Ashley Sapphire Reserve + Freedom, currently UNVERIFIED) is the only currency that simultaneously feeds: World of Hyatt 1:1 (Play #4, best hotel value in existence), British Airways / Iberia / Aer Lingus Avios 1:1 (Plays #1 and #2 \u2014 the two biggest cash saves), Air Canada Aeroplan, Virgin Atlantic, Singapore KrisFlyer, Flying Blue, Emirates, IHG and Marriott. Two Sapphire Reserves + Freedom cards can be pooled into one household account. Everything in Lane 2's top 4 plays can be funded from Chase UR alone if the balance is there. LIVE BONUS: Chase \u2192 IHG One Rewards at 70% (1:1.7) through Aug 31, 2026 \u2014 the largest bonus running this month, though IHG's dynamic pricing means you're arguably 'trading $20 for $8.50.'",
+    "price_usd": 0,
+    "points_cost": "unknown \u2014 VERIFY",
+    "cpp": "n/a",
+    "source": "upgradedpoints.com/news/current-credit-card-transfer-bonuses/ ; roame.travel/guides/bilt-transfer",
+    "status": "unknown",
+    "beats_current": "unknown",
+    "notes": "CONFIDENCE: HIGH that Chase is the right pool to check first. ACTION: log into chase.com/ultimaterewards for both cardholders and report balances before any transfer decision is made. Also re-verify the Amex MR 512k (July snapshot is stale) \u2014 Amex feeds BA/Iberia/Aer Lingus Avios 1:1 too, so 512k MR alone could cover the entire 312,500-Avios family leg."
+   },
+   {
+    "label": "Citi ThankYou \u2192 Flying Blue 20% bonus \u2014 CONFIRMED LIVE, expires Aug 22, 2026",
+    "detail": "CONFIRMED: 20% bonus on Citi TY \u2192 Air France-KLM Flying Blue, valid for transfers completed 07/19/2026 12:01 AM ET through 08/22/2026 11:59 PM ET. Ratio is 1,200 FB miles per 1,000 TYP with Citi Strata Elite, Strata Premier, Prestige, or AT&T Access More. No-annual-fee Citi cards get only 840 FB per 1,000 (they earn base-level points that cannot reach airlines unless pooled into a premium account). Minimum 1,000 points; transfers process instantly. Effectively cuts award cost ~17%. Standard FB business NA\u2194Europe starts around 60,000 miles \u2192 50,000 TYP during this promo; stackable with monthly Promo Rewards (25\u201350% off) for potentially ~38k TYP.",
+    "price_usd": 0,
+    "points_cost": "50,000 TYP \u2192 60,000 FB miles",
+    "cpp": "~5.6 cpp on TYP IF the award and surcharge assumptions hold",
+    "source": "loyaltylobby.com/2026/07/19/citi-thankyou-to-air-france-klm-flying-blue-20-conversion-bonus-july-19-august-22-2026/ ; frequentmiler.com/citi-thankyou-air-france-klm-flying-blue-20-percent-transfer-bonus/ ; awardwallet.com/news/citi-thankyou-rewards/flying-blue-transfer-bonus/",
+    "status": "confirmed",
+    "beats_current": "unknown",
+    "notes": "CONFIDENCE: CERTAIN on the bonus existing and its Aug 22 deadline. ADVERSARIAL WARNING \u2014 do NOT transfer speculatively. Flying Blue is FULLY dynamic and passes through heavy AF/KLM carrier surcharges (transatlantic business past $500 CAD each way; AF ex-Europe is worse than KLM ex-AMS). August 2026 Promo Rewards are weak in business \u2014 premium economy is this month's sweet spot, business options are limited. Getting FIVE saver business seats on a dynamic program for leg (d) is far less likely than on Aer Lingus's fixed chart. USE ONLY if you find and hold a specific award first. Also relevant: FB can book Korean Air as a SkyTeam partner, but observed KE business one-ways run 89,000 to 586,500 miles with blackout dates."
+   },
+   {
+    "label": "Capital One \u2192 Avianca LifeMiles 15% bonus (live to Aug 31) \u2014 RANKED LOW, devalued",
+    "detail": "Capital One transfers 1:1 to Flying Blue, Turkish Miles&Smiles, Avianca LifeMiles, Air Canada Aeroplan, British Airways, Cathay, Etihad, Finnair, Qantas, QATAR AIRWAYS (1:1 \u2014 a direct door into the Avios pool for Plays #1/#2), Singapore KrisFlyer, TAP, Virgin Red. Sub-1:1 partners: EVA (2:1.5), JAL (2:1.5), Emirates (2:1.5), JetBlue (5:3). LIVE: 15% bonus to LifeMiles through Aug 31, 2026 (1:1.15).",
+    "price_usd": 0,
+    "points_cost": "n/a",
+    "cpp": "low",
+    "source": "upgradedpoints.com/credit-cards/capital-one-transfer-partners/ ; upgradedpoints.com/news/current-credit-card-transfer-bonuses/ ; airtraveler.club/news/lifemiles-devalues-us-europe-awards/",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "CONFIDENCE: HIGH. SKIP the LifeMiles bonus \u2014 LifeMiles devalued hard: US\u2013Europe business went from ~63k to 90k+ (JFK\u2013FRA on LH now 92,400 one-way), NA\u2013Asia business now 90,000\u2013100,000, and mixed-cabin pricing was eliminated entirely. LifeMiles' only remaining structural edge is zero carrier surcharges (good for LH/Austrian). THE REAL VALUE OF CAPITAL ONE HERE is its 1:1 Qatar Airways line \u2014 that is a direct, bonus-free feed into Play #2's Avios pool. Use Cap One for Avios, not for LifeMiles."
+   },
+   {
+    "label": "Bilt Rewards \u2014 the ONLY non-Marriott door to Alaska/Atmos; AA line is DEAD",
+    "detail": "Bilt (25 partners as of 2026, essentially all 1:1) transfers to: ATMOS REWARDS (Alaska + Hawaiian) \u2014 Bilt's key exclusive and the cheapest feed for Play #3; Avianca LifeMiles; United MileagePlus; Flying Blue; Virgin Red; Virgin Atlantic Flying Club; Emirates; BRITISH AIRWAYS, AER LINGUS AERCLUB, IBERIA PLUS and QATAR PRIVILEGE CLUB (four separate doors into the Avios pool \u2014 Bilt can fund Plays #1 and #2 directly); Turkish Miles&Smiles; Cathay; Aeroplan; JAL; Etihad; TAP; Southwest; Spirit. Hotels: Hilton, Marriott, WORLD OF HYATT (rare non-Chase Hyatt access \u2014 a second door to Play #4), IHG, Wyndham at 1:1; Accor 3:2. Most airline transfers instant; Cathay and JAL same-day.",
+    "price_usd": 0,
+    "points_cost": "n/a",
+    "cpp": "n/a",
+    "source": "support.biltrewards.com/hc/en-us/articles/19086448638989-Bilt-s-Transfer-Partners ; awardtravelfinder.com/credit-card-transfers/bilt-rewards ; roame.travel/guides/bilt-transfer",
+    "status": "confirmed",
+    "beats_current": "yes",
+    "notes": "CONFIDENCE: HIGH. CORRECTION TO A COMMON ASSUMPTION: American AAdvantage is NO LONGER a Bilt partner \u2014 the partnership ended June 24, 2024 and AAdvantage is absent from Bilt's official list. Any site claiming 'Bilt is the only bank program transferring to AAdvantage at 1:1' is stale/AI-generated. Bilt is uniquely valuable here because it reaches Atmos AND Hyatt AND all four Avios programs. CHECK BILT BALANCE \u2014 check Rent Day (1st of month) for a bonus before transferring."
+   },
+   {
+    "label": "Marriott Bonvoy 60k\u219225k airline transfer \u2014 good ONLY for Atmos, worthless elsewhere",
+    "detail": "Base ratio 3:1; transferring in 60,000-point blocks yields 25,000 miles instead of 20,000 (effective 3:1.25) via a 5,000-mile bonus per 60k. United is the exception at 10,000 bonus per 60k (60k Bonvoy \u2192 30,000 United, effective 2:1). 39 airline partners, several unavailable from any bank currency. Daily cap 240,000 points transferred (~100,000 miles). NO BONUS on American AAdvantage, Avianca LifeMiles, or Delta SkyMiles. Baseline economics are poor: even valuing resulting miles at 1.5c, Bonvoy nets ~0.4\u20130.5 cpp \u2014 normally a last resort.",
+    "price_usd": 0,
+    "points_cost": "180,000 Bonvoy \u2192 75,000 Atmos",
+    "cpp": "2.16 cpp on Bonvoy (Atmos/Korean case) vs 0.4\u20130.5 cpp typical",
+    "source": "frequentmiler.com/marriott-bonvoy-airline-transfer-partners/ ; magnify.club/guides/marriott-bonvoy-airline-transfer-partners/ ; dailydrop.com/pages/how-to-transfer-marriott-points",
+    "status": "confirmed",
+    "beats_current": "tie",
+    "notes": "CONFIDENCE: HIGH. THE ONE GOOD USE on this trip is Bonvoy \u2192 Atmos for Play #3 (Korean Prestige), where 180k Bonvoy buys a $3,880 seat = 2.16 cpp on Bonvoy, ~2.7\u00d7 its 0.8 cpp baseline \u2014 justified purely because Bonvoy is one of only two doors into Atmos. IMPORTANT: Korean Air was REMOVED from the 5,000-mile bonus, and the Marriott\u2192Korean SKYPASS partnership itself is now dead entirely. No Marriott-originated transfer bonus is running as of Aug 2026."
+   },
+   {
+    "label": "Korean SKYPASS \u2014 CANNOT be fed with points. Structural finding.",
+    "detail": "Korean Air SKYPASS has NO major US credit-card transfer partner: Chase, Amex, Capital One, Citi and Marriott are ALL dead ends. Marriott Bonvoy terminated its SKYPASS transfer partnership (June 2024). The only US card route is the U.S. Bank SKYPASS Visa. Remaining transfer feeds are hotel-only and inefficient: Accor ALL 2:1, Shangri-La Circle 1:1, World of Hyatt 5:2. SKYPASS's own chart is excellent (off-peak business ATL\u2013ICN ~62,500 one-way, occasional 57,500 ORD\u2013ICN; KE First to Seoul 80,000 = the program's sweet spot) \u2014 but peak pricing now covers 40% of the calendar, and you can't get the miles. Korean also FORBIDS booking awards for non-family; only registered legal family members can pool.",
+    "price_usd": 0,
+    "points_cost": "n/a \u2014 inaccessible",
+    "cpp": "n/a",
+    "source": "princeoftravel.com/points-programs/korean-air-skypass/ ; point.me/insights/korean-air-skypass/ ; upgradedpoints.com/travel/airlines/best-ways-to-book-korean-air-business-class/",
+    "status": "unavailable",
+    "beats_current": "no",
+    "notes": "CONFIDENCE: HIGH. This is a load-bearing correction \u2014 if the current plan assumes KE Prestige can be bought with transferable points, it cannot. The only points routes onto Korean metal are: Alaska/Atmos 75k (Play #3, via Bilt/Marriott), Flying Blue SkyTeam partner award (dynamic, 89k\u2013586k observed, blackouts), or Delta SkyMiles. The employee-seat angle also breaks on Korean's family-only award rule \u2014 SKYPASS awards cannot be issued to the 3 employees even if miles existed."
+   },
+   {
+    "label": "Aeroplan Asia\u2192Europe (leg c) \u2014 DEVALUED June 1, 2026, do not plan around 87.5k",
+    "detail": "Air Canada Aeroplan's June 1, 2026 chart change hit the Atlantic\u2194Pacific (Europe\u2194Asia) zone pair hardest of any pair \u2014 10 of 12 cells increased. Partner business 7,501\u201311,000 miles rose from 87,500 to 102,500 points (+17.1%). Air Canada / select-partner business 7,001+ miles jumped 67%, from 60,000 to 100,000. The old 87,500 band was the classic SIN/Asia\u2192Europe sweet spot for ANA, Singapore Airlines, EVA and Asiana \u2014 it is gone. Applies to all tickets booked or reissued on or after June 1, 2026. Aeroplan is fed by Chase, Amex, Capital One, Bilt, Marriott.",
+    "price_usd": 0,
+    "points_cost": "102,500 (or the 5,001\u20137,500 band \u2014 verify; SIN\u2013FCO direct is ~6,240 mi)",
+    "cpp": "~2.5 cpp at best",
+    "source": "onemileatatime.com/news/aeroplan-updating-award-chart-devaluation/ ; maxmilespoints.com/blog/aeroplan-award-chart-changes-2026 ; milesopedia.com/en/news/programs/aeroplan-devaluation-2026-all-award-chart-changes/",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "CONFIDENCE: HIGH on the devaluation; MEDIUM on which distance band SIN\u2013FCO lands in (nonstop ~6,240 mi = 5,001\u20137,500 band, cheaper than the 7,501\u201311,000 band quoted \u2014 but a DOH or European connection pushes it into the higher band). Also: long-haul Singapore Airlines business via Aeroplan is described as 'nearly impossible to find.' Qatar Avios (#2) beats this comprehensively on both price and surcharges. Aeroplan does keep a real edge on INTRA-EUROPE business, which got CHEAPER (0\u20131,000 mi: 15,000\u219212,500; 1,001\u20132,000 mi: 25,000\u219222,500) \u2014 useful for positioning the family into DUB for Play #1."
+   },
+   {
+    "label": "KrisFlyer / Turkish / other Star options for SIN\u2192FCO \u2014 all worse than Avios",
+    "detail": "KrisFlyer Saver business SIN\u2192mainland Europe (Zone 11, incl. Rome) \u2248 108,500 miles one-way. Zones 11\u201313 rose 5% effective Nov 1, 2025; a further Access-rate devaluation hit Mar 28, 2026. Reported that most Saver awards are currently unavailable \u2014 only pricier Advantage (~1.5\u00d7 Saver) and Access rates. Workarounds: Istanbul (Zone 10) is a sweet spot at ~68,000 business \u2014 fly SIN\u2192IST on Saver and connect to FCO on a cheap intra-EU carrier; or watch Spontaneous Escapes (30% off Saver, bookable ~1 month ahead for the following month \u2014 Sep bookings would cover Oct travel). Round-trip Saver includes a free 30-day stopover; one-way Saver does not. Turkish Miles&Smiles' famous flat 45,000-to-Europe figure is from 2023 and should NOT be assumed current \u2014 Turkish has moved toward dynamic pricing.",
+    "price_usd": 0,
+    "points_cost": "~108,500 KrisFlyer (or ~68,000 via IST split)",
+    "cpp": "~2.4 cpp direct",
+    "source": "awardtravelfinder.com/singapore-krisflyer-guides ; suitesmile.com/blog/2026/03/28/krisflyer-award-charts-saver-advantage-access/ ; singaporeair.com/en_UK/sg/plan-travel/promotions/global/kf/kf-promo/kfescapes/",
+    "status": "likely",
+    "beats_current": "no",
+    "notes": "CONFIDENCE: MEDIUM-HIGH on KrisFlyer pricing, LOW on Turkish (stale data \u2014 needs a live price check). KrisFlyer at 108,500 for a $2,600 seat is 2.4 cpp \u2014 clearly inferior to Qatar Avios at ~70k with no surcharges. The ONE thing to watch: Spontaneous Escapes for Rome, released ~early Sept for Oct travel, would drop this to ~76,000 \u2014 still worse than Avios. KrisFlyer is fed by Chase, Amex, Citi, Capital One."
+   },
+   {
+    "label": "Virgin Atlantic Flying Club on Delta One (leg a) \u2014 degraded, and ICN is offline-only",
+    "detail": "Virgin runs THREE Delta charts: US\u2013UK, US\u2013Europe(non-UK), and a distance-based chart for everything else (incl. Asia) with no peak/standard seasons. STRUCTURAL ADVANTAGE: Virgin imposes carrier-imposed surcharges only on US\u2013Europe/UK travel \u2014 Delta awards to ASIA carry NO fuel surcharges. But the famous 60,000-mile US\u2192Asia Delta One rate was destroyed in early 2021; current long-haul bands run materially higher (85,000 covers the 5,001\u20136,000 mile band on the SkyTeam partner chart; SFO\u2013ICN is ~5,650 mi). Virgin is fed 1:1 by Amex, Bilt, Capital One, Chase AND Citi, and frequently runs transfer bonuses upwards of 35%.",
+    "price_usd": 0,
+    "points_cost": "~85,000+ Virgin Points (verify Delta-specific chart)",
+    "cpp": "~4.5 cpp if 85k holds",
+    "source": "onemileatatime.com/guides/redeem-virgin-atlantic-points-delta/ ; thriftytraveler.com/news/virgin-atlantic-delta-award-chart-hike/ ; awardtravelfinder.com/award-charts/virgin-atlantic",
+    "status": "unknown",
+    "beats_current": "unknown",
+    "notes": "CONFIDENCE: LOW on the exact number \u2014 the Delta distance chart is published only as an IMAGE on every source I could reach; the 85,000 figure is from the SkyTeam PARTNER chart, not the Delta chart. TWO OPERATIONAL BLOCKERS: (1) Seoul/ICN has historically NOT been bookable on virginatlantic.com \u2014 requires phoning a Flying Club agent; (2) Delta rarely releases long-haul saver business space. ACTION IF PURSUED: get the Delta distance chart image directly from Virgin's partner redemption page, then phone to price SFO\u2013ICN. Do not transfer first. Adversarial note on the 132,931 verified Delta SkyMiles: Delta's own dynamic pricing to Seoul frequently exceeds 200,000 one-way in Delta One \u2014 that balance likely buys ONE seat at a mediocre rate, so do not anchor the plan on it."
+   },
+   {
+    "label": "Cathay Asia Miles 10% bonus (to Aug 28) \u2014 broad but not competitive here",
+    "detail": "LIVE: 10% bonus to Cathay Asia Miles through Aug 28, 2026, from Amex MR, Bilt, Brex, Capital One, Citi TY and Wells Fargo, plus hotel programs Accor, Best Western, Hilton, IHG, Shangri-La, World of Hyatt, Anantara, Brilliant by Langham and Dorsett. Asia Miles can book Qatar (oneworld) SIN\u2013DOH\u2013FCO.",
+    "price_usd": 0,
+    "points_cost": "n/a",
+    "cpp": "low",
+    "source": "upgradedpoints.com/news/current-credit-card-transfer-bonuses/",
+    "status": "confirmed",
+    "beats_current": "no",
+    "notes": "CONFIDENCE: HIGH the bonus is live; HIGH that it is not the right play. Asia Miles prices Asia\u2192Europe business above Qatar's own Avios chart and you lose Qatar's surcharge waiver advantage. Listed for completeness only. The Hyatt\u2192Asia Miles line is actively value-destructive (burning 1.55 cpp points into ~1.0 cpp ones)."
+   },
+   {
+    "label": "Hotel points by city \u2014 where points crush cash vs where cash wins",
+    "detail": "SINGAPORE (Oct 6\u201310, F1 race week Oct 9\u201311): points CRUSH cash \u2014 see Play #4. Hyatt (Andaz Singapore, The Standard Singapore which DROPPED Cat 5\u2192Cat 4 in May 2026 and is now free-night-cert eligible) are the fixed-chart plays. IHG's Regent Singapore is a documented luxury sweet spot beating IHG's 0.5\u20130.6c average, and the IHG Premier card's 4th-night-free adds a further 25% off. SEOUL: points LOSE \u2014 Seoul is a soft luxury cash market. Josun Palace (Luxury Collection) prices ~$360 cash vs 65,000 Bonvoy = ~0.55 cpp, below Bonvoy's 0.8c baseline. Grand Hyatt Seoul ~$223\u2013245/night cash needs to price under ~28,000 Hyatt points to be worth it. RECOMMENDATION: pay CASH in Seoul, keep the $2,160 Walkerhill booking, spend points in Singapore. DUBROVNIK: Hilton Imperial Dubrovnik (149 rooms, 1 min from Old Town) runs ~70,000 Honors points/night high season, as low as 25,000 off-season; Oct 2026 is shoulder \u2014 expect 50,000\u201370,000. Hilton's 5th-night-free applies on 5+ night award stays. Sheraton Dubrovnik Riviera is the classic target for a Marriott 35,000-point Free Night Award (but it's a 15-min drive from Old Town). ROME: use Marriott's 'Stay for 5, Pay for 4' on 5+ night redemptions; Free Night Awards can now be topped up with up to 25,000 points (raised from 15,000) to reach higher categories.",
+    "price_usd": 0,
+    "points_cost": "varies",
+    "cpp": "Singapore 5\u201310+ cpp / Seoul ~0.55 cpp (avoid) / Dubrovnik ~0.8\u20131.6 cpp",
+    "source": "upgradedpoints.com/travel/hotels/best-singapore-hotels-book-points/ ; upgradedpoints.com/travel/hotels/best-seoul-hotels-book-points/ ; awardtravelvacations.com/best-points-hotels-in-dubrovnik-croatia/ ; creditcardpediem.com/hotel-review-hilton-imperial-dubrovnik/ ; thepointsguy.com/loyalty-programs/maximizing-redemptions-marriott-bonvoy-program/",
+    "status": "likely",
+    "beats_current": "yes",
+    "notes": "CONFIDENCE: HIGH on the directional call (spend points in Singapore, cash in Seoul); MEDIUM on specific point costs \u2014 all of Marriott/Hilton/IHG are dynamic and Oct 2026 rates are not locked. On the refundability question you asked: standard AWARD bookings at Marriott, Hilton, Hyatt and IHG are generally cancellable and re-bookable (points redeposit free) on flexible-rate awards, whereas prepaid/advance-purchase CASH rates typically are not \u2014 so a points booking is the strictly more OPTIONAL-VALUE instrument for a trip with this much date uncertainty. VERIFY the specific rate rules at booking; Marriott has been tightening award cancellation windows."
+   }
+  ],
+  "caveats": "CONFIDENCE AND VERIFICATION CAVEATS \u2014 read before acting. (1) NOTHING HERE IS A LIVE AVAILABILITY CHECK. Every figure is a published-chart or reported rate from Aug 2026 secondary sources; none of it confirms a seat exists on your dates. Transfers are IRREVERSIBLE \u2014 confirm and hold the specific award before moving a single point. This applies with maximum force to the two plays I ranked #1 and #3, both of which have documented availability problems. (2) THE FIVE-SEAT PROBLEM IS THE REAL CONSTRAINT ON LEG (d), not price. Finding 5 saver business seats on one flight is the hard part; that is precisely why I ranked the FIXED-chart Aer Lingus play above the dynamic Flying Blue play despite the live Citi bonus. Realistic fallback: split the family across two dates or two carriers. (3) BALANCES ARE UNVERIFIED. Chase UR, Citi TY, Capital One, Bilt, all hotel balances, and every direct airline balance (Alaska/Atmos, United, Virgin, Flying Blue, KrisFlyer) are unknown; the Amex MR 512k is a stale July snapshot. Every play above is contingent on a balance nobody has confirmed. Verify Chase first (it feeds Hyatt AND Avios), then Bilt (only non-Marriott door to Atmos), then Amex. (4) THE 3 EMPLOYEES may create award-booking friction \u2014 Korean SKYPASS explicitly forbids booking awards for non-family (registered legal family only), and several programs restrict redemptions to household members. Confirm each program's third-party-booking rule before assuming employee seats can be covered on points. (5) DATA QUALITY FLAGS: Virgin Atlantic's Delta distance chart is published only as an image and I could not retrieve the Asia business figures \u2014 the 85,000 cited is from the SkyTeam partner chart and may not apply. Turkish Miles&Smiles pricing is based on 2023-era sources and is likely stale. Qatar's Avios pricing for SIN\u2013FCO is an estimate assembled from component legs, not a quoted through-fare. Andaz Singapore's post-May-2026 Hyatt tier is inferred from absence-from-the-change-list, not confirmed. Aeroplan's SIN\u2013FCO distance band was not confirmed. (6) TIME-BOXED ITEMS: Citi\u2192Flying Blue 20% ends Aug 22, 2026; Cathay 10% ends Aug 28; Chase\u2192IHG 70% and Cap One\u2192LifeMiles 15% end Aug 31. Only the Citi/Flying Blue one is plausibly relevant, and only if you find the award first. (7) ADVERSARIAL BOTTOM LINE ON THE CURRENT PLAN: leg (b), ICN\u2192SIN KE Prestige at $987 LIVE-QUOTED cash, is a FINE cash buy \u2014 roughly 1.6\u20131.8 cpp against any realistic points price for a 5.5-hour regional business seat. Do not burn scarce points there. The points should be concentrated on leg (d) at ~$16,000 of exposure and leg (a) at ~$3,900/seat, in that order. If Lane 1 is planning to spend Amex MR or SkyMiles on the cheap legs, that is the misallocation to fix."
+ }
+]
