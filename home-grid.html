@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Way Home · Date × Gateway Cost Grid</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--ink:#e6edf3;--dim:#8b949e;--gold:#d4a94e;--teal:#3fb6a8;--red:#e5534b;--green:#57ab5a;--line:#2d333b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:60px}
+a{color:var(--teal);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header{padding:30px 0 10px}
+h1{font-size:26px;margin:0 0 4px}h1 .g{color:var(--gold)}
+.sub{color:var(--dim);font-size:13.5px;max-width:860px}
+h2{font-size:18px;margin:34px 0 4px}h2 .n{color:var(--gold);margin-right:8px}
+.lead{color:var(--dim);font-size:13px;margin:0 0 12px;max-width:880px}
+.grid{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:820px;font-size:12.5px}
+th{background:var(--panel2);padding:8px 9px;text-align:left;color:var(--dim);font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid #21262d;border-right:1px solid #1a2029;white-space:nowrap}
+td.gw{font-weight:700;border-left:3px solid transparent}
+tr.best td.gw{border-left-color:var(--green)}
+tr.good td.gw{border-left-color:var(--gold)}
+tr.bad td.gw{border-left-color:var(--red);opacity:.75}
+.c{text-align:right;font-variant-numeric:tabular-nums}
+.c.lo{background:#16301f;color:#8ee79f;font-weight:700}
+.c.mid{background:#2b2617;color:#e3c982}
+.c.hi{background:#31191a;color:#f0928c}
+.c.na{color:#39414d}
+td.tot{font-weight:800;color:var(--gold);font-size:13px;text-align:right}
+.note{font-size:11.5px;color:var(--dim)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0;font-size:13.5px}
+.card.warn{border-color:var(--red)}.card.win{border-color:var(--green)}
+.card h3{margin:0 0 8px;font-size:15px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--dim);margin:8px 0}
+.sw{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+.foot{color:var(--dim);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+</style></head><body><div class="wrap">
+<header>
+<h1>Way Home · <span class="g">Date × Gateway</span> cost grid</h1>
+<div class="sub">Family of 5, Dubrovnik → San Francisco. Every cell = <b>party-of-5 transatlantic fare, economy</b>, live-quoted Aug 2 2026 at true 5-passenger pricing (not 1-pax × 5). <a href="index.html">← back to Trip Builder</a></div>
+</header>
+
+<h2><span class="n">01</span>Cash grid — transatlantic fare by departure date</h2>
+<div class="legend">
+<span><span class="sw" style="background:#16301f"></span>cheapest band</span>
+<span><span class="sw" style="background:#2b2617"></span>mid</span>
+<span><span class="sw" style="background:#31191a"></span>expensive</span>
+<span><span class="sw" style="background:var(--green)"></span>recommended</span>
+<span><span class="sw" style="background:var(--red)"></span>ruled out</span>
+</div>
+<div class="grid"><table>
+<tr><th>Gateway</th><th class="c">Mon Oct 26</th><th class="c">Tue Oct 27</th><th class="c">Sun Nov 1</th><th class="c">Mon Nov 2</th><th class="c">+ positioning<br>from DBV</th><th class="c">ALL-IN<br>(fare+pos+hotel+bags)</th><th>Note</th></tr>
+
+<tr class="best"><td class="gw">🇪🇸 Barcelona</td>
+<td class="c lo">$2,352</td><td class="c lo">$2,320</td><td class="c na">—</td><td class="c lo">$2,352</td>
+<td class="c">$518</td><td class="tot">$3,445</td><td class="note">cheapest all-in · Air Serbia 4+1 split</td></tr>
+
+<tr class="best"><td class="gw">🇪🇸 Madrid</td>
+<td class="c lo">$2,342</td><td class="c lo">$2,342</td><td class="c na">—</td><td class="c lo">$2,342</td>
+<td class="c">$633</td><td class="tot">$3,540</td><td class="note">totally date-insensitive · AA741</td></tr>
+
+<tr class="good"><td class="gw">🇩🇪 Frankfurt</td>
+<td class="c mid">$2,595</td><td class="c mid">$2,535</td><td class="c na">—</td><td class="c na">—</td>
+<td class="c">$507</td><td class="tot">$3,697</td><td class="note">⭐ year-round DBV <b>nonstop</b> · lowest schedule risk</td></tr>
+
+<tr class="good"><td class="gw">🇹🇷 Istanbul</td>
+<td class="c mid">$2,555</td><td class="c na">—</td><td class="c na">—</td><td class="c mid">$2,555</td>
+<td class="c">~$620</td><td class="tot">$3,775</td><td class="note">sleeper · Turkish serves DBV year-round</td></tr>
+
+<tr class="good"><td class="gw">🇫🇷 Paris CDG</td>
+<td class="c mid">$2,544</td><td class="c na">—</td><td class="c lo">$2,478</td><td class="c lo">$2,478</td>
+<td class="c">~$630</td><td class="tot">$3,776</td><td class="note">only gateway where Nov is truly cheaper (−$66)</td></tr>
+
+<tr class="good"><td class="gw">🇳🇱 Amsterdam</td>
+<td class="c mid">$2,561</td><td class="c mid">$2,561</td><td class="c mid">$2,561</td><td class="c mid">$2,561</td>
+<td class="c">~$620</td><td class="tot">$3,783</td><td class="note">flat on all 4 dates · KLM nonstop is <b>3.3×</b> the 1-stop</td></tr>
+
+<tr class="good"><td class="gw">🇬🇧 London LHR</td>
+<td class="c lo">$2,360<br><span class="note">NONSTOP</span></td><td class="c lo">$2,219<br><span class="note">1-stop</span></td><td class="c na">—</td><td class="c na">—</td>
+<td class="c">$898</td><td class="tot">$3,913</td><td class="note">🏆 <b>best single fare</b> ($472/pp nonstop) · Ryanair-only access via STN</td></tr>
+
+<tr><td class="gw">🇩🇰 Copenhagen</td><td class="c mid">$2,645</td><td class="c na">—</td><td class="c na">—</td><td class="c na">—</td><td class="c">~$620</td><td class="tot">$3,810</td><td class="note">mid-pack</td></tr>
+<tr><td class="gw">🇮🇹 Milan</td><td class="c mid">$2,764</td><td class="c na">—</td><td class="c na">—</td><td class="c na">—</td><td class="c">~$620</td><td class="tot">$3,879</td><td class="note">mid-pack</td></tr>
+<tr><td class="gw">🇩🇪 Munich</td><td class="c mid">$2,827</td><td class="c na">—</td><td class="c na">—</td><td class="c na">—</td><td class="c">~$620</td><td class="tot">$3,962</td><td class="note">mid-pack</td></tr>
+<tr><td class="gw">🇨🇭 Zurich</td><td class="c mid">$2,837</td><td class="c na">—</td><td class="c na">—</td><td class="c na">—</td><td class="c">~$620</td><td class="tot">$4,032</td><td class="note">mid-pack</td></tr>
+
+<tr class="good"><td class="gw">🇮🇪 Dublin</td><td class="c na">—</td><td class="c mid">$2,794</td><td class="c mid">$2,760</td><td class="c mid">$2,760</td><td class="c">$815<br><span class="note">Ryanair ✅5 seats</span></td><td class="tot">$4,204</td><td class="note">US <b>preclearance</b> · the award-play gateway</td></tr>
+
+<tr class="bad"><td class="gw">🇭🇷 DBV direct</td><td class="c hi">$2,970<br><span class="note">4 pax only</span></td><td class="c na">—</td><td class="c na">—</td><td class="c na">—</td><td class="c">$0</td><td class="tot">$4,288</td><td class="note">5th seat doesn't exist in bucket</td></tr>
+
+<tr class="bad"><td class="gw">🇦🇹 Vienna</td><td class="c hi">$3,262</td><td class="c hi">$3,262</td><td class="c hi">$3,262</td><td class="c hi">$3,262</td><td class="c">$295<br><span class="note">Ryanair ✅5, AM</span></td><td class="tot">$4,437</td><td class="note">cheapest escape, worst transatlantic</td></tr>
+
+<tr class="bad"><td class="gw">🇮🇹 Rome FCO</td><td class="c hi">$5,024</td><td class="c mid">$2,890</td><td class="c mid">$2,890</td><td class="c mid">$2,890</td><td class="c">$1,359</td><td class="tot">$4,864</td><td class="note">⚠️ <b>$2,134 one-day cliff</b> — never Oct 26</td></tr>
+
+<tr class="bad"><td class="gw">🇬🇷 Athens</td><td class="c hi">$3,432</td><td class="c na">—</td><td class="c na">—</td><td class="c na">—</td><td class="c">~$620</td><td class="tot">$4,527</td><td class="note">ruled out</td></tr>
+<tr class="bad"><td class="gw">🇵🇹 Lisbon</td><td class="c mid">$2,855</td><td class="c na">—</td><td class="c na">—</td><td class="c na">—</td><td class="c">$1,100</td><td class="tot">$4,530</td><td class="note">positioning kills it</td></tr>
+<tr class="bad"><td class="gw">🇵🇱 Warsaw</td><td class="c hi">$3,692</td><td class="c na">—</td><td class="c hi">$4,971</td><td class="c na">—</td><td class="c">~$620</td><td class="tot">$5,247</td><td class="note">unstable, spikes</td></tr>
+
+<tr class="bad"><td class="gw">✈️ any → SMF</td><td class="c hi">$4,158+</td><td class="c hi">$4,216</td><td class="c hi">$4,216</td><td class="c na">no 5-seat</td><td class="c">—</td><td class="tot">$4,700</td><td class="note">⚠️ <b>+$1,800–1,900</b> vs SFO. Fly SFO, drive 90 min</td></tr>
+</table></div>
+
+<h2><span class="n">02</span>The two findings that matter more than any price</h2>
+<div class="card warn">
+<h3>⚠️ The Dubrovnik 4-passenger capacity wall</h3>
+Every <b>non-Ryanair</b> carrier out of DBV caps at 4 passengers. Tested explicitly: DBV→Zagreb prices at 1/2/3/4 pax ($128/$255/$382/$510) then returns <b>zero itineraries at 5</b>. Identical cliff on Frankfurt, Amsterdam, Paris, Madrid, Barcelona, Istanbul, Milan, Copenhagen, Athens, Munich, Zurich, Lisbon, Warsaw — and on the DBV→SFO through-ticket. It does not relax on Oct 27, Oct 28 or Nov 1.<br><br>
+<b>Only Ryanair returns 5 seats:</b> Vienna $295 · London STN $503 · London LGW $636 · Dublin $815 (all party-of-5).<br><br>
+<b>Consequence:</b> any legacy-carrier plan must be booked <b>4 + 1</b>. A single award ticket (Aeroplan / Flying Blue) sidesteps this entirely — a second reason those win.
+</div>
+<div class="card warn">
+<h3>⚠️ November is NOT cheaper on cash</h3>
+At true party-of-5 pricing, Nov 1–2 is a wash or worse: London identical both windows, Madrid identical, Amsterdam identical on all four dates, Barcelona identical. Paris is the lone exception — cheaper by <b>$66</b>. Extending a week buys ~$1,400–2,100 of extra lodging to save nothing.<br><br>
+<b>November is justified only by award availability</b> — never by cash fares.
+</div>
+
+<h2><span class="n">03</span>Award options — where the real savings are</h2>
+<div class="grid"><table>
+<tr><th>Play</th><th class="c">Cash, all 5</th><th class="c">Points</th><th>Cabin</th><th>Why</th></tr>
+<tr class="best"><td class="gw">★ Aeroplan single ticket DBV→SFO</td><td class="tot">~$515</td><td class="c">300,000 MR</td><td>Economy</td><td class="note"><b>Cash floor.</b> Zero carrier surcharges. One ticket door-to-door — no positioning, no hotel, no capacity wall</td></tr>
+<tr class="best"><td class="gw">★ AerClub economy DUB→SFO</td><td class="tot">~$1,652</td><td class="c">81,250 MR</td><td>Economy</td><td class="note">Uses only <b>15%</b> of your points. Fixed chart — Oct AND Nov 2026 verified 100% off-peak. EI61 nonstop, US preclearance</td></tr>
+<tr class="best"><td class="gw">★ AerClub split cabin</td><td class="tot">~$2,182</td><td class="c">173,750 MR</td><td><b>2 lie-flat + 3 econ</b></td><td class="note"><b>Best value at 3.47¢/pt.</b> You + Ashley flat, kids economy, same nonstop</td></tr>
+<tr class="good"><td class="gw">Flying Blue promo</td><td class="tot">~$1,400</td><td class="c">150,000 MR</td><td>Premium econ<br><span class="note">(recliner, NOT flat)</span></td><td class="note">DBV→AMS→SFO as ONE ticket (free intra-Europe connection). ⏰ <b>book by Aug 31</b></td></tr>
+<tr><td class="gw">AerClub all-business</td><td class="tot">~$2,977</td><td class="c">312,500 MR</td><td>All lie-flat</td><td class="note">Costs more cash than 5 economy tickets AND 312k points — rejected</td></tr>
+<tr class="bad"><td class="gw">KLM Flying Blue business (old plan)</td><td class="tot">~$1,950</td><td class="c">300,000 <span class="note">or 710,000 if &lt;5 saver seats</span></td><td>Lie-flat</td><td class="note">Dynamic floor, not a price. Reprices whole party to flex — exceeds your balance</td></tr>
+<tr class="bad"><td class="gw">Virgin Atlantic "50k Delta One"</td><td class="tot">~$6,000</td><td class="c">337–388k</td><td>Lie-flat</td><td class="note"><b>DEAD:</b> West Coast band is 67.5k not 50k · $1,000+/seat surcharges · Delta flies NO transatlantic to SFO</td></tr>
+</table></div>
+
+<div class="foot">Live-quoted Aug 2 2026 via Google Flights at true party-of-5 pricing + Ryanair farfnd API + official Aer Lingus AerClub 2026 peak/off-peak PDF. Positioning costs include the mandatory 4+1 split where applicable. · <a href="index.html">Trip Builder</a> · <a href="research.html">Full research</a></div>
+</div></body></html>
