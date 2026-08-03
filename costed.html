@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>12 trips, fully costed · Oct 25 – Nov 2</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--ink:#e6edf3;--dim:#8b949e;--faint:#5c6672;
+--gold:#d4a94e;--teal:#3fb6a8;--red:#e5534b;--green:#57ab5a;--line:#2d333b}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:44px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px}
+a{color:var(--teal);text-decoration:none}
+header{padding:26px 0 6px}
+h1{font-size:24px;line-height:1.12;margin:0 0 7px;letter-spacing:-.45px;font-weight:760}
+h1 em{font-style:normal;color:var(--gold)}
+.deck{color:var(--dim);font-size:13px;max-width:56ch}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:11px}
+.badge{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:3px 10px;font-size:11px;color:var(--dim)}
+.toggle{display:flex;gap:6px;margin:16px 0 4px;position:sticky;top:0;z-index:20;
+  background:rgba(13,17,23,.95);backdrop-filter:blur(8px);padding:10px 0}
+.tb{flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--dim);
+  font-size:13px;padding:9px 10px;cursor:pointer;font-family:inherit;font-weight:600}
+.tb[aria-pressed="true"]{border-color:var(--gold);color:var(--ink);background:#241f14}
+.tb small{display:block;font-size:10px;font-weight:400;color:var(--faint);margin-top:2px}
+.t{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin:11px 0;overflow:hidden}
+.t.top{border-color:var(--gold)}
+.th{padding:12px 14px 11px;cursor:pointer}
+.tr1{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rk{color:var(--faint);font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;flex:none;width:18px}
+.nm{font-size:16px;font-weight:710;letter-spacing:-.2px;flex:1;min-width:0}
+.big{font-variant-numeric:tabular-nums;font-weight:790;font-size:18px;color:var(--gold);white-space:nowrap}
+.big small{display:block;font-size:9.5px;color:var(--faint);font-weight:500;text-align:right;letter-spacing:.4px}
+.sub{font-size:11.5px;color:var(--dim);margin:4px 0 0 26px}
+/* the cost stack — the whole point */
+.stack{margin:10px 14px 0;border-top:1px solid var(--line);padding-top:9px}
+.sr{display:flex;justify-content:space-between;gap:10px;padding:4px 0;font-size:12px}
+.sr .k{color:var(--dim)}
+.sr .v{font-variant-numeric:tabular-nums;color:var(--ink);white-space:nowrap;font-weight:600}
+.sr.air .k{color:var(--teal)}
+.sr.tot{border-top:1px solid #21262d;margin-top:5px;padding-top:7px;font-weight:750}
+.sr.tot .v{color:var(--gold);font-size:14px}
+.pts{color:var(--teal);font-size:11px;font-weight:600}
+.mx{display:flex;margin:11px 0 0;border-top:1px solid var(--line)}
+.mi{flex:1;padding:8px 6px;text-align:center;border-right:1px solid var(--line)}
+.mi:last-child{border-right:0}
+.mi .k{font-size:9px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint)}
+.mi .v{font-size:13px;font-weight:680;margin-top:2px}
+.v.g{color:var(--green)}.v.a{color:var(--gold)}.v.r{color:var(--red)}
+.det{display:none;padding:2px 14px 14px;font-size:12.5px;color:var(--dim);line-height:1.5}
+.t.open .det{display:block}
+.det h4{margin:12px 0 4px;font-size:9.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--faint);font-weight:650}
+.det p{margin:0 0 7px}.det .hi{color:var(--ink)}
+.more{font-size:11px;color:var(--teal);padding:0 14px 12px;cursor:pointer}
+.t.open .more{display:none}
+.note{background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--teal);
+  border-radius:0 10px 10px 0;padding:12px 13px;margin:15px 0;font-size:12.5px;line-height:1.5;color:var(--dim)}
+.note b{color:var(--ink)}.note.warn{border-left-color:var(--red)}.note.gold{border-left-color:var(--gold)}
+.foot{color:var(--faint);font-size:11px;margin-top:30px;border-top:1px solid var(--line);padding-top:13px;line-height:1.55}
+</style></head><body><div class="wrap">
+
+<header>
+<h1>Twelve trips, <em>fully costed</em></h1>
+<div class="deck">Every option carries the whole stack: airfare out of Dubrovnik for five, lodging, activities, and the flight home — cash <em>and</em> the points alternative with its real fees. Toggle to re-rank.</div>
+<div class="badges">
+<span class="badge">Airfare live-pulled at 5-passenger occupancy</span>
+<span class="badge">Amex MR pool: 525,000</span>
+<span class="badge"><a href="whats-on.html">What's on ↗</a></span>
+</div>
+</header>
+
+<div class="toggle">
+  <button class="tb" data-m="cash" aria-pressed="true">Pay cash<small>rank by all-in cash</small></button>
+  <button class="tb" data-m="award" aria-pressed="false">Use points<small>rank by cash after award</small></button>
+</div>
+<div id="list"></div>
+
+<div class="note gold">
+<b>The toggle reorders the board, and that is the finding.</b> On cash, Plitvice wins at $5,800. On points, <b>Warsaw drops to $3,818</b> and Kraków to $4,040 — because Flying Blue prices Kraków and Warsaw at the same Amsterdam-to-SFO award level with the European feeder free, so a cheap Ryanair city still buys a full transatlantic award. Poland has expensive cash exits and cheap award exits. That inversion is worth about $2,700.
+</div>
+
+<div class="note gold">
+<b>The Kraków timing problem solved itself, and it pays you $345.</b> Sunset there on Nov 1 is 16:19, so I assumed you had to choose between the candle-lit cemeteries and a sane flight. You do not. The Nov 1 20:30 departure and the Nov 2 10:15 departure are <b>the same Copenhagen-to-SFO aircraft</b> — identical arrival in San Francisco. Flying the next morning is $345 cheaper, cuts the journey from 27h20 to 13h35, and swaps a night in Copenhagen airport for a night in your own apartment. Stay for the whole evening.
+</div>
+
+<div class="note warn">
+<b>Two corrections on Ireland.</b> Ryanair does <em>not</em> only sell five Dublin seats on Oct 25 — driving the booking engine at true 5-passenger occupancy shows availability on <b>Oct 25, 27, 28 and 30</b>. Oct 25 is the cheapest, not the only. And the fare I had been quoting as "$705" was actually €705, which is $814 today, and rises to about $1,033 once you add three checked bags and the paid seat Ryanair forces beside an 8-year-old. The Derry lodging crisis is also narrower than feared: Oct 28–30 shows 24 available properties. It is <b>exactly one night — Oct 31 — that is gone.</b>
+</div>
+
+<div class="note warn">
+<b>Lie-flat out of Dublin is effectively impossible.</b> Aer Lingus has zero business award inventory to SFO across five checked dates, and cash for the same seats is $17,327 for two. Repositioning to Heathrow for Virgin Upper Class costs 287,500 points plus $5,500 in surcharges. If two flat beds matter more than the destination, Ireland is the wrong week — the flat-bed research pointed at Amsterdam and London instead.
+</div>
+
+<div class="foot">
+Air pulled live from Google Flights and Ryanair's own API at true 5-passenger occupancy (4 adult-rate plus 1 child), Aug 3 2026. Lodging from live Booking.com searches with cards confirmed reading "2 adults, 3 children" — stay totals, not per-person. Award mile levels are program charts; <b>award SPACE is unverified everywhere</b> and needs a logged-in search before any transfer. Flying Blue fee estimates of roughly $175 per person are modelled, not quoted.
+<br><br><a href="whats-on.html">What's on in Europe</a> · <a href="scenarios.html">Scenario overview</a> · <a href="index.html">Flight cost builder</a>
+</div>
+</div>
+
+<script>
+const T=[
+ {n:'Plitvice Lakes + London exit',c:5800,a:4749,awe:8,pts:81250,top:true,
+  sub:'7 nights · autumn colour on the lakes · you are already in Croatia',
+  in_:362,inD:'Croatia Airlines DBV→Zagreb, 55 min, daily, $362 for five — 5 seats fine, it is not a Ryanair-only route',
+  lodge:146,nights:7,acts:990,
+  out:2546,outD:'Zagreb→London $340 + London→Dublin $182 nonstop (86 priced itineraries — very deep) + onward',
+  awP:81250,awC:1495,awD:'Aer Lingus AerClub 16,250 Avios each = 81,250 for five, $973 fees, plus $522 cash positioning to Dublin',
+  cpp:'1.29¢',verdict:'cash',
+  why:'The cheapest all-in on the board and the best awe-per-dollar on cash. Autumn is Plitvice at its most beautiful and its cheapest — shoulder pricing drops sharply after October. You are already in Croatia, so the inbound is a 55-minute hop rather than a European crossing.',
+  risk:'The award only returns 1.29¢ per point here because the cash exit is already cheap — pay cash. Zagreb itself is a terrible exit ($4,068), which is why this routes through London.'},
+
+ {n:'Kraków — All Saints, 7 nights',c:6527,a:4040,awe:9,pts:125000,top:true,
+  sub:'Oct 26 → Nov 2 · the full Nov 1 candle-sea, unhurried',
+  in_:331,inD:'Ryanair FR5916 Oct 26, 15:15→16:55, $191 for five (5 seats verified on Ryanair\'s API) + $140 for the forced Oct 25 Dubrovnik night — the route only flies Mon and Sat',
+  lodge:112,nights:7,acts:600,
+  out:3362,outD:'SAS Nov 2, KRK 10:15 → Copenhagen 45 min → SFO 14:50. 13h35, $3,362 for five. Cheapest of six Poland city-dates pulled',
+  awP:125000,awC:875,awD:'Flying Blue economy saver KRK→AMS→SFO, 25,000 each = 125,000 for five. The Kraków feeder is FREE under origin-destination pricing',
+  cpp:'1.99¢',verdict:'award',
+  why:'The strongest event on the board, and you get all of it: the candle build-up through the week, All Saints\' Eve at Salwator on Oct 31 (graves already lit, hillside view over the city), and the full Nov 1 evening at Rakowicki with the 7pm concert and late trams — then an unhurried morning flight. Wieliczka Salt Mine is the daytime anchor and a genuine kid hit.',
+  risk:'Rakowicki gets crowded on Nov 1 — one guide calls it "a bit of a circus"; New Podgórze is the quiet alternative. Nov 1 is a bank holiday so museums close. Award space unverified: book 2 and 3 as separate awards, because Flying Blue reprices the whole party up if one bucket cannot hold five.'},
+
+ {n:'Warsaw — All Saints, 6 nights',c:6617,a:3818,awe:7,pts:125000,top:true,
+  sub:'Powązki cemetery · CHEAPEST of all twelve once points are used',
+  in_:441,inD:'Ryanair to Kraków then train, or via Zagreb — $441 for five',
+  lodge:110,nights:6,acts:600,
+  out:3674,outD:'WAW→SFO Nov 1 $3,674 for five. Note Nov 2 spikes to $4,538 — the opposite of Kraków',
+  awP:125000,awC:875,awD:'Flying Blue WAW→AMS→SFO economy saver, 125,000 for five + ~$875. Same award level as Kraków',
+  cpp:'2.24¢',verdict:'award',
+  why:'The single cheapest trip here if you use points — $3,818 all-in for five. Powązki is its own spectacle and Warsaw lodging runs slightly under Kraków. Best cents-per-point on the board at 2.24¢.',
+  risk:'Powązki sits 4km out in a sprawling capital versus Rakowicki\'s 1.5km and one tram. Warsaw\'s Old Town is a post-1945 reconstruction, which reads differently to a teenager than Kraków\'s intact medieval core. Loses on the experience, wins on the arithmetic.'},
+
+ {n:'Kraków — the short version, 2 nights',c:6740,a:4253,awe:8,pts:125000,
+  sub:'Oct 31 arrival · priced honestly, with the Dubrovnik gap included',
+  in_:2531,inD:'Ryanair Oct 31 09:15, $191 — but SIX extra Dubrovnik nights at $390/night to fill the gap from your Oct 25 checkout. That is the real cost',
+  lodge:126,nights:2,acts:180,
+  out:3362,outD:'Same SAS Nov 2 morning flight, $3,362 for five',
+  awP:125000,awC:875,awD:'Same Flying Blue award, 125,000 + ~$875',
+  cpp:'1.99¢',verdict:'award',
+  why:'Catches All Saints\' Eve and Nov 1 with only two nights in Poland.',
+  risk:'A mirage. It costs $213 MORE than the full seven nights because Dubrovnik is pricier per night than Kraków, and you get five fewer days. It only makes sense if something else is already paying for Oct 25–31.'},
+
+ {n:'Scottish Highlands',c:6831,a:5306,awe:7.5,pts:81250,
+  sub:'Glencoe, Skye, the West Highland Line · 6 nights',
+  in_:624,inD:'$624 for five into Edinburgh',
+  lodge:239,nights:6,acts:1100,
+  out:2633,outD:'Edinburgh→Dublin $135 for five NONSTOP (24 priced itineraries — deep), then onward',
+  awP:81250,awC:1108,awD:'Aer Lingus AerClub DUB→SFO 16,250 each = 81,250 + $973 fees, plus $135 positioning',
+  cpp:'1.88¢',verdict:'award',
+  why:'The second-most-trustworthy award on the board, because the Aer Lingus economy space is the one thing verified with real seats. Autumn in the Highlands is genuinely spectacular and the West Highland Line is one of the great train journeys.',
+  risk:'Six nights of Highland lodging at $239 is the second-priciest bed cost here. Short daylight and real weather risk in late October.'},
+
+ {n:'Warsaw 5 nights + Kraków 2 — hybrid',c:6865,a:4378,awe:9,pts:125000,
+  sub:'Both cemeteries · keeps the cheap Nov 2 Kraków exit',
+  in_:551,inD:'$551 for five',
+  lodge:115,nights:7,acts:700,
+  out:3362,outD:'SAS Nov 2 from Kraków, $3,362 — the cheap exit',
+  awP:125000,awC:875,awD:'Flying Blue KRK→AMS→SFO, 125,000 + ~$875',
+  cpp:'1.99¢',verdict:'award',
+  why:'Powązki and Rakowicki in one trip, ending on Kraków\'s cheap Nov 2 morning flight. Highest awe score jointly with Kraków alone.',
+  risk:'A mid-trip move with luggage and five people, for a marginal experience gain over Kraków alone. $338 more than staying put.'},
+
+ {n:'Norwegian fjords — Oslo, Flåm, Bergen',c:7111,a:5829,awe:8.5,pts:125000,
+  sub:'7 nights · the best single day in the whole study',
+  in_:799,inD:'$799 for five into Oslo',
+  lodge:205,nights:7,acts:975,
+  out:2382,outD:'$2,382 for five from Bergen — one of the cheapest exits found anywhere',
+  awP:125000,awC:1100,awD:'Flying Blue BGO→AMS→SFO economy saver, 125,000 + ~$1,100',
+  cpp:'1.03¢',verdict:'cash',
+  why:'The Flåm railway plus the Nærøyfjord is the single best day in this entire study. And Bergen has a genuinely cheap exit at $2,382.',
+  risk:'The award returns only 1.03¢ because the cash exit is already so cheap — pay cash here. Late October daylight in Bergen is short and the weather is famously wet.'},
+
+ {n:'Madeira',c:7357,a:5196,awe:8,pts:125000,
+  sub:'Levadas, volcanic cliffs, whales · best weather odds of any option',
+  in_:1450,inD:'$1,450 for five — the worst inbound on the board',
+  lodge:136,nights:6,acts:950,
+  out:3261,outD:'$3,261 for five, expensive',
+  awP:125000,awC:1100,awD:'Flying Blue FNC→LIS/CDG→SFO, 125,000 + ~$1,100',
+  cpp:'1.73¢',verdict:'award',
+  why:'The best weather odds of anything here and the option points genuinely rescue — the award cuts $2,161 off because both the cash legs are expensive. Levada walks, the Monte toboggan, whales.',
+  risk:'Both airfares are bad. Without points this is a poor-value week; with them it is mid-table.'},
+
+ {n:'Switzerland — Jungfraujoch',c:7807,a:6697,awe:9,pts:125000,
+  sub:'The train to Europe\'s highest station · 6 nights',
+  in_:839,inD:'$839 for five into Zurich',
+  lodge:293,nights:6,acts:1400,
+  out:2210,outD:'$2,210 for five from Zurich — a cheap, short exit',
+  awP:125000,awC:1100,awD:'Flying Blue ZRH→CDG/AMS→SFO, 125,000 + ~$1,100',
+  cpp:'0.89¢',verdict:'cash',
+  why:'The highest raw awe on the board alongside Kraków. Jungfraujoch, Lauterbrunnen, the Matterhorn — scenery that stops a family talking.',
+  risk:'Switzerland is the most expensive country in Europe: $293/night lodging and $1,400 in activities. The award redeems at 0.89¢, BELOW the 1.0¢ Pay-with-Points floor — using points here is strictly worse than paying cash with them.'},
+
+ {n:'Dolomites',c:7874,a:6237,awe:6.5,pts:125000,
+  sub:'Lago di Braies, larch colour · 6 nights',
+  in_:928,inD:'$928 for five',
+  lodge:344,nights:6,acts:945,
+  out:2737,outD:'$2,737 for five from Venice',
+  awP:125000,awC:1100,awD:'Flying Blue VCE→AMS/CDG→SFO, 125,000 + ~$1,100',
+  cpp:'1.31¢',verdict:'cash',
+  why:'Autumn larch colour in the Dolomites is real.',
+  risk:'The infrastructure is shutting for the season — lifts and passes close in late October, which is why the awe score is only 6.5 despite the landscape. Highest lodging cost on the board at $344/night.'},
+
+ {n:'Derry Halloween — award exit',c:8389,a:6613,awe:8.5,pts:81250,
+  sub:'8-night Ireland week · Derry and Letterkenny split base',
+  in_:1033,inD:'Ryanair DBV→Dublin, $814 base plus bags and forced seating = ~$1,033. Available Oct 25, 27, 28 AND 30 — not Oct 25 only',
+  lodge:257,nights:8,acts:330,
+  out:2749,outD:'$2,749 for five connecting via Heathrow',
+  awP:81250,awC:973,awD:'Aer Lingus AerClub EI61 DUB→SFO nonstop, 16,250 Avios each, 6+ seats VERIFIED on Nov 1 and Nov 2 — the only confirmed award space anywhere in this research',
+  cpp:'2.14¢',verdict:'award',
+  why:'The only award on this page with verified seats. Derry Halloween is Europe\'s largest, its 40th anniversary, and the parade and fireworks are free. Púca at Samhain\'s birthplace is 45 minutes from Dublin.',
+  risk:'The most expensive trip here. Eight nights at $257 plus a 7-seater rental, fuel, tolls and cross-border insurance. Derry beds are gone for Oct 31 specifically — you would base in Letterkenny and drive. Púca\'s headline acts are 16+ and 18+, locking out your 8 and 13-year-old.'},
+
+ {n:'Derry Halloween — cash nonstop exit',c:9049,a:6613,awe:7.5,pts:81250,
+  sub:'Same week, paying cash for the same EI61 seats',
+  in_:1033,inD:'Same Ryanair inbound, ~$1,033',
+  lodge:257,nights:8,acts:330,
+  out:3409,outD:'EI61 DUB→SFO nonstop economy, $3,409 cash for five',
+  awP:81250,awC:973,awD:'The identical flight for 81,250 Avios + $973',
+  cpp:'2.99¢',verdict:'award',
+  why:'Shown only to make the comparison explicit.',
+  risk:'Paying $3,409 cash for the exact seats that 81,250 Avios buys for $973 is a $2,436 mistake. If you go to Ireland, use the award.'},
+];
+let mode='cash';
+const fmt=n=>'$'+Math.round(n).toLocaleString();
+const fk=n=>Math.round(n/1000)+'k';
+function card(t,i){
+  const total = mode==='cash'? t.c : t.a;
+  const useAward = mode==='award';
+  const food = Math.max(0, total - (useAward ? (t.in_+t.lodge*t.nights+t.acts+t.awC) : (t.in_+t.lodge*t.nights+t.acts+t.out)));
+  const ak = t.verdict==='award'?'g':'a';
+  return `<article class="t ${t.top?'top':''}">
+   <div class="th">
+     <div class="tr1"><span class="rk">${i+1}</span><span class="nm">${t.n}</span>
+       <span class="big">${fmt(total)}${useAward&&t.awP?`<small>+ ${fk(t.awP)} points</small>`:'<small>all-in, 5 people</small>'}</span></div>
+     <div class="sub">${t.sub}</div>
+   </div>
+   <div class="stack">
+     <div class="sr air"><span class="k">✈ Dubrovnik → there, 5 pax</span><span class="v">${fmt(t.in_)}</span></div>
+     <div class="sr"><span class="k">Lodging · ${fmt(t.lodge)}/night × ${t.nights}</span><span class="v">${fmt(t.lodge*t.nights)}</span></div>
+     <div class="sr"><span class="k">Activities, 5 pax</span><span class="v">${fmt(t.acts)}</span></div>
+     ${food>50?`<div class="sr"><span class="k">Food &amp; local transport</span><span class="v">${fmt(food)}</span></div>`:''}
+     <div class="sr air"><span class="k">✈ Home to SFO, 5 pax</span><span class="v">${useAward?`<span class="pts">${fk(t.awP)} pts</span> + ${fmt(t.awC)}`:fmt(t.out)}</span></div>
+     <div class="sr tot"><span class="k">TOTAL CASH</span><span class="v">${fmt(total)}</span></div>
+   </div>
+   <div class="mx">
+     <div class="mi"><div class="k">Awe</div><div class="v ${t.awe>=8.5?'g':t.awe>=7?'a':'r'}">${t.awe}/10</div></div>
+     <div class="mi"><div class="k">Points value</div><div class="v ${ak}">${t.cpp}</div></div>
+     <div class="mi"><div class="k">Better deal</div><div class="v ${ak}">${t.verdict==='award'?'points':'cash'}</div></div>
+   </div>
+   <div class="more">Tap for detail ↓</div>
+   <div class="det">
+     <h4>Why</h4><p class="hi">${t.why}</p>
+     <h4>The catch</h4><p>${t.risk}</p>
+     <h4>Getting there</h4><p>${t.inD}</p>
+     <h4>Getting home — cash</h4><p>${t.outD}</p>
+     <h4>Getting home — points</h4><p>${t.awD}</p>
+   </div></article>`;
+}
+function draw(){
+  const arr=[...T].sort((a,b)=> mode==='cash'? a.c-b.c : a.a-b.a);
+  document.getElementById('list').innerHTML=arr.map(card).join('');
+  document.querySelectorAll('.t').forEach(c=>{
+    c.querySelector('.th').addEventListener('click',()=>c.classList.toggle('open'));
+    c.querySelector('.more').addEventListener('click',()=>c.classList.add('open'));
+  });
+}
+document.querySelectorAll('.tb').forEach(b=>b.addEventListener('click',()=>{
+  mode=b.dataset.m;
+  document.querySelectorAll('.tb').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  draw();
+}));
+draw();
+</script>
+</body></html>
