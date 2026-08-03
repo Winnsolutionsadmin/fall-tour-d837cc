@@ -40,15 +40,19 @@ h1{font-size:25px;line-height:1.15;letter-spacing:-.5px;font-weight:700}
 .trap h3{font-size:14px;font-weight:700;letter-spacing:-.2px;margin-bottom:6px;color:var(--amb)}
 .trap p{font-size:12.5px;color:var(--dim);line-height:1.55}
 .trap p b{color:var(--tx)}
-.cal{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;margin:12px 0 4px}
-.cal div{text-align:center;padding:6px 1px;border-radius:6px;min-width:0;
-  background:#0e1218;border:1px solid var(--line);font-size:9px;color:var(--dim2)}
-.cal div b{display:block;font-size:13px;color:var(--dim);margin-bottom:1px}
-.cal div.yes{border-color:var(--grn);background:#0d1f18}
-.cal div.yes b{color:var(--grn)}
-.cal div.yes .m{color:var(--grn)}
-.cal div.no{opacity:.45}
-.cal .m{font-size:9px;margin-top:3px;display:block}
+.cal{margin:13px 0 10px;background:#0b0e13;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.cal .r{display:flex;align-items:center;gap:8px;padding:7px 10px;border-bottom:1px solid #171d26;font-size:12px}
+.cal .r:last-child{border-bottom:0}
+.cal .dt{flex:0 0 76px;color:var(--dim);font-variant-numeric:tabular-nums;font-size:11.5px;white-space:nowrap}
+.cal .fl{flex:1;color:var(--dim2);min-width:0}
+.cal .fl b{color:var(--tx);font-variant-numeric:tabular-nums}
+.cal .r.krk{background:#0d1f18}
+.cal .r.krk .dt{color:var(--grn);font-weight:700}
+.cal .r.krk .fl b{color:var(--grn)}
+.cal .r.none .fl{color:#4a5361;font-style:italic}
+.cal .r.tgt{background:#2a1a12}
+.cal .r.tgt .dt{color:var(--amb);font-weight:700}
+.calsrc{font-size:10.5px;color:var(--dim2);margin:-4px 0 8px;line-height:1.5}
 
 /* ── section ── */
 h2.sec{font-size:12px;text-transform:uppercase;letter-spacing:1.3px;color:var(--dim2);
@@ -189,16 +193,18 @@ footer{margin:36px 0 40px;padding-top:16px;border-top:1px solid var(--line);
 <script>
 /* ═══════ DATA ═══════ */
 
-/* Oct 2026 calendar for DBV departures — which days actually have a flight */
+/* Every Ryanair departure out of Dubrovnik, Oct 25 - Nov 2 2026.
+   Pulled 2026-08-03 from services-api.ryanair.com/timtbl/3 — HTTP 200, unmodified. */
 const CAL = [
-  {d:25,w:'Sun',ok:['VIE'],dst:'DST ends'},
-  {d:26,w:'Mon',ok:['KRK','STN']},
-  {d:27,w:'Tue',ok:['VIE','STN']},
-  {d:28,w:'Wed',ok:['STN']},
-  {d:29,w:'Thu',ok:['STN']},
-  {d:30,w:'Fri',ok:['VIE','STN']},
-  {d:31,w:'Sat',ok:['KRK','STN']},
-  {d:1,w:'Sun',ok:['VIE'],mo:'Nov'},
+  {d:'Sun Oct 25', f:'FR9756 <b>10:00</b> → Vienna', k:''},
+  {d:'Mon Oct 26', f:'FR5916 <b>15:15 → Kraków 16:55</b>', k:'krk'},
+  {d:'Tue Oct 27', f:'FR9756 <b>17:20</b> → Vienna', k:''},
+  {d:'Wed Oct 28', f:'nothing', k:'none'},
+  {d:'Thu Oct 29', f:'nothing', k:'none'},
+  {d:'Fri Oct 30', f:'FR9756 <b>21:35</b> → Vienna only — no Kraków, no Warsaw', k:'tgt'},
+  {d:'Sat Oct 31', f:'FR5916 <b>09:15 → Kraków 10:55</b>', k:'krk'},
+  {d:'Sun Nov 1', f:'nothing to Kraków', k:'none'},
+  {d:'Mon Nov 2', f:'FR5916 15:15 → Kraków — lands after your SFO flight has gone', k:''},
 ];
 
 /* seat config renderer spec:
@@ -273,11 +279,11 @@ function planHTML(p){
 function calHTML(){
   let h='<div class="cal">';
   CAL.forEach(c=>{
-    const has=c.ok.includes('KRK');
-    h+='<div class="'+(has?'yes':'no')+'"><b>'+c.d+'</b>'+c.w
-      +'<span class="m">'+(has?'KRK':(c.ok.length?c.ok[0]:'—'))+'</span></div>';
+    h+='<div class="r '+c.k+'"><div class="dt">'+c.d+'</div><div class="fl">'+c.f+'</div></div>';
   });
-  h+='</div>';
+  h+='</div><div class="calsrc">Every Ryanair departure out of Dubrovnik in your window, pulled '
+   +'2026-08-03 straight from Ryanair\'s own timetable API (HTTP 200, unmodified). Dubrovnik→Warsaw '
+   +'returns an empty schedule — Ryanair does not fly it at all.</div>';
   return h;
 }
 
