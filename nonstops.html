@@ -369,6 +369,13 @@ function boardHTML(){
     PV.rows.forEach(r=>{h+='<div class="pr"><div class="r1"><span class="rt">'+r.r+'</span><span class="pp">'+r.p+'</span></div><div class="rd">'+r.d+'</div>'+(r.n?'<div class="rn">'+r.n+'</div>':'')+'</div>'});
     h+='<div class="pf">'+PV.foot+'</div></div>';
   }
+  const CR=D.croatia;
+  if(CR){
+    h+='<div class="pivot" style="background:linear-gradient(180deg,#231a10,#171208);border-color:#5a4a1e"><h2 style="color:var(--amb)">'+CR.h+'</h2>';
+    h+='<p><b style="color:#fff">'+CR.score+'.</b> '+CR.body+'</p>';
+    CR.rows.forEach(r=>{h+='<div class="pr" style="border-top-color:#352a15"><div class="r1"><span class="rt">'+r.r+'</span><span class="pp" style="color:var(--amb)">'+r.s+'</span></div><div class="rd" style="color:#a89a7d">'+r.d+'</div></div>'});
+    h+='<div class="pf" style="color:#94875f">'+CR.foot+'</div></div>';
+  }
   h+='<div class="bd">';
   h+='<div class="bdtog">'
     +'<button class="'+(bdMode==='cash'?'on':'')+'" onclick="bdSet(\'cash\')">Cheapest cash</button>'
