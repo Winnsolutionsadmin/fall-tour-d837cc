@@ -1059,5 +1059,303 @@ window.__NS__ = {
    "prog": "KrisFlyer",
    "allin": 9055
   }
+ ],
+ "board2": [
+  {
+   "city": "London",
+   "fun": 9,
+   "posN": "Ryanair STN Oct 25 verified · Oct 27/28/30 too · easyJet LGW daily",
+   "exitN": "BA/VS/UA up to 7x daily · Nov 1/2 quoted-live",
+   "pos": 470,
+   "cash": {
+    "e": 2685,
+    "m": 8091,
+    "b": 15931
+   },
+   "pts": {
+    "e": {
+     "k": 165000,
+     "c": 1703,
+     "cpp": 0.6
+    },
+    "m": {
+     "k": 297000,
+     "c": 2363,
+     "cpp": 1.9
+    },
+    "b": {
+     "k": 495000,
+     "c": 3353,
+     "cpp": 2.5
+    }
+   },
+   "ver": false,
+   "bestCfg": "b",
+   "bestCpp": 2.5
+  },
+  {
+   "city": "Paris (Orly)",
+   "fun": 9,
+   "posN": "Transavia Oct 27 quoted-live (also Oct 25/29)",
+   "exitN": "French Bee nonstop · Nov 1 ONLY in window",
+   "pos": 415,
+   "cash": {
+    "e": 2830,
+    "m": 4674,
+    "b": 3915
+   },
+   "pts": {
+    "e": null,
+    "m": null,
+    "b": null
+   },
+   "ver": false,
+   "bestCfg": null,
+   "bestCpp": 0
+  },
+  {
+   "city": "Dublin",
+   "fun": 8,
+   "posN": "EI477 direct (est) · Ryanair FR3881 Oct 25 $766 verified",
+   "exitN": "EI61 nonstop · Tue Nov 3 cheapest ($1,850 Nov 1)",
+   "pos": 650,
+   "cash": {
+    "e": 2350,
+    "m": 6575,
+    "b": 11150
+   },
+   "pts": {
+    "e": {
+     "k": 81250,
+     "c": 1625,
+     "cpp": 0.9
+    },
+    "m": {
+     "k": 173750,
+     "c": 1735,
+     "cpp": 2.8
+    },
+    "b": {
+     "k": 312500,
+     "c": 1900,
+     "cpp": 3.0
+    }
+   },
+   "ver": true,
+   "bestCfg": "b",
+   "bestCpp": 3.0
+  },
+  {
+   "city": "Istanbul",
+   "fun": 8,
+   "posN": "no nonstop (TK ends Oct 24) · 1-stop est",
+   "exitN": "TK79 A350 · flat all 3 days · biz dips $1.9k on Nov 2",
+   "pos": 900,
+   "cash": {
+    "e": 4361,
+    "m": 11803,
+    "b": 15400
+   },
+   "pts": {
+    "e": null,
+    "m": null,
+    "b": null
+   },
+   "ver": false,
+   "bestCfg": null,
+   "bestCpp": 0
+  },
+  {
+   "city": "Paris (CDG)",
+   "fun": 8,
+   "posN": "Transavia to Orly + cross-town · AF direct Oct 25 $1,584",
+   "exitN": "AF080 nonstop · identical all 3 days",
+   "pos": 475,
+   "cash": {
+    "e": 6130,
+    "m": 16618,
+    "b": 17475
+   },
+   "pts": {
+    "e": {
+     "k": 125000,
+     "c": 1725,
+     "cpp": 3.5
+    },
+    "m": {
+     "k": 195000,
+     "c": 2225,
+     "cpp": 7.4
+    },
+    "b": {
+     "k": 300000,
+     "c": 2975,
+     "cpp": 4.8
+    }
+   },
+   "ver": false,
+   "bestCfg": "m",
+   "bestCpp": 7.4
+  },
+  {
+   "city": "Copenhagen",
+   "fun": 8,
+   "posN": "no nonstop (dies Oct 24) · 1-stop Air Serbia Oct 25",
+   "exitN": "SK935 A350 · Nov 3 cheapest by $77",
+   "pos": 746,
+   "cash": {
+    "e": 7130,
+    "m": 16576,
+    "b": 15246
+   },
+   "pts": {
+    "e": {
+     "k": 219000,
+     "c": 1046,
+     "cpp": 2.8
+    },
+    "m": {
+     "k": 341600,
+     "c": 1166,
+     "cpp": 4.5
+    },
+    "b": {
+     "k": 525500,
+     "c": 1296,
+     "cpp": 2.7
+    }
+   },
+   "ver": false,
+   "bestCfg": "m",
+   "bestCpp": 4.5
+  },
+  {
+   "city": "Frankfurt",
+   "fun": 5,
+   "posN": "Discover nonstop Oct 26 quoted-live · route is year-round",
+   "exitN": "LH/UA daily · flat all 3 days",
+   "pos": 1249,
+   "cash": {
+    "e": 7381,
+    "m": 22759,
+    "b": 44055
+   },
+   "pts": {
+    "e": {
+     "k": 212500,
+     "c": 1949,
+     "cpp": 2.6
+    },
+    "m": {
+     "k": 277500,
+     "c": 1949,
+     "cpp": 7.5
+    },
+    "b": {
+     "k": 375000,
+     "c": 1974,
+     "cpp": 11.2
+    }
+   },
+   "ver": false,
+   "bestCfg": "b",
+   "bestCpp": 11.2
+  },
+  {
+   "city": "Munich",
+   "fun": 7,
+   "posN": "LH nonstop Oct 26 quoted-live ($1,378 Oct 25 · dark Oct 27)",
+   "exitN": "LH458 A350 daily · flat all 3 days",
+   "pos": 919,
+   "cash": {
+    "e": 8336,
+    "m": 14479,
+    "b": 30919
+   },
+   "pts": {
+    "e": {
+     "k": 200000,
+     "c": 1469,
+     "cpp": 3.4
+    },
+    "m": {
+     "k": 270000,
+     "c": 1469,
+     "cpp": 4.8
+    },
+    "b": {
+     "k": 375000,
+     "c": 1469,
+     "cpp": 7.9
+    }
+   },
+   "ver": false,
+   "bestCfg": "b",
+   "bestCpp": 7.9
+  },
+  {
+   "city": "Amsterdam",
+   "fun": 7,
+   "posN": "KLM direct Oct 25 only $1,272 · 1-stop Air Serbia Oct 26 $691",
+   "exitN": "KL605 787-10 · Nov 3 cheapest",
+   "pos": 691,
+   "cash": {
+    "e": 8593,
+    "m": 16420,
+    "b": 27331
+   },
+   "pts": {
+    "e": {
+     "k": 125000,
+     "c": 1491,
+     "cpp": 5.7
+    },
+    "m": {
+     "k": 195000,
+     "c": 1831,
+     "cpp": 7.5
+    },
+    "b": {
+     "k": 300000,
+     "c": 2341,
+     "cpp": 8.3
+    }
+   },
+   "ver": false,
+   "bestCfg": "b",
+   "bestCpp": 8.3
+  },
+  {
+   "city": "Zurich",
+   "fun": 7,
+   "posN": "OU/LX nonstop Oct 29 quoted-live (Oct 25 $1,089 · season's last)",
+   "exitN": "LX38 777 · Nov 1/2 only, no fare Nov 3",
+   "pos": 809,
+   "cash": {
+    "e": 9055,
+    "m": 19075,
+    "b": 19809
+   },
+   "pts": {
+    "e": {
+     "k": 102500,
+     "c": 1509,
+     "cpp": 7.4
+    },
+    "m": {
+     "k": 147500,
+     "c": 1829,
+     "cpp": 11.7
+    },
+    "b": {
+     "k": 215000,
+     "c": 2309,
+     "cpp": 8.1
+    }
+   },
+   "ver": false,
+   "bestCfg": "m",
+   "bestCpp": 11.7
+  }
  ]
 };
