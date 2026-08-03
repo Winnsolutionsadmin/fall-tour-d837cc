@@ -2154,5 +2154,42 @@ window.__NS__ = {
     "note": "LX38 777: Thompson staggered, fully flat, but rows alternate 1-2-2/2-2-1 so NOT every seat has aisle access. The 12 solo 'throne' seats (4A/5K/7A/8K…) are the prize — assign them at booking."
    }
   }
- ]
+ ],
+ "pivot": {
+  "h": "The Zagreb pivot — end the Croatia leg in Zagreb, not Dubrovnik",
+  "body": "Dubrovnik's routes die Oct 24–25, but ZAGREB's Ryanair network runs straight through your window and into November — verified off Ryanair's own API. If the family road-trips Dubrovnik → Split → Plitvice → Zagreb (which IS the vacation), the positioning flight collapses to a fraction of every number above:",
+  "rows": [
+   {
+    "r": "Zagreb → Dublin",
+    "d": "FR2191/FR8911 · near-DAILY: Oct 25/26/27/29/30/31 AND Nov 1/2/3",
+    "p": "$417–479 for 5 (Oct 27 €77pp)",
+    "n": "New Dublin all-in: ~$2,120 — cheapest journey in the entire study"
+   },
+   {
+    "r": "Zagreb → London Stansted",
+    "d": "FR2189 + FR3104 · TWICE daily, every day of the window",
+    "p": "$211 for 5 on Oct 28 (€39pp)",
+    "n": "New London all-in: ~$2,430"
+   },
+   {
+    "r": "Zagreb → Paris Beauvais",
+    "d": "FR7950 · Oct 25/26/27/29/30 + Nov 1/2",
+    "p": "$184 for 5 on Oct 27 (€34pp)",
+    "n": "Cheapest positioning flight found anywhere, any route"
+   },
+   {
+    "r": "Zagreb → Eindhoven (for Amsterdam)",
+    "d": "FR5868 · Oct 25, Oct 30, Nov 1",
+    "p": "$162 for 5 on Oct 30 (€30pp) + ~$120 train to Amsterdam",
+    "n": "Positioning solved; the KLM exit fare is still the problem"
+   },
+   {
+    "r": "Split → anywhere",
+    "d": "Ryanair SPU serves only Dublin + Rome and BOTH are dark Oct 25–Nov 3",
+    "p": "—",
+    "n": "Split is a stop on the road, not an exit. Zagreb is the exit."
+   }
+  ],
+  "foot": "Getting to Zagreb: Croatia Airlines DBV→ZAG $362/5 (55 min, daily), or drive it as the trip itself — Split and Plitvice in autumn colour are on the way. All Ryanair fares above are per-day API pulls at adult rate; add ~$100–180 for bags across 5."
+ }
 };
