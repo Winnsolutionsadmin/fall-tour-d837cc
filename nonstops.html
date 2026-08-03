@@ -431,7 +431,7 @@ function boardHTML(){
       const c=r.cfg[k]; const p=c.pts;
       h+='<div'+(bdMode==='pts'&&r.bestCfg===k&&p?' class="bv"':'')+'><div class="k">'+NAMES[k]+'</div>'
         +'<div class="v">'+money(c.cash)+'<small>pay cash</small></div>'
-        +(p?'<div class="pv"><small style="display:block;font-size:8px;text-transform:uppercase;letter-spacing:.5px;color:#6b628a">or pay points</small><b>'+(p.k/1000).toFixed(0)+'k</b> + '+money(p.c)+' <span class="cp'+(p.cpp>=5?' hot':'')+'">'+p.cpp+'¢/pt</span></div>'
+        +(p?'<div class="pv"><small style="display:block;font-size:8px;text-transform:uppercase;letter-spacing:.5px;color:#6b628a">or pay points</small><b>'+(p.k/1000).toFixed(0)+'k</b> + '+money(p.c)+(p.cpp!=null?' <span class="cp'+(p.cpp>=5?' hot':'')+'">'+p.cpp+'¢/pt</span>':' <span style="color:var(--red);font-size:9px;font-weight:700">NO SAVER SPACE</span>')+'</div>'
            :'<div class="pv none">no points path</div>')
         +'</div>';
     });
