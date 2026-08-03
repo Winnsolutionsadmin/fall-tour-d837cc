@@ -8,7 +8,7 @@
   --bg:#0d1117; --panel:#161b22; --panel2:#1c2330; --ink:#e6edf3; --dim:#8b949e; --faint:#5c6672;
   --gold:#d4a94e; --teal:#3fb6a8; --red:#e5534b; --line:#2d333b;
   /* city encoding — one hue per place, constant everywhere */
-  --c-dbv:#3fb6a8; --c-dub:#57ab5a; --c-vie:#d4a94e; --c-krk:#a87fd4; --c-luc:#e5734b; --c-lon:#7f9cd4; --c-air:#39414d;
+  --c-dbv:#3fb6a8; --c-dub:#57ab5a; --c-vie:#d4a94e; --c-krk:#a87fd4; --c-luc:#e5734b; --c-lon:#7f9cd4; --c-der:#e5734b; --c-air:#39414d;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;background:var(--bg);color:var(--ink);
@@ -115,7 +115,7 @@ a{color:var(--teal);text-decoration:none}
 
 <header>
 <h1>How the trip <em>ends</em></h1>
-<div class="deck">Six ways to get from Dubrovnik to the Aer Lingus flight home. Same start, same finish — the difference is where you sleep, what you spend, and where you are on Halloween.</div>
+<div class="deck">Six ways to get from Dubrovnik to the Aer Lingus flight home. Same start, same finish — the difference is where you sleep, what you spend, and where you are on Halloween. Research resolved two things that reorder everything: <b style="color:var(--ink)">Derry hosts Europe's largest Halloween festival</b>, and <b style="color:var(--ink)">Zagreb breaks the five-seat wall</b> that Dubrovnik imposes.</div>
 <div class="meta">
 <span class="tag">Ryanair fares quoted live at 5 passengers</span>
 <span class="tag">Lodging estimated</span>
@@ -127,8 +127,7 @@ a{color:var(--teal);text-decoration:none}
 <b><i class="sw" style="background:var(--c-dbv)"></i>Dubrovnik</b>
 <b><i class="sw" style="background:var(--c-dub)"></i>Dublin</b>
 <b><i class="sw" style="background:var(--c-vie)"></i>Vienna</b>
-<b><i class="sw" style="background:var(--c-krk)"></i>Kraków</b>
-<b><i class="sw" style="background:var(--c-luc)"></i>Tuscany</b>
+<b><i class="sw" style="background:var(--c-der)"></i>Derry</b>
 <b><i class="sw" style="background:var(--c-air)"></i>Travel day</b>
 </div>
 
@@ -142,7 +141,13 @@ a{color:var(--teal);text-decoration:none}
 <div id="list"></div>
 
 <div class="note pending">
-<b>Still being verified — two things could reorder this.</b> Whether Dublin actually has Halloween-night programming beyond the Bram Stoker Festival (which is confirmed Oct 23–26, so it's off the table either way), and whether the Dubrovnik→Split coastal ferry still runs in late October — earlier evidence suggests its final 2026 sailing may be Oct 18, which would rule out a boat leg entirely. Also checking whether departing from Zagreb breaks the 4-passenger wall that Dubrovnik imposes.
+<b>Derry Halloween, Oct 28–31, is the find.</b> Europe's largest Halloween festival, 40th anniversary, 100,000+ attendees — 70 miles from Dublin by coach. Your two target nights are its two best: the <b>City of Bones</b> illuminated walled-city trail on Oct 30 (£1 a head, a new 2026 crowd-control pilot) and the <b>Carnival Parade at 7pm plus fireworks over the River Foyle at 8:15pm</b> on Oct 31 — both free. There's a Little Horrors children's strand for the eight-year-old. One hard rule: there is <b>no late-night transport back to Dublin on Oct 31</b>, so if you watch the fireworks you sleep in Derry. Derry lodging for five on those nights books out months ahead and is the single biggest risk in this plan.
+</div>
+<div class="note">
+<b>Three corrections from this pass.</b> Dublin city has <b>no Halloween parade</b> — a 2024 AI-generated listing sent crowds to O'Connell Street for an event that never existed, and several "Dublin Halloween 2026" pages still repeat it. The Dubrovnik ferry <b>is</b> alive — my earlier Oct 18 scare was the wrong boat (TP Line 654 ends then; Krilo Star and TP Line 842 run daily through Oct 31), though it's a scenic option rather than a saving. And <b>Split is a trap</b>: Ryanair has zero departures from Split to Dublin, Stansted, Vienna or Bergamo in the entire window, and Aer Lingus has nothing to Split until April 2027. Split closes its Northern European network the day winter starts.
+</div>
+<div class="note">
+<b>Lucca is blocked, not rejected.</b> The 60th anniversary would be the highest-ceiling experience on the board for the teenagers — but tickets are in a dead window (early bird closed Jul 27, general sale opens Sept 1) and Lucca's historic centre is 99% booked for Oct 31–Nov 1, with a party of five effectively unavailable. Revisit in September if you want it.
 </div>
 
 <div class="note">
@@ -157,69 +162,69 @@ Transport fares pulled live from Ryanair's fare API at five passengers, 2 Aug 20
 
 <script>
 const S=[
- {id:'vie', name:'Vienna reroute', pick:true,
+ {id:'derryzag', name:'Derry via Zagreb', pick:true,
+  cost:[940,1273], costLo:2100, costHi:2400,
+  nights:[['dbv',4],['air',1],['dub',1],['der',2],['dub',1]],
+  hw:'Derry — parade + fireworks', hwq:'good',
+  exp:9, risk:'low', riskNote:'Zagreb has real capacity',
+  verdict:['best','Best experience, most cheap nights, and it breaks the seat wall'],
+  legs:[['Croatia Air DBV→Zagreb, 55 min','$362'],['Ryanair Zagreb→Dublin','$467'],['Coach Dublin↔Derry, 5 pax return','~$110'],['Dubrovnik, 4 nights','~$400'],['Dublin, 2 nights','~$470'],['Derry, 2 nights','~$400']],
+  why:'Zagreb is a Ryanair base — five to six Dublin flights a week against Dubrovnik\'s two. A real five-passenger booking priced Zagreb→Dublin at $467 total, $1,183 under the same-day Dubrovnik fare. It also opens Oct 26, 29 and 31 as departure days that Dubrovnik simply cannot serve. You keep four more nights at Dubrovnik prices and still land in Derry for both headline nights.',
+  against:'Two flights instead of one, with a Zagreb connection in the middle. The 06:40 Dubrovnik departure is early with an eight-year-old.'},
+
+ {id:'derrydirect', name:'Derry via Oct 25 direct', pick:true,
+  cost:[923,1823], costLo:2600, costHi:2950,
+  nights:[['dub',5],['der',2],['dub',1]],
+  hw:'Derry — parade + fireworks', hwq:'good',
+  exp:9, risk:'low', riskNote:'8-day buffer, one ticket',
+  verdict:['best','Adds the tail of Bram Stoker; simplest of the strong options'],
+  legs:[['Ryanair DBV→Dublin, Oct 25','$813'],['Coach Dublin↔Derry, 5 pax return','~$110'],['Dublin, 6 nights','~$1,423'],['Derry, 2 nights','~$400']],
+  why:'One flight, the cheapest of the three Dublin fares, and the biggest safety margin. Landing Oct 25 catches the final two days of the Bram Stoker Festival — which I had written off as unreachable — then Derry for Halloween itself.',
+  against:'Six Dublin nights at $166–482 instead of Dubrovnik nights at $78–120. You arrive 11:05pm into marathon and bank-holiday weekend, the busiest night of the month.'},
+
+ {id:'oct30', name:'Direct, Oct 30', pick:false,
+  cost:[1760,1665], costLo:2900,costHi:3425,
+  nights:[['dbv',5],['dub',1],['der',1],['dub',1]],
+  hw:'Derry — if you go straight up', hwq:'good',
+  exp:7, risk:'med', riskNote:'lands 14:15 Oct 30',
+  verdict:['mid','Works, but you pay $837 extra for the same Halloween'],
+  legs:[['Ryanair DBV→Dublin, Oct 30, 11:50','$1,650'],['Coach to Derry','~$110'],['Dubrovnik, 5 nights','~$500'],['Derry + Dublin, 3 nights','~$1,165']],
+  why:'One ticket, civilised 11:50am departure, five extra Dubrovnik nights, and you can still reach Derry for the Oct 31 parade.',
+  against:'Friday Oct 30 is the peak return day of the Irish school mid-term, so the fare doubles to $1,650. You miss the Oct 30 City of Bones trail while in transit, and lose Bram Stoker entirely.'},
+
+ {id:'vie', name:'Vienna reroute', pick:false,
   cost:[637,1037], costLo:1484, costHi:1844,
   nights:[['dbv',5],['air',1],['vie',2],['dub',1]],
-  hw:'Vienna', hwq:'meh',
-  exp:6, risk:'high', riskNote:'5 seats exactly',
-  verdict:['best','Cheapest by a wide margin — but Halloween lands in a country that barely marks it'],
-  legs:[['Ryanair DBV→Vienna, Fri Oct 30, 21:35','$199'],['Ryanair Vienna→Dublin, Sun Nov 1, 11:10','$438'],['Dubrovnik, 5 nights','~$500'],['Vienna, 2 nights','~$260'],['Dublin, 1 night','~$223']],
-  why:'On the same day Ryanair wants $1,650 to fly five people to Dublin, it wants $199 to fly them to Vienna. The stopover is not a luxury here — it is the cheap way through, and it still buys five extra Dubrovnik nights.',
-  against:'Both legs have exactly five seats left. There is no rebooking margin, the tickets are unprotected against each other, and you arrive in Vienna at 11pm with an eight-year-old. Austria does not really do Halloween, and Nov 1 is All Saints — a solemn public holiday when much of the city closes.'},
+  hw:'Vienna — barely marked', hwq:'bad',
+  exp:4, risk:'high', riskNote:'5 seats exactly',
+  verdict:['warn','Cheapest on paper — spends Halloween in the wrong country'],
+  legs:[['Ryanair DBV→Vienna, Oct 30','$199'],['Ryanair Vienna→Dublin, Nov 1','$438'],['Dubrovnik, 5 nights','~$500'],['Vienna, 2 nights','~$260'],['Dublin, 1 night','~$223']],
+  why:'The cheapest routing found: $199 to fly five people to Vienna on the day Dublin costs $1,650.',
+  against:'Austria barely marks Halloween — Prater\'s effort rates 4/10 — and Nov 1 is All Saints, a public holiday when much of Vienna closes. Both Ryanair legs have exactly five seats, so there is no rebooking margin. You save money and forfeit the reason for going.'},
+
+ {id:'base', name:'Dublin only, Oct 25', pick:false,
+  cost:[813,2700], costLo:2601, costHi:3513,
+  nights:[['dub',8]],
+  hw:'Dublin — no city parade exists', hwq:'meh',
+  exp:5, risk:'low', riskNote:'8-day buffer',
+  verdict:['mid','Eight Dublin nights buys less than you would think'],
+  legs:[['Ryanair DBV→Dublin, Oct 25','$813'],['Dublin, 8 nights','~$2,194']],
+  why:'Maximum margin before the transatlantic, and the tail of Bram Stoker on arrival.',
+  against:'Dublin city has NO Halloween parade on Oct 31 — that is a documented hoax that drew crowds to O\'Connell Street in 2024 for an event that did not exist. Without the trip to Derry, Halloween here is pubs and private parties, and you pay the highest lodging bill on the board for it.'},
 
  {id:'nov1', name:'Stay to Nov 1', pick:false,
   cost:[1158,1067], costLo:1928, costHi:2225,
   nights:[['dbv',7],['dub',1]],
-  hw:'Dubrovnik', hwq:'meh',
-  exp:5, risk:'high', riskNote:'12h, no recovery',
-  verdict:['warn','Maximum Croatia, but it gambles the flight home'],
-  legs:[['Ryanair DBV→Dublin, Sun Nov 1, 20:40','$1,158'],['Dubrovnik, 7 nights','~$700'],['Dublin, 1 night','~$223']],
-  why:'Seven more nights in the cheapest place on the board, at $78–120 a night for all five. Dubrovnik does not shut down until Nov 1, so these are real nights, not dead ones.',
-  against:'You land at 11:05pm the night before a transatlantic flight, and there is no Dubrovnik–Dublin service on Nov 2 to catch if anything slips. With five seats being the binding constraint on every carrier out of Dubrovnik, a delay is close to unrecoverable. You also miss Halloween in both directions — still in Croatia on the 31st, in Dublin only after it ends.'},
-
- {id:'krk', name:'Kraków stopover', pick:false,
-  cost:[667,1750], costLo:2100, costHi:2500,
-  nights:[['dbv',1],['air',1],['krk',4],['dub',3]],
-  hw:'Dublin', hwq:'good',
-  exp:7, risk:'med', riskNote:'two tickets',
-  verdict:['mid','Cheap flights, a real city, and Halloween still in Dublin'],
-  legs:[['Ryanair DBV→Kraków, Mon Oct 26','$232'],['Ryanair Kraków→Dublin, Fri Oct 30','$435'],['Kraków, 4 nights','~$600'],['Dublin, 3 nights','~$1,050']],
-  why:'Both hops together cost $667 — less than half the $1,650 that the direct Dublin flight costs on Oct 30. Kraków is genuinely good for these ages: the underground museum beneath the market square, Wawel, Wieliczka salt mine. And it still puts you in Dublin for Halloween.',
-  against:'Two unprotected tickets, a mid-trip move with luggage, and Kraków in late October is cold and dark by 4:30pm.'},
-
- {id:'oct30', name:'Direct, Oct 30', pick:false,
-  cost:[1650,1665], costLo:2794, costHi:3315,
-  nights:[['dbv',5],['dub',3]],
-  hw:'Dublin', hwq:'good',
-  exp:7, risk:'low', riskNote:'6+ seats',
-  verdict:['mid','Simple and safe — you pay $836 for that simplicity'],
-  legs:[['Ryanair DBV→Dublin, Fri Oct 30, 11:50','$1,650'],['Dubrovnik, 5 nights','~$500'],['Dublin, 3 nights','~$1,165']],
-  why:'One ticket, a civilised 11:50am departure, five extra Dubrovnik nights, and you are in Dublin for Halloween and the Púca festival window. Nothing clever, nothing fragile.',
-  against:'Friday Oct 30 is the single peak return day of the Irish school mid-term, so the fare doubles to $1,650 for five. That premium cancels out almost exactly the money you save by swapping Dublin nights for Dubrovnik ones.'},
-
- {id:'luc', name:'Lucca Comics', pick:false,
-  cost:[900,1600], costLo:2300, costHi:3000,
-  nights:[['dbv',3],['air',1],['luc',4],['dub',1]],
-  hw:'Lucca', hwq:'meh',
-  exp:9, risk:'high', riskNote:'tickets + crowds',
-  verdict:['mid','The highest ceiling on the board, and the hardest to execute'],
-  legs:[['Ryanair DBV→Milan Bergamo','~$400'],['Train Bergamo→Lucca area','~$150'],['Lucca/Pisa, 4 nights','~$900'],['Flight to Dublin for 5','~$550 — verifying'],['Dublin, 1 night','~$223']],
-  why:'Oct 28 – Nov 1, the 60th anniversary. Europe\'s largest comics and games festival and the world\'s second largest after Comiket — 280,000 attendees, a walled medieval city given over to it entirely. For a 16- and 13-year-old this is probably the single most memorable thing available in Europe that week.',
-  against:'280,000 people is a lot with an eight-year-old. Lucca itself sells out, so you would base in Pisa or Viareggio and commute. Tickets for five in August is an open question, and getting five seats from Tuscany to Dublin is unpriced. Costs here are the least verified on the page.'},
-
- {id:'base', name:'Direct, Oct 25', pick:false,
-  cost:[813,2700], costLo:2601, costHi:3513,
-  nights:[['dub',8]],
-  hw:'Dublin', hwq:'good',
-  exp:6, risk:'low', riskNote:'8-day buffer',
-  verdict:['mid','The current plan — the most expensive way to do it'],
-  legs:[['Ryanair DBV→Dublin, Sun Oct 25, 20:40','$813'],['Dublin, 8 nights','~$2,194']],
-  why:'The cheapest single flight and by far the largest safety margin — eight days in Dublin before the transatlantic. You are there for Halloween, for Púca, and for the closing day of the Bram Stoker Festival.',
-  against:'It buys seven more Dublin nights at $166–482 each instead of Dubrovnik nights at $78–120, which is why it lands at the top of the cost table. You also arrive at 11:05pm into the Dublin Marathon and bank-holiday weekend, the busiest night of the month.'},
+  hw:'In transit — misses it entirely', hwq:'bad',
+  exp:2, risk:'high', riskNote:'12h, no recovery',
+  verdict:['warn','Cheap, and it throws Halloween away'],
+  legs:[['Ryanair DBV→Dublin, Nov 1, 20:40','$1,158'],['Dubrovnik, 7 nights','~$700'],['Dublin, 1 night','~$223']],
+  why:'Seven more nights in the cheapest place on the board.',
+  against:'You are in the air on Halloween and land at 11:05pm the night before a transatlantic, with no Dubrovnik–Dublin service on Nov 2 to catch if anything slips. Both the experience and the schedule are gambles.'},
 ];
 
 const CITY={dbv:['Dubrovnik','var(--c-dbv)'],dub:['Dublin','var(--c-dub)'],vie:['Vienna','var(--c-vie)'],
-  krk:['Kraków','var(--c-krk)'],luc:['Tuscany','var(--c-luc)'],air:['Travel','var(--c-air)']};
+  krk:['Kraków','var(--c-krk)'],luc:['Tuscany','var(--c-luc)'],der:['Derry','var(--c-der)'],air:['Travel','var(--c-air)']};
 const MAXC=3513, RISKV={low:0,med:1,high:2}, RISKL={low:'Low',med:'Medium',high:'High'};
 
 function card(s){
