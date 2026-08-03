@@ -386,6 +386,7 @@ function boardHTML(){
   const AB=D.ab;
   if(AB){
     h+='<div class="pivot" style="background:var(--card);border-color:var(--line)"><h2 style="color:var(--tx)">'+AB.h+'</h2><p style="color:var(--dim)">'+AB.body+'</p>';
+    h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--gold);font-weight:700;padding-bottom:4px"><div>'+AB.cols[0]+'</div><div>'+AB.cols[1]+'</div></div>';
     AB.rows.forEach(r=>{
       const tot=r.k.indexOf('TOTAL')>=0;
       h+='<div class="pr" style="border-top-color:#1e2632"><div style="font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--dim2);font-weight:700">'+r.k+'</div>'
@@ -393,7 +394,6 @@ function boardHTML(){
         +'<div style="font-size:'+(tot?'15px;font-weight:700;color:var(--tx)':'11.5px;color:var(--dim)')+';line-height:1.45">'+r.a+'</div>'
         +'<div style="font-size:'+(tot?'15px;font-weight:700;color:var(--grn)':'11.5px;color:var(--dim)')+';line-height:1.45">'+r.b+'</div></div></div>';
     });
-    h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px;font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--dim2);font-weight:700"><div>'+AB.cols[0]+'</div><div>'+AB.cols[1]+'</div></div>';
     h+='<div class="pf" style="color:var(--dim2)">'+AB.foot+'</div></div>';
   }
   h+='<div class="bd">';
