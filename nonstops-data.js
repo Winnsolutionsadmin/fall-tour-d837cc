@@ -2194,7 +2194,7 @@ window.__NS__ = {
  },
  "croatia": {
   "h": "Or just stay: Halloween & All Saints in Croatia, honestly scored",
-  "score": "4/10 for the kids as a default — 6–7/10 if you engineer it around Zagreb",
+  "score": "4/10 for the kids as a default — Zagreb raises it modestly, and only Nov 1 is guaranteed",
   "body": "Croatia is Catholic: Oct 31 (a Saturday) is thin and imported, Nov 1 (a Sunday) is the real event — a national holiday where shops close and cemeteries fill with candles. What each city actually offers:",
   "rows": [
    {
@@ -2209,11 +2209,11 @@ window.__NS__ = {
    },
    {
     "r": "Zagreb",
-    "s": "6–7/10",
-    "d": "The only real Halloween scene in Croatia: Zagreb Zoo historically runs a kids' Halloween day (spooky trail, pumpkin carving, costume parade — built for the 8yo) and Museum of Illusions runs themed events (13/16yo). Then Nov 1 at MIROGOJ — Bollé's arcades, ~60,000 graves, thousands of candles 'like a second sunset', free shuttles from the Cathedral. One of Europe's most beautiful cemeteries."
+    "s": "5–6/10",
+    "d": "NOT a Halloween destination by any international standard — it is merely the best of a weak Croatian field. The zoo has HISTORICALLY run a kids' Halloween day and Museum of Illusions themed events, but neither is confirmed for 2026 (Croatian venues announce 2–4 weeks out) and if the zoo day misses your Saturday, Zagreb's Halloween is a couple of bar nights. What Zagreb IS genuinely acclaimed for is Nov 1: MIROGOJ — Bollé's arcades, ~60,000 graves, thousands of candles, free shuttles from the Cathedral. That part is real and reliable."
    }
   ],
-  "foot": "Mirogoj vs Kraków's Rakowicki, honestly: Rakowicki is the bigger, denser, more famous version of the same ritual; Mirogoj is the more architecturally beautiful and more manageable one with kids. Neither disappoints. Plitvice is past peak color by this week (peak Oct 10–25) but misty, quiet, and still worth the stop. 2026 event listings publish 2–4 weeks out — check Zagreb Zoo + Museum of Illusions in early October. THE COMBINATION PLAY: road-trip to Zagreb for Halloween weekend (zoo Sat, Mirogoj Sun evening), then the near-daily $417 Zagreb→Dublin flight ANY day Nov 1–3 → EI61 home. You get the authentic All Saints AND Ireland, without choosing."
+  "foot": "Straight answer: nowhere in Croatia is acclaimed for Halloween. If Halloween itself is the point, Ireland is categorically better — Dublin/Meath run genuine festivals (Samhain's actual birthplace) with real kids' programming. Croatia's guaranteed spectacle is All Saints Nov 1, and Mirogoj is the best place in the country to see it. Mirogoj vs Kraków's Rakowicki: Rakowicki is bigger and more famous; Mirogoj more beautiful and easier with kids. THE COMBINATION PLAY still works but with honest billing: Zagreb gives you a MAYBE-Halloween Saturday and a certain, moving Sunday — then the $417 ZAG→Dublin flight any day Nov 1–3 puts you in Ireland anyway."
  },
  "boat": {
   "h": "Your Airbnb pick, verified live: it's the catamaran",
