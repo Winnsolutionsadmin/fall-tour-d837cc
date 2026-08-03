@@ -149,9 +149,8 @@ window.__NS__ = {
     "detail": "2 Premium recliner $2,810 + 3 econ, quoted-live Nov 1 — no true business exists"
    },
    "biz5": {
-    "usd": 3500,
-    "confidence": "historical-typical",
-    "detail": "There is no business cabin — this is 5 x Premium recliner at ~$650-750/pp one-way (~$3,250-3,750). If the family wants a… · historical-typical"
+    "usd": 7025,
+    "detail": "5x Premium recliner at the live $1,405/pp rate (2-pax quote extrapolated) — corrected from a stale $3,500 estimate. Not a bed."
    },
    "award": {
     "program": "NONE — French Bee has no frequent-flyer partners; the nonstop is cash-only",
@@ -688,7 +687,7 @@ window.__NS__ = {
    "cash": {
     "e": 2830,
     "m": 4674,
-    "b": 3915
+    "b": 7440
    },
    "pts": {
     "e": null,
@@ -1102,7 +1101,7 @@ window.__NS__ = {
    "cash": {
     "e": 2830,
     "m": 4674,
-    "b": 3915
+    "b": 7440
    },
    "pts": {
     "e": null,
@@ -1573,11 +1572,11 @@ window.__NS__ = {
      "pts": null
     },
     "b": {
-     "cash": 3915,
+     "cash": 7440,
      "pts": null
     }
    },
-   "note": "No points program and no real business — the 'biz' cells are a 2-3-2 Premium recliner. Toussaint week: Disneyland Halloween, Parc Astérix.",
+   "note": "No points program and no real business — 'biz' here is French Bee Premium, a 2-3-2 recliner. Priced off the live 2-seat quote ($1,405/person): 5 Premium ≈ $7,440 all-in. An earlier $3,915 figure used a stale per-person estimate and is withdrawn. Toussaint week: Disneyland Halloween, Parc Astérix.",
    "bestCfg": null,
    "bestCpp": 0
   },
