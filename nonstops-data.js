@@ -1357,5 +1357,763 @@ window.__NS__ = {
    "bestCfg": "m",
    "bestCpp": 11.7
   }
+ ],
+ "board3": [
+  {
+   "city": "Dublin",
+   "fun": 8,
+   "ver": true,
+   "pos": [
+    {
+     "p": 766,
+     "v": "live",
+     "s": false
+    },
+    null,
+    {
+     "p": 907,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 1083,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 650,
+     "v": "est",
+     "s": false
+    },
+    {
+     "p": 1556,
+     "v": "live",
+     "s": false
+    },
+    null
+   ],
+   "posNote": "Ryanair FR3881 verified · Aer Lingus EI477 also Sun/Tue/Thu ~$650 (est)",
+   "exit": [
+    {
+     "p": 1850,
+     "v": "est",
+     "s": false
+    },
+    {
+     "p": 1750,
+     "v": "est",
+     "s": false
+    },
+    {
+     "p": 1700,
+     "v": "est",
+     "s": false
+    }
+   ],
+   "exitNote": "EI61 A330 nonstop daily · US preclearance — land at SFO as domestic",
+   "cfg": {
+    "e": {
+     "cash": 2350,
+     "pts": {
+      "k": 81250,
+      "c": 1625,
+      "cpp": 2.3
+     }
+    },
+    "m": {
+     "cash": 6575,
+     "pts": {
+      "k": 173750,
+      "c": 1735,
+      "cpp": 2.8
+     }
+    },
+    "b": {
+     "cash": 11150,
+     "pts": {
+      "k": 312500,
+      "c": 1900,
+      "cpp": 3.0
+     }
+    }
+   },
+   "note": "The only city with VERIFIED award seats (6+ economy, Nov 1 & 2, 16,250 Avios each).",
+   "bestCfg": "b",
+   "bestCpp": 3.0
+  },
+  {
+   "city": "London",
+   "fun": 9,
+   "ver": false,
+   "pos": [
+    {
+     "p": 470,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 550,
+     "v": "est",
+     "s": false
+    },
+    {
+     "p": 583,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 570,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 580,
+     "v": "est",
+     "s": false
+    },
+    {
+     "p": 945,
+     "v": "live",
+     "s": false
+    },
+    null
+   ],
+   "posNote": "Ryanair STN verified off their API · easyJet LGW daily to Oct 30 · UK half-term pushes fares up late-week",
+   "exit": [
+    {
+     "p": 2215,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 2215,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 2350,
+     "v": "est",
+     "s": false
+    }
+   ],
+   "exitNote": "BA / Virgin / United — up to 7 nonstops a day, zero schedule risk",
+   "cfg": {
+    "e": {
+     "cash": 2685,
+     "pts": {
+      "k": 165000,
+      "c": 1670,
+      "cpp": 0.6
+     }
+    },
+    "m": {
+     "cash": 8091,
+     "pts": {
+      "k": 297000,
+      "c": 2363,
+      "cpp": 1.9
+     }
+    },
+    "b": {
+     "cash": 15931,
+     "pts": {
+      "k": 495000,
+      "c": 3353,
+      "cpp": 2.5
+     }
+    }
+   },
+   "note": "Highest fun (half-term week: Harry Potter Dark Arts, zoo trails, twilight Tower tours). LHR surcharges make points weak.",
+   "bestCfg": "b",
+   "bestCpp": 2.5
+  },
+  {
+   "city": "Paris (Orly)",
+   "fun": 9,
+   "ver": false,
+   "pos": [
+    {
+     "p": 846,
+     "v": "est",
+     "s": false
+    },
+    null,
+    {
+     "p": 415,
+     "v": "live",
+     "s": false
+    },
+    null,
+    {
+     "p": 749,
+     "v": "est",
+     "s": false
+    },
+    null,
+    null
+   ],
+   "posNote": "Transavia TO4201 — Oct 27 quoted-live, the cheapest positioning flight in the study",
+   "exit": [
+    {
+     "p": 2415,
+     "v": "live",
+     "s": false
+    },
+    null,
+    null
+   ],
+   "exitNote": "French Bee A350 — Nov 1 is its ONLY day in your window (Wed/Fri/Sun winter pattern)",
+   "cfg": {
+    "e": {
+     "cash": 2830,
+     "pts": null
+    },
+    "m": {
+     "cash": 4674,
+     "pts": null
+    },
+    "b": {
+     "cash": 3915,
+     "pts": null
+    }
+   },
+   "note": "No points program and no real business — the 'biz' cells are a 2-3-2 Premium recliner. Toussaint week: Disneyland Halloween, Parc Astérix.",
+   "bestCfg": null,
+   "bestCpp": 0
+  },
+  {
+   "city": "Istanbul",
+   "fun": 8,
+   "ver": false,
+   "pos": [
+    {
+     "p": 900,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 900,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 900,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 900,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 900,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 900,
+     "v": "est",
+     "s": true
+    },
+    null
+   ],
+   "posNote": "No nonstop — TK's DBV route dies Oct 24, one day before your window. 1-stop estimate",
+   "exit": [
+    {
+     "p": 3461,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 3461,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 3461,
+     "v": "live",
+     "s": false
+    }
+   ],
+   "exitNote": "TK79 A350 daily · 2-seat business dips to $8,826 on Nov 2 only (vs $10,765)",
+   "cfg": {
+    "e": {
+     "cash": 4361,
+     "pts": null
+    },
+    "m": {
+     "cash": 10903,
+     "pts": null
+    },
+    "b": {
+     "cash": 15400,
+     "pts": null
+    }
+   },
+   "note": "Amex MR does not transfer to Turkish — cash only. Republic Day fireworks Oct 29 over the Bosphorus.",
+   "bestCfg": null,
+   "bestCpp": 0
+  },
+  {
+   "city": "Paris (CDG)",
+   "fun": 8,
+   "ver": false,
+   "pos": [
+    {
+     "p": 1584,
+     "v": "live",
+     "s": false
+    },
+    null,
+    {
+     "p": 475,
+     "v": "est",
+     "s": false
+    },
+    null,
+    {
+     "p": 809,
+     "v": "est",
+     "s": false
+    },
+    null,
+    null
+   ],
+   "posNote": "AF direct Oct 25 only (route's last day) · after that Transavia to Orly + cross-town",
+   "exit": [
+    {
+     "p": 5655,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 5655,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 5655,
+     "v": "live",
+     "s": false
+    }
+   ],
+   "exitNote": "AF080 777 nonstop (not AF084 on these dates) · identical price all three days",
+   "cfg": {
+    "e": {
+     "cash": 6130,
+     "pts": {
+      "k": 125000,
+      "c": 1725,
+      "cpp": 3.5
+     }
+    },
+    "m": {
+     "cash": 16618,
+     "pts": {
+      "k": 195000,
+      "c": 2225,
+      "cpp": 7.4
+     }
+    },
+    "b": {
+     "cash": 17475,
+     "pts": {
+      "k": 300000,
+      "c": 2975,
+      "cpp": 4.8
+     }
+    }
+   },
+   "note": "Flying Blue works but CDG carries Europe's highest award surcharges.",
+   "bestCfg": "m",
+   "bestCpp": 7.4
+  },
+  {
+   "city": "Copenhagen",
+   "fun": 8,
+   "ver": false,
+   "pos": [
+    {
+     "p": 746,
+     "v": "live",
+     "s": true
+    },
+    {
+     "p": 800,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 855,
+     "v": "live",
+     "s": true
+    },
+    {
+     "p": 767,
+     "v": "live",
+     "s": true
+    },
+    {
+     "p": 800,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 800,
+     "v": "est",
+     "s": true
+    },
+    null
+   ],
+   "posNote": "No nonstop — Norwegian's last DBV-CPH is Oct 24. All cells are 1-stops (Air Serbia/OU/LH)",
+   "exit": [
+    {
+     "p": 6461,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 6461,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 6384,
+     "v": "live",
+     "s": false
+    }
+   ],
+   "exitNote": "SK935 A350 daily · SAS quoted 2-pax business $12,032 this pass (volatile inventory)",
+   "cfg": {
+    "e": {
+     "cash": 7130,
+     "pts": {
+      "k": 219000,
+      "c": 1046,
+      "cpp": 2.8
+     }
+    },
+    "m": {
+     "cash": 16576,
+     "pts": {
+      "k": 341600,
+      "c": 1166,
+      "cpp": 4.5
+     }
+    },
+    "b": {
+     "cash": 15246,
+     "pts": {
+      "k": 525500,
+      "c": 1296,
+      "cpp": 2.7
+     }
+    }
+   },
+   "note": "Tivoli's Halloween runs through your window — but the numbers don't.",
+   "bestCfg": "m",
+   "bestCpp": 4.5
+  },
+  {
+   "city": "Frankfurt",
+   "fun": 5,
+   "ver": false,
+   "pos": [
+    {
+     "p": 5602,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 1249,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 1200,
+     "v": "est",
+     "s": false
+    },
+    null,
+    null,
+    {
+     "p": 1200,
+     "v": "est",
+     "s": false
+    },
+    null
+   ],
+   "posNote": "Discover Oct 26 quoted-live · Oct 25 nonstop had business-only inventory · OU Sun/Tue/Fri rotations",
+   "exit": [
+    {
+     "p": 6132,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 6132,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 6132,
+     "v": "live",
+     "s": false
+    }
+   ],
+   "exitNote": "LH/UA daily · flat all three days · the worst business cash in Europe ($42.8k for 5)",
+   "cfg": {
+    "e": {
+     "cash": 7381,
+     "pts": {
+      "k": 212500,
+      "c": 1949,
+      "cpp": 2.6
+     }
+    },
+    "m": {
+     "cash": 22759,
+     "pts": {
+      "k": 277500,
+      "c": 1949,
+      "cpp": 7.5
+     }
+    },
+    "b": {
+     "cash": 44055,
+     "pts": {
+      "k": 375000,
+      "c": 1974,
+      "cpp": 11.2
+     }
+    }
+   },
+   "note": "Aeroplan (Amex 1:1) passes zero fuel surcharges — the 11.2¢/pt is real only because the cash fare is obscene.",
+   "bestCfg": "b",
+   "bestCpp": 11.2
+  },
+  {
+   "city": "Munich",
+   "fun": 7,
+   "ver": false,
+   "pos": [
+    {
+     "p": 1378,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 919,
+     "v": "live",
+     "s": false
+    },
+    null,
+    "?",
+    "?",
+    "?",
+    null
+   ],
+   "posNote": "LH winter pattern quoted-live Oct 25/26 · dark Oct 27 · later days not pulled",
+   "exit": [
+    {
+     "p": 7417,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 7417,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 7419,
+     "v": "live",
+     "s": false
+    }
+   ],
+   "exitNote": "LH458 · A350-900 all three days (the A380 rotation ended Oct 23)",
+   "cfg": {
+    "e": {
+     "cash": 8336,
+     "pts": {
+      "k": 200000,
+      "c": 1469,
+      "cpp": 3.4
+     }
+    },
+    "m": {
+     "cash": 14479,
+     "pts": {
+      "k": 270000,
+      "c": 1469,
+      "cpp": 4.8
+     }
+    },
+    "b": {
+     "cash": 30919,
+     "pts": {
+      "k": 375000,
+      "c": 1469,
+      "cpp": 7.9
+     }
+    }
+   },
+   "note": "Aeroplan, no surcharges. Alps day trips in empty shoulder season.",
+   "bestCfg": "b",
+   "bestCpp": 7.9
+  },
+  {
+   "city": "Amsterdam",
+   "fun": 7,
+   "ver": false,
+   "pos": [
+    {
+     "p": 1272,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 691,
+     "v": "live",
+     "s": true
+    },
+    {
+     "p": 929,
+     "v": "live",
+     "s": true
+    },
+    {
+     "p": 767,
+     "v": "live",
+     "s": true
+    },
+    {
+     "p": 800,
+     "v": "est",
+     "s": true
+    },
+    {
+     "p": 800,
+     "v": "est",
+     "s": true
+    },
+    null
+   ],
+   "posNote": "KLM direct Oct 25 only · after that 1-stops (Air Serbia $691 is the pick)",
+   "exit": [
+    {
+     "p": 7994,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 7994,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 7902,
+     "v": "live",
+     "s": false
+    }
+   ],
+   "exitNote": "KL605 787-10 · quoted-live · mix $15,729 on Nov 3",
+   "cfg": {
+    "e": {
+     "cash": 8593,
+     "pts": {
+      "k": 125000,
+      "c": 1491,
+      "cpp": 5.7
+     }
+    },
+    "m": {
+     "cash": 16420,
+     "pts": {
+      "k": 195000,
+      "c": 1831,
+      "cpp": 7.5
+     }
+    },
+    "b": {
+     "cash": 27331,
+     "pts": {
+      "k": 300000,
+      "c": 2341,
+      "cpp": 8.3
+     }
+    }
+   },
+   "note": "Best all-round points value on the board — because KLM's cash fares are brutal.",
+   "bestCfg": "b",
+   "bestCpp": 8.3
+  },
+  {
+   "city": "Zurich",
+   "fun": 7,
+   "ver": false,
+   "pos": [
+    {
+     "p": 1089,
+     "v": "live",
+     "s": false
+    },
+    null,
+    null,
+    null,
+    {
+     "p": 809,
+     "v": "live",
+     "s": false
+    },
+    null,
+    null
+   ],
+   "posNote": "OU/LX nonstop — Oct 25 and Oct 29 only, quoted-live. Oct 29 is the season's final rotation",
+   "exit": [
+    {
+     "p": 8246,
+     "v": "live",
+     "s": false
+    },
+    {
+     "p": 8246,
+     "v": "live",
+     "s": false
+    },
+    null
+   ],
+   "exitNote": "LX38 777 · no fare returned Nov 3 · 2-pax business $13,318 both days",
+   "cfg": {
+    "e": {
+     "cash": 9055,
+     "pts": {
+      "k": 102500,
+      "c": 1509,
+      "cpp": 7.4
+     }
+    },
+    "m": {
+     "cash": 19075,
+     "pts": {
+      "k": 147500,
+      "c": 1829,
+      "cpp": 11.7
+     }
+    },
+    "b": {
+     "cash": 19809,
+     "pts": {
+      "k": 215000,
+      "c": 2309,
+      "cpp": 8.1
+     }
+    }
+   },
+   "note": "The 11.7¢/pt mix is the single best redemption found — 148k puts 2 in real SWISS beds. LX award space is the big unknown.",
+   "bestCfg": "m",
+   "bestCpp": 11.7
+  }
  ]
 };

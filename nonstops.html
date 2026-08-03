@@ -101,6 +101,25 @@ h1{font-size:24px;line-height:1.15;letter-spacing:-.5px;font-weight:700}
   vertical-align:1px;letter-spacing:.4px}
 .natag{font-size:10.5px;color:var(--dim2);font-style:italic}
 .bdnote{font-size:10.5px;color:var(--dim2);line-height:1.55;margin-top:4px}
+.jr{margin-top:9px}
+.jr .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:9px;
+  text-transform:uppercase;letter-spacing:.8px;color:var(--dim2);font-weight:700;margin-bottom:4px}
+.jr .lab b{color:var(--dim);letter-spacing:.5px}
+.days{display:grid;gap:3px}
+.days.d7{grid-template-columns:repeat(7,1fr)}
+.days.d3{grid-template-columns:repeat(3,1fr)}
+.dc{background:#0e1218;border:1px solid #1b2230;border-radius:6px;text-align:center;padding:4px 1px 5px;min-width:0}
+.dc .dn{font-size:8.5px;color:var(--dim2);font-weight:700}
+.dc .dp{font-size:10.5px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.3px;margin-top:1px;line-height:1.1}
+.dc.on{border-color:#28405a}
+.dc.on .dp{color:var(--blu)}
+.dc.on.best{border-color:#2e5a3e;background:#0c1a12}
+.dc.on.best .dp{color:var(--grn)}
+.dc.est .dp{color:#7d8aa0;font-weight:600}
+.dc.off{opacity:.32}
+.dc.off .dp{color:#3d4654}
+.dc.unk .dp{color:#4a5567}
+.dc .st{font-size:7px;color:var(--dim2);line-height:1;margin-top:1px;display:block}
 .cfg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px}
 .cfg>div{background:#0e1218;border:1px solid var(--line);border-radius:8px;padding:7px 8px;min-width:0;text-align:center}
 .cfg>div.bv{border-color:#4a3d14;background:#191408}
@@ -110,6 +129,16 @@ h1{font-size:24px;line-height:1.15;letter-spacing:-.5px;font-weight:700}
 .cfg .cpp{font-size:9px;font-weight:700;margin-top:2px;color:var(--vio)}
 .cfg .cpp.hot{color:var(--gold)}
 .cfg .na{font-size:10px;color:#3d4654;font-style:italic;margin-top:4px}
+.cfg .pv{font-size:10px;color:#a99ce0;margin-top:3px;font-variant-numeric:tabular-nums;border-top:1px solid #1b2230;padding-top:3px}
+.cfg .pv b{font-weight:700}
+.cfg .pv .cp{font-weight:700}
+.cfg .pv .cp.hot{color:var(--gold)}
+.cfg .pv.none{color:#3d4654;font-style:italic}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:9.5px;color:var(--dim2);margin:2px 0 12px;align-items:center}
+.legend span{display:flex;align-items:center;gap:4px}
+.legend i{width:10px;height:10px;border-radius:3px;display:block;border:1px solid #28405a;background:#0e1218}
+.legend i.off{opacity:.32;border-color:#1b2230}
+.legend i.gr{border-color:#2e5a3e;background:#0c1a12}
 
 /* ── the matrix ── */
 .mx{background:var(--card);border:1px solid var(--line);border-radius:13px;margin-bottom:18px;overflow:hidden}
@@ -307,47 +336,59 @@ function funMeter(n){
   return h+'<em>'+n+'/10</em></span>';
 }
 function boardHTML(){
-  const B=D.board2||[];
+  const B=D.board3||[];
   if(!B.length)return'';
   let rows=[...B];
-  if(bdMode==='cash')rows.sort((a,b)=>(a.cash.e||9e9)-(b.cash.e||9e9));
-  else if(bdMode==='pts')rows.sort((a,b)=>b.bestCpp-a.bestCpp);
-  else rows.sort((a,b)=>b.fun-a.fun||(a.cash.e||9e9)-(b.cash.e||9e9));
+  if(bdMode==='cash')rows.sort((a,b)=>a.cfg.e.cash-b.cfg.e.cash);
+  else if(bdMode==='pts')rows.sort((a,b)=>b.bestCpp-a.bestCpp||a.cfg.e.cash-b.cfg.e.cash);
+  else rows.sort((a,b)=>b.fun-a.fun||a.cfg.e.cash-b.cfg.e.cash);
   const NAMES={e:'5 econ',m:'2 biz + 3 econ',b:'5 biz'};
+  const OCT=['Sa 25','Su 25','Mo 26'];
+  function cell(dnum,c,best){
+    if(c==null)return'<div class="dc off"><div class="dn">'+dnum+'</div><div class="dp">—</div></div>';
+    if(c==='?')return'<div class="dc unk"><div class="dn">'+dnum+'</div><div class="dp">?</div></div>';
+    const cls='dc on'+(c.v==='est'?' est':'')+(best?' best':'');
+    const p=c.p>=10000?(c.p/1000).toFixed(1)+'k':c.p>=1000?(c.p/1000).toFixed(1).replace(/\.0$/,'')+'k':c.p;
+    return '<div class="'+cls+'"><div class="dn">'+dnum+'</div><div class="dp">'+(c.v==='est'?'~':'')+p+'</div>'+(c.s?'<span class="st">1-stop</span>':'')+'</div>';
+  }
   let h='<div class="bd">';
   h+='<div class="bdtog">'
     +'<button class="'+(bdMode==='cash'?'on':'')+'" onclick="bdSet(\'cash\')">Cheapest cash</button>'
     +'<button class="'+(bdMode==='pts'?'on':'')+'" onclick="bdSet(\'pts\')">Best points value</button>'
     +'<button class="'+(bdMode==='fun'?'on':'')+'" onclick="bdSet(\'fun\')">Most fun</button></div>';
+  h+='<div class="legend"><span><i></i>flight, price for 5</span><span><i class="gr"></i>cheapest day</span><span><i class="off"></i>nothing flies</span><span>~ estimate</span><span>? not pulled</span></div>';
+  const octD=['Su 25','Mo 26','Tu 27','We 28','Th 29','Fr 30','Sa 31'];
+  const novD=['Su Nov 1','Mo Nov 2','Tu Nov 3'];
   rows.forEach((r,i)=>{
     h+='<div class="brow'+(i===0?' win':'')+'">';
     h+='<div class="br1"><span class="rk">'+(i+1)+'</span><span class="cn">'+r.city+'</span>'+funMeter(r.fun)+'</div>';
-    if(bdMode==='pts'){
-      h+='<div class="br2">'+(r.bestCpp>0
-        ?'<span class="sum">'+r.bestCpp+'¢ <small>per point at best ('+NAMES[r.bestCfg]+')</small></span>'+(r.ver?' <span class="vtag">ECON SEATS VERIFIED</span>':'')
-        :'<span class="natag">no points path — cash only</span>')+'</div>';
-    }else{
-      h+='<div class="br2"><span class="sum">'+money(r.cash.e)+' <small>5 econ all-in · '+money(r.pos)+' of it is getting there</small></span></div>';
-    }
+    // pos strip
+    const posVals=r.pos.filter(c=>c&&c!=='?').map(c=>c.p);
+    const posMin=posVals.length?Math.min(...posVals):null;
+    h+='<div class="jr"><div class="lab"><b>Dubrovnik → '+r.city.replace(/ \(.*\)/,'')+'</b><span>Oct · for 5</span></div>';
+    h+='<div class="days d7">'+r.pos.map((c,j)=>cell(octD[j],c,c&&c!=='?'&&c.p===posMin)).join('')+'</div>';
+    h+='<div class="br3" style="margin-top:4px">'+r.posNote+'</div></div>';
+    // exit strip
+    const exVals=r.exit.filter(Boolean).map(c=>c.p);
+    const exMin=exVals.length?Math.min(...exVals):null;
+    h+='<div class="jr"><div class="lab"><b>'+r.city.replace(/ \(.*\)/,'')+' → SFO nonstop</b><span>Nov · 5 economy</span></div>';
+    h+='<div class="days d3">'+r.exit.map((c,j)=>cell(novD[j],c,c&&c.p===exMin)).join('')+'</div>';
+    h+='<div class="br3" style="margin-top:4px">'+r.exitNote+'</div></div>';
+    // configs: cash + points, always both
     h+='<div class="cfg">';
     ['e','m','b'].forEach(k=>{
-      if(bdMode==='pts'){
-        const p=r.pts[k];
-        h+='<div'+(r.bestCfg===k&&p?' class="bv"':'')+'><div class="k">'+NAMES[k]+'</div>'
-          +(p?'<div class="v">'+(p.k/1000).toFixed(0)+'k<small>+ '+money(p.c)+'</small></div><div class="cpp'+(p.cpp>=5?' hot':'')+'">'+p.cpp+'¢/pt</div>'
-             :'<div class="na">no path</div>')+'</div>';
-      }else{
-        const v=r.cash[k];
-        h+='<div><div class="k">'+NAMES[k]+'</div><div class="v">'+(v?money(v):'—')+'<small>all-in</small></div></div>';
-      }
+      const c=r.cfg[k]; const p=c.pts;
+      h+='<div'+(bdMode==='pts'&&r.bestCfg===k&&p?' class="bv"':'')+'><div class="k">'+NAMES[k]+'</div>'
+        +'<div class="v">'+money(c.cash)+'<small>all-in cash</small></div>'
+        +(p?'<div class="pv"><b>'+(p.k/1000).toFixed(0)+'k</b> + '+money(p.c)+' <span class="cp'+(p.cpp>=5?' hot':'')+'">'+p.cpp+'¢</span></div>'
+           :'<div class="pv none">no points path</div>')
+        +'</div>';
     });
     h+='</div>';
-    h+='<div class="br3"><b>There:</b> '+r.posN+' · <b>Home:</b> '+r.exitN+'</div>';
+    h+='<div class="br3">'+r.note+(r.ver?' <span class="vtag">AWARD SEATS VERIFIED</span>':'')+'</div>';
     h+='</div>';
   });
-  h+='<div class="bdnote">'+(bdMode==='pts'
-    ?'Value = (cash fare dodged − fees − positioning) ÷ points. High ¢/pt means points are rescuing you from an ugly cash fare — Zurich and Frankfurt score huge precisely because their cash business fares are absurd. Dublin scores low because its cash is already cheap; it is still the ONLY city with verified award seats. All other award space unverified until searched.'
-    :'All-in = whole family of 5: Dubrovnik → city (cheapest day Oct 25–31) + city → SFO nonstop (cheapest day Nov 1–3). Per-day fares and full flight detail in the city cards below.')+'</div>';
+  h+='<div class="bdnote">Every price is the total for all five. Blue day-cells are flights that exist; the dark ones are the schedule saying no — late October is when Dubrovnik\'s seasonal routes die, and that gap is the whole game. Points line per config: points + (award fees & positioning cash) and the ¢-per-point it earns vs paying cash. Full flight detail per city below.</div>';
   h+='</div>';
   return h;
 }
