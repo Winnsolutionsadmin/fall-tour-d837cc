@@ -76,6 +76,31 @@ h1{font-size:24px;line-height:1.15;letter-spacing:-.5px;font-weight:700}
 .pc .v.na{color:var(--dim2);font-size:13px;font-weight:600}
 .pc .x{font-size:9.5px;color:var(--dim2);margin-top:2px;line-height:1.4;overflow-wrap:anywhere}
 
+/* ── the matrix ── */
+.mx{background:var(--card);border:1px solid var(--line);border-radius:13px;margin-bottom:18px;overflow:hidden}
+.mxh{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.mxh .t{font-size:14px;font-weight:700;letter-spacing:-.2px}
+.mxh .t small{display:block;font-size:10.5px;color:var(--dim2);font-weight:500;margin-top:2px}
+.mxtog{display:flex;background:#0e1218;border:1px solid var(--line);border-radius:8px;overflow:hidden;flex:0 0 auto}
+.mxtog button{font-size:11px;font-weight:700;padding:6px 12px;border:0;background:none;color:var(--dim2);font-family:inherit;cursor:pointer}
+.mxtog button.on{background:var(--gold);color:#000}
+.mxg{display:grid;grid-template-columns:minmax(76px,1.2fr) 1fr 1fr 1fr}
+.mxg>div{padding:8px 6px;border-bottom:1px solid #171d26;min-width:0}
+.mxg .hd{font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim2);font-weight:700;
+  background:var(--card2);padding:7px 6px;text-align:center}
+.mxg .hd:first-child{text-align:left;padding-left:12px}
+.mxg .cc{font-size:12px;font-weight:700;padding-left:12px;line-height:1.25}
+.mxg .cc small{display:block;font-size:8.5px;color:var(--dim2);font-weight:500;margin-top:1px}
+.mxg .v{text-align:center;font-variant-numeric:tabular-nums;font-size:12.5px;font-weight:700;letter-spacing:-.3px;
+  border-radius:6px;line-height:1.2;align-self:center}
+.mxg .v small{display:block;font-size:8.5px;font-weight:500;opacity:.75;letter-spacing:0}
+.mxg .v.g1{color:#4ade80}.mxg .v.g2{color:#a3e635}
+.mxg .v.mid{color:var(--tx)}
+.mxg .v.r2{color:#fb923c}.mxg .v.r1{color:#f87171}
+.mxg .v.na{color:#3d4654;font-weight:500;font-size:11px}
+.mxg .vf{background:rgba(52,211,153,.10);border-radius:6px}
+.mxfoot{padding:9px 12px;font-size:10px;color:var(--dim2);line-height:1.5}
+
 /* daily fares row */
 .dly{display:flex;gap:6px;margin:8px 15px 0}
 .dly .d{flex:1;background:#0e1218;border:1px solid var(--line);border-radius:8px;padding:7px 8px;text-align:center;min-width:0}
@@ -248,11 +273,55 @@ function cardHTML(c,i){
   return h;
 }
 
+let mxMode='cash';
+function kfmt(n){return n>=1000?'$'+(n/1000).toFixed(1).replace(/\.0$/,'')+'k':'$'+n}
+function matrixHTML(){
+  const M=D.matrix||[];
+  if(!M.length)return'';
+  const cols=['e','m','b'];
+  // rank cells per column for colour
+  const rank={};
+  cols.forEach(k=>{
+    const vals=M.map(r=>mxMode==='cash'?r.cash[k]:(r.pts[k]?r.pts[k].k:null)).filter(v=>v!=null).sort((a,b)=>a-b);
+    rank[k]=v=>{
+      if(v==null)return'na';
+      const i=vals.indexOf(v), n=vals.length;
+      return i<2?'g'+(i+1):(i>=n-2?'r'+(n-i):'mid');
+    };
+  });
+  let h='<div class="mx"><div class="mxh"><div class="t">The whole picture — all-in from Dubrovnik'
+    +'<small>positioning flight + the nonstop home · whole family of 5 · sorted by economy</small></div>'
+    +'<div class="mxtog"><button class="'+(mxMode==='cash'?'on':'')+'" onclick="mxSet(\'cash\')">Cash</button>'
+    +'<button class="'+(mxMode==='pts'?'on':'')+'" onclick="mxSet(\'pts\')">Points</button></div></div>';
+  h+='<div class="mxg"><div class="hd">City</div><div class="hd">5 econ</div><div class="hd">2 biz<br>+3 econ</div><div class="hd">5 biz</div>';
+  M.forEach(r=>{
+    h+='<div class="cc">'+r.city+'<small>'+kfmt(r.pos)+' · '+r.posN+'</small></div>';
+    cols.forEach(k=>{
+      if(mxMode==='cash'){
+        const v=r.cash[k];
+        h+='<div class="v '+rank[k](v)+(r.ptsNote&&k==='e'&&mxMode!=='cash'?' vf':'')+'">'+(v==null?'—':kfmt(v))+'</div>';
+      }else{
+        const p=r.pts[k];
+        if(!p){h+='<div class="v na">no path</div>';}
+        else h+='<div class="v '+rank[k](p.k)+(r.ptsNote==='verified'&&k==='e'?' vf':'')+'">'+(p.k/1000).toFixed(0)+'k<small>+ '+kfmt(p.c)+'</small></div>';
+      }
+    });
+  });
+  h+='</div><div class="mxfoot">'+(mxMode==='cash'
+    ?'Every cell = positioning + exit for all five, one number. Green = cheapest two per column, red = priciest two.'
+    :'Points cells = total points for the exit + (award fees + cash positioning). Programs differ per city — Avios for Dublin, Flying Blue for AMS/CDG/CPH, KrisFlyer for Zurich, Aeroplan for MUC/FRA. Highlighted = the only VERIFIED award space (Dublin economy). Istanbul and Orly have no points path from your Amex pool.')
+    +'</div></div>';
+  return h;
+}
+function mxSet(m){mxMode=m;render()}
+
 function render(){
   const a=document.getElementById('app');
   const cs=[...(D.cities||[])].sort(SORTS[sortK]);
   if(!cs.length){a.innerHTML='<div class="load">Pricing swarm still running — this page fills itself when it lands.</div>';return}
   let h='';
+  h+=matrixHTML();
+  h+='<h2 class="sec">City detail</h2>';
   cs.forEach((c,i)=>h+=cardHTML(c,i));
   if(D.dead&&D.dead.length){
     h+='<div class="dead"><h3>Nonstops that are DEAD by November — do not plan around these</h3>';

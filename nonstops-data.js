@@ -5,9 +5,9 @@ window.__NS__ = {
    "airport": "CDG",
    "flight": {
     "carrier": "Air France",
-    "no": "AF084",
-    "dep": "10:20",
-    "arr": "12:50",
+    "no": "AF 080",
+    "dep": "10:10",
+    "arr": "12:55",
     "duration": "11h25m",
     "aircraft": "777-300ER",
     "biz_seat": "1-2-1 lie-flat on all AF 777-300ER frames: retrofitted aircraft have the new Safran Versa suite with sliding door (48 seats, 17.3in screen, Bluetooth); non-retrofit frames have the older Cirrus reverse herringbone 1-2-1 ",
@@ -57,7 +57,7 @@ window.__NS__ = {
     "nov1": 5655,
     "nov2": 5655,
     "nov3": 5655,
-    "operates": "The CDG-SFO nonstop operates all three days. NOTE: the live flight number on Nov 1-3, 2026 is AF080 (dep 10:10, arr 12:55), not AF084 — do not publish…",
+    "operates": "AF080 (not AF084 on these dates) + UA984 daily backup",
     "mix_note": "2biz+3econ on AF080: biz 2-pax quoted-live $12,750 on Nov 1 and Nov 2, $12,347 on Nov 3 → mix totals ~$16,143 (Nov 1/2) vs ~$15,740 (Nov 3). Swing is only ~$400 (~2.5%) — not mater…",
     "confidence": "quoted-live (Google Flights USD, pulled 2026-08-03): AF080 economy $1,131/pax; 4-pax total…"
    }
@@ -203,9 +203,8 @@ window.__NS__ = {
    },
    "best_day": "Nov 2",
    "econ5": {
-    "usd": 2600,
-    "confidence": "aggregator-estimate",
-    "detail": "~$520/pp one-way nonstop. Expedia shows MUC-SFO one-ways from $454, Lufthansa's own site from EUR591, and November is th… · aggregator-estimate"
+    "usd": 7417,
+    "detail": "corrected from $2,600 estimate — quoted-live 5-pax · quoted-live"
    },
    "mix": {
     "usd": 13560,
@@ -237,19 +236,19 @@ window.__NS__ = {
    },
    "getting_there": "Croatia Airlines DBV->ZAG (~$362/5) + FlixBus or train ZAG->MUC (~$150-200/5, ~5.5h) ~= $510-560 total, or through-ticket OU DBV-ZAG-MUC ~$700-800/5 - the seasonal DBV-MUC nonstop ends with the summer schedule ~Oct 24 (aggregator-estimate).",
    "positioning": {
-    "exists": "ended-before-window",
-    "flight_no": null,
-    "price5_usd": 560,
-    "price_confidence": "benchmark + estimate",
-    "summary": "NO nonstop: DBV→MUC season ends Sat Oct 24 — one day before your window opens — and Munich is NOT in Croatia Airlines' winter Dubrovnik network (FRA + Rome only). FALLBACK: Croatia Airlines DBV→ZAG ($362/5) + FlixBus/rail ZAG→MUC ~$150–200/5, 4–5.5h, ~$560 all-in."
+    "exists": "yes",
+    "flight_no": "LH",
+    "price5_usd": 919,
+    "price_confidence": "quoted-live",
+    "summary": "CORRECTION: Lufthansa carries a reduced winter DBV→MUC pattern through the window — Sun Oct 25 (10:10→11:55, $1,378/5), Mon Oct 26 ($919/5); NO nonstop Oct 27. Quoted-live day-by-day."
    },
    "daily": {
-    "nov1": 2600,
-    "nov2": 2600,
-    "nov3": 2600,
-    "operates": "LH458 daily, no gap day — and it is an A350-900 all three days: the A380 rotation ENDED Oct 23, so no A380 in your window",
-    "mix_note": "per-day variance not resolved; ~$2,400–2,700 band each day",
-    "confidence": "schedule quoted-live, price historical-typical"
+    "nov1": 7417,
+    "nov2": 7417,
+    "nov3": 7419,
+    "operates": "LH458 daily, A350-900 all three days (A380 ended Oct 23)",
+    "mix_note": "economy flat ($2 wobble); mix not separately live-quoted",
+    "confidence": "quoted-live (Google Flights 5-pax, 2026-08-03)"
    }
   },
   {
@@ -267,14 +266,12 @@ window.__NS__ = {
    },
    "best_day": "Nov 2 or 3",
    "econ5": {
-    "usd": 3150,
-    "confidence": "aggregator-estimate",
-    "detail": "swiss.com month grid shows Nov 2026 one-way economy 'from CHF 548' (~$620/pp); Expedia/momondo show route lows $433-480 … · aggregator-estimate"
+    "usd": 8246,
+    "detail": "corrected from $3,150 estimate — quoted-live 5-pax · quoted-live"
    },
    "mix": {
-    "usd": 9490,
-    "confidence": "historical-typical",
-    "detail": "2 business ~$3,800/pp (LX nonstop one-way biz ex-ZRH historically $3,000-5,000 in low season; Expedia lists nonstop RT b… · historical-typical"
+    "usd": 18266,
+    "detail": "corrected from $9,490 — 2-pax biz $13,318 quoted-live + 3 econ"
    },
    "biz5": {
     "usd": 19000,
@@ -301,19 +298,19 @@ window.__NS__ = {
    },
    "getting_there": "Croatia Airlines DBV->ZAG ($362/5) + OU/LX ZAG->ZRH nonstop (~$400-500/5), ~$800-850 total - or check Edelweiss's seasonal DBV->ZRH nonstop, which typically ends with the summer schedule Oct 24, one day before the earliest departure window.",
    "positioning": {
-    "exists": "ended-before-window",
-    "flight_no": null,
-    "price5_usd": 810,
-    "price_confidence": "estimate via Zagreb",
-    "summary": "NO nonstop in the window: both Edelweiss and Croatia Airlines DBV→ZRH are summer-seasonal, ending ~Oct 24 (Croatia's winter Dubrovnik network keeps only Frankfurt + Rome). FALLBACK: Croatia Airlines DBV→ZAG ($362/5) + OU ZAG→ZRH nonstop, same carrier one-stop, ~$810 for five."
+    "exists": "yes",
+    "flight_no": "OU/LX",
+    "price5_usd": 809,
+    "price_confidence": "quoted-live",
+    "summary": "CORRECTION: the DBV→ZRH nonstop DOES survive — Sun Oct 25 (09:35→11:35, $1,089/5) and Thu Oct 29 ($809/5), quoted-live day-by-day. Oct 29 is the season's final rotation; nothing Oct 26/27/28/30."
    },
    "daily": {
-    "nov1": 3150,
-    "nov2": 3150,
-    "nov3": 3150,
-    "operates": "LX38 confirmed daily (13:10→16:15, 777-300ER 8F/62J/24W/226Y)",
-    "mix_note": "per-day 5-pax variance NOT resolved — needs a live swiss.com/ITA pull; treat all three days as ~$3,150 band",
-    "confidence": "schedule quoted-live, price aggregator-estimate"
+    "nov1": 8246,
+    "nov2": 8246,
+    "nov3": 0,
+    "operates": "No LX nonstop fare returned Nov 3",
+    "mix_note": "2-pax business $13,318 quoted-live, identical Nov 1 and Nov 2 → mix ≈ $18,266",
+    "confidence": "quoted-live (Google Flights 5-pax cart, 2026-08-03)"
    }
   },
   {
@@ -392,14 +389,12 @@ window.__NS__ = {
     "biz_seat": "1-2-1 staggered, all lie-flat with direct aisle access on every A350-900 subfleet. Two possible hard products: TK-configured frames = 32 Stelia Symphony seats, ~20in wide, NO door; ex-Aeroflot frames = 28 Collins Aerospa"
    },
    "econ5": {
-    "usd": 3500,
-    "confidence": "aggregator-estimate",
-    "detail": "~$700/pp one-way on the TK nonstop. Anchors: live Trip.com nonstop TK one-ways $718-722 (Sep dates), Trip.com 12-mo Nove… · aggregator-estimate"
+    "usd": 3461,
+    "detail": "quoted-live, flat Nov 1-3 · quoted-live"
    },
    "mix": {
-    "usd": 7900,
-    "confidence": "historical-typical",
-    "detail": "2 business (~$2,900/pp = $5,800) + 3 economy (~$700/pp = $2,100), priced as two separate PNRs as required. Business comp… · historical-typical"
+    "usd": 10903,
+    "detail": "Nov 2: 2-pax biz $8,826 (live) + 3 econ $2,077 — Nov 1/3 cost $1,939 more"
    },
    "biz5": {
     "usd": 14500,
@@ -431,15 +426,15 @@ window.__NS__ = {
     "flight_no": null,
     "price5_usd": null,
     "price_confidence": null,
-    "summary": "DEAD before your window: Turkish's DBV→IST (TK438) is summer-only and its last day is ~Sat Oct 24 — one day before the window opens (winter schedule starts Oct 25, DBV not reinstated). The single-ticket DBV→IST→SFO story dies with it. Positioning would need a 1-stop via Vienna/Zagreb, unpriced."
+    "summary": "DEAD confirmed twice: last DBV→IST is Sat Oct 24 (20:45→23:40, $1,017/5 quoted-live) — one day before the window. No nonstop any day Oct 25–30, verified day-by-day."
    },
    "daily": {
-    "nov1": 3500,
-    "nov2": 3500,
-    "nov3": 3500,
-    "operates": "TK79 daily, A350 — no day-to-day variance found; $3,300–3,700 band flat across all three days",
-    "mix_note": "",
-    "confidence": "aggregator-estimate, no live day-specific pull"
+    "nov1": 3461,
+    "nov2": 3461,
+    "nov3": 3461,
+    "operates": "TK79 daily; economy identical all three days",
+    "mix_note": "BUSINESS SWINGS: 2-pax biz $10,765 Nov 1, $8,826 Nov 2 (−$1,939), $10,765 Nov 3 — fly Monday if buying beds",
+    "confidence": "quoted-live (Google Flights 5-pax cart, 2026-08-03)"
    }
   },
   {
@@ -620,18 +615,18 @@ window.__NS__ = {
    "getting_there": "Air Serbia DBV->FRA via BEG Sun Oct 25, $653/5 same-day 4h35 (quoted-live; drops to $488/5 only with a 14h40 overnight in Belgrade), vs Croatia Airlines via ZAG $938/5 — no DBV-FRA nonstop exists at sane prices after the Oct 25 winter timetable.",
    "positioning": {
     "exists": "yes",
-    "flight_no": "OU 418",
-    "price5_usd": 1090,
-    "price_confidence": "aggregator-estimate",
-    "summary": "No positioning problem: Croatia Airlines OU418 flies DBV→FRA nonstop DAILY, YEAR-ROUND (07:30→09:30, A319) — the whole Oct 25–30 window is covered, no season cliff. ~$830–1,350 for five depending on day. Codeshared as LH5991/UA7255."
+    "flight_no": "4Y/OU",
+    "price5_usd": 1249,
+    "price_confidence": "quoted-live",
+    "summary": "Route converts to winter, does not die: Discover Mon Oct 26 18:00→20:05 $1,249/5 (quoted-live); Croatia Airlines Sun/Tue/Fri rotations also show (Oct 25 was business-only inventory at $5,602). Discover upgraded DBV-FRA to year-round."
    },
    "daily": {
     "nov1": 6132,
     "nov2": 6132,
     "nov3": 6132,
-    "operates": "FRA→SFO daily on LH+UA (23–28 weekly frequencies in Nov)",
-    "mix_note": "$6,132 was a live 5-pax pull, identical all three days when pulled",
-    "confidence": "quoted-live (2026-08-03), per-day re-verify pending"
+    "operates": "LH+UA daily; economy perfectly flat across all three days",
+    "mix_note": "",
+    "confidence": "quoted-live (Google Flights 5-pax, 2026-08-03)"
    }
   }
  ],
@@ -658,5 +653,249 @@ window.__NS__ = {
   }
  ],
  "note": "Cash prices are one-way totals for the whole family of 5 (2 adults + 16/13/8). Mixed cabin is priced as two separate bookings — 2-pax business + 3-pax economy — because no program sells mixed cabins on one PNR, and separate PNRs clear award buckets more easily anyway. Points columns use the best program reachable from the Amex MR 525k pool unless marked otherwise. Confidence labels: quoted-live beats aggregator-estimate beats historical-typical.",
- "foot": "Sources: Google Flights true 5-passenger pulls where marked quoted-live; carrier sites and aggregators otherwise. Award charts current post-2025/26 devaluations. Verified award space exists ONLY on Aer Lingus EI61 Dublin (6+ economy seats Nov 1 and Nov 2, 16,250 Avios each). Everything else is chart price, space unverified. Nothing is booked."
+ "foot": "Sources: Google Flights true 5-passenger pulls where marked quoted-live; carrier sites and aggregators otherwise. Award charts current post-2025/26 devaluations. Verified award space exists ONLY on Aer Lingus EI61 Dublin (6+ economy seats Nov 1 and Nov 2, 16,250 Avios each). Everything else is chart price, space unverified. Nothing is booked.",
+ "matrix": [
+  {
+   "city": "London",
+   "pos": 503,
+   "posN": "Ryanair STN",
+   "cash": {
+    "e": 2718,
+    "m": 8124,
+    "b": 15964
+   },
+   "pts": {
+    "e": {
+     "k": 165000,
+     "c": 1703
+    },
+    "m": {
+     "k": 297000,
+     "c": 2363
+    },
+    "b": {
+     "k": 495000,
+     "c": 3353
+    }
+   },
+   "ptsProg": "Avios (British Airways Club) on BA metal; MR transfers 1:1",
+   "ptsNote": ""
+  },
+  {
+   "city": "Paris (Orly)",
+   "pos": 415,
+   "posN": "Transavia Oct 27",
+   "cash": {
+    "e": 2830,
+    "m": 4674,
+    "b": 3915
+   },
+   "pts": {
+    "e": null,
+    "m": null,
+    "b": null
+   },
+   "ptsProg": "NONE — French Bee has no frequent-flyer partners; the nonstop is cash-only",
+   "ptsNote": ""
+  },
+  {
+   "city": "Dublin",
+   "pos": 650,
+   "posN": "EI477 nonstop",
+   "cash": {
+    "e": 3525,
+    "m": 6575,
+    "b": 11150
+   },
+   "pts": {
+    "e": {
+     "k": 81250,
+     "c": 1625
+    },
+    "m": {
+     "k": 173750,
+     "c": 1735
+    },
+    "b": {
+     "k": 312500,
+     "c": 1900
+    }
+   },
+   "ptsProg": "Avios via Aer Lingus AerClub (transfer Amex MR 1:1 to any Avios brand, move to AerClub via Avios pooling)",
+   "ptsNote": "verified"
+  },
+  {
+   "city": "Istanbul",
+   "pos": 900,
+   "posN": "1-stop, unpriced est.",
+   "cash": {
+    "e": 4361,
+    "m": 11803,
+    "b": 15400
+   },
+   "pts": {
+    "e": null,
+    "m": null,
+    "b": null
+   },
+   "ptsProg": "Turkish Miles&Smiles (best rates for TK metal) - but NOT fundable from this family's pool",
+   "ptsNote": ""
+  },
+  {
+   "city": "Paris",
+   "pos": 475,
+   "posN": "Transavia to Orly + transfer",
+   "cash": {
+    "e": 6130,
+    "m": 16618,
+    "b": 17475
+   },
+   "pts": {
+    "e": {
+     "k": 125000,
+     "c": 1725
+    },
+    "m": {
+     "k": 195000,
+     "c": 2225
+    },
+    "b": {
+     "k": 300000,
+     "c": 2975
+    }
+   },
+   "ptsProg": "Flying Blue (Amex MR 1:1)",
+   "ptsNote": ""
+  },
+  {
+   "city": "Copenhagen",
+   "pos": 746,
+   "posN": "1-stop Air Serbia",
+   "cash": {
+    "e": 7130,
+    "m": 16576,
+    "b": 15246
+   },
+   "pts": {
+    "e": {
+     "k": 219000,
+     "c": 1046
+    },
+    "m": {
+     "k": 341600,
+     "c": 1166
+    },
+    "b": {
+     "k": 525500,
+     "c": 1296
+    }
+   },
+   "ptsProg": "Flying Blue (Amex MR 1:1) — with Virgin Atlantic as the cheaper long-shot and Delta 133k as partial cover",
+   "ptsNote": ""
+  },
+  {
+   "city": "Frankfurt",
+   "pos": 1249,
+   "posN": "Discover nonstop Oct 26",
+   "cash": {
+    "e": 7381,
+    "m": 22759,
+    "b": 44055
+   },
+   "pts": {
+    "e": {
+     "k": 212500,
+     "c": 1949
+    },
+    "m": {
+     "k": 277500,
+     "c": 1949
+    },
+    "b": {
+     "k": 375000,
+     "c": 1974
+    }
+   },
+   "ptsProg": "Air Canada Aeroplan (fixed-price LH/Star chart)",
+   "ptsNote": ""
+  },
+  {
+   "city": "Munich",
+   "pos": 919,
+   "posN": "LH nonstop Oct 26",
+   "cash": {
+    "e": 8336,
+    "m": 14479,
+    "b": 30919
+   },
+   "pts": {
+    "e": {
+     "k": 200000,
+     "c": 1469
+    },
+    "m": {
+     "k": 270000,
+     "c": 1469
+    },
+    "b": {
+     "k": 375000,
+     "c": 1469
+    }
+   },
+   "ptsProg": "Air Canada Aeroplan (books Lufthansa with NO fuel surcharges)",
+   "ptsNote": ""
+  },
+  {
+   "city": "Amsterdam",
+   "pos": 691,
+   "posN": "1-stop Air Serbia",
+   "cash": {
+    "e": 8593,
+    "m": 16420,
+    "b": 27331
+   },
+   "pts": {
+    "e": {
+     "k": 125000,
+     "c": 1491
+    },
+    "m": {
+     "k": 195000,
+     "c": 1831
+    },
+    "b": {
+     "k": 300000,
+     "c": 2341
+    }
+   },
+   "ptsProg": "Flying Blue (Amex MR 1:1, KLM is the operating carrier)",
+   "ptsNote": ""
+  },
+  {
+   "city": "Zurich",
+   "pos": 809,
+   "posN": "OU/LX nonstop Oct 29",
+   "cash": {
+    "e": 9055,
+    "m": 19075,
+    "b": 19809
+   },
+   "pts": {
+    "e": {
+     "k": 102500,
+     "c": 1509
+    },
+    "m": {
+     "k": 147500,
+     "c": 1829
+    },
+    "b": {
+     "k": 215000,
+     "c": 2309
+    }
+   },
+   "ptsProg": "KrisFlyer (Amex 1:1) - the ONLY Star Alliance door in this points pool; Aeroplan is the canonical LX program but is unreachable from this Amex/UR mix",
+   "ptsNote": ""
+  }
+ ]
 };
