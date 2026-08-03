@@ -1438,7 +1438,11 @@ window.__NS__ = {
    },
    "note": "The only city with VERIFIED award seats (6+ economy, Nov 1 & 2, 16,250 Avios each).",
    "bestCfg": "b",
-   "bestCpp": 3.0
+   "bestCpp": 3.0,
+   "bed": {
+    "kind": "real bed",
+    "note": "Aer Lingus A330: Thompson Vantage, fully flat 180°, alternating 1-2-1/1-2-2 — grab the odd-row 'throne' window seats. No doors."
+   }
   },
   {
    "city": "London",
@@ -1524,7 +1528,11 @@ window.__NS__ = {
    },
    "note": "Highest fun (half-term week: Harry Potter Dark Arts, zoo trails, twilight Tower tours). LHR surcharges make points weak.",
    "bestCfg": "b",
-   "bestCpp": 2.5
+   "bestCpp": 2.5,
+   "bed": {
+    "kind": "real bed",
+    "note": "Cheapest 5-biz quote is Virgin's A350 Upper Class: 1-2-1, fully flat, direct aisle. CAUTION if you book BA instead: their winter A380s carry the OLD Club World — still a flat bed, but 2-4-2 where window seats climb over neighbours."
+   }
   },
   {
    "city": "Paris (Orly)",
@@ -1578,7 +1586,11 @@ window.__NS__ = {
    },
    "note": "No points program and no real business — 'biz' here is French Bee Premium, a 2-3-2 recliner. Priced off the live 2-seat quote ($1,405/person): 5 Premium ≈ $7,440 all-in. An earlier $3,915 figure used a stale per-person estimate and is withdrawn. Toussaint week: Disneyland Halloween, Parc Astérix.",
    "bestCfg": null,
-   "bestCpp": 0
+   "bestCpp": 0,
+   "bed": {
+    "kind": "recliner",
+    "note": "French Bee 'Premium' is a 2-3-2 recliner, 36in pitch. NOT a bed at any price on this airline."
+   }
   },
   {
    "city": "Istanbul",
@@ -1652,7 +1664,11 @@ window.__NS__ = {
    },
    "note": "Amex MR does not transfer to Turkish — cash only. Republic Day fireworks Oct 29 over the Bosphorus.",
    "bestCfg": null,
-   "bestCpp": 0
+   "bestCpp": 0,
+   "bed": {
+    "kind": "real bed",
+    "note": "TK A350: 1-2-1 staggered, fully flat, direct aisle from every seat."
+   }
   },
   {
    "city": "Paris (CDG)",
@@ -1726,7 +1742,11 @@ window.__NS__ = {
    },
    "note": "Flying Blue works but CDG carries Europe's highest award surcharges.",
    "bestCfg": "m",
-   "bestCpp": 7.4
+   "bestCpp": 7.4,
+   "bed": {
+    "kind": "real bed — verify frame",
+    "note": "AF 777-300ER is mid-retrofit: new Safran suite (1-2-1 with door) OR legacy 2-2-2 flat without universal aisle access. Count seats across a business row on the seat map before paying: four = new, six = old."
+   }
   },
   {
    "city": "Copenhagen",
@@ -1812,7 +1832,11 @@ window.__NS__ = {
    },
    "note": "Tivoli's Halloween runs through your window — but the numbers don't.",
    "bestCfg": "m",
-   "bestCpp": 4.5
+   "bestCpp": 4.5,
+   "bed": {
+    "kind": "real bed",
+    "note": "SK935 A350: Thompson Vantage XL 1-2-1, 78in flat, all-aisle. Inventory is the problem, not the seat — it flips between unsellable and $12k for two."
+   }
   },
   {
    "city": "Frankfurt",
@@ -1890,7 +1914,11 @@ window.__NS__ = {
    },
    "note": "Aeroplan (Amex 1:1) passes zero fuel surcharges — the 11.2¢/pt is real only because the cash fare is obscene.",
    "bestCfg": "b",
-   "bestCpp": 11.2
+   "bestCpp": 11.2,
+   "bed": {
+    "kind": "real bed — dated on LH",
+    "note": "UA 777 Polaris = 1-2-1 flat. LH 747-8 business = flat but 2-2/2-2-2 WITHOUT direct aisle for window seats, no Allegris guarantee. If buying biz here, prefer the United frequency."
+   }
   },
   {
    "city": "Munich",
@@ -1960,7 +1988,11 @@ window.__NS__ = {
    },
    "note": "Aeroplan, no surcharges. Alps day trips in empty shoulder season.",
    "bestCfg": "b",
-   "bestCpp": 7.9
+   "bestCpp": 7.9,
+   "bed": {
+    "kind": "real bed — dated",
+    "note": "LH458 A350 is mostly the LEGACY 2-2-2 flat bed without universal aisle access; Allegris retrofit not guaranteed on your date. A bed, but a 2015 bed."
+   }
   },
   {
    "city": "Amsterdam",
@@ -2046,7 +2078,11 @@ window.__NS__ = {
    },
    "note": "Best all-round points value on the board — because KLM's cash fares are brutal.",
    "bestCfg": "b",
-   "bestCpp": 8.3
+   "bestCpp": 8.3,
+   "bed": {
+    "kind": "real bed",
+    "note": "KL605 787-10: Jamco Venture 1-2-1 reverse herringbone, fully flat. No privacy doors on this subfleet (doors are 777-only)."
+   }
   },
   {
    "city": "Zurich",
@@ -2112,7 +2148,11 @@ window.__NS__ = {
    },
    "note": "The 11.7¢/pt mix is the single best redemption found — 148k puts 2 in real SWISS beds. LX award space is the big unknown.",
    "bestCfg": "m",
-   "bestCpp": 11.7
+   "bestCpp": 11.7,
+   "bed": {
+    "kind": "real bed — pick seats",
+    "note": "LX38 777: Thompson staggered, fully flat, but rows alternate 1-2-2/2-2-1 so NOT every seat has aisle access. The 12 solo 'throne' seats (4A/5K/7A/8K…) are the prize — assign them at booking."
+   }
   }
  ]
 };

@@ -385,6 +385,10 @@ function boardHTML(){
         +'</div>';
     });
     h+='</div>';
+    if(r.bed){
+      const bk=r.bed.kind.indexOf('recliner')>=0?'n':(r.bed.kind.indexOf('—')>=0?'m':'y');
+      h+='<div class="br3" style="margin-top:6px"><span class="bed '+bk+'">'+r.bed.kind.toUpperCase()+'</span> '+r.bed.note+'</div>';
+    }
     h+='<div class="br3">'+r.note+(r.ver?' <span class="vtag">AWARD SEATS VERIFIED</span>':'')+'</div>';
     h+='</div>';
   });
