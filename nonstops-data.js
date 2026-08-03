@@ -1996,7 +1996,7 @@ window.__NS__ = {
   },
   {
    "city": "Amsterdam",
-   "fun": 7,
+   "fun": 8,
    "ver": false,
    "pos": [
     {
@@ -2076,7 +2076,7 @@ window.__NS__ = {
      }
     }
    },
-   "note": "Best all-round points value on the board — because KLM's cash fares are brutal.",
+   "note": "Best all-round points value on the board — because KLM's cash fares are brutal. Halloween is genuinely good: Walibi Holland combo day (Spooky Days 6–12 by day, Fright Nights 16+ by night) covers all three kids on Sat Oct 31.",
    "bestCfg": "b",
    "bestCpp": 8.3,
    "bed": {
@@ -2193,7 +2193,7 @@ window.__NS__ = {
   "foot": "Getting to Zagreb: Croatia Airlines DBV→ZAG $362/5 (55 min, daily), or drive it as the trip itself — Split and Plitvice in autumn colour are on the way. All Ryanair fares above are per-day API pulls at adult rate; add ~$100–180 for bags across 5."
  },
  "croatia": {
-  "h": "Or just stay: Halloween & All Saints in Croatia, honestly scored",
+  "h": "Halloween, honestly scored: Croatia vs the exit cities",
   "score": "4/10 for the kids as a default — Zagreb raises it modestly, and only Nov 1 is guaranteed",
   "body": "Croatia is Catholic: Oct 31 (a Saturday) is thin and imported, Nov 1 (a Sunday) is the real event — a national holiday where shops close and cemeteries fill with candles. What each city actually offers:",
   "rows": [
@@ -2211,9 +2211,19 @@ window.__NS__ = {
     "r": "Zagreb",
     "s": "5–6/10",
     "d": "NOT a Halloween destination by any international standard — it is merely the best of a weak Croatian field. The zoo has HISTORICALLY run a kids' Halloween day and Museum of Illusions themed events, but neither is confirmed for 2026 (Croatian venues announce 2–4 weeks out) and if the zoo day misses your Saturday, Zagreb's Halloween is a couple of bar nights. What Zagreb IS genuinely acclaimed for is Nov 1: MIROGOJ — Bollé's arcades, ~60,000 graves, thousands of candles, free shuttles from the Cathedral. That part is real and reliable."
+   },
+   {
+    "r": "Amsterdam (for comparison)",
+    "s": "7/10",
+    "d": "A real Halloween, anchored by WALIBI HOLLAND 45 min away — one of Europe's biggest scare events. Oct 31 2026 is a Saturday and in 2025 was a COMBO day: 'Spooky Days' for ages 6–12 all day (built for the 8yo), then Fright Nights from 18:00, which the park itself rates 16+ (perfect for the 16yo; the 13yo is a judgment call). In the city: Amsterdam Dungeon Halloween shows (10+), a kids' Halloween walkthrough in West, pumpkin farms, and the Imagine horror/fantasy film festival Oct 29–Nov 8. The big city party (The Ring, WesterUnie) is adults-only. 2026 park dates unannounced — pattern says late-Oct weekends + Oct 31–Nov 2."
+   },
+   {
+    "r": "Dublin / Ireland (the benchmark)",
+    "s": "8–9/10",
+    "d": "Halloween's actual birthplace: citywide and national festivals (Púca in Meath, Macnas parade), real trick-or-treating, kid programming at every level. The strongest Oct 31 on the board, and it sits on the cheapest verified exit."
    }
   ],
-  "foot": "Straight answer: nowhere in Croatia is acclaimed for Halloween. If Halloween itself is the point, Ireland is categorically better — Dublin/Meath run genuine festivals (Samhain's actual birthplace) with real kids' programming. Croatia's guaranteed spectacle is All Saints Nov 1, and Mirogoj is the best place in the country to see it. Mirogoj vs Kraków's Rakowicki: Rakowicki is bigger and more famous; Mirogoj more beautiful and easier with kids. THE COMBINATION PLAY still works but with honest billing: Zagreb gives you a MAYBE-Halloween Saturday and a certain, moving Sunday — then the $417 ZAG→Dublin flight any day Nov 1–3 puts you in Ireland anyway."
+  "foot": "Straight answer: nowhere in Croatia is acclaimed for Halloween. If Halloween itself is the point, Ireland is categorically better — Dublin/Meath run genuine festivals (Samhain's actual birthplace) with real kids' programming. Croatia's guaranteed spectacle is All Saints Nov 1, and Mirogoj is the best place in the country to see it. Mirogoj vs Kraków's Rakowicki: Rakowicki is bigger and more famous; Mirogoj more beautiful and easier with kids. THE COMBINATION PLAY still works but with honest billing: Zagreb gives you a MAYBE-Halloween Saturday and a certain, moving Sunday — then the $417 ZAG→Dublin flight any day Nov 1–3 puts you in Ireland anyway. AMSTERDAM CAVEAT: the Halloween is real but the exit costs $7,902 for five in cash — you would pay ~$6,000 more than Dublin for a comparable-or-worse Halloween, unless the 125k Flying Blue play (space unverified) is the whole point."
  },
  "boat": {
   "h": "Your Airbnb pick, verified live: it's the catamaran",
