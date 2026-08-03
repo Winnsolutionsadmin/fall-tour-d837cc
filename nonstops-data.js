@@ -537,7 +537,7 @@ window.__NS__ = {
     "mix_fees": 1140,
     "biz5_pts": 300000,
     "biz5_fees": 1650,
-    "space": "UNVERIFIED - no Flying Blue login available to this agent; saver space for 5 on one nonstop is rare and FB prices dynamically (25k/60k are saver floors; real quotes often 35k+/90k+). The only VERIFIED award in this study remains EI61 DUB-SFO at 16,250 Avios/pp - reachable from AMS for ~$60-90pp on the same Aer Lingus connection.",
+    "space": "CHECKED LIVE 2026-08-03 via Delta partner display (AF control confirmed the tool shows SkyTeam space): NO saver on KL605 Nov 1/2/3, either cabin — all dynamic 68k-76k econ / 405k-495k biz per person.",
     "cpp": "vs Nov 3 cash: econ 5.7cpp (($7,902-$800)/125k), mix 7.5cpp, biz5 8.3cpp - outstanding IF saver space for 5 exists; 300k biz or 195k mix fits the 525k MR pool",
     "detail": "Fees are historical-typical FB ex-AMS estimates (~$160/pp econ, ~$330/pp biz incl. carrier surcharge). Alternate: Virgin Flying Club can also book AF/KLM but rates are rarely better than FB saver. If FB space for 5 doesn't exist, the Avios play is AMS->DUB positioning + the verified EI61 award.",
     "cppNum": 8.3
@@ -2056,7 +2056,7 @@ window.__NS__ = {
      "pts": {
       "k": 125000,
       "c": 1491,
-      "cpp": 5.7
+      "cpp": null
      }
     },
     "m": {
@@ -2064,7 +2064,7 @@ window.__NS__ = {
      "pts": {
       "k": 195000,
       "c": 1831,
-      "cpp": 7.5
+      "cpp": null
      }
     },
     "b": {
@@ -2072,13 +2072,13 @@ window.__NS__ = {
      "pts": {
       "k": 300000,
       "c": 2341,
-      "cpp": 8.3
+      "cpp": null
      }
     }
    },
-   "note": "Best all-round points value on the board — because KLM's cash fares are brutal. Halloween is genuinely good: Walibi Holland combo day (Spooky Days 6–12 by day, Fright Nights 16+ by night) covers all three kids on Sat Oct 31.",
+   "note": "AMSTERDAM IS NOW EFFECTIVELY DEAD. Live partner-award check (Delta Shop-with-Miles, logged out, 2026-08-03, with a working AF control search): KL605 shows ZERO award space Nov 1/2/3 in either cabin at any passenger count — every fare across ~30 cells was dynamic ('Actual Fare', 68k–76k economy, 405k–495k business per person), never saver. The 125k Flying Blue play assumed saver space that does not exist on these dates. With cash at $8.6k all-in, Walibi Halloween does not survive the math.",
    "bestCfg": "b",
-   "bestCpp": 8.3,
+   "bestCpp": 0,
    "bed": {
     "kind": "real bed",
     "note": "KL605 787-10: Jamco Venture 1-2-1 reverse herringbone, fully flat. No privacy doors on this subfleet (doors are 777-only)."
