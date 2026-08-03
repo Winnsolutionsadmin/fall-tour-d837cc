@@ -425,7 +425,22 @@ window.__NS__ = {
     "headline": "Republic Day fireworks over the Bosphorus, empires for the teens, mild shoulder-season weather - one of the best big-city weeks on the shortlist",
     "detail": "Oct 29 is Turkish Republic Day, which lands mid-stay: flag-draped city, air shows, and fireworks over the Bosphorus - a genuine substitute for Halloween, which Turkey barely observes. Weather is mild shoulder season (~12-20C, occasional rain), crowds thinner than summer, and the kid-span works unusu"
    },
-   "getting_there": "Turkish flies DBV-IST nonstop (~2h, seasonal into late Oct): ~$120-180/pp = ~$600-900/5 standalone (aggregator-estimate) - but the smarter move is one TK through-ticket DBV-IST-SFO (single alliance, one PNR, checked bags through), which often prices near the I"
+   "getting_there": "Turkish flies DBV-IST nonstop (~2h, seasonal into late Oct): ~$120-180/pp = ~$600-900/5 standalone (aggregator-estimate) - but the smarter move is one TK through-ticket DBV-IST-SFO (single alliance, one PNR, checked bags through), which often prices near the I",
+   "positioning": {
+    "exists": "ended-before-window",
+    "flight_no": null,
+    "price5_usd": null,
+    "price_confidence": null,
+    "summary": "DEAD before your window: Turkish's DBV→IST (TK438) is summer-only and its last day is ~Sat Oct 24 — one day before the window opens (winter schedule starts Oct 25, DBV not reinstated). The single-ticket DBV→IST→SFO story dies with it. Positioning would need a 1-stop via Vienna/Zagreb, unpriced."
+   },
+   "daily": {
+    "nov1": 3500,
+    "nov2": 3500,
+    "nov3": 3500,
+    "operates": "TK79 daily, A350 — no day-to-day variance found; $3,300–3,700 band flat across all three days",
+    "mix_note": "",
+    "confidence": "aggregator-estimate, no live day-specific pull"
+   }
   },
   {
    "city": "London",
