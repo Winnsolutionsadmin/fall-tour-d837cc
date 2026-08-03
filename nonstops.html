@@ -376,6 +376,13 @@ function boardHTML(){
     CR.rows.forEach(r=>{h+='<div class="pr" style="border-top-color:#352a15"><div class="r1"><span class="rt">'+r.r+'</span><span class="pp" style="color:var(--amb)">'+r.s+'</span></div><div class="rd" style="color:#a89a7d">'+r.d+'</div></div>'});
     h+='<div class="pf" style="color:#94875f">'+CR.foot+'</div></div>';
   }
+  const BT=D.boat;
+  if(BT){
+    h+='<div class="pivot" style="background:linear-gradient(180deg,#101a26,#0b121c);border-color:#2e4360"><h2 style="color:var(--blu)">'+BT.h+'</h2>';
+    h+='<p>'+BT.body+'</p>';
+    BT.rows.forEach(r=>{h+='<div class="pr" style="border-top-color:#1a2a3d"><div class="r1"><span class="rt">'+r.r+'</span><span class="pp" style="color:var(--blu)">'+r.p+'</span></div><div class="rd" style="color:#8a9cb5">'+r.d+'</div></div>'});
+    h+='<div class="pf" style="color:#7688a0">'+BT.foot+'</div></div>';
+  }
   h+='<div class="bd">';
   h+='<div class="bdtog">'
     +'<button class="'+(bdMode==='cash'?'on':'')+'" onclick="bdSet(\'cash\')">Cheapest cash</button>'

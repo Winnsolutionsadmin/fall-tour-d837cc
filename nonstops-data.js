@@ -2214,5 +2214,42 @@ window.__NS__ = {
    }
   ],
   "foot": "Mirogoj vs Kraków's Rakowicki, honestly: Rakowicki is the bigger, denser, more famous version of the same ritual; Mirogoj is the more architecturally beautiful and more manageable one with kids. Neither disappoints. Plitvice is past peak color by this week (peak Oct 10–25) but misty, quiet, and still worth the stop. 2026 event listings publish 2–4 weeks out — check Zagreb Zoo + Museum of Illusions in early October. THE COMBINATION PLAY: road-trip to Zagreb for Halloween weekend (zoo Sat, Mirogoj Sun evening), then the near-daily $417 Zagreb→Dublin flight ANY day Nov 1–3 → EI61 home. You get the authentic All Saints AND Ireland, without choosing."
+ },
+ "boat": {
+  "h": "Your Airbnb pick, verified live: it's the catamaran",
+  "body": "Listing 17528677 is not an apartment — it is the <b>crewed Lagoon 42 sailing catamaran</b>, 'Lux Catamaran — islands Dubrovnik–Split'. 5.0★ across 17 reviews, Superhost (9 years, 214 reviews, 4.83). Sleeps your 5 easily (listing says 10 guests / 4-5 cabins). Priced live for YOUR party (2 adults + 3 kids, Oct 18–25):",
+  "rows": [
+   {
+    "r": "Airbnb total, 7 nights",
+    "p": "$5,850",
+    "d": "'includes all fees' — but it does not include the boat's real running costs:"
+   },
+   {
+    "r": "Captain (effectively mandatory)",
+    "p": "€1,300/wk",
+    "d": "professional skipper — reviews praise them (Blaz, Igor)"
+   },
+   {
+    "r": "Fuel + marina/port fees",
+    "p": "€150–400",
+    "d": "varies with itinerary"
+   },
+   {
+    "r": "Food & drinks aboard",
+    "p": "~€500–700",
+    "d": "€15–20/person/day × 5 × 7"
+   },
+   {
+    "r": "One-way fee Dubrovnik → Split",
+    "p": "€600",
+    "d": "exactly the routing you want — start DBV, end Split, drive to Zagreb"
+   },
+   {
+    "r": "REALISTIC ALL-IN",
+    "p": "$8,000–9,500",
+    "d": "vs the $5,850 sticker. Cancellation: partial refund only before Sep 18."
+   }
+  ],
+  "foot": "Two flags before booking: (1) a reviewer with young kids reported only 'a really old lifejacket' aboard — confirm proper child sizes for the 8-year-old with the host first; (2) the same reviewer flagged the hidden costs above. HOW IT SLOTS IN: cruise disembarks Dubrovnik Oct 18 → catamaran Sat-to-Sat Oct 18–25 through Brač/Hvar/Vis/Korčula/Mljet, ending SPLIT → drive or bus to Zagreb (~4.5h, Plitvice on the way) → Zagreb Halloween weekend (zoo + Mirogoj) → $417 ZAG→Dublin any day Nov 1–3 → EI61 nonstop to SFO. Every leg of that chain is verified except LX-style award space, which this route doesn't need."
  }
 };
