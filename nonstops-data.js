@@ -14,14 +14,12 @@ window.__NS__ = {
     "lie_flat": "yes"
    },
    "econ5": {
-    "usd": 2400,
-    "confidence": "aggregator-estimate",
-    "detail": "~$480/pp x 5 one-way nonstop. Kayak best recent one-way PAR-SFO $483, Expedia from $373 (those lows may be connecting/Fr… · aggregator-estimate"
+    "usd": 5655,
+    "detail": "corrected from $2,400 aggregate — day-specific quoted-live, cheapest of Nov 1-3 · quoted-live"
    },
    "mix": {
-    "usd": 8240,
-    "confidence": "historical-typical",
-    "detail": "2 business (~$3,400/pp = $6,800) + 3 economy (~$480/pp = $1,440), booked as separate 2-pax and 3-pax PNRs. One-way ex-Pa… · historical-typical"
+    "usd": 16143,
+    "detail": "corrected from $8,240 estimate — 2-pax biz $12,750 + 3 econ, quoted-live · Nov 3 dips to ~$15,740"
    },
    "biz5": {
     "usd": 17000,
@@ -47,7 +45,22 @@ window.__NS__ = {
     "headline": "Paris in Toussaint week: Halloween at Disneyland, chestnut-season city walks, world-class everything for all three kids",
     "detail": "Oct 25-Nov 2 lands squarely in the French Toussaint holidays - the city is in family mode, and Disneyland Paris runs its full Halloween Festival through early November (a genuine hit for the 8- and 13-year-old). The 16-year-old gets the Catacombs, Louvre, Montmartre and serious food; day trips to Ve"
    },
-   "getting_there": "Cheapest for 5: Croatia Airlines DBV->ZAG ($362/5, verified) + budget ZAG->CDG/ORY (~$300-450/5 on Croatia Air/Vueling) = ~$700-800 total; alternative Ryanair DBV->VIE + VIE->Paris LCC similar money with more hassle - direct DBV-Paris (Transavia/easyJet) is se"
+   "getting_there": "Cheapest for 5: Croatia Airlines DBV->ZAG ($362/5, verified) + budget ZAG->CDG/ORY (~$300-450/5 on Croatia Air/Vueling) = ~$700-800 total; alternative Ryanair DBV->VIE + VIE->Paris LCC similar money with more hassle - direct DBV-Paris (Transavia/easyJet) is se",
+   "positioning": {
+    "exists": "yes",
+    "flight_no": "AF1425",
+    "price5_usd": 1584,
+    "price_confidence": "quoted-live",
+    "summary": "DBV-CDG nonstop survives only ONE day of the window: Air France AF1425 on Sun Oct 25 (12:50-15:30, E190) — that is the route's last day of season (quoted-live on Google Flights, no DBV-CDG nonstop bookable Oct 26-31). Croatia Airlines OU476 DBV-CDG shows zero operations Oct 24-31 (ended earlier). easyJet's Paris-Dubrovnik (Orly)…"
+   },
+   "daily": {
+    "nov1": 5655,
+    "nov2": 5655,
+    "nov3": 5655,
+    "operates": "The CDG-SFO nonstop operates all three days. NOTE: the live flight number on Nov 1-3, 2026 is AF080 (dep 10:10, arr 12:55), not AF084 — do not publish…",
+    "mix_note": "2biz+3econ on AF080: biz 2-pax quoted-live $12,750 on Nov 1 and Nov 2, $12,347 on Nov 3 → mix totals ~$16,143 (Nov 1/2) vs ~$15,740 (Nov 3). Swing is only ~$400 (~2.5%) — not mater…",
+    "confidence": "quoted-live (Google Flights USD, pulled 2026-08-03): AF080 economy $1,131/pax; 4-pax total…"
+   }
   },
   {
    "city": "Dublin",
@@ -96,7 +109,22 @@ window.__NS__ = {
     "headline": "Halloween in the country that invented it — Samhain's home turf, festivals everywhere, all in English",
     "detail": "The Oct 25-Nov 2 window lands squarely on Ireland's biggest folk holiday: Bram Stoker Festival in Dublin over the late-Oct bank-holiday weekend, the Puca Festival (Samhain fire ceremonies) in nearby Trim/Athboy Oct 30-Nov 1, and Derry Halloween — Europe's largest Halloween carnival — within day-trip"
    },
-   "getting_there": "No DBV-DUB nonstop: cheapest is Ryanair DBV->STN (~$503/5) + Ryanair STN->DUB (~$175/5) self-connect ~ $680/5 total (aggregator-estimate, bags extra); simpler 1-stop through-ticket DBV->DUB via LHR/AMS/CDG runs ~$900-1,100/5."
+   "getting_there": "No DBV-DUB nonstop: cheapest is Ryanair DBV->STN (~$503/5) + Ryanair STN->DUB (~$175/5) self-connect ~ $680/5 total (aggregator-estimate, bags extra); simpler 1-stop through-ticket DBV->DUB via LHR/AMS/CDG runs ~$900-1,100/5.",
+   "positioning": {
+    "exists": "yes",
+    "flight_no": "EI477 (return of EI476)",
+    "price5_usd": 650,
+    "price_confidence": "aggregator-estimate: late-season one-way…",
+    "summary": "Yes — Aer Lingus DBV-DUB survives the window on Sun Oct 25 / Tue Oct 27 / Thu Oct 29 (12:50-15:20) with no season-end date filed, likely running into November. Clean same-airline story: position on EI477, exit on EI61. Thu Oct 29 arrival 15:20 leaves 2+ nights in Dublin before any exit date."
+   },
+   "daily": {
+    "nov1": 1850,
+    "nov2": 1750,
+    "nov3": 1700,
+    "operates": "EI61 DUB-SFO operates DAILY from Oct 25, 2026 (dep 12:50, arr 15:45, A330-300, published schedule via flightmapper/OAG) — flies all three days, Sun No…",
+    "mix_note": "2biz+3econ not separately quoted; Aer Lingus DUB-SFO one-way business typically $1,600-2,500 pp (historical-typical). November is a soft month — biz fare more likely driven by sale…",
+    "confidence": "aggregator-estimate, NOT day-specific: Skyscanner shows DUB-SFO one-way from $342 pp with …"
+   }
   },
   {
    "city": "Paris (Orly)",
@@ -113,14 +141,12 @@ window.__NS__ = {
     "lie_flat": "recliner"
    },
    "econ5": {
-    "usd": 1950,
-    "confidence": "aggregator-estimate",
-    "detail": "One-way ORY->SFO economy lows seen at $378/pp in the past 7 days on Travelocity/Kayak for this route; 5 x ~$378-420 = ~$… · aggregator-estimate"
+    "usd": 2415,
+    "detail": "Nov 1 quoted-live. CORRECTION: winter pattern is Wed/Fri/Sun — Nov 1 is the ONLY day in your window, not Nov 2"
    },
    "mix": {
-    "usd": 2540,
-    "confidence": "historical-typical",
-    "detail": "2 Premium (~$700/pp one-way, extrapolated from reviews citing Premium at roughly $250-400 over economy one-way) + 3 econ… · historical-typical"
+    "usd": 4259,
+    "detail": "2 Premium recliner $2,810 + 3 econ, quoted-live Nov 1 — no true business exists"
    },
    "biz5": {
     "usd": 3500,
@@ -145,7 +171,22 @@ window.__NS__ = {
     "headline": "Paris during Toussaint week is a near-perfect family finale — Halloween at Disneyland Paris, chestnut-season city walks, and world-class everything for all three kids",
     "detail": "Oct 25-Nov 2 lands squarely in the French Toussaint school holidays, so the city is in full family mode: Disneyland Paris runs its flagship Halloween Festival through early November and Parc Asterix stages 'Peur sur le Parc' (great for the 13/16-year-olds), while the Louvre, Musee d'Orsay, catacombs"
    },
-   "getting_there": "Cheapest is a seasonal DBV->Paris nonstop if it still operates in late Oct — Transavia/Vueling DBV->ORY historically run ~$60-90/pp (~$300-450/5, aggregator-estimate, verify end-of-season date); firm fallback: Croatia Airlines DBV->ZAG $362/5 + a ZAG->Paris LC"
+   "getting_there": "Cheapest is a seasonal DBV->Paris nonstop if it still operates in late Oct — Transavia/Vueling DBV->ORY historically run ~$60-90/pp (~$300-450/5, aggregator-estimate, verify end-of-season date); firm fallback: Croatia Airlines DBV->ZAG $362/5 + a ZAG->Paris LC",
+   "positioning": {
+    "exists": "yes",
+    "flight_no": "TO4201",
+    "price5_usd": 415,
+    "price_confidence": "quoted-live",
+    "summary": "Transavia France keeps DBV-ORY alive past the IATA season change: TO4201 operates in-window on Sun Oct 25, Tue Oct 27 and Thu Oct 29 (all quoted-live), and the route's true last day of season is Sun Nov 1, 2026 (nothing bookable Nov 2 onward). easyJet ORY-DBV ended Aug 30, 2026; Vueling has no DBV-Paris nonstop in the window. Be…"
+   },
+   "daily": {
+    "nov1": 2415,
+    "nov2": 0,
+    "nov3": 0,
+    "operates": "CORRECTION TO BRIEF: BF710 ORY-SFO's winter pattern is Wed/Fri/Sun, NOT Mon/Thu/Sat — verified by live day-by-day scan Oct 28-Nov 8, 2026 (operates Oc…",
+    "mix_note": "French Bee has no business cabin — forward cabin is Premium. 2 Premium + 3 econ on Nov 1: Premium 2-pax quoted-live $2,810 → mix total ~$4,259. No day-to-day comparison possible si…",
+    "confidence": "quoted-live (Google Flights USD, 2026-08-03): Nov 1 economy $483/pax, 4-pax total $1,932 q…"
+   }
   },
   {
    "city": "Munich",
@@ -156,7 +197,7 @@ window.__NS__ = {
     "dep": "16:20",
     "arr": "19:00",
     "duration": "11h40m",
-    "aircraft": "A380-800 planned 6x weekly winter 2026/27",
+    "aircraft": "A350-900 (A380 ends Oct 23)",
     "lie_flat": "yes",
     "biz_seat": "Mixed-fleet, all lie-flat: A380 = mostly the old 2-2-2 (window pax climb over neighbor; Thompson Vantage XL 1-2-1 all-aisle retrofit rolling through the A380 fleet until mid-2027, first frames flying since Apr 2026 - not"
    },
@@ -194,7 +235,22 @@ window.__NS__ = {
     "headline": "World-class museums and Alps day trips in empty shoulder season - but gray, ~40-55F, and the Christmas markets haven't opened yet",
     "detail": "Deutsches Museum (one of the world's best science museums, perfect 8-16 spread), BMW Welt, FC Bayern's Allianz Arena tour, and the Eisbach river surfers hit all three kids; day trips to Neuschwanstein, Salzburg, or the Zugspitze summit (likely first snow up top) are 1-2h each. Halloween is a minor i"
    },
-   "getting_there": "Croatia Airlines DBV->ZAG (~$362/5) + FlixBus or train ZAG->MUC (~$150-200/5, ~5.5h) ~= $510-560 total, or through-ticket OU DBV-ZAG-MUC ~$700-800/5 - the seasonal DBV-MUC nonstop ends with the summer schedule ~Oct 24 (aggregator-estimate)."
+   "getting_there": "Croatia Airlines DBV->ZAG (~$362/5) + FlixBus or train ZAG->MUC (~$150-200/5, ~5.5h) ~= $510-560 total, or through-ticket OU DBV-ZAG-MUC ~$700-800/5 - the seasonal DBV-MUC nonstop ends with the summer schedule ~Oct 24 (aggregator-estimate).",
+   "positioning": {
+    "exists": "ended-before-window",
+    "flight_no": null,
+    "price5_usd": 560,
+    "price_confidence": "benchmark + estimate",
+    "summary": "NO nonstop: DBV→MUC season ends Sat Oct 24 — one day before your window opens — and Munich is NOT in Croatia Airlines' winter Dubrovnik network (FRA + Rome only). FALLBACK: Croatia Airlines DBV→ZAG ($362/5) + FlixBus/rail ZAG→MUC ~$150–200/5, 4–5.5h, ~$560 all-in."
+   },
+   "daily": {
+    "nov1": 2600,
+    "nov2": 2600,
+    "nov3": 2600,
+    "operates": "LH458 daily, no gap day — and it is an A350-900 all three days: the A380 rotation ENDED Oct 23, so no A380 in your window",
+    "mix_note": "per-day variance not resolved; ~$2,400–2,700 band each day",
+    "confidence": "schedule quoted-live, price historical-typical"
+   }
   },
   {
    "city": "Zurich",
@@ -243,7 +299,22 @@ window.__NS__ = {
     "headline": "Chocolate, science museums and first-snow Alps day trips - excellent for these ages, but gray, Halloween-light, and brutally expensive",
     "detail": "Late Oct is 4-12C, fog and drizzle likely in the city, but the day-trip bench is elite for kids 16/13/8: Lindt Home of Chocolate, FIFA Museum, Technorama science center in Winterthur, Uetliberg, Rhine Falls, and Lucerne/Mt. Titlis where early-season snow is usually already down. Halloween barely reg"
    },
-   "getting_there": "Croatia Airlines DBV->ZAG ($362/5) + OU/LX ZAG->ZRH nonstop (~$400-500/5), ~$800-850 total - or check Edelweiss's seasonal DBV->ZRH nonstop, which typically ends with the summer schedule Oct 24, one day before the earliest departure window."
+   "getting_there": "Croatia Airlines DBV->ZAG ($362/5) + OU/LX ZAG->ZRH nonstop (~$400-500/5), ~$800-850 total - or check Edelweiss's seasonal DBV->ZRH nonstop, which typically ends with the summer schedule Oct 24, one day before the earliest departure window.",
+   "positioning": {
+    "exists": "ended-before-window",
+    "flight_no": null,
+    "price5_usd": 810,
+    "price_confidence": "estimate via Zagreb",
+    "summary": "NO nonstop in the window: both Edelweiss and Croatia Airlines DBV→ZRH are summer-seasonal, ending ~Oct 24 (Croatia's winter Dubrovnik network keeps only Frankfurt + Rome). FALLBACK: Croatia Airlines DBV→ZAG ($362/5) + OU ZAG→ZRH nonstop, same carrier one-stop, ~$810 for five."
+   },
+   "daily": {
+    "nov1": 3150,
+    "nov2": 3150,
+    "nov3": 3150,
+    "operates": "LX38 confirmed daily (13:10→16:15, 777-300ER 8F/62J/24W/226Y)",
+    "mix_note": "per-day 5-pax variance NOT resolved — needs a live swiss.com/ITA pull; treat all three days as ~$3,150 band",
+    "confidence": "schedule quoted-live, price aggregator-estimate"
+   }
   },
   {
    "city": "Copenhagen",
@@ -259,14 +330,12 @@ window.__NS__ = {
     "lie_flat": "yes"
    },
    "econ5": {
-    "usd": 2515,
-    "confidence": "aggregator-estimate",
-    "detail": "~$503/pp one-way nonstop x5. Expedia shows CPH-SFO one-ways from $503; Kayak shows a Nov 2-9 SAS nonstop ROUND TRIP at $… · aggregator-estimate"
+    "usd": 6384,
+    "detail": "corrected from $2,515 aggregate — day-specific quoted-live, cheapest of Nov 1-3 · quoted-live"
    },
    "mix": {
-    "usd": 7309,
-    "confidence": "historical-typical",
-    "detail": "2 biz @ ~$2,900/pp one-way + 3 econ @ $503/pp = ~$7,309. Biz one-way is back-solved from Kayak 'business from $8,421' (R… · historical-typical"
+    "usd": 15830,
+    "detail": "corrected from $7,309 estimate — 2-pax biz $12,032 + 3 econ, quoted-live · so much for 'unsellable': SAS DID quote J her…"
    },
    "biz5": {
     "usd": 14500,
@@ -292,7 +361,22 @@ window.__NS__ = {
     "detail": "Tivoli Gardens' full Halloween takeover (thousands of pumpkins, rides, spook houses) traditionally runs mid-October through the Nov 1 weekend, which lands exactly on this stay — a genuine hit for the 8- and 13-year-old, and the 16-year-old gets Nyhavn, Christiania, food halls and Strøget. Day trips "
    },
    "getting_there": "No DBV-CPH nonstop in late Oct: cheapest is Ryanair DBV->VIE then Ryanair/Wizz VIE->CPH, roughly $450-650 total for 5 (aggregator-estimate); fallback Croatia Airlines DBV->ZAG $362/5 + budget ZAG-CPH hop.",
-   "best_day": "No date-level quotes availab"
+   "best_day": "No date-level quotes availab",
+   "positioning": {
+    "exists": "ended-before-window",
+    "flight_no": null,
+    "price5_usd": 310,
+    "price_confidence": "quoted-live for the Oct 24 last-day flig…",
+    "summary": "NO DBV-CPH nonstop operates anywhere Oct 25-30 2026. The route's last nonstop of the season is Norwegian (Norwegian Air Sweden, D8) on Sat Oct 24, 14:05-16:25 — one day BEFORE the family's window opens ($310/5 that day, quoted-live). Norwegian ran it Saturdays late-season (Oct 17 and Oct 24 both show the 14:05 rotation; Sun Oct … FALLBACK: Cheapest realistic same-day 1-stop for 5 (quoted-live per day): Oct 25 Air Serbia via BEG 15:05-19:35 $746; Oct 27 Croatia Airlines via ZAG 06:40-10:40 $855; Oct 28 Lufthansa via MUC 17:05-23:10 $767;…"
+   },
+   "daily": {
+    "nov1": 6461,
+    "nov2": 6461,
+    "nov3": 6384,
+    "operates": "SK935 (12:40-14:50, A350-900) operates ALL THREE days — SAS winter schedule from Oct 25 2026 is daily per flightmapper, and the nonstop priced live on…",
+    "mix_note": "2biz+3econ on SK935: Nov 1 $15,830, Nov 2 $15,830, Nov 3 $15,625 (biz x2 $12,032/$12,032/$11,871 + econ x3 $3,798/$3,798/$3,754) — Nov 3 saves ~$205 (1.3%), no material day-to-day …",
+    "confidence": "quoted-live (Google Flights 5-pax = 4 adult + 1 child, pulled 2026-08-03; Nov 3 initially …"
+   }
   },
   {
    "city": "Istanbul",
@@ -390,7 +474,22 @@ window.__NS__ = {
     "headline": "Half-term Halloween London: the single deepest kid-tiered week of the year, five nonstops a day home",
     "detail": "Oct 25-Nov 2 is exactly UK school half-term, so the whole city runs family programming: Warner Bros. Harry Potter Studio Tour 'Dark Arts' (all three kids), Kew and London Zoo Halloween trails (8yo), London Dungeon and Tower twilight tours (13/16), plus free world-class museums (NHM, Science Museum) "
    },
-   "getting_there": "Ryanair DBV->STN nonstop ~$503 total for 5 (per verified study data), then Stansted Express into London (~£60-80/5) - cheapest and only nonstop-to-London option ex-Dubrovnik."
+   "getting_there": "Ryanair DBV->STN nonstop ~$503 total for 5 (per verified study data), then Stansted Express into London (~£60-80/5) - cheapest and only nonstop-to-London option ex-Dubrovnik.",
+   "positioning": {
+    "exists": "yes",
+    "flight_no": "FR (STN, daily-ish, know…",
+    "price5_usd": 503,
+    "price_confidence": "Ryanair STN $503/5 = your known-verified…",
+    "summary": "Strong positioning city. Three independent nonstop options survive the whole window: Ryanair STN daily-ish ($503/5, verified), easyJet LGW daily Oct 25-30 (last guaranteed day Fri Oct 30), BA Euroflyer LGW Sun Oct 25 / Fri Oct 30. Wizz has no DBV-London route; Jet2 is summer-only. Caution: Oct 26-30 is UK autumn half-term, so DB…"
+   },
+   "daily": {
+    "nov1": 2215,
+    "nov2": 2215,
+    "nov3": 2350,
+    "operates": "Daily year-round, up to 7 westbound departures/day",
+    "mix_note": "mix $7,621 quoted-live Nov 1; biz swings by sale, not by day",
+    "confidence": "Nov 1/2 quoted-live (Google Flights 5-pax), Nov 3 aggregator-estimate"
+   }
   },
   {
    "city": "Amsterdam",
@@ -439,7 +538,22 @@ window.__NS__ = {
     "headline": "World-class museum-and-canal week that fits every age, but expect gray 45-55F drizzle and a quiet Halloween",
     "detail": "Rijksmuseum/Van Gogh/Anne Frank House land perfectly for the 16 and 13 year olds (book Anne Frank weeks ahead), while NEMO Science Museum, canal boats, and a day at Efteling theme park (~1hr away, in full autumn-holiday mode) carry the 8-year-old. Dutch autumn-break week overlaps late Oct, so attrac"
    },
-   "getting_there": "Transavia/easyJet fly DBV-AMS direct but the seasonal schedule typically ends ~Oct 25 (aggregator-estimate, verify exact last flight); fallback Croatia Airlines DBV-ZAG $362/5 + budget ZAG/VIE-AMS hop ~$250-350/5, total ~$610-710 for 5."
+   "getting_there": "Transavia/easyJet fly DBV-AMS direct but the seasonal schedule typically ends ~Oct 25 (aggregator-estimate, verify exact last flight); fallback Croatia Airlines DBV-ZAG $362/5 + budget ZAG/VIE-AMS hop ~$250-350/5, total ~$610-710 for 5.",
+   "positioning": {
+    "exists": "yes",
+    "flight_no": null,
+    "price5_usd": 1272,
+    "price_confidence": "quoted-live",
+    "summary": "Only ONE DBV-AMS nonstop survives in the Oct 25-30 window: KLM (operated by KLM Cityhopper) Sun Oct 25, 06:35-09:05, $1,272 total for 5 (quoted-live, Google Flights 4ADT+1CHD encoding). Transavia and easyJet summer service is already gone — Google Flights shows NO nonstop on Sat Oct 24 either, so the LCC season ended earlier in …"
+   },
+   "daily": {
+    "nov1": 7994,
+    "nov2": 7994,
+    "nov3": 7902,
+    "operates": "KL605 (09:50-11:45, 787-10) operates daily — runs Nov 1, 2 and 3, no dark day (schedule daily per flightmapper/airportia; nonstop priced live on all t…",
+    "mix_note": "2biz+3econ on KL605: Nov 1 $16,184, Nov 2 $16,184, Nov 3 $15,729 (biz x2 $11,518/$11,518/$11,115 + econ x3 $4,666/$4,666/$4,614) — Nov 3 saves ~$455 (2.8%), no material swing. Full…",
+    "confidence": "quoted-live (Google Flights 5-pax pull 2026-08-03, repo data/raw/laneB-ams). Cheapest ANY-…"
+   }
   },
   {
    "city": "Frankfurt",
@@ -488,7 +602,22 @@ window.__NS__ = {
     "headline": "Efficient banking hub, thin late-October magic — the fun is a day-trip radius, not the city",
     "detail": "Frankfurt itself is a business city: Senckenberg's dinosaur halls are genuinely great for the 8-year-old, plus Palmengarten, Main Tower and the Museumsufer, but that's 1-2 days of kid material. The window's real draws are outside: Rhine gorge castles and the Ruedesheim cable car, Heidelberg, and Eur"
    },
-   "getting_there": "Air Serbia DBV->FRA via BEG Sun Oct 25, $653/5 same-day 4h35 (quoted-live; drops to $488/5 only with a 14h40 overnight in Belgrade), vs Croatia Airlines via ZAG $938/5 — no DBV-FRA nonstop exists at sane prices after the Oct 25 winter timetable."
+   "getting_there": "Air Serbia DBV->FRA via BEG Sun Oct 25, $653/5 same-day 4h35 (quoted-live; drops to $488/5 only with a 14h40 overnight in Belgrade), vs Croatia Airlines via ZAG $938/5 — no DBV-FRA nonstop exists at sane prices after the Oct 25 winter timetable.",
+   "positioning": {
+    "exists": "yes",
+    "flight_no": "OU 418",
+    "price5_usd": 1090,
+    "price_confidence": "aggregator-estimate",
+    "summary": "No positioning problem: Croatia Airlines OU418 flies DBV→FRA nonstop DAILY, YEAR-ROUND (07:30→09:30, A319) — the whole Oct 25–30 window is covered, no season cliff. ~$830–1,350 for five depending on day. Codeshared as LH5991/UA7255."
+   },
+   "daily": {
+    "nov1": 6132,
+    "nov2": 6132,
+    "nov3": 6132,
+    "operates": "FRA→SFO daily on LH+UA (23–28 weekly frequencies in Nov)",
+    "mix_note": "$6,132 was a live 5-pax pull, identical all three days when pulled",
+    "confidence": "quoted-live (2026-08-03), per-day re-verify pending"
+   }
   }
  ],
  "dead": [
