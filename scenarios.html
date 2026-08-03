@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Fall 2026 · the whole trip, distilled</title>
+<style>
+:root{
+  --bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--ink:#e6edf3;--dim:#8b949e;--faint:#5c6672;
+  --gold:#d4a94e;--teal:#3fb6a8;--red:#e5534b;--green:#57ab5a;--line:#2d333b;
+  --c-seo:#7f9cd4;--c-sin:#c678dd;--c-sea:#3fb6a8;--c-hrv:#57ab5a;--c-end:#d4a94e;--c-air:#39414d;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:44px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:740px;margin:0 auto;padding:0 14px}
+a{color:var(--teal);text-decoration:none}
+header{padding:26px 0 6px}
+h1{font-size:24px;line-height:1.12;margin:0 0 7px;letter-spacing:-.45px;font-weight:760}
+h1 em{font-style:normal;color:var(--gold)}
+.deck{color:var(--dim);font-size:13px;max-width:54ch}
+h2{font-size:12px;text-transform:uppercase;letter-spacing:1.1px;color:var(--faint);margin:30px 0 10px;font-weight:650}
+h2::after{content:'';display:block;height:1px;background:var(--line);margin-top:8px}
+
+/* SPINE */
+.spine{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px 15px 6px}
+.spine .lead{font-size:12.5px;color:var(--dim);margin:0 0 12px}
+.sl{display:flex;gap:11px;padding:8px 0;border-bottom:1px solid #1b2027;align-items:baseline}
+.sl:last-of-type{border-bottom:0}
+.sl .d{font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.5px;flex:0 0 62px;padding-top:2px}
+.sl .w{flex:1;min-width:0}
+.sl .t{font-size:13.5px;font-weight:600}
+.sl .s{font-size:11.5px;color:var(--dim);margin-top:1px}
+.sl .c{font-variant-numeric:tabular-nums;font-size:13px;font-weight:700;white-space:nowrap;text-align:right}
+.sl .c small{display:block;font-size:10px;color:var(--teal);font-weight:600}
+.spinetot{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0 8px;margin-top:4px;border-top:1px solid var(--line)}
+.spinetot .k{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--faint)}
+.spinetot .v{font-size:20px;font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums}
+.spinetot .v small{display:block;font-size:11px;color:var(--teal);font-weight:600;text-align:right}
+
+/* fork banner */
+.fork{background:#20211b;border:1px solid var(--gold);border-radius:12px;padding:13px 14px;margin:14px 0;font-size:12.5px;line-height:1.5;color:var(--dim)}
+.fork b{color:var(--ink)}
+
+/* scenario */
+.sc{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+.sc.pick{border-color:var(--gold)}
+.sc.dim{opacity:.72}
+.hd{padding:13px 15px 11px;cursor:pointer}
+.hrow{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.nm{font-size:16.5px;font-weight:720;letter-spacing:-.25px}
+.tot{font-variant-numeric:tabular-nums;font-weight:780;font-size:17px;color:var(--gold);white-space:nowrap}
+.tot small{display:block;font-size:10px;color:var(--faint);font-weight:500;text-align:right;letter-spacing:.3px}
+.thesis{font-size:12px;color:var(--dim);margin-top:4px;line-height:1.45}
+.rib{display:flex;height:24px;margin:11px 15px 0;border-radius:5px;overflow:hidden;background:#11151b}
+.rs{display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700;color:#0d1117;white-space:nowrap;overflow:hidden}
+.rs.air{background:repeating-linear-gradient(45deg,#2a313b,#2a313b 3px,#232932 3px,#232932 6px);color:var(--faint)}
+.rl{display:flex;margin:4px 15px 0;font-size:9px;color:var(--faint);text-transform:uppercase;letter-spacing:.5px}
+.rl div{text-align:center;overflow:hidden;white-space:nowrap}
+.mx{display:flex;margin:12px 0 0;border-top:1px solid var(--line)}
+.mi{flex:1;padding:9px 6px;text-align:center;border-right:1px solid var(--line)}
+.mi:last-child{border-right:0}
+.mi .k{font-size:9px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint)}
+.mi .v{font-size:13px;font-weight:680;margin-top:2px}
+.v.g{color:var(--green)}.v.a{color:var(--gold)}.v.r{color:var(--red)}
+.det{display:none;padding:2px 15px 15px;font-size:12.5px;color:var(--dim);line-height:1.5}
+.sc.open .det{display:block}
+.det h4{margin:13px 0 5px;font-size:9.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--faint);font-weight:650}
+.det p{margin:0 0 7px}.det .hi{color:var(--ink)}
+.ls{list-style:none;padding:0;margin:0}
+.ls li{padding:5px 0;border-bottom:1px solid #1b2027;display:flex;justify-content:space-between;gap:10px}
+.ls li:last-child{border-bottom:0}
+.ls .f{font-variant-numeric:tabular-nums;color:var(--ink);white-space:nowrap}
+.more{font-size:11px;color:var(--teal);padding:0 15px 12px;cursor:pointer}
+.sc.open .more{display:none}
+.note{background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 13px;margin:16px 0;font-size:12.5px;line-height:1.5;color:var(--dim)}
+.note b{color:var(--ink)}.note.warn{border-left-color:var(--red)}
+.foot{color:var(--faint);font-size:11px;margin-top:32px;border-top:1px solid var(--line);padding-top:13px;line-height:1.55}
+</style></head><body><div class="wrap">
+
+<header>
+<h1>The whole trip, <em>distilled</em></h1>
+<div class="deck">Everything from Sept 27 to Oct 25 is one fixed spine — the same in every version. All the real choice lives in the last eight days. Pick an ending.</div>
+</header>
+
+<h2>The spine · Sept 27 → Oct 25 · identical in every scenario</h2>
+<div class="spine">
+<p class="lead">Eight travelers. Conference dates and two hotel bookings already lock most of this.</p>
+
+<div class="sl"><div class="d">Sep 27</div><div class="w"><div class="t">Sacramento → Seoul</div><div class="s">Delta SMF 07:35 → Seattle → ICN · Delta One Suites · team in Main</div></div><div class="c">$1,755<small>+110.5k SkyMiles</small></div></div>
+<div class="sl"><div class="d">Sep 29–Oct 1</div><div class="w"><div class="t">Korea Blockchain Week</div><div class="s">Walkerhill — booked, ₩3,003,220</div></div><div class="c">booked</div></div>
+<div class="sl"><div class="d">Tue Oct 6</div><div class="w"><div class="t">Seoul → Singapore</div><div class="s">KE643 nonstop · your hotels locked this date, and it quoted cheaper than Oct 4</div></div><div class="c">$1,515</div></div>
+<div class="sl"><div class="d">Oct 7–8</div><div class="w"><div class="t">Token2049 · After2049 party Fri Oct 9</div><div class="s">Hotel booked $2,669 from Oct 6 · F1 weekend runs Oct 9–11</div></div><div class="c">booked</div></div>
+<div class="sl"><div class="d">Sat Oct 10</div><div class="w"><div class="t">You → Rome · team → Sacramento</div><div class="s">Saudia 02:20→14:40 lie-flat, earns Delta · team SIN→SMF</div></div><div class="c">$3,781</div></div>
+<div class="sl"><div class="d">Thu Oct 8</div><div class="w"><div class="t">Family SFO → Rome</div><div class="s">ITA nonstop, lands Oct 9 midday — full buffer before boarding</div></div><div class="c">$2,392</div></div>
+<div class="sl"><div class="d">Oct 11–18</div><div class="w"><div class="t">Cruise · Odyssey of the Seas, Royal Loft</div><div class="s">Hold res 205404 · $31,935 due in full at booking</div></div><div class="c">$31,935</div></div>
+<div class="sl"><div class="d">Sun Oct 18</div><div class="w"><div class="t">Rome → Dubrovnik</div><div class="s">Croatia Airlines, bags included, ×5</div></div><div class="c">$625</div></div>
+
+<div class="spinetot"><span class="k">Spine — flights only</span><span class="v">$10,068<small>+ 110,500 SkyMiles</small></span></div>
+<div class="spinetot" style="border-top:0;padding-top:0"><span class="k">Plus already booked</span><span class="v" style="font-size:15px;color:var(--dim)">$4,829 hotels · $31,935 cruise</span></div>
+</div>
+
+<div class="fork">
+<b>One decision upstream changes everything: the sailing date.</b> The Oct 11 hold puts Croatia on Oct 18–25 and leaves the last eight days free — that is what makes a Halloween ending possible at all. Taking the Oct 18 hold instead means you are at sea until Oct 25 and fly home from Rome around Oct 26. <b>Every scenario below assumes Oct 11.</b> Choosing Oct 18 deletes them all.
+</div>
+
+<h2>Pick an ending · Oct 25 → Nov 2</h2>
+<div id="list"></div>
+
+<div class="note warn">
+<b>What Halloween actually is, after checking.</b> Dublin city has <b>no Halloween parade</b> — a 2024 AI-generated listing sent crowds to O'Connell Street for an event that never existed, and pages still repeat it. The Bram Stoker Festival is Oct 23–26, a literary festival, not Halloween. The real thing is <b>Derry</b>: Europe's largest Halloween festival, 40th anniversary, 100,000+ people, free carnival parade at 7pm on Oct 31 and fireworks over the Foyle at 8:15pm, plus an illuminated walled-city trail on Oct 30. Seventy miles from Dublin by coach. There is no late transport back on Oct 31 — if you watch the fireworks, you sleep in Derry, and those beds book months out.
+</div>
+
+<div class="note">
+<b>Everything ends on the same flight.</b> Aer Lingus EI61, Dublin → San Francisco nonstop with US preclearance, 16,250 Avios each plus $194.63 — verified bookable with six or more seats open on every date including Nov 1 and Nov 2. That is 81,250 of your 525,382 Amex points, and it is the only redemption on this trip that clearly beats paying cash. The rest of the pool stays banked; these are cheap economy fares and forcing points into them loses value.
+</div>
+
+<div class="foot">
+Flights quoted live at true party size — Ryanair's fare API at five passengers, Google Flights, and logged-in Aer Lingus and Qatar accounts. Lodging estimated from live Booking.com pulls. Cruise and the two booked hotels sit outside the scenario totals since they are constant.
+<br><br><a href="index.html">Flight cost builder</a> · <a href="endgame.html">Ending detail</a> · <a href="home-grid.html">Date × gateway grid</a> · <a href="research.html">Full research</a>
+</div>
+</div>
+
+<script>
+const CITY={hrv:['Dubrovnik','var(--c-hrv)'],sea:['At sea','var(--c-sea)'],zag:['Zagreb','var(--c-sin)'],
+  dub:['Dublin','#57ab5a'],der:['Derry','var(--c-end)'],vie:['Vienna','#d4a94e'],spl:['Split','var(--c-sea)'],air:['Travel','var(--c-air)']};
+const S=[
+ {id:'a', name:'Lean & Certain', pick:true, cost:2212, pts:'81k',
+  thesis:'Cheap Croatia nights, Zagreb sidesteps the five-seat wall, Derry for Halloween. The most trip per dollar.',
+  rib:[['hrv',4],['air',1],['dub',1],['der',2],['dub',1]],
+  m:['$2,212','9/10','Low'],
+  legs:[['Dubrovnik apartment, 4 nights','~$400'],['Croatia Air Dubrovnik→Zagreb, 55 min','$362'],['Ryanair Zagreb→Dublin','$467'],['Coach Dublin↔Derry, return','~$110'],['Dublin + Derry, 4 nights','~$873']],
+  why:'Zagreb is a Ryanair base with five to six Dublin flights a week against Dubrovnik\'s two — a real five-passenger booking priced it at $467 total, $1,183 under the same-day Dubrovnik fare. You keep four nights at Dubrovnik prices and still make both Derry nights.',
+  against:'Two flights instead of one, and a 06:40 Dubrovnik departure.'},
+
+ {id:'b', name:'One Ticket', pick:false, cost:2746, pts:'81k',
+  thesis:'The simplest version. One flight out of Croatia, eight days of margin, and the tail of Bram Stoker on arrival.',
+  rib:[['dub',5],['der',2],['dub',1]],
+  m:['$2,746','9/10','Low'],
+  legs:[['Ryanair Dubrovnik→Dublin, Oct 25','$813'],['Coach Dublin↔Derry, return','~$110'],['Dublin, 6 nights','~$1,423'],['Derry, 2 nights','~$400']],
+  why:'The cheapest single fare of the three Dublin options and by far the biggest safety margin before the transatlantic. Landing Oct 25 catches the closing two days of the Bram Stoker Festival.',
+  against:'Six Dublin nights at $166–482 instead of Dubrovnik nights at $78–120, and you arrive 11:05pm into marathon and bank-holiday weekend — the busiest night of the month.'},
+
+ {id:'c', name:'The Memory', pick:false, cost:4400, pts:'81k',
+  thesis:'Sleep aboard for five nights island-hopping out of Split, dinner ashore in a different town each evening, then Derry.',
+  rib:[['hrv',2],['spl',5],['air',1],['der',2],['dub',1]],
+  m:['~$4,400','10/10','Med'],
+  legs:[['Bus or catamaran Dubrovnik→Split, ×5','~$110'],['Skippered boat, 5 nights, Split loop','$2,400–2,900'],['Split→Zagreb','~$362'],['Ryanair Zagreb→Dublin','$467'],['Derry + Dublin, 3 nights','~$700']],
+  why:'Local classifieds put owner-direct boats at €1,290–1,540 a week — a Bavaria 46 sleeping nine, a Dufour 385, a 2023 Bali catamaran. Basing the loop in Split instead of running one-way from Dubrovnik removes the one-way fee entirely and taps the deep end of the inventory: almost every liveaboard in Croatia is berthed in Split, Trogir or Murter, not Dubrovnik.',
+  against:'Roughly five times an apartment, and the skipper is about 40% of the bill — Croatia requires a licence plus a VHF certificate, so bareboat is out. Bora season starts in October and no operator refunds weather days; you sit in port and lose one. That is a real risk on a leg where Derry on Oct 30 is a hard date.'},
+
+ {id:'d', name:'Max Croatia', pick:false, cost:2225, pts:'81k',
+  thesis:'Seven more nights in the cheapest, prettiest place on the itinerary — and it costs you Halloween.',
+  rib:[['hrv',7],['dub',1]],
+  m:['$2,225','2/10','High'],
+  legs:[['Dubrovnik apartment, 7 nights','~$700'],['Ryanair Dubrovnik→Dublin, Nov 1','$1,158'],['Dublin, 1 night','~$223']],
+  why:'Dubrovnik at $78–120 a night for all five is the best lodging value anywhere on this trip, and nothing material closes there until Nov 1.',
+  against:'You are in the air on Halloween, land at 11:05pm the night before a transatlantic, and there is no Dubrovnik–Dublin service on Nov 2 to catch if anything slips. Both the experience and the schedule are gambles.'},
+
+ {id:'e', name:'Vienna', pick:false, dim:true, cost:1674, pts:'81k',
+  thesis:'The cheapest arithmetic on the board. It spends Halloween in a country that barely marks it.',
+  rib:[['hrv',5],['air',1],['vie',2],['dub',1]],
+  m:['$1,674','4/10','High'],
+  legs:[['Ryanair Dubrovnik→Vienna, Oct 30','$199'],['Ryanair Vienna→Dublin, Nov 1','$438'],['Dubrovnik, 5 nights','~$500'],['Vienna, 2 nights','~$260'],['Dublin, 1 night','~$223']],
+  why:'On the day Ryanair wants $1,650 to fly five people to Dublin, it wants $199 to fly them to Vienna.',
+  against:'Austria barely marks Halloween and Nov 1 is All Saints, when much of the city closes. Both legs have exactly five seats — no rebooking margin at all. You would save money and forfeit the reason for going.'},
+];
+function card(s){
+  const tot=s.rib.reduce((a,x)=>a+x[1],0);
+  const rib=s.rib.map(([c,n])=>{const w=(n/tot*100).toFixed(2);
+    return `<div class="rs${c==='air'?' air':''}" style="flex:0 0 ${w}%;${c==='air'?'':'background:'+CITY[c][1]}">${n>=2?n:''}</div>`}).join('');
+  const lab=s.rib.map(([c,n])=>{const w=(n/tot*100).toFixed(2);
+    return `<div style="flex:0 0 ${w}%">${n/tot>0.15?CITY[c][0]:''}</div>`}).join('');
+  const rk=s.m[2]==='Low'?'g':s.m[2]==='Med'?'a':'r';
+  const ek=parseInt(s.m[1])>=9?'g':parseInt(s.m[1])>=5?'a':'r';
+  return `<article class="sc ${s.pick?'pick':''} ${s.dim?'dim':''}">
+   <div class="hd"><div class="hrow"><div class="nm">${s.name}</div>
+   <div class="tot">$${s.cost.toLocaleString()}<small>+ ${s.pts} points</small></div></div>
+   <div class="thesis">${s.thesis}</div></div>
+   <div class="rib">${rib}</div><div class="rl">${lab}</div>
+   <div class="mx">
+     <div class="mi"><div class="k">Ending cost</div><div class="v">${s.m[0]}</div></div>
+     <div class="mi"><div class="k">Experience</div><div class="v ${ek}">${s.m[1]}</div></div>
+     <div class="mi"><div class="k">Risk</div><div class="v ${rk}">${s.m[2]}</div></div>
+   </div>
+   <div class="more">Tap for detail ↓</div>
+   <div class="det">
+     <h4>Why</h4><p class="hi">${s.why}</p>
+     <h4>Why not</h4><p>${s.against}</p>
+     <h4>What it's made of</h4><ul class="ls">${s.legs.map(l=>`<li><span>${l[0]}</span><span class="f">${l[1]}</span></li>`).join('')}</ul>
+     <h4>Whole trip with this ending</h4><p class="hi">$${(10068+s.cost).toLocaleString()} in flights and beds, plus 110,500 SkyMiles and 81,250 Amex points — before the cruise and the two booked hotels.</p>
+   </div></article>`;
+}
+document.getElementById('list').innerHTML=S.map(card).join('');
+document.querySelectorAll('.sc').forEach(c=>{
+  c.querySelector('.hd').addEventListener('click',()=>c.classList.toggle('open'));
+  c.querySelector('.more').addEventListener('click',()=>c.classList.add('open'));
+});
+</script>
+</body></html>
