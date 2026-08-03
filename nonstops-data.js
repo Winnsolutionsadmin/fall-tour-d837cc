@@ -2312,5 +2312,37 @@ window.__NS__ = {
    }
   ],
   "foot": "The overland route is ~$450–1,100 CHEAPER — Dubrovnik's late-week exit fares triple while Zagreb's stay flat, which more than pays for the bus and the extra beds — and it adds Plitvice + Mirogoj + new islands on the boat. What Dubrovnik-stay buys instead: zero packing/moving for a week, and MORE IRELAND — 3–4 Dublin nights including actual Halloween in its birthplace (bonfires, Macnas-style events, trick-or-treating that the 8-year-old will recognise). That is the real trade: Croatian All Saints + efficiency vs Irish Halloween + simplicity. Both end on the same plane."
+ },
+ "early": {
+  "h": "The early exit — home by Oct 26–28 instead of Nov 2",
+  "body": "Priced live at 5-pax today. The surprise: a one-night London stopover beats every one-ticket through-itinerary by $2,800–3,300, and the flights themselves cost MORE than staying the extra week — what going home early actually saves is 7–8 nights of European burn.",
+  "rows": [
+   {
+    "r": "★ London stopover — home Mon Oct 26, 3:55pm",
+    "p": "$2,926",
+    "d": "Ryanair DBV→STN Oct 25 15:25 ($470, verified) · one airport-hotel night (~$250) · BA nonstop LHR→SFO Oct 26 11:45→15:55 ($2,206 quoted-live — identical to the Nov fare, so you lose nothing waiting… or going). Add ~$60–90 cross-London transfer. Backup: same fare Oct 27."
+   },
+   {
+    "r": "Paris / French Bee — home Wed Oct 28, 9:10pm",
+    "p": "$3,041",
+    "d": "Transavia DBV→ORY Oct 27 ($415) · one Paris night · French Bee nonstop ORY→SFO Wed Oct 28 17:40 ($2,376 quoted-live). Same airport both legs, one Paris day for the kids. French Bee flies Wed/Fri only that week."
+   },
+   {
+    "r": "Frankfurt — home Mon Oct 26, 7:25pm",
+    "p": "$3,199",
+    "d": "OU418 Oct 25 (~$830–1,350) · one night · AA via DFW Oct 26 ($2,119 — the cheapest exit fare of any city, but the positioning uncertainty eats the edge)."
+   },
+   {
+    "r": "Best one-ticket through: Aer Lingus/AA Oct 28",
+    "p": "$4,073",
+    "d": "DBV 12:35 → Dublin → JFK → SFO 10:33am+1, ~30h, one PNR, bags through. Cheapest single-ticket of the whole window — but needs 3 extra Dubrovnik nights, and the Wednesday EI DBV–DUB leg contradicts the published Sun/Tue/Thu schedule: RE-VERIFY before trusting it."
+   },
+   {
+    "r": "Other one-tickets, for the record",
+    "p": "$5,706–9,500",
+    "d": "Oct 25 KLM/Delta via AMS $6,007 (25h) · Oct 26 Finnair/AA via HEL $6,257 (21h44) · Oct 27 Croatia/AA via FRA $5,706 (35h, overnight in the terminal) · fastest of any day: SWISS via ZRH Oct 25, 15h55, $8,745. Turkish: definitively NO one-ticket ex-DBV — the filter chip is a UI artifact. Rome: United's seasonal is already dead by Oct 26."
+   }
+  ],
+  "foot": "THE HONEST COMPARISON, all-in from Oct 25 (flights + lodging + food + ground): EARLY via London ≈ $3,100–3,400 · DUBLIN Nov 2 ending ≈ $5,400–6,100 · KRAKÓW Nov 2 ending ≈ $5,700–6,100. The flights are NOT where early saves — the Dublin ending's flight bill ($2,117) is actually the cheapest of all three, including early. Early saves the week of European burn (~$2,400–3,300 net). Which means the entire third act — Plitvice, Zagreb, Halloween in Ireland or All Saints in Kraków — has a marginal price of roughly $2,300–2,900 TOTAL for all five, about $330–410 a day for the whole family. Non-dollar ledger: early preserves 6–7 school days for the teens and lands gently; Kraków's ending is the harshest travel day (20h door-to-door into a school night). Tired family → early. Otherwise the third act is cheap for what it buys."
  }
 };

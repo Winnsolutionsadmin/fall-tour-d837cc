@@ -383,6 +383,12 @@ function boardHTML(){
     BT.rows.forEach(r=>{h+='<div class="pr" style="border-top-color:#1a2a3d"><div class="r1"><span class="rt">'+r.r+'</span><span class="pp" style="color:var(--blu)">'+r.p+'</span></div><div class="rd" style="color:#8a9cb5">'+r.d+'</div></div>'});
     h+='<div class="pf" style="color:#7688a0">'+BT.foot+'</div></div>';
   }
+  const ER=D.early;
+  if(ER){
+    h+='<div class="pivot" style="background:linear-gradient(180deg,#1a1226,#120d1c);border-color:#453060"><h2 style="color:var(--vio)">'+ER.h+'</h2><p style="color:#c3b8dd">'+ER.body+'</p>';
+    ER.rows.forEach(r=>{h+='<div class="pr" style="border-top-color:#2a2040"><div class="r1"><span class="rt">'+r.r+'</span><span class="pp" style="color:var(--vio)">'+r.p+'</span></div><div class="rd" style="color:#9c90b8">'+r.d+'</div></div>'});
+    h+='<div class="pf" style="color:#8a7fa8">'+ER.foot+'</div></div>';
+  }
   const AB=D.ab;
   if(AB){
     h+='<div class="pivot" style="background:var(--card);border-color:var(--line)"><h2 style="color:var(--tx)">'+AB.h+'</h2><p style="color:var(--dim)">'+AB.body+'</p>';
