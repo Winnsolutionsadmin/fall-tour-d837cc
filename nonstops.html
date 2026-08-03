@@ -383,6 +383,19 @@ function boardHTML(){
     BT.rows.forEach(r=>{h+='<div class="pr" style="border-top-color:#1a2a3d"><div class="r1"><span class="rt">'+r.r+'</span><span class="pp" style="color:var(--blu)">'+r.p+'</span></div><div class="rd" style="color:#8a9cb5">'+r.d+'</div></div>'});
     h+='<div class="pf" style="color:#7688a0">'+BT.foot+'</div></div>';
   }
+  const AB=D.ab;
+  if(AB){
+    h+='<div class="pivot" style="background:var(--card);border-color:var(--line)"><h2 style="color:var(--tx)">'+AB.h+'</h2><p style="color:var(--dim)">'+AB.body+'</p>';
+    AB.rows.forEach(r=>{
+      const tot=r.k.indexOf('TOTAL')>=0;
+      h+='<div class="pr" style="border-top-color:#1e2632"><div style="font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--dim2);font-weight:700">'+r.k+'</div>'
+        +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px">'
+        +'<div style="font-size:'+(tot?'15px;font-weight:700;color:var(--tx)':'11.5px;color:var(--dim)')+';line-height:1.45">'+r.a+'</div>'
+        +'<div style="font-size:'+(tot?'15px;font-weight:700;color:var(--grn)':'11.5px;color:var(--dim)')+';line-height:1.45">'+r.b+'</div></div></div>';
+    });
+    h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px;font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--dim2);font-weight:700"><div>'+AB.cols[0]+'</div><div>'+AB.cols[1]+'</div></div>';
+    h+='<div class="pf" style="color:var(--dim2)">'+AB.foot+'</div></div>';
+  }
   h+='<div class="bd">';
   h+='<div class="bdtog">'
     +'<button class="'+(bdMode==='cash'?'on':'')+'" onclick="bdSet(\'cash\')">Cheapest cash</button>'

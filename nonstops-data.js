@@ -2251,5 +2251,56 @@ window.__NS__ = {
    }
   ],
   "foot": "Two flags before booking: (1) a reviewer with young kids reported only 'a really old lifejacket' aboard — confirm proper child sizes for the 8-year-old with the host first; (2) the same reviewer flagged the hidden costs above. HOW IT SLOTS IN: cruise disembarks Dubrovnik Oct 18 → catamaran Sat-to-Sat Oct 18–25 through Brač/Hvar/Vis/Korčula/Mljet, ending SPLIT → drive or bus to Zagreb (~4.5h, Plitvice on the way) → Zagreb Halloween weekend (zoo + Mirogoj) → $417 ZAG→Dublin any day Nov 1–3 → EI61 nonstop to SFO. Every leg of that chain is verified except LX-style award space, which this route doesn't need."
+ },
+ "ab": {
+  "h": "Head-to-head: stay in Dubrovnik vs the overland route — same Dublin exit",
+  "body": "Both scenarios start where the catamaran leaves you and end on the same EI61 nonstop to SFO. Costs are for all five, Oct 25 → Nov 2/3:",
+  "cols": [
+   "Stay Dubrovnik, fly out",
+   "Dubrovnik → Split → Zagreb → out"
+  ],
+  "rows": [
+   {
+    "k": "Getting back / onward from the boat",
+    "a": "boat must RETURN to Dubrovnik (skip the €600 one-way, but you sail the same water twice)",
+    "b": "boat ends in SPLIT (+€600 one-way fee, new islands the whole way)"
+   },
+   {
+    "k": "Lodging Oct 25–31",
+    "a": "$675 · 6 nights Dubrovnik 2BR ($95–130/night)",
+    "b": "$800 · Split 2 n ($200) + Plitvice 1 n + entries ($200) + Zagreb 3 n ($400)"
+   },
+   {
+    "k": "Ground transport",
+    "a": "$0",
+    "b": "$170–300 · bus for 5, or one-way rental with Plitvice stop"
+   },
+   {
+    "k": "Flight toward Dublin",
+    "a": "$650–1,556 · EI477 Thu Oct 29 ~$650 est, or Ryanair Fri Oct 30 $1,556 (late-week DBV fares triple)",
+    "b": "$417–438 · ZAG→DUB near-daily incl Nov 1–3, fare barely moves"
+   },
+   {
+    "k": "Dublin nights before the flight home",
+    "a": "$750–1,000 · 3–4 nights (you arrive early because DBV flights force it)",
+    "b": "$250–500 · 1–2 nights, or red-eye FR8911 Nov 1 22:05 → EI61 Nov 2 12:50"
+   },
+   {
+    "k": "Halloween (Sat Oct 31)",
+    "a": "IN IRELAND — the real thing, Samhain's home turf",
+    "b": "IN ZAGREB — zoo kids' day + Mirogoj's candle-lit All Saints Sunday"
+   },
+   {
+    "k": "Exit DUB→SFO, 5 econ",
+    "a": "$1,700 (or 81k Avios + $975, verified)",
+    "b": "same"
+   },
+   {
+    "k": "FLIGHTS + GROUND TOTAL",
+    "a": "$3,775 – $4,930",
+    "b": "$3,340 – $3,855"
+   }
+  ],
+  "foot": "The overland route is ~$450–1,100 CHEAPER — Dubrovnik's late-week exit fares triple while Zagreb's stay flat, which more than pays for the bus and the extra beds — and it adds Plitvice + Mirogoj + new islands on the boat. What Dubrovnik-stay buys instead: zero packing/moving for a week, and MORE IRELAND — 3–4 Dublin nights including actual Halloween in its birthplace (bonfires, Macnas-style events, trick-or-treating that the 8-year-old will recognise). That is the real trade: Croatian All Saints + efficiency vs Irish Halloween + simplicity. Both end on the same plane."
  }
 };
