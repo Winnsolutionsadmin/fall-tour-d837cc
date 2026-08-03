@@ -379,8 +379,8 @@ function boardHTML(){
     ['e','m','b'].forEach(k=>{
       const c=r.cfg[k]; const p=c.pts;
       h+='<div'+(bdMode==='pts'&&r.bestCfg===k&&p?' class="bv"':'')+'><div class="k">'+NAMES[k]+'</div>'
-        +'<div class="v">'+money(c.cash)+'<small>all-in cash</small></div>'
-        +(p?'<div class="pv"><b>'+(p.k/1000).toFixed(0)+'k</b> + '+money(p.c)+' <span class="cp'+(p.cpp>=5?' hot':'')+'">'+p.cpp+'¢</span></div>'
+        +'<div class="v">'+money(c.cash)+'<small>pay cash</small></div>'
+        +(p?'<div class="pv"><small style="display:block;font-size:8px;text-transform:uppercase;letter-spacing:.5px;color:#6b628a">or pay points</small><b>'+(p.k/1000).toFixed(0)+'k</b> + '+money(p.c)+' <span class="cp'+(p.cpp>=5?' hot':'')+'">'+p.cpp+'¢/pt</span></div>'
            :'<div class="pv none">no points path</div>')
         +'</div>';
     });
@@ -388,7 +388,7 @@ function boardHTML(){
     h+='<div class="br3">'+r.note+(r.ver?' <span class="vtag">AWARD SEATS VERIFIED</span>':'')+'</div>';
     h+='</div>';
   });
-  h+='<div class="bdnote">Every price is the total for all five. Blue day-cells are flights that exist; the dark ones are the schedule saying no — late October is when Dubrovnik\'s seasonal routes die, and that gap is the whole game. Points line per config: points + (award fees & positioning cash) and the ¢-per-point it earns vs paying cash. Full flight detail per city below.</div>';
+  h+='<div class="bdnote">Every price is the total for all five. Blue day-cells are flights that exist; the dark ones are the schedule saying no — late October is when Dubrovnik\'s seasonal routes die, and that gap is the whole game. Each config cell shows the SAME seats two ways: the cash price, OR the points price (points + award fees + the cash positioning flight). ¢/pt = how much cash each point saves you — (cash price − points-option cash) ÷ points. Full flight detail per city below.</div>';
   h+='</div>';
   return h;
 }
