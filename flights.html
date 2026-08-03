@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Flight Detail · Oct 25 – Nov 2</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0d12; --card:#131820; --card2:#1a2029; --line:#242c38;
+  --tx:#e8edf4; --dim:#8b98aa; --dim2:#5f6b7c;
+  --gold:#f0b429; --grn:#34d399; --amb:#fbbf24; --red:#f87171; --blu:#60a5fa; --vio:#a78bfa;
+}
+html,body{max-width:100%;overflow-x:hidden}
+body{background:var(--bg);color:var(--tx);font:15px/1.5 -apple-system,BlinkMacSystemFont,'SF Pro Text',system-ui,sans-serif;
+  padding:0 0 env(safe-area-inset-bottom);-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px}
+
+header{padding:26px 0 16px;border-bottom:1px solid var(--line);margin-bottom:18px}
+h1{font-size:25px;line-height:1.15;letter-spacing:-.5px;font-weight:700}
+.sub{color:var(--dim);font-size:13.5px;margin-top:7px}
+.nav{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.nav a{font-size:11.5px;padding:5px 10px;border:1px solid var(--line);border-radius:20px;
+  color:var(--dim);text-decoration:none;background:var(--card)}
+.nav a.on{background:var(--gold);color:#000;border-color:var(--gold);font-weight:700}
+
+/* ── answer callout ── */
+.alert{background:linear-gradient(180deg,#2a1a12,#1a1410);border:1px solid #5a3a1a;
+  border-left:3px solid var(--amb);border-radius:11px;padding:15px 16px;margin-bottom:20px}
+.alert h2{font-size:15.5px;color:var(--amb);margin-bottom:8px;letter-spacing:-.2px}
+.alert p{font-size:13.5px;color:#d8cfc2;line-height:1.55}
+.alert p+p{margin-top:8px}
+.alert b{color:#fff}
+.cal{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;margin:12px 0 4px}
+.cal div{text-align:center;padding:6px 1px;border-radius:6px;min-width:0;
+  background:#0e1218;border:1px solid var(--line);font-size:9px;color:var(--dim2)}
+.cal div b{display:block;font-size:13px;color:var(--dim);margin-bottom:1px}
+.cal div.yes{border-color:var(--grn);background:#0d1f18}
+.cal div.yes b{color:var(--grn)}
+.cal div.yes .m{color:var(--grn)}
+.cal div.no{opacity:.45}
+.cal .m{font-size:9px;margin-top:3px;display:block}
+
+/* ── section ── */
+h2.sec{font-size:12px;text-transform:uppercase;letter-spacing:1.3px;color:var(--dim2);
+  margin:30px 0 12px;font-weight:700}
+
+/* ── route (a plan) ── */
+.route{background:var(--card);border:1px solid var(--line);border-radius:13px;margin-bottom:16px;overflow:hidden}
+.route.best{border-color:#3d5a3d;box-shadow:0 0 0 1px rgba(52,211,153,.14)}
+.rhead{padding:14px 15px;border-bottom:1px solid var(--line);background:var(--card2)}
+.rtitle{display:flex;align-items:flex-start;gap:9px}
+.rname{font-size:16.5px;font-weight:700;letter-spacing:-.3px;flex:1;line-height:1.25}
+.tag{font-size:9.5px;font-weight:700;padding:3px 7px;border-radius:5px;letter-spacing:.4px;
+  text-transform:uppercase;white-space:nowrap;flex:0 0 auto;margin-top:2px}
+.tag.g{background:#123326;color:var(--grn)}
+.tag.a{background:#33270f;color:var(--amb)}
+.tag.r{background:#331616;color:var(--red)}
+.tag.b{background:#122436;color:var(--blu)}
+.rmeta{font-size:12.5px;color:var(--dim);margin-top:7px;line-height:1.5}
+.rmeta b{color:var(--tx)}
+
+/* ── flight strip ── */
+.leg{padding:13px 15px;border-bottom:1px solid #1b2029}
+.leg:last-child{border-bottom:0}
+.lday{font-size:10.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.7px;margin-bottom:9px;
+  display:flex;justify-content:space-between;align-items:center;gap:8px}
+.lday .fno{color:var(--blu);font-weight:700;letter-spacing:.3px;font-size:11px;font-variant-numeric:tabular-nums}
+.strip{display:flex;align-items:center;gap:8px}
+.pt{flex:0 0 auto;text-align:center;min-width:52px}
+.pt .t{font-size:18px;font-weight:700;letter-spacing:-.5px;font-variant-numeric:tabular-nums;line-height:1.1}
+.pt .c{font-size:11px;color:var(--dim);margin-top:2px;letter-spacing:.5px;font-weight:600}
+.pt .n{font-size:9.5px;color:var(--dim2);margin-top:1px}
+.bar{flex:1;position:relative;height:26px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.bar .ln{height:2px;background:linear-gradient(90deg,var(--line),#3a4552,var(--line));border-radius:2px;position:relative}
+.bar .ln::before,.bar .ln::after{content:'';position:absolute;top:-2.5px;width:7px;height:7px;
+  border-radius:50%;background:var(--dim)}
+.bar .ln::before{left:0}.bar .ln::after{right:0}
+.bar .d{font-size:10px;color:var(--dim);text-align:center;margin-bottom:4px;white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.bar .ln .plane{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--card);
+  padding:0 5px;font-size:11px;color:var(--dim2);line-height:1}
+.bar.stop .ln{background:repeating-linear-gradient(90deg,#3a4552 0 5px,transparent 5px 10px)}
+.ac{font-size:10.5px;color:var(--dim2);margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.ac span{background:#0e1218;border:1px solid var(--line);border-radius:4px;padding:2px 6px}
+
+/* ── cabins ── */
+.cabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px}
+@media(max-width:430px){.cabs{grid-template-columns:1fr}}
+.cab{background:#0e1218;border:1px solid var(--line);border-radius:9px;padding:10px 11px}
+.cab.biz{border-color:#2e3a4d}
+.cab .cn{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--dim);font-weight:700;
+  display:flex;justify-content:space-between;align-items:center;gap:6px}
+.cab .px{font-size:20px;font-weight:700;letter-spacing:-.6px;margin-top:6px;font-variant-numeric:tabular-nums}
+.cab .pl{font-size:10.5px;color:var(--dim2);margin-top:1px}
+.cab .pts{font-size:11px;color:var(--vio);margin-top:5px;font-variant-numeric:tabular-nums}
+.cab .nn{font-size:10.5px;color:var(--dim2);margin-top:6px;line-height:1.45}
+
+/* seat glyph */
+.seat{display:flex;gap:2px;align-items:center;margin-top:7px}
+.seat i{width:7px;height:8px;border-radius:1.5px;background:#39445a;display:block}
+.seat i.f{background:var(--grn);width:13px;height:8px;border-radius:2px}
+.seat i.r{background:var(--amb);width:10px}
+.seat .g{width:5px}
+.seat em{font-style:normal;font-size:9.5px;color:var(--dim2);margin-left:5px;letter-spacing:.3px}
+
+.bed{font-size:9.5px;font-weight:700;padding:2px 6px;border-radius:4px;letter-spacing:.3px;white-space:nowrap}
+.bed.y{background:#123326;color:var(--grn)}
+.bed.n{background:#2a1414;color:var(--red)}
+.bed.rc{background:#33270f;color:var(--amb)}
+.bed.na{background:#1b2029;color:var(--dim2)}
+
+/* ── totals footer of a route ── */
+.rfoot{padding:12px 15px;background:#0d1117;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.rfoot .lbl{font-size:10.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.8px}
+.rfoot .amt{font-size:22px;font-weight:700;letter-spacing:-.7px;font-variant-numeric:tabular-nums}
+.rfoot .amt small{font-size:11px;color:var(--dim2);font-weight:500;letter-spacing:0}
+.why{padding:11px 15px;font-size:12.5px;color:var(--dim);line-height:1.55;border-top:1px solid #1b2029}
+.why b{color:var(--tx)}
+.why .risk{color:var(--amb);display:block;margin-top:6px}
+
+/* ── comparison table (scroll-free, card rows) ── */
+.cmp{display:flex;flex-direction:column;gap:7px}
+.crow{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+.crow .ct{font-size:14px;font-weight:700;letter-spacing:-.2px;display:flex;justify-content:space-between;
+  align-items:center;gap:8px}
+.crow .cs{font-size:11.5px;color:var(--dim2);margin-top:3px}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}
+.cgrid>div{background:#0e1218;border-radius:7px;padding:8px 9px}
+.cgrid .k{font-size:9.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--dim2)}
+.cgrid .v{font-size:16px;font-weight:700;margin-top:3px;font-variant-numeric:tabular-nums;letter-spacing:-.4px}
+.cgrid .x{font-size:10px;color:var(--dim2);margin-top:2px;line-height:1.4}
+
+/* ── itinerary export ── */
+.itin{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.irow{display:flex;gap:0;border-bottom:1px solid #1b2029;font-size:12.5px}
+.irow:last-child{border-bottom:0}
+.irow.h{background:var(--card2);font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--dim2);font-weight:700}
+.irow>div{padding:9px 8px;min-width:0;overflow-wrap:anywhere}
+.ic1{flex:0 0 68px;color:var(--dim)}
+.ic2{flex:1}
+.ic3{flex:0 0 74px;text-align:right;font-variant-numeric:tabular-nums;color:var(--dim)}
+.irow b{color:var(--tx)}
+.irow .fn{color:var(--blu);font-weight:700;font-size:11.5px;font-variant-numeric:tabular-nums}
+button.cp{width:100%;margin-top:10px;padding:11px;background:var(--card2);border:1px solid var(--line);
+  border-radius:9px;color:var(--tx);font-size:13px;font-weight:600;font-family:inherit;cursor:pointer}
+button.cp:active{background:var(--gold);color:#000}
+
+.note{font-size:11.5px;color:var(--dim2);line-height:1.55;margin-top:10px}
+footer{margin:36px 0 40px;padding-top:16px;border-top:1px solid var(--line);
+  font-size:11px;color:var(--dim2);line-height:1.6}
+.load{padding:40px 0;text-align:center;color:var(--dim2);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Flight detail<br>Oct 25 → Nov 2</h1>
+  <div class="sub">Every leg with flight number, aircraft, seat config, and the business-vs-economy answer. Family of 5.</div>
+  <div class="nav">
+    <a href="index.html">Builder</a>
+    <a href="scenarios.html">Scenarios</a>
+    <a href="whats-on.html">What's on</a>
+    <a href="costed.html">Costed</a>
+    <a href="flights.html" class="on">Flights</a>
+  </div>
+</header>
+
+<div id="app"><div class="load">Loading…</div></div>
+<script src="flights-data.js"></script>
+
+<footer>
+  Fares are true 5-passenger quotes, not 1× 5. Ryanair is the only carrier that will sell 5 seats
+  out of Dubrovnik in this window — legacy carriers cap the booking engine at 4.
+  Seat configs verified against published cabin maps. Prices move; re-verify before booking.
+</footer>
+</div>
+
+<script>
+/* ═══════ DATA ═══════ */
+
+/* Oct 2026 calendar for DBV departures — which days actually have a flight */
+const CAL = [
+  {d:25,w:'Sun',ok:['VIE'],dst:'DST ends'},
+  {d:26,w:'Mon',ok:['KRK','STN']},
+  {d:27,w:'Tue',ok:['VIE','STN']},
+  {d:28,w:'Wed',ok:['STN']},
+  {d:29,w:'Thu',ok:['STN']},
+  {d:30,w:'Fri',ok:['VIE','STN']},
+  {d:31,w:'Sat',ok:['KRK','STN']},
+  {d:1,w:'Sun',ok:['VIE'],mo:'Nov'},
+];
+
+/* seat config renderer spec:
+   cfg: array of groups, each group = count of seats; type: 'e'|'r'|'f' */
+function seatGlyph(groups,type,label){
+  let h='<div class="seat">';
+  groups.forEach((n,i)=>{
+    if(i) h+='<span class="g"></span>';
+    for(let k=0;k<n;k++) h+='<i class="'+(type==='f'?'f':type==='r'?'r':'')+'"></i>';
+  });
+  h+='<em>'+label+'</em></div>';
+  return h;
+}
+
+const BED = {
+  y:['REAL BED','y'], rc:['RECLINER','rc'], n:['NOT A BED','n'], na:['—','na']
+};
+
+const PLANS = window.__PLANS__ || [];
+const CABIN = window.__CABIN__ || [];
+const ITIN  = window.__ITIN__  || [];
+
+function money(n){return '$'+n.toLocaleString()}
+
+function legHTML(l){
+  const stop = l.stops&&l.stops>0;
+  let h='<div class="leg">';
+  h+='<div class="lday"><span>'+l.date+'</span><span class="fno">'+l.no+'</span></div>';
+  h+='<div class="strip">';
+  h+='<div class="pt"><div class="t">'+l.from.t+'</div><div class="c">'+l.from.code+'</div><div class="n">'+l.from.city+'</div></div>';
+  h+='<div class="bar'+(stop?' stop':'')+'"><div class="d">'+l.dur+(stop?' · '+l.stops+' stop':' · nonstop')+'</div><div class="ln"><span class="plane">✈</span></div></div>';
+  h+='<div class="pt"><div class="t">'+l.to.t+'</div><div class="c">'+l.to.code+'</div><div class="n">'+l.to.city+'</div></div>';
+  h+='</div>';
+  h+='<div class="ac"><span>'+l.carrier+'</span><span>'+l.ac+'</span>'+(l.via?'<span>via '+l.via+'</span>':'')+(l.seats?'<span>'+l.seats+'</span>':'')+'</div>';
+
+  if(l.cabins&&l.cabins.length){
+    h+='<div class="cabs">';
+    l.cabins.forEach(c=>{
+      const b=BED[c.bed]||BED.na;
+      h+='<div class="cab'+(c.biz?' biz':'')+'">';
+      h+='<div class="cn"><span>'+c.name+'</span><span class="bed '+b[1]+'">'+b[0]+'</span></div>';
+      h+='<div class="px">'+(c.cash!=null?money(c.cash):'—')+'</div>';
+      h+='<div class="pl">'+c.for+'</div>';
+      if(c.pts) h+='<div class="pts">or '+c.pts.toLocaleString()+' pts'+(c.fees?' + '+money(c.fees):'')+'</div>';
+      if(c.cfg) h+=seatGlyph(c.cfg,c.st||'e',c.cfgL||'');
+      if(c.note) h+='<div class="nn">'+c.note+'</div>';
+      h+='</div>';
+    });
+    h+='</div>';
+  }
+  h+='</div>';
+  return h;
+}
+
+function planHTML(p){
+  let h='<div class="route'+(p.best?' best':'')+'">';
+  h+='<div class="rhead"><div class="rtitle"><div class="rname">'+p.name+'</div>'
+    +(p.tag?'<span class="tag '+p.tagc+'">'+p.tag+'</span>':'')+'</div>';
+  h+='<div class="rmeta">'+p.meta+'</div></div>';
+  p.legs.forEach(l=>h+=legHTML(l));
+  h+='<div class="rfoot"><div><div class="lbl">Flights only · 5 people</div>'
+    +'<div class="amt">'+money(p.total)+' <small>'+(p.totalN||'')+'</small></div></div>';
+  if(p.alt) h+='<div style="text-align:right"><div class="lbl">'+p.altL+'</div><div class="amt" style="font-size:17px;color:var(--vio)">'+p.alt+'</div></div>';
+  h+='</div>';
+  h+='<div class="why">'+p.why+(p.risk?'<span class="risk">⚠ '+p.risk+'</span>':'')+'</div>';
+  h+='</div>';
+  return h;
+}
+
+function calHTML(){
+  let h='<div class="cal">';
+  CAL.forEach(c=>{
+    const has=c.ok.includes('KRK');
+    h+='<div class="'+(has?'yes':'no')+'"><b>'+c.d+'</b>'+c.w
+      +'<span class="m">'+(has?'KRK':(c.ok.length?c.ok[0]:'—'))+'</span></div>';
+  });
+  h+='</div>';
+  return h;
+}
+
+function cmpHTML(c){
+  let h='<div class="crow"><div class="ct"><span>'+c.city+' → SFO</span>'
+    +'<span class="bed '+(BED[c.bed]||BED.na)[1]+'">'+(BED[c.bed]||BED.na)[0]+'</span></div>';
+  h+='<div class="cs">'+c.detail+'</div>';
+  h+='<div class="cgrid">';
+  h+='<div><div class="k">Economy × 5</div><div class="v">'+money(c.econ5)+'</div><div class="x">'+c.econX+'</div></div>';
+  h+='<div><div class="k">Business × 2</div><div class="v">'+(c.biz2?money(c.biz2):'n/a')+'</div><div class="x">'+c.bizX+'</div></div>';
+  h+='</div>';
+  if(c.mix) h+='<div class="cgrid" style="grid-template-columns:1fr"><div><div class="k">2 business + 3 economy</div><div class="v">'+c.mix+'</div><div class="x">'+c.mixX+'</div></div></div>';
+  h+='</div>';
+  return h;
+}
+
+function render(){
+  const a=document.getElementById('app');
+  if(!PLANS.length){a.innerHTML='<div class="load">No data.</div>';return}
+  let h='';
+
+  h+='<div class="alert"><h2>Oct 30 into Kraków does not exist</h2>'
+   +'<p>Ryanair flies Dubrovnik→Kraków <b>Mondays and Saturdays only</b> in the winter schedule. '
+   +'Oct 30 is a <b>Friday</b>. There is no direct flight, and no legacy carrier out of Dubrovnik '
+   +'will sell 5 seats on one booking.</p>'
+   +calHTML()
+   +'<p>So the Oct 30 target has three honest answers, priced below: <b>fly Oct 31 direct</b> (best), '
+   +'<b>route through Vienna Oct 30</b> (late arrival, extra hop), or <b>Zagreb + overnight</b>. '
+   +'Warsaw has no Dubrovnik service at all in this window.</p></div>';
+
+  h+='<h2 class="sec">Ways to get there</h2>';
+  PLANS.forEach(p=>h+=planHTML(p));
+
+  if(CABIN.length){
+    h+='<h2 class="sec">Business vs economy — the exits</h2>';
+    h+='<div class="cmp">';
+    CABIN.forEach(c=>h+=cmpHTML(c));
+    h+='</div>';
+    h+='<div class="note">A note on "business" in Europe: on any intra-European narrowbody '
+      +'(LOT, Austrian, SAS, Lufthansa short-haul), business class is a <b>standard economy seat '
+      +'with the middle seat blocked</b>. It is not a bed and it is not wider. Only the transatlantic '
+      +'leg has a real cabin. Never pay a business premium for the feeder.</div>';
+  }
+
+  if(ITIN.length){
+    h+='<h2 class="sec">Itinerary rows</h2>';
+    h+='<div class="itin"><div class="irow h"><div class="ic1">Date</div><div class="ic2">Segment</div><div class="ic3">Cost</div></div>';
+    ITIN.forEach(r=>{
+      h+='<div class="irow"><div class="ic1">'+r.d+'</div><div class="ic2">'
+       +(r.fn?'<span class="fn">'+r.fn+'</span> ':'')+'<b>'+r.t+'</b>'
+       +(r.s?'<br><span style="color:var(--dim2);font-size:11px">'+r.s+'</span>':'')
+       +'</div><div class="ic3">'+r.c+'</div></div>';
+    });
+    h+='</div>';
+    h+='<button class="cp" onclick="cp()">Copy itinerary as text</button>';
+    h+='<div class="note">These rows are shaped to paste into the master itinerary: date, flight number, '
+      +'segment with times, cost. Nothing here is booked.</div>';
+  }
+
+  a.innerHTML=h;
+}
+function cp(){
+  const t=ITIN.map(r=>[r.d,r.fn||'',r.t,r.s||'',r.c].filter(Boolean).join(' | ')).join('\n');
+  navigator.clipboard&&navigator.clipboard.writeText(t);
+  event.target.textContent='Copied ✓';
+  setTimeout(()=>{event.target.textContent='Copy itinerary as text'},1600);
+}
+render();
+</script>
+</body>
+</html>
