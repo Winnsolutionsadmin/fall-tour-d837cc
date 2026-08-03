@@ -7,7 +7,7 @@
 :root{
   --bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--ink:#e6edf3;--dim:#8b949e;--faint:#5c6672;
   --gold:#d4a94e;--teal:#3fb6a8;--red:#e5534b;--green:#57ab5a;--line:#2d333b;
-  --c-seo:#7f9cd4;--c-sin:#c678dd;--c-sea:#3fb6a8;--c-hrv:#57ab5a;--c-end:#d4a94e;--c-air:#39414d;
+  --c-seo:#7f9cd4;--c-sin:#c678dd;--c-sea:#3fb6a8;--c-hrv:#57ab5a;--c-end:#d4a94e;--c-air:#39414d;--c-prg:#e5734b;--c-krk:#a87fd4;--c-ldn:#7f9cd4;--c-vie:#d4a94e;--c-bud:#3fb6a8;--c-buc:#c678dd;--c-bra:#e5534b;--c-gal:#57ab5a;--c-bel:#8b949e;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:44px;-webkit-font-smoothing:antialiased}
@@ -102,7 +102,7 @@ h2::after{content:'';display:block;height:1px;background:var(--line);margin-top:
 <b>One decision upstream changes everything: the sailing date.</b> The Oct 11 hold puts Croatia on Oct 18–25 and leaves the last eight days free — that is what makes a Halloween ending possible at all. Taking the Oct 18 hold instead means you are at sea until Oct 25 and fly home from Rome around Oct 26. <b>Every scenario below assumes Oct 11.</b> Choosing Oct 18 deletes them all.
 </div>
 
-<h2>Pick an ending · Oct 25 → Nov 2</h2>
+<h2>Eight endings · Oct 25 → Nov 2 · all priced end-to-end for five</h2>
 <div id="list"></div>
 
 <div class="note warn">
@@ -120,48 +120,71 @@ Flights quoted live at true party size — Ryanair's fare API at five passengers
 </div>
 
 <script>
-const CITY={hrv:['Dubrovnik','var(--c-hrv)'],sea:['At sea','var(--c-sea)'],zag:['Zagreb','var(--c-sin)'],
-  dub:['Dublin','#57ab5a'],der:['Derry','var(--c-end)'],vie:['Vienna','#d4a94e'],spl:['Split','var(--c-sea)'],air:['Travel','var(--c-air)']};
+const CITY={dbv:['Dubrovnik','var(--c-hrv)'],prg:['Prague','var(--c-prg)'],krk:['Kraków','var(--c-krk)'],ldn:['London','var(--c-ldn)'],vie:['Vienna','var(--c-vie)'],bud:['Budapest','var(--c-bud)'],dub:['Dublin','#57ab5a'],buc:['Bucharest','var(--c-buc)'],bra:['Brașov','var(--c-bra)'],gal:['Galway','var(--c-gal)'],bel:['Belfast','var(--c-bel)'],air:['Travel','var(--c-air)']};
 const S=[
- {id:'a', name:'Lean & Certain', pick:true, cost:2212, pts:'81k',
-  thesis:'Cheap Croatia nights, Zagreb sidesteps the five-seat wall, Derry for Halloween. The most trip per dollar.',
-  rib:[['hrv',4],['air',1],['dub',1],['der',2],['dub',1]],
-  m:['$2,212','9/10','Low'],
-  legs:[['Dubrovnik apartment, 4 nights','~$400'],['Croatia Air Dubrovnik→Zagreb, 55 min','$362'],['Ryanair Zagreb→Dublin','$467'],['Coach Dublin↔Derry, return','~$110'],['Dublin + Derry, 4 nights','~$873']],
-  why:'Zagreb is a Ryanair base with five to six Dublin flights a week against Dubrovnik\'s two — a real five-passenger booking priced it at $467 total, $1,183 under the same-day Dubrovnik fare. You keep four nights at Dubrovnik prices and still make both Derry nights.',
-  against:'Two flights instead of one, and a 06:40 Dubrovnik departure.'},
+ {id:'p7', name:'Prague, 7 nights', pick:true, cost:5906, pts:'0',
+  thesis:'Leave Dubrovnik on checkout day, no wasted night, and Prague is the only capital fully OPEN on Nov 1. Highest memory in its price band.',
+  rib:[['prg',7]],
+  m:['$5,906','8.5','Low'],
+  legs:[['Ryanair DBV→Vienna Oct 25, 10:00','$295'],['RegioJet Vienna→Prague, same day 14:39','$207'],['Prague lodging, 7 nights','$875'],['Daily burn, 7 days @ $230','$1,610'],['Activities incl. Kutná Hora bone church','$554'],['BA via LHR → SFO, Nov 1','$2,365']],
+  why:'The structural unlock: Ryanair flies Dubrovnik→Vienna at 10:00 ON checkout day, and RegioJet gets you to Prague by 19:00 for $207 — live-quoted, 401 free seats. No extra Dubrovnik night, no dead day, seven full Prague nights. And Nov 1 is NOT a public holiday in Czechia, so unlike Kraków and Vienna nothing is shut.',
+  against:'The $2,365 BA exit is a Nov 1 fare — Nov 2 spikes to $4,153, so the date is locked. One long travel day at the start.'},
 
- {id:'b', name:'One Ticket', pick:false, cost:2746, pts:'81k',
-  thesis:'The simplest version. One flight out of Croatia, eight days of margin, and the tail of Bram Stoker on arrival.',
-  rib:[['dub',5],['der',2],['dub',1]],
-  m:['$2,746','9/10','Low'],
-  legs:[['Ryanair Dubrovnik→Dublin, Oct 25','$813'],['Coach Dublin↔Derry, return','~$110'],['Dublin, 6 nights','~$1,423'],['Derry, 2 nights','~$400']],
-  why:'The cheapest single fare of the three Dublin options and by far the biggest safety margin before the transatlantic. Landing Oct 25 catches the closing two days of the Bram Stoker Festival.',
-  against:'Six Dublin nights at $166–482 instead of Dubrovnik nights at $78–120, and you arrive 11:05pm into marathon and bank-holiday weekend — the busiest night of the month.'},
+ {id:'kfb', name:'Kraków + Flying Blue award', pick:false, cost:3536, pts:'125k',
+  thesis:'The cheapest ending on the board — if five award seats exist. That is the whole bet.',
+  rib:[['dbv',1],['krk',6]],
+  m:['$3,536','7','High'],
+  legs:[['Extra Dubrovnik night Oct 25 + burn','$395'],['Ryanair DBV→Kraków Oct 26, 15:15','$191'],['Kraków lodging, 6 nights','$702'],['Daily burn, 6 days @ $207','$1,242'],['Wieliczka, Zakopane, Dragon\'s Den','$581'],['Flying Blue KRK→AMS→SFO Nov 1 — taxes','~$425']],
+  why:'Kraków\'s daily burn is the lowest verified anywhere — $207/day for five, with central two-bedroom apartments at $101–133/night. Flying Blue prices the whole ticket at the Amsterdam→SFO level with the Kraków feeder free.',
+  against:'Award space for five is UNVERIFIED, and Flying Blue reprices the entire party ~5× to flex if even one seat is short. There is no Oct 25 flight to Kraków — Mon/Sat only — so you burn a Dubrovnik night and a dead day first. And Nov 1 is a Polish national holiday: Wieliczka and every museum closed.'},
 
- {id:'c', name:'The Memory', pick:false, cost:4400, pts:'81k',
-  thesis:'Sleep aboard for five nights island-hopping out of Split, dinner ashore in a different town each evening, then Derry.',
-  rib:[['hrv',2],['spl',5],['air',1],['der',2],['dub',1]],
-  m:['~$4,400','10/10','Med'],
-  legs:[['Bus or catamaran Dubrovnik→Split, ×5','~$110'],['Skippered boat, 5 nights, Split loop','$2,400–2,900'],['Split→Zagreb','~$362'],['Ryanair Zagreb→Dublin','$467'],['Derry + Dublin, 3 nights','~$700']],
-  why:'Local classifieds put owner-direct boats at €1,290–1,540 a week — a Bavaria 46 sleeping nine, a Dufour 385, a 2023 Bali catamaran. Basing the loop in Split instead of running one-way from Dubrovnik removes the one-way fee entirely and taps the deep end of the inventory: almost every liveaboard in Croatia is berthed in Split, Trogir or Murter, not Dubrovnik.',
-  against:'Roughly five times an apartment, and the skipper is about 40% of the bill — Croatia requires a licence plus a VHF certificate, so bareboat is out. Bora season starts in October and no operator refunds weather days; you sit in port and lose one. That is a real risk on a leg where Derry on Oct 30 is a hard date.'},
+ {id:'kdub', name:'Kraków + Dublin award exit', pick:false, cost:3744, pts:'81k Avios',
+  thesis:'Same Kraków week, but the flight home is already verified bookable. Cheapest ending with no award risk.',
+  rib:[['dbv',1],['krk',6],['dub',1]],
+  m:['$3,744','8','Low'],
+  legs:[['Extra Dubrovnik night + burn','$250'],['Ryanair DBV→Kraków Oct 26','$191'],['Kraków lodging + burn, 6 nights','$1,242'],['Activities','$300'],['Ryanair Kraków→Dublin Nov 1','$348'],['Dublin night','$440'],['EI61 award fees, 5 pax','$973']],
+  why:'EI61 is the one flight home with six-plus seats confirmed on both Nov 1 and Nov 2 — 16,250 Avios each. You get Kraków\'s cheap week and a home leg that cannot evaporate.',
+  against:'Three flights instead of one, and a Dublin night at $440 that buys nothing but a connection.'},
 
- {id:'d', name:'Max Croatia', pick:false, cost:2225, pts:'81k',
-  thesis:'Seven more nights in the cheapest, prettiest place on the itinerary — and it costs you Halloween.',
-  rib:[['hrv',7],['dub',1]],
-  m:['$2,225','2/10','High'],
-  legs:[['Dubrovnik apartment, 7 nights','~$700'],['Ryanair Dubrovnik→Dublin, Nov 1','$1,158'],['Dublin, 1 night','~$223']],
-  why:'Dubrovnik at $78–120 a night for all five is the best lodging value anywhere on this trip, and nothing material closes there until Nov 1.',
-  against:'You are in the air on Halloween, land at 11:05pm the night before a transatlantic, and there is no Dubrovnik–Dublin service on Nov 2 to catch if anything slips. Both the experience and the schedule are gambles.'},
+ {id:'kldn', name:'Kraków + London exit', pick:false, cost:4832, pts:'0',
+  thesis:'Best all-cash ending: Kraków\'s cheap week, then the cheapest and shortest flight home in Europe.',
+  rib:[['dbv',1],['krk',6],['ldn',1]],
+  m:['$4,832','8','Low'],
+  legs:[['Extra Dubrovnik night','$250'],['Ryanair DBV→Kraków Oct 26','$191'],['Kraków lodging + burn','$1,242'],['Kraków→London','$240'],['London night','$500'],['Activities','$300'],['BA nonstop LHR→SFO','$2,109']],
+  why:'BA flies LHR→SFO nonstop in 11h10 for $2,109–2,215 for five — the cheapest exit found anywhere, and the deepest 5-seat inventory on the board (20 priced itineraries versus Kraków\'s handful).',
+  against:'A London night at $500 is the priciest night of any scenario.'},
 
- {id:'e', name:'Vienna', pick:false, dim:true, cost:1674, pts:'81k',
-  thesis:'The cheapest arithmetic on the board. It spends Halloween in a country that barely marks it.',
-  rib:[['hrv',5],['air',1],['vie',2],['dub',1]],
-  m:['$1,674','4/10','High'],
-  legs:[['Ryanair Dubrovnik→Vienna, Oct 30','$199'],['Ryanair Vienna→Dublin, Nov 1','$438'],['Dubrovnik, 5 nights','~$500'],['Vienna, 2 nights','~$260'],['Dublin, 1 night','~$223']],
-  why:'On the day Ryanair wants $1,650 to fly five people to Dublin, it wants $199 to fly them to Vienna.',
-  against:'Austria barely marks Halloween and Nov 1 is All Saints, when much of the city closes. Both legs have exactly five seats — no rebooking margin at all. You would save money and forfeit the reason for going.'},
+ {id:'vb', name:'Vienna 4 + Budapest 4', pick:false, cost:6044, pts:'0',
+  thesis:'The highest memory score of any ending — two great capitals, one easy train, no wasted days.',
+  rib:[['vie',4],['bud',4]],
+  m:['$6,044','9','Low'],
+  legs:[['Ryanair DBV→Vienna Oct 25, 10:00','$320'],['Vienna 4 nights','$260'],['Railjet Vienna→Budapest','$81'],['Budapest 4 nights','$330'],['Activities — Schönbrunn, Prater, thermal baths','$640'],['Food + local, 8 days','$1,460'],['Exit to SFO','$2,953']],
+  why:'Leaves Dubrovnik on checkout day at 10:00. Vienna gives Schönbrunn zoo, the Prater and free museum entry on Austrian National Day Oct 26; Budapest gives the thermal baths. A 2h40 train between them, live-quoted at $81 for five.',
+  against:'Vienna\'s daily burn is roughly double Kraków\'s, and Nov 1 is an Austrian public holiday.'},
+
+ {id:'stay', name:'Stay in Dubrovnik, exit via London', pick:false, cost:6570, pts:'0',
+  thesis:'Lowest effort of anything here. Seven more nights where you already are, then one London night and the nonstop home.',
+  rib:[['dbv',7],['ldn',1]],
+  m:['$6,570','5.5','Low'],
+  legs:[['Dubrovnik lodging, 7 nights','$840'],['Daily burn @ $208','$1,456'],['Activities','$400'],['Ryanair DBV→Stansted Nov 1','$920'],['London night + transfers','$580'],['BA nonstop LHR→SFO Nov 2','$2,215']],
+  why:'Nothing closes in Dubrovnik until Nov 1, lodging is $104–135/night for five, and you unpack once. The Stansted route runs the whole window, so the departure date is genuinely flexible.',
+  against:'Memory score 5.5 — you have already been there a week. And the Nov 1 Ryanair fare is nearly double the Oct 25 one ($920 vs $503).'},
+
+ {id:'tra', name:'Transylvania', pick:false, dim:true, cost:7516, pts:'0',
+  thesis:'Bran Castle on actual Halloween, in the one country where Nov 1 is a working day. Highest raw memory — and the most moving parts.',
+  rib:[['ldn',1],['buc',2],['bra',4],['air',1]],
+  m:['$7,516','8.5','High'],
+  legs:[['Dubrovnik→Stansted + hotel + Stansted→Bucharest','$1,203'],['Rental SUV, 7 days + fuel','$520'],['Bucharest 2n + Brașov 4n','$1,120'],['Daily burn @ $173 — cheapest in Europe','$1,384'],['Bran Castle, Turda salt mine, Peleș','$600'],['Exit from Bucharest','$2,689']],
+  why:'Romania has the lowest daily burn found anywhere ($173/day for five). Turda Salt Mine is an underground amusement park with a Ferris wheel inside a cavern; Bran does a genuine Halloween event.',
+  against:'Getting there needs a London overnight and two flights. A rental car is mandatory. The most fragile chain on the board.'},
+
+ {id:'irl', name:'Ireland road trip', pick:false, dim:true, cost:9018, pts:'81k Avios',
+  thesis:'Dublin, Galway, the Antrim coast and Púca — a real Ireland week, at the highest price here.',
+  rib:[['dub',2],['gal',2],['bel',2],['dub',2]],
+  m:['$9,018','8.5','Low'],
+  legs:[['Ryanair DBV→Dublin Oct 25','$885'],['7-seater, 8 days + fuel','$920'],['8 nights across four bases','$2,340'],['Daily burn @ $400','$3,200'],['Activities','$700'],['EI61 award fees','$973']],
+  why:'The Oct 25 Dublin flight is the only 5-seat option that day and it locks the week to Ireland — so if you take it, do Ireland properly. Cliffs of Moher, Titanic Belfast, Giant\'s Causeway, Púca festival for Halloween.',
+  against:'$9,018 — the most expensive ending, driven by a $400/day burn and eight nights of lodging.'},
 ];
 function card(s){
   const tot=s.rib.reduce((a,x)=>a+x[1],0);
@@ -186,7 +209,7 @@ function card(s){
      <h4>Why</h4><p class="hi">${s.why}</p>
      <h4>Why not</h4><p>${s.against}</p>
      <h4>What it's made of</h4><ul class="ls">${s.legs.map(l=>`<li><span>${l[0]}</span><span class="f">${l[1]}</span></li>`).join('')}</ul>
-     <h4>Whole trip with this ending</h4><p class="hi">$${(10068+s.cost).toLocaleString()} in flights and beds, plus 110,500 SkyMiles and 81,250 Amex points — before the cruise and the two booked hotels.</p>
+     <h4>Whole trip with this ending</h4><p class="hi">$${(10068+s.cost).toLocaleString()} in flights and beds for the whole trip, before the cruise and the two booked hotels.</p>
    </div></article>`;
 }
 document.getElementById('list').innerHTML=S.map(card).join('');
