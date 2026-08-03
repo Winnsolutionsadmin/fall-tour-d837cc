@@ -32,6 +32,14 @@ h1{font-size:25px;line-height:1.15;letter-spacing:-.5px;font-weight:700}
 .alert p{font-size:13.5px;color:#d8cfc2;line-height:1.55}
 .alert p+p{margin-top:8px}
 .alert b{color:#fff}
+.alert i{color:#e8dccb}
+.alert.red{background:linear-gradient(180deg,#2a1214,#1a1012);border-color:#5a2020;border-left-color:var(--red)}
+.alert.red h2{color:var(--red)}
+.alert.red p{color:#dcc8c8}
+.trap{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:13px 15px;margin-bottom:9px}
+.trap h3{font-size:14px;font-weight:700;letter-spacing:-.2px;margin-bottom:6px;color:var(--amb)}
+.trap p{font-size:12.5px;color:var(--dim);line-height:1.55}
+.trap p b{color:var(--tx)}
 .cal{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;margin:12px 0 4px}
 .cal div{text-align:center;padding:6px 1px;border-radius:6px;min-width:0;
   background:#0e1218;border:1px solid var(--line);font-size:9px;color:var(--dim2)}
@@ -209,9 +217,11 @@ const BED = {
   y:['REAL BED','y'], rc:['RECLINER','rc'], n:['NOT A BED','n'], na:['—','na']
 };
 
-const PLANS = window.__PLANS__ || [];
-const CABIN = window.__CABIN__ || [];
-const ITIN  = window.__ITIN__  || [];
+const PLANS  = window.__PLANS__  || [];
+const CABIN  = window.__CABIN__  || [];
+const ITIN   = window.__ITIN__   || [];
+const ALERTS = window.__ALERTS__ || [];
+const TRAPS  = window.__TRAPS__  || [];
 
 function money(n){return '$'+n.toLocaleString()}
 
@@ -289,14 +299,10 @@ function render(){
   if(!PLANS.length){a.innerHTML='<div class="load">No data.</div>';return}
   let h='';
 
-  h+='<div class="alert"><h2>Oct 30 into Kraków does not exist</h2>'
-   +'<p>Ryanair flies Dubrovnik→Kraków <b>Mondays and Saturdays only</b> in the winter schedule. '
-   +'Oct 30 is a <b>Friday</b>. There is no direct flight, and no legacy carrier out of Dubrovnik '
-   +'will sell 5 seats on one booking.</p>'
-   +calHTML()
-   +'<p>So the Oct 30 target has three honest answers, priced below: <b>fly Oct 31 direct</b> (best), '
-   +'<b>route through Vienna Oct 30</b> (late arrival, extra hop), or <b>Zagreb + overnight</b>. '
-   +'Warsaw has no Dubrovnik service at all in this window.</p></div>';
+  ALERTS.forEach(a=>{
+    h+='<div class="alert'+(a.kind==='red'?' red':'')+'"><h2>'+a.h+'</h2>'
+      +a.body+(a.cal?calHTML():'')+(a.body2||'')+'</div>';
+  });
 
   h+='<h2 class="sec">Ways to get there</h2>';
   PLANS.forEach(p=>h+=planHTML(p));
@@ -306,10 +312,15 @@ function render(){
     h+='<div class="cmp">';
     CABIN.forEach(c=>h+=cmpHTML(c));
     h+='</div>';
-    h+='<div class="note">A note on "business" in Europe: on any intra-European narrowbody '
-      +'(LOT, Austrian, SAS, Lufthansa short-haul), business class is a <b>standard economy seat '
-      +'with the middle seat blocked</b>. It is not a bed and it is not wider. Only the transatlantic '
-      +'leg has a real cabin. Never pay a business premium for the feeder.</div>';
+    h+='<div class="note">No nonstop to SFO exists from Kraków, Warsaw, Vienna, Prague or Zagreb in '
+      +'November 2026. LOT\'s Warsaw–SFO 787 is summer-seasonal and its last filed day is <b>Oct 22</b> — '
+      +'dead nine days before you would fly it. Austrian\'s Vienna–SFO ended Feb 2026. So the departure '
+      +'city does not decide your seat; the <b>hub</b> does.</div>';
+  }
+
+  if(TRAPS.length){
+    h+='<h2 class="sec">Before you buy a premium seat</h2>';
+    TRAPS.forEach(t=>{h+='<div class="trap"><h3>'+t.h+'</h3><p>'+t.b+'</p></div>'});
   }
 
   if(ITIN.length){
