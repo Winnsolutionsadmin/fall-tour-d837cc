@@ -129,7 +129,18 @@ established trusted session past Akamai — is blocked on a macOS Keychain "Chro
 approval on MacTop. Root-cause fix shipped for the OTP fumbling in attempt ①: canonical helper <code>~/.claude/scripts/email-otp.sh</code>
 (message-level, newest-after-timestamp code extraction), fail-then-pass tested. <b>Instrument roadmap upgrade:</b> seats.aero, Flightpoints
 and Award Travel Finder all ship MCP servers (agent-native award search); the seats.aero MCP runs on the same Partner API key held until
-Sep 4, so agent-native access needs no new subscription this month.</div>
+Sep 4, so agent-native access needs no new subscription this month.<br><br>
+④ <b>FIRST /shit-test AUDIT (worktree agent, branch worktree-agent-aa1a0f95504c9c68f, commits 46d61836f + 2cb7b4f44): INCONCLUSIVE, with
+a finding that matters more than a score.</b> 10 claims frozen pre-verification (UA195, LH444, LX38, LH442 + stale-tier rows), truth surface
+united.com public award search. Result: <b>united.com serves CASH results to automation but ships an empty unhydrated shell specifically in
+AWARD mode</b> — 3 raw-Chrome passes + a stealth-browser pass, all blocked, evidence committed. All 10 claims UNVERIFIABLE (surface-blocked,
+not claim-fault). The structural takeaway: <b>airlines defend award inventory from unauthenticated automation far harder than cash fares —
+which is exactly why cached indexes exist, and why the only decision-grade verification layer is an authenticated human-fingerprint session
+(your own program login / point.me / the cart).</b> The one end-to-end confirmation in this study remains Jarred's Aeroplan cart screenshot
+matching the Munich row to the dollar — plus one weak positive control from the audit itself: united.com's CASH surface (which did hydrate:
+UA195 showing $1,545 economy / $8,977 Polaris) matched the index's schedule-level facts (flight number, times, equipment) exactly.
+Schedule data validated; award space still unverified. Audit's suggested next surfaces: a different network, or LifeMiles public search as
+an alternate Star Alliance truth surface. The audit driver (verify.js) is committed and re-runnable the moment the block lifts.</div>
 
 <div class="stats" id="stats"></div>
 
