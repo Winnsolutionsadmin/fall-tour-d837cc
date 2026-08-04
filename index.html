@@ -202,7 +202,7 @@ const LS='ft26v3';
 let S={seg:{},pay:{},home:'aerJ1'};
 try{const v=JSON.parse(localStorage.getItem(LS)||'null'); if(v)S={...S,...v};}catch(e){}
 SEGS.forEach(g=>{if(!S.seg[g.id]||!g.opts.find(o=>o.id===S.seg[g.id]))S.seg[g.id]=g.opts[0].id;});
-if(!WH.opts.find(o=>o.id===S.home))S.home='aerJ1';
+if(!WH.opts.find(o=>o.id===S.home))S.home='dubRoadA';
 const save=()=>localStorage.setItem(LS,JSON.stringify(S));
 const usePts=(gid,pid,f)=>{ if(!f||!f.pts)return false; const k=gid+'.'+pid; return S.pay[k]!==undefined?S.pay[k]:!!f.dp; };
 
@@ -280,10 +280,10 @@ function render(){
    <span class="${skyOver?'over':''}">SkyMiles ${fk(r.sky)} / 133k${skyOver?' ⚠ OVER':''}</span></div>`;
 }
 const PRESETS=[
- {n:'⭐ Recommended',f(){S.seg={out:'dl',icnsin:'ke643',famout:'ita',sinfco:'qr943',teamhome:'smf',hop:'ou'};S.pay={'sinfco.jarred':true,'out.jarred':false,'icnsin.jarred':false};S.home='aerE';}},
+ {n:'⭐ Recommended',f(){S.seg={out:'dl',icnsin:'ke643',famout:'ita',sinfco:'qr943',teamhome:'smf',hop:'ou'};S.pay={'sinfco.jarred':true,'out.jarred':false,'icnsin.jarred':false};S.home='dubRoadA';}},
  {n:'🪙 Min cash',f(){S.seg={out:'ua',icnsin:'jeju',famout:'condor',sinfco:'qr943',teamhome:'sfo',hop:'fr'};S.pay={'sinfco.jarred':true};S.home='aeroF';}},
  {n:'⏱ Fastest',f(){S.seg={out:'ke',icnsin:'ke643',famout:'ita',sinfco:'sq366',teamhome:'sfo',hop:'ou'};S.pay={'icnsin.jarred':false};S.home='aeroF';}},
- {n:'💵 Max deals',f(){S.seg={out:'dl',icnsin:'ke643',famout:'ita',sinfco:'qr943',teamhome:'smf',hop:'ou'};S.pay={'sinfco.jarred':true,'out.jarred':true,'icnsin.jarred':false};S.home='aerE';}},
+ {n:'💵 Max deals',f(){S.seg={out:'dl',icnsin:'ke643',famout:'ita',sinfco:'qr943',teamhome:'smf',hop:'ou'};S.pay={'sinfco.jarred':true,'out.jarred':true,'icnsin.jarred':false};S.home='dubRoadA';}},
 ];
 document.getElementById('presets').innerHTML=PRESETS.map((p,i)=>`<button class="preset" onclick="preset(${i})">${p.n}</button>`).join('');
 window.preset=i=>{PRESETS[i].f();save();render();};
