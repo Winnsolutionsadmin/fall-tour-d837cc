@@ -56,7 +56,8 @@ independent sources, with the verdict shown. Nothing inherited from earlier work
 </header>
 
 <div class="warn"><b>How to read the badges.</b> <span class="v c">CONFIRMED</span> three or more independent sources
-agree within 5%. <span class="v s">1-SOURCE</span> only one surface returned it — treat as indicative.
+agree within 5%. <span class="v s">2-SOURCE</span> exactly two agreed — good, not gold.
+<span class="v s">1-SOURCE</span> only one surface returned it — treat as indicative.
 <span class="v x">CONFLICTING</span> sources disagree by more than 10%; the range is shown, never averaged.
 <span class="v u">N/A</span> nothing priced. Airline websites were unreachable for every carrier (Delta 444,
 United refused, Korean 403, Asiana blocked, Air Canada 403) — so "three sources" means Google Flights,
@@ -76,7 +77,7 @@ a live pull or it is labelled.
 <script>
 const D=window.__Q__||{legs:[],totals:null};
 function money(n){return '$'+Math.round(n).toLocaleString()}
-function badge(v){const m={CONFIRMED:['c','CONFIRMED'],'SINGLE-SOURCE':['s','1-SOURCE'],CONFLICTING:['x','CONFLICTING'],UNAVAILABLE:['u','N/A']};
+function badge(v){const m={CONFIRMED:['c','CONFIRMED'],'TWO-SOURCE':['s','2-SOURCE'],'SINGLE-SOURCE':['s','1-SOURCE'],CONFLICTING:['x','CONFLICTING'],UNAVAILABLE:['u','N/A']};
  const b=m[v]||['u',v||'?'];return `<span class="v ${b[0]}">${b[1]}</span>`}
 function render(){
   let h='';
