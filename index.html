@@ -170,6 +170,36 @@ route &mdash; the 132,931 balance is dead weight here. Zero nonstop award space 
 <b style="color:#8b98aa">Flying Blue routing tip that generalises:</b> SFO&rarr;London business is <b>113,500</b>/pp while
 SFO&rarr;Rome direct is <b>195,000</b>/pp for the same cash value &mdash; the direct-to-destination award is usually the trap.
 </div></div>
+<div style="background:#231a10;border:2px solid #fbbf24;border-radius:12px;padding:16px;margin:14px 0">
+<div style="color:#fbbf24;font-weight:700;font-size:15px;margin-bottom:8px">&#9888; AWARD SWEEP RETRACTED AGAIN &mdash; AND EVERY SURVIVING OPTION IS IN A PROGRAM YOU CANNOT REACH</div>
+<div style="font-size:13px;color:#e0d4c0;line-height:1.65">
+<b>The tool has a trap that invalidated the earlier tables.</b> seats.aero's <code>RemainingSeats</code> field returns
+<b>0 to mean "the program did not report a count," not "no seats"</b> &mdash; that state covers 18% of priced rows and it is
+volatile (the same Lufthansa flight read 6 seats at 07:50 and unreported at 09:10 with nothing sold in between). Filtering on it
+both invented options and discarded real ones. The only reliable test is forcing the backend to assert with
+<code>min_seats=N</code>. Under that test the earlier <b>"Frankfurt Nov 2, 6 seats, 330,465 points" is REFUTED &mdash; zero results.</b><br><br>
+<b style="color:#f87171">AND HERE IS THE PART THAT MATTERS:</b> I checked the program behind every re-verified option.
+<b>None of them are Amex MR transfer partners.</b><br>
+&middot; FRA premium economy 40,786 nonstop &mdash; <b>Lufthansa Miles &amp; More</b> &#10007;<br>
+&middot; FRA business 66,092 nonstop, 5 seats Nov 4 &mdash; <b>Lufthansa M&amp;M</b> &#10007;<br>
+&middot; ZRH business 74,275, 5 seats &mdash; <b>Lufthansa M&amp;M</b> &#10007;<br>
+&middot; MUC 2+3 nonstop 75,065 &mdash; <b>Lufthansa M&amp;M</b> &#10007;<br>
+&middot; FRA business 70,000, 7 seats Nov 4 &mdash; <b>Alaska Mileage Plan</b> &#10007;<br>
+&middot; FRA premium economy 50,000 nonstop &mdash; <b>United</b> (Chase UR only; you hold 34,700) &#10007;<br>
+&middot; ZRH business 57,500 &mdash; <b>American AAdvantage</b> &#10007;<br>
+Lufthansa releases its best long-haul award space to its own members and to Star partners you cannot fund.
+<b>Hours of award hunting have produced a shelf of seats that are real and unbuyable by you.</b><br><br>
+<b style="color:#34d399">SO THE RETURN IS A CASH DECISION.</b> The live-quoted cash answers stand and are the plan:
+five flat beds <b>Amsterdam&rarr;SFO $10,531</b> (BA via Heathrow, Oct 26/27/31/Nov 1) &middot; five economy
+<b>Stockholm&rarr;SFO $1,654</b> &middot; all-in from Croatia <b>$11,193 beds / $2,235 economy</b>.
+Points remain useful only where Flying Blue or Avios actually price the route.<br><br>
+<b style="color:#fbbf24">The Oct 7 lever got bigger.</b> In business the same United nonstop is <b>$4,215/pp on Wed Oct 7
+versus $6,583/pp on Thu Oct 8</b> &mdash; identical aircraft, identical seat, <b>~$9,500 difference for four</b>. Those are
+1-pax figures extrapolated and need a true 4-pax re-price, but the direction is not in doubt.<br><br>
+<b style="color:#8b98aa">One more limitation worth carrying:</b> seats.aero cannot distinguish "no award space on this flight"
+from "this flight does not operate that day." Those look identical in its data and are completely different facts &mdash; which is
+exactly how the ITA-doesn't-fly-Thursdays issue could have been missed.
+</div></div>
 <div class="tl" id="timeline"></div>
 
 <h2><span class="n">03</span>Leg options</h2>
