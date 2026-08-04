@@ -49,7 +49,11 @@ legs:[
  {v:'CONFIRMED',n:'THU OCT 8 — SAS via Copenhagen / TAP via Lisbon',p:'$1,936–1,947'},
  {v:'SINGLE-SOURCE',n:'THU OCT 8 — United UA507 nonstop, economy (the only nonstop that day)',p:5250},
  {v:'CONFIRMED',n:'POINTS — Flying Blue premium economy, Oct 8 only, 4 seats live-verified',p:'358,000 MR + $996',
-  s:'0.76¢/point against the $3,700 cash equivalent. Burns ~$4,000 of value. Business on points is impossible either date: Flying Blue 778,000, Turkish 700,000, both over your pool.'}]},
+  s:'0.76¢/point against the $3,700 cash equivalent. Burns ~$4,000 of value.'},
+ {v:'CONFIRMED',n:'POINTS — the ONLY business-on-points that fits: Flying Blue via LONDON, Oct 8',bed:'yes',p:'454,000 MR + $1,810',
+  s:'★ REAL — 113,500/pp, 4 seats, live-verified 100%. But read the shape before you like it: it is AIR FRANCE/KLM metal, NOT Virgin, and NOT nonstop. The journey is SFO → Paris or Amsterdam → London → Rome: THREE FLIGHTS, TWO TICKETS, flying past Rome to Paris, back northwest to London, then southeast to Rome. Lie-flat only on the first segment; the London hop is a euro recliner and the Rome leg is a separate economy ticket. Arrives Oct 9 — two days of cruise buffer, not three. Uses 86% of your pool. The 3.3¢/pt figure is flattered because it is benchmarked against a NONSTOP cash fare; the honest denominator is a connecting business fare nobody has priced, so the real number is lower. Why the ugly routing: Flying Blue business straight to Rome is 194,500/pp = 778,000 for four, over your pool. Routing via London is the only way it fits at all.'},
+ {v:'CONFIRMED',n:'POINTS — everything else in business, both dates',p:'does not fit',
+  s:'Flying Blue direct to Rome 778,000 · Turkish 700,000 · both over your 525,382. Lufthansa 309,540 is Miles & More, unreachable. A BA Avios 99,000 at $0 fees looked perfect and VANISHED when tested at 4 seats — a phantom in cached data.'}]},
 
 {t:'⑤ Jarred → Rome', d:'Sat 10 Oct · 1 pax · SIN → FCO · must clear the Fri Oct 9 party and beat Oct 11 boarding',
  opts:[
@@ -114,6 +118,8 @@ totals:{h:'The recommended plan, all cash, all confirmed',
 notes:[
 {h:'The one points play worth making',
  b:'<b>Qatar Avios, 75,000, for Jarred\'s Singapore → Rome leg.</b> Amex MR transfers 1:1 and that partnership is still live. Against the $2,929 Qsuite cash fare it returns roughly <b>3.5¢ per point</b> — the best redemption found anywhere in this study, and it uses 14% of your pool. Everything else tested came in under 1.5¢ or sat in a program you cannot reach.'},
+{h:'The Rome decision, framed honestly',
+ b:'This is a real choice, not an answer, and it is yours. <b>$16,862 cash</b> buys a single-ticket United Polaris <b>nonstop</b> on Wed Oct 7, 11h50, lie-flat the whole way, landing with three clear days before the cruise. <b>454,000 Membership Rewards plus ~$1,810</b> buys three flights across two tickets on Oct 8 — SFO to Paris or Amsterdam, back to London, then down to Rome — flat only on the first leg, no misconnect protection between tickets, a terminal transfer, a bag re-check, and two days of buffer instead of three. With four people and an eight-year-old, the backtrack is a heavier ask than the arithmetic suggests. I would fly Oct 7 and pay cash, but the points version genuinely exists and I am not going to pretend it does not.'},
 {h:'What changed versus what you were told before',
  b:'Delta One is <b>348,500 SkyMiles, not 94,000</b> — out of reach. Flying the team from Sacramento costs <b>$360 more</b>, not $70 less. Dublin <b>does</b> sell five business seats ($13,491) — my earlier "caps at 4" was wrong. The Qatar award is <b>75,000 Avios, not 150,000</b>. ITA does not fly to Rome on Thursdays, which makes Oct 7 worth $2,236 in economy or $9,472 in business. And Amex removed Etihad Guest as a transfer partner on 30 June 2026.'}]
 };
