@@ -199,7 +199,7 @@ const WH={id:'home',name:'⑂ THE BRANCH — Family + Jarred → San Francisco',
   note:'Kept as a record. Same class of finding killed SAS business (unsellable Nov 2) and KL605 saver space (zero, live-checked).'},
 ]};
 const LS='ft26v3';
-let S={seg:{},pay:{},home:'aerJ1'};
+let S={seg:{},pay:{},home:'dubRoadA'};
 try{const v=JSON.parse(localStorage.getItem(LS)||'null'); if(v)S={...S,...v};}catch(e){}
 SEGS.forEach(g=>{if(!S.seg[g.id]||!g.opts.find(o=>o.id===S.seg[g.id]))S.seg[g.id]=g.opts[0].id;});
 if(!WH.opts.find(o=>o.id===S.home))S.home='dubRoadA';
