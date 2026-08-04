@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Master Plan · Sept 27 – Nov 2</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0d12;--card:#131820;--card2:#1a2029;--line:#242c38;--tx:#e8edf4;--dim:#8b98aa;--dim2:#5f6b7c;
+--gold:#f0b429;--grn:#34d399;--amb:#fbbf24;--red:#f87171;--blu:#60a5fa;--vio:#a78bfa}
+html,body{max-width:100%;overflow-x:hidden}
+body{background:var(--bg);color:var(--tx);font:15px/1.5 -apple-system,BlinkMacSystemFont,'SF Pro Text',system-ui,sans-serif;
+padding:0 0 150px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px}
+header{padding:24px 0 14px;border-bottom:1px solid var(--line);margin-bottom:16px}
+h1{font-size:24px;letter-spacing:-.5px}
+.sub{color:var(--dim);font-size:13px;margin-top:6px;line-height:1.5}
+.nav{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.nav a{font-size:11.5px;padding:5px 10px;border:1px solid var(--line);border-radius:20px;color:var(--dim);text-decoration:none;background:var(--card)}
+.nav a.on{background:var(--gold);color:#000;border-color:var(--gold);font-weight:700}
+h2.sec{font-size:12px;text-transform:uppercase;letter-spacing:1.3px;color:var(--dim2);margin:26px 0 10px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline}
+h2.sec .st{font-size:13px;letter-spacing:-.2px;text-transform:none;color:var(--tx);font-variant-numeric:tabular-nums}
+
+/* timeline rows */
+.tl{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tr{display:flex;gap:10px;padding:10px 13px;border-bottom:1px solid #1b2029;align-items:baseline}
+.tr:last-child{border-bottom:0}
+.tr .d{flex:0 0 64px;font-size:11px;color:var(--dim2);font-variant-numeric:tabular-nums;line-height:1.4}
+.tr .m{flex:1;min-width:0;font-size:13px;line-height:1.4}
+.tr .m small{display:block;font-size:10.5px;color:var(--dim2);margin-top:1px}
+.tr .c{flex:0 0 auto;text-align:right;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.tr .c small{display:block;font-size:9.5px;color:var(--vio);font-weight:600}
+.tr.locked .c{color:var(--dim)}
+.badge{font-size:8.5px;font-weight:700;padding:2px 5px;border-radius:4px;letter-spacing:.4px;vertical-align:1px}
+.badge.bk{background:#123326;color:var(--grn)}
+.badge.hold{background:#33270f;color:var(--amb)}
+.badge.ver{background:#123326;color:var(--grn)}
+.badge.unv{background:#33270f;color:var(--amb)}
+.badge.dead{background:#2a1414;color:var(--red)}
+
+/* toggle inside a row */
+.tog2{display:inline-flex;background:#0e1218;border:1px solid var(--line);border-radius:7px;overflow:hidden;margin-top:5px}
+.tog2 button{font-size:10px;font-weight:700;padding:4px 9px;border:0;background:none;color:var(--dim2);font-family:inherit;cursor:pointer}
+.tog2 button.on{background:var(--gold);color:#000}
+.tog2.v button.on{background:var(--vio);color:#000}
+
+/* choice cards (dbv week + branches) */
+.ch{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:9px;cursor:pointer;position:relative}
+.ch.on{border-color:var(--gold);box-shadow:0 0 0 1px rgba(240,180,41,.25)}
+.ch .t{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.ch .n{font-size:15px;font-weight:700;letter-spacing:-.3px}
+.ch .p{font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ch .s{font-size:11.5px;color:var(--dim);margin-top:4px;line-height:1.5}
+.ch .s b{color:var(--tx)}
+.fm{display:inline-flex;gap:2px;align-items:center;margin-left:6px}
+.fm i{width:6.5px;height:6.5px;border-radius:50%;background:#2a3342;display:inline-block}
+.fm i.f{background:var(--gold)}
+.sub2{margin-top:9px;border-top:1px solid #1b2029;padding-top:9px}
+.sub2 .lbl{font-size:9.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--dim2);font-weight:700;margin-bottom:6px}
+.dts{display:flex;gap:6px;flex-wrap:wrap}
+.dt{font-size:11px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#0e1218;color:var(--dim);cursor:pointer;font-weight:600;line-height:1.35}
+.dt.on{border-color:var(--blu);color:var(--blu);background:#101b2a}
+.dt small{display:block;font-size:9px;color:var(--dim2);font-weight:500}
+.dt.on small{color:#4a7fb5}
+.paylab{font-size:10px;color:var(--dim2);margin:8px 0 4px;text-transform:uppercase;letter-spacing:.6px;font-weight:700}
+.stack{margin-top:8px;font-size:11px;color:var(--dim2);line-height:1.6}
+.stack b{color:var(--dim)}
+.risk{font-size:10.5px;color:var(--amb);margin-top:7px;line-height:1.5}
+
+/* totals bar */
+.bar{position:fixed;left:0;right:0;bottom:0;background:rgba(13,17,23,.97);border-top:1px solid var(--line);
+backdrop-filter:blur(10px);padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
+.bar .in{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.bar .tt{font-size:22px;font-weight:700;letter-spacing:-.7px;font-variant-numeric:tabular-nums;line-height:1.1}
+.bar .tl2{font-size:9px;text-transform:uppercase;letter-spacing:.7px;color:var(--dim2);font-weight:700}
+.bar .pts{text-align:right;font-size:11px;color:var(--vio);font-variant-numeric:tabular-nums;line-height:1.45}
+.bar .pts b{font-size:13px}
+.bar .sub3{font-size:9.5px;color:var(--dim2)}
+.note{font-size:11px;color:var(--dim2);line-height:1.55;margin-top:10px}
+footer{margin:30px 0 8px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;color:var(--dim2);line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>The master plan</h1>
+  <div class="sub">Sept 27 → home. The spine is settled; after Dubrovnik it branches — pick an ending and dates,
+  the compilation updates live. Every fare is this weekend's verified/live data.</div>
+  <div class="nav">
+    <a href="master.html" class="on">Master</a>
+    <a href="index.html">Builder</a>
+    <a href="scenarios.html">Scenarios</a>
+    <a href="whats-on.html">What's on</a>
+    <a href="costed.html">Costed</a>
+    <a href="flights.html">Flights</a>
+    <a href="nonstops.html">Nonstops</a>
+  </div>
+</header>
+
+<div id="app"></div>
+
+<footer>
+Booked items shown at their confirmed prices. Branch numbers: flights are live 5-pax quotes from this weekend;
+lodging/food are banded estimates. Points ledger draws on verified pools: Amex MR 525,382 · Delta 132,931 · Chase UR 34,700.
+Only Dublin's 81,250-Avios economy award has verified seats; every other award is a chart price.
+</footer>
+</div>
+
+<div class="bar"><div class="in">
+  <div><div class="tl2">Trip total · cash</div><div class="tt" id="tCash">—</div>
+    <div class="sub3" id="tSub"></div></div>
+  <div class="pts" id="tPts"></div>
+</div></div>
+
+<script>
+/* ═══ state ═══ */
+const S={seoulPay:'pts', dbw:'apt', br:'dub', sub:{}, pay:{}};
+
+/* ═══ fixed: booked ═══ */
+const BOOKED=[
+ {d:'Sep 29–Oct 6',m:'Walkerhill Seoul — Korea Blockchain Week',b:'bk',c:2160,s:'₩3,003,220 · booked via Delta Cars & Stays'},
+ {d:'Oct 6–10',m:'Marina Bay Sands, Singapore — Token2049 + F1',b:'bk',c:2669,s:'booked · starts Oct 6 (locks the Oct 6 hop)'},
+ {d:'Oct 11–18',m:'Odyssey of the Seas — Royal Loft Suite',b:'hold',c:31935,s:'hold res 205404 · Rome → Dubrovnik'},
+];
+
+/* ═══ spine flights (settled picks from the builder) ═══ */
+const SPINE=[
+ {d:'Sun Sep 27',m:'Jarred SMF → Seoul · Delta One Suites via SEA',
+  cash:4000, pts:{pool:'sky',amt:110500,fees:30,lbl:'110.5k SkyMiles + $30'}, tog:'seoulPay',
+  s:'A350 · 17h · the one leg where SkyMiles clear >3¢'},
+ {d:'Sun Sep 27',m:'Christopher, Sam, Jonathan SMF → Seoul · Delta Main',cash:1755,s:'$585 each'},
+ {d:'Tue Oct 6',m:'All four Seoul → Singapore · KE643 nonstop',cash:1515,s:'Jarred Prestige $987 + team $176 ea · live-quoted, audit said pay cash'},
+ {d:'Thu Oct 8',m:'Ashley + kids SFO → Rome · KLM/Delta via AMS',cash:2700,s:'$675 each · SkyTeam earning · lands Oct 9, full cruise buffer'},
+ {d:'Sat Oct 10',m:'Jarred Singapore → Rome · Emirates business, 10:35',cash:2226,s:'sleep after After2049, land night before boarding · live $2,226 (Qsuites award verified 150k — do not burn)'},
+ {d:'Sat Oct 10',m:'Team Singapore → SFO home',cash:2062,s:'economy ×3'},
+];
+
+/* ═══ Dubrovnik week Oct 18–25 ═══ */
+const DBW=[
+ {id:'apt',n:'Dubrovnik apartment week',c:1100,fun:7,
+  s:'2BR sleeping 5, Lapad/Babin Kuk · $95–130/night verified band · walk the walls, day-trip Lokrum/Kotor'},
+ {id:'boat',n:'The catamaran — Lagoon 42, Dubrovnik → Split',c:8750,fun:10,
+  s:'<b>Your Airbnb pick, verified live:</b> $5,850 sticker + captain €1,300 + fuel/port + food aboard + €600 one-way = honest $8,000–9,500. '
+   +'5.0★ ×17, Superhost. Islands: Brač/Hvar/Vis/Korčula/Mljet. Sat-to-Sat fits the cruise exactly. '
+   +'Ask about child life-jackets for the 8yo. Cancel: partial only before Sep 18.'},
+];
+
+/* ═══ branches after Oct 25 ═══ */
+const BR=[
+ {id:'early',n:'Go home early — London stopover',fun:5,
+  thesis:'Trip ends clean. Cheapest all-in once the saved week is counted; preserves 6–7 school days.',
+  dates:[
+   {id:'o26',t:'Home Mon Oct 26',sub:'DBV→STN Oct 25 15:25 + BA 11:45',fl:2926,gr:0,note:'$470 Ryanair ✓ + $250 hotel + $2,206 BA ✓ · land 3:55pm'},
+   {id:'o27',t:'Home Tue Oct 27',sub:'2 London nights',fl:3176,gr:0,note:'same flights, +1 night · cheapest date to add 2 biz seats'},
+  ],
+  pay:null, ground:0,
+  stack:'<b>Saves</b> ~$2,400–3,300 of European burn vs any Nov ending. No award risk, no schedule cliffs.',
+  risk:'Zero new experiences. Halloween and All Saints both skipped.'},
+
+ {id:'paris',n:'Go home early — Paris + French Bee',fun:6,
+  thesis:'One Paris day for the kids, single-airport logistics, $115 behind London.',
+  dates:[
+   {id:'o28',t:'Home Wed Oct 28',sub:'Transavia ORY Oct 27 + BF nonstop',fl:3041,gr:0,note:'$415 ✓ + $250 hotel + $2,376 ✓ · French Bee flies Wed/Fri only'},
+  ],
+  pay:null, ground:0,
+  stack:'Recliner-only airline — fine in economy, never buy its "Premium" as business.',
+  risk:'Needs the Dubrovnik checkout to flex to Oct 27.'},
+
+ {id:'dub',n:'Croatia road trip → Zagreb → Dublin',fun:9,best:true,
+  thesis:'The full third act: Split, Plitvice, Zagreb, then Halloween on whichever side of Oct 31 you choose — ending on the only verified award exit in the study, with US preclearance.',
+  dates:[
+   {id:'hlwIE',t:'Irish Halloween',sub:'ZAG→DUB Fri Oct 30 · $438',fl:438,note:'FR2191 16:45→18:50 ✓ · Halloween in its birthplace, 8yo gets the real thing'},
+   {id:'hlwZG',t:'Mirogoj first',sub:'ZAG→DUB Sun Nov 1 · $417',fl:417,note:'zoo Sat (unconfirmed) + Mirogoj candles Sun, then fly · FR8911 22:05 red-eye also works'},
+  ],
+  exit:[
+   {id:'cash',t:'EI61 cash',v:1700,lbl:'$1,700 · Tue Nov 3 cheapest',pts:0,fees:0},
+   {id:'avios',t:'81,250 Avios',v:975,lbl:'81,250 Avios + $975 · SEATS VERIFIED',pts:81250,pool:'mr',ver:true},
+  ],
+  ground:3750,
+  stack:'<b>Ground est:</b> rental ~$550 + lodging 8n ~$1,500 + food ~$1,700 = ~$3,750. Flights: Zagreb hop + exit. Dublin nights folded into lodging.',
+  risk:'The only unverified piece is EI477/roads weather. Award seats were SEEN — book them before they age.'},
+
+ {id:'krk',n:'Kraków — All Saints',fun:9,
+  thesis:'The candle-sea: the one experience nothing else on this board replicates. Cheapest positioning of any branch.',
+  dates:[
+   {id:'o26',t:'7 nights · fly Oct 26',sub:'FR5916 15:15 · $192 ✓',fl:192,note:'full candle build-up week + Wieliczka · needs 1 extra DBV night'},
+   {id:'o31',t:'6 more Croatia nights · fly Oct 31',sub:'FR5916 09:15 · $127 ✓',fl:127,note:'lands 10:55 on All Saints Eve — catches everything · last flight before a 2-day gap'},
+  ],
+  exit:[
+   {id:'cash',t:'SAS via CPH cash',v:3366,lbl:'$3,366 · KRK 10:15 → SFO 14:50 · 45-min CPH connection',pts:0},
+   {id:'fb',t:'Flying Blue 125k',v:875,lbl:'125,000 + $875 · space UNVERIFIED (KL605 check found zero saver on AMS metal — treat as unlikely)',pts:125000,pool:'mr',unv:true},
+  ],
+  ground:2350,
+  stack:'<b>Ground est:</b> lodging ~$1,000 + food/activities ~$1,350 (Poland ~30% cheaper). No flat bed exists on this plan at sane cost — verified.',
+  risk:'Harshest landing: ~20h door-to-door into a school night. FR5916 cancel = trip-breaking (2-day gap). Nov 1 holiday closes museums.'},
+
+ {id:'stay',n:'Stay in Dubrovnik → London → home',fun:6,
+  thesis:'Zero moving for the last week, then the deepest-inventory exit in Europe.',
+  dates:[
+   {id:'n1',t:'Home Sun Nov 1',sub:'STN hop Oct 30 $945 + BA Nov 1',fl:3160,note:'$945 late-week Ryanair ✓ + $2,215 BA ✓ · DBV fares triple late-week, which is why this loses to the road trip'},
+  ],
+  pay:null, ground:2100,
+  stack:'<b>Ground est:</b> 6 DBV nights $675 + food ~$1,425. London night included in flights row.',
+  risk:'Halloween is nowhere (Dubrovnik is a 3/10) and you pay more than the road trip for less.'},
+];
+
+/* ═══ pools ═══ */
+const POOLS={mr:{n:'Amex MR',bal:525382},sky:{n:'SkyMiles',bal:132931},ur:{n:'Chase UR',bal:34700}};
+
+const $=id=>document.getElementById(id);
+function money(n){return '$'+Math.round(n).toLocaleString()}
+function fun(n){let h='<span class="fm">';for(let i=1;i<=5;i++)h+='<i class="'+(n>=i*2-1?'f':'')+'"></i>';return h+'</span> <span style="font-size:10px;color:var(--dim2)">'+n+'/10</span>'}
+
+function calc(){
+  let cash=0; const used={mr:0,sky:0,ur:0};
+  BOOKED.forEach(b=>cash+=b.c);
+  SPINE.forEach(s=>{
+    if(s.tog&&S[s.tog]==='pts'&&s.pts){cash+=s.pts.fees;used[s.pts.pool]+=s.pts.amt;}
+    else cash+=s.cash;
+  });
+  const dbw=DBW.find(x=>x.id===S.dbw); cash+=dbw.c;
+  const br=BR.find(x=>x.id===S.br);
+  const dt=br.dates.find(x=>x.id===(S.sub[br.id]||br.dates[0].id))||br.dates[0];
+  cash+=dt.fl+br.ground;
+  let exitLbl='';
+  if(br.exit){
+    const ex=br.exit.find(x=>x.id===(S.pay[br.id]||br.exit[0].id))||br.exit[0];
+    cash+=ex.v;
+    if(ex.pts){used[ex.pool||'mr']+=ex.pts;}
+    exitLbl=ex.t;
+  }
+  return {cash,used,br,dt,exitLbl,dbw};
+}
+
+function render(){
+  const r=calc();
+  let h='';
+  h+='<h2 class="sec">Booked & committed <span class="st">'+money(BOOKED.reduce((a,b)=>a+b.c,0))+'</span></h2><div class="tl">';
+  BOOKED.forEach(b=>{h+='<div class="tr locked"><div class="d">'+b.d+'</div><div class="m">'+b.m
+    +' <span class="badge '+(b.b==='bk'?'bk':'hold')+'">'+(b.b==='bk'?'BOOKED':'HOLD')+'</span><small>'+b.s+'</small></div>'
+    +'<div class="c">'+money(b.c)+'</div></div>'});
+  h+='</div>';
+
+  let spineCash=0;SPINE.forEach(s=>{spineCash+=(s.tog&&S[s.tog]==='pts'&&s.pts)?s.pts.fees:s.cash});
+  h+='<h2 class="sec">The flight spine — settled <span class="st">'+money(spineCash)
+    +(S.seoulPay==='pts'?' + 110.5k':'')+'</span></h2><div class="tl">';
+  SPINE.forEach(s=>{
+    const usePts=s.tog&&S[s.tog]==='pts'&&s.pts;
+    h+='<div class="tr"><div class="d">'+s.d+'</div><div class="m">'+s.m+'<small>'+s.s+'</small>';
+    if(s.tog)h+='<span class="tog2 v"><button class="'+(S[s.tog]==='pts'?'on':'')+'" onclick="S.'+s.tog+'=\'pts\';render()">'+s.pts.lbl+'</button>'
+      +'<button class="'+(S[s.tog]==='cash'?'on':'')+'" onclick="S.'+s.tog+'=\'cash\';render()">cash '+money(s.cash)+'</button></span>';
+    h+='</div><div class="c">'+(usePts?money(s.pts.fees)+'<small>+'+(s.pts.amt/1000)+'k '+s.pts.pool+'</small>':money(s.cash))+'</div></div>';
+  });
+  h+='</div>';
+
+  h+='<h2 class="sec">Dubrovnik week · Oct 18–25 <span class="st">'+money(r.dbw.c)+'</span></h2>';
+  DBW.forEach(o=>{
+    h+='<div class="ch'+(S.dbw===o.id?' on':'')+'" onclick="S.dbw=\''+o.id+'\';render()">'
+      +'<div class="t"><span class="n">'+o.n+fun(o.fun)+'</span><span class="p">'+money(o.c)+'</span></div>'
+      +'<div class="s">'+o.s+'</div></div>';
+  });
+
+  h+='<h2 class="sec">⑂ The branch · after Oct 25 <span class="st">'+money(r.dt.fl+r.br.ground+(r.br.exit?(r.br.exit.find(x=>x.id===(S.pay[r.br.id]||r.br.exit[0].id))||r.br.exit[0]).v:0))+'</span></h2>';
+  BR.forEach(b=>{
+    const on=S.br===b.id;
+    const dtSel=S.sub[b.id]||b.dates[0].id;
+    let head=0;
+    {const d0=b.dates.find(x=>x.id===dtSel)||b.dates[0];
+     head=d0.fl+b.ground+(b.exit?(b.exit.find(x=>x.id===(S.pay[b.id]||b.exit[0].id))||b.exit[0]).v:0);}
+    h+='<div class="ch'+(on?' on':'')+'" onclick="if(S.br!==\''+b.id+'\'){S.br=\''+b.id+'\';render()}">'
+      +'<div class="t"><span class="n">'+b.n+fun(b.fun)+'</span><span class="p">'+money(head)+'</span></div>'
+      +'<div class="s">'+b.thesis+'</div>';
+    if(on){
+      h+='<div class="sub2"><div class="lbl">Dates</div><div class="dts">';
+      b.dates.forEach(d=>{
+        h+='<span class="dt'+(dtSel===d.id?' on':'')+'" onclick="event.stopPropagation();S.sub[\''+b.id+'\']=\''+d.id+'\';render()">'
+          +d.t+'<small>'+d.sub+' · '+money(d.fl)+'</small></span>';
+      });
+      h+='</div>';
+      const dNow=b.dates.find(x=>x.id===dtSel)||b.dates[0];
+      if(dNow.note)h+='<div class="stack">'+dNow.note+'</div>';
+      if(b.exit){
+        const exSel=S.pay[b.id]||b.exit[0].id;
+        h+='<div class="paylab">Flight home — pay with</div><div class="dts">';
+        b.exit.forEach(e=>{
+          h+='<span class="dt'+(exSel===e.id?' on':'')+'" onclick="event.stopPropagation();S.pay[\''+b.id+'\']=\''+e.id+'\';render()">'
+            +e.t+(e.ver?' <span class="badge ver">VERIFIED</span>':'')+(e.unv?' <span class="badge unv">UNVERIFIED</span>':'')
+            +'<small>'+e.lbl+'</small></span>';
+        });
+        h+='</div>';
+      }
+      h+='<div class="stack">'+b.stack+'</div>';
+      if(b.risk)h+='<div class="risk">⚠ '+b.risk+'</div>';
+      h+='</div>';
+    }
+    h+='</div>';
+  });
+  h+='<div class="note">Branch totals = flights (live/verified) + banded ground/lodging/food from Oct 25 onward. '
+    +'Tap a card to open its dates and payment choices — everything recompiles in the bar below.</div>';
+  $('app').innerHTML=h;
+
+  $('tCash').textContent=money(r.cash);
+  $('tSub').textContent=r.br.n+' · '+r.dt.t+(r.exitLbl?' · '+r.exitLbl:'');
+  let ph='';
+  Object.entries(r.used).forEach(([k,v])=>{
+    if(v>0)ph+='<div><b>'+(v/1000).toFixed(1).replace(/\.0$/,'')+'k</b> '+POOLS[k].n+' <span class="sub3">('+((POOLS[k].bal-v)/1000).toFixed(0)+'k left)</span></div>';
+  });
+  $('tPts').innerHTML=ph||'<span class="sub3">no points used</span>';
+}
+render();
+</script>
+</body>
+</html>
