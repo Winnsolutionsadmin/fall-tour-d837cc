@@ -58,7 +58,7 @@ window.__PLANS__ = [
    ]},
   {date:'Mon Nov 2', no:'SK 1736', carrier:'SAS Link', ac:'Embraer E195 · 122 seats',
    seats:'priced inside the through fare',
-   from:{code:'KRK',city:'Kraków',t:'10:15'}, to:{code:'CPH',city:'Copenhagen',t:'11:55'},
+   from:{code:'KRK',city:'Kraków',t:'10:25'}, to:{code:'CPH',city:'Copenhagen',t:'11:55'},
    dur:'1h 30m', stops:0,
    cabins:[
      {name:'Economy', cash:null, for:'included in the through ticket', bed:'n', cfg:[2,2], st:'e', cfgL:'2-2 single class',
@@ -66,7 +66,7 @@ window.__PLANS__ = [
    ]},
   {date:'Mon Nov 2', no:'SK 935', carrier:'SAS', ac:'Airbus A350-900 · 40J / 32W / 228Y',
    seats:'the only daily CPH→SFO',
-   from:{code:'CPH',city:'Copenhagen',t:'12:40'}, to:{code:'SFO',city:'San Francisco',t:'14:50'},
+   from:{code:'CPH',city:'Copenhagen',t:'12:40'}, to:{code:'SFO',city:'San Francisco',t:'14:35'},
    dur:'11h 10m', stops:0,
    cabins:[
      {name:'SAS Go — what you get', cash:3366, for:'all 5, whole journey · $673 each', bed:'n',
@@ -86,7 +86,7 @@ window.__PLANS__ = [
  risk:'TWO REAL RISKS. Oct 31 is the <b>last DBV→KRK flight before a two-day gap</b> — nothing Oct 29, 30 or '
    +'Nov 1, and the next departure is Mon Nov 2 at 15:15, which lands five hours AFTER your SFO connection '
    +'has already left Kraków. A cancellation is trip-breaking; the two Kraków nights are the buffer that '
-   +'saves you. Second, the <b>Copenhagen connection is 45 minutes</b>, Schengen→non-Schengen with passport '
+   +'saves you. Second, the <b>Copenhagen connection is 50 minutes</b> (10:25 dep corrected from 10:15; legal vs the 45-min MCT but tight), Schengen→non-Schengen with passport '
    +'control, five people and checked bags. SK935 is the only daily CPH→SFO, so a misconnect is a 24-hour '
    +'delay, not a re-route.'
 },
@@ -104,7 +104,7 @@ window.__PLANS__ = [
    cabins:[{name:'Economy × 5', cash:127, for:'all 5', bed:'n', cfg:[3,3], st:'e', cfgL:'3-3'}]},
   {date:'Mon Nov 2', no:'SK 1736 + SK 935', carrier:'SAS', ac:'E195, then A350-900',
    via:'Copenhagen · 14h 30m layover',
-   from:{code:'KRK',city:'Kraków',t:'20:30'}, to:{code:'SFO',city:'San Francisco',t:'14:50'},
+   from:{code:'KRK',city:'Kraków',t:'20:30'}, to:{code:'SFO',city:'San Francisco',t:'14:35'},
    dur:'arrives Nov 3', stops:1,
    cabins:[{name:'Economy × 5', cash:3401, for:'all 5 · +$35', bed:'n', cfg:[3,3,3], st:'e', cfgL:'3-3-3',
      note:'Trades one calendar day for near-zero misconnect risk. If the 45-minute Copenhagen transfer with three kids and checked bags worries you, this is $35 of insurance.'}]}
@@ -213,7 +213,7 @@ window.__PLANS__ = [
      note:'Needs one forced Dubrovnik night on Oct 25 — the route does not fly Sunday.'}]},
   {date:'Mon Nov 2', no:'SK 1736 + SK 935', carrier:'SAS', ac:'E195, then A350-900',
    via:'Copenhagen · 45m',
-   from:{code:'KRK',city:'Kraków',t:'10:15'}, to:{code:'SFO',city:'San Francisco',t:'14:50'},
+   from:{code:'KRK',city:'Kraków',t:'10:15'}, to:{code:'SFO',city:'San Francisco',t:'14:35'},
    dur:'13h 35m', stops:1,
    cabins:[{name:'Economy × 5', cash:3366, for:'all 5', bed:'n', cfg:[3,3,3], st:'e', cfgL:'3-3-3',
      pts:125000, fees:875}]}
@@ -228,7 +228,7 @@ window.__PLANS__ = [
 /* ═══ business vs economy on the exits ═══ */
 window.__CABIN__ = [
  {city:'Kraków', bed:'n',
-  detail:'SAS · <b>SK1736</b> KRK 10:15 → CPH 11:55 (E195, single class) · 45m · <b>SK935</b> CPH 12:40 → SFO 14:50 (A350-900) · 13h 35m',
+  detail:'SAS · <b>SK1736</b> KRK 10:25 → CPH 11:55 (E195, single class) · 45m · <b>SK935</b> CPH 12:40 → SFO 14:35 (A350-900) · 13h 35m',
   econ5:3366, econX:'$673 each · 3-3-3 · live-quoted · or 125,000 Flying Blue + ~$875',
   biz2:null, bizX:'SAS Business is NOT SELLABLE on Nov 2 — verified at 5 pax, at 1 pax, and on the CPH-SFO nonstop alone. The 1-2-1 78in bed exists; the inventory does not.',
   mix:'$15,851 – $20,820', mixX:'What a real flat bed actually costs for five if you abandon SAS: $15,851 on a 3-stop 21h15 routing, $20,820 on the best 1-stop (KLM/Delta via Amsterdam). Against $3,366 in economy — a 4.7× jump.'},
@@ -288,10 +288,13 @@ window.__ITIN__ = [
  {d:'Sat Oct 31', t:'All Saints\' Eve — Salwator & Rakowicki', s:'Graves already lit; hillside view over the city from Salwator', c:'free'},
  {d:'Sun Nov 1', t:'All Saints — Cmentarz Rakowicki', s:'Tram 5 is easiest; special lines 80–85 + bus 884. P+R at Nowy Bieżanów, Kurdwanów, Krowodrza Górka. Traffic restrictions Oct 31–Nov 3.', c:'$8'},
  {d:'Oct 31 – Nov 2', t:'Kraków lodging — 2 nights', s:'~$126/night for five', c:'$252'},
- {d:'Mon Nov 2', fn:'SK 1736', t:'KRK 10:15 → CPH 11:55', s:'SAS Link · Embraer E195 · 122 seats · single-class 2-2 · arrives Terminal 3', c:'incl.'},
- {d:'Mon Nov 2', t:'Copenhagen connection — 45 min', s:'Schengen → non-Schengen, passport control, 5 people + checked bags. The weakest link. A 20:30 Kraków departure removes it for +$35.', c:'—'},
- {d:'Mon Nov 2', fn:'SK 935', t:'CPH 12:40 → SFO 14:50', s:'Airbus A350-900 · 40J/32W/228Y · 11h10 · economy 3-3-3 · the only daily CPH–SFO · arrives Terminal I', c:'$3,366'},
- {d:'Mon Nov 2', t:'SFO — car is parked here', s:'Total KRK → SFO 13h 35m. Arrival is 14:50 PST — a published 15:35 is the PDT figure and wrong for Nov 2.', c:'—'},
- {d:'Bags', t:'Ryanair 3 × 20kg checked', s:'Keep all five on ONE Ryanair PNR to enable bag pooling. SAS bags are included from Go Smart up.', c:'$65–180'},
+ {d:'Mon Nov 2', fn:'SK 1736', t:'KRK 10:25 → CPH 11:55', s:'SAS Link · Embraer E195 · 122 seats · single-class 2-2 · arrives Terminal 3', c:'incl.'},
+ {d:'Mon Nov 2', t:'Copenhagen connection — 50 min', s:'Schengen → non-Schengen, passport control, 5 people + checked bags. The weakest link. A 20:30 Kraków departure removes it for +$35.', c:'—'},
+ {d:'Mon Nov 2', fn:'SK 935', t:'CPH 12:40 → SFO 14:35', s:'Airbus A350-900 · 40J/32W/228Y · 11h10 · economy 3-3-3 · the only daily CPH–SFO · arrives Terminal I', c:'$3,366'},
+ {d:'Mon Nov 2', t:'SFO — car is parked here', s:'Total KRK → SFO 13h 35m. Arrival ~14:35–14:50 PST (post-DST; sources differ by 15 min — confirm at ticketing).', c:'—'},
+ {d:'Bags', t:'Ryanair 3 × 20kg checked', s:'€19–60/bag online. TRAP: airport check-in is €55/PERSON if you skip online check-in — €275 for five. Seats: 8yo pairs free with an adult; ~€25–40 buys all five together.', c:'$65–180'},
+ {d:'Bags', t:'SAS: do NOT buy Economy Light', s:'Light = ZERO checked bags (€350+ to add five). Economy Standard includes 1×23kg each — one intercontinental allowance covers both legs on the through ticket.', c:'incl. Std'},
+ {d:'Nov 1', t:'Transit: 25 PLN Weekend Family Ticket', s:'Covers Sat+Sun unlimited, 2 adults + kids under 16 (the 16yo needs his own). Tram 2 links Salwator ↔ Rakowicki directly. ~33 special holiday lines run 08:00–20:00; be off the grounds by ~20:30.', c:'~$8'},
+ {d:'Mon Nov 2', t:'07:36 train from Kraków Główny', s:'SKA1 to the airport for the 10:25 departure (07:06 for buffer). Taxis are 4-seat; the train takes bags free.', c:'$25'},
  {d:'TOTAL', t:'Flights + ground, five people, economy', s:'One ticket KRK→SFO — never split the PNR, the CPH→SFO leg alone is $6,463 for five', c:'$3,631'}
 ];
