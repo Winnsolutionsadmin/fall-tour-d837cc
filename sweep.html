@@ -99,6 +99,22 @@ dynamic programs (Flying Blue) · BA/Virgin cash surcharges (rows show $0/low) �
 anyway: nothing is transferred or booked until the program site's own cart shows the price at your passenger count — the cart is the live
 check. This page's job is to narrow 11,000 possibilities to the ~11 worth carting.</b></div>
 
+<div class="warn" style="background:#101a24;border-left-color:#60a5fa;color:#c9d8ea">
+<b>THE INSTRUMENT SCOREBOARD &amp; MIGRATION PLAN (added 4 Aug, late).</b> "All the data was erroneous" is not quite the record — the
+precise diagnosis is: <b>AVAILABILITY was mostly right when fresh</b> (Munich matched Jarred's own Aeroplan cart to the dollar; the
+Rome landing-time kills were real), but <b>MONEY was systematically unreliable</b> (Virgin/BA surcharges invisible, Flying Blue
+multi-passenger repricing invisible, Delta dynamic invisible). It is an availability index, not a pricing engine — and the
+subscription is already cancelled (access dies Sep 4).<br><br><b>Replacement stack, verified today:</b><br>
+· <b>point.me — FREE for Amex Platinum cardholders (point.me/amex), runs LIVE searches, not cached.</b> The strongest verification
+layer short of the cart itself; no public API, but drivable in an authenticated browser.<br>
+· <b>PointsYeah — has a real documented public API</b> (40+ programs, award + transfer-partner data); probe today returned 403
+without an account, so it needs a key signup first.<br>
+· <b>Award Travel Finder / Roame</b> — newer competitors; ATF ships Claude/MCP integration and free full-year availability.<br>
+· <b>Cash-fare APIs</b> (what Google Flights scraping should become): <b>Duffel</b> ($3/booked order, modern) and <b>Amadeus
+Self-Service</b> (free tier; note conflicting 2026 reports about a mid-July migration deadline) — real fare APIs, immune to the
+client-specific-inventory problem.<br>
+· <b>The authoritative layer stays the program cart</b> — driven in an authenticated browser session with Jarred's own logins.</div>
+
 <div class="stats" id="stats"></div>
 
 <h2 class="sec">Chart 1 · The eleven doors — every flat-bed-for-5 nonstop, ranked by real MR cost per person</h2>
