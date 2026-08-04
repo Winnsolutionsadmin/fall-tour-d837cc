@@ -80,6 +80,29 @@ Aeroplan · Avios (BA / Iberia / Qatar) · Qantas · KrisFlyer · Emirates · Ae
 Etihad Guest (removed 30 Jun 2026).</b> Note the overlap trick: Aeroplan (reachable) books United/Lufthansa metal; Avios (reachable) books BA/Aer Lingus/Iberia metal —
 so much "unreachable-airline" space is still bookable through a reachable program, and the list below already reflects that per flight.</div>
 
+<h2 class="sec">Part 1.5 · The redemption desk — where you actually book, per program</h2>
+<div class="warn" style="background:#0d1f18;border-left-color:#34d399;color:#cfe8dc">
+<b>Your two currencies and their doors.</b> SkyMiles (132,931) spend in exactly ONE place: <b>delta.com / the Delta app</b> — they never transfer out.
+Amex MR (525,382) transfer 1:1 to every program below, and <b>transfers are ONE-WAY and IRREVERSIBLE — never move points until the award is
+sitting in a cart at the destination program.</b> * on a price = Delta Amex cardholder discount (you qualify via the Reserve).</div>
+<table class="sw">
+<tr><th>Program</th><th>Get points there</th><th>Book at</th><th>Books (in this dataset)</th><th>Watch out</th></tr>
+<tr class="win"><td><b>Delta SkyMiles</b></td><td>already have 132,931 · top-up MR→Delta 1:1 instant</td><td class="n">delta.com / app</td><td>Delta, Air France, KLM, Virgin, ITA, Korean</td><td>also the ONLY place Delta dynamic prices show (your 39k find)</td></tr>
+<tr class="win"><td><b>Virgin Atlantic</b></td><td>MR 1:1 · instant</td><td class="n">virginatlantic.com</td><td>Virgin, Delta, SkyTeam (incl. SAS)</td><td>ex-UK cash surcharges £250–900 on its own metal</td></tr>
+<tr class="win"><td><b>Flying Blue</b></td><td>MR 1:1 · instant</td><td class="n">airfrance.us or klm.com (same engine)</td><td>Air France, KLM, Delta, SkyTeam</td><td>dynamic-ish pricing; re-verify before transferring</td></tr>
+<tr class="win"><td><b>Aeroplan</b></td><td>MR 1:1 · instant</td><td class="n">aircanada.com → Aeroplan</td><td>United, Lufthansa, Swiss, Austrian, Brussels, TAP, LOT, Aer Lingus</td><td>partner booking fee ~C$39/pax; taxes quoted in CAD</td></tr>
+<tr><td><b>British Airways Club (Avios)</b></td><td>MR 1:1 · instant</td><td class="n">ba.com</td><td>BA, American, Aer Lingus, Iberia, Finnair</td><td>huge ex-LHR surcharges on BA metal; fine on AA/EI</td></tr>
+<tr><td><b>Iberia Plus (Avios)</b></td><td>MR 1:1 (or move Avios BA↔IB free at avios.com)</td><td class="n">iberia.com</td><td>Iberia (cheap ex-Madrid)</td><td>off-peak MAD→BOS/JFK/ORD is the Avios sweet spot</td></tr>
+<tr><td><b>LifeMiles</b></td><td>MR 1:1 · instant</td><td class="n">lifemiles.com</td><td>United, Lufthansa, Swiss + Star</td><td>NO fuel surcharges on Lufthansa — often beats Aeroplan</td></tr>
+<tr><td><b>KrisFlyer</b></td><td>MR 1:1 · <b>up to 24–48h</b></td><td class="n">singaporeair.com</td><td>Singapore (FRA→JFK SQ26)</td><td>transfer lag can outlive the award — risky</td></tr>
+<tr><td><b>Emirates Skywards</b></td><td>MR 1:1 · instant</td><td class="n">emirates.com</td><td>Emirates (MXP→JFK)</td><td>stiff cash co-pay on J awards</td></tr>
+<tr><td><b>Qatar / Qantas</b></td><td>MR 1:1</td><td class="n">qatarairways.com / qantas.com</td><td>BA &amp; AA metal (oneworld)</td><td>niche here — usually beaten by the rows above</td></tr>
+<tr><td><b>JetBlue</b></td><td>MR 1.25:1 (worse rate)</td><td class="n">jetblue.com</td><td>JetBlue TATL (CDG/AMS/EDI/DUB→JFK/BOS)</td><td>last resort — the transfer ratio taxes you 20%</td></tr>
+</table>
+<div class="warn"><b>Airlines in the master list you CANNOT book with your points, full stop:</b> rows sold only through United MileagePlus,
+Lufthansa Miles&amp;More, American AAdvantage, Alaska, Turkish, Finnair Plus, SAS EuroBonus, Azul, Smiles, Velocity, Ethiopian or Etihad Guest
+(Amex dropped it 30 Jun 2026). The page hides these while "My points only" is on — what remains is 2,395 of the 3,129 flight-dates.</div>
+
 <h2 class="sec">Part 2 · Boards</h2>
 <div id="boards"></div>
 
@@ -132,7 +155,7 @@ function board(rows,cols){let h='<table class="sw"><tr>'+cols.map(c=>'<th>'+c+'<
    '<div class="warn" style="background:#101a24;border-left-color:#60a5fa;color:#c9d8ea"><b>BOARD B — the family-of-5 board: business class, 5+ seats asserted, Delta-partner metal, cheapest 15.</b> Green rows land on the west coast.</div>'+board(r2,['Route','Carrier','Flight','Program','Seats','Date','Miles + tax']);
 })();
 // ---------- master list ----------
-let FCAB='all',FW=false,FDL=false,FDST='all';
+let FCAB='all',FW=true,FDL=false,FDST='all';
 function render(){
   const F=P.flights.filter(f=>{
     if(FDL&&!f.dlp)return false;
