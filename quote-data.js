@@ -2,6 +2,8 @@ window.__Q__ = {
 legs:[
 {t:'① Jarred → Seoul — MUST LAND BY EVENING SEP 28', d:'1 pax · dep Sat 27 Sep · SMF RULED OUT (every routing lands Sep 29) · deadline kills the red-eye AND every award',
  opts:[
+{v:'SINGLE-SOURCE',n:'✔ DECIDED — ALL FOUR MEN on one Delta dynamic award: SMF → SEA → ICN, booked in the Delta app',p:'~156,000 mi',pick:true,
+ s:'★ <b>The itinerary that makes your deadline: SMF morning hop Sun Sep 27 → Seattle → the 12:50 SEA→ICN departure (A350, DL metal) → lands ICN 16:40 MON SEP 28.</b> Evening deadline met with margin. Later Seattle banks land Sep 29 — the 12:50 connection is the whole game.<br><br><b>BOOK IN THE DELTA APP ONLY.</b> This is dynamic pricing — invisible to every award tool (your 39,000-mile screenshot is the only instrument that sees it). At 39k/pp Main Cabin, 4 passengers ≈ <b>156,000 miles + ~$6/pp</b>: your 132,931 SkyMiles + a ~23,000 MR top-up (1:1, instant at amex.com). Reserve card-member pricing applies automatically; both segments are Delta-OPERATED so the TakeOff 15 discount should key in.<br><br><b>Verify in the cart before topping up MR:</b> (1) the Seattle connection is the <b>12:50</b> departure landing <b>Sep 28</b>, not a later bank landing Sep 29; (2) the per-person price AT 4 PASSENGERS — dynamic awards reprice with quantity; (3) transfer only the exact MR gap after the cart shows the real total.'},
 {v:'CONFIRMED',n:'★ THE DEADLINE AUDIT — what actually lands by the evening of Sep 28',p:'decisive',pick:false,
  s:'★ <b>Arrive-by-evening-Sep-28 eliminates more than you would guess:</b><br>· <b>Asiana OZ211 $398 — DEAD.</b> The red-eye lands <b>04:25 Sep 29</b>. It was the pick; it fails.<br>· <b>The Seattle-split Delta One award — DEAD.</b> Sep 28 is its only award day; it lands <b>16:50 Sep 29</b>.<br>· <b>The combined 175,000 Delta award — DEAD</b>, lands 15:20 Sep 29.<br>· <b>SACRAMENTO — DEAD ENTIRELY.</b> Zero nonstops, zero awards (checked Sep 26 AND 27), and every cash routing is 2-3 stops landing <b>11:15 Sep 29</b>. Cheapest was $622 in mixed-cabin economy, $3,056 in fake business (economy on the long leg). There is no SMF option at any price that makes your deadline.<br>· <b>POINTS, FINAL:</b> I swept SMF, SFO and SEA across Sep 26-27. <b>No Amex-reachable award from ANY origin lands by your deadline.</b> The only rows are Alaska (95,000 — not an Amex partner). The Delta awards all land Sep 29. <b>For Seoul, points are structurally impossible, not merely poor value.</b> ⚠ <b>SUPERSEDED IN PART, 4 Aug:</b> that verdict covered <b>SAVER award space only</b> — Delta DYNAMIC awards (miles price on every cash seat) are invisible to every tool I have and live only in the Delta app. See the 39,000-mile row directly below.<br><br><b>WHAT SURVIVES, departing Sep 27:</b> United UA893 lands <b>15:00</b> · Korean KE024 lands <b>17:20</b> · Delta via Seattle lands <b>~16:40-16:50</b> · a self-built SFO→SEA hop + the 12:50 CASH Delta One lands <b>16:40</b>.'},
 {v:'SINGLE-SOURCE',n:'★ YOUR 39,000-MILE FIND (Delta app, SMF→ICN Main Cabin) — real, ~2.2¢/mile, and my instruments were blind to it',bed:'no',p:'39,000 mi',
@@ -32,8 +34,8 @@ legs:[
 
 {t:'② The three employees → Seoul, economy', d:'Sun 27 Sep · 3 pax · SFO → ICN',
  opts:[
- {v:'CONFIRMED',n:'Asiana nonstop — SFO 23:20 → ICN 04:25+2',p:1254,pick:true,
-  s:'$418 each. Beats every other nonstop by ~$1,050 for the three of them.'},
+ {v:'CONFIRMED',n:'✗ SUPERSEDED — the team now flies WITH Jarred from Sacramento on the leg ① Delta award',p:1254,
+  s:'Was the pick at $418 each (Asiana nonstop). Superseded by the decision to put all four men on one SMF→SEA→ICN dynamic award. Kept as the cash fallback if the app cart reprices badly at 4 passengers.'},
  {v:'CONFLICTING',n:'China Airlines via Taipei — cheapest 1-stop',p:1725,s:'Not worth the stop for $471.'},
  {v:'CONFIRMED',n:'Korean Air nonstop / United nonstop — both',p:2300,s:'Arrive a day earlier than Asiana.'},
  {v:'CONFIRMED',n:'Delta via Seattle',p:2313,s:'The routing you asked about. Loses.'},
@@ -44,6 +46,8 @@ legs:[
 
 {t:'③ All four men → Singapore', d:'Tue Oct 6 · locked by the Marina Bay Sands booking · ICN → SIN',
  opts:[
+ {v:'SINGLE-SOURCE',n:'TBD RESOLVED 4 AUG — points DO exist here (SQ nonstops, 9 seats), and they are still the wrong trade',p:'0.6¢/pt',
+  s:'Fresh pull for Tue Oct 6: <b>KrisFlyer economy saver on all four SQ nonstops — SQ607 09:00→14:20, SQ611 11:05→16:35, SQ601 16:45→22:00, SQ605 23:50→05:00 — at 25,500/pp, 9 seats each.</b> Against a $162–176 cash fare that returns <b>0.6¢ per point</b>, a quarter of what the Rome and Zurich redemptions pay, plus the 24–48h KrisFlyer transfer lag. Business: <b>no nonstop J award exists via any program you can reach</b> — only 1-stop Asiana+SQ at 52,500 with 1–2 seats. <b>Verdict: this stays a cash leg. Spend the points where they return 2–4¢.</b>'},
  {v:'CONFIRMED',n:'Jarred — Asiana OZ751, ICN 16:10 → SIN 21:30, business',bed:'yes',p:960,pick:true,
   s:'Cheapest AND the best seat of the group. Beats the KE643 you had penciled in by $35.'},
  {v:'CONFIRMED',n:'Jarred — Korean KE643, ICN 13:50 → SIN 19:15 (your original)',bed:'yes',p:995},
@@ -146,7 +150,9 @@ legs:[
 
 {t:'⑧ All five → home', d:'Oct 25 – Nov 3 · 5 pax · Europe → SFO · THE BIG ONE',
  opts:[
- {v:'CONFIRMED',n:'✔ LOCKED — 5 IN ECONOMY, London LHR → SFO, British Airways NONSTOP',p:2355,pick:true,
+ {v:'SINGLE-SOURCE',n:'✔ NEW PICK — THE ZURICH COMBO: DBV→ZRH cash Thu Oct 29 + LX38 ZRH→SFO on Aeroplan Fri Oct 30 or Sat Oct 31',p:'212,500 mi + $1,389',pick:true,
+ s:'★ <b>The IATA winter schedule (starts Oct 25) kills most Dubrovnik nonstops mid-window — the survivors pair with exactly three award plays:</b><br><br>· <b>ZURICH — THE PICK.</b> DBV→ZRH nonstop <b>Thu Oct 29, $809 for 5 — the route\'s FINAL rotation of the season</b> — one night in Zurich, then <b>LX38 nonstop ZRH 13:15 → SFO 17:30, Fri Oct 30 or Sat Oct 31, 42,500/pp Aeroplan = 212,500 + ~CA$790 (≈$580)</b>. Fixed award chart (no dynamic repricing risk), 9 seats re-verified tonight. Book: aircanada.com, ECONOMY cabin, exact dates. Total: <b>212,500 points + ~$1,389 cash</b>, maximum Croatia time through Oct 29.<br><br>· <b>PARIS — CHEAPEST, one risk.</b> DBV→ORY Transavia <b>Thu Oct 29, $415/5</b> → two Paris nights → <b>AF80 Sat Oct 31, 25,000/pp Flying Blue = 125,000 + ~$375</b>. Saves 87,500 points AND ~$1,000 cash vs Zurich — <b>IF</b> the 25k survives a 5-passenger economy cart check (Flying Blue is dynamic; your 2.78M business quote is what that engine does when saver space is absent).<br><br>· <b>MUNICH — bulletproof award, weak positioning.</b> UA195 has 40,000/pp with 9 seats EVERY day (your own screenshot) — but the DBV→MUC nonstop only exists <b>Oct 25 ($1,378) / Oct 26 ($919)</b>, cutting Croatia short; later it is a 1-stop via Zagreb ~$550/5.<br><br>· <b>FLAT BEDS, if wanted:</b> LH444 FRA→Atlanta <b>Thu Oct 29, 75,000/pp Aeroplan (375,000 for 5, no fuel surcharge)</b> + an ATL→SFO hop; position DBV→FRA Mon Oct 26 (Discover $1,249/5) or Tue Oct 27 (Croatia Airlines).'},
+ {v:'CONFIRMED',n:'✗ SUPERSEDED — 5 IN ECONOMY, London LHR → SFO, British Airways NONSTOP',p:2355,
   s:'★ <b>YOUR DECISION: economy home, since there is no points deal.</b> And there genuinely is not — every business award for the return sits in Lufthansa Miles &amp; More, which Amex cannot reach, and the one Amex-reachable award (Munich economy via Aeroplan, 200,000 MR + $1,285) returns 0.6-0.9¢ per point, under half what your points are worth. Cash was the right answer.<br><br><b>$471 each on a NONSTOP.</b> Add ~$470 Ryanair positioning from Dubrovnik.<br><br>⚠ <b>Frankfurt is $236 cheaper at $2,119</b> — but it is single-source, it is a 1-stop 17h10 via Dallas versus this nonstop, and London was never actually beaten in a head-to-head: it simply was not re-tested in the sweep that found Frankfurt. For five people including an 8-year-old at the end of a five-week trip, I would take the nonstop.'},
  {v:'CONFIRMED',n:'2 BUSINESS + 3 ECONOMY — Dublin, cheapest business seats',bed:'yes',p:7047,
   s:'SUPERSEDED by your all-economy decision. Kept for reference: the cheapest way to get two people flat, as two separate PNRs.'},
@@ -177,19 +183,17 @@ legs:[
  {v:'CONFIRMED',n:'POINTS — MUC business 2-seat and ZRH: also gone',p:'dead',
   s:'MUC business Nov 2 (75,065/pp, exactly 2 seats, no buffer) is <b>5 days stale</b>; Nov 3 is 32 hours stale. Both Miles & More. The "clean 2 business + 3 economy at Munich" answer to your original question does <b>not</b> survive this pass — the economy half is real, the business half is not.'}]}
 ],
-totals:{h:'The recommended plan, all cash, all confirmed',
+totals:{h:'THE PLAN AS DECIDED 4 AUG — points where they pay 2¢+, cash where they do not',
  rows:[
- ['① Jarred → Seoul · United UA893 economy nonstop, lands 15:00 Sep 28','$767'],
- ['② Team ×3 → Seoul · Asiana nonstop','$1,254'],
- ['③ Jarred → Singapore · Asiana nonstop ECONOMY','$162'],
- ['③ Team ×3 → Singapore · economy','$528'],
- ['④ Ashley + 3 kids → Rome · ITA nonstop FRI OCT 9, lands Oct 10','$2,886'],
- ['⑤ Jarred → Rome · ETIHAD 787-9, true flat BOTH legs','$2,041'],
- ['⑥ Team ×3 → home · Singapore SQ32 nonstop','$1,374'],
- ['⑦ Rome → Dubrovnik · Ryanair Family Plus ×5','$305'],
- ['⑧ All five → home · London NONSTOP, 5 economy','$2,355'],
- ['Positioning Dubrovnik → London · Ryanair ×5','$470']],
- gl:'ALL CASH · 8 TRAVELLERS · ZERO POINTS · FLAT TO ROME',gv:'$12,142',
+ ['① ALL FOUR MEN SMF→SEA→ICN · Delta dynamic award, APP-ONLY, 12:50 SEA bank, lands 16:40 Sep 28','~156,000 mi + ~$25'],
+ ['③ Four men ICN→SIN Tue Oct 6 · cash economy (points = 0.6¢, rejected)','$690'],
+ ['④ Ashley + 3 kids SFO→Rome FRI OCT 9 · Flying Blue 26,000/pp, lands Oct 10 14:25','104,000 mi + ~$480'],
+ ['⑤ Jarred SIN→Rome · ETIHAD 787-9, true flat BOTH legs, cash','$2,041'],
+ ['⑥ Team ×3 SIN→home Oct 10 · SQ32 economy','$1,374'],
+ ['⑦ Rome→Dubrovnik Oct 18 ×5 · Ryanair Family Plus','$305'],
+ ['⑧a DBV→Zurich Thu Oct 29 ×5 · cash, final rotation of the season','$809'],
+ ['⑧b LX38 Zurich→SFO Oct 30/31 ×5 · Aeroplan 42,500/pp','212,500 mi + ~$580']],
+ gl:'CASH ~$6,300 · POINTS ~472,500 of your 658,313',gv:'$6,304 + 472.5k',
  note:'Swap ⑧ to all-economy and the total drops to <b>$16,676</b>. Swap it to five flat beds out of Dublin and it rises to <b>$27,394</b>.<br><br><b>The family-in-business upgrade, priced honestly.</b> Putting Ashley and the three kids in lie-flat to Rome costs <b>+$10,561</b> on TAP (17h20), <b>+$11,440</b> on BA (15h20), or <b>+$13,848</b> on the Polaris nonstop (11h50) — taking the all-in to <b>$32,246</b>, <b>$33,125</b> or <b>$35,533</b>. The $10,097 consolidator version would have been +$7,083, but it was taken to checkout and <b>ruled out on terms</b>, so plan around <b>+$10,561 / $32,246 on TAP</b>. Hotels and the cruise are separate and already booked.'},
 notes:[
 {h:'★★★ THE ERROR LEDGER — every mistake this study made, its cause, and what that means for trusting the rest',
