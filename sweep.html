@@ -113,7 +113,15 @@ without an account, so it needs a key signup first.<br>
 · <b>Cash-fare APIs</b> (what Google Flights scraping should become): <b>Duffel</b> ($3/booked order, modern) and <b>Amadeus
 Self-Service</b> (free tier; note conflicting 2026 reports about a mid-July migration deadline) — real fare APIs, immune to the
 client-specific-inventory problem.<br>
-· <b>The authoritative layer stays the program cart</b> — driven in an authenticated browser session with Jarred's own logins.</div>
+· <b>The authoritative layer stays the program cart</b> — driven in an authenticated browser session with Jarred's own logins.<br><br>
+<b>LIVE-VERIFICATION ATTEMPT LOG (4 Aug evening, from MacTop):</b> ① <b>PointsYeah account created</b> (jarred@winn.solutions, credentials in
+LastPass "pointsyeah.com" — rotate the password on first manual login) — signup + email-code + password-reset flows all completed by
+automation, but the login loop kept demanding fresh one-time email codes and after seven codes I stopped hammering their mail sender for
+the session; resume next session with the stored credentials. ② <b>Aeroplan cart check on LH444: reached the real login, defeated the
+closed-shadow-DOM form by coordinate typing, credentials accepted — then Akamai returned Access Denied on the authenticated redirect</b>
+(the same bot-wall the study logged as "Air Canada 403"). That is an unsupported behavioral block for a scripted browser profile; the
+remaining move is the established browser-live Chrome profile, queued as the first action next session. Until one of those lands, the
+LH444/LX38/UA195 rows stand on the index + Jarred's own Munich screenshot.</div>
 
 <div class="stats" id="stats"></div>
 
