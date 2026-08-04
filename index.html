@@ -200,6 +200,29 @@ versus $6,583/pp on Thu Oct 8</b> &mdash; identical aircraft, identical seat, <b
 from "this flight does not operate that day." Those look identical in its data and are completely different facts &mdash; which is
 exactly how the ITA-doesn't-fly-Thursdays issue could have been missed.
 </div></div>
+<div style="background:#1a1226;border:2px solid #a78bfa;border-radius:12px;padding:16px;margin:14px 0">
+<div style="color:#a78bfa;font-weight:700;font-size:15px;margin-bottom:8px">&#9878; ROME LEG &mdash; CASH AND POINTS POINT AT DIFFERENT DAYS</div>
+<div style="font-size:13px;color:#d4c8e8;line-height:1.65">
+Ashley + 3 kids, SFO&rarr;Rome. The cash lane found Oct 7 is dramatically cheaper. The award lane found the
+<b>exact opposite</b> &mdash; and both are live-verified.<br><br>
+<b style="color:#fff">WED OCT 7 &mdash; cash wins, points are dead:</b> ITA nonstop <b>$3,014 for four</b>, 12 hours.
+United business is $4,215/pp here vs $6,583/pp on Oct 8 (~$9,500 for four). But awards: <b>ZERO business, ZERO premium
+economy. Economy only.</b><br>
+<b style="color:#fff">THU OCT 8 &mdash; cash is worst-in-window, points appear:</b> the only nonstop is United at
+<b>$5,250 for four</b> ($2,236 more than Oct 7) because ITA's AZ641 does not fly Thursdays. But Flying Blue premium economy
+is <b>89,500/pp + $249, live-verified at 4 seats</b> = 358,000 MR + ~$996 for the four of them, and FB business 194,500/pp
+(778,000 &mdash; over your pool). Turkish business 175,000/pp.<br><br>
+<b style="color:#34d399">THE CALL: fly Oct 7 and pay cash.</b> Spending 358,000 MR plus $996 to put them in premium economy
+on a 1-stop Oct 8 routing returns about <b>0.76&cent;/point</b> &mdash; well under what your Membership Rewards are worth &mdash; and
+buys a worse routing than the Oct 7 nonstop. Flying Blue is genuinely Amex-reachable here, unlike the Lufthansa seats, so this
+was a real choice rather than a mirage. It just loses.<br><br>
+<b style="color:#fbbf24">Two method corrections that affect how any of this is read:</b><br>
+&middot; <code>min_seats</code> asserts against data seats.aero <b>already holds</b> &mdash; it does not force a refresh. A row can pass a
+5-seat filter on two-day-old counts. The results carry a "Seen" column: <b>only "Just now" is live-verified</b>. The Croatia
+zeros and the Zurich/Munich confirmations were all "Just now" and hold; the FRA Nov 4 business row was not and needs a re-check.<br>
+&middot; seats.aero cannot distinguish "no award space on this flight" from "this flight does not operate" &mdash; which is precisely
+the ITA-Thursday case. A zero there is a no-such-flight signal, not sold-out.
+</div></div>
 <div class="tl" id="timeline"></div>
 
 <h2><span class="n">03</span>Leg options</h2>
