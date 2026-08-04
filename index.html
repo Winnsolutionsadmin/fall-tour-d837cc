@@ -65,6 +65,20 @@ h2{font-size:16.5px;margin:26px 0 4px}h2 .n{color:var(--gold);margin-right:7px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 13px;margin:10px 0;font-size:12.5px}
 .card.warn{border-color:var(--red)}
 .foot{color:var(--dim);font-size:11px;margin-top:36px;border-top:1px solid var(--line);padding-top:12px}
+
+.cfgg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:9px 0 4px}
+@media(max-width:430px){.cfgg{grid-template-columns:1fr}}
+.cfc{background:#0e1218;border:1px solid #242c38;border-radius:9px;padding:8px 9px;min-width:0}
+.cfc.act{border-color:#f0b429}
+.cfh{font-size:9px;text-transform:uppercase;letter-spacing:.6px;color:#5f6b7c;font-weight:700;margin-bottom:5px}
+.cfr{font-size:11px;color:#8b98aa;padding:4px 6px;border-radius:6px;border:1px solid transparent;cursor:pointer;margin-top:2px;line-height:1.35}
+.cfr b{color:#e8edf4;font-variant-numeric:tabular-nums}
+.cfr.on{border-color:#f0b429;background:#191408;color:#e8edf4}
+.cfr.pts b{color:#a78bfa}
+.cfr.pts.on{border-color:#a78bfa;background:#14101f}
+.cfr.dis{color:#3d4654;font-style:italic;cursor:default}
+.cfr em{font-style:normal;font-size:8.5px;font-weight:700;color:#34d399;letter-spacing:.3px}
+.cfn{font-size:9.5px;color:#5f6b7c;margin-top:5px;line-height:1.45}
 </style></head><body><div class="wrap">
 <header>
 <h1>Fall 2026 <span class="g">Flight Costs</span> · per leg</h1>
@@ -170,45 +184,66 @@ const SEGS=[
 ];
 // WAY HOME — party-of-5 structures, seat-accurate splits (jarred 1 seat, family 4)
 const WH={id:'home',name:'⑂ THE BRANCH — Family + Jarred → San Francisco',date:'Oct 25 – Nov 3 · pick ending + dates',opts:[
- {id:'dubRoadA',t:'Croatia road trip → Zagreb → Dublin · 81k Avios (VERIFIED)',s:'Catamaran/apartment ends Oct 25 → Split → Plitvice → Zagreb → ZAG→DUB (near-DAILY: Oct 30 $438 = Irish Halloween, or Nov 1 $417 = Mirogoj first) → EI61 nonstop Nov 2/3, US preclearance',b:'REC',
-  jc:278,fc:1112,jp:{mr:16250},fp:{mr:65000},cab:'All economy (award SEATS VERIFIED)',
-  note:'✅ The only verified award in the study: 16,250 Avios/pp, 6+ seats seen Nov 1 AND Nov 2, $973 total fees. Cash side = $417 Zagreb hop + fees. Ryanair ZAG→DUB verified off their API on Oct 25/26/27/29/30/31 + Nov 1/2/3 — the date choice is yours: fly Oct 30 for Halloween in its birthplace, or Nov 1 after Mirogoj\'s candle-lit All Saints. Road-trip ground (car ~$550, lodging ~$1,500, food ~$1,700) is trip spend, not airfare. 🛏 BEDS: EI61\'s A330 is a GENUINE flat bed (Thompson Vantage, grab the odd-row throne windows). 2 flat + 3 econ ≈ +$4,200 cash over all-economy (biz ~$2,100/pp, historical band). Award beds: VERIFIED ZERO — no business award inventory exists on any checked date.'},
- {id:'dubRoadC',t:'Same road trip → Dublin · all cash',s:'ZAG→DUB $417 + EI61 $1,700 (Tue Nov 3 cheapest; $1,850 Nov 1)',
-  jc:423,fc:1694,jp:null,fp:null,cab:'All economy',
-  note:'$2,117 all five — the cheapest flight bill of ANY ending, including going home early. Keeps the 81k award as a free fallback if fares move. 🛏 BEDS: same A330 flat bed · 2 biz + 3 econ ≈ $5,900–6,600 flights for five vs $2,117 all-econ.'},
- {id:'krk31',t:'Kraków All Saints · fly Oct 31 · SAS cash',s:'FR5916 09:15→10:55 $127 (5 seats confirmed, Ryanair API) → SK1736+SK935 Nov 2, KRK 10:15 → SFO 14:50, $3,366 through-fare',
-  jc:699,fc:2794,jp:null,fp:null,cab:'All economy · NO flat bed exists on this plan (verified 3 ways)',
-  note:'$3,493 flights. Lands All Saints\' Eve 10:55 — catches the whole candle-sea. Date alt: fly Oct 26 15:15 ($192) for the full 7-night build-up. ⚠ Oct 31 is the last DBV→KRK before a 2-day gap; the 45-min CPH connection is the weak link (+$35 kills it via the 20:30 departure, arrive Nov 3). Buy Regular fare (+$138) to seat all five together. 🛏 BEDS: NONE on this plan, verified three ways — SAS business is not sellable Nov 2, the KRK feeder is a single-class E195, and a real bed for five means abandoning SAS at $15,851–20,820 (premium econ costs MORE than the cheapest business: $16,005).'},
- {id:'krkFB',t:'Kraków · Flying Blue 125k — space UNVERIFIED',s:'Same Kraków week, exit KRK→AMS→SFO on points',
-  jc:200,fc:802,jp:{mr:25000},fp:{mr:100000},cab:'All economy',
-  note:'⚠ 125k + $875 + $127 Ryanair. UNVERIFIED — and the live KL605 check found ZERO SkyTeam saver space on AMS metal Nov 1–3 (all dynamic, 68–76k/pp econ). Treat as unlikely; the SAS cash fare is the honest plan. 🛏 BEDS: none — same SAS/feeder facts as the cash row.'},
+ {id:'dubRoadA',t:'Croatia road trip → Zagreb → Dublin',s:'Split → Plitvice → Zagreb → ZAG→DUB (near-DAILY: Oct 30 $438 = Irish Halloween, Nov 1 $417 = Mirogoj first) → EI61 nonstop Nov 2/3 · US preclearance',b:'REC',
+  jc:423,fc:1694,jp:null,fp:null,cab:'pick cabin below',
+  cfg:{e:{c:2117,p:{k:81250,c:1390,v:'VERIFIED'},n:'EI61 A330 · cheapest flights of ANY ending · award seats SEEN Nov 1 & 2'},
+       m:{c:5637,p:null,pn:'biz award = ZERO inventory, verified',n:'2 real flat beds (Vantage thrones) + 3 econ · biz ~$2,100/pp historical'},
+       b:{c:10917,p:null,pn:'no biz award inventory',n:'5 flat beds · $2,100/pp · half what the German hubs charge'}},
+  note:'The verified ending. Ryanair ZAG→DUB off their API: Oct 25/26/27/29/30/31 + Nov 1/2/3. Ground (car ~$550 + lodging ~$1,500 + food ~$1,700) is trip spend, not airfare. 🛏 EI61 A330 = genuine flat Vantage; grab odd-row throne windows.',},
+ {id:'krk31',t:'Kraków All Saints · fly Oct 31 or 26',s:'FR5916 $127 Oct 31 09:15 (or $192 Oct 26) → SAS Nov 2 KRK 10:25 → SFO 14:35 through-fare',
+  jc:699,fc:2794,jp:null,fp:null,cab:'pick cabin below',
+  cfg:{e:{c:3493,p:{k:125000,c:1002,v:'UNVERIFIED'},n:'SAS through-ticket $3,366 · FB award space unverified — and the AMS-metal check found zero saver'},
+       m:{c:15978,p:null,pn:'SAS J unsellable — verified 3 ways',n:'NO bed on SAS at any price; this cash figure means abandoning SAS for a 3-stop 21h routing'},
+       b:{c:20947,p:null,pn:'no award path',n:'best 1-stop (KLM/Delta via AMS) for 5 beds — 6x the economy price'}},
+  note:'The candle-sea. ⚠ Oct 31 is the last DBV→KRK before a 2-day gap; 50-min CPH connection (10:25 dep); buy Regular fare (+$138) to seat five together. Nov 1 holiday closes museums.',},
  {id:'earlyLDN',t:'EARLY — home Mon Oct 26 · London stopover',s:'Ryanair DBV→STN Oct 25 15:25 $470 (verified) → 1 airport-hotel night → BA nonstop LHR→SFO Oct 26 11:45→15:55 $2,206 (quoted-live)',
-  jc:585,fc:2341,jp:null,fp:null,cab:'All economy',
+  jc:585,fc:2341,jp:null,fp:null,cab:'pick cabin below',
+  cfg:{e:{c:2926,p:{k:165000,c:1720,v:'poor value'},n:'BA/VS nonstop · $2,206 live · Avios/Virgin work but LHR surcharges gut them (0.6¢/pt)'},
+       m:{c:8341,p:{k:297000,c:2413,v:'poor value'},n:'2 Virgin Upper Class 1-2-1 beds + 3 econ, quoted-live · AVOID BA A380 (old 2-4-2)'},
+       b:{c:16181,p:{k:495000,c:3403,v:'poor value'},n:'5 Virgin beds, quoted-live · Oct 27: Icelandair 2-stop sells 2 beds for $4,571'}},
   note:'$2,926 incl. the hotel night — beats every one-ticket through-itinerary by $2,800+ (cheapest was $5,706). Saves ~$2,400–3,300 of European week-two burn and 6–7 school days. Same BA fare Oct 27 if you want a full London day. Add ~$60–90 STN→LHR transfer. 🛏 BEDS: real 1-2-1 available — Virgin A350 Upper Class: 2 flat + 3 econ $7,621 (quoted-live) · 5 flat $15,461 (quoted-live). Oct 27 is the cheapest date to add 2 beds (Icelandair 2-stop $4,571 for the pair). AVOID booking BA\'s A380 — old 2-4-2 climb-over Club World.'},
  {id:'earlyORY',t:'EARLY — home Wed Oct 28 · Paris + French Bee',s:'Transavia DBV→ORY Oct 27 $415 (live) → 1 Paris night → French Bee nonstop Wed Oct 28 17:40 $2,376 (live)',
-  jc:608,fc:2433,jp:null,fp:null,cab:'All economy (French Bee has NO business cabin — its "Premium" is a 2-3-2 recliner)',
+  jc:608,fc:2433,jp:null,fp:null,cab:'pick cabin below',
+  cfg:{e:{c:3041,p:null,pn:'no points program',n:'French Bee nonstop, quoted-live'},
+       m:{c:4924,p:null,pn:'no points program',n:'⚠ NOT beds: 2 Premium RECLINERS (2-3-2, 36in) + 3 econ'},
+       b:{c:7690,p:null,pn:'no points program',n:'⚠ 5 recliners — no true business exists on this airline'}},
   note:'$3,041, single-airport logistics, one Paris day for the kids. French Bee flies Wed/Fri only that week. 🛏 BEDS: none exist on French Bee at any price — the \'Premium\' cabin is a 2-3-2 recliner, 36in pitch. If Paris + beds, that is AF080 ex-CDG: mix $16,143 live.'},
  {id:'aeroF',t:'Aeroplan single ticket DBV→SFO — min cash + FASTEST',s:'~18h same-day via FRA · zero surcharges · no 4-pax wall',
-  jc:103,fc:412,jp:{mr:60000},fp:{mr:240000},cab:'All economy',
+  jc:103,fc:412,jp:{mr:60000},fp:{mr:240000},cab:'pick cabin below',
+  cfg:{e:{c:null,p:{k:300000,c:515,v:'chart-solid'},n:'60k/pp · the min-cash play of the whole board'},
+       m:{c:null,p:{k:360000,c:515,v:'space unseen'},n:'2×90k biz + 3×60k on one protected ticket'},
+       b:{c:null,p:{k:450000,c:515,v:'space unseen'},n:'5 beds via FRA — prefer UA Polaris metal'}},
   note:'~$515 all five, door to door. 300k MR. Space unverified — LH partner space is erratic; check before transferring. 🛏 BEDS: business via Aeroplan is 75k/pp (LH metal = dated 2-2-2 flat without universal aisle access; prefer any UA Polaris segment). Mix ≈ 270k pts + ~$550. Space rare, unverified.'},
  {id:'aeroStop',t:'Aeroplan +5k stopover — Vienna/Munich/Zurich stay',s:'ONE ticket DBV→[city 2–4 nights]→SFO · +5,000 pts/person stopover rule',
-  jc:120,fc:480,jp:{mr:65000},fp:{mr:260000},cab:'All economy',
+  jc:120,fc:480,jp:{mr:65000},fp:{mr:260000},cab:'pick cabin below',
+  cfg:{e:{c:null,p:{k:325000,c:600,v:'space unseen'},n:'65k/pp with a real 2–4 night city stay'},
+       m:{c:null,p:{k:385000,c:600,v:'space unseen'},n:'2×95k + 3×65k'},
+       b:{c:null,p:{k:475000,c:600,v:'space unseen'},n:'nearly the whole pool'}},
   note:'325k pts + ~$600 all five with a real city stay on one protected ticket. Space unverified. 🛏 BEDS: same Aeroplan biz math applies on the long leg.'},
  {id:'stayLDN',t:'Stay in Dubrovnik → London → home Nov 1',s:'STN hop Oct 30 $945 (late-week DBV fares triple) + BA Nov 1 $2,215',
-  jc:632,fc:2528,jp:null,fp:null,cab:'All economy',
+  jc:632,fc:2528,jp:null,fp:null,cab:'pick cabin below',
+  cfg:{e:{c:3160,p:null,pn:'Avios possible but surcharge-heavy — see early-London',n:'STN hop $945 late-week + BA $2,215'},
+       m:{c:8566,p:null,pn:'—',n:'2 Virgin beds + 3 econ ($7,621 live) + the $945 hop'},
+       b:{c:16406,p:null,pn:'—',n:'5 Virgin beds + hop'}},
   note:'$3,160 flights. Priced to show why the road trip beats it: same exit, $1,043 more in positioning, and Dubrovnik is a 3/10 for Halloween. 🛏 BEDS: same Virgin pricing as the early-London row: mix $7,621 / 5-biz $15,461, both quoted-live.'},
  {id:'extZag',t:'EXTEND Croatia to Nov 1 → fly ZAG→SFO direct-ish',s:'Stay through All Saints (Mirogoj Nov 1) → one-stop home via MUC/FRA/ZRH, ~15–16h · flat fares Nov 1/2/3',
-  jc:890,fc:3560,jp:null,fp:null,cab:'All economy · ESTIMATE — needs a live 5-pax pull before booking',
+  jc:890,fc:3560,jp:null,fp:null,cab:'pick cabin below',
+  cfg:{e:{c:4450,p:{k:300000,c:550,v:'chart-solid'},n:'cash is a 1-pax-scaled ESTIMATE · Aeroplan 60k/pp, zero surcharges, one PNR, +5k/pp = hub stopover night'},
+       m:{c:9175,p:{k:360000,c:550,v:'space unseen'},n:'2×90k biz + 3×60k · LH A350 = LEGACY 2-2-2 (not Allegris) · prefer UA Polaris via FRA'},
+       b:{c:16000,p:{k:450000,c:550,v:'space unseen'},n:'450k = 86% of the MR pool · cash est $14–18k'}},
   note:'~$4,200–4,700 for five cash (1-pax-scaled aggregator band). POINTS LADDER (chart-verified, space not): ① Aeroplan 60k/pp econ = 300k + ~$550 for 5, no surcharges — the safe floor (ZAG-FRA-SFO = 6,157mi → the 6,001–8,000 band; 90k/pp biz = 450k, nearly the whole MR pool). ② Flying Blue via AF\'s YEAR-ROUND ZAG→CDG nonstop: ~125–150k + $750–1,500 for 5 if dynamic pricing lands near floor — Zagreb is the ONE Croatian city with a single-ticket SkyTeam path in winter. ③ KrisFlyer: skip — LX/LH partner bookings carry real $300–400/pp YQ that erases the miles discount. \$2,000+ more than routing through Dublin (\$2,117) in cash, but the 300k Aeroplan play beats cash if MR are cheap to you — its case is one ticket, zero repacking, and waking up in Croatia on All Saints morning. 🛏 BEDS: MUC = LH458 A350 but LEGACY 2-2-2 (SFO is NOT on Lufthansa\'s confirmed Allegris list — flat bed, no aisle access for windows) · ZRH = LX 777 staggered flat, book the throne seats · FRA = prefer the United Polaris frequency (true 1-2-1) · 2 biz + 3 econ ≈ \$8,200–10,150 est. Legacy carriers may cap one booking at 4 pax.',},
  {id:'extSpu',t:'EXTEND to Nov 1 → fly SPLIT→SFO',s:'Split does NOT go dormant: OU holds FRA near-daily, MUC daily-ish, ZAG 3–5x/day all winter',
-  jc:920,fc:3680,jp:null,fp:null,cab:'All economy · ESTIMATE',
+  jc:920,fc:3680,jp:null,fp:null,cab:'pick cabin below',
+  cfg:{e:{c:4600,p:{k:300000,c:550,v:'chart-solid'},n:'same Aeroplan band as Zagreb (SPU feeder > 6,000mi total)'},
+       m:{c:9175,p:{k:360000,c:550,v:'space unseen'},n:'UA Polaris 1-2-1 via FRA or LH 2-2-2'},
+       b:{c:16500,p:{k:450000,c:550,v:'space unseen'},n:'estimate'}},
   note:'~$4,300–4,900 for five — \$250–800 worse than Zagreb. POINTS: same Aeroplan 300k + ~$550 floor applies (SPU feeder also lands in the 6,001–8,000mi band). Flying Blue does NOT work from Split or Dubrovnik in this window — AF\'s DBV/SPU routes are summer-seasonal; Zagreb keeps the only winter SkyTeam door. If exiting DBV directly on points, bias dates EARLY (Oct 25–27) before winter feeder cuts thin out OU/LH rotations. Winter frequencies are pattern-inferred from the 25/26 timetable; re-verify exact Nov 1 rotations. 🛏 BEDS: transatlantic metal = UA Polaris 787 (real 1-2-1) or LH A350 (dated 2-2-2), ~\$8,200–10,150 for 2 biz + 3 econ est.',},
  {id:'aerJ1',t:'❌ AerClub 2 lie-flat + 3 econ — NO INVENTORY EXISTS',s:'VERIFIED UNAVAILABLE: zero business award seats DUB→SFO on Nov 1, 2, 3, Dec 5 or Feb 10. The 62,500 chart price is real; the inventory is not.',
   jc:585,fc:1575,jp:{mr:62500},fp:{mr:111250},cab:'2 biz + 3 econ',
   note:'Kept as a record. Same class of finding killed SAS business (unsellable Nov 2) and KL605 saver space (zero, live-checked).'},
 ]};
-const LS='ft26v3';
-let S={seg:{},pay:{},home:'dubRoadA'};
+const LS='ft26v4';
+let S={seg:{},pay:{},home:'dubRoadA',cfg:'e',cfgPay:'cash'};
 try{const v=JSON.parse(localStorage.getItem(LS)||'null'); if(v)S={...S,...v};}catch(e){}
 SEGS.forEach(g=>{if(!S.seg[g.id]||!g.opts.find(o=>o.id===S.seg[g.id]))S.seg[g.id]=g.opts[0].id;});
 if(!WH.opts.find(o=>o.id===S.home))S.home='dubRoadA';
@@ -229,9 +264,16 @@ function compute(){
     legs.push({name:g.name,date:g.date,who:g.who,cash,pts,opt:o.t.split('—')[0].trim()});
   });
   const h=WH.opts.find(x=>x.id===S.home);
-  per.jarred+=h.jc; per.family+=h.fc;
-  let hpts=0; if(h.jp){mr+=h.jp.mr; hpts+=h.jp.mr;} if(h.fp){mr+=h.fp.mr; hpts+=h.fp.mr;}
-  legs.push({name:WH.name,date:WH.date,who:['family','jarred'],cash:h.jc+h.fc,pts:hpts,opt:h.t.split('—')[0].trim()});
+  let hj=h.jc, hf=h.fc, hpts=0, hmr=(h.jp?h.jp.mr:0)+(h.fp?h.fp.mr:0);
+  if(h.cfg){
+    const k=h.cfg[S.cfg]?S.cfg:'e'; const cc=h.cfg[k];
+    const mode=(S.cfgPay==='pts'&&cc.p)||(cc.c==null&&cc.p)?'pts':'cash';
+    if(mode==='pts'){hj=Math.round(cc.p.c/5); hf=cc.p.c-hj; hmr=cc.p.k;}
+    else if(cc.c!=null){hj=Math.round(cc.c/5); hf=cc.c-hj; hmr=0;}
+  }
+  per.jarred+=hj; per.family+=hf;
+  if(hmr){mr+=hmr; hpts+=hmr;}
+  legs.push({name:WH.name,date:WH.date,who:['family','jarred'],cash:hj+hf,pts:hpts,opt:h.t.split('—')[0].trim()+(h.cfg?' · '+({e:'5 econ',m:'2 biz + 3 econ',b:'5 biz'})[h.cfg[S.cfg]?S.cfg:'e']:'')});
   return {per,mr,sky,legs,grand:per.family+per.jarred+per.team};
 }
 function chips(who){return '<span class="chiprow">'+who.map(w=>`<span class="chip ${P[w].c}">${P[w].s}${P[w].n>1?'×'+P[w].n:''}</span>`).join('')+'</span>';}
@@ -270,12 +312,33 @@ function render(){
   // way home
   + `<div class="seg"><div class="hd"><h3>${WH.name}${chips(['family','jarred'])}</h3><span class="date">${WH.date}</span></div><div class="opts">`+
     WH.opts.map(o=>{
-      const sel=S.home===o.id; const cash=o.jc+o.fc; const pts=(o.jp?o.jp.mr:0)+(o.fp?o.fp.mr:0);
+      const sel=S.home===o.id;
+      let cash=o.jc+o.fc, pts=(o.jp?o.jp.mr:0)+(o.fp?o.fp.mr:0);
+      if(o.cfg){ // headline = currently-relevant config
+        const k=o.cfg[S.cfg]?S.cfg:'e'; const cc=o.cfg[k];
+        const mode=(S.cfgPay==='pts'&&cc.p)||(cc.c==null&&cc.p)?'pts':'cash';
+        if(mode==='pts'){cash=cc.p.c; pts=cc.p.k;} else {cash=cc.c||0; pts=0;}
+      }
+      const NM={e:'5 ECON',m:'2 BIZ + 3 ECON',b:'5 BIZ'};
+      let grid='';
+      if(sel&&o.cfg){
+        grid='<div class="cfgg" onclick="event.stopPropagation()">'+['e','m','b'].map(k=>{
+          const cc=o.cfg[k]; if(!cc)return '';
+          const act=(o.cfg[S.cfg]?S.cfg:'e')===k;
+          const cashRow= cc.c!=null
+            ? `<div class="cfr ${act&&S.cfgPay!=='pts'?'on':''}" onclick="cfgSet('${k}','cash')">CASH <b>${fmt(cc.c)}</b></div>`
+            : `<div class="cfr dis">cash n/a</div>`;
+          const ptsRow= cc.p
+            ? `<div class="cfr pts ${act&&(S.cfgPay==='pts'||cc.c==null)?'on':''}" onclick="cfgSet('${k}','pts')">PTS <b>${fk(cc.p.k)}</b> + ${fmt(cc.p.c)}${cc.p.v?` <em>${cc.p.v}</em>`:''}</div>`
+            : `<div class="cfr dis">${cc.pn||'no points path'}</div>`;
+          return `<div class="cfc ${act?'act':''}"><div class="cfh">${NM[k]}</div>${cashRow}${ptsRow}<div class="cfn">${cc.n||''}</div></div>`;
+        }).join('')+'</div>';
+      }
       return `<div class="opt${sel?' sel':''}" onclick="home('${o.id}')">
         <div class="o1"><span class="t">${o.t}${o.b?`<span class="bdg">${o.b}</span>`:''}</span>
         <span class="cost">${fmt(cash)}${pts?` <span class="p">+${fk(pts)}</span>`:''}</span></div>
-        <div class="o2">${o.s} · ${o.cab}</div>
-        <div class="o2" style="margin-top:3px">Jarred ${fmt(o.jc)}${o.jp?' +'+fk(o.jp.mr):''} · Family×4 ${fmt(o.fc)}${o.fp?' +'+fk(o.fp.mr):''}</div>
+        <div class="o2">${o.s}</div>
+        ${grid}
         ${sel&&o.note?`<div class="o3">${o.note}</div>`:''}</div>`;
     }).join('')+'</div></div>';
   // totals
@@ -298,6 +361,7 @@ document.getElementById('presets').innerHTML=PRESETS.map((p,i)=>`<button class="
 window.preset=i=>{PRESETS[i].f();save();render();};
 window.pick=(g,o)=>{S.seg[g]=o;save();render();};
 window.home=o=>{S.home=o;save();render();};
+window.cfgSet=(k,m)=>{S.cfg=k;S.cfgPay=m;save();render();};
 window.pay=(g,p,v,ev)=>{S.pay[g+'.'+p]=v;save();render();ev.stopPropagation();};
 render();
 </script>
