@@ -83,6 +83,22 @@ all four cabins, every seat count, and prices the backhaul. Standing caveats: sn
 transferring), seat counts are airline-asserted (rows with unreported counts are excluded from 5-seat boards), JetBlue-booked rows
 cost 25% extra MR (1.25:1 transfer), and BA/Virgin ex-LONDON rows carry unshown cash surcharges (£300–720/pp) — they are tagged.</div>
 
+<h2 class="sec">Zero · How this sweep actually works — read before trusting any bar</h2>
+<div class="warn" style="background:#2a1414;border-left-color:#f87171;color:#f0d0d0">
+<b>The speed question, answered honestly: nothing here is a live airline search.</b> Every number is a query against a continuously-crawled
+<b>award-availability database</b> (seats.aero) that indexes 23 loyalty programs' award calendars. That is why 36×36×9 takes minutes —
+it is a database read, not 11,000 searches. The cost of that speed is <b>staleness</b>, and here is the actual distribution for the
+2,171 outbound rows on this page: <b>19% observed within 24h · median age ~4 days · 5% older than 2 months.</b> Per-door freshest
+observation is now printed on every card below — <b>the St Lucia door is 83 days old and should be treated as dead until re-checked</b>;
+Sint Maarten's 58.5k is 4.5 days old; the Canada doors are 6–28h old.<br><br>
+<b>Also a correction to my own earlier wording:</b> where I said Zurich/Munich were "re-verified live", the re-pull verified their presence
+in the <i>current index</i> — it did not query Aeroplan itself. The one true end-to-end confirmation in this study is that <b>Jarred's own
+Aeroplan screenshot matched the Munich row to the dollar (40K + CA$258)</b> — which validates the pipeline when rows are fresh, not every row.<br><br>
+<b>What this instrument cannot see at all:</b> cash fares · Delta app dynamic pricing (the 39k SMF find) · multi-passenger repricing on
+dynamic programs (Flying Blue) · BA/Virgin cash surcharges (rows show $0/low) · end-to-end bookability. <b>The protocol that makes it safe
+anyway: nothing is transferred or booked until the program site's own cart shows the price at your passenger count — the cart is the live
+check. This page's job is to narrow 11,000 possibilities to the ~11 worth carting.</b></div>
+
 <div class="stats" id="stats"></div>
 
 <h2 class="sec">Chart 1 · The eleven doors — every flat-bed-for-5 nonstop, ranked by real MR cost per person</h2>
@@ -133,13 +149,15 @@ document.getElementById('stats').innerHTML=[
  const list=Object.entries(doors).map(([k,v])=>{
   const best=v.slice().sort((a,b)=>eff(a)-eff(b))[0];
   const days=new Set(v.map(t=>t.d));
-  return {k,best,v,days,e:eff(best)};
- }).sort((a,b)=>a.e-b.e);
+  const fresh=Math.min(...v.map(t=>t.h==null?9999:t.h));
+  return {k,best,v,days,e:eff(best),fresh,stale:fresh>336};
+ }).sort((a,b)=>(a.stale?1:0)-(b.stale?1:0)||a.e-b.e);
  const max=Math.max(...list.map(d=>d.e));
  let h='';
  list.forEach((d,i)=>{
   const b=d.best,lon=LON.has(b.o);
-  const tag=lon?'<span class="tag warn">EX-LONDON SURCHARGES</span>':(b.pgm==='jetblue'?'<span class="tag warn">MR×1.25</span>':'');
+  const ageTag=d.stale?'<span class="tag dead">DATA '+Math.round(d.fresh/24)+' DAYS OLD — TREAT AS DEAD</span>':`<span class="tag ${d.fresh<=24?'home':'warn'}">obs. ${d.fresh<48?d.fresh+'h':Math.round(d.fresh/24)+'d'} ago</span>`;
+  const tag=ageTag+(lon?'<span class="tag warn">EX-LONDON SURCHARGES</span>':(b.pgm==='jetblue'?'<span class="tag warn">MR×1.25</span>':''));
   const fun=['SXM','PUJ','MBJ','BGI','UVF','CUR','BDA','NAS'].includes(b.x)?'<span class="tag fun">ISLAND</span>':(['YYZ','YUL','YHZ'].includes(b.x)?'<span class="tag home">CANADA</span>':'');
   const rec=(i===0&&!lon);
   h+=`<div class="door${rec?' best':''}"><div class="hd"><b>${CITY[b.o]||b.o} → ${DEST[b.x]||b.x}${fun}${tag}</b><span class="pts">${km(d.e)} <span style="font-size:10px;color:var(--dim2)">MR/pp</span></span></div>
