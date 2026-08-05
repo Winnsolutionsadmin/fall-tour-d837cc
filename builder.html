@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><title>Plan Builder · pick every leg</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f7f9fb;--card:#ffffff;--ink:#16283a;--dim:#5d7185;--faint:#8fa3b5;--line:#e3eaf0;
+--navy:#0e3a5f;--sky:#2f7fb8;--gold:#b9860f;--grn:#177a4b;--grnbg:#e9f6ef;--red:#b3403a}
+html,body{max-width:100%;overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:130px}
+.w{max-width:900px;margin:0 auto;padding:0 16px}
+header{padding:30px 0 18px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:var(--sky);font-weight:700}
+h1{font-size:28px;letter-spacing:-.7px;color:var(--navy);font-weight:800;margin-top:6px}
+.sub{color:var(--dim);font-size:13px;margin-top:8px;max-width:640px}
+.nav{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.nav a{font-size:11.5px;padding:6px 12px;border:1px solid var(--line);border-radius:20px;color:var(--dim);text-decoration:none;background:var(--card)}
+.nav a.on{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:700}
+.leg{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:16px 0;overflow:hidden;box-shadow:0 1px 3px rgba(22,40,58,.05)}
+.lh{padding:13px 16px;border-bottom:1px solid var(--line);background:#fbfcfe}
+.lh .no{font-size:10.5px;font-weight:800;letter-spacing:1.3px;color:var(--sky);text-transform:uppercase}
+.lh .t{font-size:16px;font-weight:800;color:var(--navy)}
+.lh .who{font-size:11px;color:var(--faint)}
+.grp{padding:4px 16px 10px}
+.grp h3{font-size:10.5px;text-transform:uppercase;letter-spacing:1.2px;color:var(--faint);margin:10px 0 4px;font-weight:800}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 10px;border:1px solid var(--line);border-radius:11px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--sky)}
+.opt.on{border:2px solid var(--grn);background:var(--grnbg)}
+.opt input{margin-top:4px;accent-color:var(--grn)}
+.opt .m{flex:1;font-size:12.5px;line-height:1.5}
+.opt .m b{color:var(--navy)}
+.opt .m small{display:block;color:var(--dim);font-size:11px;margin-top:1px}
+.opt .p{flex:0 0 auto;text-align:right;font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.opt .p small{display:block;font-weight:600;color:var(--dim);font-size:10.5px}
+.v{display:inline-block;font-size:8.5px;font-weight:800;padding:2px 6px;border-radius:8px;letter-spacing:.4px;margin-right:5px;vertical-align:1px}
+.v.cart{background:var(--grnbg);color:var(--grn)}
+.v.wf{background:#eef3fb;color:var(--sky)}
+.v.x3{background:#f3effa;color:#6d4fa3}
+.v.idx{background:#f1f3f5;color:var(--faint)}
+.v.app{background:#fdf4df;color:var(--gold)}
+.rk{color:var(--faint);font-weight:800;font-size:11px;margin-right:4px}
+#bar{position:fixed;left:0;right:0;bottom:0;background:var(--navy);color:#fff;padding:12px 16px;box-shadow:0 -4px 16px rgba(14,58,95,.3);z-index:10}
+#bar .w2{max-width:900px;margin:0 auto;display:flex;gap:16px;flex-wrap:wrap;align-items:baseline;justify-content:space-between}
+#bar .big{font-size:17px;font-weight:800;font-variant-numeric:tabular-nums}
+#bar .lbl{font-size:10px;text-transform:uppercase;letter-spacing:1px;opacity:.7}
+#bar .pool{font-size:11px;opacity:.85}
+#bar .pool b{color:#7be3b1}
+#bar .warn{color:#ffb4a8;font-weight:700;font-size:11px}
+.note{font-size:12px;color:var(--dim);line-height:1.6;padding:10px 13px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;margin:10px 0}
+</style></head><body><div class="w">
+<header>
+<div class="eyebrow">Fall Tour · every leg · every validated option · built 5 Aug</div>
+<h1>The Plan Builder</h1>
+<div class="sub">Every validated flight option from all 158 versions, per leg, grouped <b>business vs economy</b>, ranked best-first within
+each group for <b>points</b> and for <b>cash</b>. Tap to select one option per leg — the bar tracks your points (by program) and cash
+against the pool: <b>525,382 MR + 132,931 SkyMiles</b>. Badges: <span class="v cart">CART</span> verified in a live cart ·
+<span class="v wf">VERIFIED</span> survived the 427-agent validate+verify run · <span class="v x3">3-SOURCE</span> multi-instrument confirmed ·
+<span class="v app">APP</span> your Delta app (dynamic, invisible to APIs) · <span class="v idx">INDEX</span> index-only, cart-check before booking.</div>
+<div class="nav"><a href="builder.html" class="on">Plan builder</a><a href="quote.html">The quote</a><a href="ranking.html">Rankings</a><a href="sweep.html">Sweep</a><a href="versions.html">Versions</a></div>
+</header>
+<div id="app"></div>
+<div class="note"><b>Standing rules baked in:</b> options that FAILED validation are not listed (Madrid LAX — cart-dead; Aeroplan 92.5k to Rome — lands after sailing; all J5 transatlantic — proven nonexistent; LHR→SFO Flying Blue 125k — 0.32¢/pt, do-not-book). Every points option still requires the cart-then-transfer ritual at your exact passenger count; transfers are one-way.</div>
+</div>
+<div id="bar"><div class="w2">
+<div><div class="lbl">Points selected</div><div class="big" id="tp">0</div><div class="pool" id="pp"></div></div>
+<div><div class="lbl">Cash selected</div><div class="big" id="tc">$0</div></div>
+<div style="flex:1;min-width:200px"><div class="lbl">By program</div><div class="pool" id="bp">—</div></div>
+</div></div>
+<script>
+const POOL_MR=525382, POOL_SKY=132931;
+// pts: total points; pgm; cash: all-in USD cash (taxes+positioning+tails where applicable); v: validation badge
+const LEGS=[
+{no:'Leg ① · land Seoul by eve Sep 28',t:'Sacramento/SFO/Seattle → Seoul',who:'you + 3 team',groups:[
+ ['BUSINESS · points',[
+  {id:'l1a',n:'1 bed + 3 econ — Delta One SEA dep SAT SEP 26 (185k J + 3×40k)',s:'delta.com · 5 J seats · lands Sun Sep 27 · ~2.2¢/pt vs $4,073 cash suite',pts:305000,pgm:{SkyMiles:305000},cash:150,v:'wf'},
+  {id:'l1b',n:'1 bed + 3 econ — Skywards 1-stop dep Sep 27 (193k J + 3×42.5k)',s:'emirates.com · 7 J seats · verify routing in cart',pts:320500,pgm:{Skywards:320500},cash:200,v:'idx'}]],
+ ['BUSINESS · cash',[
+  {id:'l1c',n:'4× Korean KE024 nonstop Prestige, lands 17:20 Sep 28',s:'median 4 sources · check seat-map (three cabin variants)',pts:0,pgm:{},cash:17216,v:'x3'},
+  {id:'l1d',n:'4× SEA split: $104 hop + Delta One cash $4,073',s:'lands 16:40 Sep 28 · separate tickets',pts:0,pgm:{},cash:16708,v:'x3'}]],
+ ['ECONOMY · points',[
+  {id:'l1e',n:'Delta app dynamic: SMF→SEA→ICN ~39k/pp ×4, the 12:50 SEA bank',s:'APP ONLY · if 39k is pre-TakeOff15: 132.6k ≈ your exact SkyMiles balance → ZERO MR',pts:156000,pgm:{SkyMiles:132931,MR:23069},cash:25,v:'app'},
+  {id:'l1f',n:'Flying Blue 34k/pp on Delta metal, SEA dep Fri Sep 25',s:'airfrance.us · 9 seats · lands Sep 26, two days early',pts:136000,pgm:{MR:136000},cash:1400,v:'idx'}]],
+ ['ECONOMY · cash',[
+  {id:'l1g',n:'4× Korean/United nonstop SFO $767, lands 15:00–17:20 Sep 28',s:'3 sources exact · Diamond perks on the DL-marketed Korean',pts:0,pgm:{},cash:3068,v:'x3'}]]]},
+{no:'Leg ③ · Tue Oct 6',t:'Seoul → Singapore',who:'the four of you',groups:[
+ ['BUSINESS · cash',[
+  {id:'l3a',n:'Jarred Asiana OZ751 business $960 + 3 team economy $528',s:'cheapest real bed of the group',pts:0,pgm:{},cash:1488,v:'x3'}]],
+ ['ECONOMY · points',[
+  {id:'l3b',n:'LifeMiles 18k/pp on the Asiana nonstop ×4',s:'lifemiles.com · ~0.8¢/pt — cash is the better trade',pts:72000,pgm:{MR:72000},cash:64,v:'wf'}]],
+ ['ECONOMY · cash',[
+  {id:'l3c',n:'4× economy nonstop $162–176',s:'the standing pick',pts:0,pgm:{},cash:690,v:'x3'}]]]},
+{no:'Leg ④ · dep Oct 8–9, land by Oct 10',t:'San Francisco → Rome',who:'Ashley + 3 kids',groups:[
+ ['BUSINESS · points (2 beds + 2 econ)',[
+  {id:'l4a',n:'Aeroplan 2×90k J + 2×60k Y, 1-stop, any of Oct 7/8/9',s:'aircanada.com · index-grade, cart before transfer',pts:300000,pgm:{MR:300000},cash:360,v:'idx'}]],
+ ['ECONOMY · points',[
+  {id:'l4b',n:'Flying Blue ~23k/pp dep FRI OCT 9 via Paris, lands 14:25 Oct 10',s:'airfrance.us · 9 seats · ~2.4¢/pt — the best redemption of the outbound',pts:91700,pgm:{MR:91700},cash:624,v:'wf'},
+  {id:'l4c',n:'LifeMiles 39k/pp, any day Oct 7–9',s:'the any-day backup',pts:156000,pgm:{MR:156000},cash:212,v:'wf'}]],
+ ['ECONOMY · cash',[
+  {id:'l4d',n:'ITA nonstop FRI OCT 9, lands 12:15 Oct 10 — $722/pp',s:'the original pick, single ticket, nonstop',pts:0,pgm:{},cash:2886,v:'x3'}]]]},
+{no:'Leg ⑤ · Oct 10, beat the 16:00 Oct 11 sailing',t:'Singapore → Rome',who:'Jarred solo',groups:[
+ ['BUSINESS · cash',[
+  {id:'l5a',n:'ETIHAD 787-9 — TRUE FLAT BOTH LEGS, lands 06:25 Oct 11',s:'flight-level verified · 8.5h margin to sailing',pts:0,pgm:{},cash:2041,v:'x3'}]],
+ ['BUSINESS · points',[
+  {id:'l5b',n:'KrisFlyer SQ366 nonstop J 177k — departs NIGHT OF OCT 8',s:'~1.0¢/pt AND departs before your Oct 9 party — listed for completeness',pts:177000,pgm:{MR:177000},cash:150,v:'wf'}]],
+ ['ECONOMY · cash',[
+  {id:'l5c',n:'Economy alternative ~$389',s:'not a bed; you chose the bed',pts:0,pgm:{},cash:389,v:'x3'}]]]},
+{no:'Leg ⑥ · Sat Oct 10',t:'Singapore → home',who:'Christopher, Sam, Jonathan',groups:[
+ ['ECONOMY · cash',[
+  {id:'l6a',n:'3× SQ32 nonstop SIN→SFO economy',s:'2×23kg bags included',pts:0,pgm:{},cash:1374,v:'x3'}]]]},
+{no:'Leg ⑦ · Sun Oct 18',t:'Rome → Dubrovnik',who:'all five',groups:[
+ ['ECONOMY · cash',[
+  {id:'l7a',n:'Ryanair FR5975 nonstop, Family Plus ×5',s:'no award market exists on this route',pts:0,pgm:{},cash:305,v:'x3'}]]]},
+{no:'Leg ⑧ · Oct 25 – Nov 2',t:'Dubrovnik → home',who:'family of five',groups:[
+ ['BUSINESS · points (2 beds + 3 econ — the only verified builds)',[
+  {id:'l8a',n:'Munich→Chicago Oct 27: 2×75k Aeroplan J + 3×37k LifeMiles Y',s:'~3.0¢/pt · two PNRs, date-locked, + ~$900 ORD→SMF tail in cash figure',pts:261000,pgm:{MR:261000},cash:2434,v:'wf'},
+  {id:'l8b',n:'Vienna→Chicago: 2×75k Aeroplan J + 3×40k LifeMiles Y',s:'J seats decaying · positioning unverified',pts:270000,pgm:{MR:270000},cash:2425,v:'wf'}]],
+ ['BUSINESS · cash',[
+  {id:'l8c',n:'5 beds Dublin EI61 nonstop $13,491 + DBV→DUB positioning ~$766',s:'the cash-beds record from the study',pts:0,pgm:{},cash:14257,v:'x3'}]],
+ ['ECONOMY · points',[
+  {id:'l8d',n:'★ Paris→SFO LifeMiles 40k/pp, SAT OCT 30 — the 427-agent WINNER',s:'lifemiles.com · ORY positioning $415 Oct 29 · $0 tail · 9 seats · verifier score 9/10',pts:200000,pgm:{MR:200000},cash:705,v:'wf'},
+  {id:'l8e',n:'Paris→SFO Flying Blue 25k/pp (Oct 25/29/30/31)',s:'airfrance.us · YOUR CART CONFIRMED IT LIVE · higher fees than LifeMiles, fewer points',pts:125000,pgm:{MR:125000},cash:1785,v:'cart'},
+  {id:'l8f',n:'London→SFO Virgin 15k/pp (Oct 27–Nov 1)',s:'virginatlantic.com · YOUR CART CONFIRMED · cheapest points, $1,610 fees + $503 hop',pts:75000,pgm:{MR:75000},cash:2113,v:'cart'},
+  {id:'l8g',n:'Frankfurt→SFO LifeMiles 39k/pp — space EVERY day',s:'the robustness pick · $290 taxes + $1,249 positioning',pts:195000,pgm:{MR:195000},cash:1539,v:'wf'}]],
+ ['ECONOMY · cash',[
+  {id:'l8h',n:'DBV→Stansted $503 + BA London→SFO $2,355',s:'cheapest cash, 2 tickets + a London night (~$300 real)',pts:0,pgm:{},cash:2858,v:'x3'},
+  {id:'l8i',n:'ONE TICKET DBV→SFO Thu Oct 29 — Finnair/AA/BA, 21h44',s:'quoted live 5 Aug · fully protected single PNR, no hotel',pts:0,pgm:{},cash:3781,v:'cart'},
+  {id:'l8j',n:'ONE TICKET DBV→Sacramento Thu Oct 29 — lands at home airport',s:'quoted live 5 Aug',pts:0,pgm:{},cash:4388,v:'cart'}]]]}
+];
+const V={cart:'CART',wf:'VERIFIED',x3:'3-SOURCE',idx:'INDEX',app:'APP'};
+const sel={};
+const money=n=>'$'+Math.round(n).toLocaleString();
+const k=n=>n>=1000?Math.round(n/100)/10+'k':n;
+function render(){
+ document.getElementById('app').innerHTML=LEGS.map((L,li)=>`
+ <div class="leg"><div class="lh"><div class="no">${L.no}</div><div class="t">${L.t}</div><div class="who">${L.who}</div></div>
+ ${L.groups.map(([g,opts])=>`<div class="grp"><h3>${g}</h3>${opts.map((o,oi)=>`
+  <label class="opt${sel[li]===o.id?' on':''}" onclick="pick(${li},'${o.id}')">
+   <input type="radio" name="leg${li}" ${sel[li]===o.id?'checked':''}>
+   <div class="m"><span class="rk">#${oi+1}</span><span class="v ${o.v}">${V[o.v]}</span><b>${o.n}</b><small>${o.s}</small></div>
+   <div class="p">${o.pts?k(o.pts)+' pts':''}<small>${o.cash?'+ '+money(o.cash)+' cash':(o.pts?'':money(o.cash))}</small></div>
+  </label>`).join('')}</div>`).join('')}
+ </div>`).join('');
+ totals();
+}
+function pick(li,id){ sel[li]=sel[li]===id?undefined:id; render(); }
+function totals(){
+ let pts=0,cash=0,by={};
+ LEGS.forEach((L,li)=>L.groups.forEach(([g,opts])=>opts.forEach(o=>{ if(sel[li]===o.id){pts+=o.pts;cash+=o.cash;
+  for(const [p,v] of Object.entries(o.pgm)) by[p]=(by[p]||0)+v; }})));
+ document.getElementById('tp').textContent=pts.toLocaleString();
+ document.getElementById('tc').textContent=money(cash);
+ const mr=by.MR||0, sky=by.SkyMiles||0;
+ const over=mr>POOL_MR||sky>POOL_SKY;
+ document.getElementById('pp').innerHTML=(over?'<span class="warn">OVER POOL — ':'')+`MR ${mr.toLocaleString()}/${POOL_MR.toLocaleString()} · Sky ${sky.toLocaleString()}/${POOL_SKY.toLocaleString()}`+(over?'</span>':'');
+ document.getElementById('bp').textContent=Object.entries(by).map(([p,v])=>p+' '+v.toLocaleString()).join(' · ')||'—';
+}
+render();
+</script></body></html>
