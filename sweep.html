@@ -173,7 +173,7 @@ sequenced after headful Chrome frees up. Surfaces that open get folded into the 
 · <b>point.me — FREE with your Amex Platinum, runs LIVE searches</b> (the missing layer between cached index and cart). Needs one-time enrollment via your Amex login. <i>Probably the single highest-value unchecked surface.</i><br>
 · <b>Amex transfer-bonus board + Amex Travel Insider Fares</b> (inside your Amex login) — a live 20–30% transfer bonus changes every ranking on these pages; never been looked at.<br>
 · <b>Award Travel Finder MCP</b> (401 — needs a free account token; never signed up). 80+ tools, full-year availability.<br>
-· <b>seats.aero official MCP live-search tool</b> — we used the raw partner API (cached); the MCP wrapper claims a LIVE endpoint on the same key we hold until Sep 4. Never wired.<br>
+· <b>seats.aero live search — RESOLVED 5 Aug, CLOSED:</b> the (unofficial) MCP wraps <code>POST /partnerapi/live</code>, which answers 401 on our key — live search requires a commercial agreement tier. No retry value. Consolation: the cached path re-confirmed both decision rows exactly (MUC 40k×9 econ, FRA→ATL 75k×9 biz) — a fourth independent read.<br>
 · <b>aerlingus.com</b> — Aer Lingus AerClub space (Dublin→SFO nonstop!) is indexed by NO instrument we used; Avios move BA→AerClub freely at avios.com. A Dublin door could exist entirely unseen.<br>
 · <b>Cathay Asia Miles</b> (Amex 1:1, books AA/BA/Iberia/Finnair) — un-indexed by both instruments; asiamiles.com only.<br><br>
 <b>CHECKED AND GENUINELY CLOSED (no retry value):</b> ANA (round-trip-only awards — useless for one-ways) · Etihad Guest (Amex dropped it 30 Jun 2026) ·
