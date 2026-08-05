@@ -78,11 +78,19 @@ function retTable(list,cfgLabel){
  return h+'</table>'}
 let h='';
 // LEG 1
-h+=legCard('Leg ① · Sun Sep 27','Sacramento / SFO → Seoul','you + Christopher, Sam, Jonathan',
- `<div class="note"><b>No wallet program has ANY nonstop award space that lands by your Sep 28 evening deadline</b> — Sacramento has no award market at all
- (0 rows), and SFO&#39;s Sep 26–27 nonstops show zero wallet award seats. This is not a gap in the search; it is the market.</div>
- <div class="verdict"><b>The points play stays the Delta app dynamic award</b> (invisible to every API): SMF→Seattle→Seoul on the 12:50 bank,
- ~39,000/pp Main Cabin · 4 pax ≈ 156,000 — and if the 39k is pre-TakeOff-15, the discount lands it at 132,600 vs your 132,931 SkyMiles: <b>a possibly zero-Amex leg</b>. Cart tells you in one screen.</div>`);
+h+=legCard('Leg ① · by Mon Sep 28 evening','Sacramento / SFO / Seattle → Seoul','you + Christopher, Sam, Jonathan · all-economy OR 1 bed + 3',
+ `<div class="note"><b>Sacramento has no award market</b> (0 rows, every instrument) and <b>SFO&#39;s Sep 26–27 nonstops have zero wallet award seats</b> —
+ so every real option runs through <b>SEATTLE</b> (a $104/pp hop, or the Delta app prices SMF→SEA→ICN as one dynamic ticket). Rows landing after your
+ deadline are struck, not hidden.</div>
+ <table><tr><th>Departs SEA</th><th>Program → book</th><th>All 4 economy</th><th>1 bed + 3 econ</th><th>Solo bed</th><th>Lands</th></tr>
+ <tr class="pick"><td class="n">Sat Sep 26<br><span class="pn">nonstop, Delta metal</span></td><td class="pn"><b>SkyMiles</b> · delta.com</td><td class="n">160k</td><td class="n"><b>305k</b><br><span class="pn">1×185k J + 3×40k</span></td><td class="n">185k<br><span class="pn">5 J seats · ~2.2¢/pt vs $4,073 cash</span></td><td>Sun Sep 27 ✓ <span class="badge g">BEST BED</span></td></tr>
+ <tr><td class="n">Fri Sep 25<br><span class="pn">nonstop, Delta metal</span></td><td class="pn"><b>Flying Blue</b> · airfrance.us</td><td class="n"><b>136k</b><br><span class="pn">34k/pp — undercuts SkyMiles on Delta&#39;s own plane</span></td><td class="n">—</td><td class="n">—</td><td>Sat Sep 26 ✓ <span class="badge a">2 DAYS EARLY</span></td></tr>
+ <tr><td class="n">Sun Sep 27<br><span class="pn">nonstop</span></td><td class="pn"><b>SkyMiles</b> · delta.com</td><td class="n">160k</td><td class="n">530k<br><span class="pn">J at 410k — dynamic, poor</span></td><td class="n">410k</td><td>Mon Sep 28 16:40 ✓</td></tr>
+ <tr><td class="n">Sun Sep 27<br><span class="pn">1-stop</span></td><td class="pn"><b>Emirates Skywards</b></td><td class="n">170k</td><td class="n">320.5k<br><span class="pn">1×193k J + 3×42.5k</span></td><td class="n">193k<br><span class="pn">7 J seats · verify routing in cart</span></td><td>Sep 28 ✓</td></tr>
+ <tr class="dead"><td class="n">Mon Sep 28</td><td class="pn">SkyMiles</td><td class="n">160k</td><td class="n">280k</td><td class="n">160k · 2 seats</td><td>Tue Sep 29 ✗ misses deadline</td></tr></table>
+ <div class="verdict"><b>All-economy floor: the Delta app dynamic SMF→SEA→ICN, ~156k for 4 (possibly 132.6k ≈ your exact SkyMiles balance after TakeOff 15).</b>
+ <b>1 bed + 3: depart Seattle SAT SEP 26 — your Delta One suite at 185,000 + three at 40,000 = 305,000 SkyMiles-side total, landing Sun with a day&#39;s buffer; at ~2.2¢/pt against the $4,073 cash suite it is the best bed-to-Seoul redemption found by any instrument.</b>
+ The same-shape Sep 27 or app-priced Delta One (348.5k) are 2× worse — if you want the bed, the 26th is the day.</div>`);
 // LEG 2
 h+=legCard('Leg ② · Tue Oct 6','Seoul → Singapore','the four of you · nonstops only',
  cfgTable(AG.legs.B,[['Y4','All 4 economy'],['Y1','Solo economy']])+
