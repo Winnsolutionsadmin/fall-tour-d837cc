@@ -1,157 +1,119 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow"><title>Redemption Rankings · Europe → North America</title>
+<meta name="robots" content="noindex,nofollow"><title>Points Across the Whole Agenda</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f7f9fb;--card:#ffffff;--ink:#16283a;--dim:#5d7185;--faint:#8fa3b5;--line:#e3eaf0;
---navy:#0e3a5f;--sky:#2f7fb8;--gold:#b9860f;--grn:#177a4b;--grnbg:#e9f6ef;--red:#b3403a;--amber:#fdf4df}
+--navy:#0e3a5f;--sky:#2f7fb8;--gold:#b9860f;--grn:#177a4b;--grnbg:#e9f6ef;--red:#b3403a;--redbg:#fbeeed;--amber:#fdf4df}
 html,body{max-width:100%;overflow-x:hidden}
 body{background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:70px}
-.w{max-width:880px;margin:0 auto;padding:0 16px}
+.w{max-width:900px;margin:0 auto;padding:0 16px}
 header{padding:34px 0 20px;border-bottom:1px solid var(--line)}
 .eyebrow{font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:var(--sky);font-weight:700}
 h1{font-size:29px;letter-spacing:-.7px;line-height:1.1;margin-top:8px;color:var(--navy);font-weight:800}
-.sub{color:var(--dim);font-size:13.5px;margin-top:10px;max-width:620px}
+.sub{color:var(--dim);font-size:13.5px;margin-top:10px;max-width:640px}
 .nav{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
 .nav a{font-size:11.5px;padding:6px 12px;border:1px solid var(--line);border-radius:20px;color:var(--dim);text-decoration:none;background:var(--card)}
 .nav a.on{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:700}
-h2.sec{font-size:12px;text-transform:uppercase;letter-spacing:1.6px;color:var(--faint);margin:34px 0 12px;font-weight:700}
-/* podium */
-.podium{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:14px}
-.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;position:relative;box-shadow:0 1px 3px rgba(22,40,58,.05)}
-.pcard.first{border:2px solid var(--grn)}
-.pcard .medal{position:absolute;top:-11px;left:16px;background:var(--navy);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1px;padding:3px 10px;border-radius:12px}
-.pcard.first .medal{background:var(--grn)}
-.pcard .route{font-size:18px;font-weight:800;color:var(--navy);margin-top:4px}
-.pcard .cab{font-size:11px;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:1px}
-.pcard .big{font-size:26px;font-weight:800;margin-top:8px;font-variant-numeric:tabular-nums}
-.pcard .big small{font-size:12px;color:var(--dim);font-weight:600}
-.pcard .meta{font-size:12px;color:var(--dim);margin-top:6px;line-height:1.55}
-.pcard .val{display:inline-block;margin-top:9px;background:var(--grnbg);color:var(--grn);font-weight:800;font-size:12.5px;padding:3px 10px;border-radius:12px}
-/* table */
-.tbl{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 1px 3px rgba(22,40,58,.05)}
+.leg{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:18px 0;overflow:hidden;box-shadow:0 1px 3px rgba(22,40,58,.05)}
+.lh{padding:15px 17px;border-bottom:1px solid var(--line);background:#fbfcfe;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.lh .no{font-size:11px;font-weight:800;letter-spacing:1.4px;color:var(--sky);text-transform:uppercase}
+.lh .t{font-size:17px;font-weight:800;color:var(--navy);margin-top:2px}
+.lh .who{font-size:11.5px;color:var(--faint);font-weight:600}
+.lb{padding:13px 17px}
 table{width:100%;border-collapse:collapse;font-size:12.5px}
-th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--faint);padding:11px 10px;border-bottom:1px solid var(--line);background:#fbfcfe}
-td{padding:10px;border-bottom:1px solid #eef3f7;vertical-align:middle}
+th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--faint);padding:8px 8px;border-bottom:1px solid var(--line)}
+td{padding:9px 8px;border-bottom:1px solid #eef3f7;vertical-align:top}
 tr:last-child td{border-bottom:0}
 td.n{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700}
-.rk{color:var(--faint);font-weight:800;width:26px}
-.route b{color:var(--navy)}
-.cabtag{display:inline-block;font-size:9px;font-weight:800;letter-spacing:.6px;padding:2px 7px;border-radius:9px;margin-left:6px;vertical-align:1px}
-.cabtag.J{background:#eef3fb;color:var(--sky)}
-.cabtag.Y{background:#f1f3f5;color:var(--dim)}
-.cabtag.W{background:var(--amber);color:var(--gold)}
-.vbar{display:flex;align-items:center;gap:8px;min-width:110px}
-.vbar .track{flex:1;height:7px;background:#eef2f6;border-radius:4px;overflow:hidden}
-.vbar .track i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--sky),var(--grn))}
-.vbar span{font-weight:800;font-size:12px;font-variant-numeric:tabular-nums;color:var(--grn)}
-.days{font-size:10.5px;color:var(--faint);letter-spacing:.4px}
 .pn{font-size:11px;color:var(--dim)}
-.pn b{color:var(--ink);font-size:12px}
-/* callout */
-.callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--sky);border-radius:12px;padding:15px 17px;font-size:13px;color:var(--ink);line-height:1.65;margin:12px 0;box-shadow:0 1px 3px rgba(22,40,58,.04)}
-.callout.g{border-left-color:var(--grn)}
-.callout.a{border-left-color:var(--gold);background:#fffdf6}
-.callout b{color:var(--navy)}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-top:12px}
-.step{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 15px;font-size:12.5px;line-height:1.6}
-.step .k{font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--sky)}
-.step b{color:var(--navy)}
+.pn b{color:var(--ink);font-size:12.5px}
+.days{font-size:10.5px;color:var(--faint)}
+.pick td{background:var(--grnbg)}
+.dead td{background:var(--redbg);color:#7c5a57}
+.badge{display:inline-block;font-size:9px;font-weight:800;letter-spacing:.6px;padding:2px 8px;border-radius:9px;margin-left:6px;vertical-align:1px}
+.badge.g{background:var(--grnbg);color:var(--grn)}
+.badge.r{background:var(--redbg);color:var(--red)}
+.badge.a{background:var(--amber);color:var(--gold)}
+.note{font-size:12px;color:var(--dim);line-height:1.6;padding:11px 13px;background:#fbfcfe;border:1px solid var(--line);border-radius:10px;margin:10px 0 2px}
+.note b{color:var(--navy)}
+.verdict{font-size:12.5px;line-height:1.6;padding:11px 13px;border-radius:10px;margin-top:10px;background:var(--grnbg);border:1px solid #cfe8da}
+.verdict b{color:var(--grn)}
+h3.rg{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:var(--faint);margin:16px 0 6px;font-weight:800}
+h2.cat{font-size:13px;text-transform:uppercase;letter-spacing:1.8px;color:var(--navy);margin:30px 0 6px;font-weight:800}
 footer{margin-top:38px;padding-top:16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--faint);line-height:1.7}
-@media(max-width:560px){ th:nth-child(6),td:nth-child(6){display:none} }
 </style></head><body><div class="w">
 <header>
-<div class="eyebrow">Fall Tour · Return Leg · pulled live 4 Aug 2026</div>
-<h1>Redemption Rankings</h1>
-<div class="sub">Every nonstop award from Europe to the United States, Canada &amp; the Caribbean in the Oct 25 – Nov 2 window,
-ranked by <b>value per point</b> — (one-way cash fare − award taxes) ÷ points. Whole-family rows only (5+ seats), your programs only,
-cross-validated instrument.</div>
-<div class="nav"><a href="ranking.html" class="on">Rankings</a><a href="quote.html">The quote</a><a href="sweep.html">Sweep &amp; charts</a><a href="partners.html">Partners</a><a href="index.html">Master plan</a></div>
+<div class="eyebrow">Fall Tour · every leg · pulled live 4 Aug 2026</div>
+<h1>Points, across the whole agenda</h1>
+<div class="sub">Award options for <b>every flight on the itinerary</b>, in travel order, priced in the passenger shapes that actually fly them —
+the four men on the Asia legs (all-economy · 1 bed + 3 · solo), the family of four to Rome (all-economy · 2 beds + 2), you solo to the cruise,
+and the family of five home from Europe (economy · 2 beds + 3 · all beds), grouped so direct-home routes are never hidden behind better-value detours.</div>
+<div class="nav"><a href="ranking.html" class="on">Agenda rankings</a><a href="quote.html">The quote</a><a href="sweep.html">Sweep &amp; charts</a><a href="partners.html">Partners</a><a href="index.html">Master plan</a></div>
 </header>
-
-<h2 class="sec">Category 1 · Business-class priorities — the front of the plane, in your three real configurations</h2>
-<div class="callout" style="margin-bottom:10px">Each route prices three ways on the SAME flight: <b>Family 2+3</b> (two flat beds + three economy —
-requires 2 business AND 3 economy award seats together) · <b>1+3</b> (one bed + three economy) · <b>Solo bed</b>. Ranked by blended value of the
-family configuration. All nonstop.</div>
-<div class="podium" id="podiumB"></div>
-<div class="tbl" style="margin-top:12px"><table id="tblB"></table></div>
-
-<h2 class="sec">Category 2 · Economy — the whole cabin in the back, cheapest points first</h2>
-<div class="podium" id="podiumE"></div>
-<div class="tbl" style="margin-top:12px"><table id="tblE"></table></div>
-
-<div class="callout g" style="margin-top:16px"><b>What the ranking says in one sentence:</b> the most valuable thing your points buy
-anywhere in this window is <b>Aeroplan business class to Eastern Canada</b> — it owns all thirteen top slots at 2.7–3.2¢ per point,
-roughly triple any direct-to-San-Francisco redemption. Awards straight to SFO price at the market's worst rates; awards to
-Toronto/Montreal price at its best, and a ~$150–250/pp daily cash nonstop (Toronto→SFO) bridges the difference.</div>
-
-<div class="callout g"><b>Decision line.</b> Split-cabin family (2 beds + 3 economy): <b>Frankfurt→Montreal ~211k, bookable ANY day</b> is
-the flexibility pick; <b>Dublin→Toronto 214k + $191</b> the value pick; the 1+3 shape runs ~145–150k on the same flights. All-economy:
-<b>Dublin→Toronto 142k + $65</b>, or <b>Paris→SFO direct 125k</b> to skip the Toronto→SFO cash tail entirely. Nothing is booking-grade
-until a cart shows it at your exact passenger mix.</div>
-
-<h2 class="sec">The flat-beds-home build (from ranks 1–6)</h2>
-<div class="steps">
-<div class="step"><div class="k">Piece 1 · the beds</div><b>Europe → Toronto or Montreal, Aeroplan business, 60–64.5k/pp.</b><br>
-Paris→Montreal has 8–9 seats <b>every single day</b> of the window; Frankfurt→Montreal/Toronto on six dates. Book at aircanada.com.</div>
-<div class="step"><div class="k">Piece 2 · the tail</div><b>Toronto → SFO, daily year-round nonstop, ~$150–250/pp cash.</b><br>
-(Checked: no one-ticket through-award to SFO exists in award space — two pieces is the real plan, 239 rows verified.)</div>
-<div class="step"><div class="k">Total · 5 people</div><b>~300,000 points + ~$2,200 cash</b> for five flat beds over the Atlantic —
-75,000 points less than the Atlanta construction it replaces, with far more available dates.</div>
+<div id="app"></div>
+<footer>Instrument: Flightpoints MCP (cross-validated 7/10 confirmed vs the frozen /shit-test sample; failures confined to stale rows) +
+seats.aero census + the Delta app for dynamic pricing (invisible to every API). Values are award-space observations, not bookings —
+cart at your exact passenger mix before any transfer; transfers are one-way. JetBlue rows costed at Amex&#39;s 1.25:1.
+Companion pages: <a href="quote.html" style="color:var(--sky)">the decided plan</a> · <a href="sweep.html" style="color:var(--sky)">instrument charts</a>.</footer>
 </div>
-
-<h2 class="sec">Before any points move · the two remaining cart checks</h2>
-<div class="callout a"><b>1 · Delta app, 4 passengers, the 12:50 Seattle bank (Seoul leg):</b> if the 39k fare is pre-discount, TakeOff 15
-makes it 132,600 — your SkyMiles balance is 132,931, so the leg may cost <b>zero</b> Amex points. The cart answers in one screen.<br>
-<b>2 · airfrance.us, 4 passengers, economy (family to Rome):</b> confirm 26,000/pp holds at 4-in-cart, and glance at Amex's transfer page
-for a live bonus first — a 25% bonus turns 104k into ~83k. <br><span style="color:var(--dim);font-size:12px">Transfers are one-way:
-cart first, screenshot, then move the exact amount. Nothing above is booking-grade until a cart shows it.</span></div>
-
-<footer>Method: 120 route-pairs swept through the Flightpoints MCP (validated against the frozen /shit-test sample: 7 confirmed / 2 drifted / 1 phantom,
-all failures in stale-tier rows) after a 36-origin seats.aero census. Cash benchmarks are conservative indicative one-ways — the order is robust
-even where the exact cent is not. Avios rows showing $0 tax carry a $400/pp estimated ex-London surcharge (known data gap). JetBlue rows are
-costed at the 1.25:1 Amex ratio. Companion pages: <a href="sweep.html" style="color:var(--sky)">instrument charts &amp; epistemics</a> ·
-<a href="quote.html" style="color:var(--sky)">the decided plan</a>.</footer>
-</div>
-<script src="rank2-data.js"></script>
+<script src="agenda-data.js"></script>
 <script>
-const R=window.__R2__||{biz:[],eco:[]};
-const CITY={LHR:'London',CDG:'Paris',AMS:'Amsterdam',FRA:'Frankfurt',MUC:'Munich',ZRH:'Zurich',DUB:'Dublin',VIE:'Vienna',FCO:'Rome',MAD:'Madrid',CPH:'Copenhagen',LGW:'London Gatwick'};
-const DEST={SFO:'San Francisco',LAX:'Los Angeles',SEA:'Seattle',YYZ:'Toronto',YUL:'Montreal',YHZ:'Halifax',SXM:'Sint Maarten',PUJ:'Punta Cana',MBJ:'Montego Bay',BGI:'Barbados'};
+const AG=window.__AG__||{legs:{},ret:{}};
 const k=n=>n>=1000?Math.round(n/100)/10+'k':n;
-function pod(el,list,cfgKey,label){
- document.getElementById(el).innerHTML=list.slice(0,3).map((e,i)=>{const c=e.cfg[cfgKey];return `
- <div class="pcard${i===0?' first':''}"><div class="medal">${i===0?'BEST VALUE':'#'+(i+1)}</div>
- <div class="cab">${label}</div>
- <div class="route">${CITY[e.o]||e.o} → ${DEST[e.d]||e.d}</div>
- <div class="big">${k(c.pts)} <small>points total + $${c.tax}</small></div>
- <div class="meta">${e.pn} · ${c.detail||''} · days: ${c.days}</div>
- <div class="val">${c.cpp}¢ per point</div></div>`}).join('');
-}
-pod('podiumB',R.biz,'F5','Family · 2 beds + 3 economy');
-pod('podiumE',R.eco,'Y5','Economy · all five');
-const maxB=Math.max(...R.biz.map(e=>e.cfg.F5.cpp));
-document.getElementById('tblB').innerHTML='<tr><th></th><th>Route · program</th><th>Family 2+3</th><th>1 + 3</th><th>Solo bed</th><th>All-5 beds</th><th>Days (2+3)</th><th>Value</th></tr>'+
- R.biz.map((e,i)=>{const c=e.cfg;return `<tr>
-  <td class="rk">${i+1}</td>
-  <td class="route"><b>${CITY[e.o]||e.o} → ${DEST[e.d]||e.d}</b><br><span class="pn">${e.pn} · ${e.b}</span></td>
-  <td class="n">${k(c.F5.pts)}<br><span class="pn">+$${c.F5.tax}</span></td>
-  <td class="n">${c.T4?k(c.T4.pts):'—'}</td>
-  <td class="n">${c.J1?k(c.J1.pts):'—'}</td>
-  <td class="n">${c.J5?k(c.J5.pts):'—'}</td>
-  <td class="days">${c.F5.days}</td>
-  <td><div class="vbar"><div class="track"><i style="width:${Math.round(c.F5.cpp/maxB*100)}%"></i></div><span>${c.F5.cpp}¢</span></div></td>
- </tr>`}).join('');
-const maxE=Math.max(...R.eco.map(e=>e.cfg.Y5.cpp));
-document.getElementById('tblE').innerHTML='<tr><th></th><th>Route · program</th><th>All 5</th><th>4 pax</th><th>Solo</th><th>Days (5 seats)</th><th>Value</th></tr>'+
- R.eco.map((e,i)=>{const c=e.cfg;return `<tr>
-  <td class="rk">${i+1}</td>
-  <td class="route"><b>${CITY[e.o]||e.o} → ${DEST[e.d]||e.d}</b><br><span class="pn">${e.pn} · ${e.b}</span></td>
-  <td class="n">${k(c.Y5.pts)}<br><span class="pn">+$${c.Y5.tax}</span></td>
-  <td class="n">${c.Y4?k(c.Y4.pts):'—'}</td>
-  <td class="n">${c.Y1?k(c.Y1.pts):'—'}</td>
-  <td class="days">${c.Y5.days}</td>
-  <td><div class="vbar"><div class="track"><i style="width:${Math.round(c.Y5.cpp/maxE*100)}%"></i></div><span>${c.Y5.cpp}¢</span></div></td>
- </tr>`}).join('');
+const CITY={SFO:'San Francisco',SMF:'Sacramento',ICN:'Seoul',SIN:'Singapore',FCO:'Rome',DBV:'Dubrovnik',LHR:'London',LGW:'London Gatwick',CDG:'Paris',AMS:'Amsterdam',FRA:'Frankfurt',MUC:'Munich',ZRH:'Zurich',DUB:'Dublin',VIE:'Vienna',MAD:'Madrid',CPH:'Copenhagen',LAX:'Los Angeles',SEA:'Seattle',YYZ:'Toronto',YUL:'Montreal',YHZ:'Halifax',SXM:'Sint Maarten',PUJ:'Punta Cana',MBJ:'Montego Bay',BGI:'Barbados'};
+function legCard(no,t,who,inner){return `<div class="leg"><div class="lh"><div><div class="no">${no}</div><div class="t">${t}</div></div><div class="who">${who}</div></div><div class="lb">${inner}</div></div>`}
+function cfgTable(list,cols){ // cols: [key,label][]
+ let h='<table><tr><th>Program → book at</th>'+cols.map(c=>'<th>'+c[1]+'</th>').join('')+'<th>Days</th></tr>';
+ list.forEach((e,i)=>{const first=e.cfg[cols[0][0]];if(!first&&!cols.some(c=>e.cfg[c[0]]))return;
+  const days=[...new Set(cols.map(c=>e.cfg[c[0]]?.days).filter(Boolean))].join(' · ');
+  h+=`<tr${i===0?' class="pick"':''}><td class="pn"><b>${e.pn}</b><br>${e.b}</td>`+
+   cols.map(c=>{const x=e.cfg[c[0]];return `<td class="n">${x?k(x.pts)+'<br><span class="pn">+$'+x.tax+'</span>':'—'}</td>`}).join('')+
+   `<td class="days">${days}</td></tr>`});
+ return h+'</table>'}
+function retTable(list,cfgLabel){
+ let h='<table><tr><th>Route</th><th>Program</th><th>'+cfgLabel+'</th><th>Detail</th><th>Days</th></tr>';
+ list.forEach((e,i)=>{h+=`<tr${i===0?' class="pick"':''}><td><b>${CITY[e.o]||e.o} → ${CITY[e.d]||e.d}</b></td><td class="pn"><b>${e.pn}</b><br>${e.b}</td><td class="n">${k(e.pts)}<br><span class="pn">+$${e.tax}</span></td><td class="pn">${e.detail||''}</td><td class="days">${e.days}</td></tr>`});
+ return h+'</table>'}
+let h='';
+// LEG 1
+h+=legCard('Leg ① · Sun Sep 27','Sacramento / SFO → Seoul','you + Christopher, Sam, Jonathan',
+ `<div class="note"><b>No wallet program has ANY nonstop award space that lands by your Sep 28 evening deadline</b> — Sacramento has no award market at all
+ (0 rows), and SFO&#39;s Sep 26–27 nonstops show zero wallet award seats. This is not a gap in the search; it is the market.</div>
+ <div class="verdict"><b>The points play stays the Delta app dynamic award</b> (invisible to every API): SMF→Seattle→Seoul on the 12:50 bank,
+ ~39,000/pp Main Cabin · 4 pax ≈ 156,000 — and if the 39k is pre-TakeOff-15, the discount lands it at 132,600 vs your 132,931 SkyMiles: <b>a possibly zero-Amex leg</b>. Cart tells you in one screen.</div>`);
+// LEG 2
+h+=legCard('Leg ② · Tue Oct 6','Seoul → Singapore','the four of you · nonstops only',
+ cfgTable(AG.legs.B,[['Y4','All 4 economy'],['Y1','Solo economy']])+
+ `<div class="verdict"><b>Best award: LifeMiles 18,000/pp on the Asiana nonstop — 72,000 + $64 for all four.</b> Against the $162–176 cash fare that is
+ ~0.8¢/point, so <b>cash still wins this leg</b> — but this is the true best number, replacing the earlier KrisFlyer-only answer. No nonstop business award exists via any program you can reach.</div>`);
+// LEG 3
+h+=legCard('Leg ③ · Thu–Fri Oct 8–9','San Francisco → Rome','Ashley + Ezra, Silas, Atticus (4) · lands by Oct 10',
+ cfgTable(AG.legs.C,[['Y4','All 4 economy'],['F22','2 beds + 2 econ'],['J1','1 bed (solo)'],['Y1','Solo economy']])+
+ `<div class="verdict"><b>The pick stands: Flying Blue ~22,900/pp economy dep Oct 9 → ≈91,700 + $624 for all four</b> (arrives Oct 10 afternoon via Paris),
+ ~2.4¢/point vs the $2,886 ITA cash fare. The 2-beds-+-2 split exists — Aeroplan 300,000 or FB 403,600 — but at 3× the points for two beds it is poor value; noted, not recommended. LifeMiles 39k/pp is the any-day backup.</div>`);
+// LEG 4
+h+=legCard('Leg ④ · Fri–Sat Oct 9–10','Singapore → Rome','you, solo · must beat the Oct 11 16:00 sailing',
+ `<table><tr><th>Program</th><th>Cabin</th><th>Points</th><th>Status</th></tr>
+ <tr class="dead"><td class="pn"><b>Aeroplan</b> · aircanada.com</td><td>Business (Oman Air)</td><td class="n">92.5k +$124</td><td class="pn"><span class="badge r">TIMETABLE-DEAD</span> every routing lands Oct 11 20:10 — 4h AFTER the ship sails</td></tr>
+ <tr><td class="pn"><b>KrisFlyer</b> · singaporeair.com</td><td>Business SQ366 nonstop</td><td class="n">177k</td><td class="pn">~1.0¢/pt, departs before the Oct 9 party · poor</td></tr>
+ <tr><td class="pn"><b>LifeMiles</b></td><td>Economy 1-stop</td><td class="n">65.1k +$58</td><td class="pn">not a bed</td></tr></table>
+ <div class="verdict"><b>The Etihad $2,041 cash flat bed stands</b> — verified true-flat both legs, lands Oct 11 06:25 with 8.5h margin. No points path beats it; the only cheap award literally misses the boat.</div>`);
+// LEG 5
+h+=legCard('Leg ⑤ · Sun Oct 18','Rome → Dubrovnik','all five, post-cruise',
+ `<div class="note"><b>Zero award programs sell this route</b> (0 rows — it is an LCC-only market). <b>Ryanair FR5975 nonstop, Family Plus, $305 total</b> remains the booking; Croatia Airlines fails the disembark timing.</div>`);
+// LEG 6
+h+='<h2 class="cat">Leg ⑥ · Oct 25 – Nov 2 · Europe → home — the return, grouped so nothing hides</h2>';
+h+=legCard('Category A · Economy','All five in the back','family of 5 · nonstop · 5+ seats',
+ '<h3 class="rg">Straight home — SFO · LAX · SEA</h3>'+retTable(AG.ret.ecoHome,'5 pax total')+
+ '<h3 class="rg">Via Canada (add ~$150–250/pp Toronto→SFO daily cash tail)</h3>'+retTable(AG.ret.ecoCanada,'5 pax total')+
+ (AG.ret.ecoCarib.length?'<h3 class="rg">Via the Caribbean</h3>'+retTable(AG.ret.ecoCarib,'5 pax total'):''));
+h+=legCard('Category B · Business priorities','Beds up front — 2+3 split, or all five flat','family of 5 · nonstop',
+ '<h3 class="rg">2 beds + 3 economy — straight home</h3>'+retTable(AG.ret.bizHome,'5 pax total')+
+ '<h3 class="rg">2 beds + 3 economy — via Canada</h3>'+retTable(AG.ret.bizCanada,'5 pax total')+
+ '<h3 class="rg">ALL FIVE in beds — via Canada (does not exist at sane rates straight home)</h3>'+retTable(AG.ret.bedsCanada,'5 pax total')+
+ `<div class="verdict"><b>Decision line:</b> economy → <b>Paris→SFO 125k (5 days)</b> or Frankfurt LifeMiles 195k any-day; split-cabin → <b>Frankfurt→Montreal ~211k, any day</b>;
+ all-beds → <b>Europe→Toronto/Montreal 300–322k</b> + the cash tail. Straight-home beds at 1.16M+ exist only as a curiosity.</div>`);
+document.getElementById('app').innerHTML=h;
 </script></body></html>
