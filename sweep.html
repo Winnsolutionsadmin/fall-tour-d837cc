@@ -184,6 +184,12 @@ all-in than Aeroplan on the same United/Lufthansa flights. Munich and Zurich pri
 match it at 60k on 6 dates — the cheapest flat-bed doors found by any instrument in this study, with a short tail home after.</div>
 <div id="fpb"></div>
 
+<h2 class="sec">Chart 6 · THE ROUTE RANKING — every nonstop redemption to the US, Canada &amp; Caribbean, ordered by value per point</h2>
+<div class="warn">Value = (indicative one-way cash fare − award taxes) ÷ effective MR. Cash benchmarks are conservative
+one-way figures per origin/cabin, labelled indicative — the ORDER is robust even where the exact ¢ is not. All rows: nonstop,
+5+ seats, wallet programs only, JetBlue at 1.25×. Avios rows with the known $0-tax data bug carry a $400est surcharge. Green = 2.5¢+.</div>
+<div id="rank"></div>
+
 <h2 class="sec">Chart 4 · Strategy board — every way home from Dubrovnik, all-in for 5</h2>
 <div id="strat"></div>
 
@@ -279,6 +285,13 @@ document.getElementById('stats').innerHTML=[
  h+='<div class="sub" style="margin:10px 0 6px"><b>Board 3 — for the record: cheapest BUSINESS direct to the west coast (why the doors matter)</b></div>';
  h+=t(F.b3,['Route','Program','MR/pp'],r=>`<tr class="bad"><td>${r.o}→${r.d}</td><td>${r.pn}</td><td class="n">${Math.round(r.mi/1000)}k</td></tr>`);
  document.getElementById('fpb').innerHTML=h;
+})();
+// ---- Chart 6: route ranking
+(function(){
+ const F=window.__FPB__; if(!F||!F.rank)return;
+ const CAB={economy:'Y',premium_economy:'W',business:'J'};
+ document.getElementById('rank').innerHTML='<table class="sw"><tr><th>#</th><th>Route</th><th>Cab</th><th>Program → book</th><th>MR/pp</th><th>Tax/pp</th><th>¢/pt</th><th>Days (5+ seats)</th></tr>'+
+  F.rank.map(r=>`<tr${r.cpp>=2.5?' class="win"':''}><td class="n">${r.rk}</td><td>${r.o}→${r.d}</td><td>${CAB[r.cab]||r.cab}</td><td>${r.pn} → ${r.book}</td><td class="n">${(r.mi/1000)}k</td><td class="n">$${r.tax}${r.est?'est':''}</td><td class="n">${r.cpp}</td><td>${r.days}</td></tr>`).join('')+'</table>';
 })();
 // ---- Chart 4: strategies
 (function(){
