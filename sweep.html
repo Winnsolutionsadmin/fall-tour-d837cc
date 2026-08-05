@@ -168,6 +168,22 @@ dates have 5+ business seats. Green card = recommended tier.</div>
 strip shows which days have economy space for 5+.</div>
 <div id="bh"></div>
 
+<h2 class="sec">Chart 5 · THE VALIDATED-INSTRUMENT VALUE BOARD — full return-leg matrix through Flightpoints (run after the /shit-test cross-confirmation)</h2>
+<div class="warn" style="background:#0d1f18;border-left-color:#34d399;color:#cfe8dc"><b>120 route-pairs × the full Oct 25–Nov 2 window ×
+every program × every cabin, in one sweep of the cross-validated second vendor. 4,134 program-rows; 2,444 wallet-reachable with 5+ seats.</b>
+All rows nonstop, whole-family (5+ seats), your programs only; JetBlue rows carry the 1.25× MR penalty. Read with: FB = Flying Blue promo
+pricing (date-specific), LifeMiles adds near-zero surcharges, London economy awards are killed by ~$362/pp UK taxes regardless of miles.
+Verify in cart before transfer — this is planning-grade, not booking-grade.</div>
+<div class="warn" style="background:#101a24;border-left-color:#60a5fa;color:#c9d8ea"><b>The three headlines this sweep produced:</b><br>
+1. <b>Paris→SFO Flying Blue 25,000/pp is available FIVE days</b> (Oct 25/29/30/31 + 27k Oct 28), 9 seats — pairs with the Transavia
+DBV→Orly Oct 29 positioning for a 125,000-point family ride home.<br>
+2. <b>LifeMiles is the quiet winner on Germanic routes: FRA→SFO 39,000/pp EVERY day of the window, 9 seats, ~$58/pp taxes</b> — cheaper
+all-in than Aeroplan on the same United/Lufthansa flights. Munich and Zurich price the same way.<br>
+3. <b>Flat beds for 5 straight home still do not exist at sane rates</b> (cheapest direct-to-west-coast J: 231,500/pp dynamic) — but
+<b>Paris→MONTREAL runs 60,000/pp Aeroplan business EVERY SINGLE DAY of the window, 8-9 seats, ~$239 tax</b>, and Frankfurt→Montreal/Toronto
+match it at 60k on 6 dates — the cheapest flat-bed doors found by any instrument in this study, with a short tail home after.</div>
+<div id="fpb"></div>
+
 <h2 class="sec">Chart 4 · Strategy board — every way home from Dubrovnik, all-in for 5</h2>
 <div id="strat"></div>
 
@@ -176,6 +192,7 @@ Wallet = Amex MR transfer partners + Delta SkyMiles. Estimates marked (est.) are
 sheet on <a href="partners.html" style="color:var(--blu)">Partners</a>, the decided plan on <a href="quote.html" style="color:var(--blu)">The quote</a>.</footer>
 </div>
 <script src="sweep-data.js"></script>
+<script src="fpboard-data.js"></script>
 <script>
 const S=window.__SW__||{out:[],bh:[]};
 const CITY={LHR:'London LHR',LGW:'London LGW',MAN:'Manchester',EDI:'Edinburgh',DUB:'Dublin',SNN:'Shannon',CDG:'Paris CDG',ORY:'Paris ORY',NCE:'Nice',AMS:'Amsterdam',BRU:'Brussels',FRA:'Frankfurt',MUC:'Munich',ZRH:'Zurich',GVA:'Geneva',VIE:'Vienna',PRG:'Prague',BUD:'Budapest',WAW:'Warsaw',KRK:'Krakow',CPH:'Copenhagen',ARN:'Stockholm',OSL:'Oslo',HEL:'Helsinki',MAD:'Madrid',BCN:'Barcelona',LIS:'Lisbon',OPO:'Porto',FCO:'Rome',MXP:'Milan',VCE:'Venice',NAP:'Naples',ATH:'Athens',DBV:'Dubrovnik',ZAG:'Zagreb',KEF:'Reykjavik'};
@@ -250,6 +267,18 @@ document.getElementById('stats').innerHTML=[
   h+=`<div class="strip">${BDAYS.map(dd=>`<span class="${yDays.has(dd)?'on':''}">${dd.slice(8)}</span>`).join('')}</div></div>`;
  });
  document.getElementById('bh').innerHTML=h;
+})();
+// ---- Chart 5: flightpoints value board
+(function(){
+ const F=window.__FPB__; if(!F)return;
+ const t=(rows,cols,fmt)=>'<table class="sw"><tr>'+cols.map(c=>'<th>'+c+'</th>').join('')+'</tr>'+rows.map(fmt).join('')+'</table>';
+ let h='<div class="sub" style="margin:6px 0"><b>Board 1 — economy nonstop HOME (SFO/LAX/SEA), best per origin·program, 5+ seats</b></div>';
+ h+=t(F.b1,['Route','Program → book at','MR/pp','Tax/pp','Days at this price'],r=>`<tr${r.mi<=27000?' class="win"':''}><td>${r.o}→${r.d}</td><td>${r.pn} → ${r.book}</td><td class="n">${(r.mi/1000)}k</td><td class="n">$${r.tax}</td><td>${r.dates}</td></tr>`);
+ h+='<div class="sub" style="margin:10px 0 6px"><b>Board 2 — BUSINESS nonstop stopover doors (Canada/Caribbean), 5+ seats, cheapest first</b></div>';
+ h+=t(F.b2,['Route','Program','MR/pp','Tax/pp','Days'],r=>`<tr${r.mi<=60000?' class="win"':''}><td>${r.o}→${r.d}</td><td>${r.pn}</td><td class="n">${(r.mi/1000)}k</td><td class="n">$${r.tax}</td><td>${r.dates}</td></tr>`);
+ h+='<div class="sub" style="margin:10px 0 6px"><b>Board 3 — for the record: cheapest BUSINESS direct to the west coast (why the doors matter)</b></div>';
+ h+=t(F.b3,['Route','Program','MR/pp'],r=>`<tr class="bad"><td>${r.o}→${r.d}</td><td>${r.pn}</td><td class="n">${Math.round(r.mi/1000)}k</td></tr>`);
+ document.getElementById('fpb').innerHTML=h;
 })();
 // ---- Chart 4: strategies
 (function(){
